@@ -1,0 +1,12 @@
+Flow-OPSD
+=========
+
+This product includes software developed as part of DiffusionOPSD
+(upstream commit 9c4c48cdfe5c3fa712d32957345d75fae9295696), licensed under
+the Apache License, Version 2.0.
+
+Modifications by the Flow-OPSD authors, also under Apache License 2.0:
+  - scripts/train_opsd_ri_sd3.py : Multi-State target Propagation (MSP)
+  - config/public.py, config/mixed.py : fixed-seed hook for paired A/B runs
+
+All other files are unmodified from upstream.

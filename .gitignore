@@ -1,0 +1,16 @@
+# training artifacts
+outputs/
+checkpoints/
+wandb/
+*.pt
+*.safetensors
+
+# reward model weights (see upstream README for download instructions)
+reward_ckpts/
+
+# datasets materialized at setup time
+data/pickapic/
+
+__pycache__/
+*.py[cod]
+.DS_Store
