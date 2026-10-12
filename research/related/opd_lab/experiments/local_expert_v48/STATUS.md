@@ -1,0 +1,18 @@
+# Phase48
+
+Previously exposed development prompts; no new independent generalization claim.
+
+signal_for_independent_confirmation
+
+- after_fixed_all: n=32, joint=0.312500, ocr_exact=0.562500, geneval_strict=0.593750, ocr_reward=0.778534, ocr_cer=0.337537, geneval_partial=0.822917, A_joint_lower=0.250000, A_joint_upper=0.468750, A_any_unknown=0.375000, pickscore_opd=0.800855, pickscore_raw=20.822225, clipscore=0.317392, aesthetic=4.869459, hpsv2=0.227221, imagereward=0.046324
+- after_random_matched: n=32, joint=0.468750, ocr_exact=0.593750, geneval_strict=0.750000, ocr_reward=0.948363, ocr_cer=0.219085, geneval_partial=0.919271, A_joint_lower=0.375000, A_joint_upper=0.468750, A_any_unknown=0.187500, pickscore_opd=0.815323, pickscore_raw=21.198404, clipscore=0.342352, aesthetic=4.728372, hpsv2=0.240533, imagereward=0.565900
+- after_verified: n=32, joint=0.375000, ocr_exact=0.468750, geneval_strict=0.781250, ocr_reward=0.686607, ocr_cer=0.322321, geneval_partial=0.921875, A_joint_lower=0.375000, A_joint_upper=0.656250, A_any_unknown=0.468750, pickscore_opd=0.797870, pickscore_raw=20.744609, clipscore=0.325075, aesthetic=4.864137, hpsv2=0.228277, imagereward=0.275946
+- before_fixed_all: n=32, joint=0.468750, ocr_exact=0.781250, geneval_strict=0.593750, ocr_reward=0.937500, ocr_cer=0.062500, geneval_partial=0.830729, A_joint_lower=0.406250, A_joint_upper=0.500000, A_any_unknown=0.187500, pickscore_opd=0.815098, pickscore_raw=21.192542, clipscore=0.340735, aesthetic=4.690343, hpsv2=0.238662, imagereward=0.511250
+- before_random_matched: n=32, joint=0.437500, ocr_exact=0.687500, geneval_strict=0.656250, ocr_reward=0.928274, ocr_cer=0.218304, geneval_partial=0.828125, A_joint_lower=0.375000, A_joint_upper=0.562500, A_any_unknown=0.218750, pickscore_opd=0.823541, pickscore_raw=21.412059, clipscore=0.341293, aesthetic=4.629387, hpsv2=0.242292, imagereward=0.746040
+- before_verified: n=32, joint=0.468750, ocr_exact=0.750000, geneval_strict=0.593750, ocr_reward=0.932440, ocr_cer=0.145685, geneval_partial=0.796875, A_joint_lower=0.406250, A_joint_upper=0.468750, A_any_unknown=0.218750, pickscore_opd=0.820550, pickscore_raw=21.334289, clipscore=0.343256, aesthetic=4.871818, hpsv2=0.253278, imagereward=0.839746
+- low_fixed_all: n=32, joint=0.312500, ocr_exact=0.531250, geneval_strict=0.656250, ocr_reward=0.714546, ocr_cer=0.285454, geneval_partial=0.859375, A_joint_lower=0.218750, A_joint_upper=0.531250, A_any_unknown=0.468750, pickscore_opd=0.792788, pickscore_raw=20.612482, clipscore=0.314213, aesthetic=4.807164, hpsv2=0.221587, imagereward=-0.058037
+- low_random_matched: n=32, joint=0.562500, ocr_exact=0.750000, geneval_strict=0.781250, ocr_reward=0.970982, ocr_cer=0.101935, geneval_partial=0.914062, A_joint_lower=0.468750, A_joint_upper=0.593750, A_any_unknown=0.187500, pickscore_opd=0.821739, pickscore_raw=21.365202, clipscore=0.348385, aesthetic=4.700235, hpsv2=0.241221, imagereward=0.641766
+- low_verified: n=32, joint=0.437500, ocr_exact=0.625000, geneval_strict=0.718750, ocr_reward=0.927232, ocr_cer=0.178423, geneval_partial=0.880208, A_joint_lower=0.343750, A_joint_upper=0.500000, A_any_unknown=0.218750, pickscore_opd=0.814435, pickscore_raw=21.175309, clipscore=0.340237, aesthetic=4.842664, hpsv2=0.242363, imagereward=0.665430
+- noop: n=32, joint=0.375000, ocr_exact=0.875000, geneval_strict=0.437500, ocr_reward=0.991071, ocr_cer=0.116518, geneval_partial=0.640625, A_joint_lower=0.343750, A_joint_upper=0.468750, A_any_unknown=0.156250, pickscore_opd=0.844937, pickscore_raw=21.968353, clipscore=0.360479, aesthetic=4.903668, hpsv2=0.246859, imagereward=1.064843
+
+GPU 1007 seconds; agent image reads 0. See report.html and PROTOCOL.md.

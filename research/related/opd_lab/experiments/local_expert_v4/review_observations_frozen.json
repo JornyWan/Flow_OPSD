@@ -1,0 +1,10 @@
+{
+  "cases": 22,
+  "frozen_at_utc": "2026-09-11T20:47:05.740583+00:00",
+  "key_opened": false,
+  "new_ray_results_inspected": false,
+  "observations": 44,
+  "observations_sha256": "bc20613770a4b35843912b4e7f76667f6629cbd12b5e9ab6a44b990caf08ec31",
+  "observer": "implementing assistant; not independent human truth; imperfect blinding due to possible prior phase3 exposure",
+  "rubric_sha256": "7349b2b98fb879f2252d6f707192a02e57e8837fccc9f64b664ea016bb26d8d1"
+}

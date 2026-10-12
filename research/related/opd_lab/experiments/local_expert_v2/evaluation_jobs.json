@@ -1,0 +1,23 @@
+{
+  "jobs": [
+    {
+      "job": "/midtier/minilab/scratch/chw4026/projects/side_project/generative/opd_related/opd_lab/runs/le2_eval_flow10_job_002",
+      "job_id": "1047887",
+      "sampler": "flow",
+      "steps": 10
+    },
+    {
+      "job": "/midtier/minilab/scratch/chw4026/projects/side_project/generative/opd_related/opd_lab/runs/le2_eval_flow40_job_002",
+      "job_id": "1047888",
+      "sampler": "flow",
+      "steps": 40
+    },
+    {
+      "job": "/midtier/minilab/scratch/chw4026/projects/side_project/generative/opd_related/opd_lab/runs/le2_eval_dpm240_job_002",
+      "job_id": "1047889",
+      "sampler": "dpm2",
+      "steps": 40
+    }
+  ],
+  "operational_note": "Fresh attempt after pre-generation audit-reader startup failures. Same frozen samples/models/metrics; optional CPU OCR finalization runs on the calibrated host. Failed attempts remain in the ledger and archived job registry."
+}

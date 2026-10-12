@@ -1,0 +1,10 @@
+{
+  "descriptive_analysis_rebuilt_exactly": true,
+  "fresh_local_full_complete_indicators_identical": 12,
+  "fresh_teacher_opportunities_known": 2,
+  "fresh_teacher_opportunities_unresolved": 4,
+  "no_optimization_or_new_checkpoint": true,
+  "results_rebuilt_exactly": true,
+  "summary_plot_visually_inspected": true,
+  "tests_sha256": "ee7b59e68b8e5027a3bccc8f48affde3027aea56c14427dcaf28952b82afce61"
+}

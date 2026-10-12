@@ -1,0 +1,81 @@
+\section{Introduction}
+\label{sec:intro}
+
+Reinforcement learning has become a standard tool for aligning diffusion-based
+text-to-image models to reward signals such as compositional correctness, text
+rendering, and aesthetic quality~\cite{schulman2017proximal,liu2025flow,zheng2025diffusionnft}.
+Most methods optimize a \emph{single} reward, yet users expect one model to
+satisfy many objectives at once. Directly training on a mixture of rewards
+suffers from cross-task interference and difficulty imbalance, while sequential
+(cascade) RL is cumbersome and prone to catastrophic forgetting.
+
+On-policy distillation (OPD) side-steps both problems. DiffusionOPD~\cite{li2026diffusionopd}
+first trains one specialized teacher per task, then distills all teachers into a
+single student along the student's \emph{own} denoising rollout. Its key technical
+observation is that, at each reverse step, student and teacher one-step Gaussian
+transition kernels are evaluated at the same on-policy state and share the same
+covariance, so their reverse KL is closed-form and reduces to a dense,
+low-variance velocity-matching loss. With $M$ teachers, DiffusionOPD simply
+\emph{sums the per-teacher losses uniformly}.
+
+\paragraph{This paper.}
+We ask what the uniform sum is actually optimizing, and whether a principled
+reweighting can do better. Uniform summation is \emph{linear scalarization} of
+the per-teacher objectives; a textbook concern is that linear scalarization only
+reaches the convex hull of a Pareto front and is dominated on non-convex regions.
+We show---and an independent verifier confirmed---that this concern is
+\emph{misplaced in loss space}: under OPD's shared isotropic output metric the
+per-teacher losses are convex quadratics, the achievable loss set is convex, and
+the uniform (teacher-mean) student is genuinely Pareto-optimal in loss. The real
+difficulty is elsewhere: the mapping from velocity-matching loss to task
+\emph{reward} is nonlinear and non-monotone (rewards are read off integrated
+samples, reward models saturate and can be hacked, and a finite shared LoRA
+couples tasks), so the loss-sum minimizer---though loss-optimal---can be
+\emph{reward-dominated}. This recast (from ``non-convex loss hull'' to
+``reward-space frontier selection'') is the honest and correct motivation for
+moving off the uniform point.
+
+Building on this, we make four contributions.
+
+\begin{itemize}
+  \item \textbf{A rigorous multi-objective theory for multi-teacher OPD}
+  (\S\ref{sec:theory}). We formalize multi-teacher OPD as multi-objective
+  optimization, prove the teacher-mean is loss-Pareto-optimal, relocate the
+  difficulty to the loss$\to$reward map, and introduce an adaptive Tchebycheff
+  (min-max) scalarization. We prove via the envelope (Danskin) theorem that the
+  \emph{detached}-weight gradient used in practice is \emph{exact} for the smooth
+  log-sum-exp surrogate, and that the per-teacher losses are commensurable
+  because they are one functional in a shared output metric---the property that
+  makes adaptive weighting well-posed here but not in generic multi-task
+  learning. This theory is the strongest part of the paper.
+
+  \item \textbf{CA-OPD} (\S\ref{sec:method}), a lightweight conflict-averse
+  reweighting: weight each teacher's loss by a softmax over an EMA of its
+  per-step KL, up-weighting the currently worst-matched teacher. A temperature
+  $\tau$ interpolates from pure min-max ($\tau\to0$) to uniform DiffusionOPD
+  ($\tau\to\infty$), so mopd lies in CA-OPD's search space. CA-OPD improves
+  \emph{convergence efficiency} on the lagging reward axis and exposes $\tau$ as
+  a speed-vs-ceiling knob.
+
+  \item \textbf{A faithful reproduction} of DiffusionOPD on SD3.5-Medium with
+  three teachers (\S\ref{sec:exp-repro}). Our base, teacher, and distilled-student
+  numbers match the original within evaluation noise, and our student
+  cross-checks against the released official student---a triple-validated
+  reproduction that is itself a useful contribution.
+
+  \item \textbf{An honest ablation} of four principled OPD-improvement ideas
+  (\S\ref{sec:ablation}): min-max (faster early), Huber-robust (neutral), Min-SNR
+  weighting (hurts), and SDE$\to$ODE annealing (hurts most), each with a
+  mechanistic explanation. This maps the design space of OPD modifications and
+  shows CA-OPD's early-convergence benefit is non-trivial.
+\end{itemize}
+
+\paragraph{What we do \emph{not} claim.}
+We are explicit that on this near-saturated three-teacher benchmark CA-OPD does
+\emph{not} beat uniform DiffusionOPD on final quality: at convergence the two are
+within single-seed noise on every reward axis, and CA-OPD is higher on none. CA-OPD's
+demonstrated value is convergence efficiency on the hardest axis and per-axis
+controllability through $\tau$, not a new state of the art. We discuss when
+stronger gains should be expected---higher-conflict teacher sets, or
+regret-based weights $r_m=\mathcal L_m-\mathrm{floor}_m$---as future work
+(\S\ref{sec:conclusion}).

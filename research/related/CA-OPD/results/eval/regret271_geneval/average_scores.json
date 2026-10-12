@@ -1,0 +1,18 @@
+{
+    "accuracy": 0.9140625,
+    "strict_accuracy": 0.88671875,
+    "single_object_strict_accuracy": 1.0,
+    "two_object_strict_accuracy": 0.9615384615384616,
+    "counting_strict_accuracy": 0.8888888888888888,
+    "colors_strict_accuracy": 0.8787878787878788,
+    "position_strict_accuracy": 0.8478260869565217,
+    "color_attr_strict_accuracy": 0.7962962962962963,
+    "single_object_accuracy": 1.0,
+    "two_object_accuracy": 1.0,
+    "counting_accuracy": 0.8888888888888888,
+    "colors_accuracy": 0.9090909090909091,
+    "position_accuracy": 0.8695652173913043,
+    "color_attr_accuracy": 0.8518518518518519,
+    "geneval": 0.9348958333333334,
+    "avg": 0.9348958333333334
+}

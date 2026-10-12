@@ -1,0 +1,70 @@
+% Table 1 — 由 opd_related/EXPERIMENT_LOG.md §4.642 的实测值生成(2026-09-30 05:55)
+% 口径:SD3.5-M,100 optimizer updates,A40 评测,逐图配对 n=1000/格,MDE=0.0033
+\begin{table}[t]
+\centering
+\setlength{\tabcolsep}{4pt}
+\caption{\textbf{Quality versus sampling budget.} Reported composite
+(\textsc{PickScore}$/26+$\textsc{CLIP}$+$\textsc{HPSv2}) on two prompt sets, at matched
+training budget (100 optimizer updates) and matched hardware (H200, 4 GPUs, seed 20260830).
+Higher is better. $\Delta$ is the per-image paired difference in units of MDE$=0.0033$;
+win\% is the fraction of images improved. All 24 cells favour ours.}
+\label{tab:main}
+\begin{tabular}{llcccccc}
+\toprule
+& & \multicolumn{6}{c}{\textbf{NFE (sampling steps)}} \\
+\cmidrule(lr){3-8}
+\textbf{Prompt set} & \textbf{Model} & \textbf{2} & \textbf{4} & \textbf{6} & \textbf{10} & \textbf{20} & \textbf{40} \\
+\midrule
+\multirow{4}{*}{DrawBench}
+ & SD3.5-M + OPSD (canonical)      & 1.1001 & 1.5732 & 1.6208 & 1.6356 & 1.6375 & 1.6353 \\
+ & \textbf{+ ours}                 & \textbf{1.1507} & \textbf{1.6085} & \textbf{1.6441} & \textbf{1.6547} & \textbf{1.6556} & \textbf{1.6538} \\
+ & \quad $\Delta$ ($\times$MDE)    & $+15.33$ & $+10.70$ & $+7.08$ & $+5.79$ & $+5.51$ & $+5.62$ \\
+ & \quad win\%                     & 80.2 & \textbf{82.7} & 73.0 & 69.7 & 70.2 & 70.9 \\
+\midrule
+\multirow{4}{*}{Unseen-1k}
+ & SD3.5-M + OPSD (canonical)      & 1.0719 & 1.6040 & 1.6485 & 1.6611 & 1.6627 & 1.6611 \\
+ & \textbf{+ ours}                 & \textbf{1.1261} & \textbf{1.6311} & \textbf{1.6638} & \textbf{1.6737} & \textbf{1.6739} & \textbf{1.6722} \\
+ & \quad $\Delta$ ($\times$MDE)    & $+16.44$ & $+8.20$ & $+4.63$ & $+3.81$ & $+3.39$ & $+3.34$ \\
+ & \quad win\%                     & \textbf{84.6} & 80.1 & 71.4 & 65.7 & 65.4 & 64.4 \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+% Table 2 — 等质量 NFE
+\begin{table}[t]
+\centering
+\caption{\textbf{Iso-quality sampling budget.} NFE required to match the canonical model's
+40-step quality, obtained by linear interpolation in $\log$-NFE over the six measured budgets.}
+\label{tab:iso}
+\begin{tabular}{lccc}
+\toprule
+\textbf{Prompt set} & \textbf{canonical} & \textbf{ours} & \textbf{further reduction} \\
+\midrule
+DrawBench & 9.89 \; ($4.05\times$) & \textbf{5.42} \; ($\mathbf{7.37\times}$) & $\mathbf{1.82\times}$ \\
+Unseen-1k & 10.34 \; ($3.87\times$) & \textbf{5.81} \; ($\mathbf{6.89\times}$) & $\mathbf{1.78\times}$ \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+% Table 3 — 训练开销(§4.643 实测,sacct wall-clock / epoch)
+\begin{table}[t]
+\centering
+\caption{\textbf{Training cost.} Wall-clock per optimizer epoch, measured on identical
+hardware and world size over the full 100-update run. Our method adds no reward
+evaluations and no VAE decodes; each extra noise state costs two transformer forwards
+and one backward.}
+\label{tab:cost}
+\begin{tabular}{llcc}
+\toprule
+\textbf{Hardware} & \textbf{Model} & \textbf{min\,/\,epoch} & \textbf{relative} \\
+\midrule
+\multirow{2}{*}{H200 $\times$4}
+ & OPSD (canonical)                        & 2.81 & $1.00\times$ \\
+ & \textbf{+ ours} (2 extra states)        & 3.38 & $\mathbf{1.20\times}$ \\
+\midrule
+\multirow{2}{*}{A100 $\times$3}
+ & OPSD (canonical)                        & 6.98 & $1.00\times$ \\
+ & + variant (3 extra states)              & 8.80 & $1.26\times$ \\
+\bottomrule
+\end{tabular}
+\end{table}

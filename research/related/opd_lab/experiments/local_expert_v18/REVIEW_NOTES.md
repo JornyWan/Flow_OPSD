@@ -1,0 +1,11 @@
+# Phase18 visual review record
+
+Implementing assistant inspected all50 native-resolution four-view sheets (each source view512px) before joining the model/path key or scientific scores. Additional individual512px inspections:01B,01D,02C,04C,06C,10A,10C,19A,19B,19D,39A,39C. Observations froze in runs/le18_review_completed/observations_frozen.json before summarize read identities. These are provisional assistant labels, not independent human annotation; prompts and historical examples were familiar.
+
+Raw proposals and effective observations are both retained. The recorder first seeds known labels from inherited.json, then inherits previous labels for identical image hashes. The full label checker verified200 slots, all constraints, six inherited slots and repeated images before freezing. All185 generated outputs remain represented.
+
+Text decisions follow the existing rubric, including tiny extra words/characters, punctuation, missing/repeated glyphs and uncertainty. Uniform letter tracking is read as typography of a word; a pronounced unequal internal gap is transcribed explicitly (e.g. FRE SH, M INT). Illegible glyphs or uncertain extra lettering remain null. No new OCR threshold or relaxed normalization was selected after unblinding. Object identity/count ambiguity also stays null; cropped or substantially occluded required objects fail visibility independently of encoded count/color/relation.
+
+One input-format failure occurred while entering cases16–20: case16 was recorded, then flag-length validation failed at17D. Three partial raw proposal rows for17A–C were preserved in incomplete_annotation_call.jsonl and the entire17–20 batch was re-entered. The recorder was changed to validate flag lengths for an entire incoming batch before writing. No model key or scores had been read, no images or effective observations were discarded, and the partial call remains in the archive.
+
+No observation was changed after freeze. Comparison unknown includes uncertainty in either baseline or candidate; candidate has_unknown counts only that candidate. Known harm can coexist with another unknown field. Unknown does not count as complete or safe. Unknown-to-complete is descriptive, not a certified safe repair.

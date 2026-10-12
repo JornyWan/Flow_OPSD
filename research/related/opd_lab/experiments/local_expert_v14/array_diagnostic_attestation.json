@@ -1,0 +1,13 @@
+{
+  "time_utc": "2026-09-14T04:53:59.216423+00:00",
+  "origin": "First34 pair responses had Expected object; first two raw arrays inspected. Main protocol and worker unchanged.",
+  "initial_pair_prefix_lines": 34,
+  "initial_pair_prefix_sha256": "190796db04862009f11914c729e59ff100babb17cb188ca4a145378c31697d7a",
+  "original_plan_sha256": "e512d334e4d542b4481501c4cd7976a21ccca0de8882c92dc6e633b11f3a3c1f",
+  "files_sha256": {
+    "python/opdlab/paired_array_diagnostic.py": "e3bb1e90158077483a25cc2df2615787d32d53cf0d822590cb129ea534c324fc",
+    "experiments/local_expert_v14/ARRAY_DIAGNOSTIC.md": "2d1437f775bd83fea7e01f8c87b76663daa80e4a032bbc6071ff7e6f4e72364e",
+    "tests/test_paired_array_diagnostic.py": "934f2748769cf93f26cae702acd04ea31d80c78a8eebd69bd7391ebde543a706"
+  },
+  "additional_gpu_calls": 0
+}

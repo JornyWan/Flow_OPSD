@@ -1,0 +1,166 @@
+[
+  {
+    "case": 1,
+    "clauses": {
+      "text": false,
+      "count": true,
+      "color": true
+    },
+    "full_visibility": false,
+    "visible_text": "CL [malformed extra curved glyphs] UD",
+    "notes": "One yellow vase cropped at bottom; middle letters are corrupted and include extra marks, not clean CLOUD. No distinct white sign."
+  },
+  {
+    "case": 2,
+    "clauses": {
+      "text": true,
+      "color": true
+    },
+    "full_visibility": true,
+    "visible_text": "GLOW",
+    "notes": "One complete green bowl and readable black word on a white sign."
+  },
+  {
+    "case": 3,
+    "clauses": {
+      "text": true,
+      "color": true
+    },
+    "full_visibility": true,
+    "visible_text": "DAWN",
+    "notes": "One blue apple, completely visible. Spaced black wall letters; no distinct sign border."
+  },
+  {
+    "case": 4,
+    "clauses": {
+      "text": true,
+      "count": true
+    },
+    "full_visibility": false,
+    "visible_text": "PINE",
+    "notes": "One bottle cut off at bottom. Readable black word above; no distinct sign boundary."
+  },
+  {
+    "case": 5,
+    "clauses": {
+      "text": true,
+      "color": true
+    },
+    "full_visibility": false,
+    "visible_text": "Luna",
+    "notes": "One green chair cropped through seat/legs; stylized but readable Luna on white sign."
+  },
+  {
+    "case": 6,
+    "clauses": {
+      "text": false,
+      "count": null
+    },
+    "full_visibility": false,
+    "visible_text": "DAVN",
+    "notes": "One visible apple; an extra stem behind the sign may belong to a second apple, but hidden identity/count cannot be established. Sign is beside/occluding objects, not above. V replaces W."
+  },
+  {
+    "case": 7,
+    "clauses": {
+      "text": false,
+      "relation": false
+    },
+    "full_visibility": false,
+    "visible_text": "PI",
+    "notes": "One apple and no visible bowl. N/E missing. No white sign; background is peach."
+  },
+  {
+    "case": 8,
+    "clauses": {
+      "text": true,
+      "count": true,
+      "color": true
+    },
+    "full_visibility": false,
+    "visible_text": "NORTH",
+    "notes": "Two blue bottles heavily cropped at bottom. Stylized NORTH remains identifiable though the left of N is clipped."
+  },
+  {
+    "case": 9,
+    "clauses": {
+      "text": true,
+      "relation": false
+    },
+    "full_visibility": false,
+    "visible_text": "SUNNY",
+    "notes": "A merged bicycle/car-like vehicle rather than one bicycle clearly right of a separate car. Lower mechanical parts meet/cross bottom frame. No separate white sign."
+  },
+  {
+    "case": 10,
+    "clauses": {
+      "text": false,
+      "color": true
+    },
+    "full_visibility": false,
+    "visible_text": "MNT",
+    "notes": "I missing; M is also split into thin strokes. One red cup cropped at bottom. Lettering largely gray/metallic, not bold black."
+  },
+  {
+    "case": 11,
+    "clauses": {
+      "text": false,
+      "relation": false
+    },
+    "full_visibility": false,
+    "visible_text": "P E C (upper row); p e c h (lower row)",
+    "notes": "Missing letters and extra second row. Bicycle is right of car, not left; car cropped at left."
+  },
+  {
+    "case": 12,
+    "clauses": {
+      "text": true,
+      "count": true,
+      "color": true
+    },
+    "full_visibility": false,
+    "visible_text": "SODA",
+    "notes": "Three yellow vases cut by bottom frame; middle vase is narrower with short neck. S is very pale, O/D partly pale, and sign meets upper frame; readable word but not bold black lettering."
+  },
+  {
+    "case": 13,
+    "clauses": {
+      "text": true,
+      "count": true
+    },
+    "full_visibility": true,
+    "visible_text": "SODA",
+    "notes": "Three separate complete vases and spaced readable word on a white sign above."
+  },
+  {
+    "case": 14,
+    "clauses": {
+      "text": null,
+      "count": true,
+      "color": true
+    },
+    "full_visibility": true,
+    "visible_text": "MINT; faint indeterminate marks at lower right of card",
+    "notes": "One complete red cup on a red saucer. Correct main word, but tiny pale marks on the card cannot be identified as text or artifact. Sign/card is below cup, not above."
+  },
+  {
+    "case": 15,
+    "clauses": {
+      "text": false,
+      "count": null
+    },
+    "full_visibility": false,
+    "visible_text": "FR[malformed extra R-like glyph]ESH",
+    "notes": "Extra malformed glyph between R and E. One circular opening behind sign may be a cup; two identifiable fully visible cups are not established. Structures merge with the sign."
+  },
+  {
+    "case": 16,
+    "clauses": {
+      "text": false,
+      "relation": false
+    },
+    "full_visibility": false,
+    "visible_text": "GLOW; multiple small lines on bottle label",
+    "notes": "Bottle present but cup absent. Extra bottle-label writing; G/W have distorted strokes. No pair of required objects."
+  }
+]

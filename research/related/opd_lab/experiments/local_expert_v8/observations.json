@@ -1,0 +1,162 @@
+[
+  {
+    "case": 1,
+    "clauses": {
+      "count": true,
+      "text": null
+    },
+    "full_visibility": true,
+    "notes": "Two complete bananas and readable SUNNY, with an extra raised black mark after Y. Unclear whether punctuation or decoration; strict only-word success is not established.",
+    "visible_text": "SUNNY + raised square/apostrophe-like mark"
+  },
+  {
+    "case": 2,
+    "clauses": {
+      "count": true,
+      "text": null
+    },
+    "full_visibility": true,
+    "notes": "Two complete bananas. First expected N is split/narrow with a faint diagonal-like shadow; exact glyph is uncertain rather than automatically corrected.",
+    "visible_text": "SU[ambiguous N]NY"
+  },
+  {
+    "case": 3,
+    "clauses": {
+      "relation": true,
+      "text": false
+    },
+    "full_visibility": false,
+    "notes": "Bicycle right of one car. Main sign is correct, but additional plate lettering is visible. Front of car cropped at left.",
+    "visible_text": "WAVE; plate lettering"
+  },
+  {
+    "case": 4,
+    "clauses": {
+      "count": true,
+      "text": true
+    },
+    "full_visibility": true,
+    "notes": "One complete white bowl; readable correct word on sign above.",
+    "visible_text": "BLOOM"
+  },
+  {
+    "case": 5,
+    "clauses": {
+      "relation": true,
+      "text": true
+    },
+    "full_visibility": true,
+    "notes": "One cup clearly right of one bottle, separated and complete. Word is blurry but identifiable.",
+    "visible_text": "BLOOM"
+  },
+  {
+    "case": 6,
+    "clauses": {
+      "relation": false,
+      "text": true
+    },
+    "full_visibility": true,
+    "notes": "Apple is mainly below bowl, within its horizontal extent, not clearly to its right. Word is printed on bowl instead of on a sign above; encoded text is correct.",
+    "visible_text": "CLOUD"
+  },
+  {
+    "case": 7,
+    "clauses": {
+      "relation": true,
+      "text": true
+    },
+    "full_visibility": false,
+    "notes": "One apple right of bowl; word correct. Bowl bottom is cropped at image boundary.",
+    "visible_text": "CLOUD"
+  },
+  {
+    "case": 8,
+    "clauses": {
+      "relation": true,
+      "text": true
+    },
+    "full_visibility": false,
+    "notes": "One apple right of bowl; word correct. Lower bowl and lower apple meet/cross image boundary.",
+    "visible_text": "CLOUD"
+  },
+  {
+    "case": 9,
+    "clauses": {
+      "relation": true,
+      "text": true
+    },
+    "full_visibility": true,
+    "notes": "One complete apple clearly right of one complete bowl, with correct word above.",
+    "visible_text": "CLOUD"
+  },
+  {
+    "case": 10,
+    "clauses": {
+      "count": true,
+      "text": true
+    },
+    "full_visibility": true,
+    "notes": "One complete bowl and correctly spelled serif word.",
+    "visible_text": "BLOOM"
+  },
+  {
+    "case": 11,
+    "clauses": {
+      "count": true,
+      "text": true
+    },
+    "full_visibility": true,
+    "notes": "One complete bowl and readable correctly spelled word on sign.",
+    "visible_text": "BLOOM"
+  },
+  {
+    "case": 12,
+    "clauses": {
+      "relation": true,
+      "text": false
+    },
+    "full_visibility": false,
+    "notes": "Bicycle right of car, readable WAVE, and clear additional alphanumeric plate lettering. Car front is clipped at left.",
+    "visible_text": "WAVE; license plate characters"
+  },
+  {
+    "case": 13,
+    "clauses": {
+      "count": true,
+      "text": true
+    },
+    "full_visibility": true,
+    "notes": "One complete white bowl, correctly spelled serif word on sign.",
+    "visible_text": "BLOOM"
+  },
+  {
+    "case": 14,
+    "clauses": {
+      "relation": true,
+      "text": true
+    },
+    "full_visibility": false,
+    "notes": "Cup right of bottle and readable blurred word. Cup occludes the lower right part of the bottle.",
+    "visible_text": "BLOOM"
+  },
+  {
+    "case": 15,
+    "clauses": {
+      "count": true,
+      "text": false
+    },
+    "full_visibility": true,
+    "notes": "Two complete bananas. First N is rendered as disconnected vertical strokes with no identifiable diagonal; word is not clearly SUNNY.",
+    "visible_text": "SU I I N Y"
+  },
+  {
+    "case": 16,
+    "clauses": {
+      "count": true,
+      "text": null
+    },
+    "full_visibility": true,
+    "notes": "Two complete bananas. First N contains a narrow split shape and faint diagonal-like shading; exact letter is uncertain.",
+    "visible_text": "SU[ambiguous N]NY"
+  }
+]

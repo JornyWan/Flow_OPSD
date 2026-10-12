@@ -1,0 +1,546 @@
+import importlib.util
+import os
+
+import ml_collections
+
+def load_source(name, path):
+    spec = importlib.util.spec_from_file_location(name, path)
+    module = importlib.util.module_from_spec(spec)
+    spec.loader.exec_module(module)
+    return module
+
+base = load_source("base", os.path.join(os.path.dirname(__file__), "base.py"))
+
+# --- reproduction path overrides (env-var with local defaults) ---
+# Same layout on the dev node and the training pod: /mnt/localssd/opd/models/...
+# Override any of these with env vars at launch time if the layout differs.
+_MODELS = os.environ.get("OPD_MODELS_DIR", "/mnt/localssd/opd/models")
+SD35_PATH = os.environ.get("SD35_PATH", os.path.join(_MODELS, "stable-diffusion-3.5-medium"))
+AES_TEACHER_PATH = os.environ.get("AES_TEACHER_PATH", os.path.join(_MODELS, "DiffusionOPD/AesTeacher/lora"))
+OCR_TEACHER_PATH = os.environ.get("OCR_TEACHER_PATH", os.path.join(_MODELS, "DiffusionOPD/OCRTeacher/lora"))
+GENEVAL_TEACHER_PATH = os.environ.get("GENEVAL_TEACHER_PATH", os.path.join(_MODELS, "DiffusionOPD/GenEvalTeacher/lora"))
+
+def compressibility():
+    config = base.get_config()
+
+    config.pretrained.model = SD35_PATH
+    config.dataset = os.path.join(os.getcwd(), "dataset/pickscore")
+
+    config.use_lora = True
+
+    config.sample.batch_size = 8
+    config.sample.num_batches_per_epoch = 4
+
+    config.train.batch_size = 4
+    config.train.gradient_accumulation_steps = 2
+
+    config.prompt_fn = "general_ocr"
+
+    config.reward_fn = {"jpeg_compressibility": 1}
+    config.per_prompt_stat_tracking = True
+    return config
+
+def mopd():
+    config = compressibility()
+    config.dataset = os.path.join(os.getcwd(), "dataset/pickscore")
+
+    config.pretrained.model = SD35_PATH
+    config.sample.num_steps = 10
+    config.sample.eval_num_steps = 40
+    config.sample.guidance_scale = 4.5
+    config.sample.teacher_guidance_scale = 4.5
+
+    config.resolution = 512
+    config.run_project = "flow_grpo"
+
+    config.sample.train_batch_size = 3
+    config.sample.num_image_per_prompt = 1
+    config.sample.num_batches_per_epoch = 3
+    assert config.sample.num_batches_per_epoch % 3 == 0, (
+        "Please set config.sample.num_batches_per_epoch to a multiple of "
+        "len(config.train.teachers) (=3 here)."
+    )
+    config.sample.test_batch_size = 16
+
+    config.train.batch_size = config.sample.train_batch_size
+    config.train.gradient_accumulation_steps = config.sample.num_batches_per_epoch
+    config.train.num_inner_epochs = 1
+    config.train.timestep_fraction = 0.99
+
+    config.sample.global_std = False
+    config.sample.same_latent = False
+    config.train.ema = True
+    config.mixed_precision = "fp16"
+
+    config.sample.noise_level = 0.0
+
+    config.save_freq = 30
+    config.eval_freq = 30
+
+    config.reward_fn = ml_collections.ConfigDict()
+    config.proxy_reward_fn = {}
+    config.prompt_fn = "general_ocr"
+
+    pickscore_lora = AES_TEACHER_PATH
+    pickscore_teacher_gs = 4.5
+    ocr_lora = OCR_TEACHER_PATH
+    ocr_teacher_gs = 4.5
+    geneval_lora = GENEVAL_TEACHER_PATH
+    geneval_teacher_gs = 1.0
+    config.train.teachers = [
+        {
+            "name": "pickscore",
+            "dataset": os.path.join(os.getcwd(), "dataset/pickscore"),
+            "lora_path": pickscore_lora,
+            "proxy_reward": {"pickscore": 1.0},
+            "prompt_fn": "general_ocr",
+            "guidance_scale": pickscore_teacher_gs,
+        },
+        {
+            "name": "ocr",
+            "dataset": os.path.join(os.getcwd(), "dataset/ocr"),
+            "lora_path": ocr_lora,
+            "proxy_reward": {"ocr": 1.0},
+            "prompt_fn": "general_ocr",
+            "guidance_scale": ocr_teacher_gs,
+        },
+        {
+            "name": "geneval",
+            "dataset": os.path.join(os.getcwd(), "dataset/geneval"),
+            "lora_path": geneval_lora,
+            "proxy_reward": {"geneval": 1.0},
+            "prompt_fn": "geneval",
+            "guidance_scale": geneval_teacher_gs,
+        },
+    ]
+    config.train.beta = 0.0
+
+    config.run_name = "[MOPD + SD3.5-M + PickScore+OCR+GenEval]"
+    config.save_dir = f"logs/{config.run_name}"
+    config.save_eval_dir = f"log_save_images/{config.run_name}"
+
+    return config
+
+
+def mopd_caopd():
+    """CA-OPD: conflict-averse / Pareto multi-teacher OPD.
+
+    Identical to mopd() except the uniform per-task loss average is replaced by an
+    adaptive Chebyshev (min-max) reweighting over teachers. Linear scalarization
+    (uniform mean) drives the student to the per-step teacher-MEAN velocity, which
+    only reaches the convex hull of the per-task Pareto front and is Pareto-dominated
+    when teacher objectives conflict. The min-max reweighting up-weights the
+    currently worst-matched teacher, provably reaching the full (incl. non-convex)
+    Pareto set. Enabled via config.train.ca_opd; tau->inf recovers mopd exactly."""
+    config = mopd()
+    config.train.ca_opd = True
+    config.train.ca_opd_tau = 0.5   # Chebyshev temperature: ->0 pure min-max (worst teacher); large -> uniform (=mopd)
+    config.train.ca_opd_ema = 0.9   # EMA over per-teacher KL for a stable difficulty estimate
+    config.run_name = "[MOPD-CAOPD + SD3.5-M + PickScore+OCR+GenEval]"
+    config.save_dir = f"logs/{config.run_name}"
+    config.save_eval_dir = f"log_save_images/{config.run_name}"
+    return config
+
+
+def _caopd_tau(tau, tag):
+    """Original absolute-min-max CA-OPD at a given temperature tau (tau-sweep to test whether the
+    non-SOTA result was just under-tuned; tau->inf recovers uniform mopd, tau->0 pure min-max)."""
+    config = mopd_caopd()
+    config.train.ca_opd_tau = tau
+    config.num_epochs = 1000
+    config.run_name = f"[MOPD-CAOPD-TAU{tag} + SD3.5-M + PickScore+OCR+GenEval]"
+    config.save_dir = f"logs/{config.run_name}"
+    config.save_eval_dir = f"log_save_images/{config.run_name}"
+    return config
+
+
+def mopd_caopd_tau02():
+    return _caopd_tau(0.2, "0.2")
+
+
+def mopd_caopd_tau10():
+    return _caopd_tau(1.0, "1.0")
+
+
+def mopd_caopd_tau20():
+    return _caopd_tau(2.0, "2.0")
+
+
+def _poe(lam, tag):
+    """Product-of-Experts OPD: distill to v_base + lam*(v_teacher - v_base) per round-robin teacher, so the
+    student converges to v_base + lam*mean(residual). lam=1 == uniform mopd (average-reward optimum);
+    lam=M(=3) == sum-of-residuals == product-of-experts p* ~ p_ref*exp(sum_m R_m/beta), the true JOINT
+    multi-reward optimum that uniform OPD under-applies by a factor M. Sweeps the average->joint frontier."""
+    config = mopd()
+    config.train.poe = True
+    config.train.poe_lambda = lam
+    config.num_epochs = 1000
+    config.run_name = f"[MOPD-POE-L{tag} + SD3.5-M + PickScore+OCR+GenEval]"
+    config.save_dir = f"logs/{config.run_name}"
+    config.save_eval_dir = f"log_save_images/{config.run_name}"
+    return config
+
+
+def mopd_poe_l15():
+    return _poe(1.5, "1.5")
+
+
+def mopd_poe_l20():
+    return _poe(2.0, "2.0")
+
+
+def mopd_poe_l30():
+    return _poe(3.0, "3.0")
+
+
+def mopd_poe_l125():
+    return _poe(1.25, "1.25")
+
+
+def mopd_poe_protect():
+    """Weighted-POE: amplify the ROBUST model-based rewards (PickScore, OCR: lambda=2) while keeping the
+    BRITTLE rule-based GenEval at lambda=1 (protect composition). Targets the weighted product-of-experts
+    p* ~ p_ref*exp((2 R_pick + 2 R_ocr + R_geneval)/beta). Teacher order = [pickscore, ocr, geneval]."""
+    config = mopd()
+    config.train.poe = True
+    config.train.poe_lambda = [2.0, 2.0, 1.0]
+    config.num_epochs = 1000
+    config.run_name = "[MOPD-POE-PROTECT + SD3.5-M + PickScore+OCR+GenEval]"
+    config.save_dir = f"logs/{config.run_name}"
+    config.save_eval_dir = f"log_save_images/{config.run_name}"
+    return config
+
+
+def mopd_poe_protect2():
+    """Weighted-POE, gentler on PickScore/Clip: PickScore lambda=1.5, OCR lambda=2, GenEval lambda=1.
+    Aims to keep the Aes/HPS/OCR gains while limiting the PickScore/Clip dip and protecting GenEval."""
+    config = mopd()
+    config.train.poe = True
+    config.train.poe_lambda = [1.5, 2.0, 1.0]
+    config.num_epochs = 1000
+    config.run_name = "[MOPD-POE-PROTECT2 + SD3.5-M + PickScore+OCR+GenEval]"
+    config.save_dir = f"logs/{config.run_name}"
+    config.save_eval_dir = f"log_save_images/{config.run_name}"
+    return config
+
+
+def mopd_caopd_regret():
+    """CA-OPD with REGRET weighting r_m = ema_m - floor_m (reducible gap), floor = running-min KL.
+    Absolute min-max chases intrinsically-hard-but-irreducible teachers (the diagnosed cause of the
+    ceiling loss in plain CA-OPD); regret weights only the gap the student can still close, so it
+    should reach a joint point that dominates uniform mopd rather than trading ceiling for speed."""
+    config = mopd_caopd()
+    config.train.ca_opd_regret = True
+    config.num_epochs = 1000
+    config.run_name = "[MOPD-CAOPD-REGRET + SD3.5-M + PickScore+OCR+GenEval]"
+    config.save_dir = f"logs/{config.run_name}"
+    config.save_eval_dir = f"log_save_images/{config.run_name}"
+    return config
+
+
+def mopd_caopd_conflict():
+    """Regret-weighted CA-OPD on a HIGHER-CONFLICT teacher set: the OCR teacher is distilled on the
+    SAME (pickscore) prompt pool as the PickScore/aesthetic teacher, so the two objectives directly
+    oppose on identical prompts (text-rendering vs. preference/aesthetics). This is the regime where
+    min-max should yield a genuine Pareto improvement, not just faster convergence."""
+    config = mopd_caopd_regret()
+    # Share the OCR (quoted-text) prompt pool: PickScore teacher -> dataset/ocr. Both the PickScore
+    # (any prompt) and OCR (needs `"..."`) rewards parse it, so aesthetics vs text-rendering genuinely
+    # conflict on the SAME text-heavy prompts. (Sharing the pickscore pool instead breaks the OCR reward.)
+    config.train.teachers[0]["dataset"] = os.path.join(os.getcwd(), "dataset/ocr")
+    config.run_name = "[MOPD-CAOPD-CONFLICT + SD3.5-M + PickScore(on-OCR)+OCR+GenEval]"
+    config.save_dir = f"logs/{config.run_name}"
+    config.save_eval_dir = f"log_save_images/{config.run_name}"
+    return config
+
+
+def mopd_conflict():
+    """Uniform (mopd) baseline on the SAME higher-conflict teacher set as mopd_caopd_conflict, so the
+    conflict variant has a matched apples-to-apples uniform reference for per-axis comparison."""
+    config = mopd()
+    config.train.teachers[0]["dataset"] = os.path.join(os.getcwd(), "dataset/ocr")  # PickScore teacher -> OCR (quoted-text) prompts
+    config.num_epochs = 1000
+    config.run_name = "[MOPD-CONFLICT + SD3.5-M + PickScore(on-OCR)+OCR+GenEval]"
+    config.save_dir = f"logs/{config.run_name}"
+    config.save_eval_dir = f"log_save_images/{config.run_name}"
+    return config
+
+
+def mopd_robust():
+    """Idea: robust / trust-region OPD. Huber on the per-step velocity residual so pathological
+    RL-teacher targets (reward-hacking) don't dominate the match; a PPO-clip analog in velocity space."""
+    config = mopd()
+    config.train.opd_huber = True
+    config.train.huber_delta = 1.0
+    config.num_epochs = 780
+    config.run_name = "[MOPD-ROBUST + SD3.5-M + PickScore+OCR+GenEval]"
+    config.save_dir = f"logs/{config.run_name}"
+    config.save_eval_dir = f"log_save_images/{config.run_name}"
+    return config
+
+
+def mopd_snr():
+    """Idea: Min-SNR-gamma per-step weighting. The ODE-L2 default weights denoising steps by a
+    discretization artifact; reweight by min(SNR, gamma) to balance the learning signal across noise levels."""
+    config = mopd()
+    config.train.snr_weight = True
+    config.train.snr_gamma = 5.0
+    config.num_epochs = 780
+    config.run_name = "[MOPD-SNR + SD3.5-M + PickScore+OCR+GenEval]"
+    config.save_dir = f"logs/{config.run_name}"
+    config.save_eval_dir = f"log_save_images/{config.run_name}"
+    return config
+
+
+def mopd_anneal():
+    """Idea: SDE->ODE noise annealing. Start with SDE stochasticity (noise_level=0.7) for exploration,
+    anneal to the deterministic ODE regime (0.0) for sharp convergence; extends the paper's noise-level ablation."""
+    config = mopd()
+    config.train.anneal_noise = True
+    config.train.noise_start = 0.7
+    config.train.noise_end = 0.0
+    config.train.anneal_epochs = 400
+    config.sample.noise_level = 0.7  # start in the SDE regime
+    config.num_epochs = 780
+    config.run_name = "[MOPD-ANNEAL + SD3.5-M + PickScore+OCR+GenEval]"
+    config.save_dir = f"logs/{config.run_name}"
+    config.save_eval_dir = f"log_save_images/{config.run_name}"
+    return config
+
+
+def sopd_base():
+    """Shared single-teacher OPD defaults for SD3.5-M.
+
+    Mirrors `mopd()` but without the multi-teacher-specific assertion;
+    each `sopd_*` wrapper only needs to set the dataset, prompt_fn,
+    a single `config.train.teachers` entry, and the run/save name.
+    """
+    config = compressibility()
+
+    config.pretrained.model = SD35_PATH
+    config.sample.num_steps = 10
+    config.sample.eval_num_steps = 40
+    config.sample.guidance_scale = 4.5
+    config.sample.teacher_guidance_scale = 4.5
+
+    config.resolution = 512
+    config.run_project = "flow_grpo"
+
+    config.sample.train_batch_size = 3
+    config.sample.num_image_per_prompt = 1
+    config.sample.num_batches_per_epoch = 3
+    config.sample.test_batch_size = 16
+
+    config.train.batch_size = config.sample.train_batch_size
+    config.train.gradient_accumulation_steps = config.sample.num_batches_per_epoch
+    config.train.num_inner_epochs = 1
+    config.train.timestep_fraction = 0.99
+
+    config.sample.global_std = False
+    config.sample.same_latent = False
+    config.train.ema = True
+    config.mixed_precision = "fp16"
+
+    config.sample.noise_level = 0.0
+
+    config.save_freq = 30
+    config.eval_freq = 30
+
+    config.reward_fn = ml_collections.ConfigDict()
+    config.proxy_reward_fn = {}
+    config.train.beta = 0.0
+
+    return config
+
+
+def sopd_pickscore():
+    config = sopd_base()
+
+    pickscore_lora = AES_TEACHER_PATH
+    pickscore_teacher_gs = 4.5
+
+    config.dataset = os.path.join(os.getcwd(), "dataset/pickscore")
+    config.prompt_fn = "general_ocr"
+    config.train.teachers = [
+        {
+            "name": "pickscore",
+            "dataset": os.path.join(os.getcwd(), "dataset/pickscore"),
+            "lora_path": pickscore_lora,
+            "proxy_reward": {"pickscore": 1.0},
+            "prompt_fn": "general_ocr",
+            "guidance_scale": pickscore_teacher_gs,
+        },
+    ]
+
+    config.run_name = "[SOPD + SD3.5-M + PickScore]"
+    config.save_dir = f"logs/{config.run_name}"
+    config.save_eval_dir = f"log_save_images/{config.run_name}"
+
+    return config
+
+
+def sopd_vteacher_pick():
+    """MVP-1: VALUE-GRADIENT VIRTUAL TEACHER (no RL expert).
+
+    Tests the mentor's hypothesis that Flow-OPD's pre-trained RL experts are unnecessary: their only
+    role is to turn a sparse terminal reward into a dense per-step velocity. Here we get that dense
+    velocity DIRECTLY from the FROZEN PickScore reward model's gradient -- v_target = v_base -
+    (alpha/sigma_t) * grad_{xhat0} R(decode(xhat0)) -- the terminal limit of the value gradient
+    (VGG-Flow / Doob h-transform). No AesTeacher LoRA signal is used. Head-to-head vs sopd_pickscore.
+
+    The reward-gradient target is computed only on the last `vteacher_nsteps` (least-noisy) trajectory
+    steps to bound the decode+CLIP backward memory; other steps carry no loss (target = student's own
+    detached mean)."""
+    config = sopd_pickscore()
+    config.train.vteacher = True
+    config.train.vteacher_reward = "pickscore"
+    config.train.vteacher_alpha = 0.5     # fraction of |v_base| to move along the reward-improvement direction
+    config.train.vteacher_nsteps = 4      # trajectory steps/batch with the decode+reward backward (memory bound)
+    config.num_epochs = 1000
+    config.run_name = "[SOPD-VTEACHER-PICK + SD3.5-M + PickScore(reward-grad, no expert)]"
+    config.save_dir = f"logs/{config.run_name}"
+    config.save_eval_dir = f"log_save_images/{config.run_name}"
+    return config
+
+
+def sopd_vvalue_pick():
+    """MVP-2: LEARNED-VALUE-GRADIENT virtual teacher. A conv critic V_psi(x_t,t,c) is trained by regression
+    to the scalar PickScore (Monte-Carlo return); the target becomes v_base + alpha*grad_x V -- a smooth,
+    non-myopic improvement direction that fixes MVP-1's myopic/CLIP-adversarial reward gradient. No RL
+    expert; head-to-head vs sopd_pickscore. Uses only the scalar reward, so it extends to non-diff rewards."""
+    config = sopd_vteacher_pick()
+    config.train.vteacher_mode = "value"
+    config.train.vteacher_alpha = 0.5
+    config.train.vteacher_sign = 1.0
+    config.train.value_lr = 1e-4
+    config.train.value_steps = 16
+    config.train.value_bs = 64
+    config.run_name = "[SOPD-VVALUE-PICK + SD3.5-M + PickScore(value-grad, no expert)]"
+    config.save_dir = f"logs/{config.run_name}"
+    config.save_eval_dir = f"log_save_images/{config.run_name}"
+    return config
+
+
+def sopd_ocr():
+    config = sopd_base()
+
+    ocr_lora = OCR_TEACHER_PATH
+    ocr_teacher_gs = 4.5
+
+    config.dataset = os.path.join(os.getcwd(), "dataset/ocr")
+    config.prompt_fn = "general_ocr"
+    config.train.teachers = [
+        {
+            "name": "ocr",
+            "dataset": os.path.join(os.getcwd(), "dataset/ocr"),
+            "lora_path": ocr_lora,
+            "proxy_reward": {"ocr": 1.0},
+            "prompt_fn": "general_ocr",
+            "guidance_scale": ocr_teacher_gs,
+        },
+    ]
+
+    config.run_name = "[SOPD + SD3.5-M + OCR]"
+    config.save_dir = f"logs/{config.run_name}"
+    config.save_eval_dir = f"log_save_images/{config.run_name}"
+
+    return config
+
+
+def sopd_geneval():
+    config = sopd_base()
+
+    geneval_lora = GENEVAL_TEACHER_PATH
+    geneval_teacher_gs = 1.0
+
+    config.dataset = os.path.join(os.getcwd(), "dataset/geneval")
+    config.prompt_fn = "geneval"
+    config.train.teachers = [
+        {
+            "name": "geneval",
+            "dataset": os.path.join(os.getcwd(), "dataset/geneval"),
+            "lora_path": geneval_lora,
+            "proxy_reward": {"geneval": 1.0},
+            "prompt_fn": "geneval",
+            "guidance_scale": geneval_teacher_gs,
+        },
+    ]
+
+    config.run_name = "[SOPD + SD3.5-M + GenEval]"
+    config.save_dir = f"logs/{config.run_name}"
+    config.save_eval_dir = f"log_save_images/{config.run_name}"
+
+    return config
+
+
+def mopd_cagrad():
+    """CAGrad multi-teacher OPD: resolve inter-teacher conflict via an output-space min-norm (MGDA) weighted
+    combination of all M teacher targets, blended toward uniform by cagrad_c. Targets stay at the REAL teacher
+    velocities (no amplification => structurally cannot reward-hack); aims to reach every teacher peak jointly."""
+    config = mopd()
+    config.train.cagrad = True
+    config.train.cagrad_c = 0.5
+    config.num_epochs = 1000
+    config.run_name = "[MOPD-CAGRAD + SD3.5-M + PickScore+OCR+GenEval]"
+    config.save_dir = f"logs/{config.run_name}"
+    config.save_eval_dir = f"log_save_images/{config.run_name}"
+    return config
+
+
+def mopd_cagrad_c10():
+    config = mopd_cagrad()
+    config.train.cagrad_c = 1.0
+    config.run_name = "[MOPD-CAGRAD-C1.0 + SD3.5-M + PickScore+OCR+GenEval]"
+    config.save_dir = f"logs/{config.run_name}"
+    config.save_eval_dir = f"log_save_images/{config.run_name}"
+    return config
+
+
+def mopd_cagrad_c025():
+    config = mopd_cagrad()
+    config.train.cagrad_c = 0.25
+    config.run_name = "[MOPD-CAGRAD-C0.25 + SD3.5-M + PickScore+OCR+GenEval]"
+    config.save_dir = f"logs/{config.run_name}"
+    config.save_eval_dir = f"log_save_images/{config.run_name}"
+    return config
+
+
+def mopd_cagrad_c075():
+    config = mopd_cagrad()
+    config.train.cagrad_c = 0.75
+    config.run_name = "[MOPD-CAGRAD-C0.75 + SD3.5-M + PickScore+OCR+GenEval]"
+    config.save_dir = f"logs/{config.run_name}"
+    config.save_eval_dir = f"log_save_images/{config.run_name}"
+    return config
+
+
+def mopd_pcgrad():
+    """PCGrad multi-teacher OPD: per-sample remove pairwise-conflicting components of the teacher descent
+    directions, then AVERAGE (bounded like uniform => no reward-hacking). Genuine conflict resolution."""
+    config = mopd_cagrad()
+    config.train.cagrad_mode = "pcgrad"
+    config.run_name = "[MOPD-PCGRAD + SD3.5-M + PickScore+OCR+GenEval]"
+    config.save_dir = f"logs/{config.run_name}"
+    config.save_eval_dir = f"log_save_images/{config.run_name}"
+    return config
+
+
+def sopd_resumetest():
+    """仅用于验证 resume 机制:单 teacher + 微型数据集(train 256 / test 32),
+    save_freq=1 让 checkpoint 立刻落盘。不产出任何研究数据。"""
+    config = sopd_pickscore()
+    tiny = "/midtier/minilab/scratch/chw4026/projects/side_project/generative/opd_related/testdata/pickscore"
+    config.dataset = tiny
+    for tc in config.train.teachers:
+        tc["dataset"] = tiny
+    config.save_freq = 1
+    config.eval_freq = 10 ** 9      # epoch 0 仍会 eval(0%N==0),但测试集只有 32 条 = 1 个 batch
+    config.num_epochs = int(os.environ.get("RESUMETEST_EPOCHS", 2))
+    config.run_name = "[RESUMETEST + SD3.5-M + PickScore]"
+    config.save_dir = f"logs/{config.run_name}"
+    config.save_eval_dir = f"log_save_images/{config.run_name}"
+    return config
+
+
+def get_config(name):
+    return globals()[name]()

@@ -1,0 +1,59 @@
+\section{Why moving the query is a trade and propagating is not}
+\label{sec:analysis}
+
+\paragraph{A measured exchange rate.} Fix a rollout state $z_k$ and its anchor $y_0^{(k)}$.
+Target construction moves $y_0^{(k)}$ a bounded distance and buys some reward. Define the
+\emph{exchange rate} at that state as the realized local-reward gain per unit of relative
+target displacement, $\widetilde R(\bar y_+)-\widetilde R(y_0)$ divided by
+$\|\bar y_+-y_0\|_2/\|y_0\|_2$. Measured on $32$ held-out prompts with the trained
+behavior policy, the reward-gradient construction gives
+\begin{center}
+\begin{tabular}{lcccc}
+\toprule
+$\sigma$ & $0.278$ & $0.465$ & $0.707$ & $0.913$\\
+\midrule
+exchange rate & $\mathbf{0.457}$ & $-0.46$ & $0.033$ & $0.0066$\\
+\bottomrule
+\end{tabular}
+\end{center}
+The query level chosen by \opsd is the only level where a unit of displacement buys a
+substantial \emph{positive} amount: one step higher the construction is actively harmful,
+and two or more steps higher it buys an order of magnitude less. \textbf{Moving the query away from it therefore buys trajectory
+coverage at the price of target quality.} Propagation does not make that exchange: it
+keeps the best construction site and reuses the resulting target elsewhere.
+
+\paragraph{The trade is visible in the training objective itself.} If (A) optimizes a
+worse target, it should reach a lower value of the training objective. It does. Over a
+full $100$-update run, comparing each arm to its own matched canonical baseline at the
+same rollout length,
+\begin{center}
+\begin{tabular}{lcc}
+\toprule
+& peak training reward & vs.\ matched canonical\\
+\midrule
+(A) query $\sigma\!:\,0.278\to0.465$ & $1.5964$ & $\mathbf{-0.0178}$\\
+(C) \MSP & $1.6577$ & $\mathbf{+0.0415}$\\
+\bottomrule
+\end{tabular}
+\end{center}
+Moving the query lowers the height reached on the training objective; propagating raises
+it. (Arms with a shortened rollout are excluded from this comparison because their
+training reward is computed on a different sampling schedule and is not comparable. We use
+this quantity only as a statement about the training objective, and draw no held-out
+conclusion from it.)
+
+\paragraph{Why propagation is not merely a smaller learning rate.} Equation~\eqref{eq:msploss}
+divides the main-state term by $1+|\mathcal K|$, so one might suspect that \MSP simply
+under-weights the original loss. It does not: halving the learning rate is significantly
+\emph{harmful} in this setting ($-8.82$ MDE at $100$ updates), whereas \MSP is positive.
+The extra states must therefore contribute useful gradient, and contribute enough to more
+than offset the down-weighting of the main term.
+
+\paragraph{Why the gain grows as the budget shrinks.} At $40$ steps both models traverse
+every noise level with a small per-step $\Delta\sigma$, and the low-noise portion of the
+trajectory can repair mid-noise errors. As the budget falls, each step spans a larger
+$\Delta\sigma$ and the mid-noise transitions carry proportionally more of the generation;
+this is exactly the region that propagation supervises and that the single-query baseline
+never sees a loss at. Consistent with this, the gain is flat between $40$ and $10$ steps --
+where neither model degrades -- and rises monotonically below $10$
+(Fig.~\ref{fig:curves}).

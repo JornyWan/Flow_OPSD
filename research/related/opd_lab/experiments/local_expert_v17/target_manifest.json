@@ -1,0 +1,153 @@
+{
+  "source_results_sha256": "e447bc3cdcfa622dd05b25d4bfa4c6253583df95739357e27898ab879d7e8e54",
+  "stage": "untrained provisional target pool",
+  "targets": [
+    {
+      "accepted": false,
+      "case": 1,
+      "id": "jp1-train-relation-12",
+      "mode": "noop",
+      "pair_id": "6693b8483e8b92cee105ca48",
+      "replicate": 0,
+      "seed": 341262174,
+      "supervision": "provisional assistant-certified development target; not automatic verifier selection"
+    },
+    {
+      "accepted": false,
+      "case": 2,
+      "id": "jp1-train-color-13",
+      "mode": "noop",
+      "pair_id": "b1938594c3ff22d0dea0abda",
+      "replicate": 0,
+      "seed": 18029464,
+      "supervision": "provisional assistant-certified development target; not automatic verifier selection"
+    },
+    {
+      "accepted": false,
+      "case": 3,
+      "id": "jp1-train-count-12",
+      "mode": "noop",
+      "pair_id": "01cbe48370a230293d7d6f1a",
+      "replicate": 0,
+      "seed": 1336078385,
+      "supervision": "provisional assistant-certified development target; not automatic verifier selection"
+    },
+    {
+      "accepted": true,
+      "action_sha256": "cea80d27543d69cee7535dff5764b6b928c3a14a3bd6e3f9d2312d977d065e5e",
+      "case": 4,
+      "endpoint_image": "/midtier/minilab/scratch/chw4026/projects/side_project/generative/opd_related/opd_lab/runs/le17_coverage_001/query_results/ba96be66d8b0f3f734c192fe/d5e5735c1beb9d04ea4a.png",
+      "endpoint_image_sha256": "feca54392796c263cfbc335b06333790f25679e089de66a5f4fd8b79f95e0490",
+      "id": "jp1-train-relation-01",
+      "index": 1,
+      "mode": "i1_geneval@1",
+      "pair_id": "4aeb0427dcbb8a319843e235",
+      "repaired_clauses": [
+        "relation"
+      ],
+      "replicate": 0,
+      "saved_query": "/midtier/minilab/scratch/chw4026/projects/side_project/generative/opd_related/opd_lab/runs/le17_coverage_001/queries/4aeb0427dcbb8a319843e235-i1.pt",
+      "saved_query_sha256": "d8db020f40b839a5858653f978c667a2d9a42a132ba707a3cab55a8fa8e2dcec",
+      "seed": 1010285880,
+      "supervision": "provisional assistant-certified development target; not automatic verifier selection"
+    },
+    {
+      "accepted": false,
+      "case": 5,
+      "id": "jp1-train-color-13",
+      "mode": "noop",
+      "pair_id": "0fc2d19e1148b21a0b0a1bd9",
+      "replicate": 1,
+      "seed": 1809910926,
+      "supervision": "provisional assistant-certified development target; not automatic verifier selection"
+    },
+    {
+      "accepted": false,
+      "case": 6,
+      "id": "jp1-train-count-08",
+      "mode": "noop",
+      "pair_id": "8fc6312d9948e8d89b099dee",
+      "replicate": 0,
+      "seed": 1484460383,
+      "supervision": "provisional assistant-certified development target; not automatic verifier selection"
+    },
+    {
+      "accepted": true,
+      "action_sha256": "3e0a9692b725dad78254d4b23d6150e2a3a9eea1fb3a6a22842bd7320ff657d8",
+      "case": 7,
+      "endpoint_image": "/midtier/minilab/scratch/chw4026/projects/side_project/generative/opd_related/opd_lab/runs/le17_coverage_001/query_results/7b351742e502e62769036366/8581407c4024fa53ff26.png",
+      "endpoint_image_sha256": "ecfdc2a83cc96a040ed2ac5a5944c8df400ff3730753a8d544d57b05a8c39f7e",
+      "id": "jp1-train-count-08",
+      "index": 1,
+      "mode": "i1_geneval@0.5",
+      "pair_id": "920482fd3aee36cea14056bc",
+      "repaired_clauses": [
+        "text"
+      ],
+      "replicate": 1,
+      "saved_query": "/midtier/minilab/scratch/chw4026/projects/side_project/generative/opd_related/opd_lab/runs/le17_coverage_001/queries/920482fd3aee36cea14056bc-i1.pt",
+      "saved_query_sha256": "134d7057a102f1953e688400a11fe5d423c0a462759ef7b1a728cff54cd3bf67",
+      "seed": 1451226237,
+      "supervision": "provisional assistant-certified development target; not automatic verifier selection"
+    },
+    {
+      "accepted": false,
+      "case": 8,
+      "id": "jp1-train-color-11",
+      "mode": "noop",
+      "pair_id": "1a4c0d85139cdfa937f0b6e9",
+      "replicate": 0,
+      "seed": 1015262417,
+      "supervision": "provisional assistant-certified development target; not automatic verifier selection"
+    },
+    {
+      "accepted": false,
+      "case": 9,
+      "id": "jp1-train-relation-01",
+      "mode": "noop",
+      "pair_id": "275f55aa31db3425273fb609",
+      "replicate": 1,
+      "seed": 879628732,
+      "supervision": "provisional assistant-certified development target; not automatic verifier selection"
+    },
+    {
+      "accepted": false,
+      "case": 10,
+      "id": "jp1-train-color-11",
+      "mode": "noop",
+      "pair_id": "1ceed2882b44b388af8ac209",
+      "replicate": 1,
+      "seed": 506875084,
+      "supervision": "provisional assistant-certified development target; not automatic verifier selection"
+    },
+    {
+      "accepted": true,
+      "action_sha256": "bc290a4a6b5ca54e8f50e51286bd380c43896a3756ba8c05c215f67ef9bf9e6b",
+      "case": 11,
+      "endpoint_image": "/midtier/minilab/scratch/chw4026/projects/side_project/generative/opd_related/opd_lab/runs/le17_coverage_001/query_results/b7cf00ff6b6617bf4c7d9303/36967c3eff751b1c2565.png",
+      "endpoint_image_sha256": "7fefb7e8a7bca5dd55fd82a4e58509566258bd8314fc09914a73cbaf98cf4580",
+      "id": "jp1-train-relation-12",
+      "index": 1,
+      "mode": "i1_geneval@1",
+      "pair_id": "1a82d2ab4efaa0a086cb9077",
+      "repaired_clauses": [
+        "relation"
+      ],
+      "replicate": 1,
+      "saved_query": "/midtier/minilab/scratch/chw4026/projects/side_project/generative/opd_related/opd_lab/runs/le17_coverage_001/queries/1a82d2ab4efaa0a086cb9077-i1.pt",
+      "saved_query_sha256": "4c0f417b96ee8da92ae34b03cd2375c38dd704698c2e5231c17b9d4278122f64",
+      "seed": 2125626274,
+      "supervision": "provisional assistant-certified development target; not automatic verifier selection"
+    },
+    {
+      "accepted": false,
+      "case": 12,
+      "id": "jp1-train-count-12",
+      "mode": "noop",
+      "pair_id": "305736d021a67e405ee24165",
+      "replicate": 1,
+      "seed": 1014985182,
+      "supervision": "provisional assistant-certified development target; not automatic verifier selection"
+    }
+  ]
+}

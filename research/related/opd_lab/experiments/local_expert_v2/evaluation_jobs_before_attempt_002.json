@@ -1,0 +1,23 @@
+{
+  "operational_note": "Execute the three already-predeclared cells as separate jobs, one GPU per cell, 40 minutes each (same total two-hour allocation limit); all five weights share the GPU within a cell. No scientific axes changed.",
+  "jobs": [
+    {
+      "sampler": "flow",
+      "steps": 10,
+      "job": "/midtier/minilab/scratch/chw4026/projects/side_project/generative/opd_related/opd_lab/runs/le2_eval_flow10_job_001",
+      "job_id": "1047856"
+    },
+    {
+      "sampler": "flow",
+      "steps": 40,
+      "job": "/midtier/minilab/scratch/chw4026/projects/side_project/generative/opd_related/opd_lab/runs/le2_eval_flow40_job_001",
+      "job_id": "1047857"
+    },
+    {
+      "sampler": "dpm2",
+      "steps": 40,
+      "job": "/midtier/minilab/scratch/chw4026/projects/side_project/generative/opd_related/opd_lab/runs/le2_eval_dpm240_job_001",
+      "job_id": "1047858"
+    }
+  ]
+}

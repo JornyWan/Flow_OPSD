@@ -1,0 +1,65 @@
+% =====================================================================
+%  CA-OPD --- preliminary complete paper (main file)
+%  Self-contained: uses the standard `article` class so it compiles
+%  without the NeurIPS style file. Swap to \usepackage[preprint]{neurips_2026}
+%  if the style is available.
+% =====================================================================
+\documentclass[11pt]{article}
+
+\usepackage[margin=1in]{geometry}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[numbers,sort&compress]{natbib}
+\usepackage{amsmath,amssymb,amsfonts}
+\usepackage{amsthm}          % theorem environments (declared in theory.tex)
+\usepackage{mathtools}
+\usepackage{bm}
+\usepackage{booktabs}
+\usepackage{multirow}
+\usepackage{array}
+\usepackage{graphicx}
+\usepackage{caption}
+\usepackage{xcolor}
+\usepackage[ruled]{algorithm2e}
+\usepackage{enumitem}
+\usepackage{microtype}
+\usepackage{hyperref}
+\hypersetup{colorlinks=true, linkcolor=blue!55!black, citecolor=blue!55!black, urlcolor=blue!55!black}
+
+% --- notation macros (DiffusionOPD-style; \providecommand is clash-safe) ---
+\providecommand{\vc}{\mathbf{c}}
+\providecommand{\vx}{\mathbf{x}}
+\providecommand{\vv}{\mathbf{v}}
+\providecommand{\vmu}{\bm{\mu}}
+\providecommand{\veps}{\bm{\epsilon}}
+\DeclareMathOperator*{\argmin}{arg\,min}
+\DeclareMathOperator*{\argmax}{arg\,max}
+
+% Graphics search path (figures produced by the figures agent).
+\graphicspath{{figures/}}
+
+\title{\textbf{CA-OPD: Conflict-Averse Multi-Teacher On-Policy Distillation\\
+for Diffusion Models}}
+
+\author{%
+  Anonymous Author(s)\\
+  \small Affiliation \quad \texttt{email}
+}
+\date{}
+
+\begin{document}
+\maketitle
+
+\input{sections/abstract}
+
+\input{sections/intro}
+\input{sections/related}
+\input{sections/method}    % recaps DiffusionOPD, presents CA-OPD, and \input{sections/theory.tex}
+\input{sections/experiments}
+\input{sections/ablation}
+\input{sections/conclusion}
+
+\bibliographystyle{plainnat}
+\bibliography{references}
+
+\end{document}

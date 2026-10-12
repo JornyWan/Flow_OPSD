@@ -1,0 +1,98 @@
+from transformers import AutoProcessor, AutoModel
+from PIL import Image
+import torch
+import torch.nn.functional as F
+
+
+class PickScoreScorer(torch.nn.Module):
+    def __init__(self, device="cuda", dtype=torch.float32):
+        super().__init__()
+        processor_path = "laion/CLIP-ViT-H-14-laion2B-s32B-b79K"
+        model_path = "yuvalkirstain/PickScore_v1"
+        self.device = device
+        self.dtype = dtype
+        self.processor = AutoProcessor.from_pretrained(processor_path)
+        self.model = AutoModel.from_pretrained(model_path).eval().to(device)
+        self.model = self.model.to(dtype=dtype)
+
+    @torch.no_grad()
+    def __call__(self, prompt, images):
+        # Preprocess images
+        image_inputs = self.processor(
+            images=images,
+            padding=True,
+            truncation=True,
+            max_length=77,
+            return_tensors="pt",
+        )
+        image_inputs = {k: v.to(device=self.device) for k, v in image_inputs.items()}
+        # Preprocess text
+        text_inputs = self.processor(
+            text=prompt,
+            padding=True,
+            truncation=True,
+            max_length=77,
+            return_tensors="pt",
+        )
+        text_inputs = {k: v.to(device=self.device) for k, v in text_inputs.items()}
+
+        # Get embeddings
+        image_embs = self.model.get_image_features(**image_inputs)
+        image_embs = image_embs / image_embs.norm(p=2, dim=-1, keepdim=True)
+
+        text_embs = self.model.get_text_features(**text_inputs)
+        text_embs = text_embs / text_embs.norm(p=2, dim=-1, keepdim=True)
+
+        # Calculate scores
+        logit_scale = self.model.logit_scale.exp()
+        scores = logit_scale * (text_embs @ image_embs.T)
+        scores = scores.diag()
+        # norm到0-1
+        scores = scores / 26
+        return scores
+
+    # --- differentiable path for the value-gradient VIRTUAL teacher (MVP-1) ---
+    # CLIP-H (laion) image normalization constants (== OpenAI CLIP).
+    _CLIP_MEAN = (0.48145466, 0.4578275, 0.40821073)
+    _CLIP_STD = (0.26862954, 0.26130258, 0.27577711)
+
+    @torch.no_grad()
+    def encode_text(self, prompts):
+        """Precompute L2-normalized CLIP-H text embeddings (detached)."""
+        text_inputs = self.processor(
+            text=prompts, padding=True, truncation=True, max_length=77, return_tensors="pt"
+        )
+        text_inputs = {k: v.to(device=self.device) for k, v in text_inputs.items()}
+        text_embs = self.model.get_text_features(**text_inputs)
+        text_embs = text_embs / text_embs.norm(p=2, dim=-1, keepdim=True)
+        return text_embs
+
+    def score_from_images(self, text_embs, images01):
+        """DIFFERENTIABLE PickScore: images01 = [B,3,H,W] float in [0,1] (keeps autograd graph).
+        text_embs = precomputed L2-normalized [B,D]. Returns per-sample score (/26), grad flows to images01."""
+        x = F.interpolate(images01, size=(224, 224), mode="bicubic", align_corners=False, antialias=True)
+        mean = torch.tensor(self._CLIP_MEAN, device=x.device, dtype=x.dtype).view(1, 3, 1, 1)
+        std = torch.tensor(self._CLIP_STD, device=x.device, dtype=x.dtype).view(1, 3, 1, 1)
+        x = (x - mean) / std
+        image_embs = self.model.get_image_features(pixel_values=x.to(self.dtype))
+        image_embs = image_embs / image_embs.norm(p=2, dim=-1, keepdim=True)
+        logit_scale = self.model.logit_scale.exp()
+        scores = logit_scale * (text_embs.to(image_embs.dtype) * image_embs).sum(dim=-1)
+        return scores / 26
+
+
+# Usage example
+def main():
+    scorer = PickScoreScorer(device="cuda", dtype=torch.float32)
+    images = [
+        "test_cases/nasa.jpg",
+    ]
+    pil_images = [Image.open(img) for img in images]
+    prompts = [
+        'An astronaut’s glove floating in zero-g with "NASA 2049" on the wrist',
+    ]
+    print(scorer(prompts, pil_images))
+
+
+if __name__ == "__main__":
+    main()

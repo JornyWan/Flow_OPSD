@@ -1,0 +1,1357 @@
+{
+  "format": 1,
+  "outer_epochs": 12,
+  "queries": [
+    {
+      "global_query_id": 0,
+      "id": "jp1-train-color-15",
+      "outer_epoch": 1,
+      "query_index": 7,
+      "seed": 567500681
+    },
+    {
+      "global_query_id": 1,
+      "id": "jp1-train-count_color-01",
+      "outer_epoch": 1,
+      "query_index": 2,
+      "seed": 1612485114
+    },
+    {
+      "global_query_id": 2,
+      "id": "jp1-train-relation-12",
+      "outer_epoch": 1,
+      "query_index": 2,
+      "seed": 1290500028
+    },
+    {
+      "global_query_id": 3,
+      "id": "jp1-train-count-15",
+      "outer_epoch": 1,
+      "query_index": 0,
+      "seed": 174415598
+    },
+    {
+      "global_query_id": 4,
+      "id": "jp1-train-color-04",
+      "outer_epoch": 1,
+      "query_index": 3,
+      "seed": 4510496
+    },
+    {
+      "global_query_id": 5,
+      "id": "jp1-train-count_color-11",
+      "outer_epoch": 1,
+      "query_index": 8,
+      "seed": 1681523272
+    },
+    {
+      "global_query_id": 6,
+      "id": "jp1-train-relation-04",
+      "outer_epoch": 1,
+      "query_index": 1,
+      "seed": 1814853230
+    },
+    {
+      "global_query_id": 7,
+      "id": "jp1-train-count-11",
+      "outer_epoch": 1,
+      "query_index": 6,
+      "seed": 766838919
+    },
+    {
+      "global_query_id": 8,
+      "id": "jp1-train-color-13",
+      "outer_epoch": 1,
+      "query_index": 2,
+      "seed": 1592152122
+    },
+    {
+      "global_query_id": 9,
+      "id": "jp1-train-count_color-09",
+      "outer_epoch": 1,
+      "query_index": 1,
+      "seed": 1868396441
+    },
+    {
+      "global_query_id": 10,
+      "id": "jp1-train-relation-00",
+      "outer_epoch": 1,
+      "query_index": 4,
+      "seed": 1003304137
+    },
+    {
+      "global_query_id": 11,
+      "id": "jp1-train-count-13",
+      "outer_epoch": 1,
+      "query_index": 4,
+      "seed": 134388621
+    },
+    {
+      "global_query_id": 12,
+      "id": "jp1-train-color-01",
+      "outer_epoch": 1,
+      "query_index": 3,
+      "seed": 1962839346
+    },
+    {
+      "global_query_id": 13,
+      "id": "jp1-train-count_color-08",
+      "outer_epoch": 1,
+      "query_index": 8,
+      "seed": 1953317932
+    },
+    {
+      "global_query_id": 14,
+      "id": "jp1-train-relation-14",
+      "outer_epoch": 1,
+      "query_index": 6,
+      "seed": 1281675515
+    },
+    {
+      "global_query_id": 15,
+      "id": "jp1-train-count-10",
+      "outer_epoch": 1,
+      "query_index": 7,
+      "seed": 1537577777
+    },
+    {
+      "global_query_id": 16,
+      "id": "jp1-train-color-09",
+      "outer_epoch": 2,
+      "query_index": 5,
+      "seed": 211545037
+    },
+    {
+      "global_query_id": 17,
+      "id": "jp1-train-count_color-02",
+      "outer_epoch": 2,
+      "query_index": 6,
+      "seed": 451880885
+    },
+    {
+      "global_query_id": 18,
+      "id": "jp1-train-relation-13",
+      "outer_epoch": 2,
+      "query_index": 3,
+      "seed": 269476544
+    },
+    {
+      "global_query_id": 19,
+      "id": "jp1-train-count-09",
+      "outer_epoch": 2,
+      "query_index": 8,
+      "seed": 2035873086
+    },
+    {
+      "global_query_id": 20,
+      "id": "jp1-train-color-05",
+      "outer_epoch": 2,
+      "query_index": 6,
+      "seed": 1316906800
+    },
+    {
+      "global_query_id": 21,
+      "id": "jp1-train-count_color-13",
+      "outer_epoch": 2,
+      "query_index": 6,
+      "seed": 726325674
+    },
+    {
+      "global_query_id": 22,
+      "id": "jp1-train-relation-10",
+      "outer_epoch": 2,
+      "query_index": 7,
+      "seed": 1885846141
+    },
+    {
+      "global_query_id": 23,
+      "id": "jp1-train-count-07",
+      "outer_epoch": 2,
+      "query_index": 6,
+      "seed": 818164017
+    },
+    {
+      "global_query_id": 24,
+      "id": "jp1-train-color-14",
+      "outer_epoch": 2,
+      "query_index": 1,
+      "seed": 1090955055
+    },
+    {
+      "global_query_id": 25,
+      "id": "jp1-train-count_color-10",
+      "outer_epoch": 2,
+      "query_index": 3,
+      "seed": 676012017
+    },
+    {
+      "global_query_id": 26,
+      "id": "jp1-train-relation-06",
+      "outer_epoch": 2,
+      "query_index": 5,
+      "seed": 983302488
+    },
+    {
+      "global_query_id": 27,
+      "id": "jp1-train-count-08",
+      "outer_epoch": 2,
+      "query_index": 7,
+      "seed": 1939877907
+    },
+    {
+      "global_query_id": 28,
+      "id": "jp1-train-color-06",
+      "outer_epoch": 2,
+      "query_index": 8,
+      "seed": 787920268
+    },
+    {
+      "global_query_id": 29,
+      "id": "jp1-train-count_color-03",
+      "outer_epoch": 2,
+      "query_index": 4,
+      "seed": 648083628
+    },
+    {
+      "global_query_id": 30,
+      "id": "jp1-train-relation-11",
+      "outer_epoch": 2,
+      "query_index": 3,
+      "seed": 1096410283
+    },
+    {
+      "global_query_id": 31,
+      "id": "jp1-train-count-06",
+      "outer_epoch": 2,
+      "query_index": 4,
+      "seed": 1549332055
+    },
+    {
+      "global_query_id": 32,
+      "id": "jp1-train-color-07",
+      "outer_epoch": 3,
+      "query_index": 4,
+      "seed": 1156771084
+    },
+    {
+      "global_query_id": 33,
+      "id": "jp1-train-count_color-06",
+      "outer_epoch": 3,
+      "query_index": 6,
+      "seed": 1884324760
+    },
+    {
+      "global_query_id": 34,
+      "id": "jp1-train-relation-09",
+      "outer_epoch": 3,
+      "query_index": 6,
+      "seed": 654881991
+    },
+    {
+      "global_query_id": 35,
+      "id": "jp1-train-count-12",
+      "outer_epoch": 3,
+      "query_index": 4,
+      "seed": 1781694776
+    },
+    {
+      "global_query_id": 36,
+      "id": "jp1-train-color-03",
+      "outer_epoch": 3,
+      "query_index": 5,
+      "seed": 1971703599
+    },
+    {
+      "global_query_id": 37,
+      "id": "jp1-train-count_color-00",
+      "outer_epoch": 3,
+      "query_index": 5,
+      "seed": 623297941
+    },
+    {
+      "global_query_id": 38,
+      "id": "jp1-train-relation-15",
+      "outer_epoch": 3,
+      "query_index": 3,
+      "seed": 573363705
+    },
+    {
+      "global_query_id": 39,
+      "id": "jp1-train-count-05",
+      "outer_epoch": 3,
+      "query_index": 5,
+      "seed": 1483814510
+    },
+    {
+      "global_query_id": 40,
+      "id": "jp1-train-color-02",
+      "outer_epoch": 3,
+      "query_index": 7,
+      "seed": 681521906
+    },
+    {
+      "global_query_id": 41,
+      "id": "jp1-train-count_color-12",
+      "outer_epoch": 3,
+      "query_index": 2,
+      "seed": 1468994997
+    },
+    {
+      "global_query_id": 42,
+      "id": "jp1-train-relation-03",
+      "outer_epoch": 3,
+      "query_index": 3,
+      "seed": 51433169
+    },
+    {
+      "global_query_id": 43,
+      "id": "jp1-train-count-01",
+      "outer_epoch": 3,
+      "query_index": 1,
+      "seed": 1857129110
+    },
+    {
+      "global_query_id": 44,
+      "id": "jp1-train-color-10",
+      "outer_epoch": 3,
+      "query_index": 4,
+      "seed": 973688025
+    },
+    {
+      "global_query_id": 45,
+      "id": "jp1-train-count_color-05",
+      "outer_epoch": 3,
+      "query_index": 3,
+      "seed": 47524266
+    },
+    {
+      "global_query_id": 46,
+      "id": "jp1-train-relation-08",
+      "outer_epoch": 3,
+      "query_index": 2,
+      "seed": 670745760
+    },
+    {
+      "global_query_id": 47,
+      "id": "jp1-train-count-00",
+      "outer_epoch": 3,
+      "query_index": 8,
+      "seed": 323237396
+    },
+    {
+      "global_query_id": 48,
+      "id": "jp1-train-color-11",
+      "outer_epoch": 4,
+      "query_index": 7,
+      "seed": 1941603915
+    },
+    {
+      "global_query_id": 49,
+      "id": "jp1-train-count_color-14",
+      "outer_epoch": 4,
+      "query_index": 5,
+      "seed": 381754797
+    },
+    {
+      "global_query_id": 50,
+      "id": "jp1-train-relation-07",
+      "outer_epoch": 4,
+      "query_index": 4,
+      "seed": 69428165
+    },
+    {
+      "global_query_id": 51,
+      "id": "jp1-train-count-14",
+      "outer_epoch": 4,
+      "query_index": 7,
+      "seed": 920285274
+    },
+    {
+      "global_query_id": 52,
+      "id": "jp1-train-color-12",
+      "outer_epoch": 4,
+      "query_index": 4,
+      "seed": 1013303665
+    },
+    {
+      "global_query_id": 53,
+      "id": "jp1-train-count_color-07",
+      "outer_epoch": 4,
+      "query_index": 7,
+      "seed": 630976210
+    },
+    {
+      "global_query_id": 54,
+      "id": "jp1-train-relation-02",
+      "outer_epoch": 4,
+      "query_index": 1,
+      "seed": 1033451075
+    },
+    {
+      "global_query_id": 55,
+      "id": "jp1-train-count-03",
+      "outer_epoch": 4,
+      "query_index": 3,
+      "seed": 953555572
+    },
+    {
+      "global_query_id": 56,
+      "id": "jp1-train-color-08",
+      "outer_epoch": 4,
+      "query_index": 2,
+      "seed": 1404100716
+    },
+    {
+      "global_query_id": 57,
+      "id": "jp1-train-count_color-15",
+      "outer_epoch": 4,
+      "query_index": 7,
+      "seed": 852980240
+    },
+    {
+      "global_query_id": 58,
+      "id": "jp1-train-relation-05",
+      "outer_epoch": 4,
+      "query_index": 6,
+      "seed": 2055860103
+    },
+    {
+      "global_query_id": 59,
+      "id": "jp1-train-count-02",
+      "outer_epoch": 4,
+      "query_index": 5,
+      "seed": 1061708585
+    },
+    {
+      "global_query_id": 60,
+      "id": "jp1-train-color-00",
+      "outer_epoch": 4,
+      "query_index": 2,
+      "seed": 1862280605
+    },
+    {
+      "global_query_id": 61,
+      "id": "jp1-train-count_color-04",
+      "outer_epoch": 4,
+      "query_index": 4,
+      "seed": 1933587001
+    },
+    {
+      "global_query_id": 62,
+      "id": "jp1-train-relation-01",
+      "outer_epoch": 4,
+      "query_index": 1,
+      "seed": 1722733081
+    },
+    {
+      "global_query_id": 63,
+      "id": "jp1-train-count-04",
+      "outer_epoch": 4,
+      "query_index": 8,
+      "seed": 1575130647
+    },
+    {
+      "global_query_id": 64,
+      "id": "jp1-train-color-15",
+      "outer_epoch": 5,
+      "query_index": 1,
+      "seed": 1216468672
+    },
+    {
+      "global_query_id": 65,
+      "id": "jp1-train-count-03",
+      "outer_epoch": 5,
+      "query_index": 1,
+      "seed": 1070024649
+    },
+    {
+      "global_query_id": 66,
+      "id": "jp1-train-count_color-10",
+      "outer_epoch": 5,
+      "query_index": 6,
+      "seed": 1593231193
+    },
+    {
+      "global_query_id": 67,
+      "id": "jp1-train-relation-10",
+      "outer_epoch": 5,
+      "query_index": 4,
+      "seed": 386958104
+    },
+    {
+      "global_query_id": 68,
+      "id": "jp1-train-color-00",
+      "outer_epoch": 5,
+      "query_index": 6,
+      "seed": 1461023673
+    },
+    {
+      "global_query_id": 69,
+      "id": "jp1-train-count-06",
+      "outer_epoch": 5,
+      "query_index": 4,
+      "seed": 1700053135
+    },
+    {
+      "global_query_id": 70,
+      "id": "jp1-train-count_color-09",
+      "outer_epoch": 5,
+      "query_index": 3,
+      "seed": 605667020
+    },
+    {
+      "global_query_id": 71,
+      "id": "jp1-train-relation-02",
+      "outer_epoch": 5,
+      "query_index": 5,
+      "seed": 1193140858
+    },
+    {
+      "global_query_id": 72,
+      "id": "jp1-train-color-08",
+      "outer_epoch": 5,
+      "query_index": 2,
+      "seed": 188307925
+    },
+    {
+      "global_query_id": 73,
+      "id": "jp1-train-count-11",
+      "outer_epoch": 5,
+      "query_index": 4,
+      "seed": 243718930
+    },
+    {
+      "global_query_id": 74,
+      "id": "jp1-train-count_color-11",
+      "outer_epoch": 5,
+      "query_index": 5,
+      "seed": 884088017
+    },
+    {
+      "global_query_id": 75,
+      "id": "jp1-train-relation-05",
+      "outer_epoch": 5,
+      "query_index": 6,
+      "seed": 1055042430
+    },
+    {
+      "global_query_id": 76,
+      "id": "jp1-train-color-04",
+      "outer_epoch": 5,
+      "query_index": 8,
+      "seed": 1623195889
+    },
+    {
+      "global_query_id": 77,
+      "id": "jp1-train-count-07",
+      "outer_epoch": 5,
+      "query_index": 3,
+      "seed": 999028065
+    },
+    {
+      "global_query_id": 78,
+      "id": "jp1-train-count_color-03",
+      "outer_epoch": 5,
+      "query_index": 7,
+      "seed": 777482888
+    },
+    {
+      "global_query_id": 79,
+      "id": "jp1-train-relation-04",
+      "outer_epoch": 5,
+      "query_index": 0,
+      "seed": 1614943854
+    },
+    {
+      "global_query_id": 80,
+      "id": "jp1-train-color-02",
+      "outer_epoch": 6,
+      "query_index": 5,
+      "seed": 1165669055
+    },
+    {
+      "global_query_id": 81,
+      "id": "jp1-train-count-02",
+      "outer_epoch": 6,
+      "query_index": 3,
+      "seed": 428968750
+    },
+    {
+      "global_query_id": 82,
+      "id": "jp1-train-count_color-06",
+      "outer_epoch": 6,
+      "query_index": 8,
+      "seed": 471910801
+    },
+    {
+      "global_query_id": 83,
+      "id": "jp1-train-relation-11",
+      "outer_epoch": 6,
+      "query_index": 0,
+      "seed": 1355931492
+    },
+    {
+      "global_query_id": 84,
+      "id": "jp1-train-color-07",
+      "outer_epoch": 6,
+      "query_index": 7,
+      "seed": 1684146218
+    },
+    {
+      "global_query_id": 85,
+      "id": "jp1-train-count-10",
+      "outer_epoch": 6,
+      "query_index": 3,
+      "seed": 1802764469
+    },
+    {
+      "global_query_id": 86,
+      "id": "jp1-train-count_color-08",
+      "outer_epoch": 6,
+      "query_index": 5,
+      "seed": 373341997
+    },
+    {
+      "global_query_id": 87,
+      "id": "jp1-train-relation-15",
+      "outer_epoch": 6,
+      "query_index": 1,
+      "seed": 1818130320
+    },
+    {
+      "global_query_id": 88,
+      "id": "jp1-train-color-14",
+      "outer_epoch": 6,
+      "query_index": 4,
+      "seed": 84692137
+    },
+    {
+      "global_query_id": 89,
+      "id": "jp1-train-count-04",
+      "outer_epoch": 6,
+      "query_index": 2,
+      "seed": 1547340747
+    },
+    {
+      "global_query_id": 90,
+      "id": "jp1-train-count_color-02",
+      "outer_epoch": 6,
+      "query_index": 7,
+      "seed": 580596401
+    },
+    {
+      "global_query_id": 91,
+      "id": "jp1-train-relation-08",
+      "outer_epoch": 6,
+      "query_index": 2,
+      "seed": 525716718
+    },
+    {
+      "global_query_id": 92,
+      "id": "jp1-train-color-05",
+      "outer_epoch": 6,
+      "query_index": 7,
+      "seed": 1993850418
+    },
+    {
+      "global_query_id": 93,
+      "id": "jp1-train-count-00",
+      "outer_epoch": 6,
+      "query_index": 7,
+      "seed": 518542547
+    },
+    {
+      "global_query_id": 94,
+      "id": "jp1-train-count_color-12",
+      "outer_epoch": 6,
+      "query_index": 6,
+      "seed": 277302646
+    },
+    {
+      "global_query_id": 95,
+      "id": "jp1-train-relation-00",
+      "outer_epoch": 6,
+      "query_index": 6,
+      "seed": 1562996424
+    },
+    {
+      "global_query_id": 96,
+      "id": "jp1-train-color-12",
+      "outer_epoch": 7,
+      "query_index": 0,
+      "seed": 1730370635
+    },
+    {
+      "global_query_id": 97,
+      "id": "jp1-train-count-13",
+      "outer_epoch": 7,
+      "query_index": 3,
+      "seed": 683415437
+    },
+    {
+      "global_query_id": 98,
+      "id": "jp1-train-count_color-00",
+      "outer_epoch": 7,
+      "query_index": 8,
+      "seed": 683407272
+    },
+    {
+      "global_query_id": 99,
+      "id": "jp1-train-relation-14",
+      "outer_epoch": 7,
+      "query_index": 3,
+      "seed": 1476127046
+    },
+    {
+      "global_query_id": 100,
+      "id": "jp1-train-color-06",
+      "outer_epoch": 7,
+      "query_index": 0,
+      "seed": 2095526937
+    },
+    {
+      "global_query_id": 101,
+      "id": "jp1-train-count-14",
+      "outer_epoch": 7,
+      "query_index": 3,
+      "seed": 982891984
+    },
+    {
+      "global_query_id": 102,
+      "id": "jp1-train-count_color-05",
+      "outer_epoch": 7,
+      "query_index": 5,
+      "seed": 1149950608
+    },
+    {
+      "global_query_id": 103,
+      "id": "jp1-train-relation-03",
+      "outer_epoch": 7,
+      "query_index": 0,
+      "seed": 1642833521
+    },
+    {
+      "global_query_id": 104,
+      "id": "jp1-train-color-13",
+      "outer_epoch": 7,
+      "query_index": 2,
+      "seed": 1291562972
+    },
+    {
+      "global_query_id": 105,
+      "id": "jp1-train-count-08",
+      "outer_epoch": 7,
+      "query_index": 2,
+      "seed": 113743150
+    },
+    {
+      "global_query_id": 106,
+      "id": "jp1-train-count_color-13",
+      "outer_epoch": 7,
+      "query_index": 0,
+      "seed": 754031399
+    },
+    {
+      "global_query_id": 107,
+      "id": "jp1-train-relation-06",
+      "outer_epoch": 7,
+      "query_index": 3,
+      "seed": 2125402706
+    },
+    {
+      "global_query_id": 108,
+      "id": "jp1-train-color-03",
+      "outer_epoch": 7,
+      "query_index": 5,
+      "seed": 1575207965
+    },
+    {
+      "global_query_id": 109,
+      "id": "jp1-train-count-15",
+      "outer_epoch": 7,
+      "query_index": 0,
+      "seed": 526964223
+    },
+    {
+      "global_query_id": 110,
+      "id": "jp1-train-count_color-04",
+      "outer_epoch": 7,
+      "query_index": 5,
+      "seed": 988231920
+    },
+    {
+      "global_query_id": 111,
+      "id": "jp1-train-relation-07",
+      "outer_epoch": 7,
+      "query_index": 5,
+      "seed": 1564338259
+    },
+    {
+      "global_query_id": 112,
+      "id": "jp1-train-color-11",
+      "outer_epoch": 8,
+      "query_index": 3,
+      "seed": 1134115903
+    },
+    {
+      "global_query_id": 113,
+      "id": "jp1-train-count-01",
+      "outer_epoch": 8,
+      "query_index": 4,
+      "seed": 1128784077
+    },
+    {
+      "global_query_id": 114,
+      "id": "jp1-train-count_color-01",
+      "outer_epoch": 8,
+      "query_index": 3,
+      "seed": 446314861
+    },
+    {
+      "global_query_id": 115,
+      "id": "jp1-train-relation-12",
+      "outer_epoch": 8,
+      "query_index": 0,
+      "seed": 868100389
+    },
+    {
+      "global_query_id": 116,
+      "id": "jp1-train-color-01",
+      "outer_epoch": 8,
+      "query_index": 3,
+      "seed": 1069842923
+    },
+    {
+      "global_query_id": 117,
+      "id": "jp1-train-count-05",
+      "outer_epoch": 8,
+      "query_index": 7,
+      "seed": 691373558
+    },
+    {
+      "global_query_id": 118,
+      "id": "jp1-train-count_color-07",
+      "outer_epoch": 8,
+      "query_index": 0,
+      "seed": 1909957374
+    },
+    {
+      "global_query_id": 119,
+      "id": "jp1-train-relation-01",
+      "outer_epoch": 8,
+      "query_index": 8,
+      "seed": 1717369890
+    },
+    {
+      "global_query_id": 120,
+      "id": "jp1-train-color-09",
+      "outer_epoch": 8,
+      "query_index": 4,
+      "seed": 44324068
+    },
+    {
+      "global_query_id": 121,
+      "id": "jp1-train-count-09",
+      "outer_epoch": 8,
+      "query_index": 4,
+      "seed": 76399788
+    },
+    {
+      "global_query_id": 122,
+      "id": "jp1-train-count_color-15",
+      "outer_epoch": 8,
+      "query_index": 6,
+      "seed": 184794194
+    },
+    {
+      "global_query_id": 123,
+      "id": "jp1-train-relation-13",
+      "outer_epoch": 8,
+      "query_index": 5,
+      "seed": 2101314243
+    },
+    {
+      "global_query_id": 124,
+      "id": "jp1-train-color-10",
+      "outer_epoch": 8,
+      "query_index": 3,
+      "seed": 1158424841
+    },
+    {
+      "global_query_id": 125,
+      "id": "jp1-train-count-12",
+      "outer_epoch": 8,
+      "query_index": 6,
+      "seed": 1199674493
+    },
+    {
+      "global_query_id": 126,
+      "id": "jp1-train-count_color-14",
+      "outer_epoch": 8,
+      "query_index": 8,
+      "seed": 290649742
+    },
+    {
+      "global_query_id": 127,
+      "id": "jp1-train-relation-09",
+      "outer_epoch": 8,
+      "query_index": 4,
+      "seed": 1555911755
+    },
+    {
+      "global_query_id": 128,
+      "id": "jp1-train-relation-09",
+      "outer_epoch": 9,
+      "query_index": 7,
+      "seed": 933847108
+    },
+    {
+      "global_query_id": 129,
+      "id": "jp1-train-count_color-13",
+      "outer_epoch": 9,
+      "query_index": 1,
+      "seed": 1194600133
+    },
+    {
+      "global_query_id": 130,
+      "id": "jp1-train-count-09",
+      "outer_epoch": 9,
+      "query_index": 7,
+      "seed": 822059196
+    },
+    {
+      "global_query_id": 131,
+      "id": "jp1-train-color-07",
+      "outer_epoch": 9,
+      "query_index": 7,
+      "seed": 884653981
+    },
+    {
+      "global_query_id": 132,
+      "id": "jp1-train-relation-03",
+      "outer_epoch": 9,
+      "query_index": 0,
+      "seed": 1605416059
+    },
+    {
+      "global_query_id": 133,
+      "id": "jp1-train-count_color-09",
+      "outer_epoch": 9,
+      "query_index": 0,
+      "seed": 1651400705
+    },
+    {
+      "global_query_id": 134,
+      "id": "jp1-train-count-04",
+      "outer_epoch": 9,
+      "query_index": 4,
+      "seed": 1625341292
+    },
+    {
+      "global_query_id": 135,
+      "id": "jp1-train-color-05",
+      "outer_epoch": 9,
+      "query_index": 7,
+      "seed": 1699520847
+    },
+    {
+      "global_query_id": 136,
+      "id": "jp1-train-relation-11",
+      "outer_epoch": 9,
+      "query_index": 1,
+      "seed": 2092886668
+    },
+    {
+      "global_query_id": 137,
+      "id": "jp1-train-count_color-01",
+      "outer_epoch": 9,
+      "query_index": 0,
+      "seed": 1285702063
+    },
+    {
+      "global_query_id": 138,
+      "id": "jp1-train-count-11",
+      "outer_epoch": 9,
+      "query_index": 4,
+      "seed": 1612593738
+    },
+    {
+      "global_query_id": 139,
+      "id": "jp1-train-color-02",
+      "outer_epoch": 9,
+      "query_index": 7,
+      "seed": 564712821
+    },
+    {
+      "global_query_id": 140,
+      "id": "jp1-train-relation-04",
+      "outer_epoch": 9,
+      "query_index": 5,
+      "seed": 118246640
+    },
+    {
+      "global_query_id": 141,
+      "id": "jp1-train-count_color-06",
+      "outer_epoch": 9,
+      "query_index": 4,
+      "seed": 1269894011
+    },
+    {
+      "global_query_id": 142,
+      "id": "jp1-train-count-00",
+      "outer_epoch": 9,
+      "query_index": 8,
+      "seed": 621197750
+    },
+    {
+      "global_query_id": 143,
+      "id": "jp1-train-color-11",
+      "outer_epoch": 9,
+      "query_index": 5,
+      "seed": 1637357151
+    },
+    {
+      "global_query_id": 144,
+      "id": "jp1-train-relation-06",
+      "outer_epoch": 10,
+      "query_index": 8,
+      "seed": 1195996855
+    },
+    {
+      "global_query_id": 145,
+      "id": "jp1-train-count_color-10",
+      "outer_epoch": 10,
+      "query_index": 4,
+      "seed": 1504111741
+    },
+    {
+      "global_query_id": 146,
+      "id": "jp1-train-count-02",
+      "outer_epoch": 10,
+      "query_index": 5,
+      "seed": 792857620
+    },
+    {
+      "global_query_id": 147,
+      "id": "jp1-train-color-14",
+      "outer_epoch": 10,
+      "query_index": 1,
+      "seed": 446652739
+    },
+    {
+      "global_query_id": 148,
+      "id": "jp1-train-relation-12",
+      "outer_epoch": 10,
+      "query_index": 0,
+      "seed": 587724454
+    },
+    {
+      "global_query_id": 149,
+      "id": "jp1-train-count_color-08",
+      "outer_epoch": 10,
+      "query_index": 1,
+      "seed": 1591235094
+    },
+    {
+      "global_query_id": 150,
+      "id": "jp1-train-count-05",
+      "outer_epoch": 10,
+      "query_index": 4,
+      "seed": 2097491302
+    },
+    {
+      "global_query_id": 151,
+      "id": "jp1-train-color-09",
+      "outer_epoch": 10,
+      "query_index": 6,
+      "seed": 1872065755
+    },
+    {
+      "global_query_id": 152,
+      "id": "jp1-train-relation-14",
+      "outer_epoch": 10,
+      "query_index": 6,
+      "seed": 276647374
+    },
+    {
+      "global_query_id": 153,
+      "id": "jp1-train-count_color-11",
+      "outer_epoch": 10,
+      "query_index": 0,
+      "seed": 314569440
+    },
+    {
+      "global_query_id": 154,
+      "id": "jp1-train-count-07",
+      "outer_epoch": 10,
+      "query_index": 5,
+      "seed": 1258250856
+    },
+    {
+      "global_query_id": 155,
+      "id": "jp1-train-color-10",
+      "outer_epoch": 10,
+      "query_index": 3,
+      "seed": 1288306631
+    },
+    {
+      "global_query_id": 156,
+      "id": "jp1-train-relation-07",
+      "outer_epoch": 10,
+      "query_index": 6,
+      "seed": 430750134
+    },
+    {
+      "global_query_id": 157,
+      "id": "jp1-train-count_color-04",
+      "outer_epoch": 10,
+      "query_index": 3,
+      "seed": 1902152074
+    },
+    {
+      "global_query_id": 158,
+      "id": "jp1-train-count-01",
+      "outer_epoch": 10,
+      "query_index": 8,
+      "seed": 749625958
+    },
+    {
+      "global_query_id": 159,
+      "id": "jp1-train-color-01",
+      "outer_epoch": 10,
+      "query_index": 6,
+      "seed": 524008584
+    },
+    {
+      "global_query_id": 160,
+      "id": "jp1-train-relation-01",
+      "outer_epoch": 11,
+      "query_index": 1,
+      "seed": 450065814
+    },
+    {
+      "global_query_id": 161,
+      "id": "jp1-train-count_color-07",
+      "outer_epoch": 11,
+      "query_index": 0,
+      "seed": 580430657
+    },
+    {
+      "global_query_id": 162,
+      "id": "jp1-train-count-10",
+      "outer_epoch": 11,
+      "query_index": 3,
+      "seed": 934569330
+    },
+    {
+      "global_query_id": 163,
+      "id": "jp1-train-color-04",
+      "outer_epoch": 11,
+      "query_index": 6,
+      "seed": 669683585
+    },
+    {
+      "global_query_id": 164,
+      "id": "jp1-train-relation-00",
+      "outer_epoch": 11,
+      "query_index": 8,
+      "seed": 917248277
+    },
+    {
+      "global_query_id": 165,
+      "id": "jp1-train-count_color-02",
+      "outer_epoch": 11,
+      "query_index": 0,
+      "seed": 990207138
+    },
+    {
+      "global_query_id": 166,
+      "id": "jp1-train-count-13",
+      "outer_epoch": 11,
+      "query_index": 0,
+      "seed": 929618560
+    },
+    {
+      "global_query_id": 167,
+      "id": "jp1-train-color-12",
+      "outer_epoch": 11,
+      "query_index": 5,
+      "seed": 1520541442
+    },
+    {
+      "global_query_id": 168,
+      "id": "jp1-train-relation-02",
+      "outer_epoch": 11,
+      "query_index": 8,
+      "seed": 212373211
+    },
+    {
+      "global_query_id": 169,
+      "id": "jp1-train-count_color-12",
+      "outer_epoch": 11,
+      "query_index": 0,
+      "seed": 661468109
+    },
+    {
+      "global_query_id": 170,
+      "id": "jp1-train-count-14",
+      "outer_epoch": 11,
+      "query_index": 3,
+      "seed": 456884587
+    },
+    {
+      "global_query_id": 171,
+      "id": "jp1-train-color-08",
+      "outer_epoch": 11,
+      "query_index": 8,
+      "seed": 1896932088
+    },
+    {
+      "global_query_id": 172,
+      "id": "jp1-train-relation-05",
+      "outer_epoch": 11,
+      "query_index": 1,
+      "seed": 90949187
+    },
+    {
+      "global_query_id": 173,
+      "id": "jp1-train-count_color-15",
+      "outer_epoch": 11,
+      "query_index": 1,
+      "seed": 900011907
+    },
+    {
+      "global_query_id": 174,
+      "id": "jp1-train-count-08",
+      "outer_epoch": 11,
+      "query_index": 3,
+      "seed": 2055829445
+    },
+    {
+      "global_query_id": 175,
+      "id": "jp1-train-color-15",
+      "outer_epoch": 11,
+      "query_index": 4,
+      "seed": 696964511
+    },
+    {
+      "global_query_id": 176,
+      "id": "jp1-train-relation-08",
+      "outer_epoch": 12,
+      "query_index": 5,
+      "seed": 356820676
+    },
+    {
+      "global_query_id": 177,
+      "id": "jp1-train-count_color-03",
+      "outer_epoch": 12,
+      "query_index": 5,
+      "seed": 443356627
+    },
+    {
+      "global_query_id": 178,
+      "id": "jp1-train-count-15",
+      "outer_epoch": 12,
+      "query_index": 4,
+      "seed": 1611324277
+    },
+    {
+      "global_query_id": 179,
+      "id": "jp1-train-color-00",
+      "outer_epoch": 12,
+      "query_index": 8,
+      "seed": 1948730097
+    },
+    {
+      "global_query_id": 180,
+      "id": "jp1-train-relation-15",
+      "outer_epoch": 12,
+      "query_index": 7,
+      "seed": 417297143
+    },
+    {
+      "global_query_id": 181,
+      "id": "jp1-train-count_color-05",
+      "outer_epoch": 12,
+      "query_index": 7,
+      "seed": 1195625299
+    },
+    {
+      "global_query_id": 182,
+      "id": "jp1-train-count-03",
+      "outer_epoch": 12,
+      "query_index": 6,
+      "seed": 638399160
+    },
+    {
+      "global_query_id": 183,
+      "id": "jp1-train-color-13",
+      "outer_epoch": 12,
+      "query_index": 4,
+      "seed": 862790094
+    },
+    {
+      "global_query_id": 184,
+      "id": "jp1-train-relation-13",
+      "outer_epoch": 12,
+      "query_index": 7,
+      "seed": 240162808
+    },
+    {
+      "global_query_id": 185,
+      "id": "jp1-train-count_color-14",
+      "outer_epoch": 12,
+      "query_index": 1,
+      "seed": 591630454
+    },
+    {
+      "global_query_id": 186,
+      "id": "jp1-train-count-06",
+      "outer_epoch": 12,
+      "query_index": 6,
+      "seed": 1942523837
+    },
+    {
+      "global_query_id": 187,
+      "id": "jp1-train-color-03",
+      "outer_epoch": 12,
+      "query_index": 6,
+      "seed": 503673639
+    },
+    {
+      "global_query_id": 188,
+      "id": "jp1-train-relation-10",
+      "outer_epoch": 12,
+      "query_index": 4,
+      "seed": 1334674121
+    },
+    {
+      "global_query_id": 189,
+      "id": "jp1-train-count_color-00",
+      "outer_epoch": 12,
+      "query_index": 3,
+      "seed": 1722940644
+    },
+    {
+      "global_query_id": 190,
+      "id": "jp1-train-count-12",
+      "outer_epoch": 12,
+      "query_index": 1,
+      "seed": 217051856
+    },
+    {
+      "global_query_id": 191,
+      "id": "jp1-train-color-06",
+      "outer_epoch": 12,
+      "query_index": 5,
+      "seed": 257521330
+    }
+  ],
+  "queries_per_rank": 16,
+  "records_digest": "8fec267100d68ebebb010f484bb5b6f7081517f3682a4f31df1c963916162573",
+  "schedule": "balanced_groups_shuffled_each_pass_v1",
+  "seed": 42,
+  "steps": 10,
+  "timestep_fraction": 0.99,
+  "world_size": 1
+}

@@ -1,0 +1,67 @@
+{
+  "counts": {
+    "test": 64,
+    "train": 64,
+    "validation": 32
+  },
+  "families": [
+    "count",
+    "color",
+    "relation",
+    "count_color"
+  ],
+  "frozen_before_gpu_results": true,
+  "generator_sha256": "1c34aa480f52f6354ed7fe7d6560f3a5db69036dc02d22b039b02a3a060575f2",
+  "kind": "constructed_development_pilot_not_benchmark",
+  "records_sha256": "5b78af606cf64f3f13bcb70a27f098468caf3d59cfecebd833fcb93ced0bfe2f",
+  "split_policy": "distinct text vocabulary and prompt template per split; object classes intentionally shared",
+  "version": 1,
+  "words": {
+    "test": [
+      "BRIGHT",
+      "MEADOW",
+      "OCEAN",
+      "SILVER",
+      "FOREST",
+      "HONEY",
+      "AMBER",
+      "VIOLET",
+      "RAVEN",
+      "PEARL",
+      "SPRUCE",
+      "IVORY",
+      "STAR",
+      "RAIN",
+      "SNOW",
+      "LEAF"
+    ],
+    "train": [
+      "MINT",
+      "PINE",
+      "DAWN",
+      "LUNA",
+      "GLOW",
+      "SODA",
+      "LOFT",
+      "WAVE",
+      "FRESH",
+      "NORTH",
+      "MAPLE",
+      "PEACH",
+      "BLOOM",
+      "CLOUD",
+      "CLEAR",
+      "SUNNY"
+    ],
+    "validation": [
+      "EMBER",
+      "CEDAR",
+      "CORAL",
+      "HAVEN",
+      "RIVER",
+      "STONE",
+      "MANGO",
+      "OLIVE"
+    ]
+  }
+}

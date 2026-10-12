@@ -1,0 +1,172 @@
+{
+  "observed_source_endpoint_totals": {
+    "baseline": {
+      "complete_scene": 0,
+      "full_visibility": 4,
+      "has_unknown": 0,
+      "joint_clauses": 0
+    },
+    "target": {
+      "complete_scene": 4,
+      "full_visibility": 5,
+      "has_unknown": 0,
+      "joint_clauses": 5
+    }
+  },
+  "plan_sha256": "69fe84e1724f2ea2e6a21c6bbf49373637d7a0a0a73caac189d5e0109a437cd2",
+  "scope": "Frozen old training labels only; no phase15 model result inspected",
+  "source_results_sha256": "efb5014d0274e6aa75ff4891fe263387484684b1fc82d562971b1ae0761d1d22",
+  "targets": [
+    {
+      "baseline": {
+        "clauses": {
+          "color": true,
+          "text": false
+        },
+        "full_visibility": false,
+        "notes": "Green chair legs clipped. Extra small sign above main placard contains additional letters; main word also pale.",
+        "visible_text": "Peach plus small upper-placard lettering"
+      },
+      "id": "jp1-train-color-11",
+      "repaired_clauses": [
+        "text"
+      ],
+      "target": {
+        "clauses": {
+          "color": true,
+          "text": true
+        },
+        "full_visibility": false,
+        "notes": "One green chair with lower legs cropped. Peach identifiable, case ignored.",
+        "visible_text": "PEACH"
+      },
+      "teacher": "geneval@1"
+    },
+    {
+      "baseline": {
+        "clauses": {
+          "color": true,
+          "text": false
+        },
+        "full_visibility": true,
+        "notes": "Pale embossed letters CL UD, clearly missing O between L and U; complete yellow vase.",
+        "visible_text": "CL UD"
+      },
+      "id": "jp1-train-color-13",
+      "repaired_clauses": [
+        "text"
+      ],
+      "target": {
+        "clauses": {
+          "color": true,
+          "text": true
+        },
+        "full_visibility": true,
+        "notes": "CLOUD legible; one complete yellow vase.",
+        "visible_text": "CLOUD"
+      },
+      "teacher": "ocr@1"
+    },
+    {
+      "baseline": {
+        "clauses": {
+          "count": false,
+          "text": true
+        },
+        "full_visibility": false,
+        "notes": "Handle-like forms on sign edges without recognizable cup bodies; requested two cups not present as visible objects. FRESH identifiable despite faint H crossbar.",
+        "visible_text": "FRESH"
+      },
+      "id": "jp1-train-count-08",
+      "repaired_clauses": [
+        "count"
+      ],
+      "target": {
+        "clauses": {
+          "count": true,
+          "text": true
+        },
+        "full_visibility": true,
+        "notes": "Two distinct white cups fully visible below FRESH sign.",
+        "visible_text": "FRESH"
+      },
+      "teacher": "geneval@1"
+    },
+    {
+      "baseline": {
+        "clauses": {
+          "count": true,
+          "text": false
+        },
+        "full_visibility": true,
+        "notes": "One complete bowl on small pedestal. Only one O in BLOM.",
+        "visible_text": "BLOM"
+      },
+      "id": "jp1-train-count-12",
+      "repaired_clauses": [
+        "text"
+      ],
+      "target": {
+        "clauses": {
+          "count": true,
+          "text": true
+        },
+        "full_visibility": true,
+        "notes": "One complete bowl. BLOOM readable; A pale letters and C open-bottom decorative O shapes remain identifiable. C bowl has diffuse pale rim/geometry.",
+        "visible_text": "BLOOM"
+      },
+      "teacher": "ocr@1"
+    },
+    {
+      "baseline": {
+        "clauses": {
+          "relation": false,
+          "text": false
+        },
+        "full_visibility": true,
+        "notes": "Extra P before PINE. Apple sits inside bowl, not clearly left of it; outer objects within frame.",
+        "visible_text": "P PINE"
+      },
+      "id": "jp1-train-relation-01",
+      "repaired_clauses": [
+        "relation",
+        "text"
+      ],
+      "target": {
+        "clauses": {
+          "relation": true,
+          "text": true
+        },
+        "full_visibility": true,
+        "notes": "One apple distinctly left of one bowl, both complete; PINE legible.",
+        "visible_text": "PINE"
+      },
+      "teacher": "geneval@1"
+    },
+    {
+      "baseline": {
+        "clauses": {
+          "relation": false,
+          "text": false
+        },
+        "full_visibility": true,
+        "notes": "Two cups left of bottle rather than one right. Additional printed letters on tall cup.",
+        "visible_text": "BLOM plus cup-label print"
+      },
+      "id": "jp1-train-relation-12",
+      "repaired_clauses": [
+        "relation"
+      ],
+      "target": {
+        "clauses": {
+          "relation": true,
+          "text": false
+        },
+        "full_visibility": true,
+        "notes": "One complete cup right of one complete bottle; extra saucer. Missing one O in BLOM.",
+        "visible_text": "BLOM"
+      },
+      "teacher": "geneval@1"
+    }
+  ]
+}

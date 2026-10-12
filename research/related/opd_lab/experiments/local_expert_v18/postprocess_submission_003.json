@@ -1,0 +1,20 @@
+{
+  "command": [
+    "sbatch",
+    "--parsable",
+    "--account=minilab",
+    "--partition=minilab-cpu",
+    "--cpus-per-task=4",
+    "--mem=16G",
+    "--time=00:10:00",
+    "--dependency=afterany:1050296",
+    "--job-name=opdlab_le18_postprocess_003",
+    "--output=/midtier/minilab/scratch/chw4026/projects/side_project/generative/opd_related/opd_lab/runs/le18_supervision_003/postprocess/slurm-%j.log",
+    "/midtier/minilab/scratch/chw4026/projects/side_project/generative/opd_related/opd_lab/runs/le18_supervision_003/postprocess/job.sh"
+  ],
+  "gpu_job_id": "1050296",
+  "job_id": "1050297",
+  "run": "/midtier/minilab/scratch/chw4026/projects/side_project/generative/opd_related/opd_lab/runs/le18_supervision_003",
+  "script_sha256": "44c812511aebe04a65a8ef878ed66d980e8d3130a6956f7f0ea6f02e92fc7093",
+  "stage": "le18_postprocess_003"
+}

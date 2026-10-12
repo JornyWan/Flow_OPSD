@@ -1,0 +1,11 @@
+Executed with PYTHONPATH=python and ../../conda_envs/envs/diffusionopd/bin/python.
+
+python -m pytest tests/test_trajectory_fit.py -q
+2 passed in 3.98s
+python -m pytest -q
+66 passed in 13.55s
+
+New coverage: corrected suffix targets retain their own state and single-expert
+provenance; corrupt transitions are rejected; both arms reset student, optimizer
+and scaler consistently; backward budgets match; behavior is frozen; terminal
+training state and the complete endpoint matrix are saved.

@@ -1,0 +1,24 @@
+% Table 3 — 自动生成。组合与增量。
+\begin{table}[t]
+\centering
+\setlength{\tabcolsep}{4pt}
+\caption{\textbf{Composition.} Propagation stacks on top of a shortened rollout.
+Top block: each configuration against the canonical baseline. Bottom row: the
+\emph{increment} contributed by propagation on top of the shortened rollout.
+Units of MDE, win\% in parentheses; $100$ updates, matched hardware and seed.}
+\label{tab:compose}
+\resizebox{\linewidth}{!}{%
+\begin{tabular}{lc cc cc}
+\toprule
+& & \multicolumn{2}{c}{\textbf{DrawBench}} & \multicolumn{2}{c}{\textbf{Unseen-1k}} \\
+\cmidrule(lr){3-4}\cmidrule(lr){5-6}
+\textbf{Configuration} & \textbf{Cost} & NFE$=$4 & NFE$=$40 & NFE$=$4 & NFE$=$40 \\
+\midrule
+(B) shortened rollout & $0.90\times$ & $+12.30$ \scriptsize(91\%) & $-0.05$ \scriptsize(48\%) & $+12.43$ \scriptsize(94\%) & $-0.98$ \scriptsize(43\%) \\
+(C) \MSP & $1.20\times$ & $+10.70$ \scriptsize(83\%) & $+5.62$ \scriptsize(71\%) & $+8.20$ \scriptsize(80\%) & $+3.34$ \scriptsize(64\%) \\
+\textbf{(B$+$C)} & $\sim\!1.10\times$ & $+16.23$ \scriptsize(93\%) & $+2.26$ \scriptsize(56\%) & $+15.91$ \scriptsize(95\%) & $+1.45$ \scriptsize(54\%) \\
+\midrule
+\quad increment of (C) over (B) & -- & $+3.93$ \scriptsize(67\%) & $+2.32$ \scriptsize(59\%) & $+3.48$ \scriptsize(70\%) & $+2.43$ \scriptsize(63\%) \\
+\bottomrule
+\end{tabular}}
+\end{table}

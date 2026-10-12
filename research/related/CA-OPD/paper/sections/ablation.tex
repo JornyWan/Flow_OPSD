@@ -1,0 +1,74 @@
+\section{Ablation: mapping the OPD-improvement design space}
+\label{sec:ablation}
+
+Beyond CA-OPD (min-max reweighting), we tested three other principled
+modifications to multi-teacher OPD. All four share the reproduction setup of
+\S\ref{sec:exp-setup} and differ from uniform \texttt{mopd} only in the studied
+component. Table~\ref{tab:ablation} reports all arms at convergence (step 721);
+the outcome maps which OPD modifications help and which hurt, and \emph{why}.
+
+\begin{description}
+  \item[\textnormal{\textbf{(1) Min-max reweighting (CA-OPD).}}] The method of
+  \S\ref{sec:method}. \emph{Helps early} (Table~\ref{tab:caopd}: faster on the
+  lagging aesthetics axis) but at convergence is within noise of \texttt{mopd} on
+  every axis and higher on none (Aes $6.157$ vs.\ $6.172$, OCR $0.928$ vs.\
+  $0.939$). Mechanism: min-max reallocates capacity toward the worst-served reward
+  axis; on a near-saturated benchmark this trades a small final quality margin for
+  convergence speed.
+
+  \item[\textnormal{\textbf{(2) Huber / trust-region residual (\texttt{robust}).}}]
+  Replace the squared velocity residual by a Huber loss~\cite{huber1964robust}, to
+  be robust to teachers that reward-hack. \emph{Neutral}: within noise of
+  \texttt{mopd} across axes, and notably the \emph{best} OCR at convergence
+  ($0.951$). Mechanism: with well-behaved teachers there are few large residual
+  outliers for the Huber threshold to clip, so it neither helps nor hurts
+  overall---a useful confirmation that OPD's plain $L_2$ is already well-behaved
+  here.
+
+  \item[\textnormal{\textbf{(3) Min-SNR per-step weighting (\texttt{snr}).}}]
+  Apply Min-SNR-$\gamma$ timestep weighting~\cite{hang2023efficient} to the
+  per-step OPD loss. \emph{Hurts badly} (GenEval collapses to $0.785$, Aesthetics
+  to $5.851$). Mechanism: Min-SNR down-weights high-noise steps, but in OPD those
+  early, high-noise steps set the sample's global structure and compositional
+  layout; suppressing them destroys GenEval and structure. This shows OPD's
+  uniform per-step weighting is not an oversight but a good default.
+
+  \item[\textnormal{\textbf{(4) SDE$\to$ODE noise annealing (\texttt{anneal}).}}]
+  Start distillation in the stochastic SDE regime and anneal to the deterministic
+  ODE. \emph{Hurts most} (HPS $0.298$ and Aesthetics $5.623$ degrade sharply).
+  Mechanism: the early high-noise SDE phase injects variance that degrades the
+  student before annealing can help, directly confirming the base paper's finding
+  that the ODE objective dominates SDE.
+\end{description}
+
+\begin{table}[t]
+\centering
+\caption{\textbf{Four-idea ablation at convergence} (step 721, $n{=}256$, gs
+$4.5$; per-axis metrics only). Min-max (CA-OPD) and Huber (\texttt{robust}) are
+within noise of \texttt{mopd} across axes; Min-SNR and annealing clearly hurt
+(GenEval/Aesthetics and HPS/Aesthetics respectively). No idea exceeds uniform
+\texttt{mopd} on the final per-axis quality.}
+\label{tab:ablation}
+\small
+\setlength{\tabcolsep}{5pt}
+\begin{tabular}{lcccccc}
+\toprule
+\textbf{Model}@721 & \textbf{GenEval} & \textbf{OCR} & \textbf{Pick} & \textbf{Clip} & \textbf{HPS} & \textbf{Aes} \\
+\midrule
+\texttt{mopd} (uniform)        & 0.958 & 0.939 & 23.98 & 0.298 & 0.342 & \textbf{6.172} \\
+CA-OPD (min-max)               & 0.959 & 0.928 & 23.96 & 0.296 & 0.342 & 6.157 \\
+\texttt{robust} (Huber)        & 0.948 & \textbf{0.951} & 23.97 & 0.298 & 0.342 & 6.123 \\
+\texttt{snr} (Min-SNR)         & 0.785 & 0.849 & 23.52 & 0.298 & 0.318 & 5.851 \\
+\texttt{anneal} (SDE$\to$ODE)  & 0.888 & 0.882 & 23.14 & 0.297 & 0.298 & 5.623 \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\paragraph{Takeaway.}
+The design space splits cleanly: reweighting \emph{across teachers} (min-max,
+Huber) stays within noise of the strong uniform baseline, whereas reweighting
+\emph{across denoising steps} (Min-SNR) or perturbing the \emph{sampler regime}
+(SDE annealing) is actively harmful. This localizes where OPD improvements can
+plausibly come from---teacher combination, not per-step or sampler
+manipulation---and shows CA-OPD's early-convergence benefit is not a trivial
+artifact of any reweighting.

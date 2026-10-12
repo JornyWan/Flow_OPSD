@@ -1,0 +1,10 @@
+{
+  "excluded_seed_count": 263,
+  "new_images": 156,
+  "plan_sha256": "08633f2b5035e4f38beae6c0ce23039c67aa8b56152b8faa5a139e6a626e2149",
+  "protocol_sha256": "7988cd5cf0f8d519b1c34697454f8e35d43d0075c698030808483aa7fc2b138a",
+  "run": "/midtier/minilab/scratch/chw4026/projects/side_project/generative/opd_related/opd_lab/runs/le17_coverage_001",
+  "seed_source_files": 156,
+  "teacher_queries": 72,
+  "updates": 0
+}

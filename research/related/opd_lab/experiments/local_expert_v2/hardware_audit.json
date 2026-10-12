@@ -1,0 +1,30 @@
+{
+  "method": "Read-only torch.cuda.get_device_name(0) in an overlapping srun step within each active allocation. No model or experiment state changed.",
+  "recorded_utc": "2026-09-11T18:21:28.319064+00:00",
+  "rows": [
+    {
+      "arm": "fixed_geneval",
+      "job": "1047846",
+      "gpu": "NVIDIA L40S",
+      "visible_devices": "0"
+    },
+    {
+      "arm": "utility_only",
+      "job": "1047847",
+      "gpu": "NVIDIA L40S",
+      "visible_devices": "0"
+    },
+    {
+      "arm": "verified_fixed",
+      "job": "1047848",
+      "gpu": "NVIDIA L40S",
+      "visible_devices": "0"
+    },
+    {
+      "arm": "verified_multi",
+      "job": "1047849",
+      "gpu": "NVIDIA L40S",
+      "visible_devices": "0"
+    }
+  ]
+}

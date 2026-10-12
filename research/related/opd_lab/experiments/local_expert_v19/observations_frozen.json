@@ -1,0 +1,12 @@
+{
+  "draft_sha256": "d255577d67667f5fb0d2b165d54637ffce2bbc297a479d6615e81a4dd8a63de7",
+  "frozen_at_utc": "2026-09-15T04:11:17.921226+00:00",
+  "frozen_before_key_join": true,
+  "inherited_sha256": "320fa863cd600df789cad2eb045a9da38eb9e8540541f4ba7d083d84ad97dfa0",
+  "items_sha256": "18d47fb8b70d5df8b6e5aabea31767700363d5d8cc290b12798800f487412434",
+  "key_sha256": "31b660b08c99cff26b67be1560870334bceacbb8f24aece9b5db3b4e3214c307",
+  "observations_sha256": "3fae785feca20fe21fd24eb709ee84beb6a83ff4632240cc075457a5b939b105",
+  "review_script_sha256": "dc1f0c4bd9eb0ad9d9e692797587bcd1f05c04db79dd972bc3f8c615ca33c3e7",
+  "reviewer": "implementing assistant; provisional development labels",
+  "rubric_sha256": "983a9232c3cb3b8868a35e528d6d80b176e34a2c176f915a459110521a69033a"
+}

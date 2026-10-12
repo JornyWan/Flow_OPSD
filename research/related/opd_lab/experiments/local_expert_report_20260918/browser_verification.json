@@ -1,0 +1,25 @@
+{
+  "report_sha256": "30945d4e52b6b6b0163c698ef5d2e378fb34df50bd2e5977595d03a24ce5fd2c",
+  "browser": "153.0.8010.12",
+  "offline": true,
+  "external_requests": [],
+  "page_errors": [],
+  "checked_observations": 400,
+  "checks": [
+    "offline file opens; 10 sections and all 20 historical phases render",
+    "path, cohort and metric controls agree with frozen counts, including unknowns and harms",
+    "human uncertainty and missing fields remain separate; case jump and original-size image modal work",
+    "all 112 gallery groups / 400 observation slots are reachable",
+    "historical category and full-record search work without dropping phases",
+    "mask illustration preserves counts; CSV exports annotation source and current denominator",
+    "presentation toggle and desktop/mobile layouts work without horizontal page overflow",
+    "print preparation loads embedded figures; Chromium can export the report to PDF"
+  ],
+  "screenshots": [
+    "runs/local_expert_report_20260918/screenshots/01-overview-desktop.png",
+    "runs/local_expert_report_20260918/screenshots/02-results-desktop.png",
+    "runs/local_expert_report_20260918/screenshots/03-case-gallery-desktop.png",
+    "runs/local_expert_report_20260918/screenshots/04-overview-mobile.png",
+    "runs/local_expert_report_20260918/screenshots/05-gallery-mobile.png"
+  ]
+}

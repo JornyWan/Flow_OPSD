@@ -1,0 +1,18 @@
+{
+  "html_sha256": "921c9100f724634ea221aed7e93d4e31ad939f2dc5e39c18c50bb2307d3cc1fc",
+  "human_observations_received": false,
+  "images": 48,
+  "input_sha256": "95ea438198fb93a6109c99b17274e3e986362d59e41e1587d0aa1f4fde88b46b",
+  "notes": "Human review is a new annotation version. The user has seen aggregate results; images hide identities and prior labels. No previous labels overwritten. This subset cannot re-estimate all-32 harm.",
+  "preparation_correction": {
+    "prior_key_sha256": "30e3bca9929a1131f6e9e0b321e011412fc49b9388d9bf24d16efd754f48acd9",
+    "reason": "Separate review_image_id from source prompt id before delivery; no image/order/label changes."
+  },
+  "private_key_sha256": "4f041d4226bcfaecd54cc02f3b6a08066e7caf6f7b32899c44a52aa7f295b16e",
+  "randomization_seed": 2026091501,
+  "review_id": "phase20-human-primary-v1",
+  "scope": "All 12 predefined positive_fresh_seed / single pairs. No outcome-based selection.",
+  "script_sha256": "f0b67896f3f4c8bd3dacb1b5bebad004794cfec0958815d17ed75922b6575af4",
+  "source_frozen_sha256": "d80682299089fd2be60be2bef4e983b4537f12606f2609a418b06940d8b50157",
+  "source_review": "/midtier/minilab/scratch/chw4026/projects/side_project/generative/opd_related/opd_lab/runs/le20_eval_review_001"
+}

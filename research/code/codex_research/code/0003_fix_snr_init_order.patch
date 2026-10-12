@@ -1,0 +1,21 @@
+diff --git a/scripts/train_sd3_opd.py b/scripts/train_sd3_opd.py
+--- a/scripts/train_sd3_opd.py
++++ b/scripts/train_sd3_opd.py
+@@ -1071,8 +1071,6 @@ def main(_):
+         _cr_indices = (cr_reward_teacher_idx, *cr_retention_teacher_indices)
+         if any(x < 0 or x >= n_t for x in _cr_indices):
+             raise ValueError(f"invalid constrained-retention slot(s) {_cr_indices} for n_t={n_t}")
+-        if snr_weight:
+-            raise ValueError("CODEX-0002 constraint is defined on unweighted step KL; disable Min-SNR")
+         if accelerator.is_main_process:
+             logger.info(
+                 f"[CODEX-CR] direct_slot={cr_reward_teacher_idx} retention_slots="
+@@ -1204,6 +1202,8 @@ def main(_):
+     opd_huber = bool(getattr(config.train, "opd_huber", False))      # Idea: robust/trust-region residual
+     huber_delta = float(getattr(config.train, "huber_delta", 1.0))
+     snr_weight = bool(getattr(config.train, "snr_weight", False))    # Idea: Min-SNR-gamma per-step weighting
++    if cr and snr_weight:
++        raise ValueError("CODEX-0002 constraint is defined on unweighted step KL; disable Min-SNR")
+     snr_gamma = float(getattr(config.train, "snr_gamma", 5.0))
+     anneal_noise = bool(getattr(config.train, "anneal_noise", False))  # Idea: SDE->ODE noise annealing
+     noise_start = float(getattr(config.train, "noise_start", 0.7))

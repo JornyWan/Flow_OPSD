@@ -1,0 +1,61 @@
+{
+  "allocated_gpu_hours": 0.06277777777777778,
+  "counts_verified": {
+    "evidence_images": 192,
+    "geneval_clause_views": 480,
+    "ocr_detection_views": 384,
+    "ocr_recognition_crops": 376
+  },
+  "discrete_filter_original_utility_ranking_matches": 64,
+  "frozen_labels_unchanged": true,
+  "generated_images": 0,
+  "historical_artifacts": {
+    "10": {
+      "README_historical_revision": "9dcc18b",
+      "all_recorded_artifacts_unchanged": true,
+      "artifact_count": 154
+    },
+    "11": {
+      "README_historical_revision": "3923b6a",
+      "all_recorded_artifacts_unchanged": true,
+      "artifact_count": 428
+    },
+    "12": {
+      "README_historical_revision": "8e9c655",
+      "all_recorded_artifacts_unchanged": true,
+      "artifact_count": 581
+    },
+    "6": {
+      "README_historical_revision": "e384a09",
+      "all_recorded_artifacts_unchanged": true,
+      "artifact_count": 153
+    },
+    "7": {
+      "README_historical_revision": "8c1e160",
+      "all_recorded_artifacts_unchanged": true,
+      "artifact_count": 716
+    },
+    "8": {
+      "README_historical_revision": "d9c392c",
+      "all_recorded_artifacts_unchanged": true,
+      "artifact_count": 99
+    },
+    "9": {
+      "README_historical_revision": "d9c392c",
+      "all_recorded_artifacts_unchanged": true,
+      "artifact_count": 97
+    }
+  },
+  "input_images_verified": 192,
+  "limitations": "Development images and implementing-assistant labels; correlated detector/OCR views; large shared assets use recorded inventories.",
+  "old_measurement_worker_unchanged": true,
+  "optimizer_updates": 0,
+  "original_v1_statistics_reproduced": true,
+  "queries_and_decisions_recomputed": 64,
+  "raw_replay_mismatches": 0,
+  "separate_posthoc_decisions_recomputed": 64,
+  "upstream": {
+    "diffusionopd": "0c85bf0193a6da24bb1f72152b612d353a154999",
+    "diffusionopsd": "9c4c48cdfe5c3fa712d32957345d75fae9295696"
+  }
+}

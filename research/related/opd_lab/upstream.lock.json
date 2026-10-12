@@ -1,0 +1,12 @@
+{
+  "diffusionopd": {
+    "url": "https://github.com/ali-vilab/DiffusionOPD.git",
+    "commit": "0c85bf0193a6da24bb1f72152b612d353a154999",
+    "provenance": "author repository"
+  },
+  "diffusionopsd": {
+    "url": "https://github.com/worldbench/DiffusionOPSD.git",
+    "commit": "9c4c48cdfe5c3fa712d32957345d75fae9295696",
+    "provenance": "repository linked by https://diffusionopsd.github.io/; README describes it as an external implementation"
+  }
+}

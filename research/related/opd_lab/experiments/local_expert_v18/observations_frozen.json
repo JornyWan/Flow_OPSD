@@ -1,0 +1,12 @@
+{
+  "draft_sha256": "07fa24c2cf185f5ba0f852b27dd0f89f593238620707c6c4932584c6ec2c656b",
+  "frozen_at_utc": "2026-09-15T03:52:22.637794+00:00",
+  "frozen_before_key_join": true,
+  "inherited_sha256": "42f2335db9c8e01b679fceed15b525396cfcf61aa3abedea47e1244550d3c535",
+  "items_sha256": "d94f2dc2712433fe111f4454f8e8e1c3fad869bd494e7a7af1f5c9e2038d92d6",
+  "key_sha256": "63f4af5ebcc10e56b68af10a4f5f8cc0f7549a8705ea3601105ae4363bd9a26f",
+  "observations_sha256": "bc026d69dc75f8ac8a7e3ae0a9c38b0d54b79d00bbd3ade059779390d54ddb71",
+  "review_script_sha256": "a4d94954695d9f4a8be7da2636380818d372847bd5951054dd9c2e4274acd029",
+  "reviewer": "implementing assistant; provisional labels",
+  "rubric_sha256": "983a9232c3cb3b8868a35e528d6d80b176e34a2c176f915a459110521a69033a"
+}

@@ -1,0 +1,3 @@
+Command: PYTHONPATH=python:scripts ../../conda_envs/envs/diffusionopd/bin/python -m pytest -q
+110 passed in 14.13s
+Observed process exit code:0

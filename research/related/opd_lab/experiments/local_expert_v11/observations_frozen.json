@@ -1,0 +1,11 @@
+{
+  "cases": 42,
+  "frozen_at_utc": "2026-09-14T00:56:22.853268+00:00",
+  "frozen_before_key_join": true,
+  "items_sha256": "f8472d4cdc26254bb940618c928121f413b79a3293fff5e26828930438e05e96",
+  "key_sha256": "340c1cb16914ce50e26076e136ff80e899d2a0d2894ff4fa6942479df851e738",
+  "observations_sha256": "42c3bd80cf57661ab6c28f7a2ca99c4bb744ee43f3f1e5b7fa93b7fb8ff22c30",
+  "reviewer": "implementing assistant; model and verifier scores hidden during all 168 image reviews; not independent human ground truth",
+  "rubric_sha256": "c0484af49b854ef78e5aaf0a62e26bc1d9620ca8c8e9e570e11d5b4e2d6663d4",
+  "views": 168
+}

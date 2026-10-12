@@ -1,0 +1,31 @@
+{
+  "backward_queries": 4608,
+  "evaluation_images": 185,
+  "new_evaluation_seeds": 32,
+  "new_teacher_queries": 0,
+  "numerical_protocol": {
+    "mode": "deterministic_training_qualified_v1",
+    "qualification_result": "/midtier/minilab/scratch/chw4026/projects/side_project/generative/opd_related/opd_lab/runs/le18_repeatability_001/result.json",
+    "qualification_sha256": "7db79d2ec77d397bddd6ec531cd87525751d1f47a387b9d9fe55df1fdafe262c"
+  },
+  "plan_sha256": "edb8a14a116e65fe6243a87d9b542ea7549afe612df320ffdb7ab227b6f465ca",
+  "run": "/midtier/minilab/scratch/chw4026/projects/side_project/generative/opd_related/opd_lab/runs/le18_supervision_003",
+  "source_attempt": "/midtier/minilab/scratch/chw4026/projects/side_project/generative/opd_related/opd_lab/runs/le18_supervision_001",
+  "training_query_states": 15,
+  "unchanged_scientific_fields": [
+    "arms",
+    "audits",
+    "evaluation",
+    "evaluation_images",
+    "expected_counts",
+    "index",
+    "points",
+    "reference_images",
+    "reference_model",
+    "schedules",
+    "scope",
+    "student",
+    "updates",
+    "version"
+  ]
+}

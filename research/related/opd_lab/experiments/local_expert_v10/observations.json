@@ -1,0 +1,302 @@
+[
+  {
+    "case": 1,
+    "clauses": {
+      "count": true,
+      "text": true
+    },
+    "full_visibility": true,
+    "notes": "One complete bowl. BLOOM identifiable despite rough hatched contours on the second O; no separate extra character.",
+    "visible_text": "BLOOM"
+  },
+  {
+    "case": 2,
+    "clauses": {
+      "relation": true,
+      "text": true
+    },
+    "full_visibility": true,
+    "notes": "One cup clearly right of one bottle, both complete. BLOOM is blurred but identifiable; no extra lettering.",
+    "visible_text": "BLOOM"
+  },
+  {
+    "case": 3,
+    "clauses": {
+      "relation": true,
+      "text": true
+    },
+    "full_visibility": true,
+    "notes": "One small complete bowl at lower left and one apple clearly at right; low contrast, correct sign above.",
+    "visible_text": "CLOUD"
+  },
+  {
+    "case": 4,
+    "clauses": {
+      "relation": true,
+      "text": true
+    },
+    "full_visibility": true,
+    "notes": "One cup clearly right of one bottle, both complete. BLOOM is blurred but identifiable; no extra lettering.",
+    "visible_text": "BLOOM"
+  },
+  {
+    "case": 5,
+    "clauses": {
+      "count": true,
+      "text": true
+    },
+    "full_visibility": true,
+    "notes": "Two separate complete bananas; SUNNY clearly readable. Small surface/fastener-like marks are not recognizable extra lettering.",
+    "visible_text": "SUNNY"
+  },
+  {
+    "case": 6,
+    "clauses": {
+      "relation": true,
+      "text": false
+    },
+    "full_visibility": false,
+    "notes": "Bicycle clearly right of car. Car extends across the left frame edge; additional plate lettering violates the only-word requirement, regardless of stylized sign glyphs.",
+    "visible_text": "WAVE (stylized); additional license-plate lettering"
+  },
+  {
+    "case": 7,
+    "clauses": {
+      "relation": true,
+      "text": true
+    },
+    "full_visibility": true,
+    "notes": "One complete bowl at left and one pale apple clearly right. CLOUD identifiable with irregular letter spacing.",
+    "visible_text": "CLOUD"
+  },
+  {
+    "case": 8,
+    "clauses": {
+      "relation": true,
+      "text": true
+    },
+    "full_visibility": false,
+    "notes": "Cup clearly right of bottle. Lower foot/base of cup runs into the bottom image boundary; word remains readable.",
+    "visible_text": "BLOOM"
+  },
+  {
+    "case": 9,
+    "clauses": {
+      "count": true,
+      "text": true
+    },
+    "full_visibility": true,
+    "notes": "Two separate complete bananas; SUNNY clearly readable. Small surface/fastener-like marks are not recognizable extra lettering.",
+    "visible_text": "SUNNY"
+  },
+  {
+    "case": 10,
+    "clauses": {
+      "relation": true,
+      "text": false
+    },
+    "full_visibility": false,
+    "notes": "Bicycle clearly right of car. Car extends across the left frame edge; additional plate lettering violates the only-word requirement, regardless of stylized sign glyphs.",
+    "visible_text": "Wave; additional license-plate lettering"
+  },
+  {
+    "case": 11,
+    "clauses": {
+      "relation": false,
+      "text": true
+    },
+    "full_visibility": true,
+    "notes": "Two separate bowls are visible; apple sits in front of the right-hand bowl. This fails the requested exactly-one-bowl relation scene.",
+    "visible_text": "CLOUD"
+  },
+  {
+    "case": 12,
+    "clauses": {
+      "relation": false,
+      "text": true
+    },
+    "full_visibility": true,
+    "notes": "Apple is directly in front of/below the bowl, within its horizontal extent, not clearly right.",
+    "visible_text": "CLOUD"
+  },
+  {
+    "case": 13,
+    "clauses": {
+      "relation": true,
+      "text": true
+    },
+    "full_visibility": true,
+    "notes": "One cup clearly right of one bottle, both complete. BLOOM is blurred but identifiable; no extra lettering.",
+    "visible_text": "BLOOM"
+  },
+  {
+    "case": 14,
+    "clauses": {
+      "count": true,
+      "text": true
+    },
+    "full_visibility": true,
+    "notes": "One complete bowl; word identifiable and no other readable lettering.",
+    "visible_text": "BLOOM"
+  },
+  {
+    "case": 15,
+    "clauses": {
+      "relation": true,
+      "text": true
+    },
+    "full_visibility": true,
+    "notes": "One cup clearly right of one bottle, both complete. BLOOM is blurred but identifiable; no extra lettering.",
+    "visible_text": "BLOOM"
+  },
+  {
+    "case": 16,
+    "clauses": {
+      "relation": true,
+      "text": false
+    },
+    "full_visibility": false,
+    "notes": "Bicycle clearly right of car. Car extends across the left frame edge; additional plate lettering violates the only-word requirement, regardless of stylized sign glyphs.",
+    "visible_text": "WAVE (stylized); additional license-plate lettering"
+  },
+  {
+    "case": 17,
+    "clauses": {
+      "relation": true,
+      "text": false
+    },
+    "full_visibility": false,
+    "notes": "Bicycle clearly right of car. Car extends across the left frame edge; additional plate lettering violates the only-word requirement, regardless of stylized sign glyphs.",
+    "visible_text": "WAVE (stylized); additional license-plate lettering"
+  },
+  {
+    "case": 18,
+    "clauses": {
+      "count": true,
+      "text": true
+    },
+    "full_visibility": true,
+    "notes": "One complete bowl; word identifiable and no other readable lettering.",
+    "visible_text": "BLOOM"
+  },
+  {
+    "case": 19,
+    "clauses": {
+      "relation": null,
+      "text": true
+    },
+    "full_visibility": true,
+    "notes": "Lower apple is clearly right of lower bowl. The CLOUD-bearing object above has a second bowl-like profile; unsure whether it is a sign or another bowl. Exactly-one-bowl relation scene is therefore uncertain, not a pass.",
+    "visible_text": "CLOUD"
+  },
+  {
+    "case": 20,
+    "clauses": {
+      "count": true,
+      "text": true
+    },
+    "full_visibility": true,
+    "notes": "One complete bowl; word identifiable and no other readable lettering.",
+    "visible_text": "BLOOM"
+  },
+  {
+    "case": 21,
+    "clauses": {
+      "count": true,
+      "text": true
+    },
+    "full_visibility": true,
+    "notes": "Two recognizable bananas, fully visible. Left banana has a long bent/flared green tip, but no clearly separate third banana; word correct.",
+    "visible_text": "SUNNY"
+  },
+  {
+    "case": 22,
+    "clauses": {
+      "count": true,
+      "text": true
+    },
+    "full_visibility": true,
+    "notes": "Two separate complete bananas; SUNNY clearly readable. Small surface/fastener-like marks are not recognizable extra lettering.",
+    "visible_text": "SUNNY"
+  },
+  {
+    "case": 23,
+    "clauses": {
+      "count": true,
+      "text": true
+    },
+    "full_visibility": true,
+    "notes": "Two separate complete bananas; SUNNY clearly readable. Small surface/fastener-like marks are not recognizable extra lettering.",
+    "visible_text": "SUNNY"
+  },
+  {
+    "case": 24,
+    "clauses": {
+      "relation": true,
+      "text": false
+    },
+    "full_visibility": false,
+    "notes": "Bicycle clearly right of car. Car extends across the left frame edge; additional plate lettering violates the only-word requirement, regardless of stylized sign glyphs.",
+    "visible_text": "WAVE (stylized); additional license-plate lettering"
+  },
+  {
+    "case": 25,
+    "clauses": {
+      "relation": true,
+      "text": true
+    },
+    "full_visibility": true,
+    "notes": "One cup clearly right of one bottle, both complete. BLOOM is blurred but identifiable; no extra lettering.",
+    "visible_text": "BLOOM"
+  },
+  {
+    "case": 26,
+    "clauses": {
+      "relation": true,
+      "text": true
+    },
+    "full_visibility": true,
+    "notes": "One complete white bowl and one pale apple clearly at right, with correct word above. Low contrast remains.",
+    "visible_text": "CLOUD"
+  },
+  {
+    "case": 27,
+    "clauses": {
+      "relation": true,
+      "text": false
+    },
+    "full_visibility": false,
+    "notes": "Bicycle clearly right of car. Car extends across the left frame edge; additional plate lettering violates the only-word requirement, regardless of stylized sign glyphs.",
+    "visible_text": "WAVE (stylized); additional license-plate lettering"
+  },
+  {
+    "case": 28,
+    "clauses": {
+      "count": true,
+      "text": true
+    },
+    "full_visibility": true,
+    "notes": "One complete bowl; word identifiable and no other readable lettering.",
+    "visible_text": "BLOOM"
+  },
+  {
+    "case": 29,
+    "clauses": {
+      "count": true,
+      "text": true
+    },
+    "full_visibility": true,
+    "notes": "One complete bowl; word identifiable and no other readable lettering.",
+    "visible_text": "BLOOM"
+  },
+  {
+    "case": 30,
+    "clauses": {
+      "count": true,
+      "text": true
+    },
+    "full_visibility": true,
+    "notes": "Two separate complete bananas; SUNNY clearly readable. Small surface/fastener-like marks are not recognizable extra lettering.",
+    "visible_text": "SUNNY"
+  }
+]

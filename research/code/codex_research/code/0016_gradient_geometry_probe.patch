@@ -1,0 +1,52 @@
+--- a/scripts/train_sd3_opd.py
++++ b/scripts/train_sd3_opd.py
+@@ -3087,6 +3087,49 @@
+                                 )).float()
+                                 info["cr_direct_param_grad_norm"].append(_gdn)
+                                 _cr_direct_probe_done = True
++                            # ---- CODEX-0016: 梯度几何探针(codex 0014 §4) ----
++                            # 问题:fixed penalty 失败有两种完全不同的解释 ——
++                            #   (a) 优化器错了:可行方向存在但被 overshoot;
++                            #   (b) 几何上无解:PickScore 梯度与 capability-safe cone 基本不相交。
++                            # 再扫权重区分不了,一次 Gram 矩阵测量可以。
++                            # 分别求 direct 与**每个** retention slot 的参数梯度,记两两余弦与范数;
++                            # 二维 QP 离线解(不在训练里解,避免影响轨迹)。
++                            # 只在每 epoch 第一个满足条件的 batch 上做一次,retain_graph 复用已有图。
++                            if (bool(_direct_mask.any()) and bool(_ret_mask.any())
++                                    and not globals().get("_cr_geom_done_epoch", -1) == epoch):
++                                globals()["_cr_geom_done_epoch"] = epoch
++                                _gv = {}
++                                _gv["g"] = torch.autograd.grad(
++                                    _cr_direct_loss, transformer_trainable_parameters,
++                                    retain_graph=True, allow_unused=True)
++                                for _si in cr_retention_teacher_indices:
++                                    _m_g = (_tidx == _si).to(_ret_mask.dtype)
++                                    _d_g = _m_g.sum().clamp(min=1.0)
++                                    _C_s = (_m_g * _ret_per_sample).sum() / _d_g
++                                    _nm_g = (config.train.teachers[_si]["name"]
++                                             if _si < len(config.train.teachers) else f"slot{_si}")
++                                    try:
++                                        _gv[_nm_g] = torch.autograd.grad(
++                                            _C_s, transformer_trainable_parameters,
++                                            retain_graph=True, allow_unused=True)
++                                    except Exception:
++                                        _gv[_nm_g] = None
++                                def _flat(_t):
++                                    if _t is None: return None
++                                    _ps = [x.detach().double().flatten() for x in _t if x is not None]
++                                    return torch.cat(_ps) if _ps else None
++                                _fv = {k: _flat(v) for k, v in _gv.items()}
++                                _keys = [k for k in _fv if _fv[k] is not None]
++                                for _i2 in range(len(_keys)):
++                                    _a = _fv[_keys[_i2]]
++                                    info[f"geom_norm_{_keys[_i2]}"].append(_a.norm().float())
++                                    for _j2 in range(_i2 + 1, len(_keys)):
++                                        _b = _fv[_keys[_j2]]
++                                        _cs = (_a @ _b) / (_a.norm().clamp(min=1e-30)
++                                                           * _b.norm().clamp(min=1e-30))
++                                        info[f"geom_cos_{_keys[_i2]}_{_keys[_j2]}"].append(_cs.float())
++                                del _gv, _fv
++
+                             if bool(_ret_mask.any()) and not _cr_retention_probe_done:
+                                 _gr = torch.autograd.grad(
+                                     _cr_retention_loss, transformer_trainable_parameters,

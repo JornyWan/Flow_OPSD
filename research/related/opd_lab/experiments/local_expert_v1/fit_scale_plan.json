@@ -1,0 +1,14 @@
+{
+  "scope": "One update per arm, four fixed training queries, same job/GPU, matching pre-update images/scores required. No test or validation used.",
+  "learning_rates": [
+    0.0003,
+    0.0001,
+    3e-05
+  ],
+  "runs": [
+    "/midtier/minilab/scratch/chw4026/projects/side_project/generative/opd_related/opd_lab/runs/le1_fit_scale_3e4_001",
+    "/midtier/minilab/scratch/chw4026/projects/side_project/generative/opd_related/opd_lab/runs/le1_fit_scale_1e4_001",
+    "/midtier/minilab/scratch/chw4026/projects/side_project/generative/opd_related/opd_lab/runs/le1_fit_scale_3e5_001"
+  ],
+  "trigger": "First verified engineering update increased accepted-target squared transition error by 3.38x. Investigate fitting stability before long training."
+}

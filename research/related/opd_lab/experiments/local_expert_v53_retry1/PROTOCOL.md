@@ -1,0 +1,60 @@
+# Execution amendment: one bounded correction of a pre-generation device-check failure
+
+The initial attempt failed after76 seconds and generated zero images. Its archive
+remains immutable. This explicitly reviewed retry supersedes the original no-retry
+execution clause once; no scientific settings change. Move replay reference states
+and actions to the backend device before equality checks, preserving saved CPU
+tensors. Add a CPU-to-non-CPU device regression contract. Maximum1080 seconds
+for this job, charge76+actual to the same1200-second Phase53 cap. No further
+retry or extension. Everything below retains the original scientific protocol;
+this paragraph controls only the resource/retry execution terms.
+
+# Phase53: original-training-state realization, no optimization
+
+Claim C2 diagnosis: determine whether the selected teacher/noop policy is
+realized by the already fitted student at the SAME states, before attributing
+Phase52 failure to generalization. All64 Phase52 training prompts/noises; original
+random_matched and verified checkpoints and masks (7 accepted,57 rejected each).
+No fitting, mask changes, checkpoint search, evaluator calibration or new data.
+Confirmation512/final768 remain untouched. This is not a new generalization test.
+
+Generate128 new endpoints: each fitted arm at each original saved index1 state,
+then8 fresh permanent-anchor suffix actions. Reuse the one-query anchor prefix;
+never reuse another branch suffix. Same Flow10 shift3,CFG4.5,512,FP16 autocast,
+FP32 backbone/latents/VAE. Load one backbone,two adapters,no teacher. Exact first
+context+anchor replay, first full-route replay for each arm, original fitted
+velocity MSE and drift exact for all128 actions, frozen weights and all-prefix
+checks. These cached suffix endpoints equal full temporal deployment; no duplicate
+local/full generation. Record actual9 fresh queries/image and replay separately.
+
+Reuse128 original collection noop/teacher images and task predictions with their
+original hashes and scorer fingerprint. Score128 new student images using the
+same A/B implementations and8 historical parity cases; score ALL256 actual
+images with PickScore/26,CLIPScore,Aesthetic,HPSv2,ImageReward. Count no virtual
+selected image as new generation or extra independent evidence. Direct random/
+verified policies choose original teacher or noop by the frozen masks only.
+
+Primary diagnostic summary: fitted verified minus fitted random B joint success
+on all64 training prompts. Report both fitted minus direct-selected contrasts,
+direct verified minus direct random, each fitted minus noop,teacher minus noop.
+All intervals are descriptive family-stratified paired-prompt bootstrap20000,
+seed53053, no multiplicity adjustment, training-run uncertainty or efficacy gate.
+Decompose fitted-minus-selected net successes into accepted7 and rejected57
+exactly; report wins/losses, survival of direct joint repairs, protected-clause
+harm and conditional denominators, all task/A unknown metrics and five quality
+scores. No images or failed scores dropped. Any runtime/score error invalidates
+interpretation. Report full denominators and selector uncertainty.
+
+Interpretation: accepted-state realization deficit motivates investigating
+fitting/target projection; rejected-state harm motivates a matched full-decision
+target test; successful in-pool realization with failed development advantage
+motivates coverage/independent-run study. These are diagnostic hypotheses, not
+automatic causal attributions or significance-triggered training. No automatic
+next GPU job, extension or retry. The negative Phase52 main result stays unchanged.
+
+Resource: current user request to continue the next plan authorizes this new
+bounded diagnostic. Independent Phase53 ceiling1200 seconds,one L40,4CPU,64GB.
+The previous10800-second session remains archived at10207 used/593 remaining;
+do not retrospectively enlarge or debit that completed session. Count this new
+job separately and expose combined historical spending. Zero optimizer updates,
+zero direct agent image reads/screenshots/remote vision. Human ratings auxiliary.

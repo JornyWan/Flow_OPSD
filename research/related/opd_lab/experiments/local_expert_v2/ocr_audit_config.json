@@ -1,0 +1,58 @@
+{
+  "binary": "/midtier/minilab/scratch/chw4026/projects/side_project/generative/opd_related/opd_lab/.tools/tesseract/root/usr/bin/tesseract",
+  "library_dir": "/midtier/minilab/scratch/chw4026/projects/side_project/generative/opd_related/opd_lab/.tools/tesseract/root/usr/lib/x86_64-linux-gnu",
+  "tessdata": "/midtier/minilab/scratch/chw4026/projects/side_project/generative/opd_related/opd_lab/.tools/tesseract/root/usr/share/tesseract-ocr/4.00/tessdata",
+  "language": "eng",
+  "oem": 1,
+  "psm": 11,
+  "scope": "audit-only full image; no expected prompt or whitelist; not used for training",
+  "assets_sha256": {
+    "/midtier/minilab/scratch/chw4026/projects/side_project/generative/opd_related/opd_lab/.tools/tesseract/root/usr/bin/tesseract": "1b3c3861f528d4f59477a9d1c7a0c9cdc9d511f70c3b035ca172a8b6be9c3e6c",
+    "/midtier/minilab/scratch/chw4026/projects/side_project/generative/opd_related/opd_lab/.tools/tesseract/root/usr/share/tesseract-ocr/4.00/tessdata/eng.traineddata": "7d4322bd2a7749724879683fc3912cb542f19906c83bcc1a52132556427170b2",
+    "/midtier/minilab/scratch/chw4026/projects/side_project/generative/opd_related/opd_lab/.tools/tesseract/root/usr/lib/x86_64-linux-gnu/liblept.so.5": "134ef6aec02c34d6d5afb58755e255b9076b598f48742db04ead43f874691a29",
+    "/midtier/minilab/scratch/chw4026/projects/side_project/generative/opd_related/opd_lab/.tools/tesseract/root/usr/lib/x86_64-linux-gnu/liblept.so.5.0.4": "134ef6aec02c34d6d5afb58755e255b9076b598f48742db04ead43f874691a29",
+    "/midtier/minilab/scratch/chw4026/projects/side_project/generative/opd_related/opd_lab/.tools/tesseract/root/usr/lib/x86_64-linux-gnu/libopenjp2.so.2.4.0": "9d0cbdee4fa3f44d4eb90cc304f3d34067baec1daad431af4b5f39b529f8bb83",
+    "/midtier/minilab/scratch/chw4026/projects/side_project/generative/opd_related/opd_lab/.tools/tesseract/root/usr/lib/x86_64-linux-gnu/libopenjp2.so.7": "9d0cbdee4fa3f44d4eb90cc304f3d34067baec1daad431af4b5f39b529f8bb83",
+    "/midtier/minilab/scratch/chw4026/projects/side_project/generative/opd_related/opd_lab/.tools/tesseract/root/usr/lib/x86_64-linux-gnu/libtesseract.so.4": "538915d532d35501cecd75fa04cf8aeb3e33681e052f676b8e62b541d7025277",
+    "/midtier/minilab/scratch/chw4026/projects/side_project/generative/opd_related/opd_lab/.tools/tesseract/root/usr/lib/x86_64-linux-gnu/libtesseract.so.4.0.1": "538915d532d35501cecd75fa04cf8aeb3e33681e052f676b8e62b541d7025277",
+    "/midtier/minilab/scratch/chw4026/projects/side_project/generative/opd_related/opd_lab/.tools/tesseract/root/usr/lib/x86_64-linux-gnu/libwebpmux.so.3": "28f3105333cf1a45fa80629665667dbdfcac5cb9a51694a2ce33dea858a3e5fa",
+    "/midtier/minilab/scratch/chw4026/projects/side_project/generative/opd_related/opd_lab/.tools/tesseract/root/usr/lib/x86_64-linux-gnu/libwebpmux.so.3.0.8": "28f3105333cf1a45fa80629665667dbdfcac5cb9a51694a2ce33dea858a3e5fa"
+  },
+  "ubuntu_packages": [
+    {
+      "deb": "liblept5_1.82.0-3build1_amd64.deb",
+      "sha256": "936cf3ce4f192bd33e1ac45921f5f530e7681cfc78d67048f0acd6c2d39f894d",
+      "metadata": "Package: liblept5\nVersion: 1.82.0-3build1"
+    },
+    {
+      "deb": "libtesseract4_4.1.1-2.1build1_amd64.deb",
+      "sha256": "1c428586aa9d0b5ef5a8a107f958d7eac99d734b6cb98338488c3aae9e8bd702",
+      "metadata": "Package: libtesseract4\nVersion: 4.1.1-2.1build1"
+    },
+    {
+      "deb": "tesseract-ocr-eng_1%3a4.00~git30-7274cfa-1.1_all.deb",
+      "sha256": "a4709bd43f71c83f9171071dddaf87a125f467d5258bd323048d49b054ef5eb8",
+      "metadata": "Package: tesseract-ocr-eng\nVersion: 1:4.00~git30-7274cfa-1.1"
+    },
+    {
+      "deb": "tesseract-ocr-osd_1%3a4.00~git30-7274cfa-1.1_all.deb",
+      "sha256": "7dba7b3dfa1a5b4fcb2542faa9d8fdad94fbb7070a5e9d931083c61dcc5cb172",
+      "metadata": "Package: tesseract-ocr-osd\nVersion: 1:4.00~git30-7274cfa-1.1"
+    },
+    {
+      "deb": "tesseract-ocr_4.1.1-2.1build1_amd64.deb",
+      "sha256": "5d33a2cc1484aa5032d07f51a4375d414d6868347691239874f0cfc03280a18f",
+      "metadata": "Package: tesseract-ocr\nVersion: 4.1.1-2.1build1"
+    },
+    {
+      "deb": "libwebpmux3_1.2.2-2ubuntu0.22.04.2_amd64.deb",
+      "sha256": "9c1cbe1c06be96e91f104d48ac37058ecbc5503bea3e51bd0eb0e6da6462f140",
+      "metadata": "Package: libwebpmux3\nVersion: 1.2.2-2ubuntu0.22.04.2"
+    },
+    {
+      "deb": "libopenjp2-7_2.4.0-6ubuntu0.5_amd64.deb",
+      "sha256": "8efb91572f5f02dcb2bd7ccee580411f9065656523210ac9dfdd5b4c5f07c0b3",
+      "metadata": "Package: libopenjp2-7\nVersion: 2.4.0-6ubuntu0.5"
+    }
+  ]
+}

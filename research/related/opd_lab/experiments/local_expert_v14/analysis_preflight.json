@@ -1,0 +1,10 @@
+{
+  "historical_policies_exactly_reproduced": [
+    "noop",
+    "v1",
+    "v1_discrete_event",
+    "v2"
+  ],
+  "new_model_responses_used": 0,
+  "summary_script_sha256": "e96c18ec0ed1419fd7e10642ea897928c89b22932f3e06aaffd8fe070caa372f"
+}

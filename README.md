@@ -7,6 +7,12 @@ Everything except three files is the upstream code, byte-for-byte. The upstream 
 kept as [`README_DiffusionOPSD_upstream.md`](README_DiffusionOPSD_upstream.md) — use it for
 installation, reward-model setup, checkpoint downloads and the Pick-a-Pic manifest.
 
+> **Full research archive:** [`research/`](research/README.md) holds the complete project record as of
+> 2026-10-11: every idea tried and its verdict, the experiment log, evaluation results, mechanism
+> analyses, the research fork's code (all experimental switches, as a 3-file overlay on this root)
+> and the MSP paper draft. Start at [`research/README.md`](research/README.md) (mostly in Chinese).
+> The code at the repository root is unchanged from the original MSP-only release (tag `v0.1-msp-release`).
+
 ---
 
 ## What is MSP

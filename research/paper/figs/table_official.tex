@@ -1,0 +1,51 @@
+% 自动生成,勿手改。源:paper_figs/make_table_official.py
+\begin{table}[t]
+\centering
+\setlength{\tabcolsep}{4pt}
+\caption{\textbf{SD3.5-M under the published protocol.} DrawBench, $40$-step flow,
+guidance $1.0$, $512^2$, $n{=}1000$, checkpoint-averaged parameters. The upper block is
+reproduced verbatim from \citet{opsd2026}; we did not rerun those baselines. The lower
+block is ours under the same protocol. \cmark: one checkpoint per evaluator column;
+\xmark: a single checkpoint evaluated across all columns. Higher is better.}
+\label{tab:official}
+\resizebox{0.98\linewidth}{!}{%
+\begin{tabular}{lcc rrrrr}
+\toprule
+\textbf{Model} & \textbf{R.-spec.} & \textbf{Upd.} & \textbf{Pick} & \textbf{CLIP} & \textbf{HPSv2.1} & \textbf{Aes} & \textbf{ImgR}\\
+\midrule
+\multicolumn{8}{l}{\textbf{Reported by \citet{opsd2026}}}\\
+\midrule
+\multicolumn{8}{l}{\emph{Reference backbones}}\\
+\quad SDXL & \xmark & -- & $22.42$ & $0.287$ & $0.280$ & $5.60$ & $0.76$\\
+\quad SD3.5-L & \xmark & -- & $22.91$ & $0.289$ & $0.288$ & $5.50$ & $0.96$\\
+\quad FLUX.1-dev & \xmark & -- & $22.84$ & $0.295$ & $0.274$ & $5.71$ & $0.96$\\
+\midrule
+\multicolumn{8}{l}{\emph{SD3.5-M, one checkpoint across all columns}}\\
+\quad SD3.5-M w/o CFG & \xmark & -- & $20.51$ & $0.237$ & $0.204$ & $5.13$ & $-0.58$\\
+\quad $+$ CFG & \xmark & -- & $22.34$ & $0.285$ & $0.279$ & $5.36$ & $0.85$\\
+\quad $+$ FlowGRPO & \xmark & 4k & $23.50$ & $0.280$ & $0.316$ & $5.90$ & $1.29$\\
+\quad $+$ DiffusionNFT & \xmark & 300 & $23.62$ & $0.294$ & $0.340$ & $6.02$ & $1.45$\\
+\quad $+$ DanceOPD & \xmark & 300 & $23.06$ & $0.272$ & $0.322$ & $5.98$ & $1.23$\\
+\quad $+$ DiffusionOPD & \xmark & 300 & $23.05$ & $0.269$ & $0.322$ & $6.04$ & $1.23$\\
+\quad $+$ FlowOPD & \xmark & 300 & $22.62$ & $0.263$ & $0.300$ & $5.98$ & $0.92$\\
+\quad $+$ \opsd & \xmark & 300 & $25.51$ & $0.333$ & $0.389$ & $6.03$ & $1.51$\\
+\midrule
+\multicolumn{8}{l}{\emph{SD3.5-M, one checkpoint per evaluator}}\\
+\quad $+$ ReFL & \cmark & 100 & $23.92$ & $0.308$ & $0.358$ & $12.09$ & $1.28$\\
+\quad $+$ DiffusionNFT & \cmark & 100 & $23.43$ & $0.298$ & $0.336$ & $9.11$ & $1.46$\\
+\quad $+$ \opsd & \cmark & 100 & $24.94$ & $0.340$ & $0.390$ & $12.08$ & $1.76$\\
+\midrule
+\multicolumn{8}{l}{\textbf{Ours, same protocol}}\\
+\midrule
+\quad SD3.5-M w/o CFG & \xmark & -- & $20.59$ & $0.241$ & $0.207$ & $5.12$ & $-0.55$\\
+\quad $+$ \opsd (repro) & \xmark & 100 & $24.66$ & $0.316$ & $0.370$ & $5.90$ & $1.43$\\
+\quad $+$ \opsd (repro) & \xmark & 300 & $25.46$ & $0.332$ & $0.388$ & $5.95$ & $1.51$\\
+\quad $+$ \MSP (ours) & \xmark & 100 & $24.84$ & $0.323$ & $0.376$ & $5.94$ & $1.51$\\
+\quad $+$ \MSP (ours) & \xmark & 300 & $25.11$ & $0.327$ & $0.376$ & $5.94$ & $1.41$\\
+\midrule
+\multicolumn{8}{l}{\emph{SD3.5-M, one checkpoint per evaluator}}\\
+\quad $+$ \opsd (repro) & \cmark & 100 & $24.96$ & $0.320$ & $0.392$ & $12.18$ & $1.76$\\
+\quad $+$ \MSP (ours) & \cmark & 100 & $24.95$ & $0.319$ & $0.391$ & $9.47$ & $1.79$\\
+\bottomrule
+\end{tabular}}
+\end{table}

@@ -1,0 +1,10 @@
+{
+  "complete_test_suite_passed": 93,
+  "core_verification_sha256": "6e687ce657334891b73094aaf6de8ec3a75d31b4c32fcc609c3d7bcb5114f538",
+  "failure_analysis_recomputed": true,
+  "failure_analysis_sha256": "75eaa10b06f6568c7c1de13bb2abe8d2aeb50f00923ab6955aab5a50466b6a72",
+  "figure_and_source_hashes_valid": true,
+  "label_seed_reversal_illustration_source_views": 4,
+  "pre_evaluation_analysis_hashes_unchanged": true,
+  "review_attestation_unchanged": true
+}

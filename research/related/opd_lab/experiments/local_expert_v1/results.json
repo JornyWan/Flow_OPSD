@@ -1,0 +1,2998 @@
+{
+  "recorded_at_utc": "2026-09-10T22:50:06.146933+00:00",
+  "stage": "phase1_engineering_and_development_diagnostics_complete",
+  "scope": "Not paper-number reproduction, formal controlled training, independent human verification or cross-step robustness confirmation.",
+  "artifacts": {
+    "runs/le1_diagnostic_001/result.json": {
+      "sha256": "86ed8cdd0ecb8a7653cfaaf282b9a6b15e86589574baaa3862ebe98102715132"
+    },
+    "runs/le1_diagnostic_001/reports/v1/summary.json": {
+      "sha256": "58f0d320712e526888ab2c345b9b1b9c58f3f27cda1e902a9a894940ba38071e"
+    },
+    "runs/le1_diagnostic_001/qualitative_v1/assistant_visual_audit.json": {
+      "sha256": "e490ecd3354663084edfc595018cb3cd0c07bce913c75ccb0b020e40ebd7dd20"
+    },
+    "runs/le1_diagnostic_001/qualitative_v1/post_key_review.json": {
+      "sha256": "d00f4baf1f6a9a4377c6666054c46f8d460dd2841e2d25a07ba3fe524e6c6c3d"
+    },
+    "runs/le1_train_verified_smoke_001/postfit_audit.json": {
+      "sha256": "316eb85e7e9192303a64cb1758604fd24edd4131199fa67351f2c693d82ffe56"
+    },
+    "runs/le1_train_round_robin_smoke_001/postfit_audit.json": {
+      "sha256": "fa386608526ff0a64f018d0d598e39ce7c2b8ab7e7b6014a8eba7e6566383eb0"
+    },
+    "runs/le1_evaluation_smoke_job_002/checks/result.json": {
+      "sha256": "a9af3da24550fd00d7b4100a643423c76e9850edd0a6c720e84be3fb08450dee"
+    },
+    "runs/le1_native_evaluation_job_001/result.json": {
+      "sha256": "af10e36de99f7ab52ae07e4151053af212ca71d4b6fee195211f571261028eb6"
+    },
+    "runs/le1_fit_scale_job_001/checks/result.json": {
+      "sha256": "cd89324c88c848ec69c58d8d8334a7a940496f72e61a5f20a231f9dfdb78e28a"
+    }
+  },
+  "frozen_diagnostic": {
+    "queries": 384,
+    "prompts": 64,
+    "trajectories": 128,
+    "optimizer_updates": 0,
+    "fixed_arms_all_positions": {
+      "geneval@0.5": {
+        "admissible_positive_rate": {
+          "ci95": [
+            0.14322916666666669,
+            0.23437499999999997
+          ],
+          "mean": 0.1875,
+          "observations": 384,
+          "prompts": 64
+        },
+        "collateral_damage_rate": {
+          "ci95": [
+            0.046875,
+            0.10677083333333334
+          ],
+          "mean": 0.07552083333333333,
+          "observations": 384,
+          "prompts": 64
+        },
+        "damage_given_existing_success": {
+          "ci95": [
+            0.05737704918032787,
+            0.14207650273224043
+          ],
+          "mean": 0.09836065573770493,
+          "observations": 321,
+          "prompts": 61
+        },
+        "geneval_clause_success_delta": {
+          "ci95": [
+            0.010416666666666663,
+            0.08072916666666666
+          ],
+          "mean": 0.04557291666666667,
+          "observations": 384,
+          "prompts": 64
+        },
+        "joint_success_delta": {
+          "ci95": [
+            -0.010416666666666668,
+            0.07291666666666667
+          ],
+          "mean": 0.03125,
+          "observations": 384,
+          "prompts": 64
+        },
+        "negative_gain_rate": {
+          "ci95": [
+            0.09895833333333331,
+            0.1641276041666663
+          ],
+          "mean": 0.13020833333333331,
+          "observations": 384,
+          "prompts": 64
+        },
+        "ocr_clause_success_delta": {
+          "ci95": [
+            -0.04427083333333333,
+            0.02864583333333333
+          ],
+          "mean": -0.007812499999999998,
+          "observations": 384,
+          "prompts": 64
+        },
+        "positive_gain_rate": {
+          "ci95": [
+            0.15104166666666666,
+            0.24479166666666669
+          ],
+          "mean": 0.19791666666666666,
+          "observations": 384,
+          "prompts": 64
+        },
+        "utility_delta": {
+          "ci95": [
+            -0.00033081054687499663,
+            0.05400654141865079
+          ],
+          "mean": 0.026735852761243385,
+          "observations": 384,
+          "prompts": 64
+        }
+      },
+      "geneval@1": {
+        "admissible_positive_rate": {
+          "ci95": [
+            0.23697916666666666,
+            0.34895833333333337
+          ],
+          "mean": 0.29427083333333337,
+          "observations": 384,
+          "prompts": 64
+        },
+        "collateral_damage_rate": {
+          "ci95": [
+            0.06770833333333333,
+            0.1328125
+          ],
+          "mean": 0.09635416666666666,
+          "observations": 384,
+          "prompts": 64
+        },
+        "damage_given_existing_success": {
+          "ci95": [
+            0.08196721311475409,
+            0.1557377049180328
+          ],
+          "mean": 0.1174863387978142,
+          "observations": 321,
+          "prompts": 61
+        },
+        "geneval_clause_success_delta": {
+          "ci95": [
+            0.05208333333333333,
+            0.14847005208333316
+          ],
+          "mean": 0.10026041666666666,
+          "observations": 384,
+          "prompts": 64
+        },
+        "joint_success_delta": {
+          "ci95": [
+            0.036458333333333336,
+            0.140625
+          ],
+          "mean": 0.09114583333333333,
+          "observations": 384,
+          "prompts": 64
+        },
+        "negative_gain_rate": {
+          "ci95": [
+            0.09635416666666666,
+            0.1640625
+          ],
+          "mean": 0.12760416666666666,
+          "observations": 384,
+          "prompts": 64
+        },
+        "ocr_clause_success_delta": {
+          "ci95": [
+            0.007812500000000002,
+            0.10416666666666666
+          ],
+          "mean": 0.05729166666666667,
+          "observations": 384,
+          "prompts": 64
+        },
+        "positive_gain_rate": {
+          "ci95": [
+            0.2578125,
+            0.375
+          ],
+          "mean": 0.31770833333333337,
+          "observations": 384,
+          "prompts": 64
+        },
+        "utility_delta": {
+          "ci95": [
+            0.03560517282196969,
+            0.10281995398084263
+          ],
+          "mean": 0.07055647622053873,
+          "observations": 384,
+          "prompts": 64
+        }
+      },
+      "ocr@0.5": {
+        "admissible_positive_rate": {
+          "ci95": [
+            0.13541666666666666,
+            0.21875
+          ],
+          "mean": 0.17447916666666666,
+          "observations": 384,
+          "prompts": 64
+        },
+        "collateral_damage_rate": {
+          "ci95": [
+            0.049479166666666664,
+            0.11197916666666666
+          ],
+          "mean": 0.078125,
+          "observations": 384,
+          "prompts": 64
+        },
+        "damage_given_existing_success": {
+          "ci95": [
+            0.05737704918032786,
+            0.1284153005464481
+          ],
+          "mean": 0.09016393442622951,
+          "observations": 321,
+          "prompts": 61
+        },
+        "geneval_clause_success_delta": {
+          "ci95": [
+            -0.02734375,
+            0.0234375
+          ],
+          "mean": -0.001302083333333334,
+          "observations": 384,
+          "prompts": 64
+        },
+        "joint_success_delta": {
+          "ci95": [
+            -0.01048177083333333,
+            0.0625
+          ],
+          "mean": 0.026041666666666664,
+          "observations": 384,
+          "prompts": 64
+        },
+        "negative_gain_rate": {
+          "ci95": [
+            0.09895833333333331,
+            0.1640625
+          ],
+          "mean": 0.13020833333333331,
+          "observations": 384,
+          "prompts": 64
+        },
+        "ocr_clause_success_delta": {
+          "ci95": [
+            0.013020833333333332,
+            0.09114583333333333
+          ],
+          "mean": 0.05208333333333333,
+          "observations": 384,
+          "prompts": 64
+        },
+        "positive_gain_rate": {
+          "ci95": [
+            0.140625,
+            0.221419270833333
+          ],
+          "mean": 0.1796875,
+          "observations": 384,
+          "prompts": 64
+        },
+        "utility_delta": {
+          "ci95": [
+            -0.0040156823066979305,
+            0.04209836766965672
+          ],
+          "mean": 0.019489473200410702,
+          "observations": 384,
+          "prompts": 64
+        }
+      },
+      "ocr@1": {
+        "admissible_positive_rate": {
+          "ci95": [
+            0.171875,
+            0.265625
+          ],
+          "mean": 0.21875,
+          "observations": 384,
+          "prompts": 64
+        },
+        "collateral_damage_rate": {
+          "ci95": [
+            0.0390625,
+            0.09635416666666666
+          ],
+          "mean": 0.06510416666666666,
+          "observations": 384,
+          "prompts": 64
+        },
+        "damage_given_existing_success": {
+          "ci95": [
+            0.046448087431693985,
+            0.1284153005464481
+          ],
+          "mean": 0.08469945355191257,
+          "observations": 321,
+          "prompts": 61
+        },
+        "geneval_clause_success_delta": {
+          "ci95": [
+            -0.022167968750000003,
+            0.03645833333333333
+          ],
+          "mean": 0.007812499999999998,
+          "observations": 384,
+          "prompts": 64
+        },
+        "joint_success_delta": {
+          "ci95": [
+            0.041666666666666664,
+            0.1250651041666663
+          ],
+          "mean": 0.08333333333333333,
+          "observations": 384,
+          "prompts": 64
+        },
+        "negative_gain_rate": {
+          "ci95": [
+            0.08333333333333333,
+            0.1484375
+          ],
+          "mean": 0.11458333333333333,
+          "observations": 384,
+          "prompts": 64
+        },
+        "ocr_clause_success_delta": {
+          "ci95": [
+            0.057291666666666664,
+            0.140625
+          ],
+          "mean": 0.09895833333333333,
+          "observations": 384,
+          "prompts": 64
+        },
+        "positive_gain_rate": {
+          "ci95": [
+            0.1796875,
+            0.2734375
+          ],
+          "mean": 0.2265625,
+          "observations": 384,
+          "prompts": 64
+        },
+        "utility_delta": {
+          "ci95": [
+            0.029064269696593915,
+            0.08395703453808916
+          ],
+          "mean": 0.05688835903679654,
+          "observations": 384,
+          "prompts": 64
+        }
+      }
+    },
+    "by_position": {
+      "1": {
+        "fixed_arms": {
+          "geneval@0.5": {
+            "admissible_positive_rate": {
+              "ci95": [
+                0.28125,
+                0.453125
+              ],
+              "mean": 0.3671875,
+              "observations": 128,
+              "prompts": 64
+            },
+            "collateral_damage_rate": {
+              "ci95": [
+                0.109375,
+                0.2421875
+              ],
+              "mean": 0.171875,
+              "observations": 128,
+              "prompts": 64
+            },
+            "damage_given_existing_success": {
+              "ci95": [
+                0.13114754098360656,
+                0.2952868852459005
+              ],
+              "mean": 0.21311475409836064,
+              "observations": 107,
+              "prompts": 61
+            },
+            "geneval_clause_success_delta": {
+              "ci95": [
+                0.042871093750000006,
+                0.18759765624999947
+              ],
+              "mean": 0.11328125,
+              "observations": 128,
+              "prompts": 64
+            },
+            "joint_success_delta": {
+              "ci95": [
+                -0.0078125,
+                0.1640625
+              ],
+              "mean": 0.078125,
+              "observations": 128,
+              "prompts": 64
+            },
+            "negative_gain_rate": {
+              "ci95": [
+                0.1796875,
+                0.3203125
+              ],
+              "mean": 0.25,
+              "observations": 128,
+              "prompts": 64
+            },
+            "ocr_clause_success_delta": {
+              "ci95": [
+                -0.1015625,
+                0.0859375
+              ],
+              "mean": -0.0078125,
+              "observations": 128,
+              "prompts": 64
+            },
+            "positive_gain_rate": {
+              "ci95": [
+                0.3125,
+                0.484375
+              ],
+              "mean": 0.3984375,
+              "observations": 128,
+              "prompts": 64
+            },
+            "utility_delta": {
+              "ci95": [
+                0.008458310081845234,
+                0.11908075241815472
+              ],
+              "mean": 0.0642733134920635,
+              "observations": 128,
+              "prompts": 64
+            }
+          },
+          "geneval@1": {
+            "admissible_positive_rate": {
+              "ci95": [
+                0.3828125,
+                0.5625
+              ],
+              "mean": 0.4765625,
+              "observations": 128,
+              "prompts": 64
+            },
+            "collateral_damage_rate": {
+              "ci95": [
+                0.140625,
+                0.28125
+              ],
+              "mean": 0.203125,
+              "observations": 128,
+              "prompts": 64
+            },
+            "damage_given_existing_success": {
+              "ci95": [
+                0.1721311475409836,
+                0.3442622950819672
+              ],
+              "mean": 0.2540983606557377,
+              "observations": 107,
+              "prompts": 61
+            },
+            "geneval_clause_success_delta": {
+              "ci95": [
+                0.109375,
+                0.2890625
+              ],
+              "mean": 0.19921875,
+              "observations": 128,
+              "prompts": 64
+            },
+            "joint_success_delta": {
+              "ci95": [
+                0.09375,
+                0.2890625
+              ],
+              "mean": 0.1953125,
+              "observations": 128,
+              "prompts": 64
+            },
+            "negative_gain_rate": {
+              "ci95": [
+                0.1328125,
+                0.28125
+              ],
+              "mean": 0.203125,
+              "observations": 128,
+              "prompts": 64
+            },
+            "ocr_clause_success_delta": {
+              "ci95": [
+                0.0234375,
+                0.265625
+              ],
+              "mean": 0.1484375,
+              "observations": 128,
+              "prompts": 64
+            },
+            "positive_gain_rate": {
+              "ci95": [
+                0.4375,
+                0.640625
+              ],
+              "mean": 0.5390625,
+              "observations": 128,
+              "prompts": 64
+            },
+            "utility_delta": {
+              "ci95": [
+                0.08334132339015152,
+                0.20308613830830627
+              ],
+              "mean": 0.14433311913780664,
+              "observations": 128,
+              "prompts": 64
+            }
+          },
+          "ocr@0.5": {
+            "admissible_positive_rate": {
+              "ci95": [
+                0.296875,
+                0.46875
+              ],
+              "mean": 0.3828125,
+              "observations": 128,
+              "prompts": 64
+            },
+            "collateral_damage_rate": {
+              "ci95": [
+                0.125,
+                0.2578125
+              ],
+              "mean": 0.1875,
+              "observations": 128,
+              "prompts": 64
+            },
+            "damage_given_existing_success": {
+              "ci95": [
+                0.13934426229508196,
+                0.29508196721311475
+              ],
+              "mean": 0.21311475409836064,
+              "observations": 107,
+              "prompts": 61
+            },
+            "geneval_clause_success_delta": {
+              "ci95": [
+                -0.04296875,
+                0.0703125
+              ],
+              "mean": 0.01171875,
+              "observations": 128,
+              "prompts": 64
+            },
+            "joint_success_delta": {
+              "ci95": [
+                -0.0001953124999999889,
+                0.171875
+              ],
+              "mean": 0.0859375,
+              "observations": 128,
+              "prompts": 64
+            },
+            "negative_gain_rate": {
+              "ci95": [
+                0.1796875,
+                0.3203125
+              ],
+              "mean": 0.25,
+              "observations": 128,
+              "prompts": 64
+            },
+            "ocr_clause_success_delta": {
+              "ci95": [
+                0.0390625,
+                0.2578125
+              ],
+              "mean": 0.1484375,
+              "observations": 128,
+              "prompts": 64
+            },
+            "positive_gain_rate": {
+              "ci95": [
+                0.3125,
+                0.484375
+              ],
+              "mean": 0.3984375,
+              "observations": 128,
+              "prompts": 64
+            },
+            "utility_delta": {
+              "ci95": [
+                0.010251309833829362,
+                0.11695293123759919
+              ],
+              "mean": 0.06424076140873017,
+              "observations": 128,
+              "prompts": 64
+            }
+          },
+          "ocr@1": {
+            "admissible_positive_rate": {
+              "ci95": [
+                0.3515625,
+                0.53125
+              ],
+              "mean": 0.4453125,
+              "observations": 128,
+              "prompts": 64
+            },
+            "collateral_damage_rate": {
+              "ci95": [
+                0.0859375,
+                0.203125
+              ],
+              "mean": 0.140625,
+              "observations": 128,
+              "prompts": 64
+            },
+            "damage_given_existing_success": {
+              "ci95": [
+                0.09836065573770492,
+                0.2540983606557377
+              ],
+              "mean": 0.1721311475409836,
+              "observations": 107,
+              "prompts": 61
+            },
+            "geneval_clause_success_delta": {
+              "ci95": [
+                -0.05078125,
+                0.0703125
+              ],
+              "mean": 0.01171875,
+              "observations": 128,
+              "prompts": 64
+            },
+            "joint_success_delta": {
+              "ci95": [
+                0.1015625,
+                0.3046875
+              ],
+              "mean": 0.203125,
+              "observations": 128,
+              "prompts": 64
+            },
+            "negative_gain_rate": {
+              "ci95": [
+                0.1328125,
+                0.265625
+              ],
+              "mean": 0.1953125,
+              "observations": 128,
+              "prompts": 64
+            },
+            "ocr_clause_success_delta": {
+              "ci95": [
+                0.15625,
+                0.3671875
+              ],
+              "mean": 0.265625,
+              "observations": 128,
+              "prompts": 64
+            },
+            "positive_gain_rate": {
+              "ci95": [
+                0.3828125,
+                0.5546875
+              ],
+              "mean": 0.46875,
+              "observations": 128,
+              "prompts": 64
+            },
+            "utility_delta": {
+              "ci95": [
+                0.07420507037450398,
+                0.20420022631448412
+              ],
+              "mean": 0.13981584821428572,
+              "observations": 128,
+              "prompts": 64
+            }
+          }
+        },
+        "sigma": 0.9601293206214905,
+        "sigma_next": 0.9133489727973938
+      },
+      "4": {
+        "fixed_arms": {
+          "geneval@0.5": {
+            "admissible_positive_rate": {
+              "ci95": [
+                0.078125,
+                0.2109375
+              ],
+              "mean": 0.140625,
+              "observations": 128,
+              "prompts": 64
+            },
+            "collateral_damage_rate": {
+              "ci95": [
+                0.0078125,
+                0.0703125
+              ],
+              "mean": 0.0390625,
+              "observations": 128,
+              "prompts": 64
+            },
+            "damage_given_existing_success": {
+              "ci95": [
+                0.00819672131147541,
+                0.11475409836065574
+              ],
+              "mean": 0.05737704918032787,
+              "observations": 107,
+              "prompts": 61
+            },
+            "geneval_clause_success_delta": {
+              "ci95": [
+                -0.01171875,
+                0.04296875
+              ],
+              "mean": 0.015625,
+              "observations": 128,
+              "prompts": 64
+            },
+            "joint_success_delta": {
+              "ci95": [
+                -0.03125,
+                0.0546875
+              ],
+              "mean": 0.0078125,
+              "observations": 128,
+              "prompts": 64
+            },
+            "negative_gain_rate": {
+              "ci95": [
+                0.046875,
+                0.1328125
+              ],
+              "mean": 0.0859375,
+              "observations": 128,
+              "prompts": 64
+            },
+            "ocr_clause_success_delta": {
+              "ci95": [
+                -0.0546875,
+                0.03125
+              ],
+              "mean": -0.015625,
+              "observations": 128,
+              "prompts": 64
+            },
+            "positive_gain_rate": {
+              "ci95": [
+                0.078125,
+                0.2109375
+              ],
+              "mean": 0.140625,
+              "observations": 128,
+              "prompts": 64
+            },
+            "utility_delta": {
+              "ci95": [
+                -0.016000162760416665,
+                0.040631510416666634
+              ],
+              "mean": 0.010432942708333334,
+              "observations": 128,
+              "prompts": 64
+            }
+          },
+          "geneval@1": {
+            "admissible_positive_rate": {
+              "ci95": [
+                0.2265625,
+                0.3984375
+              ],
+              "mean": 0.3125,
+              "observations": 128,
+              "prompts": 64
+            },
+            "collateral_damage_rate": {
+              "ci95": [
+                0.03125,
+                0.1171875
+              ],
+              "mean": 0.0703125,
+              "observations": 128,
+              "prompts": 64
+            },
+            "damage_given_existing_success": {
+              "ci95": [
+                0.04077868852459017,
+                0.13934426229508196
+              ],
+              "mean": 0.08196721311475409,
+              "observations": 107,
+              "prompts": 61
+            },
+            "geneval_clause_success_delta": {
+              "ci95": [
+                0.03125,
+                0.1640625
+              ],
+              "mean": 0.09375,
+              "observations": 128,
+              "prompts": 64
+            },
+            "joint_success_delta": {
+              "ci95": [
+                0.0078125,
+                0.1484375
+              ],
+              "mean": 0.078125,
+              "observations": 128,
+              "prompts": 64
+            },
+            "negative_gain_rate": {
+              "ci95": [
+                0.078125,
+                0.1796875
+              ],
+              "mean": 0.125,
+              "observations": 128,
+              "prompts": 64
+            },
+            "ocr_clause_success_delta": {
+              "ci95": [
+                -0.0234375,
+                0.0859375
+              ],
+              "mean": 0.03125,
+              "observations": 128,
+              "prompts": 64
+            },
+            "positive_gain_rate": {
+              "ci95": [
+                0.234375,
+                0.40625
+              ],
+              "mean": 0.3203125,
+              "observations": 128,
+              "prompts": 64
+            },
+            "utility_delta": {
+              "ci95": [
+                0.017223055400545636,
+                0.10841203962053567
+              ],
+              "mean": 0.06341920882936508,
+              "observations": 128,
+              "prompts": 64
+            }
+          },
+          "ocr@0.5": {
+            "admissible_positive_rate": {
+              "ci95": [
+                0.0703125,
+                0.1796875
+              ],
+              "mean": 0.125,
+              "observations": 128,
+              "prompts": 64
+            },
+            "collateral_damage_rate": {
+              "ci95": [
+                0.0078125,
+                0.0625
+              ],
+              "mean": 0.03125,
+              "observations": 128,
+              "prompts": 64
+            },
+            "damage_given_existing_success": {
+              "ci95": [
+                0.00819672131147541,
+                0.06557377049180328
+              ],
+              "mean": 0.03278688524590164,
+              "observations": 107,
+              "prompts": 61
+            },
+            "geneval_clause_success_delta": {
+              "ci95": [
+                -0.03515625,
+                0.01953125
+              ],
+              "mean": -0.0078125,
+              "observations": 128,
+              "prompts": 64
+            },
+            "joint_success_delta": {
+              "ci95": [
+                -0.0390625,
+                0.0390625
+              ],
+              "mean": 0.0,
+              "observations": 128,
+              "prompts": 64
+            },
+            "negative_gain_rate": {
+              "ci95": [
+                0.046875,
+                0.1484375
+              ],
+              "mean": 0.09375,
+              "observations": 128,
+              "prompts": 64
+            },
+            "ocr_clause_success_delta": {
+              "ci95": [
+                -0.015625,
+                0.046875
+              ],
+              "mean": 0.015625,
+              "observations": 128,
+              "prompts": 64
+            },
+            "positive_gain_rate": {
+              "ci95": [
+                0.0703125,
+                0.1796875
+              ],
+              "mean": 0.125,
+              "observations": 128,
+              "prompts": 64
+            },
+            "utility_delta": {
+              "ci95": [
+                -0.025536415895302617,
+                0.025004884980470907
+              ],
+              "mean": 2.235178016427898e-05,
+              "observations": 128,
+              "prompts": 64
+            }
+          },
+          "ocr@1": {
+            "admissible_positive_rate": {
+              "ci95": [
+                0.09375,
+                0.2265625
+              ],
+              "mean": 0.15625,
+              "observations": 128,
+              "prompts": 64
+            },
+            "collateral_damage_rate": {
+              "ci95": [
+                0.0078125,
+                0.0703125
+              ],
+              "mean": 0.0390625,
+              "observations": 128,
+              "prompts": 64
+            },
+            "damage_given_existing_success": {
+              "ci95": [
+                0.01639344262295082,
+                0.11475409836065574
+              ],
+              "mean": 0.05737704918032787,
+              "observations": 107,
+              "prompts": 61
+            },
+            "geneval_clause_success_delta": {
+              "ci95": [
+                -0.01953125,
+                0.0390625
+              ],
+              "mean": 0.0078125,
+              "observations": 128,
+              "prompts": 64
+            },
+            "joint_success_delta": {
+              "ci95": [
+                0.0078125,
+                0.0859375
+              ],
+              "mean": 0.046875,
+              "observations": 128,
+              "prompts": 64
+            },
+            "negative_gain_rate": {
+              "ci95": [
+                0.0546875,
+                0.15625
+              ],
+              "mean": 0.1015625,
+              "observations": 128,
+              "prompts": 64
+            },
+            "ocr_clause_success_delta": {
+              "ci95": [
+                -0.0078125,
+                0.0859375
+              ],
+              "mean": 0.0390625,
+              "observations": 128,
+              "prompts": 64
+            },
+            "positive_gain_rate": {
+              "ci95": [
+                0.09375,
+                0.2265625
+              ],
+              "mean": 0.15625,
+              "observations": 128,
+              "prompts": 64
+            },
+            "utility_delta": {
+              "ci95": [
+                0.0012101025602002152,
+                0.0561838389475108
+              ],
+              "mean": 0.028343141233766234,
+              "observations": 128,
+              "prompts": 64
+            }
+          }
+        },
+        "sigma": 0.7903682589530945,
+        "sigma_next": 0.7072784900665283
+      },
+      "7": {
+        "fixed_arms": {
+          "geneval@0.5": {
+            "admissible_positive_rate": {
+              "ci95": [
+                0.0234375,
+                0.09375
+              ],
+              "mean": 0.0546875,
+              "observations": 128,
+              "prompts": 64
+            },
+            "collateral_damage_rate": {
+              "ci95": [
+                0.0,
+                0.0390625
+              ],
+              "mean": 0.015625,
+              "observations": 128,
+              "prompts": 64
+            },
+            "damage_given_existing_success": {
+              "ci95": [
+                0.0,
+                0.06557377049180328
+              ],
+              "mean": 0.02459016393442623,
+              "observations": 107,
+              "prompts": 61
+            },
+            "geneval_clause_success_delta": {
+              "ci95": [
+                -0.015625,
+                0.03125
+              ],
+              "mean": 0.0078125,
+              "observations": 128,
+              "prompts": 64
+            },
+            "joint_success_delta": {
+              "ci95": [
+                -0.015625,
+                0.03125
+              ],
+              "mean": 0.0078125,
+              "observations": 128,
+              "prompts": 64
+            },
+            "negative_gain_rate": {
+              "ci95": [
+                0.0234375,
+                0.09375
+              ],
+              "mean": 0.0546875,
+              "observations": 128,
+              "prompts": 64
+            },
+            "ocr_clause_success_delta": {
+              "ci95": [
+                0.0,
+                0.0
+              ],
+              "mean": 0.0,
+              "observations": 128,
+              "prompts": 64
+            },
+            "positive_gain_rate": {
+              "ci95": [
+                0.0234375,
+                0.09375
+              ],
+              "mean": 0.0546875,
+              "observations": 128,
+              "prompts": 64
+            },
+            "utility_delta": {
+              "ci95": [
+                -0.010971679687500001,
+                0.02434012276785714
+              ],
+              "mean": 0.005501302083333335,
+              "observations": 128,
+              "prompts": 64
+            }
+          },
+          "geneval@1": {
+            "admissible_positive_rate": {
+              "ci95": [
+                0.046875,
+                0.140625
+              ],
+              "mean": 0.09375,
+              "observations": 128,
+              "prompts": 64
+            },
+            "collateral_damage_rate": {
+              "ci95": [
+                0.0,
+                0.0390625
+              ],
+              "mean": 0.015625,
+              "observations": 128,
+              "prompts": 64
+            },
+            "damage_given_existing_success": {
+              "ci95": [
+                0.0,
+                0.040983606557377046
+              ],
+              "mean": 0.01639344262295082,
+              "observations": 107,
+              "prompts": 61
+            },
+            "geneval_clause_success_delta": {
+              "ci95": [
+                -0.015625,
+                0.03125
+              ],
+              "mean": 0.0078125,
+              "observations": 128,
+              "prompts": 64
+            },
+            "joint_success_delta": {
+              "ci95": [
+                -0.03125,
+                0.03125
+              ],
+              "mean": 0.0,
+              "observations": 128,
+              "prompts": 64
+            },
+            "negative_gain_rate": {
+              "ci95": [
+                0.0234375,
+                0.1015625
+              ],
+              "mean": 0.0546875,
+              "observations": 128,
+              "prompts": 64
+            },
+            "ocr_clause_success_delta": {
+              "ci95": [
+                -0.0234375,
+                0.0
+              ],
+              "mean": -0.0078125,
+              "observations": 128,
+              "prompts": 64
+            },
+            "positive_gain_rate": {
+              "ci95": [
+                0.046875,
+                0.140625
+              ],
+              "mean": 0.09375,
+              "observations": 128,
+              "prompts": 64
+            },
+            "utility_delta": {
+              "ci95": [
+                -0.016082395523313486,
+                0.02497434585813489
+              ],
+              "mean": 0.003917100694444444,
+              "observations": 128,
+              "prompts": 64
+            }
+          },
+          "ocr@0.5": {
+            "admissible_positive_rate": {
+              "ci95": [
+                0.0,
+                0.0390625
+              ],
+              "mean": 0.015625,
+              "observations": 128,
+              "prompts": 64
+            },
+            "collateral_damage_rate": {
+              "ci95": [
+                0.0,
+                0.0390625
+              ],
+              "mean": 0.015625,
+              "observations": 128,
+              "prompts": 64
+            },
+            "damage_given_existing_success": {
+              "ci95": [
+                0.0,
+                0.06557377049180328
+              ],
+              "mean": 0.02459016393442623,
+              "observations": 107,
+              "prompts": 61
+            },
+            "geneval_clause_success_delta": {
+              "ci95": [
+                -0.0234375,
+                0.0
+              ],
+              "mean": -0.0078125,
+              "observations": 128,
+              "prompts": 64
+            },
+            "joint_success_delta": {
+              "ci95": [
+                -0.0234375,
+                0.0
+              ],
+              "mean": -0.0078125,
+              "observations": 128,
+              "prompts": 64
+            },
+            "negative_gain_rate": {
+              "ci95": [
+                0.015625,
+                0.0859375
+              ],
+              "mean": 0.046875,
+              "observations": 128,
+              "prompts": 64
+            },
+            "ocr_clause_success_delta": {
+              "ci95": [
+                -0.0234375,
+                0.0
+              ],
+              "mean": -0.0078125,
+              "observations": 128,
+              "prompts": 64
+            },
+            "positive_gain_rate": {
+              "ci95": [
+                0.0,
+                0.0390625
+              ],
+              "mean": 0.015625,
+              "observations": 128,
+              "prompts": 64
+            },
+            "utility_delta": {
+              "ci95": [
+                -0.016314765963203463,
+                0.0005640176880411164
+              ],
+              "mean": -0.005794693587662337,
+              "observations": 128,
+              "prompts": 64
+            }
+          },
+          "ocr@1": {
+            "admissible_positive_rate": {
+              "ci95": [
+                0.0234375,
+                0.09375
+              ],
+              "mean": 0.0546875,
+              "observations": 128,
+              "prompts": 64
+            },
+            "collateral_damage_rate": {
+              "ci95": [
+                0.0,
+                0.0390625
+              ],
+              "mean": 0.015625,
+              "observations": 128,
+              "prompts": 64
+            },
+            "damage_given_existing_success": {
+              "ci95": [
+                0.0,
+                0.06557377049180328
+              ],
+              "mean": 0.02459016393442623,
+              "observations": 107,
+              "prompts": 61
+            },
+            "geneval_clause_success_delta": {
+              "ci95": [
+                -0.01953125,
+                0.02734375
+              ],
+              "mean": 0.00390625,
+              "observations": 128,
+              "prompts": 64
+            },
+            "joint_success_delta": {
+              "ci95": [
+                -0.0234375,
+                0.0234375
+              ],
+              "mean": 0.0,
+              "observations": 128,
+              "prompts": 64
+            },
+            "negative_gain_rate": {
+              "ci95": [
+                0.015625,
+                0.0859375
+              ],
+              "mean": 0.046875,
+              "observations": 128,
+              "prompts": 64
+            },
+            "ocr_clause_success_delta": {
+              "ci95": [
+                -0.0234375,
+                0.0
+              ],
+              "mean": -0.0078125,
+              "observations": 128,
+              "prompts": 64
+            },
+            "positive_gain_rate": {
+              "ci95": [
+                0.0234375,
+                0.09375
+              ],
+              "mean": 0.0546875,
+              "observations": 128,
+              "prompts": 64
+            },
+            "utility_delta": {
+              "ci95": [
+                -0.011882916074810608,
+                0.018937671215503236
+              ],
+              "mean": 0.0025060876623376627,
+              "observations": 128,
+              "prompts": 64
+            }
+          }
+        },
+        "sigma": 0.4648760259151459,
+        "sigma_next": 0.2780487835407257
+      }
+    },
+    "by_group": {
+      "jp1-train-color": {
+        "geneval@0.5": {
+          "admissible_positive_rate": {
+            "ci95": [
+              0.15625,
+              0.40624999999999994
+            ],
+            "mean": 0.2708333333333333,
+            "observations": 96,
+            "prompts": 16
+          },
+          "collateral_damage_rate": {
+            "ci95": [
+              0.0,
+              0.05208333333333333
+            ],
+            "mean": 0.020833333333333332,
+            "observations": 96,
+            "prompts": 16
+          },
+          "damage_given_existing_success": {
+            "ci95": [
+              0.0,
+              0.05208333333333333
+            ],
+            "mean": 0.020833333333333332,
+            "observations": 81,
+            "prompts": 16
+          },
+          "geneval_clause_success_delta": {
+            "ci95": [
+              -0.010416666666666666,
+              0.125
+            ],
+            "mean": 0.05208333333333333,
+            "observations": 96,
+            "prompts": 16
+          },
+          "joint_success_delta": {
+            "ci95": [
+              0.020833333333333336,
+              0.1875
+            ],
+            "mean": 0.10416666666666666,
+            "observations": 96,
+            "prompts": 16
+          },
+          "negative_gain_rate": {
+            "ci95": [
+              0.03125,
+              0.11458333333333333
+            ],
+            "mean": 0.07291666666666666,
+            "observations": 96,
+            "prompts": 16
+          },
+          "ocr_clause_success_delta": {
+            "ci95": [
+              0.020833333333333332,
+              0.15625
+            ],
+            "mean": 0.08333333333333333,
+            "observations": 96,
+            "prompts": 16
+          },
+          "positive_gain_rate": {
+            "ci95": [
+              0.15625,
+              0.40624999999999994
+            ],
+            "mean": 0.2708333333333333,
+            "observations": 96,
+            "prompts": 16
+          },
+          "utility_delta": {
+            "ci95": [
+              0.017816065228174603,
+              0.13231910342261904
+            ],
+            "mean": 0.0742435515873016,
+            "observations": 96,
+            "prompts": 16
+          }
+        },
+        "geneval@1": {
+          "admissible_positive_rate": {
+            "ci95": [
+              0.26041666666666663,
+              0.53125
+            ],
+            "mean": 0.3958333333333333,
+            "observations": 96,
+            "prompts": 16
+          },
+          "collateral_damage_rate": {
+            "ci95": [
+              0.020833333333333332,
+              0.09375
+            ],
+            "mean": 0.05208333333333333,
+            "observations": 96,
+            "prompts": 16
+          },
+          "damage_given_existing_success": {
+            "ci95": [
+              0.020833333333333332,
+              0.09375
+            ],
+            "mean": 0.05208333333333333,
+            "observations": 81,
+            "prompts": 16
+          },
+          "geneval_clause_success_delta": {
+            "ci95": [
+              0.020833333333333332,
+              0.19791666666666666
+            ],
+            "mean": 0.10416666666666666,
+            "observations": 96,
+            "prompts": 16
+          },
+          "joint_success_delta": {
+            "ci95": [
+              0.0625,
+              0.25
+            ],
+            "mean": 0.15625,
+            "observations": 96,
+            "prompts": 16
+          },
+          "negative_gain_rate": {
+            "ci95": [
+              0.041666666666666664,
+              0.14583333333333331
+            ],
+            "mean": 0.09375,
+            "observations": 96,
+            "prompts": 16
+          },
+          "ocr_clause_success_delta": {
+            "ci95": [
+              0.03125,
+              0.21875
+            ],
+            "mean": 0.12499999999999999,
+            "observations": 96,
+            "prompts": 16
+          },
+          "positive_gain_rate": {
+            "ci95": [
+              0.2708333333333333,
+              0.53125
+            ],
+            "mean": 0.40625,
+            "observations": 96,
+            "prompts": 16
+          },
+          "utility_delta": {
+            "ci95": [
+              0.05567328559027779,
+              0.1805217633928571
+            ],
+            "mean": 0.12028459821428572,
+            "observations": 96,
+            "prompts": 16
+          }
+        },
+        "ocr@0.5": {
+          "admissible_positive_rate": {
+            "ci95": [
+              0.14583333333333331,
+              0.3333333333333333
+            ],
+            "mean": 0.23958333333333331,
+            "observations": 96,
+            "prompts": 16
+          },
+          "collateral_damage_rate": {
+            "ci95": [
+              0.0,
+              0.05208333333333333
+            ],
+            "mean": 0.020833333333333332,
+            "observations": 96,
+            "prompts": 16
+          },
+          "damage_given_existing_success": {
+            "ci95": [
+              0.0,
+              0.05208333333333333
+            ],
+            "mean": 0.020833333333333332,
+            "observations": 81,
+            "prompts": 16
+          },
+          "geneval_clause_success_delta": {
+            "ci95": [
+              0.0,
+              0.05208333333333333
+            ],
+            "mean": 0.020833333333333332,
+            "observations": 96,
+            "prompts": 16
+          },
+          "joint_success_delta": {
+            "ci95": [
+              0.03125,
+              0.16666666666666666
+            ],
+            "mean": 0.09375,
+            "observations": 96,
+            "prompts": 16
+          },
+          "negative_gain_rate": {
+            "ci95": [
+              0.05208333333333333,
+              0.19791666666666663
+            ],
+            "mean": 0.11458333333333331,
+            "observations": 96,
+            "prompts": 16
+          },
+          "ocr_clause_success_delta": {
+            "ci95": [
+              0.041666666666666664,
+              0.17708333333333331
+            ],
+            "mean": 0.10416666666666666,
+            "observations": 96,
+            "prompts": 16
+          },
+          "positive_gain_rate": {
+            "ci95": [
+              0.14583333333333331,
+              0.3333333333333333
+            ],
+            "mean": 0.23958333333333331,
+            "observations": 96,
+            "prompts": 16
+          },
+          "utility_delta": {
+            "ci95": [
+              0.02324210511710512,
+              0.10625095173923295
+            ],
+            "mean": 0.06237629557942058,
+            "observations": 96,
+            "prompts": 16
+          }
+        },
+        "ocr@1": {
+          "admissible_positive_rate": {
+            "ci95": [
+              0.19791666666666663,
+              0.39583333333333326
+            ],
+            "mean": 0.29166666666666663,
+            "observations": 96,
+            "prompts": 16
+          },
+          "collateral_damage_rate": {
+            "ci95": [
+              0.0,
+              0.0625
+            ],
+            "mean": 0.03125,
+            "observations": 96,
+            "prompts": 16
+          },
+          "damage_given_existing_success": {
+            "ci95": [
+              0.0,
+              0.0625
+            ],
+            "mean": 0.03125,
+            "observations": 81,
+            "prompts": 16
+          },
+          "geneval_clause_success_delta": {
+            "ci95": [
+              -0.010416666666666666,
+              0.08333333333333333
+            ],
+            "mean": 0.03125,
+            "observations": 96,
+            "prompts": 16
+          },
+          "joint_success_delta": {
+            "ci95": [
+              0.08333333333333333,
+              0.25
+            ],
+            "mean": 0.16666666666666666,
+            "observations": 96,
+            "prompts": 16
+          },
+          "negative_gain_rate": {
+            "ci95": [
+              0.05208333333333333,
+              0.1875
+            ],
+            "mean": 0.11458333333333333,
+            "observations": 96,
+            "prompts": 16
+          },
+          "ocr_clause_success_delta": {
+            "ci95": [
+              0.08307291666666668,
+              0.25
+            ],
+            "mean": 0.16666666666666669,
+            "observations": 96,
+            "prompts": 16
+          },
+          "positive_gain_rate": {
+            "ci95": [
+              0.20833333333333331,
+              0.40625
+            ],
+            "mean": 0.3020833333333333,
+            "observations": 96,
+            "prompts": 16
+          },
+          "utility_delta": {
+            "ci95": [
+              0.050784322014790766,
+              0.16256909214917023
+            ],
+            "mean": 0.10807178932178932,
+            "observations": 96,
+            "prompts": 16
+          }
+        }
+      },
+      "jp1-train-count": {
+        "geneval@0.5": {
+          "admissible_positive_rate": {
+            "ci95": [
+              0.06249999999999999,
+              0.22916666666666663
+            ],
+            "mean": 0.13541666666666666,
+            "observations": 96,
+            "prompts": 16
+          },
+          "collateral_damage_rate": {
+            "ci95": [
+              0.0625,
+              0.22916666666666663
+            ],
+            "mean": 0.13541666666666666,
+            "observations": 96,
+            "prompts": 16
+          },
+          "damage_given_existing_success": {
+            "ci95": [
+              0.07777777777777777,
+              0.2555555555555555
+            ],
+            "mean": 0.15555555555555556,
+            "observations": 81,
+            "prompts": 15
+          },
+          "geneval_clause_success_delta": {
+            "ci95": [
+              -0.09375,
+              0.09375
+            ],
+            "mean": -1.734723475976807e-18,
+            "observations": 96,
+            "prompts": 16
+          },
+          "joint_success_delta": {
+            "ci95": [
+              -0.11458333333333333,
+              0.08333333333333334
+            ],
+            "mean": -0.02083333333333333,
+            "observations": 96,
+            "prompts": 16
+          },
+          "negative_gain_rate": {
+            "ci95": [
+              0.09375,
+              0.26041666666666663
+            ],
+            "mean": 0.16666666666666666,
+            "observations": 96,
+            "prompts": 16
+          },
+          "ocr_clause_success_delta": {
+            "ci95": [
+              -0.10416666666666666,
+              0.03125
+            ],
+            "mean": -0.03125,
+            "observations": 96,
+            "prompts": 16
+          },
+          "positive_gain_rate": {
+            "ci95": [
+              0.0625,
+              0.23958333333333331
+            ],
+            "mean": 0.14583333333333331,
+            "observations": 96,
+            "prompts": 16
+          },
+          "utility_delta": {
+            "ci95": [
+              -0.07537638992228836,
+              0.06403992022156084
+            ],
+            "mean": -0.010659515542328038,
+            "observations": 96,
+            "prompts": 16
+          }
+        },
+        "geneval@1": {
+          "admissible_positive_rate": {
+            "ci95": [
+              0.13541666666666666,
+              0.375
+            ],
+            "mean": 0.25,
+            "observations": 96,
+            "prompts": 16
+          },
+          "collateral_damage_rate": {
+            "ci95": [
+              0.07291666666666666,
+              0.22916666666666666
+            ],
+            "mean": 0.14583333333333331,
+            "observations": 96,
+            "prompts": 16
+          },
+          "damage_given_existing_success": {
+            "ci95": [
+              0.09999999999999999,
+              0.26666666666666666
+            ],
+            "mean": 0.17777777777777776,
+            "observations": 81,
+            "prompts": 15
+          },
+          "geneval_clause_success_delta": {
+            "ci95": [
+              -0.0625,
+              0.14583333333333331
+            ],
+            "mean": 0.041666666666666664,
+            "observations": 96,
+            "prompts": 16
+          },
+          "joint_success_delta": {
+            "ci95": [
+              -0.0625,
+              0.14583333333333334
+            ],
+            "mean": 0.041666666666666664,
+            "observations": 96,
+            "prompts": 16
+          },
+          "negative_gain_rate": {
+            "ci95": [
+              0.05208333333333333,
+              0.22916666666666666
+            ],
+            "mean": 0.13541666666666666,
+            "observations": 96,
+            "prompts": 16
+          },
+          "ocr_clause_success_delta": {
+            "ci95": [
+              -0.041666666666666664,
+              0.13541666666666666
+            ],
+            "mean": 0.041666666666666664,
+            "observations": 96,
+            "prompts": 16
+          },
+          "positive_gain_rate": {
+            "ci95": [
+              0.16666666666666666,
+              0.4166666666666667
+            ],
+            "mean": 0.28125,
+            "observations": 96,
+            "prompts": 16
+          },
+          "utility_delta": {
+            "ci95": [
+              -0.03147693452380952,
+              0.11369610821759257
+            ],
+            "mean": 0.038788649140211635,
+            "observations": 96,
+            "prompts": 16
+          }
+        },
+        "ocr@0.5": {
+          "admissible_positive_rate": {
+            "ci95": [
+              0.07291666666666666,
+              0.26041666666666663
+            ],
+            "mean": 0.15625,
+            "observations": 96,
+            "prompts": 16
+          },
+          "collateral_damage_rate": {
+            "ci95": [
+              0.0625,
+              0.22916666666666663
+            ],
+            "mean": 0.13541666666666666,
+            "observations": 96,
+            "prompts": 16
+          },
+          "damage_given_existing_success": {
+            "ci95": [
+              0.06666666666666667,
+              0.2333333333333333
+            ],
+            "mean": 0.14444444444444443,
+            "observations": 81,
+            "prompts": 15
+          },
+          "geneval_clause_success_delta": {
+            "ci95": [
+              -0.11458333333333333,
+              0.041666666666666664
+            ],
+            "mean": -0.03125,
+            "observations": 96,
+            "prompts": 16
+          },
+          "joint_success_delta": {
+            "ci95": [
+              -0.13541666666666666,
+              0.03125
+            ],
+            "mean": -0.05208333333333333,
+            "observations": 96,
+            "prompts": 16
+          },
+          "negative_gain_rate": {
+            "ci95": [
+              0.08333333333333333,
+              0.23958333333333331
+            ],
+            "mean": 0.15624999999999997,
+            "observations": 96,
+            "prompts": 16
+          },
+          "ocr_clause_success_delta": {
+            "ci95": [
+              -0.07291666666666667,
+              0.09374999999999999
+            ],
+            "mean": 0.0,
+            "observations": 96,
+            "prompts": 16
+          },
+          "positive_gain_rate": {
+            "ci95": [
+              0.07291666666666666,
+              0.26041666666666663
+            ],
+            "mean": 0.15625,
+            "observations": 96,
+            "prompts": 16
+          },
+          "utility_delta": {
+            "ci95": [
+              -0.09097552910052911,
+              0.032141772073412685
+            ],
+            "mean": -0.02743882275132275,
+            "observations": 96,
+            "prompts": 16
+          }
+        },
+        "ocr@1": {
+          "admissible_positive_rate": {
+            "ci95": [
+              0.10416666666666666,
+              0.3020833333333333
+            ],
+            "mean": 0.19791666666666663,
+            "observations": 96,
+            "prompts": 16
+          },
+          "collateral_damage_rate": {
+            "ci95": [
+              0.03125,
+              0.1875
+            ],
+            "mean": 0.09375,
+            "observations": 96,
+            "prompts": 16
+          },
+          "damage_given_existing_success": {
+            "ci95": [
+              0.03333333333333333,
+              0.21111111111111108
+            ],
+            "mean": 0.11111111111111112,
+            "observations": 81,
+            "prompts": 15
+          },
+          "geneval_clause_success_delta": {
+            "ci95": [
+              -0.10416666666666667,
+              0.0625
+            ],
+            "mean": -0.020833333333333336,
+            "observations": 96,
+            "prompts": 16
+          },
+          "joint_success_delta": {
+            "ci95": [
+              -0.07291666666666667,
+              0.13541666666666669
+            ],
+            "mean": 0.03125,
+            "observations": 96,
+            "prompts": 16
+          },
+          "negative_gain_rate": {
+            "ci95": [
+              0.041666666666666664,
+              0.16666666666666666
+            ],
+            "mean": 0.09375,
+            "observations": 96,
+            "prompts": 16
+          },
+          "ocr_clause_success_delta": {
+            "ci95": [
+              -0.010416666666666663,
+              0.15625
+            ],
+            "mean": 0.07291666666666666,
+            "observations": 96,
+            "prompts": 16
+          },
+          "positive_gain_rate": {
+            "ci95": [
+              0.11458333333333333,
+              0.3125
+            ],
+            "mean": 0.20833333333333331,
+            "observations": 96,
+            "prompts": 16
+          },
+          "utility_delta": {
+            "ci95": [
+              -0.04341063161375662,
+              0.09775473296957671
+            ],
+            "mean": 0.0253988921957672,
+            "observations": 96,
+            "prompts": 16
+          }
+        }
+      },
+      "jp1-train-count_color": {
+        "geneval@0.5": {
+          "admissible_positive_rate": {
+            "ci95": [
+              0.10416666666666666,
+              0.22916666666666666
+            ],
+            "mean": 0.16666666666666666,
+            "observations": 96,
+            "prompts": 16
+          },
+          "collateral_damage_rate": {
+            "ci95": [
+              0.0,
+              0.08333333333333333
+            ],
+            "mean": 0.03125,
+            "observations": 96,
+            "prompts": 16
+          },
+          "damage_given_existing_success": {
+            "ci95": [
+              0.0,
+              0.08333333333333333
+            ],
+            "mean": 0.03125,
+            "observations": 87,
+            "prompts": 16
+          },
+          "geneval_clause_success_delta": {
+            "ci95": [
+              0.015625,
+              0.08854166666666666
+            ],
+            "mean": 0.046875,
+            "observations": 96,
+            "prompts": 16
+          },
+          "joint_success_delta": {
+            "ci95": [
+              -0.0625,
+              0.05208333333333333
+            ],
+            "mean": 0.0,
+            "observations": 96,
+            "prompts": 16
+          },
+          "negative_gain_rate": {
+            "ci95": [
+              0.03125,
+              0.16666666666666666
+            ],
+            "mean": 0.09374999999999999,
+            "observations": 96,
+            "prompts": 16
+          },
+          "ocr_clause_success_delta": {
+            "ci95": [
+              -0.052083333333333336,
+              0.0625
+            ],
+            "mean": 0.010416666666666666,
+            "observations": 96,
+            "prompts": 16
+          },
+          "positive_gain_rate": {
+            "ci95": [
+              0.10416666666666666,
+              0.22916666666666666
+            ],
+            "mean": 0.16666666666666666,
+            "observations": 96,
+            "prompts": 16
+          },
+          "utility_delta": {
+            "ci95": [
+              -0.02203693369708996,
+              0.04912533068783068
+            ],
+            "mean": 0.01584821428571428,
+            "observations": 96,
+            "prompts": 16
+          }
+        },
+        "geneval@1": {
+          "admissible_positive_rate": {
+            "ci95": [
+              0.15625,
+              0.3020833333333333
+            ],
+            "mean": 0.22916666666666666,
+            "observations": 96,
+            "prompts": 16
+          },
+          "collateral_damage_rate": {
+            "ci95": [
+              0.03125,
+              0.16666666666666666
+            ],
+            "mean": 0.09375,
+            "observations": 96,
+            "prompts": 16
+          },
+          "damage_given_existing_success": {
+            "ci95": [
+              0.03125,
+              0.16666666666666666
+            ],
+            "mean": 0.09375,
+            "observations": 87,
+            "prompts": 16
+          },
+          "geneval_clause_success_delta": {
+            "ci95": [
+              -0.010416666666666666,
+              0.09375
+            ],
+            "mean": 0.03645833333333333,
+            "observations": 96,
+            "prompts": 16
+          },
+          "joint_success_delta": {
+            "ci95": [
+              -0.05208333333333334,
+              0.125
+            ],
+            "mean": 0.04166666666666666,
+            "observations": 96,
+            "prompts": 16
+          },
+          "negative_gain_rate": {
+            "ci95": [
+              0.0625,
+              0.21874999999999997
+            ],
+            "mean": 0.13541666666666666,
+            "observations": 96,
+            "prompts": 16
+          },
+          "ocr_clause_success_delta": {
+            "ci95": [
+              0.010416666666666664,
+              0.19791666666666663
+            ],
+            "mean": 0.10416666666666666,
+            "observations": 96,
+            "prompts": 16
+          },
+          "positive_gain_rate": {
+            "ci95": [
+              0.16666666666666666,
+              0.3125
+            ],
+            "mean": 0.23958333333333331,
+            "observations": 96,
+            "prompts": 16
+          },
+          "utility_delta": {
+            "ci95": [
+              -0.022773437500000004,
+              0.08701461226851848
+            ],
+            "mean": 0.03695023148148147,
+            "observations": 96,
+            "prompts": 16
+          }
+        },
+        "ocr@0.5": {
+          "admissible_positive_rate": {
+            "ci95": [
+              0.09375,
+              0.23958333333333331
+            ],
+            "mean": 0.16666666666666666,
+            "observations": 96,
+            "prompts": 16
+          },
+          "collateral_damage_rate": {
+            "ci95": [
+              0.020833333333333332,
+              0.11458333333333333
+            ],
+            "mean": 0.0625,
+            "observations": 96,
+            "prompts": 16
+          },
+          "damage_given_existing_success": {
+            "ci95": [
+              0.020833333333333332,
+              0.11458333333333333
+            ],
+            "mean": 0.0625,
+            "observations": 87,
+            "prompts": 16
+          },
+          "geneval_clause_success_delta": {
+            "ci95": [
+              -0.03645833333333333,
+              0.04166666666666667
+            ],
+            "mean": 0.005208333333333333,
+            "observations": 96,
+            "prompts": 16
+          },
+          "joint_success_delta": {
+            "ci95": [
+              -0.020833333333333332,
+              0.10416666666666666
+            ],
+            "mean": 0.041666666666666664,
+            "observations": 96,
+            "prompts": 16
+          },
+          "negative_gain_rate": {
+            "ci95": [
+              0.041666666666666664,
+              0.15625
+            ],
+            "mean": 0.09375,
+            "observations": 96,
+            "prompts": 16
+          },
+          "ocr_clause_success_delta": {
+            "ci95": [
+              0.020833333333333332,
+              0.16666666666666666
+            ],
+            "mean": 0.09375,
+            "observations": 96,
+            "prompts": 16
+          },
+          "positive_gain_rate": {
+            "ci95": [
+              0.10416666666666666,
+              0.25
+            ],
+            "mean": 0.17708333333333331,
+            "observations": 96,
+            "prompts": 16
+          },
+          "utility_delta": {
+            "ci95": [
+              -0.00425708912037037,
+              0.061113281249999984
+            ],
+            "mean": 0.029224537037037035,
+            "observations": 96,
+            "prompts": 16
+          }
+        },
+        "ocr@1": {
+          "admissible_positive_rate": {
+            "ci95": [
+              0.12499999999999999,
+              0.3020833333333333
+            ],
+            "mean": 0.20833333333333331,
+            "observations": 96,
+            "prompts": 16
+          },
+          "collateral_damage_rate": {
+            "ci95": [
+              0.0,
+              0.09375
+            ],
+            "mean": 0.041666666666666664,
+            "observations": 96,
+            "prompts": 16
+          },
+          "damage_given_existing_success": {
+            "ci95": [
+              0.0,
+              0.09375
+            ],
+            "mean": 0.041666666666666664,
+            "observations": 87,
+            "prompts": 16
+          },
+          "geneval_clause_success_delta": {
+            "ci95": [
+              -0.03645833333333333,
+              0.08333333333333333
+            ],
+            "mean": 0.020833333333333332,
+            "observations": 96,
+            "prompts": 16
+          },
+          "joint_success_delta": {
+            "ci95": [
+              0.03125,
+              0.15625
+            ],
+            "mean": 0.09375,
+            "observations": 96,
+            "prompts": 16
+          },
+          "negative_gain_rate": {
+            "ci95": [
+              0.020833333333333332,
+              0.13541666666666666
+            ],
+            "mean": 0.07291666666666666,
+            "observations": 96,
+            "prompts": 16
+          },
+          "ocr_clause_success_delta": {
+            "ci95": [
+              0.06249999999999999,
+              0.19791666666666666
+            ],
+            "mean": 0.125,
+            "observations": 96,
+            "prompts": 16
+          },
+          "positive_gain_rate": {
+            "ci95": [
+              0.12499999999999999,
+              0.3020833333333333
+            ],
+            "mean": 0.20833333333333331,
+            "observations": 96,
+            "prompts": 16
+          },
+          "utility_delta": {
+            "ci95": [
+              0.028093171296296297,
+              0.10656901041666668
+            ],
+            "mean": 0.0673900462962963,
+            "observations": 96,
+            "prompts": 16
+          }
+        }
+      },
+      "jp1-train-relation": {
+        "geneval@0.5": {
+          "admissible_positive_rate": {
+            "ci95": [
+              0.11458333333333333,
+              0.23958333333333331
+            ],
+            "mean": 0.17708333333333331,
+            "observations": 96,
+            "prompts": 16
+          },
+          "collateral_damage_rate": {
+            "ci95": [
+              0.05208333333333333,
+              0.17708333333333331
+            ],
+            "mean": 0.11458333333333333,
+            "observations": 96,
+            "prompts": 16
+          },
+          "damage_given_existing_success": {
+            "ci95": [
+              0.09523809523809523,
+              0.33333333333333337
+            ],
+            "mean": 0.20238095238095236,
+            "observations": 72,
+            "prompts": 14
+          },
+          "geneval_clause_success_delta": {
+            "ci95": [
+              0.020833333333333332,
+              0.15625
+            ],
+            "mean": 0.08333333333333333,
+            "observations": 96,
+            "prompts": 16
+          },
+          "joint_success_delta": {
+            "ci95": [
+              -0.031249999999999997,
+              0.11484374999999859
+            ],
+            "mean": 0.041666666666666664,
+            "observations": 96,
+            "prompts": 16
+          },
+          "negative_gain_rate": {
+            "ci95": [
+              0.12499999999999999,
+              0.25
+            ],
+            "mean": 0.1875,
+            "observations": 96,
+            "prompts": 16
+          },
+          "ocr_clause_success_delta": {
+            "ci95": [
+              -0.15625,
+              -0.041666666666666664
+            ],
+            "mean": -0.09375,
+            "observations": 96,
+            "prompts": 16
+          },
+          "positive_gain_rate": {
+            "ci95": [
+              0.13541666666666666,
+              0.28125
+            ],
+            "mean": 0.20833333333333331,
+            "observations": 96,
+            "prompts": 16
+          },
+          "utility_delta": {
+            "ci95": [
+              -0.0134703621031746,
+              0.07416310143849207
+            ],
+            "mean": 0.02751116071428572,
+            "observations": 96,
+            "prompts": 16
+          }
+        },
+        "geneval@1": {
+          "admissible_positive_rate": {
+            "ci95": [
+              0.20833333333333331,
+              0.3958333333333333
+            ],
+            "mean": 0.3020833333333333,
+            "observations": 96,
+            "prompts": 16
+          },
+          "collateral_damage_rate": {
+            "ci95": [
+              0.05208333333333333,
+              0.13541666666666666
+            ],
+            "mean": 0.09375,
+            "observations": 96,
+            "prompts": 16
+          },
+          "damage_given_existing_success": {
+            "ci95": [
+              0.08333333333333334,
+              0.2261904761904762
+            ],
+            "mean": 0.15476190476190474,
+            "observations": 72,
+            "prompts": 14
+          },
+          "geneval_clause_success_delta": {
+            "ci95": [
+              0.12499999999999999,
+              0.31276041666666526
+            ],
+            "mean": 0.21874999999999997,
+            "observations": 96,
+            "prompts": 16
+          },
+          "joint_success_delta": {
+            "ci95": [
+              0.020833333333333336,
+              0.21901041666666524
+            ],
+            "mean": 0.125,
+            "observations": 96,
+            "prompts": 16
+          },
+          "negative_gain_rate": {
+            "ci95": [
+              0.09375,
+              0.19791666666666666
+            ],
+            "mean": 0.14583333333333331,
+            "observations": 96,
+            "prompts": 16
+          },
+          "ocr_clause_success_delta": {
+            "ci95": [
+              -0.10416666666666666,
+              0.020833333333333332
+            ],
+            "mean": -0.041666666666666664,
+            "observations": 96,
+            "prompts": 16
+          },
+          "positive_gain_rate": {
+            "ci95": [
+              0.23958333333333331,
+              0.44791666666666663
+            ],
+            "mean": 0.34375,
+            "observations": 96,
+            "prompts": 16
+          },
+          "utility_delta": {
+            "ci95": [
+              0.022182751059704183,
+              0.14775682325487008
+            ],
+            "mean": 0.08620242604617603,
+            "observations": 96,
+            "prompts": 16
+          }
+        },
+        "ocr@0.5": {
+          "admissible_positive_rate": {
+            "ci95": [
+              0.08333333333333333,
+              0.19791666666666666
+            ],
+            "mean": 0.13541666666666666,
+            "observations": 96,
+            "prompts": 16
+          },
+          "collateral_damage_rate": {
+            "ci95": [
+              0.041666666666666664,
+              0.15625
+            ],
+            "mean": 0.09375,
+            "observations": 96,
+            "prompts": 16
+          },
+          "damage_given_existing_success": {
+            "ci95": [
+              0.05952380952380952,
+              0.24999999999999997
+            ],
+            "mean": 0.14285714285714285,
+            "observations": 72,
+            "prompts": 14
+          },
+          "geneval_clause_success_delta": {
+            "ci95": [
+              -0.041666666666666664,
+              0.041666666666666664
+            ],
+            "mean": 0.0,
+            "observations": 96,
+            "prompts": 16
+          },
+          "joint_success_delta": {
+            "ci95": [
+              -0.03125,
+              0.0625
+            ],
+            "mean": 0.020833333333333332,
+            "observations": 96,
+            "prompts": 16
+          },
+          "negative_gain_rate": {
+            "ci95": [
+              0.10416666666666666,
+              0.20833333333333331
+            ],
+            "mean": 0.15625,
+            "observations": 96,
+            "prompts": 16
+          },
+          "ocr_clause_success_delta": {
+            "ci95": [
+              -0.0625,
+              0.08333333333333333
+            ],
+            "mean": 0.010416666666666664,
+            "observations": 96,
+            "prompts": 16
+          },
+          "positive_gain_rate": {
+            "ci95": [
+              0.09375,
+              0.20833333333333331
+            ],
+            "mean": 0.14583333333333331,
+            "observations": 96,
+            "prompts": 16
+          },
+          "utility_delta": {
+            "ci95": [
+              -0.018148561507936506,
+              0.04347749255952381
+            ],
+            "mean": 0.01379588293650794,
+            "observations": 96,
+            "prompts": 16
+          }
+        },
+        "ocr@1": {
+          "admissible_positive_rate": {
+            "ci95": [
+              0.11458333333333333,
+              0.23958333333333331
+            ],
+            "mean": 0.17708333333333331,
+            "observations": 96,
+            "prompts": 16
+          },
+          "collateral_damage_rate": {
+            "ci95": [
+              0.041666666666666664,
+              0.15625
+            ],
+            "mean": 0.09375,
+            "observations": 96,
+            "prompts": 16
+          },
+          "damage_given_existing_success": {
+            "ci95": [
+              0.05952380952380952,
+              0.29761904761904756
+            ],
+            "mean": 0.16666666666666666,
+            "observations": 72,
+            "prompts": 14
+          },
+          "geneval_clause_success_delta": {
+            "ci95": [
+              -0.041666666666666664,
+              0.041666666666666664
+            ],
+            "mean": 0.0,
+            "observations": 96,
+            "prompts": 16
+          },
+          "joint_success_delta": {
+            "ci95": [
+              -0.010416666666666666,
+              0.09375
+            ],
+            "mean": 0.041666666666666664,
+            "observations": 96,
+            "prompts": 16
+          },
+          "negative_gain_rate": {
+            "ci95": [
+              0.11458333333333331,
+              0.23958333333333331
+            ],
+            "mean": 0.17708333333333331,
+            "observations": 96,
+            "prompts": 16
+          },
+          "ocr_clause_success_delta": {
+            "ci95": [
+              -0.03125,
+              0.10416666666666666
+            ],
+            "mean": 0.03125,
+            "observations": 96,
+            "prompts": 16
+          },
+          "positive_gain_rate": {
+            "ci95": [
+              0.125,
+              0.25
+            ],
+            "mean": 0.1875,
+            "observations": 96,
+            "prompts": 16
+          },
+          "utility_delta": {
+            "ci95": [
+              -0.007553168402777779,
+              0.06580512152777775
+            ],
+            "mean": 0.026692708333333336,
+            "observations": 96,
+            "prompts": 16
+          }
+        }
+      }
+    },
+    "selected_local_gain_same_verifier": {
+      "ci95": [
+        0.11599859974371693,
+        0.17416948913897148
+      ],
+      "mean": 0.1452171688988095,
+      "observations": 384,
+      "prompts": 64
+    },
+    "acceptance": {
+      "ci95": [
+        0.29947916666666663,
+        0.421875
+      ],
+      "mean": 0.3619791666666667,
+      "observations": 384,
+      "prompts": 64
+    },
+    "query_rows_integrity": "completion_digest_verified",
+    "asset_validation_notes": [
+      {
+        "added": [
+          ".no_exist/32bd64288804d66eefd0ccbe215aa642df71cc41/chat_template.jinja",
+          ".no_exist/32bd64288804d66eefd0ccbe215aa642df71cc41/chat_template.json"
+        ],
+        "all_prepared_files_unchanged": true,
+        "path": "/midtier/minilab/scratch/chw4026/.cache/huggingface/hub/models--openai--clip-vit-large-patch14",
+        "status": "legacy_chat_negative_cache_additions_only"
+      },
+      {
+        "added": [
+          ".no_exist/1c2b8495b28150b8a4922ee1c8edee224c284c0c/chat_template.jinja",
+          ".no_exist/1c2b8495b28150b8a4922ee1c8edee224c284c0c/chat_template.json"
+        ],
+        "all_prepared_files_unchanged": true,
+        "path": "/midtier/minilab/scratch/chw4026/.cache/huggingface/hub/models--laion--CLIP-ViT-H-14-laion2B-s32B-b79K",
+        "status": "legacy_chat_negative_cache_additions_only"
+      }
+    ]
+  },
+  "fit_scale": {
+    "initial_candidates_exactly_matched": true,
+    "arms": [
+      {
+        "run": "/midtier/minilab/scratch/chw4026/projects/side_project/generative/opd_related/opd_lab/runs/le1_fit_scale_3e4_001",
+        "learning_rate": 0.0003,
+        "fitting": {
+          "accepted": 2,
+          "accepted_loss_sum_after": 0.0011799384956248105,
+          "accepted_loss_sum_before": 0.00034919056625447585,
+          "after_over_before": 3.379067505405972
+        }
+      },
+      {
+        "run": "/midtier/minilab/scratch/chw4026/projects/side_project/generative/opd_related/opd_lab/runs/le1_fit_scale_1e4_001",
+        "learning_rate": 0.0001,
+        "fitting": {
+          "accepted": 2,
+          "accepted_loss_sum_after": 0.00023474850240745582,
+          "accepted_loss_sum_before": 0.00034919056625447585,
+          "after_over_before": 0.6722647319068198
+        }
+      },
+      {
+        "run": "/midtier/minilab/scratch/chw4026/projects/side_project/generative/opd_related/opd_lab/runs/le1_fit_scale_3e5_001",
+        "learning_rate": 3e-05,
+        "fitting": {
+          "accepted": 2,
+          "accepted_loss_sum_after": 0.00014886936514812987,
+          "accepted_loss_sum_before": 0.00034919056625447585,
+          "after_over_before": 0.4263269960152358
+        }
+      }
+    ]
+  },
+  "validation_smoke": {
+    "comparisons": {
+      "round_robin_ema_dpm210": {
+        "baseline": "/midtier/minilab/scratch/chw4026/projects/side_project/generative/opd_related/opd_lab/runs/le1_evaluation_smoke_job_002/checks/base_dpm210",
+        "images": 4,
+        "interval": "paired prompt bootstrap percentile 95%, 2000 resamples, seed 0",
+        "joint_success": {
+          "ci95": [
+            -1.0,
+            0.0
+          ],
+          "paired_delta": -0.5,
+          "prompt_count": 4
+        },
+        "method": "/midtier/minilab/scratch/chw4026/projects/side_project/generative/opd_related/opd_lab/runs/le1_evaluation_smoke_job_002/checks/round_robin_ema_dpm210",
+        "statistical_unit": "prompt; average replicate seeds within prompt before paired bootstrap",
+        "utility": {
+          "ci95": [
+            -0.7053571428571428,
+            -0.16517857142857142
+          ],
+          "paired_delta": -0.4624007936507936,
+          "prompt_count": 4
+        }
+      },
+      "round_robin_ema_flow10": {
+        "baseline": "/midtier/minilab/scratch/chw4026/projects/side_project/generative/opd_related/opd_lab/runs/le1_evaluation_smoke_job_002/checks/base_flow10",
+        "images": 4,
+        "interval": "paired prompt bootstrap percentile 95%, 2000 resamples, seed 0",
+        "joint_success": {
+          "ci95": [
+            -0.75,
+            0.0
+          ],
+          "paired_delta": -0.25,
+          "prompt_count": 4
+        },
+        "method": "/midtier/minilab/scratch/chw4026/projects/side_project/generative/opd_related/opd_lab/runs/le1_evaluation_smoke_job_002/checks/round_robin_ema_flow10",
+        "statistical_unit": "prompt; average replicate seeds within prompt before paired bootstrap",
+        "utility": {
+          "ci95": [
+            -0.59375,
+            0.04166666666666666
+          ],
+          "paired_delta": -0.2028769841269841,
+          "prompt_count": 4
+        }
+      },
+      "round_robin_raw_dpm210": {
+        "baseline": "/midtier/minilab/scratch/chw4026/projects/side_project/generative/opd_related/opd_lab/runs/le1_evaluation_smoke_job_002/checks/base_dpm210",
+        "images": 4,
+        "interval": "paired prompt bootstrap percentile 95%, 2000 resamples, seed 0",
+        "joint_success": {
+          "ci95": [
+            -0.75,
+            0.0
+          ],
+          "paired_delta": -0.25,
+          "prompt_count": 4
+        },
+        "method": "/midtier/minilab/scratch/chw4026/projects/side_project/generative/opd_related/opd_lab/runs/le1_evaluation_smoke_job_002/checks/round_robin_raw_dpm210",
+        "statistical_unit": "prompt; average replicate seeds within prompt before paired bootstrap",
+        "utility": {
+          "ci95": [
+            -0.6319444444444444,
+            0.0
+          ],
+          "paired_delta": -0.3159722222222222,
+          "prompt_count": 4
+        }
+      },
+      "round_robin_raw_flow10": {
+        "baseline": "/midtier/minilab/scratch/chw4026/projects/side_project/generative/opd_related/opd_lab/runs/le1_evaluation_smoke_job_002/checks/base_flow10",
+        "images": 4,
+        "interval": "paired prompt bootstrap percentile 95%, 2000 resamples, seed 0",
+        "joint_success": {
+          "ci95": [
+            -0.75,
+            0.0
+          ],
+          "paired_delta": -0.25,
+          "prompt_count": 4
+        },
+        "method": "/midtier/minilab/scratch/chw4026/projects/side_project/generative/opd_related/opd_lab/runs/le1_evaluation_smoke_job_002/checks/round_robin_raw_flow10",
+        "statistical_unit": "prompt; average replicate seeds within prompt before paired bootstrap",
+        "utility": {
+          "ci95": [
+            -0.59375,
+            0.0
+          ],
+          "paired_delta": -0.2326388888888889,
+          "prompt_count": 4
+        }
+      },
+      "verified_ema_dpm210": {
+        "baseline": "/midtier/minilab/scratch/chw4026/projects/side_project/generative/opd_related/opd_lab/runs/le1_evaluation_smoke_job_002/checks/base_dpm210",
+        "images": 4,
+        "interval": "paired prompt bootstrap percentile 95%, 2000 resamples, seed 0",
+        "joint_success": {
+          "ci95": [
+            -0.75,
+            0.0
+          ],
+          "paired_delta": -0.25,
+          "prompt_count": 4
+        },
+        "method": "/midtier/minilab/scratch/chw4026/projects/side_project/generative/opd_related/opd_lab/runs/le1_evaluation_smoke_job_002/checks/verified_ema_dpm210",
+        "statistical_unit": "prompt; average replicate seeds within prompt before paired bootstrap",
+        "utility": {
+          "ci95": [
+            -0.5873015873015873,
+            0.0
+          ],
+          "paired_delta": -0.29365079365079366,
+          "prompt_count": 4
+        }
+      },
+      "verified_ema_flow10": {
+        "baseline": "/midtier/minilab/scratch/chw4026/projects/side_project/generative/opd_related/opd_lab/runs/le1_evaluation_smoke_job_002/checks/base_flow10",
+        "images": 4,
+        "interval": "paired prompt bootstrap percentile 95%, 2000 resamples, seed 0",
+        "joint_success": {
+          "ci95": [
+            -0.75,
+            0.0
+          ],
+          "paired_delta": -0.25,
+          "prompt_count": 4
+        },
+        "method": "/midtier/minilab/scratch/chw4026/projects/side_project/generative/opd_related/opd_lab/runs/le1_evaluation_smoke_job_002/checks/verified_ema_flow10",
+        "statistical_unit": "prompt; average replicate seeds within prompt before paired bootstrap",
+        "utility": {
+          "ci95": [
+            -0.59375,
+            0.04166666666666666
+          ],
+          "paired_delta": -0.21875,
+          "prompt_count": 4
+        }
+      },
+      "verified_raw_dpm210": {
+        "baseline": "/midtier/minilab/scratch/chw4026/projects/side_project/generative/opd_related/opd_lab/runs/le1_evaluation_smoke_job_002/checks/base_dpm210",
+        "images": 4,
+        "interval": "paired prompt bootstrap percentile 95%, 2000 resamples, seed 0",
+        "joint_success": {
+          "ci95": [
+            -0.75,
+            0.0
+          ],
+          "paired_delta": -0.25,
+          "prompt_count": 4
+        },
+        "method": "/midtier/minilab/scratch/chw4026/projects/side_project/generative/opd_related/opd_lab/runs/le1_evaluation_smoke_job_002/checks/verified_raw_dpm210",
+        "statistical_unit": "prompt; average replicate seeds within prompt before paired bootstrap",
+        "utility": {
+          "ci95": [
+            -0.5625,
+            0.04166666666666666
+          ],
+          "paired_delta": -0.2549603174603175,
+          "prompt_count": 4
+        }
+      },
+      "verified_raw_flow10": {
+        "baseline": "/midtier/minilab/scratch/chw4026/projects/side_project/generative/opd_related/opd_lab/runs/le1_evaluation_smoke_job_002/checks/base_flow10",
+        "images": 4,
+        "interval": "paired prompt bootstrap percentile 95%, 2000 resamples, seed 0",
+        "joint_success": {
+          "ci95": [
+            -1.0,
+            0.0
+          ],
+          "paired_delta": -0.5,
+          "prompt_count": 4
+        },
+        "method": "/midtier/minilab/scratch/chw4026/projects/side_project/generative/opd_related/opd_lab/runs/le1_evaluation_smoke_job_002/checks/verified_raw_flow10",
+        "statistical_unit": "prompt; average replicate seeds within prompt before paired bootstrap",
+        "utility": {
+          "ci95": [
+            -0.6458333333333333,
+            -0.0515873015873016
+          ],
+          "paired_delta": -0.34871031746031744,
+          "prompt_count": 4
+        }
+      }
+    },
+    "context_run": "/midtier/minilab/scratch/chw4026/projects/side_project/generative/opd_related/opd_lab/runs/le1_eval_context_002",
+    "scope": "Engineering validation subset; no efficacy claim",
+    "status": "evaluation_smoke_passed"
+  },
+  "cost": {
+    "allocated_gpu_hours_including_failed_attempts": 1.1897222222222221,
+    "interpretation": "Scheduler allocation time summed over heterogeneous H100/H200/L40-class GPUs; not hardware-normalized. Includes failed attempts and model loading."
+  },
+  "decision": "Local interventions have proxy-metric opportunity and collateral harm, but generated-image OCR errors and unstable large first updates prevent a clean efficacy claim. Validate verifier and use conservative matched fitting checks before formal training; retain held-out test untouched."
+}

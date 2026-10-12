@@ -1,0 +1,1482 @@
+{
+  "field_disagreements": [
+    {
+      "assistant": "no",
+      "field": "visibility",
+      "human": "yes",
+      "model": "joint128",
+      "opposite_definite": true,
+      "review_image_id": "H01-A"
+    },
+    {
+      "assistant": "no",
+      "field": "visibility",
+      "human": "yes",
+      "model": "all_teacher",
+      "opposite_definite": true,
+      "review_image_id": "H01-B"
+    },
+    {
+      "assistant": "no",
+      "field": "visibility",
+      "human": "yes",
+      "model": "certified",
+      "opposite_definite": true,
+      "review_image_id": "H01-C"
+    },
+    {
+      "assistant": "no",
+      "field": "visibility",
+      "human": "yes",
+      "model": "random_matched",
+      "opposite_definite": true,
+      "review_image_id": "H01-D"
+    },
+    {
+      "assistant": "yes",
+      "field": "count",
+      "human": "unclear",
+      "model": "all_teacher",
+      "opposite_definite": false,
+      "review_image_id": "H02-B"
+    },
+    {
+      "assistant": "yes",
+      "field": "text",
+      "human": "unclear",
+      "model": "certified",
+      "opposite_definite": false,
+      "review_image_id": "H02-C"
+    },
+    {
+      "assistant": "yes",
+      "field": "text",
+      "human": "unclear",
+      "model": "random_matched",
+      "opposite_definite": false,
+      "review_image_id": "H02-D"
+    },
+    {
+      "assistant": "yes",
+      "field": "text",
+      "human": "unclear",
+      "model": "all_teacher",
+      "opposite_definite": false,
+      "review_image_id": "H09-A"
+    },
+    {
+      "assistant": "unclear",
+      "field": "count",
+      "human": "no",
+      "model": "joint128",
+      "opposite_definite": false,
+      "review_image_id": "H09-B"
+    },
+    {
+      "assistant": "unclear",
+      "field": "text",
+      "human": "yes",
+      "model": "random_matched",
+      "opposite_definite": false,
+      "review_image_id": "H12-A"
+    },
+    {
+      "assistant": "no",
+      "field": "text",
+      "human": "unclear",
+      "model": "joint128",
+      "opposite_definite": false,
+      "review_image_id": "H12-C"
+    }
+  ],
+  "limitations": [
+    "One human; 12 seeds across six familiar prompts; single-action path only.",
+    "Common-group analysis uses seven groups selected by answer coverage, not a new primary cohort.",
+    "Missing fields stay missing; unclear is not a known failure; comments do not fill checkboxes.",
+    "Overall preference is separate from constraint success; no method ranking or all-32 harm estimate.",
+    "Assistant labels are provisional and remain unchanged in the original archive."
+  ],
+  "overall_preferences": [
+    {
+      "explicit_letters": [
+        "B"
+      ],
+      "group": "H01",
+      "selected_models": [
+        "all_teacher"
+      ],
+      "verbatim": "B"
+    },
+    {
+      "explicit_letters": [
+        "B"
+      ],
+      "group": "H02",
+      "selected_models": [
+        "all_teacher"
+      ],
+      "verbatim": "B, \u53ea\u6709B\u7a0d\u5fae\u80fd\u770b\u5230\u4e00\u70b9\u70b9\u676f\u5b50, \u5176\u4ed6\u90fd\u6ca1\u676f\u5b50\u5e76\u4e14\u5b57\u90fd\u5f88\u6a21\u7cca"
+    },
+    {
+      "explicit_letters": [],
+      "group": "H03",
+      "selected_models": [],
+      "verbatim": "\u90fd\u4e00\u6837\u4e0d\u597d, peach\u4e0d\u6e05\u6670, \u6905\u5b50\u4e0d\u5b8c\u6574"
+    },
+    {
+      "explicit_letters": [
+        "A"
+      ],
+      "group": "H04",
+      "selected_models": [
+        "certified"
+      ],
+      "verbatim": "A"
+    },
+    {
+      "explicit_letters": [
+        "B",
+        "C"
+      ],
+      "group": "H05",
+      "selected_models": [
+        "random_matched",
+        "joint128"
+      ],
+      "verbatim": "B/C\u5e76\u5217, \u5b57\u66f4\u6e05\u6670, \u82b1\u74f6\u90fd\u5dee\u4e0d\u591a"
+    },
+    {
+      "explicit_letters": [],
+      "group": "H06",
+      "selected_models": [],
+      "verbatim": "\u90fd\u8fd8\u53ef\u4ee5"
+    },
+    {
+      "explicit_letters": [
+        "C"
+      ],
+      "group": "H07",
+      "selected_models": [
+        "random_matched"
+      ],
+      "verbatim": "C, \u5b57\u540e\u9762\u6ca1\u6709\u660e\u663ebackground"
+    },
+    {
+      "explicit_letters": [
+        "C"
+      ],
+      "group": "H08",
+      "selected_models": [
+        "random_matched"
+      ],
+      "verbatim": "C, \u7897\u6bd4A\u7684\u7897\u66f4\u6b63\u5e38size"
+    },
+    {
+      "explicit_letters": [
+        "A"
+      ],
+      "group": "H09",
+      "selected_models": [
+        "all_teacher"
+      ],
+      "verbatim": "A, \u5176\u4ed6\u7684\u676f\u5b50\u548c\u5b57\u90fd\u5728\u4e00\u5757"
+    },
+    {
+      "explicit_letters": [],
+      "group": "H10",
+      "selected_models": [],
+      "verbatim": "\u90fd\u4e0d\u597d"
+    },
+    {
+      "explicit_letters": [],
+      "group": "H11",
+      "selected_models": [],
+      "verbatim": "\u90fd\u4e0d\u9519"
+    },
+    {
+      "explicit_letters": [
+        "A",
+        "B"
+      ],
+      "group": "H12",
+      "selected_models": [
+        "random_matched",
+        "all_teacher"
+      ],
+      "verbatim": "A/B\u5e76\u5217, C,D\u7684\u5b57\u4e0d\u5b8c\u6574\u6216\u8005\u4e0d\u6e05\u695a"
+    }
+  ],
+  "rows": [
+    {
+      "assistant": {
+        "relation": "no",
+        "text": "no",
+        "visibility": "no"
+      },
+      "assistant_outcome": "known_failure",
+      "group": "H01",
+      "human": {
+        "relation": "no",
+        "text": "no",
+        "visibility": "yes"
+      },
+      "human_outcome": "known_failure",
+      "id": "jp1-train-relation-12",
+      "image_sha256": "e9fd68ae07637539353a36f6c17d3c2e2eb03f81c4e2e9dea1d534f98c3ec49d",
+      "model": "joint128",
+      "notes": null,
+      "pair_id": "efdf866b4f09d0660454a092",
+      "review_image_id": "H01-A",
+      "seed": 1440822962,
+      "source_case": 29,
+      "source_letter": "D",
+      "visible_text": "BLOM\u5e76\u4e14\u6a21\u7cca"
+    },
+    {
+      "assistant": {
+        "relation": "no",
+        "text": "no",
+        "visibility": "no"
+      },
+      "assistant_outcome": "known_failure",
+      "group": "H01",
+      "human": {
+        "relation": "no",
+        "text": "no",
+        "visibility": "yes"
+      },
+      "human_outcome": "known_failure",
+      "id": "jp1-train-relation-12",
+      "image_sha256": "c2d639f2005fa1881feefd2fbc9ecbea3ecf19f04ad2e76d4b2b4a4378a1173a",
+      "model": "all_teacher",
+      "notes": null,
+      "pair_id": "efdf866b4f09d0660454a092",
+      "review_image_id": "H01-B",
+      "seed": 1440822962,
+      "source_case": 29,
+      "source_letter": "B",
+      "visible_text": "BLOM"
+    },
+    {
+      "assistant": {
+        "relation": "no",
+        "text": "no",
+        "visibility": "no"
+      },
+      "assistant_outcome": "known_failure",
+      "group": "H01",
+      "human": {
+        "relation": "no",
+        "text": "no",
+        "visibility": "yes"
+      },
+      "human_outcome": "known_failure",
+      "id": "jp1-train-relation-12",
+      "image_sha256": "999d625210956408f78fd3c11c102423c51f65b18b0808945df8662febe0461b",
+      "model": "certified",
+      "notes": null,
+      "pair_id": "efdf866b4f09d0660454a092",
+      "review_image_id": "H01-C",
+      "seed": 1440822962,
+      "source_case": 29,
+      "source_letter": "A",
+      "visible_text": "BLOM, \u6a21\u7cca"
+    },
+    {
+      "assistant": {
+        "relation": "no",
+        "text": "no",
+        "visibility": "no"
+      },
+      "assistant_outcome": "known_failure",
+      "group": "H01",
+      "human": {
+        "relation": "no",
+        "text": "no",
+        "visibility": "yes"
+      },
+      "human_outcome": "known_failure",
+      "id": "jp1-train-relation-12",
+      "image_sha256": "36a6d105a984f9b8bd2b357b76e2661f868eeab9e5ea3ec5f8913f491beeeae9",
+      "model": "random_matched",
+      "notes": null,
+      "pair_id": "efdf866b4f09d0660454a092",
+      "review_image_id": "H01-D",
+      "seed": 1440822962,
+      "source_case": 29,
+      "source_letter": "C",
+      "visible_text": "BLOM \u6a21\u7cca"
+    },
+    {
+      "assistant": {
+        "count": "no",
+        "text": "yes",
+        "visibility": "no"
+      },
+      "assistant_outcome": "known_failure",
+      "group": "H02",
+      "human": {
+        "count": "no",
+        "text": "yes",
+        "visibility": "missing"
+      },
+      "human_outcome": "known_failure",
+      "id": "jp1-train-count-08",
+      "image_sha256": "6069384b24646d37a7c78efe6f3b6136af6cf76b98b546717648955faa0a5319",
+      "model": "joint128",
+      "notes": null,
+      "pair_id": "8bf64646ee5ce7cacf32b4c4",
+      "review_image_id": "H02-A",
+      "seed": 1455593139,
+      "source_case": 1,
+      "source_letter": "D",
+      "visible_text": null
+    },
+    {
+      "assistant": {
+        "count": "yes",
+        "text": "yes",
+        "visibility": "yes"
+      },
+      "assistant_outcome": "confirmed_success",
+      "group": "H02",
+      "human": {
+        "count": "unclear",
+        "text": "yes",
+        "visibility": "missing"
+      },
+      "human_outcome": "unresolved",
+      "id": "jp1-train-count-08",
+      "image_sha256": "c940119c4ccf97168760532587e9ad2af9731fd473f99dfead4af4f21cb54de6",
+      "model": "all_teacher",
+      "notes": null,
+      "pair_id": "8bf64646ee5ce7cacf32b4c4",
+      "review_image_id": "H02-B",
+      "seed": 1455593139,
+      "source_case": 1,
+      "source_letter": "A",
+      "visible_text": null
+    },
+    {
+      "assistant": {
+        "count": "no",
+        "text": "yes",
+        "visibility": "no"
+      },
+      "assistant_outcome": "known_failure",
+      "group": "H02",
+      "human": {
+        "count": "no",
+        "text": "unclear",
+        "visibility": "no"
+      },
+      "human_outcome": "known_failure",
+      "id": "jp1-train-count-08",
+      "image_sha256": "133f96e6839cf83cf0b0421cc402ff83914c0a3bca0a2b00ec4d67296967ef7a",
+      "model": "certified",
+      "notes": null,
+      "pair_id": "8bf64646ee5ce7cacf32b4c4",
+      "review_image_id": "H02-C",
+      "seed": 1455593139,
+      "source_case": 1,
+      "source_letter": "C",
+      "visible_text": null
+    },
+    {
+      "assistant": {
+        "count": "no",
+        "text": "yes",
+        "visibility": "no"
+      },
+      "assistant_outcome": "known_failure",
+      "group": "H02",
+      "human": {
+        "count": "no",
+        "text": "unclear",
+        "visibility": "no"
+      },
+      "human_outcome": "known_failure",
+      "id": "jp1-train-count-08",
+      "image_sha256": "edcf304a231d2424efdbf692c025b02c706a919ae5a4d1793a3cb5b677eccec5",
+      "model": "random_matched",
+      "notes": null,
+      "pair_id": "8bf64646ee5ce7cacf32b4c4",
+      "review_image_id": "H02-D",
+      "seed": 1455593139,
+      "source_case": 1,
+      "source_letter": "B",
+      "visible_text": null
+    },
+    {
+      "assistant": {
+        "color": "yes",
+        "text": "yes",
+        "visibility": "no"
+      },
+      "assistant_outcome": "known_failure",
+      "group": "H03",
+      "human": {
+        "color": "missing",
+        "text": "missing",
+        "visibility": "missing"
+      },
+      "human_outcome": "unresolved",
+      "id": "jp1-train-color-11",
+      "image_sha256": "f23ba7258d8069f781b6aa608ee62002cb2fd4fdb2520218948187c18349d97b",
+      "model": "all_teacher",
+      "notes": null,
+      "pair_id": "c1a5acc13b37789239a0a0c2",
+      "review_image_id": "H03-A",
+      "seed": 1735190175,
+      "source_case": 57,
+      "source_letter": "A",
+      "visible_text": null
+    },
+    {
+      "assistant": {
+        "color": "yes",
+        "text": "unclear",
+        "visibility": "no"
+      },
+      "assistant_outcome": "known_failure",
+      "group": "H03",
+      "human": {
+        "color": "missing",
+        "text": "missing",
+        "visibility": "missing"
+      },
+      "human_outcome": "unresolved",
+      "id": "jp1-train-color-11",
+      "image_sha256": "182baca821da503e230fc24efbec2910697e020fad5ea27e40628d75511018b9",
+      "model": "joint128",
+      "notes": null,
+      "pair_id": "c1a5acc13b37789239a0a0c2",
+      "review_image_id": "H03-B",
+      "seed": 1735190175,
+      "source_case": 57,
+      "source_letter": "B",
+      "visible_text": null
+    },
+    {
+      "assistant": {
+        "color": "yes",
+        "text": "yes",
+        "visibility": "no"
+      },
+      "assistant_outcome": "known_failure",
+      "group": "H03",
+      "human": {
+        "color": "missing",
+        "text": "missing",
+        "visibility": "missing"
+      },
+      "human_outcome": "unresolved",
+      "id": "jp1-train-color-11",
+      "image_sha256": "ea87ce413189109b24d2549021c4154482580b63c4575b8026ee3fb785136917",
+      "model": "random_matched",
+      "notes": null,
+      "pair_id": "c1a5acc13b37789239a0a0c2",
+      "review_image_id": "H03-C",
+      "seed": 1735190175,
+      "source_case": 57,
+      "source_letter": "C",
+      "visible_text": null
+    },
+    {
+      "assistant": {
+        "color": "yes",
+        "text": "yes",
+        "visibility": "no"
+      },
+      "assistant_outcome": "known_failure",
+      "group": "H03",
+      "human": {
+        "color": "missing",
+        "text": "missing",
+        "visibility": "missing"
+      },
+      "human_outcome": "unresolved",
+      "id": "jp1-train-color-11",
+      "image_sha256": "36f67e79863865cba43c1b5aa5e433c161af3b2ed898520b3e8ca9dcde2a7c6b",
+      "model": "certified",
+      "notes": null,
+      "pair_id": "c1a5acc13b37789239a0a0c2",
+      "review_image_id": "H03-D",
+      "seed": 1735190175,
+      "source_case": 57,
+      "source_letter": "D",
+      "visible_text": null
+    },
+    {
+      "assistant": {
+        "count": "yes",
+        "text": "yes",
+        "visibility": "yes"
+      },
+      "assistant_outcome": "confirmed_success",
+      "group": "H04",
+      "human": {
+        "count": "yes",
+        "text": "yes",
+        "visibility": "yes"
+      },
+      "human_outcome": "confirmed_success",
+      "id": "jp1-train-count-12",
+      "image_sha256": "84f5fd2dc7be47657950f85884c689e260c1f7ea32120e3c39f5c17c284082ea",
+      "model": "certified",
+      "notes": null,
+      "pair_id": "b89fda6fce1c2795f5458a39",
+      "review_image_id": "H04-A",
+      "seed": 1270368451,
+      "source_case": 43,
+      "source_letter": "D",
+      "visible_text": null
+    },
+    {
+      "assistant": {
+        "count": "yes",
+        "text": "yes",
+        "visibility": "yes"
+      },
+      "assistant_outcome": "confirmed_success",
+      "group": "H04",
+      "human": {
+        "count": "yes",
+        "text": "yes",
+        "visibility": "yes"
+      },
+      "human_outcome": "confirmed_success",
+      "id": "jp1-train-count-12",
+      "image_sha256": "3b07a6e21fd33b7e13ce8fddbff1c3574b89a07014ce972b0766b371de60b378",
+      "model": "all_teacher",
+      "notes": null,
+      "pair_id": "b89fda6fce1c2795f5458a39",
+      "review_image_id": "H04-B",
+      "seed": 1270368451,
+      "source_case": 43,
+      "source_letter": "B",
+      "visible_text": null
+    },
+    {
+      "assistant": {
+        "count": "yes",
+        "text": "yes",
+        "visibility": "yes"
+      },
+      "assistant_outcome": "confirmed_success",
+      "group": "H04",
+      "human": {
+        "count": "yes",
+        "text": "yes",
+        "visibility": "yes"
+      },
+      "human_outcome": "confirmed_success",
+      "id": "jp1-train-count-12",
+      "image_sha256": "737615b3b216d45e87699c484c9978b8424992ffdfbac5687217c5956d265814",
+      "model": "random_matched",
+      "notes": null,
+      "pair_id": "b89fda6fce1c2795f5458a39",
+      "review_image_id": "H04-C",
+      "seed": 1270368451,
+      "source_case": 43,
+      "source_letter": "A",
+      "visible_text": null
+    },
+    {
+      "assistant": {
+        "count": "yes",
+        "text": "yes",
+        "visibility": "yes"
+      },
+      "assistant_outcome": "confirmed_success",
+      "group": "H04",
+      "human": {
+        "count": "yes",
+        "text": "yes",
+        "visibility": "yes"
+      },
+      "human_outcome": "confirmed_success",
+      "id": "jp1-train-count-12",
+      "image_sha256": "a69a3261d0a7ee1463e6ea29666774d585e3887eebbbe7431c953c450688ac11",
+      "model": "joint128",
+      "notes": null,
+      "pair_id": "b89fda6fce1c2795f5458a39",
+      "review_image_id": "H04-D",
+      "seed": 1270368451,
+      "source_case": 43,
+      "source_letter": "C",
+      "visible_text": null
+    },
+    {
+      "assistant": {
+        "color": "yes",
+        "text": "yes",
+        "visibility": "yes"
+      },
+      "assistant_outcome": "confirmed_success",
+      "group": "H05",
+      "human": {
+        "color": "yes",
+        "text": "yes",
+        "visibility": "yes"
+      },
+      "human_outcome": "confirmed_success",
+      "id": "jp1-train-color-13",
+      "image_sha256": "44280d523f99efc596e8943cb500be89b2eca8590bfbbd41bd24230ae37cfeed",
+      "model": "certified",
+      "notes": null,
+      "pair_id": "7a215c5ea3c3ba85f643ce55",
+      "review_image_id": "H05-A",
+      "seed": 575600330,
+      "source_case": 23,
+      "source_letter": "D",
+      "visible_text": null
+    },
+    {
+      "assistant": {
+        "color": "yes",
+        "text": "yes",
+        "visibility": "yes"
+      },
+      "assistant_outcome": "confirmed_success",
+      "group": "H05",
+      "human": {
+        "color": "yes",
+        "text": "yes",
+        "visibility": "yes"
+      },
+      "human_outcome": "confirmed_success",
+      "id": "jp1-train-color-13",
+      "image_sha256": "e47ba7d7349d0fdc4a7799471b31a587581ca1a6d6cdc14fda4d9e294972dfb2",
+      "model": "random_matched",
+      "notes": null,
+      "pair_id": "7a215c5ea3c3ba85f643ce55",
+      "review_image_id": "H05-B",
+      "seed": 575600330,
+      "source_case": 23,
+      "source_letter": "A",
+      "visible_text": null
+    },
+    {
+      "assistant": {
+        "color": "yes",
+        "text": "yes",
+        "visibility": "yes"
+      },
+      "assistant_outcome": "confirmed_success",
+      "group": "H05",
+      "human": {
+        "color": "yes",
+        "text": "yes",
+        "visibility": "yes"
+      },
+      "human_outcome": "confirmed_success",
+      "id": "jp1-train-color-13",
+      "image_sha256": "0c9f340a1fa75986aeb3fe41a579645d6c322624efa890931c6f8188004285ad",
+      "model": "joint128",
+      "notes": null,
+      "pair_id": "7a215c5ea3c3ba85f643ce55",
+      "review_image_id": "H05-C",
+      "seed": 575600330,
+      "source_case": 23,
+      "source_letter": "C",
+      "visible_text": null
+    },
+    {
+      "assistant": {
+        "color": "yes",
+        "text": "yes",
+        "visibility": "yes"
+      },
+      "assistant_outcome": "confirmed_success",
+      "group": "H05",
+      "human": {
+        "color": "yes",
+        "text": "yes",
+        "visibility": "yes"
+      },
+      "human_outcome": "confirmed_success",
+      "id": "jp1-train-color-13",
+      "image_sha256": "c4423a0e53780635036316bfb39311e87bf4cd8264b56ef6c72e4068af072417",
+      "model": "all_teacher",
+      "notes": null,
+      "pair_id": "7a215c5ea3c3ba85f643ce55",
+      "review_image_id": "H05-D",
+      "seed": 575600330,
+      "source_case": 23,
+      "source_letter": "B",
+      "visible_text": null
+    },
+    {
+      "assistant": {
+        "color": "yes",
+        "text": "yes",
+        "visibility": "yes"
+      },
+      "assistant_outcome": "confirmed_success",
+      "group": "H06",
+      "human": {
+        "color": "missing",
+        "text": "missing",
+        "visibility": "missing"
+      },
+      "human_outcome": "unresolved",
+      "id": "jp1-train-color-13",
+      "image_sha256": "0343abfe65a03ed2d308825a65120579838506e3402ce7056e9e3756787ac3d6",
+      "model": "certified",
+      "notes": null,
+      "pair_id": "1f2d254730b2320b8a0ecad5",
+      "review_image_id": "H06-A",
+      "seed": 1859309709,
+      "source_case": 50,
+      "source_letter": "A",
+      "visible_text": null
+    },
+    {
+      "assistant": {
+        "color": "yes",
+        "text": "yes",
+        "visibility": "yes"
+      },
+      "assistant_outcome": "confirmed_success",
+      "group": "H06",
+      "human": {
+        "color": "missing",
+        "text": "missing",
+        "visibility": "missing"
+      },
+      "human_outcome": "unresolved",
+      "id": "jp1-train-color-13",
+      "image_sha256": "c74bd93f18985dba3bc6b6f13b1a36e7473cd9c8976ab2c44ca1a4d0759d4d41",
+      "model": "random_matched",
+      "notes": null,
+      "pair_id": "1f2d254730b2320b8a0ecad5",
+      "review_image_id": "H06-B",
+      "seed": 1859309709,
+      "source_case": 50,
+      "source_letter": "C",
+      "visible_text": null
+    },
+    {
+      "assistant": {
+        "color": "yes",
+        "text": "yes",
+        "visibility": "yes"
+      },
+      "assistant_outcome": "confirmed_success",
+      "group": "H06",
+      "human": {
+        "color": "missing",
+        "text": "missing",
+        "visibility": "missing"
+      },
+      "human_outcome": "unresolved",
+      "id": "jp1-train-color-13",
+      "image_sha256": "6cc3dc0117135570226405bfc1185b1ae56d79e18e90ed855a0ec0deadc5e189",
+      "model": "joint128",
+      "notes": null,
+      "pair_id": "1f2d254730b2320b8a0ecad5",
+      "review_image_id": "H06-C",
+      "seed": 1859309709,
+      "source_case": 50,
+      "source_letter": "D",
+      "visible_text": null
+    },
+    {
+      "assistant": {
+        "color": "yes",
+        "text": "yes",
+        "visibility": "yes"
+      },
+      "assistant_outcome": "confirmed_success",
+      "group": "H06",
+      "human": {
+        "color": "missing",
+        "text": "missing",
+        "visibility": "missing"
+      },
+      "human_outcome": "unresolved",
+      "id": "jp1-train-color-13",
+      "image_sha256": "e409dc8b0a18a9b942bf468e29a45d4a263f39c611529ac716a3a967bc931630",
+      "model": "all_teacher",
+      "notes": null,
+      "pair_id": "1f2d254730b2320b8a0ecad5",
+      "review_image_id": "H06-D",
+      "seed": 1859309709,
+      "source_case": 50,
+      "source_letter": "B",
+      "visible_text": null
+    },
+    {
+      "assistant": {
+        "count": "yes",
+        "text": "yes",
+        "visibility": "yes"
+      },
+      "assistant_outcome": "confirmed_success",
+      "group": "H07",
+      "human": {
+        "count": "yes",
+        "text": "yes",
+        "visibility": "yes"
+      },
+      "human_outcome": "confirmed_success",
+      "id": "jp1-train-count-12",
+      "image_sha256": "438b92bbd98c716a40195f143db485e1d18636b556f722a526331e0bb7e54dbf",
+      "model": "certified",
+      "notes": null,
+      "pair_id": "d864c089d322a670717b84ce",
+      "review_image_id": "H07-A",
+      "seed": 1376736126,
+      "source_case": 24,
+      "source_letter": "A",
+      "visible_text": null
+    },
+    {
+      "assistant": {
+        "count": "yes",
+        "text": "yes",
+        "visibility": "yes"
+      },
+      "assistant_outcome": "confirmed_success",
+      "group": "H07",
+      "human": {
+        "count": "yes",
+        "text": "yes",
+        "visibility": "yes"
+      },
+      "human_outcome": "confirmed_success",
+      "id": "jp1-train-count-12",
+      "image_sha256": "316cc4de7ea5ded6e1fa458e9b752688cec3551110345fe8967ab9d88fbb6fcc",
+      "model": "all_teacher",
+      "notes": null,
+      "pair_id": "d864c089d322a670717b84ce",
+      "review_image_id": "H07-B",
+      "seed": 1376736126,
+      "source_case": 24,
+      "source_letter": "B",
+      "visible_text": null
+    },
+    {
+      "assistant": {
+        "count": "yes",
+        "text": "yes",
+        "visibility": "yes"
+      },
+      "assistant_outcome": "confirmed_success",
+      "group": "H07",
+      "human": {
+        "count": "yes",
+        "text": "yes",
+        "visibility": "yes"
+      },
+      "human_outcome": "confirmed_success",
+      "id": "jp1-train-count-12",
+      "image_sha256": "3a1228f76491647ff0c63962e8216c44cb25462357a01312368126826fef4360",
+      "model": "random_matched",
+      "notes": null,
+      "pair_id": "d864c089d322a670717b84ce",
+      "review_image_id": "H07-C",
+      "seed": 1376736126,
+      "source_case": 24,
+      "source_letter": "C",
+      "visible_text": null
+    },
+    {
+      "assistant": {
+        "count": "yes",
+        "text": "yes",
+        "visibility": "yes"
+      },
+      "assistant_outcome": "confirmed_success",
+      "group": "H07",
+      "human": {
+        "count": "yes",
+        "text": "yes",
+        "visibility": "yes"
+      },
+      "human_outcome": "confirmed_success",
+      "id": "jp1-train-count-12",
+      "image_sha256": "c49a66209cd0a5906c80af7a064a08e4c89c24c4aa384dd8e5bc47f583c01e8a",
+      "model": "joint128",
+      "notes": null,
+      "pair_id": "d864c089d322a670717b84ce",
+      "review_image_id": "H07-D",
+      "seed": 1376736126,
+      "source_case": 24,
+      "source_letter": "D",
+      "visible_text": null
+    },
+    {
+      "assistant": {
+        "relation": "yes",
+        "text": "yes",
+        "visibility": "yes"
+      },
+      "assistant_outcome": "confirmed_success",
+      "group": "H08",
+      "human": {
+        "relation": "yes",
+        "text": "yes",
+        "visibility": "yes"
+      },
+      "human_outcome": "confirmed_success",
+      "id": "jp1-train-relation-01",
+      "image_sha256": "6c91b7c8b3f29eea6b9f7763178d0384d4bce9815cd2c111f0c0a86703d1b665",
+      "model": "joint128",
+      "notes": "\u82f9\u679c\u6709\u70b9\u95ee\u9898",
+      "pair_id": "999d8983ca203a00f3d12c17",
+      "review_image_id": "H08-A",
+      "seed": 415514706,
+      "source_case": 5,
+      "source_letter": "C",
+      "visible_text": null
+    },
+    {
+      "assistant": {
+        "relation": "yes",
+        "text": "yes",
+        "visibility": "yes"
+      },
+      "assistant_outcome": "confirmed_success",
+      "group": "H08",
+      "human": {
+        "relation": "yes",
+        "text": "yes",
+        "visibility": "yes"
+      },
+      "human_outcome": "confirmed_success",
+      "id": "jp1-train-relation-01",
+      "image_sha256": "fd114e7cadbda13d2df51047c25a9494c5a618fdc760fc371f7c303ae102da97",
+      "model": "certified",
+      "notes": null,
+      "pair_id": "999d8983ca203a00f3d12c17",
+      "review_image_id": "H08-B",
+      "seed": 415514706,
+      "source_case": 5,
+      "source_letter": "D",
+      "visible_text": null
+    },
+    {
+      "assistant": {
+        "relation": "yes",
+        "text": "yes",
+        "visibility": "yes"
+      },
+      "assistant_outcome": "confirmed_success",
+      "group": "H08",
+      "human": {
+        "relation": "yes",
+        "text": "yes",
+        "visibility": "yes"
+      },
+      "human_outcome": "confirmed_success",
+      "id": "jp1-train-relation-01",
+      "image_sha256": "32f862a5acef7a17ab34e9f995186c29d4e14465d3dde54cc00db52ccc3c940c",
+      "model": "random_matched",
+      "notes": null,
+      "pair_id": "999d8983ca203a00f3d12c17",
+      "review_image_id": "H08-C",
+      "seed": 415514706,
+      "source_case": 5,
+      "source_letter": "A",
+      "visible_text": null
+    },
+    {
+      "assistant": {
+        "relation": "yes",
+        "text": "yes",
+        "visibility": "yes"
+      },
+      "assistant_outcome": "confirmed_success",
+      "group": "H08",
+      "human": {
+        "relation": "yes",
+        "text": "yes",
+        "visibility": "yes"
+      },
+      "human_outcome": "confirmed_success",
+      "id": "jp1-train-relation-01",
+      "image_sha256": "d40c6367a61d91fc533e369bf60e800ceab358c7975150139d450dc6cb0f2866",
+      "model": "all_teacher",
+      "notes": null,
+      "pair_id": "999d8983ca203a00f3d12c17",
+      "review_image_id": "H08-D",
+      "seed": 415514706,
+      "source_case": 5,
+      "source_letter": "B",
+      "visible_text": null
+    },
+    {
+      "assistant": {
+        "count": "yes",
+        "text": "yes",
+        "visibility": "yes"
+      },
+      "assistant_outcome": "confirmed_success",
+      "group": "H09",
+      "human": {
+        "count": "yes",
+        "text": "unclear",
+        "visibility": "yes"
+      },
+      "human_outcome": "unresolved",
+      "id": "jp1-train-count-08",
+      "image_sha256": "080a66c880c038bba9b73c38fa98a3b87e1d5430e5382f0192a7a3e89bf9e07a",
+      "model": "all_teacher",
+      "notes": null,
+      "pair_id": "06c6f27dbbcc23d7faeef18e",
+      "review_image_id": "H09-A",
+      "seed": 1231469161,
+      "source_case": 37,
+      "source_letter": "D",
+      "visible_text": null
+    },
+    {
+      "assistant": {
+        "count": "unclear",
+        "text": "no",
+        "visibility": "no"
+      },
+      "assistant_outcome": "known_failure",
+      "group": "H09",
+      "human": {
+        "count": "no",
+        "text": "no",
+        "visibility": "no"
+      },
+      "human_outcome": "known_failure",
+      "id": "jp1-train-count-08",
+      "image_sha256": "d6b5de0f08f90f4376ab5c33e545cec510f3287388f0cd58b2aac9c1be93ca5a",
+      "model": "joint128",
+      "notes": null,
+      "pair_id": "06c6f27dbbcc23d7faeef18e",
+      "review_image_id": "H09-B",
+      "seed": 1231469161,
+      "source_case": 37,
+      "source_letter": "A",
+      "visible_text": null
+    },
+    {
+      "assistant": {
+        "count": "yes",
+        "text": "no",
+        "visibility": "no"
+      },
+      "assistant_outcome": "known_failure",
+      "group": "H09",
+      "human": {
+        "count": "yes",
+        "text": "no",
+        "visibility": "no"
+      },
+      "human_outcome": "known_failure",
+      "id": "jp1-train-count-08",
+      "image_sha256": "4c8ef0989eafb4dfd2e8de85da1557fe45acea60bd0c8c26c0f6a2776d8f033e",
+      "model": "random_matched",
+      "notes": null,
+      "pair_id": "06c6f27dbbcc23d7faeef18e",
+      "review_image_id": "H09-C",
+      "seed": 1231469161,
+      "source_case": 37,
+      "source_letter": "C",
+      "visible_text": null
+    },
+    {
+      "assistant": {
+        "count": "yes",
+        "text": "no",
+        "visibility": "no"
+      },
+      "assistant_outcome": "known_failure",
+      "group": "H09",
+      "human": {
+        "count": "yes",
+        "text": "no",
+        "visibility": "no"
+      },
+      "human_outcome": "known_failure",
+      "id": "jp1-train-count-08",
+      "image_sha256": "53de063ece6158ef626bf8d2dad3a9169ad563959a89533d904c16a8e62b0485",
+      "model": "certified",
+      "notes": null,
+      "pair_id": "06c6f27dbbcc23d7faeef18e",
+      "review_image_id": "H09-D",
+      "seed": 1231469161,
+      "source_case": 37,
+      "source_letter": "B",
+      "visible_text": null
+    },
+    {
+      "assistant": {
+        "relation": "no",
+        "text": "unclear",
+        "visibility": "yes"
+      },
+      "assistant_outcome": "known_failure",
+      "group": "H10",
+      "human": {
+        "relation": "missing",
+        "text": "missing",
+        "visibility": "missing"
+      },
+      "human_outcome": "unresolved",
+      "id": "jp1-train-relation-12",
+      "image_sha256": "f33497eb61d4a6429753c1d390a9e238d66183da77baccc5fe55e0f212992731",
+      "model": "joint128",
+      "notes": null,
+      "pair_id": "876b750173f1a53a620e5b73",
+      "review_image_id": "H10-A",
+      "seed": 1392373052,
+      "source_case": 21,
+      "source_letter": "C",
+      "visible_text": null
+    },
+    {
+      "assistant": {
+        "relation": "no",
+        "text": "unclear",
+        "visibility": "unclear"
+      },
+      "assistant_outcome": "known_failure",
+      "group": "H10",
+      "human": {
+        "relation": "missing",
+        "text": "missing",
+        "visibility": "missing"
+      },
+      "human_outcome": "unresolved",
+      "id": "jp1-train-relation-12",
+      "image_sha256": "f9ef00a737ab077725453bf2ce62ddc090e7e6c6801b47bd59df5a00664bf7b8",
+      "model": "all_teacher",
+      "notes": null,
+      "pair_id": "876b750173f1a53a620e5b73",
+      "review_image_id": "H10-B",
+      "seed": 1392373052,
+      "source_case": 21,
+      "source_letter": "B",
+      "visible_text": null
+    },
+    {
+      "assistant": {
+        "relation": "no",
+        "text": "unclear",
+        "visibility": "yes"
+      },
+      "assistant_outcome": "known_failure",
+      "group": "H10",
+      "human": {
+        "relation": "missing",
+        "text": "missing",
+        "visibility": "missing"
+      },
+      "human_outcome": "unresolved",
+      "id": "jp1-train-relation-12",
+      "image_sha256": "b9fdde3a7b032729bd1fdeea6e70f0aea13292559b759551a9400d586ed4c2d4",
+      "model": "random_matched",
+      "notes": null,
+      "pair_id": "876b750173f1a53a620e5b73",
+      "review_image_id": "H10-C",
+      "seed": 1392373052,
+      "source_case": 21,
+      "source_letter": "A",
+      "visible_text": null
+    },
+    {
+      "assistant": {
+        "relation": "no",
+        "text": "unclear",
+        "visibility": "no"
+      },
+      "assistant_outcome": "known_failure",
+      "group": "H10",
+      "human": {
+        "relation": "missing",
+        "text": "missing",
+        "visibility": "missing"
+      },
+      "human_outcome": "unresolved",
+      "id": "jp1-train-relation-12",
+      "image_sha256": "21ca721a91bb4f046443222501131053b0ac8717cdc1624f13ed067d801c8c2c",
+      "model": "certified",
+      "notes": null,
+      "pair_id": "876b750173f1a53a620e5b73",
+      "review_image_id": "H10-D",
+      "seed": 1392373052,
+      "source_case": 21,
+      "source_letter": "D",
+      "visible_text": null
+    },
+    {
+      "assistant": {
+        "relation": "yes",
+        "text": "yes",
+        "visibility": "yes"
+      },
+      "assistant_outcome": "confirmed_success",
+      "group": "H11",
+      "human": {
+        "relation": "missing",
+        "text": "missing",
+        "visibility": "missing"
+      },
+      "human_outcome": "unresolved",
+      "id": "jp1-train-relation-01",
+      "image_sha256": "4e18e89e65f75a85de421e405dd6b12535d49e5aff1da2cbf89d3444b7fb5c4a",
+      "model": "all_teacher",
+      "notes": null,
+      "pair_id": "8449bcf9c924709ed9cabb8e",
+      "review_image_id": "H11-A",
+      "seed": 2040178402,
+      "source_case": 39,
+      "source_letter": "C",
+      "visible_text": null
+    },
+    {
+      "assistant": {
+        "relation": "yes",
+        "text": "yes",
+        "visibility": "yes"
+      },
+      "assistant_outcome": "confirmed_success",
+      "group": "H11",
+      "human": {
+        "relation": "missing",
+        "text": "missing",
+        "visibility": "missing"
+      },
+      "human_outcome": "unresolved",
+      "id": "jp1-train-relation-01",
+      "image_sha256": "6fd1c9f5d280d678322dc14f8ff006d411d61a280318039536cda44cc3fd875d",
+      "model": "random_matched",
+      "notes": null,
+      "pair_id": "8449bcf9c924709ed9cabb8e",
+      "review_image_id": "H11-B",
+      "seed": 2040178402,
+      "source_case": 39,
+      "source_letter": "D",
+      "visible_text": null
+    },
+    {
+      "assistant": {
+        "relation": "yes",
+        "text": "yes",
+        "visibility": "yes"
+      },
+      "assistant_outcome": "confirmed_success",
+      "group": "H11",
+      "human": {
+        "relation": "missing",
+        "text": "missing",
+        "visibility": "missing"
+      },
+      "human_outcome": "unresolved",
+      "id": "jp1-train-relation-01",
+      "image_sha256": "27f0c6788154d98aa128b0a9cbe5f97349ee9d07dbe2eb56a1e187a79d72b604",
+      "model": "certified",
+      "notes": null,
+      "pair_id": "8449bcf9c924709ed9cabb8e",
+      "review_image_id": "H11-C",
+      "seed": 2040178402,
+      "source_case": 39,
+      "source_letter": "B",
+      "visible_text": null
+    },
+    {
+      "assistant": {
+        "relation": "yes",
+        "text": "yes",
+        "visibility": "yes"
+      },
+      "assistant_outcome": "confirmed_success",
+      "group": "H11",
+      "human": {
+        "relation": "missing",
+        "text": "missing",
+        "visibility": "missing"
+      },
+      "human_outcome": "unresolved",
+      "id": "jp1-train-relation-01",
+      "image_sha256": "d207b54ea73a7fb95a95a51b93a25165e626ec1091f1f5b337d1e70e7642c42b",
+      "model": "joint128",
+      "notes": null,
+      "pair_id": "8449bcf9c924709ed9cabb8e",
+      "review_image_id": "H11-D",
+      "seed": 2040178402,
+      "source_case": 39,
+      "source_letter": "A",
+      "visible_text": null
+    },
+    {
+      "assistant": {
+        "color": "yes",
+        "text": "unclear",
+        "visibility": "yes"
+      },
+      "assistant_outcome": "unresolved",
+      "group": "H12",
+      "human": {
+        "color": "yes",
+        "text": "yes",
+        "visibility": "yes"
+      },
+      "human_outcome": "confirmed_success",
+      "id": "jp1-train-color-11",
+      "image_sha256": "2dcefaf1ecf4e569e5c9656540e113e45394bce9207d2e5995dcd2416e7bff3d",
+      "model": "random_matched",
+      "notes": null,
+      "pair_id": "fd71fff8c17813ad006b7346",
+      "review_image_id": "H12-A",
+      "seed": 1292334520,
+      "source_case": 26,
+      "source_letter": "B",
+      "visible_text": null
+    },
+    {
+      "assistant": {
+        "color": "yes",
+        "text": "yes",
+        "visibility": "yes"
+      },
+      "assistant_outcome": "confirmed_success",
+      "group": "H12",
+      "human": {
+        "color": "yes",
+        "text": "yes",
+        "visibility": "yes"
+      },
+      "human_outcome": "confirmed_success",
+      "id": "jp1-train-color-11",
+      "image_sha256": "007756ac71914dcabf1c7c686d4ced464d91a34df72afc0e8da69f0381782c1a",
+      "model": "all_teacher",
+      "notes": null,
+      "pair_id": "fd71fff8c17813ad006b7346",
+      "review_image_id": "H12-B",
+      "seed": 1292334520,
+      "source_case": 26,
+      "source_letter": "C",
+      "visible_text": null
+    },
+    {
+      "assistant": {
+        "color": "yes",
+        "text": "no",
+        "visibility": "yes"
+      },
+      "assistant_outcome": "known_failure",
+      "group": "H12",
+      "human": {
+        "color": "yes",
+        "text": "unclear",
+        "visibility": "yes"
+      },
+      "human_outcome": "unresolved",
+      "id": "jp1-train-color-11",
+      "image_sha256": "658e265b812cf7c77e427986f01b1c1a64aac7f9d2d60f7e00cc69c96fc32bb2",
+      "model": "joint128",
+      "notes": null,
+      "pair_id": "fd71fff8c17813ad006b7346",
+      "review_image_id": "H12-C",
+      "seed": 1292334520,
+      "source_case": 26,
+      "source_letter": "D",
+      "visible_text": null
+    },
+    {
+      "assistant": {
+        "color": "yes",
+        "text": "no",
+        "visibility": "yes"
+      },
+      "assistant_outcome": "known_failure",
+      "group": "H12",
+      "human": {
+        "color": "yes",
+        "text": "no",
+        "visibility": "yes"
+      },
+      "human_outcome": "known_failure",
+      "id": "jp1-train-color-11",
+      "image_sha256": "bbf8fec20063663558c36e1c92e11424424cb41276710b9432f30a3aa2651c06",
+      "model": "certified",
+      "notes": null,
+      "pair_id": "fd71fff8c17813ad006b7346",
+      "review_image_id": "H12-D",
+      "seed": 1292334520,
+      "source_case": 26,
+      "source_letter": "A",
+      "visible_text": null
+    }
+  ],
+  "summary": {
+    "common_fully_categorical_groups": [
+      "H01",
+      "H04",
+      "H05",
+      "H07",
+      "H08",
+      "H09",
+      "H12"
+    ],
+    "common_group_scores": {
+      "all_teacher": {
+        "assistant": {
+          "confirmed_success": 6,
+          "known_failure": 1
+        },
+        "human": {
+          "confirmed_success": 5,
+          "known_failure": 1,
+          "unresolved": 1
+        }
+      },
+      "certified": {
+        "assistant": {
+          "confirmed_success": 4,
+          "known_failure": 3
+        },
+        "human": {
+          "confirmed_success": 4,
+          "known_failure": 3
+        }
+      },
+      "joint128": {
+        "assistant": {
+          "confirmed_success": 4,
+          "known_failure": 3
+        },
+        "human": {
+          "confirmed_success": 4,
+          "known_failure": 2,
+          "unresolved": 1
+        }
+      },
+      "random_matched": {
+        "assistant": {
+          "confirmed_success": 4,
+          "known_failure": 2,
+          "unresolved": 1
+        },
+        "human": {
+          "confirmed_success": 5,
+          "known_failure": 2
+        }
+      }
+    },
+    "explicit_preference_groups": 8,
+    "exported_complete_groups": 1,
+    "field_counts": {
+      "missing": 50,
+      "no": 21,
+      "unclear": 5,
+      "yes": 68
+    },
+    "field_disagreements": 11,
+    "groups": 12,
+    "groups_with_categorical_answers": 8,
+    "groups_with_overall_feedback": 12,
+    "images": 48,
+    "images_with_all_categorical_answers": 30,
+    "opposite_definite_disagreements": 4
+  }
+}

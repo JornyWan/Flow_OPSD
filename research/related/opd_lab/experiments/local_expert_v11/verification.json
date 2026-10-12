@@ -1,0 +1,43 @@
+{
+  "aggregate_counts_valid": true,
+  "allocated_gpu_hours": 0.09444444444444444,
+  "asset_audit": [],
+  "exact_anchor_checks": 4,
+  "frozen_review_views": 168,
+  "historical_artifacts": {
+    "10": {
+      "README_historical_revision": "9dcc18b",
+      "all_recorded_artifacts_unchanged": true,
+      "artifact_count": 154
+    },
+    "6": {
+      "README_historical_revision": "e384a09",
+      "all_recorded_artifacts_unchanged": true,
+      "artifact_count": 153
+    },
+    "7": {
+      "README_historical_revision": "8c1e160",
+      "all_recorded_artifacts_unchanged": true,
+      "artifact_count": 716
+    },
+    "8": {
+      "README_historical_revision": "d9c392c",
+      "all_recorded_artifacts_unchanged": true,
+      "artifact_count": 99
+    },
+    "9": {
+      "README_historical_revision": "d9c392c",
+      "all_recorded_artifacts_unchanged": true,
+      "artifact_count": 97
+    }
+  },
+  "limits": "Shared large assets checked by recorded inventories, not new full content hashes; no second GPU replay",
+  "matched_noise_pairs": 42,
+  "transfer_image_hashes": 168,
+  "unchanged_model_states": 4,
+  "unique_transfer_images": 168,
+  "upstream": {
+    "diffusionopd": "0c85bf0193a6da24bb1f72152b612d353a154999",
+    "diffusionopsd": "9c4c48cdfe5c3fa712d32957345d75fae9295696"
+  }
+}

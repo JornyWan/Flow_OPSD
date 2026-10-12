@@ -1,0 +1,2721 @@
+{
+  "all_fresh_label_harms": [
+    {
+      "case": 8,
+      "cohort": "preservation_fresh_seed",
+      "comparison": {
+        "harmed_clauses": [
+          "text"
+        ],
+        "has_unknown": false,
+        "known_harm": true,
+        "repaired_clauses": [],
+        "safe_repair": false,
+        "safe_visibility_gain": false,
+        "status": "unsafe",
+        "visibility_harm": false
+      },
+      "complete_scene_delta": 0,
+      "fitted": {
+        "case": 8,
+        "observation": {
+          "clauses": {
+            "relation": false,
+            "text": false
+          },
+          "full_visibility": false,
+          "notes": "Wrong letters. Cup absent; bottle body clipped by bottom frame.",
+          "visible_text": "MIIN"
+        },
+        "row": {
+          "cohort": "preservation_fresh_seed",
+          "constraint_ids": [
+            "text",
+            "relation"
+          ],
+          "details": {
+            "clauses": [
+              {
+                "exact": false,
+                "expected_text": "MINT",
+                "id": "text",
+                "normalized_recognized": "miin",
+                "progress": 0.5
+              },
+              {
+                "id": "relation",
+                "metadata": {
+                  "include": [
+                    {
+                      "class": "bottle",
+                      "count": 1
+                    },
+                    {
+                      "class": "cup",
+                      "count": 1,
+                      "position": [
+                        "left of",
+                        0
+                      ]
+                    }
+                  ],
+                  "prompt": "A sharp, realistic studio photograph of exactly one cup clearly to the left of exactly one bottle, both fully visible. Above the objects, a large white sign displays only the word \"MINT\" in bold black letters. No other letters or words are visible.",
+                  "tag": "position"
+                },
+                "strict": false,
+                "upstream_progress": 0.3333333333333333
+              }
+            ],
+            "ocr": {
+              "lines": [
+                {
+                  "box": [
+                    [
+                      162.0,
+                      203.0
+                    ],
+                    [
+                      326.0,
+                      203.0
+                    ],
+                    [
+                      326.0,
+                      245.0
+                    ],
+                    [
+                      162.0,
+                      245.0
+                    ]
+                  ],
+                  "confidence": 0.9896150827407837,
+                  "text": "MIIN"
+                }
+              ],
+              "recognized_text": "MIIN"
+            }
+          },
+          "error": null,
+          "id": "jp1-train-relation-00",
+          "image": "query_results/6311250bb1da8c70da800bc9/0d1ddc3ae2fe86f14c7f.png",
+          "image_sha256": "fe7fdbf4c64a0d7d4900496b294429c7143efb9d0fbf2fb3c2567ef266fca658",
+          "joint_success": false,
+          "model": "label_selected",
+          "noise_sha256": "f16c5510f04cc80553dfd06fa7243192625a81e329985b87e6be28b8208b5db7",
+          "pair_id": "07c8bd69982f57aa34410207",
+          "progress": [
+            0.5,
+            0.3333333333333333
+          ],
+          "quality": null,
+          "replicate": 1,
+          "satisfied": [
+            false,
+            false
+          ],
+          "seed": 877105809,
+          "student_sha256": "972a31f7d075c66b03df6cb80b5e731ebc661b9bc1d404023979ec5dabad81e1",
+          "utility": 0.20833333333333331,
+          "valid": true
+        }
+      },
+      "id": "jp1-train-relation-00",
+      "initial": {
+        "case": 8,
+        "observation": {
+          "clauses": {
+            "relation": false,
+            "text": true
+          },
+          "full_visibility": false,
+          "notes": "Cup absent and bottle cropped.",
+          "visible_text": "MINT"
+        },
+        "row": {
+          "cohort": "preservation_fresh_seed",
+          "constraint_ids": [
+            "text",
+            "relation"
+          ],
+          "details": {
+            "clauses": [
+              {
+                "exact": true,
+                "expected_text": "MINT",
+                "id": "text",
+                "normalized_recognized": "mint",
+                "progress": 1.0
+              },
+              {
+                "id": "relation",
+                "metadata": {
+                  "include": [
+                    {
+                      "class": "bottle",
+                      "count": 1
+                    },
+                    {
+                      "class": "cup",
+                      "count": 1,
+                      "position": [
+                        "left of",
+                        0
+                      ]
+                    }
+                  ],
+                  "prompt": "A sharp, realistic studio photograph of exactly one cup clearly to the left of exactly one bottle, both fully visible. Above the objects, a large white sign displays only the word \"MINT\" in bold black letters. No other letters or words are visible.",
+                  "tag": "position"
+                },
+                "strict": false,
+                "upstream_progress": 0.3333333333333333
+              }
+            ],
+            "ocr": {
+              "lines": [
+                {
+                  "box": [
+                    [
+                      162.0,
+                      204.0
+                    ],
+                    [
+                      372.0,
+                      202.0
+                    ],
+                    [
+                      372.0,
+                      244.0
+                    ],
+                    [
+                      162.0,
+                      246.0
+                    ]
+                  ],
+                  "confidence": 0.9883278012275696,
+                  "text": "MINT"
+                }
+              ],
+              "recognized_text": "MINT"
+            }
+          },
+          "error": null,
+          "id": "jp1-train-relation-00",
+          "image": "query_results/8973f3b95ae4ca321292cdaa/4a99b9b9f67aa1fc868a.png",
+          "image_sha256": "fc01004b94d18fe184976bb036ea0a6b9721e28644c59c025355b54afb05f244",
+          "joint_success": false,
+          "model": "joint128",
+          "noise_sha256": "f16c5510f04cc80553dfd06fa7243192625a81e329985b87e6be28b8208b5db7",
+          "pair_id": "07c8bd69982f57aa34410207",
+          "progress": [
+            1.0,
+            0.3333333333333333
+          ],
+          "quality": null,
+          "replicate": 1,
+          "satisfied": [
+            true,
+            false
+          ],
+          "seed": 877105809,
+          "student_sha256": "f9c5ad99773510c64e08f9656234d248431f8a7ed86d6ce6a0b011a711f244e2",
+          "utility": 0.3333333333333333,
+          "valid": true
+        }
+      },
+      "model": "label_selected",
+      "seed": 877105809
+    },
+    {
+      "case": 9,
+      "cohort": "unfitted_prompt_fresh_seed",
+      "comparison": {
+        "harmed_clauses": [],
+        "has_unknown": false,
+        "known_harm": true,
+        "repaired_clauses": [],
+        "safe_repair": false,
+        "safe_visibility_gain": false,
+        "status": "unsafe",
+        "visibility_harm": true
+      },
+      "complete_scene_delta": -1,
+      "fitted": {
+        "case": 9,
+        "observation": {
+          "clauses": {
+            "color": true,
+            "count": true,
+            "text": true
+          },
+          "full_visibility": false,
+          "notes": "Three yellow vases with bottoms clipped.",
+          "visible_text": "SODA"
+        },
+        "row": {
+          "cohort": "unfitted_prompt_fresh_seed",
+          "constraint_ids": [
+            "text",
+            "count",
+            "color"
+          ],
+          "details": {
+            "clauses": [
+              {
+                "exact": true,
+                "expected_text": "SODA",
+                "id": "text",
+                "normalized_recognized": "soda",
+                "progress": 1.0
+              },
+              {
+                "id": "count",
+                "metadata": {
+                  "include": [
+                    {
+                      "class": "vase",
+                      "count": 3
+                    }
+                  ],
+                  "prompt": "A sharp, realistic studio photograph of exactly three yellow vases, all fully visible and separated. Above the objects, a large white sign displays only the word \"SODA\" in bold black letters. No other letters or words are visible.",
+                  "tag": "counting"
+                },
+                "strict": true,
+                "upstream_progress": 1.0
+              },
+              {
+                "id": "color",
+                "metadata": {
+                  "include": [
+                    {
+                      "class": "vase",
+                      "color": "yellow",
+                      "count": 3
+                    }
+                  ],
+                  "prompt": "A sharp, realistic studio photograph of exactly three yellow vases, all fully visible and separated. Above the objects, a large white sign displays only the word \"SODA\" in bold black letters. No other letters or words are visible.",
+                  "tag": "colors"
+                },
+                "strict": true,
+                "upstream_progress": 1.0
+              }
+            ],
+            "ocr": {
+              "lines": [
+                {
+                  "box": [
+                    [
+                      133.0,
+                      115.0
+                    ],
+                    [
+                      361.0,
+                      113.0
+                    ],
+                    [
+                      362.0,
+                      212.0
+                    ],
+                    [
+                      134.0,
+                      214.0
+                    ]
+                  ],
+                  "confidence": 0.9983752965927124,
+                  "text": "SODA"
+                }
+              ],
+              "recognized_text": "SODA"
+            }
+          },
+          "error": null,
+          "id": "jp1-train-count_color-05",
+          "image": "query_results/10629d17ade5b1a270534792/6245e4f8380349e6a24a.png",
+          "image_sha256": "f1755d9962c93530e69d95d299d679b74a8046ceceaedc2489181a062bb0ef9c",
+          "joint_success": true,
+          "model": "label_selected",
+          "noise_sha256": "59a51f34d8fa7d45d9710383475345c5a5f52dadd3caa0e563c1aca3cd7cfae6",
+          "pair_id": "9b26e44d98aaa44108f6a384",
+          "progress": [
+            1.0,
+            1.0,
+            1.0
+          ],
+          "quality": null,
+          "replicate": 0,
+          "satisfied": [
+            true,
+            true,
+            true
+          ],
+          "seed": 342924247,
+          "student_sha256": "972a31f7d075c66b03df6cb80b5e731ebc661b9bc1d404023979ec5dabad81e1",
+          "utility": 1.0,
+          "valid": true
+        }
+      },
+      "id": "jp1-train-count_color-05",
+      "initial": {
+        "case": 9,
+        "observation": {
+          "clauses": {
+            "color": true,
+            "count": true,
+            "text": true
+          },
+          "full_visibility": true,
+          "notes": "Three complete separate yellow vases.",
+          "visible_text": "SODA"
+        },
+        "row": {
+          "cohort": "unfitted_prompt_fresh_seed",
+          "constraint_ids": [
+            "text",
+            "count",
+            "color"
+          ],
+          "details": {
+            "clauses": [
+              {
+                "exact": true,
+                "expected_text": "SODA",
+                "id": "text",
+                "normalized_recognized": "soda",
+                "progress": 1.0
+              },
+              {
+                "id": "count",
+                "metadata": {
+                  "include": [
+                    {
+                      "class": "vase",
+                      "count": 3
+                    }
+                  ],
+                  "prompt": "A sharp, realistic studio photograph of exactly three yellow vases, all fully visible and separated. Above the objects, a large white sign displays only the word \"SODA\" in bold black letters. No other letters or words are visible.",
+                  "tag": "counting"
+                },
+                "strict": true,
+                "upstream_progress": 1.0
+              },
+              {
+                "id": "color",
+                "metadata": {
+                  "include": [
+                    {
+                      "class": "vase",
+                      "color": "yellow",
+                      "count": 3
+                    }
+                  ],
+                  "prompt": "A sharp, realistic studio photograph of exactly three yellow vases, all fully visible and separated. Above the objects, a large white sign displays only the word \"SODA\" in bold black letters. No other letters or words are visible.",
+                  "tag": "colors"
+                },
+                "strict": true,
+                "upstream_progress": 1.0
+              }
+            ],
+            "ocr": {
+              "lines": [
+                {
+                  "box": [
+                    [
+                      123.0,
+                      118.0
+                    ],
+                    [
+                      405.0,
+                      112.0
+                    ],
+                    [
+                      407.0,
+                      207.0
+                    ],
+                    [
+                      125.0,
+                      213.0
+                    ]
+                  ],
+                  "confidence": 0.9923319220542908,
+                  "text": "SODA"
+                }
+              ],
+              "recognized_text": "SODA"
+            }
+          },
+          "error": null,
+          "id": "jp1-train-count_color-05",
+          "image": "query_results/14e94d34b64e56add3da1407/159cb1aef3cbfe91dfd6.png",
+          "image_sha256": "eed9bf4f26d9419b489176fd2f71e430b7e765fb47ccf2453d0edfc5274057dd",
+          "joint_success": true,
+          "model": "joint128",
+          "noise_sha256": "59a51f34d8fa7d45d9710383475345c5a5f52dadd3caa0e563c1aca3cd7cfae6",
+          "pair_id": "9b26e44d98aaa44108f6a384",
+          "progress": [
+            1.0,
+            1.0,
+            1.0
+          ],
+          "quality": null,
+          "replicate": 0,
+          "satisfied": [
+            true,
+            true,
+            true
+          ],
+          "seed": 342924247,
+          "student_sha256": "f9c5ad99773510c64e08f9656234d248431f8a7ed86d6ce6a0b011a711f244e2",
+          "utility": 1.0,
+          "valid": true
+        }
+      },
+      "model": "label_selected",
+      "seed": 342924247
+    },
+    {
+      "case": 16,
+      "cohort": "positive_fresh_seed",
+      "comparison": {
+        "harmed_clauses": [
+          "text"
+        ],
+        "has_unknown": false,
+        "known_harm": true,
+        "repaired_clauses": [],
+        "safe_repair": false,
+        "safe_visibility_gain": false,
+        "status": "unsafe",
+        "visibility_harm": false
+      },
+      "complete_scene_delta": -1,
+      "fitted": {
+        "case": 16,
+        "observation": {
+          "clauses": {
+            "count": true,
+            "text": false
+          },
+          "full_visibility": true,
+          "notes": "One outlined O, not two distinct letters. One complete bowl.",
+          "visible_text": "BLOM"
+        },
+        "row": {
+          "cohort": "positive_fresh_seed",
+          "constraint_ids": [
+            "text",
+            "count"
+          ],
+          "details": {
+            "clauses": [
+              {
+                "exact": false,
+                "expected_text": "BLOOM",
+                "id": "text",
+                "normalized_recognized": "blom",
+                "progress": 0.8
+              },
+              {
+                "id": "count",
+                "metadata": {
+                  "include": [
+                    {
+                      "class": "bowl",
+                      "count": 1
+                    }
+                  ],
+                  "prompt": "A sharp, realistic studio photograph of exactly one bowl, all fully visible and separated. Above the objects, a large white sign displays only the word \"BLOOM\" in bold black letters. No other letters or words are visible.",
+                  "tag": "counting"
+                },
+                "strict": true,
+                "upstream_progress": 1.0
+              }
+            ],
+            "ocr": {
+              "lines": [
+                {
+                  "box": [
+                    [
+                      204.0,
+                      154.0
+                    ],
+                    [
+                      303.0,
+                      154.0
+                    ],
+                    [
+                      303.0,
+                      191.0
+                    ],
+                    [
+                      204.0,
+                      191.0
+                    ]
+                  ],
+                  "confidence": 0.9900038242340088,
+                  "text": "BLOM"
+                }
+              ],
+              "recognized_text": "BLOM"
+            }
+          },
+          "error": null,
+          "id": "jp1-train-count-12",
+          "image": "query_results/3ef87edd9459622c3c20bbc3/3ff37ba1413f992c1203.png",
+          "image_sha256": "847c5bc7db5ce0f08a7d0f0f306d538088bc5a9abec84c00f3847992bd2fc237",
+          "joint_success": false,
+          "model": "label_selected",
+          "noise_sha256": "caf34af41553041834cf2521a21f31dc4f9794e1d3332159d0e4ab4724a10e08",
+          "pair_id": "2c3772d18956bec8c7e7b0cd",
+          "progress": [
+            0.8,
+            1.0
+          ],
+          "quality": null,
+          "replicate": 1,
+          "satisfied": [
+            false,
+            true
+          ],
+          "seed": 1083637527,
+          "student_sha256": "972a31f7d075c66b03df6cb80b5e731ebc661b9bc1d404023979ec5dabad81e1",
+          "utility": 0.45,
+          "valid": true
+        }
+      },
+      "id": "jp1-train-count-12",
+      "initial": {
+        "case": 16,
+        "observation": {
+          "clauses": {
+            "count": true,
+            "text": true
+          },
+          "full_visibility": true,
+          "notes": "Two small adjoining O letters; one complete bowl.",
+          "visible_text": "BLooM"
+        },
+        "row": {
+          "cohort": "positive_fresh_seed",
+          "constraint_ids": [
+            "text",
+            "count"
+          ],
+          "details": {
+            "clauses": [
+              {
+                "exact": true,
+                "expected_text": "BLOOM",
+                "id": "text",
+                "normalized_recognized": "bloom",
+                "progress": 1.0
+              },
+              {
+                "id": "count",
+                "metadata": {
+                  "include": [
+                    {
+                      "class": "bowl",
+                      "count": 1
+                    }
+                  ],
+                  "prompt": "A sharp, realistic studio photograph of exactly one bowl, all fully visible and separated. Above the objects, a large white sign displays only the word \"BLOOM\" in bold black letters. No other letters or words are visible.",
+                  "tag": "counting"
+                },
+                "strict": true,
+                "upstream_progress": 1.0
+              }
+            ],
+            "ocr": {
+              "lines": [
+                {
+                  "box": [
+                    [
+                      217.0,
+                      164.0
+                    ],
+                    [
+                      298.0,
+                      164.0
+                    ],
+                    [
+                      298.0,
+                      189.0
+                    ],
+                    [
+                      217.0,
+                      189.0
+                    ]
+                  ],
+                  "confidence": 0.961100697517395,
+                  "text": "BLOOM"
+                }
+              ],
+              "recognized_text": "BLOOM"
+            }
+          },
+          "error": null,
+          "id": "jp1-train-count-12",
+          "image": "query_results/9b285427ef5472f830eb1740/231acc94cd487c2a863c.png",
+          "image_sha256": "3d1d2a7a133ec60e3d6511dc912452b8bcde67fbb1fc467081eb6c7db95fc5e3",
+          "joint_success": true,
+          "model": "joint128",
+          "noise_sha256": "caf34af41553041834cf2521a21f31dc4f9794e1d3332159d0e4ab4724a10e08",
+          "pair_id": "2c3772d18956bec8c7e7b0cd",
+          "progress": [
+            1.0,
+            1.0
+          ],
+          "quality": null,
+          "replicate": 1,
+          "satisfied": [
+            true,
+            true
+          ],
+          "seed": 1083637527,
+          "student_sha256": "f9c5ad99773510c64e08f9656234d248431f8a7ed86d6ce6a0b011a711f244e2",
+          "utility": 1.0,
+          "valid": true
+        }
+      },
+      "model": "label_selected",
+      "seed": 1083637527
+    },
+    {
+      "case": 27,
+      "cohort": "positive_fresh_seed",
+      "comparison": {
+        "harmed_clauses": [],
+        "has_unknown": false,
+        "known_harm": true,
+        "repaired_clauses": [],
+        "safe_repair": false,
+        "safe_visibility_gain": false,
+        "status": "unsafe",
+        "visibility_harm": true
+      },
+      "complete_scene_delta": 0,
+      "fitted": {
+        "case": 27,
+        "observation": {
+          "clauses": {
+            "count": false,
+            "text": false
+          },
+          "full_visibility": false,
+          "notes": "Missing R/E; three recognizable cups including large faint rear cup. Bases/rear body obscured by foreground cups and shelf.",
+          "visible_text": "F SH"
+        },
+        "row": {
+          "cohort": "positive_fresh_seed",
+          "constraint_ids": [
+            "text",
+            "count"
+          ],
+          "details": {
+            "clauses": [
+              {
+                "exact": false,
+                "expected_text": "FRESH",
+                "id": "text",
+                "normalized_recognized": "sh",
+                "progress": 0.4
+              },
+              {
+                "id": "count",
+                "metadata": {
+                  "include": [
+                    {
+                      "class": "cup",
+                      "count": 2
+                    }
+                  ],
+                  "prompt": "A sharp, realistic studio photograph of exactly two cups, all fully visible and separated. Above the objects, a large white sign displays only the word \"FRESH\" in bold black letters. No other letters or words are visible.",
+                  "tag": "counting"
+                },
+                "strict": false,
+                "upstream_progress": 0.5
+              }
+            ],
+            "ocr": {
+              "lines": [
+                {
+                  "box": [
+                    [
+                      266.0,
+                      224.0
+                    ],
+                    [
+                      317.0,
+                      220.0
+                    ],
+                    [
+                      320.0,
+                      257.0
+                    ],
+                    [
+                      269.0,
+                      261.0
+                    ]
+                  ],
+                  "confidence": 0.9771205186843872,
+                  "text": "SH"
+                }
+              ],
+              "recognized_text": "SH"
+            }
+          },
+          "error": null,
+          "id": "jp1-train-count-08",
+          "image": "query_results/b3fdf11c254eb0549b1a4b49/9e09bac63b4f6da52c81.png",
+          "image_sha256": "74f0e95e677051b2ea885d14ce7029292be279ff8d171ed3c8bf4f466ce9a6e1",
+          "joint_success": false,
+          "model": "label_selected",
+          "noise_sha256": "d57e62e32a1c03106f291625566b415ae64ba492a2dbd04698edf0d634778ddc",
+          "pair_id": "9e31740475c052e6d35ba1ee",
+          "progress": [
+            0.4,
+            0.5
+          ],
+          "quality": null,
+          "replicate": 1,
+          "satisfied": [
+            false,
+            false
+          ],
+          "seed": 1272885951,
+          "student_sha256": "972a31f7d075c66b03df6cb80b5e731ebc661b9bc1d404023979ec5dabad81e1",
+          "utility": 0.225,
+          "valid": true
+        }
+      },
+      "id": "jp1-train-count-08",
+      "initial": {
+        "case": 27,
+        "observation": {
+          "clauses": {
+            "count": false,
+            "text": false
+          },
+          "full_visibility": true,
+          "notes": "Missing E; four pale cup bodies behind large letters, not two; all within frame.",
+          "visible_text": "FRSH"
+        },
+        "row": {
+          "cohort": "positive_fresh_seed",
+          "constraint_ids": [
+            "text",
+            "count"
+          ],
+          "details": {
+            "clauses": [
+              {
+                "exact": false,
+                "expected_text": "FRESH",
+                "id": "text",
+                "normalized_recognized": "frsh",
+                "progress": 0.8
+              },
+              {
+                "id": "count",
+                "metadata": {
+                  "include": [
+                    {
+                      "class": "cup",
+                      "count": 2
+                    }
+                  ],
+                  "prompt": "A sharp, realistic studio photograph of exactly two cups, all fully visible and separated. Above the objects, a large white sign displays only the word \"FRESH\" in bold black letters. No other letters or words are visible.",
+                  "tag": "counting"
+                },
+                "strict": false,
+                "upstream_progress": 0.0
+              }
+            ],
+            "ocr": {
+              "lines": [
+                {
+                  "box": [
+                    [
+                      86.0,
+                      198.0
+                    ],
+                    [
+                      420.0,
+                      201.0
+                    ],
+                    [
+                      419.0,
+                      288.0
+                    ],
+                    [
+                      85.0,
+                      285.0
+                    ]
+                  ],
+                  "confidence": 0.9912038445472717,
+                  "text": "FRSH"
+                }
+              ],
+              "recognized_text": "FRSH"
+            }
+          },
+          "error": null,
+          "id": "jp1-train-count-08",
+          "image": "query_results/b8c907877ae017a8836bc4d5/057693156e3bcfbe30cd.png",
+          "image_sha256": "17fdd846c05b7118f0a76ed2a200420023917c25da875df2e0f7277adc324d86",
+          "joint_success": false,
+          "model": "joint128",
+          "noise_sha256": "d57e62e32a1c03106f291625566b415ae64ba492a2dbd04698edf0d634778ddc",
+          "pair_id": "9e31740475c052e6d35ba1ee",
+          "progress": [
+            0.8,
+            0.0
+          ],
+          "quality": null,
+          "replicate": 1,
+          "satisfied": [
+            false,
+            false
+          ],
+          "seed": 1272885951,
+          "student_sha256": "f9c5ad99773510c64e08f9656234d248431f8a7ed86d6ce6a0b011a711f244e2",
+          "utility": 0.2,
+          "valid": true
+        }
+      },
+      "model": "label_selected",
+      "seed": 1272885951
+    },
+    {
+      "case": 35,
+      "cohort": "unfitted_prompt_fresh_seed",
+      "comparison": {
+        "harmed_clauses": [
+          "text"
+        ],
+        "has_unknown": false,
+        "known_harm": true,
+        "repaired_clauses": [],
+        "safe_repair": false,
+        "safe_visibility_gain": false,
+        "status": "unsafe",
+        "visibility_harm": false
+      },
+      "complete_scene_delta": -1,
+      "fitted": {
+        "case": 35,
+        "observation": {
+          "clauses": {
+            "color": true,
+            "text": false
+          },
+          "full_visibility": true,
+          "notes": "Extra I; one complete red cup.",
+          "visible_text": "MIINT"
+        },
+        "row": {
+          "cohort": "unfitted_prompt_fresh_seed",
+          "constraint_ids": [
+            "text",
+            "color"
+          ],
+          "details": {
+            "clauses": [
+              {
+                "exact": false,
+                "expected_text": "MINT",
+                "id": "text",
+                "normalized_recognized": "miint",
+                "progress": 0.8
+              },
+              {
+                "id": "color",
+                "metadata": {
+                  "include": [
+                    {
+                      "class": "cup",
+                      "color": "red",
+                      "count": 1
+                    }
+                  ],
+                  "prompt": "A sharp, realistic studio photograph of exactly one red cup, fully visible. Above the objects, a large white sign displays only the word \"MINT\" in bold black letters. No other letters or words are visible.",
+                  "tag": "colors"
+                },
+                "strict": true,
+                "upstream_progress": 1.0
+              }
+            ],
+            "ocr": {
+              "lines": [
+                {
+                  "box": [
+                    [
+                      124.0,
+                      151.0
+                    ],
+                    [
+                      373.0,
+                      149.0
+                    ],
+                    [
+                      373.0,
+                      201.0
+                    ],
+                    [
+                      124.0,
+                      203.0
+                    ]
+                  ],
+                  "confidence": 0.9939433336257935,
+                  "text": "MIINT"
+                }
+              ],
+              "recognized_text": "MIINT"
+            }
+          },
+          "error": null,
+          "id": "jp1-train-color-00",
+          "image": "query_results/e56e71431c9662a74114d5e0/b06e5750bdf29e3cad05.png",
+          "image_sha256": "6b24ccaf742c1b44d5cc72538b736876aec1a07b47d5de8e24d8f644fc452fba",
+          "joint_success": false,
+          "model": "label_selected",
+          "noise_sha256": "9c4a01b43daa7b9471af84a8655c0d39e3d5a4f2f5c74deb1f0ae6ea7d18126d",
+          "pair_id": "9b92d473aad4f8bb255213bd",
+          "progress": [
+            0.8,
+            1.0
+          ],
+          "quality": null,
+          "replicate": 0,
+          "satisfied": [
+            false,
+            true
+          ],
+          "seed": 963139253,
+          "student_sha256": "972a31f7d075c66b03df6cb80b5e731ebc661b9bc1d404023979ec5dabad81e1",
+          "utility": 0.45,
+          "valid": true
+        }
+      },
+      "id": "jp1-train-color-00",
+      "initial": {
+        "case": 35,
+        "observation": {
+          "clauses": {
+            "color": true,
+            "text": true
+          },
+          "full_visibility": true,
+          "notes": "One complete red mug; MINT only.",
+          "visible_text": "MINT"
+        },
+        "row": {
+          "cohort": "unfitted_prompt_fresh_seed",
+          "constraint_ids": [
+            "text",
+            "color"
+          ],
+          "details": {
+            "clauses": [
+              {
+                "exact": true,
+                "expected_text": "MINT",
+                "id": "text",
+                "normalized_recognized": "mint",
+                "progress": 1.0
+              },
+              {
+                "id": "color",
+                "metadata": {
+                  "include": [
+                    {
+                      "class": "cup",
+                      "color": "red",
+                      "count": 1
+                    }
+                  ],
+                  "prompt": "A sharp, realistic studio photograph of exactly one red cup, fully visible. Above the objects, a large white sign displays only the word \"MINT\" in bold black letters. No other letters or words are visible.",
+                  "tag": "colors"
+                },
+                "strict": true,
+                "upstream_progress": 1.0
+              }
+            ],
+            "ocr": {
+              "lines": [
+                {
+                  "box": [
+                    [
+                      120.0,
+                      162.0
+                    ],
+                    [
+                      227.0,
+                      162.0
+                    ],
+                    [
+                      227.0,
+                      197.0
+                    ],
+                    [
+                      120.0,
+                      197.0
+                    ]
+                  ],
+                  "confidence": 0.9958254098892212,
+                  "text": "MINT"
+                }
+              ],
+              "recognized_text": "MINT"
+            }
+          },
+          "error": null,
+          "id": "jp1-train-color-00",
+          "image": "query_results/05c14c6c6807c0d971a44b25/6e6a85ada7ae27ae02a2.png",
+          "image_sha256": "16c21651daf627a440801d0d917b09c5a305729e6686a961f7ae39ceebc393a7",
+          "joint_success": true,
+          "model": "joint128",
+          "noise_sha256": "9c4a01b43daa7b9471af84a8655c0d39e3d5a4f2f5c74deb1f0ae6ea7d18126d",
+          "pair_id": "9b92d473aad4f8bb255213bd",
+          "progress": [
+            1.0,
+            1.0
+          ],
+          "quality": null,
+          "replicate": 0,
+          "satisfied": [
+            true,
+            true
+          ],
+          "seed": 963139253,
+          "student_sha256": "f9c5ad99773510c64e08f9656234d248431f8a7ed86d6ce6a0b011a711f244e2",
+          "utility": 1.0,
+          "valid": true
+        }
+      },
+      "model": "label_selected",
+      "seed": 963139253
+    }
+  ],
+  "all_fresh_label_safe_repairs": [
+    {
+      "case": 12,
+      "cohort": "positive_fresh_seed",
+      "comparison": {
+        "harmed_clauses": [],
+        "has_unknown": false,
+        "known_harm": false,
+        "repaired_clauses": [
+          "text"
+        ],
+        "safe_repair": true,
+        "safe_visibility_gain": false,
+        "status": "safe_repair",
+        "visibility_harm": false
+      },
+      "complete_scene_delta": 0,
+      "fitted": {
+        "case": 12,
+        "observation": {
+          "clauses": {
+            "color": true,
+            "text": true
+          },
+          "full_visibility": false,
+          "notes": "Correct word; green chair legs cropped.",
+          "visible_text": "PEACH"
+        },
+        "row": {
+          "cohort": "positive_fresh_seed",
+          "constraint_ids": [
+            "text",
+            "color"
+          ],
+          "details": {
+            "clauses": [
+              {
+                "exact": true,
+                "expected_text": "PEACH",
+                "id": "text",
+                "normalized_recognized": "peach",
+                "progress": 1.0
+              },
+              {
+                "id": "color",
+                "metadata": {
+                  "include": [
+                    {
+                      "class": "chair",
+                      "color": "green",
+                      "count": 1
+                    }
+                  ],
+                  "prompt": "A sharp, realistic studio photograph of exactly one green chair, fully visible. Above the objects, a large white sign displays only the word \"PEACH\" in bold black letters. No other letters or words are visible.",
+                  "tag": "colors"
+                },
+                "strict": true,
+                "upstream_progress": 1.0
+              }
+            ],
+            "ocr": {
+              "lines": [
+                {
+                  "box": [
+                    [
+                      166.0,
+                      115.0
+                    ],
+                    [
+                      350.0,
+                      115.0
+                    ],
+                    [
+                      350.0,
+                      149.0
+                    ],
+                    [
+                      166.0,
+                      149.0
+                    ]
+                  ],
+                  "confidence": 0.9969819188117981,
+                  "text": "PEACH"
+                }
+              ],
+              "recognized_text": "PEACH"
+            }
+          },
+          "error": null,
+          "id": "jp1-train-color-11",
+          "image": "query_results/5595a5b0cffad303e9fef9d1/cddde6bfe8497f3a1189.png",
+          "image_sha256": "dbd85e35a00d81ff22da5b0181b622338308205931180d420ea5c8edd5e3b5a0",
+          "joint_success": true,
+          "model": "label_selected",
+          "noise_sha256": "8df2e49e5c2dce58d066fcfba1f99832f1e6bdef08f0342337a3120e162859b8",
+          "pair_id": "17941607befca136181a2950",
+          "progress": [
+            1.0,
+            1.0
+          ],
+          "quality": null,
+          "replicate": 0,
+          "satisfied": [
+            true,
+            true
+          ],
+          "seed": 1435792484,
+          "student_sha256": "972a31f7d075c66b03df6cb80b5e731ebc661b9bc1d404023979ec5dabad81e1",
+          "utility": 1.0,
+          "valid": true
+        }
+      },
+      "id": "jp1-train-color-11",
+      "initial": {
+        "case": 12,
+        "observation": {
+          "clauses": {
+            "color": true,
+            "text": false
+          },
+          "full_visibility": false,
+          "notes": "Missing a. Green chair legs cropped.",
+          "visible_text": "Pech"
+        },
+        "row": {
+          "cohort": "positive_fresh_seed",
+          "constraint_ids": [
+            "text",
+            "color"
+          ],
+          "details": {
+            "clauses": [
+              {
+                "exact": false,
+                "expected_text": "PEACH",
+                "id": "text",
+                "normalized_recognized": "pech",
+                "progress": 0.8
+              },
+              {
+                "id": "color",
+                "metadata": {
+                  "include": [
+                    {
+                      "class": "chair",
+                      "color": "green",
+                      "count": 1
+                    }
+                  ],
+                  "prompt": "A sharp, realistic studio photograph of exactly one green chair, fully visible. Above the objects, a large white sign displays only the word \"PEACH\" in bold black letters. No other letters or words are visible.",
+                  "tag": "colors"
+                },
+                "strict": true,
+                "upstream_progress": 1.0
+              }
+            ],
+            "ocr": {
+              "lines": [
+                {
+                  "box": [
+                    [
+                      167.0,
+                      100.0
+                    ],
+                    [
+                      355.0,
+                      102.0
+                    ],
+                    [
+                      355.0,
+                      144.0
+                    ],
+                    [
+                      167.0,
+                      142.0
+                    ]
+                  ],
+                  "confidence": 0.9549242854118347,
+                  "text": "Pech"
+                }
+              ],
+              "recognized_text": "Pech"
+            }
+          },
+          "error": null,
+          "id": "jp1-train-color-11",
+          "image": "query_results/2b85a15bf8e0d994ee6bb0cb/52606ac964a8786e9caf.png",
+          "image_sha256": "f89ddd0890360716336b2818acc338da22eddf13c258acccc18f760c1c4b7190",
+          "joint_success": false,
+          "model": "joint128",
+          "noise_sha256": "8df2e49e5c2dce58d066fcfba1f99832f1e6bdef08f0342337a3120e162859b8",
+          "pair_id": "17941607befca136181a2950",
+          "progress": [
+            0.8,
+            1.0
+          ],
+          "quality": null,
+          "replicate": 0,
+          "satisfied": [
+            false,
+            true
+          ],
+          "seed": 1435792484,
+          "student_sha256": "f9c5ad99773510c64e08f9656234d248431f8a7ed86d6ce6a0b011a711f244e2",
+          "utility": 0.45,
+          "valid": true
+        }
+      },
+      "model": "label_selected",
+      "seed": 1435792484
+    },
+    {
+      "case": 22,
+      "cohort": "positive_fresh_seed",
+      "comparison": {
+        "harmed_clauses": [],
+        "has_unknown": false,
+        "known_harm": false,
+        "repaired_clauses": [
+          "text"
+        ],
+        "safe_repair": true,
+        "safe_visibility_gain": false,
+        "status": "safe_repair",
+        "visibility_harm": false
+      },
+      "complete_scene_delta": 0,
+      "fitted": {
+        "case": 22,
+        "observation": {
+          "clauses": {
+            "color": true,
+            "text": true
+          },
+          "full_visibility": false,
+          "notes": "One green chair, front legs clipped.",
+          "visible_text": "PEACH"
+        },
+        "row": {
+          "cohort": "positive_fresh_seed",
+          "constraint_ids": [
+            "text",
+            "color"
+          ],
+          "details": {
+            "clauses": [
+              {
+                "exact": true,
+                "expected_text": "PEACH",
+                "id": "text",
+                "normalized_recognized": "peach",
+                "progress": 1.0
+              },
+              {
+                "id": "color",
+                "metadata": {
+                  "include": [
+                    {
+                      "class": "chair",
+                      "color": "green",
+                      "count": 1
+                    }
+                  ],
+                  "prompt": "A sharp, realistic studio photograph of exactly one green chair, fully visible. Above the objects, a large white sign displays only the word \"PEACH\" in bold black letters. No other letters or words are visible.",
+                  "tag": "colors"
+                },
+                "strict": true,
+                "upstream_progress": 1.0
+              }
+            ],
+            "ocr": {
+              "lines": [
+                {
+                  "box": [
+                    [
+                      86.0,
+                      98.0
+                    ],
+                    [
+                      400.0,
+                      100.0
+                    ],
+                    [
+                      400.0,
+                      144.0
+                    ],
+                    [
+                      86.0,
+                      142.0
+                    ]
+                  ],
+                  "confidence": 0.9971828460693359,
+                  "text": "PEACH"
+                }
+              ],
+              "recognized_text": "PEACH"
+            }
+          },
+          "error": null,
+          "id": "jp1-train-color-11",
+          "image": "query_results/19fe4284375af8dd3e6b0630/a101ec5e59a369c140b1.png",
+          "image_sha256": "64f26308c24d1e442574450372c79d37ab30377ad72e30414b86a3738de085ea",
+          "joint_success": true,
+          "model": "label_selected",
+          "noise_sha256": "555466d763d7a16992c9c327b7fd1b7b8e8b1762ae8d282ed9f56d75b8475125",
+          "pair_id": "a380d63a583ab3f2922f3801",
+          "progress": [
+            1.0,
+            1.0
+          ],
+          "quality": null,
+          "replicate": 1,
+          "satisfied": [
+            true,
+            true
+          ],
+          "seed": 15411324,
+          "student_sha256": "972a31f7d075c66b03df6cb80b5e731ebc661b9bc1d404023979ec5dabad81e1",
+          "utility": 1.0,
+          "valid": true
+        }
+      },
+      "id": "jp1-train-color-11",
+      "initial": {
+        "case": 22,
+        "observation": {
+          "clauses": {
+            "color": true,
+            "text": false
+          },
+          "full_visibility": false,
+          "notes": "Missing E and H. Green chair front legs cropped.",
+          "visible_text": "PAC"
+        },
+        "row": {
+          "cohort": "positive_fresh_seed",
+          "constraint_ids": [
+            "text",
+            "color"
+          ],
+          "details": {
+            "clauses": [
+              {
+                "exact": false,
+                "expected_text": "PEACH",
+                "id": "text",
+                "normalized_recognized": "p c a",
+                "progress": 0.19999999999999996
+              },
+              {
+                "id": "color",
+                "metadata": {
+                  "include": [
+                    {
+                      "class": "chair",
+                      "color": "green",
+                      "count": 1
+                    }
+                  ],
+                  "prompt": "A sharp, realistic studio photograph of exactly one green chair, fully visible. Above the objects, a large white sign displays only the word \"PEACH\" in bold black letters. No other letters or words are visible.",
+                  "tag": "colors"
+                },
+                "strict": true,
+                "upstream_progress": 1.0
+              }
+            ],
+            "ocr": {
+              "lines": [
+                {
+                  "box": [
+                    [
+                      84.0,
+                      81.0
+                    ],
+                    [
+                      129.0,
+                      82.0
+                    ],
+                    [
+                      127.0,
+                      151.0
+                    ],
+                    [
+                      82.0,
+                      150.0
+                    ]
+                  ],
+                  "confidence": 0.803948700428009,
+                  "text": "P"
+                },
+                {
+                  "box": [
+                    [
+                      371.0,
+                      79.0
+                    ],
+                    [
+                      427.0,
+                      80.0
+                    ],
+                    [
+                      425.0,
+                      150.0
+                    ],
+                    [
+                      369.0,
+                      149.0
+                    ]
+                  ],
+                  "confidence": 0.8917321562767029,
+                  "text": "C"
+                },
+                {
+                  "box": [
+                    [
+                      226.0,
+                      95.0
+                    ],
+                    [
+                      281.0,
+                      95.0
+                    ],
+                    [
+                      281.0,
+                      144.0
+                    ],
+                    [
+                      226.0,
+                      144.0
+                    ]
+                  ],
+                  "confidence": 0.9866640567779541,
+                  "text": "A"
+                }
+              ],
+              "recognized_text": "P C A"
+            }
+          },
+          "error": null,
+          "id": "jp1-train-color-11",
+          "image": "query_results/8a543d705af64886ee7a285e/805f688886a4999a3830.png",
+          "image_sha256": "163bac436d9dd8b89f09f9b058c2c25cd2a2425fe59480c384d0961524ec4d80",
+          "joint_success": false,
+          "model": "joint128",
+          "noise_sha256": "555466d763d7a16992c9c327b7fd1b7b8e8b1762ae8d282ed9f56d75b8475125",
+          "pair_id": "a380d63a583ab3f2922f3801",
+          "progress": [
+            0.19999999999999996,
+            1.0
+          ],
+          "quality": null,
+          "replicate": 1,
+          "satisfied": [
+            false,
+            true
+          ],
+          "seed": 15411324,
+          "student_sha256": "f9c5ad99773510c64e08f9656234d248431f8a7ed86d6ce6a0b011a711f244e2",
+          "utility": 0.3,
+          "valid": true
+        }
+      },
+      "model": "label_selected",
+      "seed": 15411324
+    }
+  ],
+  "cost_exclusions": "Earlier common checkpoint/expert training and incompletely timed annotation labor; not a cumulative project cost.",
+  "harm_fields": {
+    "text": 3,
+    "visibility": 2
+  },
+  "inherited_phase12_collection_gpu_hours": 0.11888888888888889,
+  "metrics_sha256": "89b876993be71e91277feecaaef79d7b4043d6962345f27441ffe7d1515e5bb8",
+  "new_allocated_gpu_hours": 0.4766666666666667,
+  "numerical_fitting": {
+    "all_teacher": {
+      "0": {
+        "own_fitting_loss_mean": 0.0003119366495714833,
+        "safe_target_relative_mse_median": 1.0,
+        "safe_target_relative_mse_range": [
+          1.0,
+          1.0
+        ]
+      },
+      "128": {
+        "own_fitting_loss_mean": 1.4796069535805145e-05,
+        "safe_target_relative_mse_median": 0.6640157317148319,
+        "safe_target_relative_mse_range": [
+          0.03771495780918088,
+          2.1416596030049018
+        ]
+      },
+      "32": {
+        "own_fitting_loss_mean": 6.37249436294951e-05,
+        "safe_target_relative_mse_median": 0.6712777214744585,
+        "safe_target_relative_mse_range": [
+          0.12232765696471874,
+          2.0157763839863043
+        ]
+      },
+      "own_objective_final_over_initial": 0.04743293087276198
+    },
+    "label_selected": {
+      "0": {
+        "own_fitting_loss_mean": 0.00014382764614614038,
+        "safe_target_relative_mse_median": 1.0,
+        "safe_target_relative_mse_range": [
+          1.0,
+          1.0
+        ]
+      },
+      "128": {
+        "own_fitting_loss_mean": 8.35129123781068e-06,
+        "safe_target_relative_mse_median": 0.050745445708067716,
+        "safe_target_relative_mse_range": [
+          0.03798264011053682,
+          0.06333747491139027
+        ]
+      },
+      "32": {
+        "own_fitting_loss_mean": 2.803585258940681e-05,
+        "safe_target_relative_mse_median": 0.17492081338123186,
+        "safe_target_relative_mse_range": [
+          0.10836738598140787,
+          0.23226143796103485
+        ]
+      },
+      "own_objective_final_over_initial": 0.05806457563329028
+    },
+    "random_matched": {
+      "0": {
+        "own_fitting_loss_mean": 0.00013025031997434175,
+        "safe_target_relative_mse_median": 1.0,
+        "safe_target_relative_mse_range": [
+          1.0,
+          1.0
+        ]
+      },
+      "128": {
+        "own_fitting_loss_mean": 7.575368423810384e-06,
+        "safe_target_relative_mse_median": 0.9923140239352355,
+        "safe_target_relative_mse_range": [
+          0.03794955617212795,
+          1.2953527371529092
+        ]
+      },
+      "32": {
+        "own_fitting_loss_mean": 2.4275074035055393e-05,
+        "safe_target_relative_mse_median": 0.9754409995964632,
+        "safe_target_relative_mse_range": [
+          0.10845350389216774,
+          1.156070617365974
+        ]
+      },
+      "own_objective_final_over_initial": 0.058160075348011965
+    }
+  },
+  "per_prompt": {
+    "jp1-train-color-00": {
+      "unfitted_prompt_fresh_seed": {
+        "all_teacher": [
+          {
+            "case": 35,
+            "complete_scene": false,
+            "seed": 963139253
+          }
+        ],
+        "joint128": [
+          {
+            "case": 35,
+            "complete_scene": true,
+            "seed": 963139253
+          }
+        ],
+        "label_selected": [
+          {
+            "case": 35,
+            "complete_scene": false,
+            "seed": 963139253
+          }
+        ],
+        "random_matched": [
+          {
+            "case": 35,
+            "complete_scene": false,
+            "seed": 963139253
+          }
+        ]
+      }
+    },
+    "jp1-train-color-01": {
+      "unfitted_prompt_fresh_seed": {
+        "all_teacher": [
+          {
+            "case": 7,
+            "complete_scene": false,
+            "seed": 247943281
+          }
+        ],
+        "joint128": [
+          {
+            "case": 7,
+            "complete_scene": true,
+            "seed": 247943281
+          }
+        ],
+        "label_selected": [
+          {
+            "case": 7,
+            "complete_scene": true,
+            "seed": 247943281
+          }
+        ],
+        "random_matched": [
+          {
+            "case": 7,
+            "complete_scene": true,
+            "seed": 247943281
+          }
+        ]
+      }
+    },
+    "jp1-train-color-04": {
+      "preservation_fresh_seed": {
+        "all_teacher": [
+          {
+            "case": 15,
+            "complete_scene": true,
+            "seed": 158951594
+          },
+          {
+            "case": 26,
+            "complete_scene": true,
+            "seed": 415429042
+          }
+        ],
+        "joint128": [
+          {
+            "case": 15,
+            "complete_scene": false,
+            "seed": 158951594
+          },
+          {
+            "case": 26,
+            "complete_scene": true,
+            "seed": 415429042
+          }
+        ],
+        "label_selected": [
+          {
+            "case": 15,
+            "complete_scene": true,
+            "seed": 158951594
+          },
+          {
+            "case": 26,
+            "complete_scene": true,
+            "seed": 415429042
+          }
+        ],
+        "random_matched": [
+          {
+            "case": 15,
+            "complete_scene": false,
+            "seed": 158951594
+          },
+          {
+            "case": 26,
+            "complete_scene": true,
+            "seed": 415429042
+          }
+        ]
+      }
+    },
+    "jp1-train-color-08": {
+      "preservation_fresh_seed": {
+        "all_teacher": [
+          {
+            "case": 19,
+            "complete_scene": true,
+            "seed": 571779
+          },
+          {
+            "case": 38,
+            "complete_scene": false,
+            "seed": 1137962689
+          }
+        ],
+        "joint128": [
+          {
+            "case": 19,
+            "complete_scene": true,
+            "seed": 571779
+          },
+          {
+            "case": 38,
+            "complete_scene": true,
+            "seed": 1137962689
+          }
+        ],
+        "label_selected": [
+          {
+            "case": 19,
+            "complete_scene": true,
+            "seed": 571779
+          },
+          {
+            "case": 38,
+            "complete_scene": true,
+            "seed": 1137962689
+          }
+        ],
+        "random_matched": [
+          {
+            "case": 19,
+            "complete_scene": true,
+            "seed": 571779
+          },
+          {
+            "case": 38,
+            "complete_scene": false,
+            "seed": 1137962689
+          }
+        ]
+      }
+    },
+    "jp1-train-color-11": {
+      "fitting_seed_diagnostic": {
+        "all_teacher": [
+          {
+            "case": 23,
+            "complete_scene": false,
+            "seed": 156034178
+          }
+        ],
+        "joint128": [
+          {
+            "case": 23,
+            "complete_scene": false,
+            "seed": 156034178
+          }
+        ],
+        "label_selected": [
+          {
+            "case": 23,
+            "complete_scene": true,
+            "seed": 156034178
+          }
+        ],
+        "random_matched": [
+          {
+            "case": 23,
+            "complete_scene": false,
+            "seed": 156034178
+          }
+        ]
+      },
+      "positive_fresh_seed": {
+        "all_teacher": [
+          {
+            "case": 12,
+            "complete_scene": false,
+            "seed": 1435792484
+          },
+          {
+            "case": 22,
+            "complete_scene": true,
+            "seed": 15411324
+          }
+        ],
+        "joint128": [
+          {
+            "case": 12,
+            "complete_scene": false,
+            "seed": 1435792484
+          },
+          {
+            "case": 22,
+            "complete_scene": false,
+            "seed": 15411324
+          }
+        ],
+        "label_selected": [
+          {
+            "case": 12,
+            "complete_scene": false,
+            "seed": 1435792484
+          },
+          {
+            "case": 22,
+            "complete_scene": false,
+            "seed": 15411324
+          }
+        ],
+        "random_matched": [
+          {
+            "case": 12,
+            "complete_scene": false,
+            "seed": 1435792484
+          },
+          {
+            "case": 22,
+            "complete_scene": false,
+            "seed": 15411324
+          }
+        ]
+      }
+    },
+    "jp1-train-color-13": {
+      "fitting_seed_diagnostic": {
+        "all_teacher": [
+          {
+            "case": 29,
+            "complete_scene": false,
+            "seed": 179753740
+          }
+        ],
+        "joint128": [
+          {
+            "case": 29,
+            "complete_scene": false,
+            "seed": 179753740
+          }
+        ],
+        "label_selected": [
+          {
+            "case": 29,
+            "complete_scene": true,
+            "seed": 179753740
+          }
+        ],
+        "random_matched": [
+          {
+            "case": 29,
+            "complete_scene": false,
+            "seed": 179753740
+          }
+        ]
+      },
+      "positive_fresh_seed": {
+        "all_teacher": [
+          {
+            "case": 30,
+            "complete_scene": false,
+            "seed": 1786479405
+          },
+          {
+            "case": 33,
+            "complete_scene": false,
+            "seed": 1035568533
+          }
+        ],
+        "joint128": [
+          {
+            "case": 30,
+            "complete_scene": false,
+            "seed": 1786479405
+          },
+          {
+            "case": 33,
+            "complete_scene": false,
+            "seed": 1035568533
+          }
+        ],
+        "label_selected": [
+          {
+            "case": 30,
+            "complete_scene": false,
+            "seed": 1786479405
+          },
+          {
+            "case": 33,
+            "complete_scene": false,
+            "seed": 1035568533
+          }
+        ],
+        "random_matched": [
+          {
+            "case": 30,
+            "complete_scene": false,
+            "seed": 1786479405
+          },
+          {
+            "case": 33,
+            "complete_scene": false,
+            "seed": 1035568533
+          }
+        ]
+      }
+    },
+    "jp1-train-count-00": {
+      "unfitted_prompt_fresh_seed": {
+        "all_teacher": [
+          {
+            "case": 37,
+            "complete_scene": false,
+            "seed": 1993228481
+          }
+        ],
+        "joint128": [
+          {
+            "case": 37,
+            "complete_scene": false,
+            "seed": 1993228481
+          }
+        ],
+        "label_selected": [
+          {
+            "case": 37,
+            "complete_scene": true,
+            "seed": 1993228481
+          }
+        ],
+        "random_matched": [
+          {
+            "case": 37,
+            "complete_scene": true,
+            "seed": 1993228481
+          }
+        ]
+      }
+    },
+    "jp1-train-count-02": {
+      "unfitted_prompt_fresh_seed": {
+        "all_teacher": [
+          {
+            "case": 4,
+            "complete_scene": true,
+            "seed": 905716811
+          }
+        ],
+        "joint128": [
+          {
+            "case": 4,
+            "complete_scene": true,
+            "seed": 905716811
+          }
+        ],
+        "label_selected": [
+          {
+            "case": 4,
+            "complete_scene": true,
+            "seed": 905716811
+          }
+        ],
+        "random_matched": [
+          {
+            "case": 4,
+            "complete_scene": true,
+            "seed": 905716811
+          }
+        ]
+      }
+    },
+    "jp1-train-count-03": {
+      "preservation_fresh_seed": {
+        "all_teacher": [
+          {
+            "case": 5,
+            "complete_scene": true,
+            "seed": 367765501
+          },
+          {
+            "case": 14,
+            "complete_scene": true,
+            "seed": 863943875
+          }
+        ],
+        "joint128": [
+          {
+            "case": 5,
+            "complete_scene": true,
+            "seed": 367765501
+          },
+          {
+            "case": 14,
+            "complete_scene": true,
+            "seed": 863943875
+          }
+        ],
+        "label_selected": [
+          {
+            "case": 5,
+            "complete_scene": true,
+            "seed": 367765501
+          },
+          {
+            "case": 14,
+            "complete_scene": true,
+            "seed": 863943875
+          }
+        ],
+        "random_matched": [
+          {
+            "case": 5,
+            "complete_scene": true,
+            "seed": 367765501
+          },
+          {
+            "case": 14,
+            "complete_scene": true,
+            "seed": 863943875
+          }
+        ]
+      }
+    },
+    "jp1-train-count-08": {
+      "fitting_seed_diagnostic": {
+        "all_teacher": [
+          {
+            "case": 20,
+            "complete_scene": true,
+            "seed": 550972855
+          }
+        ],
+        "joint128": [
+          {
+            "case": 20,
+            "complete_scene": false,
+            "seed": 550972855
+          }
+        ],
+        "label_selected": [
+          {
+            "case": 20,
+            "complete_scene": true,
+            "seed": 550972855
+          }
+        ],
+        "random_matched": [
+          {
+            "case": 20,
+            "complete_scene": false,
+            "seed": 550972855
+          }
+        ]
+      },
+      "positive_fresh_seed": {
+        "all_teacher": [
+          {
+            "case": 11,
+            "complete_scene": false,
+            "seed": 725761593
+          },
+          {
+            "case": 27,
+            "complete_scene": true,
+            "seed": 1272885951
+          }
+        ],
+        "joint128": [
+          {
+            "case": 11,
+            "complete_scene": false,
+            "seed": 725761593
+          },
+          {
+            "case": 27,
+            "complete_scene": false,
+            "seed": 1272885951
+          }
+        ],
+        "label_selected": [
+          {
+            "case": 11,
+            "complete_scene": false,
+            "seed": 725761593
+          },
+          {
+            "case": 27,
+            "complete_scene": false,
+            "seed": 1272885951
+          }
+        ],
+        "random_matched": [
+          {
+            "case": 11,
+            "complete_scene": true,
+            "seed": 725761593
+          },
+          {
+            "case": 27,
+            "complete_scene": false,
+            "seed": 1272885951
+          }
+        ]
+      }
+    },
+    "jp1-train-count-12": {
+      "fitting_seed_diagnostic": {
+        "all_teacher": [
+          {
+            "case": 31,
+            "complete_scene": true,
+            "seed": 239583594
+          }
+        ],
+        "joint128": [
+          {
+            "case": 31,
+            "complete_scene": false,
+            "seed": 239583594
+          }
+        ],
+        "label_selected": [
+          {
+            "case": 31,
+            "complete_scene": true,
+            "seed": 239583594
+          }
+        ],
+        "random_matched": [
+          {
+            "case": 31,
+            "complete_scene": false,
+            "seed": 239583594
+          }
+        ]
+      },
+      "positive_fresh_seed": {
+        "all_teacher": [
+          {
+            "case": 16,
+            "complete_scene": true,
+            "seed": 1083637527
+          },
+          {
+            "case": 34,
+            "complete_scene": false,
+            "seed": 162560230
+          }
+        ],
+        "joint128": [
+          {
+            "case": 16,
+            "complete_scene": true,
+            "seed": 1083637527
+          },
+          {
+            "case": 34,
+            "complete_scene": true,
+            "seed": 162560230
+          }
+        ],
+        "label_selected": [
+          {
+            "case": 16,
+            "complete_scene": false,
+            "seed": 1083637527
+          },
+          {
+            "case": 34,
+            "complete_scene": true,
+            "seed": 162560230
+          }
+        ],
+        "random_matched": [
+          {
+            "case": 16,
+            "complete_scene": false,
+            "seed": 1083637527
+          },
+          {
+            "case": 34,
+            "complete_scene": true,
+            "seed": 162560230
+          }
+        ]
+      }
+    },
+    "jp1-train-count-13": {
+      "preservation_fresh_seed": {
+        "all_teacher": [
+          {
+            "case": 6,
+            "complete_scene": true,
+            "seed": 300538355
+          },
+          {
+            "case": 24,
+            "complete_scene": true,
+            "seed": 1131881752
+          }
+        ],
+        "joint128": [
+          {
+            "case": 6,
+            "complete_scene": false,
+            "seed": 300538355
+          },
+          {
+            "case": 24,
+            "complete_scene": true,
+            "seed": 1131881752
+          }
+        ],
+        "label_selected": [
+          {
+            "case": 6,
+            "complete_scene": false,
+            "seed": 300538355
+          },
+          {
+            "case": 24,
+            "complete_scene": true,
+            "seed": 1131881752
+          }
+        ],
+        "random_matched": [
+          {
+            "case": 6,
+            "complete_scene": false,
+            "seed": 300538355
+          },
+          {
+            "case": 24,
+            "complete_scene": false,
+            "seed": 1131881752
+          }
+        ]
+      }
+    },
+    "jp1-train-count_color-04": {
+      "unfitted_prompt_fresh_seed": {
+        "all_teacher": [
+          {
+            "case": 2,
+            "complete_scene": false,
+            "seed": 441985299
+          }
+        ],
+        "joint128": [
+          {
+            "case": 2,
+            "complete_scene": false,
+            "seed": 441985299
+          }
+        ],
+        "label_selected": [
+          {
+            "case": 2,
+            "complete_scene": false,
+            "seed": 441985299
+          }
+        ],
+        "random_matched": [
+          {
+            "case": 2,
+            "complete_scene": false,
+            "seed": 441985299
+          }
+        ]
+      }
+    },
+    "jp1-train-count_color-05": {
+      "unfitted_prompt_fresh_seed": {
+        "all_teacher": [
+          {
+            "case": 9,
+            "complete_scene": true,
+            "seed": 342924247
+          }
+        ],
+        "joint128": [
+          {
+            "case": 9,
+            "complete_scene": true,
+            "seed": 342924247
+          }
+        ],
+        "label_selected": [
+          {
+            "case": 9,
+            "complete_scene": false,
+            "seed": 342924247
+          }
+        ],
+        "random_matched": [
+          {
+            "case": 9,
+            "complete_scene": false,
+            "seed": 342924247
+          }
+        ]
+      }
+    },
+    "jp1-train-relation-00": {
+      "preservation_fresh_seed": {
+        "all_teacher": [
+          {
+            "case": 8,
+            "complete_scene": false,
+            "seed": 877105809
+          },
+          {
+            "case": 13,
+            "complete_scene": false,
+            "seed": 2093992647
+          }
+        ],
+        "joint128": [
+          {
+            "case": 8,
+            "complete_scene": false,
+            "seed": 877105809
+          },
+          {
+            "case": 13,
+            "complete_scene": false,
+            "seed": 2093992647
+          }
+        ],
+        "label_selected": [
+          {
+            "case": 8,
+            "complete_scene": false,
+            "seed": 877105809
+          },
+          {
+            "case": 13,
+            "complete_scene": false,
+            "seed": 2093992647
+          }
+        ],
+        "random_matched": [
+          {
+            "case": 8,
+            "complete_scene": false,
+            "seed": 877105809
+          },
+          {
+            "case": 13,
+            "complete_scene": true,
+            "seed": 2093992647
+          }
+        ]
+      }
+    },
+    "jp1-train-relation-01": {
+      "fitting_seed_diagnostic": {
+        "all_teacher": [
+          {
+            "case": 36,
+            "complete_scene": true,
+            "seed": 1582394764
+          }
+        ],
+        "joint128": [
+          {
+            "case": 36,
+            "complete_scene": false,
+            "seed": 1582394764
+          }
+        ],
+        "label_selected": [
+          {
+            "case": 36,
+            "complete_scene": true,
+            "seed": 1582394764
+          }
+        ],
+        "random_matched": [
+          {
+            "case": 36,
+            "complete_scene": true,
+            "seed": 1582394764
+          }
+        ]
+      },
+      "positive_fresh_seed": {
+        "all_teacher": [
+          {
+            "case": 18,
+            "complete_scene": false,
+            "seed": 1295102599
+          },
+          {
+            "case": 32,
+            "complete_scene": true,
+            "seed": 2110052733
+          }
+        ],
+        "joint128": [
+          {
+            "case": 18,
+            "complete_scene": false,
+            "seed": 1295102599
+          },
+          {
+            "case": 32,
+            "complete_scene": false,
+            "seed": 2110052733
+          }
+        ],
+        "label_selected": [
+          {
+            "case": 18,
+            "complete_scene": false,
+            "seed": 1295102599
+          },
+          {
+            "case": 32,
+            "complete_scene": true,
+            "seed": 2110052733
+          }
+        ],
+        "random_matched": [
+          {
+            "case": 18,
+            "complete_scene": false,
+            "seed": 1295102599
+          },
+          {
+            "case": 32,
+            "complete_scene": true,
+            "seed": 2110052733
+          }
+        ]
+      }
+    },
+    "jp1-train-relation-06": {
+      "unfitted_prompt_fresh_seed": {
+        "all_teacher": [
+          {
+            "case": 21,
+            "complete_scene": false,
+            "seed": 492595909
+          }
+        ],
+        "joint128": [
+          {
+            "case": 21,
+            "complete_scene": false,
+            "seed": 492595909
+          }
+        ],
+        "label_selected": [
+          {
+            "case": 21,
+            "complete_scene": false,
+            "seed": 492595909
+          }
+        ],
+        "random_matched": [
+          {
+            "case": 21,
+            "complete_scene": false,
+            "seed": 492595909
+          }
+        ]
+      }
+    },
+    "jp1-train-relation-07": {
+      "unfitted_prompt_fresh_seed": {
+        "all_teacher": [
+          {
+            "case": 3,
+            "complete_scene": false,
+            "seed": 1605518404
+          }
+        ],
+        "joint128": [
+          {
+            "case": 3,
+            "complete_scene": false,
+            "seed": 1605518404
+          }
+        ],
+        "label_selected": [
+          {
+            "case": 3,
+            "complete_scene": false,
+            "seed": 1605518404
+          }
+        ],
+        "random_matched": [
+          {
+            "case": 3,
+            "complete_scene": false,
+            "seed": 1605518404
+          }
+        ]
+      }
+    },
+    "jp1-train-relation-12": {
+      "fitting_seed_diagnostic": {
+        "all_teacher": [
+          {
+            "case": 17,
+            "complete_scene": false,
+            "seed": 549703214
+          }
+        ],
+        "joint128": [
+          {
+            "case": 17,
+            "complete_scene": false,
+            "seed": 549703214
+          }
+        ],
+        "label_selected": [
+          {
+            "case": 17,
+            "complete_scene": false,
+            "seed": 549703214
+          }
+        ],
+        "random_matched": [
+          {
+            "case": 17,
+            "complete_scene": false,
+            "seed": 549703214
+          }
+        ]
+      },
+      "positive_fresh_seed": {
+        "all_teacher": [
+          {
+            "case": 1,
+            "complete_scene": false,
+            "seed": 167722162
+          },
+          {
+            "case": 28,
+            "complete_scene": false,
+            "seed": 1227225803
+          }
+        ],
+        "joint128": [
+          {
+            "case": 1,
+            "complete_scene": false,
+            "seed": 167722162
+          },
+          {
+            "case": 28,
+            "complete_scene": false,
+            "seed": 1227225803
+          }
+        ],
+        "label_selected": [
+          {
+            "case": 1,
+            "complete_scene": false,
+            "seed": 167722162
+          },
+          {
+            "case": 28,
+            "complete_scene": false,
+            "seed": 1227225803
+          }
+        ],
+        "random_matched": [
+          {
+            "case": 1,
+            "complete_scene": false,
+            "seed": 167722162
+          },
+          {
+            "case": 28,
+            "complete_scene": false,
+            "seed": 1227225803
+          }
+        ]
+      }
+    },
+    "jp1-train-relation-14": {
+      "preservation_fresh_seed": {
+        "all_teacher": [
+          {
+            "case": 10,
+            "complete_scene": false,
+            "seed": 1389356450
+          },
+          {
+            "case": 25,
+            "complete_scene": true,
+            "seed": 2103277852
+          }
+        ],
+        "joint128": [
+          {
+            "case": 10,
+            "complete_scene": false,
+            "seed": 1389356450
+          },
+          {
+            "case": 25,
+            "complete_scene": false,
+            "seed": 2103277852
+          }
+        ],
+        "label_selected": [
+          {
+            "case": 10,
+            "complete_scene": false,
+            "seed": 1389356450
+          },
+          {
+            "case": 25,
+            "complete_scene": false,
+            "seed": 2103277852
+          }
+        ],
+        "random_matched": [
+          {
+            "case": 10,
+            "complete_scene": false,
+            "seed": 1389356450
+          },
+          {
+            "case": 25,
+            "complete_scene": false,
+            "seed": 2103277852
+          }
+        ]
+      }
+    }
+  },
+  "results_sha256": "c4063dec0f6aeaee6ed2124b455919ad9d5e62ff4f4b3b674b63496fa29ab95f",
+  "safe_repair_prompt_count": 1,
+  "scope": "post-evaluation descriptive analysis, no new GPU calls or changed decisions",
+  "script_sha256": "4a032982a22634069c508391554381492a718fc7b6bf4e492bdb5cccc18bb8d2"
+}

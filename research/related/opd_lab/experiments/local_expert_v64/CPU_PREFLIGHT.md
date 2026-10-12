@@ -1,0 +1,1 @@
+CPU预检：真实冻结verified和prepared random的manifest/数据/源码/19个已完成产物哈希通过；未运行GPU。新控制器测试覆盖不重训verified、随机已有尝试拒绝、冻结评测源码以及CUDA确定性环境。初次新增测试的helper命名setup被pytest误识别为xunit hook，已改为make_runs；仅测试装配修复，训练与评测算法未变。以cpu_tests.txt最终结果为准。

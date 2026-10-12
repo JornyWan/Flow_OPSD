@@ -1,0 +1,27 @@
+--- a/scripts/train_sd3_opd.py
++++ b/scripts/train_sd3_opd.py
+@@ -3017,6 +3017,24 @@
+                             info["cr_current_teacher_kl"].append(_cur_ret.detach())
+                             info["cr_reference_teacher_kl"].append(_ref_ret.detach())
+                             info["cr_violation"].append(((_ret_mask * _violation).sum() / _ret_denom).detach())
++                            # ---- CODEX-0015: 逐 slot 记录,不再只有合并平均 ----
++                            # 0010 的日志把 slot 1(ocr) 与 slot 2(geneval) 平均到一起,
++                            # 于是无法回答"哪个约束在激活、哪个主导梯度"(codex 0014 §2.3)。
++                            # 这里只**读**已有张量,不改任何计算。
++                            for _si in cr_retention_teacher_indices:
++                                _m_s = (_tidx == _si).to(_ret_mask.dtype)
++                                _d_s = _m_s.sum().clamp(min=1.0)
++                                _nm_s = (config.train.teachers[_si]["name"]
++                                         if _si < len(config.train.teachers) else f"slot{_si}")
++                                info[f"cr_cur_kl_{_nm_s}"].append(
++                                    ((_m_s * per_step_kl_scalar).sum() / _d_s).detach())
++                                info[f"cr_ref_kl_{_nm_s}"].append(
++                                    ((_m_s * _ref_kl).sum() / _d_s).detach())
++                                info[f"cr_violation_{_nm_s}"].append(
++                                    ((_m_s * _violation).sum() / _d_s).detach())
++                                info[f"cr_active_{_nm_s}"].append(
++                                    ((_m_s * (_violation > 0).to(_m_s.dtype)).sum() / _d_s).detach())
++                                info[f"cr_n_{_nm_s}"].append(_m_s.sum().detach())
+                             info["cr_active_frac"].append(
+                                 ((_ret_mask * (_violation > 0).to(_ret_mask.dtype)).sum() / _ret_denom).detach()
+                             )

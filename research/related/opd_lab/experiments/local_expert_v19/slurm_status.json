@@ -1,0 +1,17 @@
+{
+  "time_utc": "2026-09-15T04:08:55.089691+00:00",
+  "jobs": [
+    {
+      "job_id": "1050350",
+      "stage": "le19_teacher_opportunity",
+      "run": "/midtier/minilab/scratch/chw4026/projects/side_project/generative/opd_related/opd_lab/runs/le19_opportunity_001",
+      "state": "COMPLETED",
+      "elapsed_seconds": 130,
+      "allocated_tres": "billing=4,cpu=4,gres/gpu:l40=1,mem=96G,node=1",
+      "exit_code": "0:0",
+      "nodes": "ai-gpu12",
+      "allocated_gpu_hours": 0.03611111111111111
+    }
+  ],
+  "allocated_gpu_hours_including_failed_attempts_so_far": 0.03611111111111111
+}

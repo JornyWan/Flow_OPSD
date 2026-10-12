@@ -1,0 +1,76 @@
+--- a/scripts/train_sd3_opd.py
++++ b/scripts/train_sd3_opd.py
+@@ -3116,7 +3116,12 @@
+                                         _gv[_nm_g] = None
+                                 def _flat(_t):
+                                     if _t is None: return None
+-                                    _ps = [x.detach().double().flatten() for x in _t if x is not None]
++                                    # CODEX-0019: 必须逐参数对齐(None 填零),否则与下面的参数增量 u
++                                    # 展平顺序不一致 —— 跳过 None 会让两个向量对不上,内积无意义。
++                                    _ps = [(x.detach().double().flatten() if x is not None
++                                            else torch.zeros(_p.numel(), dtype=torch.float64,
++                                                             device=_p.device))
++                                           for x, _p in zip(_t, transformer_trainable_parameters)]
+                                     return torch.cat(_ps) if _ps else None
+                                 _fv = {k: _flat(v) for k, v in _gv.items()}
+                                 _keys = [k for k in _fv if _fv[k] is not None]
+@@ -3128,6 +3133,13 @@
+                                         _cs = (_a @ _b) / (_a.norm().clamp(min=1e-30)
+                                                            * _b.norm().clamp(min=1e-30))
+                                         info[f"geom_cos_{_keys[_i2]}_{_keys[_j2]}"].append(_cs.float())
++                                # CODEX-0019: 一阶有效性检验所需 —— 留住 a_m 与 g,
++                                # 到真实 optimizer step 处与参数增量 u 做内积。
++                                # 动机:QP 投影的保证(令 <a,d>=0)与 GN 的 Cauchy-Schwarz 同为**一阶**。
++                                # GN 正是因为一阶保证在可用步长下被曲率淹没而被证伪;
++                                # 若这里线性化同样不可预测,QP 会以同一原因失败,不值得实现。
++                                globals()["_cr_fo_vecs"] = {k: _fv[k] for k in _keys
++                                                            if _fv[k] is not None}
+                                 del _gv, _fv
+ 
+                             if bool(_ret_mask.any()) and not _cr_retention_probe_done:
+@@ -3185,7 +3197,45 @@
+                                 transformer.parameters(), config.train.max_grad_norm
+                             )
+                             info["grad_norm"].append(grad_norm)
++                        # CODEX-0019: 只在**真实**参数更新那一步捕获增量 u。
++                        # accelerate 的 accumulate 下 optimizer.step() 每个 micro-batch 都调,
++                        # 但只有 sync_gradients 为真时才真正更新(gas=nbpe=12 -> 每 epoch 一次)。
++                        # 只有 sync_gradients 那一步才 pop:探针在累积窗口的**第一个**
++                        # micro-batch 触发,而 sync 在**最后一个** —— 无条件 pop 会把向量
++                        # 在中途丢掉,指标将永远不产出(且不报错)。
++                        _snap = None
++                        _fo = None
++                        if accelerator.sync_gradients:
++                            _fo = globals().pop("_cr_fo_vecs", None)
++                            if _fo is not None:
++                                _snap = [p.detach().double().flatten().clone()
++                                         for p in transformer_trainable_parameters]
+                         optimizer.step()
++                        if _snap is not None:
++                            with torch.no_grad():
++                                _u = torch.cat([p.detach().double().flatten() - _s
++                                                for p, _s in zip(transformer_trainable_parameters,
++                                                                 _snap)])
++                                _un = _u.norm()
++                                info["fo_step_norm"].append(_un.float())
++                                _gv2 = _fo.get("g")
++                                if _gv2 is not None:
++                                    # AdamW 把更新旋离 -g 多少:1.0 = 纯梯度下降方向
++                                    info["fo_cos_u_negg"].append(
++                                        ((_u @ (-_gv2)) / (_un.clamp(min=1e-30)
++                                                           * _gv2.norm().clamp(min=1e-30))).float())
++                                    info["fo_pred_dL_direct"].append((_gv2 @ _u).float())
++                                for _nm2, _a2 in _fo.items():
++                                    if _nm2 == "g":
++                                        continue
++                                    # 一阶预测的约束量变化 dC_m ~= <a_m, u>。离线与实测的
++                                    # cr_violation_{m} 逐 epoch 差分对拍:若累积预测与实测不同号
++                                    # 或差一个数量级以上,线性化在实际步长下不成立 -> QP 的保证是空的。
++                                    info[f"fo_pred_dC_{_nm2}"].append((_a2 @ _u).float())
++                                    info[f"fo_cos_u_a_{_nm2}"].append(
++                                        ((_u @ _a2) / (_un.clamp(min=1e-30)
++                                                       * _a2.norm().clamp(min=1e-30))).float())
++                            del _snap, _u, _fo
+                         optimizer.zero_grad()
+ 
+                     if accelerator.sync_gradients:

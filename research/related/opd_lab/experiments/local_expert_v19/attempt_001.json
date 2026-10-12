@@ -1,0 +1,8 @@
+{
+  "new_images": 24,
+  "plan_sha256": "756322083d1cc3d7e7c3d9e6b8afbe988584d4b58cb0b06d546248b8f738a5cc",
+  "reference_images": 24,
+  "run": "/midtier/minilab/scratch/chw4026/projects/side_project/generative/opd_related/opd_lab/runs/le19_opportunity_001",
+  "teacher_queries": 24,
+  "updates": 0
+}

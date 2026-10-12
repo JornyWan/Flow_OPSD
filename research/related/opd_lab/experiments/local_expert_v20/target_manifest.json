@@ -1,0 +1,918 @@
+{
+  "source_results_sha256": "ddbd6f599c3fdc6ff22aef38ed242d33e36b83d92c9592bac6ae81d505d83add",
+  "targets": [
+    {
+      "accepted": false,
+      "action_hashes": {
+        "geneval@1": "3c80276177830e159b28fa47f11ca0e3161ea47c58133ef7b30a57a54700037a",
+        "noop": "add4dec73a9ddb825feccea330e01d73694d264704bc14f20c847c964d7f6f8c"
+      },
+      "case": 1,
+      "dt": -0.06732404232025146,
+      "id": "jp1-train-count-08",
+      "index": 3,
+      "pair_id": "48f9dd2fc555107e0fe0acec",
+      "reason": "unknown",
+      "replicate": 3,
+      "saved_query": "/midtier/minilab/scratch/chw4026/projects/side_project/generative/opd_related/opd_lab/runs/le20_collection_001/queries/48f9dd2fc555107e0fe0acec.pt",
+      "saved_query_sha256": "711cec631c80415d3540defecf37dba040b35b62144f00ed49dc3366c0c9506a",
+      "scope": "Provisional assistant label, not automatic verifier acceptance",
+      "seed": 1621946800,
+      "target": "noop"
+    },
+    {
+      "accepted": false,
+      "action_hashes": {
+        "geneval@1": "7cb819d3cf70976807093c2bcc852a49b29c382de6c4f324b0808e7d82d0e43c",
+        "noop": "701eb9c38eedc2d13f67ef8bd2bc009a85eddad9c8ce61f8ee5d4dbf85a5cd15"
+      },
+      "case": 2,
+      "dt": -0.06732404232025146,
+      "id": "jp1-train-count-08",
+      "index": 3,
+      "pair_id": "59fe0f9deb5a1b198e82f42e",
+      "reason": "non_repair",
+      "replicate": 1,
+      "saved_query": "/midtier/minilab/scratch/chw4026/projects/side_project/generative/opd_related/opd_lab/runs/le20_collection_001/queries/59fe0f9deb5a1b198e82f42e.pt",
+      "saved_query_sha256": "27971d5a38df85be650a14b0a32c8cd41f721580229a3901a04ba25fbe3dafd9",
+      "scope": "Provisional assistant label, not automatic verifier acceptance",
+      "seed": 926945309,
+      "target": "noop"
+    },
+    {
+      "accepted": true,
+      "action_hashes": {
+        "geneval@1": "e11f62999349d1cfd198aa98a6f234b18db64113922474177bb93c5eed66d53e",
+        "noop": "b95c4ef91c051e540641deabf7ae4c0a8e9b59353547b2eb27dd73cdeb972747"
+      },
+      "case": 3,
+      "dt": -0.06732404232025146,
+      "id": "jp1-train-count-08",
+      "index": 3,
+      "pair_id": "58b93bb3b9ef3c94a3835044",
+      "reason": "safe_repair",
+      "replicate": 0,
+      "saved_query": "/midtier/minilab/scratch/chw4026/projects/side_project/generative/opd_related/opd_lab/runs/le20_collection_001/queries/58b93bb3b9ef3c94a3835044.pt",
+      "saved_query_sha256": "fbfd07945c9e78334812b16b675a66e54f0a06608a5c457071ce2d163cef75e9",
+      "scope": "Provisional assistant label, not automatic verifier acceptance",
+      "seed": 1792847196,
+      "target": "geneval@1"
+    },
+    {
+      "accepted": false,
+      "action_hashes": {
+        "geneval@1": "b67b4e8cbeccfd29307ac8cc03f4b7f1cbb7dc7854e5010414d7b68fb4bdfec0",
+        "noop": "56d866612066951b884a5678b7c0126ed4fa131540facaf2069c22f192bba613"
+      },
+      "case": 4,
+      "dt": -0.06732404232025146,
+      "id": "jp1-train-count-12",
+      "index": 3,
+      "pair_id": "a00cce7e8fcd41f32bdfaeea",
+      "reason": "unsafe",
+      "replicate": 3,
+      "saved_query": "/midtier/minilab/scratch/chw4026/projects/side_project/generative/opd_related/opd_lab/runs/le20_collection_001/queries/a00cce7e8fcd41f32bdfaeea.pt",
+      "saved_query_sha256": "53ab8b276ed1cccdd5ca368955f34942ee1b34e343529397ad8dfb0d60641995",
+      "scope": "Provisional assistant label, not automatic verifier acceptance",
+      "seed": 84415975,
+      "target": "noop"
+    },
+    {
+      "accepted": false,
+      "action_hashes": {
+        "geneval@1": "8becdc2e212b5b7f8e45847d221180cf384c03dc656b9cc42c5bb59f63bed51f",
+        "noop": "99a86c3306928a5bf0b20c3254dafbdbba06bdc7115675ef264b31dd4696843e"
+      },
+      "case": 5,
+      "dt": -0.06732404232025146,
+      "id": "jp1-train-relation-01",
+      "index": 3,
+      "pair_id": "001aaa09b810e60fed84a2d5",
+      "reason": "non_repair",
+      "replicate": 0,
+      "saved_query": "/midtier/minilab/scratch/chw4026/projects/side_project/generative/opd_related/opd_lab/runs/le20_collection_001/queries/001aaa09b810e60fed84a2d5.pt",
+      "saved_query_sha256": "4da7e3fca69f02bc3a6090df5588aba5ef10e2b94de2df296b04fb00c8b90cfd",
+      "scope": "Provisional assistant label, not automatic verifier acceptance",
+      "seed": 1547323166,
+      "target": "noop"
+    },
+    {
+      "accepted": false,
+      "action_hashes": {
+        "geneval@1": "100b09a2c5d1c7ffba3e3f4cb16a2f83dffb0ff573e15ab1da4a84ef8223647c",
+        "noop": "3885018f05953a8917991b82b6256f9258b3d3f7ce299befd066882af501f6cf"
+      },
+      "case": 6,
+      "dt": -0.06732404232025146,
+      "id": "jp1-train-count-08",
+      "index": 3,
+      "pair_id": "97bb571519de566a699498bf",
+      "reason": "non_repair",
+      "replicate": 2,
+      "saved_query": "/midtier/minilab/scratch/chw4026/projects/side_project/generative/opd_related/opd_lab/runs/le20_collection_001/queries/97bb571519de566a699498bf.pt",
+      "saved_query_sha256": "91629c9d52eea2921f84c213096b75e885561a308da058e1bdcd979528551f62",
+      "scope": "Provisional assistant label, not automatic verifier acceptance",
+      "seed": 1939729307,
+      "target": "noop"
+    },
+    {
+      "accepted": false,
+      "action_hashes": {
+        "geneval@1": "2eab02a86c19b8b39045cd736b74edddd3aec12990f52f0891f348ecfc6f02aa",
+        "noop": "eba9127d23680292a200dda3aa74897f9861155dcd29b6c0e29dcdfe5136e10c"
+      },
+      "case": 7,
+      "dt": -0.06732404232025146,
+      "id": "jp1-train-count-12",
+      "index": 3,
+      "pair_id": "4e7c27ca278eb07e77c30040",
+      "reason": "unsafe",
+      "replicate": 7,
+      "saved_query": "/midtier/minilab/scratch/chw4026/projects/side_project/generative/opd_related/opd_lab/runs/le20_collection_001/queries/4e7c27ca278eb07e77c30040.pt",
+      "saved_query_sha256": "24c04400c891d353db6417941fb74fbbe92777fd46b2fe9802147529295c2ae6",
+      "scope": "Provisional assistant label, not automatic verifier acceptance",
+      "seed": 245583934,
+      "target": "noop"
+    },
+    {
+      "accepted": true,
+      "action_hashes": {
+        "geneval@1": "a186390e3e4d76d5a3e9a6ba6c43c7e7e1906ddc44ce7f7b75941b00ee1d1fcc",
+        "noop": "93c6cbacac54fabbdc85d711a1a67f1238824f1be7c760227acbb8dd3a417a5c"
+      },
+      "case": 8,
+      "dt": -0.06732404232025146,
+      "id": "jp1-train-relation-12",
+      "index": 3,
+      "pair_id": "b050a292aa85a741fd8a6c2f",
+      "reason": "safe_repair",
+      "replicate": 4,
+      "saved_query": "/midtier/minilab/scratch/chw4026/projects/side_project/generative/opd_related/opd_lab/runs/le20_collection_001/queries/b050a292aa85a741fd8a6c2f.pt",
+      "saved_query_sha256": "77c816d7c82a2615efe17b469683528e4ecf3738894bf3bea0179201b156c235",
+      "scope": "Provisional assistant label, not automatic verifier acceptance",
+      "seed": 1889425501,
+      "target": "geneval@1"
+    },
+    {
+      "accepted": true,
+      "action_hashes": {
+        "geneval@1": "1cbfc18701314f344dc65c7bc23438906ce52a0d1356cc3b667b79f8aade5845",
+        "noop": "dd160f7d599ffc91e7a871345d5b28e86bfffda00752419f3a02c2eecef75e79"
+      },
+      "case": 9,
+      "dt": -0.06732404232025146,
+      "id": "jp1-train-relation-12",
+      "index": 3,
+      "pair_id": "75580fa11ba80b61487a0360",
+      "reason": "safe_repair",
+      "replicate": 3,
+      "saved_query": "/midtier/minilab/scratch/chw4026/projects/side_project/generative/opd_related/opd_lab/runs/le20_collection_001/queries/75580fa11ba80b61487a0360.pt",
+      "saved_query_sha256": "4dcdb6d3466bbce4605b7c6f491c7c072a3a63318905f911b4bb568912fd910c",
+      "scope": "Provisional assistant label, not automatic verifier acceptance",
+      "seed": 187236271,
+      "target": "geneval@1"
+    },
+    {
+      "accepted": false,
+      "action_hashes": {
+        "geneval@1": "517424337f2d4553eacc4ab23f0504cc0dd845ed13c086e6449946f8c790b4ab",
+        "noop": "5c3057084abcb0914bd583576a948b32e002088ac805c10cfe570ee95bbc24fd"
+      },
+      "case": 10,
+      "dt": -0.06732404232025146,
+      "id": "jp1-train-relation-12",
+      "index": 3,
+      "pair_id": "74c10fb9c3d18e0c358fedb4",
+      "reason": "non_repair",
+      "replicate": 0,
+      "saved_query": "/midtier/minilab/scratch/chw4026/projects/side_project/generative/opd_related/opd_lab/runs/le20_collection_001/queries/74c10fb9c3d18e0c358fedb4.pt",
+      "saved_query_sha256": "da9d4c02ae048d6a96251e4f15372c3e19074f5295fdeffbda1f08a0c0639225",
+      "scope": "Provisional assistant label, not automatic verifier acceptance",
+      "seed": 1484997866,
+      "target": "noop"
+    },
+    {
+      "accepted": false,
+      "action_hashes": {
+        "geneval@1": "6b959737f4b34489af40a7cfe2a57692bf9c329a6632c64f50202e5f93d1402c",
+        "noop": "ed6479c5d11b8c3af2e7ed88f31c9d02a61594f0432ab741974a4e8d9323f58f"
+      },
+      "case": 11,
+      "dt": -0.06732404232025146,
+      "id": "jp1-train-color-13",
+      "index": 3,
+      "pair_id": "1c802ae3e04f0551c467cbb8",
+      "reason": "non_repair",
+      "replicate": 1,
+      "saved_query": "/midtier/minilab/scratch/chw4026/projects/side_project/generative/opd_related/opd_lab/runs/le20_collection_001/queries/1c802ae3e04f0551c467cbb8.pt",
+      "saved_query_sha256": "d5662d52c20dfba96a4988f7e671585b7e47e9a865b7406bb8aa559a059a5647",
+      "scope": "Provisional assistant label, not automatic verifier acceptance",
+      "seed": 1617466354,
+      "target": "noop"
+    },
+    {
+      "accepted": true,
+      "action_hashes": {
+        "geneval@1": "04533817bfe1a5f0dc3c761185dd5235a9fe6dbbc82fb55378536b19cd6324df",
+        "noop": "b13879d9c02e42c91ca8ec9d9a8dbf39c59b23967455d803332153ed56172743"
+      },
+      "case": 12,
+      "dt": -0.06732404232025146,
+      "id": "jp1-train-relation-01",
+      "index": 3,
+      "pair_id": "8938540e5d5b09c463f1befc",
+      "reason": "safe_repair",
+      "replicate": 4,
+      "saved_query": "/midtier/minilab/scratch/chw4026/projects/side_project/generative/opd_related/opd_lab/runs/le20_collection_001/queries/8938540e5d5b09c463f1befc.pt",
+      "saved_query_sha256": "a900eb14665ec7251bccb17b8eafef97e91224da471bffa092a3f727c79cf72c",
+      "scope": "Provisional assistant label, not automatic verifier acceptance",
+      "seed": 701703992,
+      "target": "geneval@1"
+    },
+    {
+      "accepted": false,
+      "action_hashes": {
+        "geneval@1": "e50fca0d45ef1916e7135deb46d06a4b360dba1d8c4c08479f1bb2b08bc9eeb5",
+        "noop": "11487463e5b1450377b4b139f6b1dabe71fcbf17d3a5b35d53c4322ba08df6c1"
+      },
+      "case": 13,
+      "dt": -0.06732404232025146,
+      "id": "jp1-train-relation-01",
+      "index": 3,
+      "pair_id": "821aec04d3951ba4f58b488c",
+      "reason": "unknown",
+      "replicate": 7,
+      "saved_query": "/midtier/minilab/scratch/chw4026/projects/side_project/generative/opd_related/opd_lab/runs/le20_collection_001/queries/821aec04d3951ba4f58b488c.pt",
+      "saved_query_sha256": "c7e2b56a4af7900e3502183b31bc43554935f905be0766cac0a2ed2554b6ab23",
+      "scope": "Provisional assistant label, not automatic verifier acceptance",
+      "seed": 720868826,
+      "target": "noop"
+    },
+    {
+      "accepted": false,
+      "action_hashes": {
+        "geneval@1": "86c88924c504d21e6b6b6079d51bf54ba5c08870e3d9ba5cf579aeb3c1d41815",
+        "noop": "32b4a79650c9f0f701a987aa5a0dcb07824ba69360fd85a596209e7db25814a9"
+      },
+      "case": 14,
+      "dt": -0.06732404232025146,
+      "id": "jp1-train-color-13",
+      "index": 3,
+      "pair_id": "ea528adf1fadbb2886c9ba2e",
+      "reason": "non_repair",
+      "replicate": 0,
+      "saved_query": "/midtier/minilab/scratch/chw4026/projects/side_project/generative/opd_related/opd_lab/runs/le20_collection_001/queries/ea528adf1fadbb2886c9ba2e.pt",
+      "saved_query_sha256": "a6842b3b9443b52f815154fd357ed86ee4216b916147f39c21cdeb0677644884",
+      "scope": "Provisional assistant label, not automatic verifier acceptance",
+      "seed": 3305216,
+      "target": "noop"
+    },
+    {
+      "accepted": false,
+      "action_hashes": {
+        "geneval@1": "453a5acea6d8f2c6727f4216692b466f857742f7b28868e71f71c6e06ce15819",
+        "noop": "37b8abfae9578e65bb0d0894d61fe8524a9df430a1841fa92c9460ba5fe5897b"
+      },
+      "case": 15,
+      "dt": -0.06732404232025146,
+      "id": "jp1-train-color-11",
+      "index": 3,
+      "pair_id": "8cc60863214a5668a0010a36",
+      "reason": "non_repair",
+      "replicate": 7,
+      "saved_query": "/midtier/minilab/scratch/chw4026/projects/side_project/generative/opd_related/opd_lab/runs/le20_collection_001/queries/8cc60863214a5668a0010a36.pt",
+      "saved_query_sha256": "850b7b40276dccddc48bfbb9b813c6c041cf587f77afd2cc4bc92ba6a6302741",
+      "scope": "Provisional assistant label, not automatic verifier acceptance",
+      "seed": 239587936,
+      "target": "noop"
+    },
+    {
+      "accepted": false,
+      "action_hashes": {
+        "geneval@1": "d42d2f34a61406b1e6c2bea578d804c0dc92dbe1a2e68f9c973c8ad1b116e024",
+        "noop": "5253ef14bb8096e49cd3f55e62d24d0c3f2b49706729a2f51efba4f2e6c48e46"
+      },
+      "case": 16,
+      "dt": -0.06732404232025146,
+      "id": "jp1-train-count-12",
+      "index": 3,
+      "pair_id": "37c6a3ee69aa1ff7ed9ecc55",
+      "reason": "non_repair",
+      "replicate": 0,
+      "saved_query": "/midtier/minilab/scratch/chw4026/projects/side_project/generative/opd_related/opd_lab/runs/le20_collection_001/queries/37c6a3ee69aa1ff7ed9ecc55.pt",
+      "saved_query_sha256": "4b9e90c62ba23990f578d1d006541a32b80eb0d231f5262113f151c00e1fed78",
+      "scope": "Provisional assistant label, not automatic verifier acceptance",
+      "seed": 649628968,
+      "target": "noop"
+    },
+    {
+      "accepted": false,
+      "action_hashes": {
+        "geneval@1": "d513d9ef87f5e38f6a576c572e42ea15f16bc429cb35bcb37db93f27f4418b6d",
+        "noop": "0275ba8adeeb757eec38cd1669d48bd2c2076f688bd1b812d8dcbfcb8fc1483a"
+      },
+      "case": 17,
+      "dt": -0.06732404232025146,
+      "id": "jp1-train-color-13",
+      "index": 3,
+      "pair_id": "8e03df1d0b640350ad0f647a",
+      "reason": "non_repair",
+      "replicate": 5,
+      "saved_query": "/midtier/minilab/scratch/chw4026/projects/side_project/generative/opd_related/opd_lab/runs/le20_collection_001/queries/8e03df1d0b640350ad0f647a.pt",
+      "saved_query_sha256": "9bde872f44f833c6d0b8768d695f333474f52b665450c97a15354196a80cfd99",
+      "scope": "Provisional assistant label, not automatic verifier acceptance",
+      "seed": 316910570,
+      "target": "noop"
+    },
+    {
+      "accepted": false,
+      "action_hashes": {
+        "geneval@1": "a8e36ad86361e0b3b4b70a9081645daf1e93d4969d09246255366b5ba740c8d3",
+        "noop": "d74919980b5e8416a8a93a80ee2154ec5868afa85566d8ac4e73a99c76775975"
+      },
+      "case": 18,
+      "dt": -0.06732404232025146,
+      "id": "jp1-train-count-12",
+      "index": 3,
+      "pair_id": "b07496f7bd6b83e122b24138",
+      "reason": "non_repair",
+      "replicate": 5,
+      "saved_query": "/midtier/minilab/scratch/chw4026/projects/side_project/generative/opd_related/opd_lab/runs/le20_collection_001/queries/b07496f7bd6b83e122b24138.pt",
+      "saved_query_sha256": "0b5064eb1ae81f17185802ac2ed2ece244612213f060f74b278b6eff40e2235a",
+      "scope": "Provisional assistant label, not automatic verifier acceptance",
+      "seed": 2134919974,
+      "target": "noop"
+    },
+    {
+      "accepted": false,
+      "action_hashes": {
+        "geneval@1": "79a2c13486ee48411995e8d9c6eb053dc62f9852fe641d789fac29428ffcd9b4",
+        "noop": "85aa97ea8366b12bac9f302df711784ffbcd168010a776ab979c439008cfa1bc"
+      },
+      "case": 19,
+      "dt": -0.06732404232025146,
+      "id": "jp1-train-color-11",
+      "index": 3,
+      "pair_id": "b5b2a55b0be6e7b86a1101d3",
+      "reason": "unknown",
+      "replicate": 3,
+      "saved_query": "/midtier/minilab/scratch/chw4026/projects/side_project/generative/opd_related/opd_lab/runs/le20_collection_001/queries/b5b2a55b0be6e7b86a1101d3.pt",
+      "saved_query_sha256": "fe649143d5af711d8b0de87e6dc2dd73a983d7a938fb2403250a419ca5cb6ead",
+      "scope": "Provisional assistant label, not automatic verifier acceptance",
+      "seed": 1824855560,
+      "target": "noop"
+    },
+    {
+      "accepted": false,
+      "action_hashes": {
+        "geneval@1": "5aec08f74f75fa7437d5d3bf05c25e6f6aa1b573f134d691b305ec71599ae203",
+        "noop": "fbfd2ea1f8b4f8dda845e39fefc702826a7e3be2977d702e6e56609cec834b0b"
+      },
+      "case": 20,
+      "dt": -0.06732404232025146,
+      "id": "jp1-train-count-12",
+      "index": 3,
+      "pair_id": "94dd5de17f523945ef0c9685",
+      "reason": "non_repair",
+      "replicate": 1,
+      "saved_query": "/midtier/minilab/scratch/chw4026/projects/side_project/generative/opd_related/opd_lab/runs/le20_collection_001/queries/94dd5de17f523945ef0c9685.pt",
+      "saved_query_sha256": "3d81ebcca0994745be1b2153abba0cc18e55cd8ca3ffd671093734520ecac620",
+      "scope": "Provisional assistant label, not automatic verifier acceptance",
+      "seed": 431270962,
+      "target": "noop"
+    },
+    {
+      "accepted": false,
+      "action_hashes": {
+        "geneval@1": "424ccf1c2586654d2a2e96003fbcbc38f278518c20fc8a5146782ca147590715",
+        "noop": "3a3b4a338bb9e650c3b3a21c7a0ad6ce5abefa96d0685c51aee02be748e007b3"
+      },
+      "case": 21,
+      "dt": -0.06732404232025146,
+      "id": "jp1-train-count-12",
+      "index": 3,
+      "pair_id": "8cf595d9199669e1dc6b5dc2",
+      "reason": "non_repair",
+      "replicate": 4,
+      "saved_query": "/midtier/minilab/scratch/chw4026/projects/side_project/generative/opd_related/opd_lab/runs/le20_collection_001/queries/8cf595d9199669e1dc6b5dc2.pt",
+      "saved_query_sha256": "864e77ff6c7fa6c3ffc4472d71161160a2c1b950bc60936c2a8283e810444492",
+      "scope": "Provisional assistant label, not automatic verifier acceptance",
+      "seed": 981402432,
+      "target": "noop"
+    },
+    {
+      "accepted": true,
+      "action_hashes": {
+        "geneval@1": "fd325a9ff8ab3326f36031a5c0bbb696ff362d690f8645136276ff129d6999c9",
+        "noop": "27e6274ea79dc0a7a02a748e1bf8f3f5345deff9acef28261b4be6ba9380b92e"
+      },
+      "case": 22,
+      "dt": -0.06732404232025146,
+      "id": "jp1-train-count-08",
+      "index": 3,
+      "pair_id": "41e67ae827046618f32f4750",
+      "reason": "safe_repair",
+      "replicate": 5,
+      "saved_query": "/midtier/minilab/scratch/chw4026/projects/side_project/generative/opd_related/opd_lab/runs/le20_collection_001/queries/41e67ae827046618f32f4750.pt",
+      "saved_query_sha256": "b812994450b41c4fadaa0d8c99136bad25541934a9da91b3db50cd34234255be",
+      "scope": "Provisional assistant label, not automatic verifier acceptance",
+      "seed": 2051636934,
+      "target": "geneval@1"
+    },
+    {
+      "accepted": true,
+      "action_hashes": {
+        "geneval@1": "3943f926b97c6be2f5a71507616e5342388642ede115595a93a1876d2063c5f1",
+        "noop": "f3bb3fc74bcb718e6a998e7b69eb77694867e2855fa187ff317831e03de07834"
+      },
+      "case": 23,
+      "dt": -0.06732404232025146,
+      "id": "jp1-train-relation-01",
+      "index": 3,
+      "pair_id": "daa37eee0933cf0decfcd6ae",
+      "reason": "safe_repair",
+      "replicate": 3,
+      "saved_query": "/midtier/minilab/scratch/chw4026/projects/side_project/generative/opd_related/opd_lab/runs/le20_collection_001/queries/daa37eee0933cf0decfcd6ae.pt",
+      "saved_query_sha256": "7ae0f6531567a7d7440c29fddc7f2932a8e62f321f485ef57d5629eba0f06c5a",
+      "scope": "Provisional assistant label, not automatic verifier acceptance",
+      "seed": 266786479,
+      "target": "geneval@1"
+    },
+    {
+      "accepted": true,
+      "action_hashes": {
+        "geneval@1": "36e9c4264f39ccc8b854bc440a388caea40ef78c7d71a5e051a72db2048e5b99",
+        "noop": "b6896ddc988588ad56d8fa23e8af8aecfdf0592d374b3a17dfa2eaf9c888c2db"
+      },
+      "case": 24,
+      "dt": -0.06732404232025146,
+      "id": "jp1-train-relation-12",
+      "index": 3,
+      "pair_id": "372b6139d045228000957f4f",
+      "reason": "safe_repair",
+      "replicate": 1,
+      "saved_query": "/midtier/minilab/scratch/chw4026/projects/side_project/generative/opd_related/opd_lab/runs/le20_collection_001/queries/372b6139d045228000957f4f.pt",
+      "saved_query_sha256": "ad6d500492124be4f24f28498156391eabc33cf0f764922a5e69862f4be25ebf",
+      "scope": "Provisional assistant label, not automatic verifier acceptance",
+      "seed": 48893866,
+      "target": "geneval@1"
+    },
+    {
+      "accepted": false,
+      "action_hashes": {
+        "geneval@1": "d86fd06c00fe2dd470a95266839bdec60b75efd7ed63324bdfd0a353337aa1fe",
+        "noop": "7208c923f5781e82d4d2be9ec7d7e809c5681580f9777dad8d39f8e92a1301ad"
+      },
+      "case": 25,
+      "dt": -0.06732404232025146,
+      "id": "jp1-train-relation-01",
+      "index": 3,
+      "pair_id": "b44a30dac7d3891cc0ba3ccd",
+      "reason": "unsafe",
+      "replicate": 1,
+      "saved_query": "/midtier/minilab/scratch/chw4026/projects/side_project/generative/opd_related/opd_lab/runs/le20_collection_001/queries/b44a30dac7d3891cc0ba3ccd.pt",
+      "saved_query_sha256": "435728de5c2655438baeaed21ca35059a102d5fd57dee4e18562ccb91f617920",
+      "scope": "Provisional assistant label, not automatic verifier acceptance",
+      "seed": 770291515,
+      "target": "noop"
+    },
+    {
+      "accepted": false,
+      "action_hashes": {
+        "geneval@1": "f81cc93f9b71e518895a2b7595b22715ab0af5283df2b01d55ae249e280bdfb9",
+        "noop": "3d3e12c3c20fd5f4c5959de93cab00bf7ff3e6ed670dc1ea0cc095a00423431d"
+      },
+      "case": 26,
+      "dt": -0.06732404232025146,
+      "id": "jp1-train-color-13",
+      "index": 3,
+      "pair_id": "304f5ddb74edeeaa1cd06eb0",
+      "reason": "unknown",
+      "replicate": 2,
+      "saved_query": "/midtier/minilab/scratch/chw4026/projects/side_project/generative/opd_related/opd_lab/runs/le20_collection_001/queries/304f5ddb74edeeaa1cd06eb0.pt",
+      "saved_query_sha256": "ee7d9a462dfb2b8a09930baf136ad582649f27b43189deef4986d5bc77ee5de4",
+      "scope": "Provisional assistant label, not automatic verifier acceptance",
+      "seed": 585242067,
+      "target": "noop"
+    },
+    {
+      "accepted": false,
+      "action_hashes": {
+        "geneval@1": "84f7886c5abd9794886337a5b1ee469603308756f1b3a5b249f395433b895680",
+        "noop": "e9b5c6b01c7db23d0ff2a547c1b3696febb106239b1e118833b3d40bd1934642"
+      },
+      "case": 27,
+      "dt": -0.06732404232025146,
+      "id": "jp1-train-count-08",
+      "index": 3,
+      "pair_id": "625ba5c43ac247eb4a17dbd7",
+      "reason": "unknown",
+      "replicate": 6,
+      "saved_query": "/midtier/minilab/scratch/chw4026/projects/side_project/generative/opd_related/opd_lab/runs/le20_collection_001/queries/625ba5c43ac247eb4a17dbd7.pt",
+      "saved_query_sha256": "b99c6cfa6b71cfffd2effd590a7521bff1e4db504383aefe8f301fdd928bcc39",
+      "scope": "Provisional assistant label, not automatic verifier acceptance",
+      "seed": 1614077492,
+      "target": "noop"
+    },
+    {
+      "accepted": true,
+      "action_hashes": {
+        "geneval@1": "a25cb5b3bf1559d0843d9005a8567937593c90fb8e7fb7684497b2df2c3cb8a9",
+        "noop": "cc1388e5edcd42e93ef365a5c7729d1100d49e4df133899c9fb3049f523a4ecf"
+      },
+      "case": 28,
+      "dt": -0.06732404232025146,
+      "id": "jp1-train-color-11",
+      "index": 3,
+      "pair_id": "2fea0811879e62b1f31beae2",
+      "reason": "safe_repair",
+      "replicate": 5,
+      "saved_query": "/midtier/minilab/scratch/chw4026/projects/side_project/generative/opd_related/opd_lab/runs/le20_collection_001/queries/2fea0811879e62b1f31beae2.pt",
+      "saved_query_sha256": "0c2c7f7aef43e3af8cb7921ce03be64778914a3f436cda4f224d0111cfaebcc9",
+      "scope": "Provisional assistant label, not automatic verifier acceptance",
+      "seed": 296481826,
+      "target": "geneval@1"
+    },
+    {
+      "accepted": false,
+      "action_hashes": {
+        "geneval@1": "79895314e13971fc2c94f726d9000bcac78624eaf9e1444af2a37755bcfc9e08",
+        "noop": "0278abe08c98aaf707755d33fd312d64caeb14c7050ceb04767069f351bc2acd"
+      },
+      "case": 29,
+      "dt": -0.06732404232025146,
+      "id": "jp1-train-count-08",
+      "index": 3,
+      "pair_id": "693d15291432abe4a4803ba3",
+      "reason": "unknown",
+      "replicate": 7,
+      "saved_query": "/midtier/minilab/scratch/chw4026/projects/side_project/generative/opd_related/opd_lab/runs/le20_collection_001/queries/693d15291432abe4a4803ba3.pt",
+      "saved_query_sha256": "afe0e06ff4c2b2550f80ccc7a7b71ee5166215953c8681fb76cbd5748e36dae2",
+      "scope": "Provisional assistant label, not automatic verifier acceptance",
+      "seed": 770555970,
+      "target": "noop"
+    },
+    {
+      "accepted": false,
+      "action_hashes": {
+        "geneval@1": "caf87f36e8e14ace15c7a5e0234fc7aa94471ec4c76fd5ddf8078f47d6472f97",
+        "noop": "3cde8c5bc14aec232e6a56587d6de378bbb1592177548ef82ebdc05f3ed3f4bc"
+      },
+      "case": 30,
+      "dt": -0.06732404232025146,
+      "id": "jp1-train-color-11",
+      "index": 3,
+      "pair_id": "0d083c62c9239ff0fe193f5a",
+      "reason": "non_repair",
+      "replicate": 1,
+      "saved_query": "/midtier/minilab/scratch/chw4026/projects/side_project/generative/opd_related/opd_lab/runs/le20_collection_001/queries/0d083c62c9239ff0fe193f5a.pt",
+      "saved_query_sha256": "9fbe390c12f183c6070518bf0ee01a13e4865b0df9954f1edcdd4cdcea45b0d7",
+      "scope": "Provisional assistant label, not automatic verifier acceptance",
+      "seed": 849185444,
+      "target": "noop"
+    },
+    {
+      "accepted": false,
+      "action_hashes": {
+        "geneval@1": "de5636a056a5abd0667d4f988d338d6cdb30782a8cf132933a453dfa0e7fbbf9",
+        "noop": "9d561f07a166511a35978dcf73ca4e970ce3d2838b25d1c72234a468ecba5a6b"
+      },
+      "case": 31,
+      "dt": -0.06732404232025146,
+      "id": "jp1-train-color-13",
+      "index": 3,
+      "pair_id": "4d4a4043969463b2dca17803",
+      "reason": "non_repair",
+      "replicate": 7,
+      "saved_query": "/midtier/minilab/scratch/chw4026/projects/side_project/generative/opd_related/opd_lab/runs/le20_collection_001/queries/4d4a4043969463b2dca17803.pt",
+      "saved_query_sha256": "83990d1de617b80b32e573247af15dc3b7e9c72cf8170bf23a93160348d81f02",
+      "scope": "Provisional assistant label, not automatic verifier acceptance",
+      "seed": 907463872,
+      "target": "noop"
+    },
+    {
+      "accepted": false,
+      "action_hashes": {
+        "geneval@1": "c6d5a8bfeb5399130755d0c879e1eb79cbcd193a0270eba2668aa64c64403ac1",
+        "noop": "4837aac1dfaaf56073b4500b0fb8aea126bff8d6a8283145354883a146f872c3"
+      },
+      "case": 32,
+      "dt": -0.06732404232025146,
+      "id": "jp1-train-color-11",
+      "index": 3,
+      "pair_id": "9c75d4a70287696cdf382880",
+      "reason": "non_repair",
+      "replicate": 0,
+      "saved_query": "/midtier/minilab/scratch/chw4026/projects/side_project/generative/opd_related/opd_lab/runs/le20_collection_001/queries/9c75d4a70287696cdf382880.pt",
+      "saved_query_sha256": "718cd26f0e29a11577a908596128fdbdefc368b775255236ccb723587376bdb8",
+      "scope": "Provisional assistant label, not automatic verifier acceptance",
+      "seed": 1484953662,
+      "target": "noop"
+    },
+    {
+      "accepted": false,
+      "action_hashes": {
+        "geneval@1": "ed60dec43efa6142c29abaade2a04907c8d62eb1f4db9e7c2c1686fc9b0f9f7d",
+        "noop": "5aeec33a3bf18b33622d5fa536b697d357b458007438fb3d7483f54cb0ce62e0"
+      },
+      "case": 33,
+      "dt": -0.06732404232025146,
+      "id": "jp1-train-relation-01",
+      "index": 3,
+      "pair_id": "dd6e26e7aa7e4c13beb94e1d",
+      "reason": "non_repair",
+      "replicate": 6,
+      "saved_query": "/midtier/minilab/scratch/chw4026/projects/side_project/generative/opd_related/opd_lab/runs/le20_collection_001/queries/dd6e26e7aa7e4c13beb94e1d.pt",
+      "saved_query_sha256": "4e5ade1d5a4380b51a9561f2a66c7f90bc8acc6098779f0069f5387fedf6280d",
+      "scope": "Provisional assistant label, not automatic verifier acceptance",
+      "seed": 228005830,
+      "target": "noop"
+    },
+    {
+      "accepted": false,
+      "action_hashes": {
+        "geneval@1": "0a53dfb4a6547bf8e79d1ea7e55ececb36640a6a2d2743d41800981c16849804",
+        "noop": "0525cf45a0354c7c2664ba34cc256101ea2c9734c39a79b26a84e26ee640fd8e"
+      },
+      "case": 34,
+      "dt": -0.06732404232025146,
+      "id": "jp1-train-color-13",
+      "index": 3,
+      "pair_id": "afa77191415e03e229e4a5d8",
+      "reason": "unknown",
+      "replicate": 3,
+      "saved_query": "/midtier/minilab/scratch/chw4026/projects/side_project/generative/opd_related/opd_lab/runs/le20_collection_001/queries/afa77191415e03e229e4a5d8.pt",
+      "saved_query_sha256": "450f784dbdcfa4ff2a32859a7f3cb7db8e555f6f244956d9edf738f2b0119749",
+      "scope": "Provisional assistant label, not automatic verifier acceptance",
+      "seed": 912700538,
+      "target": "noop"
+    },
+    {
+      "accepted": false,
+      "action_hashes": {
+        "geneval@1": "9b2969d7651f1f9bcc5cb170fd8e8a1d369e9df5f41862c5fa58691af008641d",
+        "noop": "6ba77f87ec8f116332c35a0283d6b7ff792a4a5ed04b831e01a1f4ea7f5e3a92"
+      },
+      "case": 35,
+      "dt": -0.06732404232025146,
+      "id": "jp1-train-relation-12",
+      "index": 3,
+      "pair_id": "1dfd74899aea56e2b043140e",
+      "reason": "non_repair",
+      "replicate": 2,
+      "saved_query": "/midtier/minilab/scratch/chw4026/projects/side_project/generative/opd_related/opd_lab/runs/le20_collection_001/queries/1dfd74899aea56e2b043140e.pt",
+      "saved_query_sha256": "0285424e3d9aa6a58bd1eb10735cec0178861c2b4a57a81494944b4408876d39",
+      "scope": "Provisional assistant label, not automatic verifier acceptance",
+      "seed": 49123978,
+      "target": "noop"
+    },
+    {
+      "accepted": false,
+      "action_hashes": {
+        "geneval@1": "645adca73f02c851a679d2d884f0fef0e93d2a2dd616d6c6b51e6a68324e0f13",
+        "noop": "efa6a1baec86fa1e75e171faec9934df2a871339b9a077e7cda2b769ca09189b"
+      },
+      "case": 36,
+      "dt": -0.06732404232025146,
+      "id": "jp1-train-relation-12",
+      "index": 3,
+      "pair_id": "f4a48de8ec74274281981346",
+      "reason": "unsafe",
+      "replicate": 7,
+      "saved_query": "/midtier/minilab/scratch/chw4026/projects/side_project/generative/opd_related/opd_lab/runs/le20_collection_001/queries/f4a48de8ec74274281981346.pt",
+      "saved_query_sha256": "526b828e901676d8fdde23ec904e25d2e917facee57f15e2022dd82329eb81ec",
+      "scope": "Provisional assistant label, not automatic verifier acceptance",
+      "seed": 1436111408,
+      "target": "noop"
+    },
+    {
+      "accepted": false,
+      "action_hashes": {
+        "geneval@1": "3d7ae1b74c15c75c827ec5db0f5ae0e03052402c28db69bf5abf9cf8af31cd53",
+        "noop": "cd75bc54daa4129f160942e370865bd3365d94642f73e9b09ba0ff954f0df198"
+      },
+      "case": 37,
+      "dt": -0.06732404232025146,
+      "id": "jp1-train-color-11",
+      "index": 3,
+      "pair_id": "f8641122831e94d843f05456",
+      "reason": "non_repair",
+      "replicate": 6,
+      "saved_query": "/midtier/minilab/scratch/chw4026/projects/side_project/generative/opd_related/opd_lab/runs/le20_collection_001/queries/f8641122831e94d843f05456.pt",
+      "saved_query_sha256": "6281e3e48894efe8290945453cda86955db52f91e3c2348a4223ee05ab75d7dd",
+      "scope": "Provisional assistant label, not automatic verifier acceptance",
+      "seed": 1557080058,
+      "target": "noop"
+    },
+    {
+      "accepted": false,
+      "action_hashes": {
+        "geneval@1": "20b127b764315eb947675a5d7bbb53c7a8be8b20bb6af02774622d1e3bba07a8",
+        "noop": "b186cc44dc01b491549cf93cd55232b2f1651e843582b9dbb00643a442080a43"
+      },
+      "case": 38,
+      "dt": -0.06732404232025146,
+      "id": "jp1-train-count-12",
+      "index": 3,
+      "pair_id": "62fa419c44a2217cf017a3af",
+      "reason": "non_repair",
+      "replicate": 2,
+      "saved_query": "/midtier/minilab/scratch/chw4026/projects/side_project/generative/opd_related/opd_lab/runs/le20_collection_001/queries/62fa419c44a2217cf017a3af.pt",
+      "saved_query_sha256": "87ceceb5cd11f629ef49d9b7140730b889d7e832b1affb85a6fa2a4677321946",
+      "scope": "Provisional assistant label, not automatic verifier acceptance",
+      "seed": 1768076481,
+      "target": "noop"
+    },
+    {
+      "accepted": false,
+      "action_hashes": {
+        "geneval@1": "11ffcf9928a8e155fcdd50a59dbe5737b70ec10187316173a09345901c1e0539",
+        "noop": "ca2cac66b0a9625b1ec78fdee069e393fce18153bf984dd8f2f3bbecc092c8b2"
+      },
+      "case": 39,
+      "dt": -0.06732404232025146,
+      "id": "jp1-train-color-11",
+      "index": 3,
+      "pair_id": "df1ee07530caa98dad977f5c",
+      "reason": "non_repair",
+      "replicate": 4,
+      "saved_query": "/midtier/minilab/scratch/chw4026/projects/side_project/generative/opd_related/opd_lab/runs/le20_collection_001/queries/df1ee07530caa98dad977f5c.pt",
+      "saved_query_sha256": "8cfad19b1c3f664c816d9b16f849a30f27f98e5212347c7cea9dd181cdf11e29",
+      "scope": "Provisional assistant label, not automatic verifier acceptance",
+      "seed": 629774380,
+      "target": "noop"
+    },
+    {
+      "accepted": false,
+      "action_hashes": {
+        "geneval@1": "568843318c489e3949da16275991dd0c8294ab3811ef3584b15fca3752d2681c",
+        "noop": "6f06e04beaf2fa14be8d9b0f46f8d22b93562e75ff78f50aa318aa6540880e09"
+      },
+      "case": 40,
+      "dt": -0.06732404232025146,
+      "id": "jp1-train-relation-12",
+      "index": 3,
+      "pair_id": "d157b600d6850be390f06657",
+      "reason": "non_repair",
+      "replicate": 6,
+      "saved_query": "/midtier/minilab/scratch/chw4026/projects/side_project/generative/opd_related/opd_lab/runs/le20_collection_001/queries/d157b600d6850be390f06657.pt",
+      "saved_query_sha256": "58d604fba502476d66beb0c13bc5ddae363b16ba41a9359fcd3e363f618e708e",
+      "scope": "Provisional assistant label, not automatic verifier acceptance",
+      "seed": 2048776574,
+      "target": "noop"
+    },
+    {
+      "accepted": false,
+      "action_hashes": {
+        "geneval@1": "00047f1add51a89acc1094a08c24ff7a1c52cf246269c2796aaef0a46118628c",
+        "noop": "264c2773c03dedbadb6ef81400767af09384dd2f59f1d127686fec950083735a"
+      },
+      "case": 41,
+      "dt": -0.06732404232025146,
+      "id": "jp1-train-color-11",
+      "index": 3,
+      "pair_id": "6c6b7f41d432475a67810dbd",
+      "reason": "non_repair",
+      "replicate": 2,
+      "saved_query": "/midtier/minilab/scratch/chw4026/projects/side_project/generative/opd_related/opd_lab/runs/le20_collection_001/queries/6c6b7f41d432475a67810dbd.pt",
+      "saved_query_sha256": "01d2a128e7738595f46b09df2a5f39ef659396fbef4ccdeea833bc3d63da006e",
+      "scope": "Provisional assistant label, not automatic verifier acceptance",
+      "seed": 445683631,
+      "target": "noop"
+    },
+    {
+      "accepted": false,
+      "action_hashes": {
+        "geneval@1": "f2774b0976d3b6aff1829c5a34c7f352a4a67b835ae7ee4b72a6f51ea8110e9d",
+        "noop": "7b5ca789323a4a8428df29aed8e556ece9dba408d3ea8c3f9fc1761bb9e706b2"
+      },
+      "case": 42,
+      "dt": -0.06732404232025146,
+      "id": "jp1-train-relation-01",
+      "index": 3,
+      "pair_id": "26c074cd401d9f16ec14df49",
+      "reason": "unknown",
+      "replicate": 5,
+      "saved_query": "/midtier/minilab/scratch/chw4026/projects/side_project/generative/opd_related/opd_lab/runs/le20_collection_001/queries/26c074cd401d9f16ec14df49.pt",
+      "saved_query_sha256": "9b856ebd0ff0d522ce6e2cd567ea0df330434c94b6019c0f3a6cd4456576e08c",
+      "scope": "Provisional assistant label, not automatic verifier acceptance",
+      "seed": 1406751424,
+      "target": "noop"
+    },
+    {
+      "accepted": true,
+      "action_hashes": {
+        "geneval@1": "4e9601c96febd867b19c12eac8e3c275949d9aa48bf02c141e4e3e87e34ef4c6",
+        "noop": "cf85c8656cd43e48d54b815a03cc1a01d24ca00ff7beec384de41f6cb4cc9345"
+      },
+      "case": 43,
+      "dt": -0.06732404232025146,
+      "id": "jp1-train-count-12",
+      "index": 3,
+      "pair_id": "3656363cd2e5898ec4b3a164",
+      "reason": "safe_repair",
+      "replicate": 6,
+      "saved_query": "/midtier/minilab/scratch/chw4026/projects/side_project/generative/opd_related/opd_lab/runs/le20_collection_001/queries/3656363cd2e5898ec4b3a164.pt",
+      "saved_query_sha256": "40c420e197707eb996989c8f8169509d90e527519e8ff85a73201ab750be7aa9",
+      "scope": "Provisional assistant label, not automatic verifier acceptance",
+      "seed": 180493770,
+      "target": "geneval@1"
+    },
+    {
+      "accepted": false,
+      "action_hashes": {
+        "geneval@1": "0073d338412c33cdbf17c55b1958ae3efa368b3efecfb132347b34372cfba423",
+        "noop": "7ce838cad717539057fca325a715a084a1c208469ff9225806e9ec3b665cbee2"
+      },
+      "case": 44,
+      "dt": -0.06732404232025146,
+      "id": "jp1-train-color-13",
+      "index": 3,
+      "pair_id": "6afaf8c0e33010a9f200dd35",
+      "reason": "non_repair",
+      "replicate": 6,
+      "saved_query": "/midtier/minilab/scratch/chw4026/projects/side_project/generative/opd_related/opd_lab/runs/le20_collection_001/queries/6afaf8c0e33010a9f200dd35.pt",
+      "saved_query_sha256": "f7065c8ff2fe31c5c5b07b58e8f91c51f976abaa93e50a9990f2a612f5e3fc23",
+      "scope": "Provisional assistant label, not automatic verifier acceptance",
+      "seed": 284996556,
+      "target": "noop"
+    },
+    {
+      "accepted": false,
+      "action_hashes": {
+        "geneval@1": "2d478447213515f4e63194e326c79d120b36df6581ec578468262f2bd4b3cb3f",
+        "noop": "0c1d9e6064ee0d4876b73e230c1c09663f818a39aeba9a80cec8af794f7d2df4"
+      },
+      "case": 45,
+      "dt": -0.06732404232025146,
+      "id": "jp1-train-relation-01",
+      "index": 3,
+      "pair_id": "ff745ad6e6252a3df2f88303",
+      "reason": "non_repair",
+      "replicate": 2,
+      "saved_query": "/midtier/minilab/scratch/chw4026/projects/side_project/generative/opd_related/opd_lab/runs/le20_collection_001/queries/ff745ad6e6252a3df2f88303.pt",
+      "saved_query_sha256": "06ba25977c9b2b4f26b38977cab40aef89526f107e0a7b6cf4599f4e59e9d0e2",
+      "scope": "Provisional assistant label, not automatic verifier acceptance",
+      "seed": 1949729802,
+      "target": "noop"
+    },
+    {
+      "accepted": false,
+      "action_hashes": {
+        "geneval@1": "5aba93f979a33f78e53b5cae7bca78ebf27ecb8e9df44533fb083b4e038ec240",
+        "noop": "1ca33bcdef8e5cfc7aa0f526e8fb2fd032cc87ecc329c05689f0da11d9822090"
+      },
+      "case": 46,
+      "dt": -0.06732404232025146,
+      "id": "jp1-train-relation-12",
+      "index": 3,
+      "pair_id": "4cc1cae6bb2cd3bb43d54e50",
+      "reason": "unknown",
+      "replicate": 5,
+      "saved_query": "/midtier/minilab/scratch/chw4026/projects/side_project/generative/opd_related/opd_lab/runs/le20_collection_001/queries/4cc1cae6bb2cd3bb43d54e50.pt",
+      "saved_query_sha256": "dbebe6e2643c075d3726f98a36a1de96fa7b5ec9b9844e0a974f11642a4a2717",
+      "scope": "Provisional assistant label, not automatic verifier acceptance",
+      "seed": 1205662284,
+      "target": "noop"
+    },
+    {
+      "accepted": false,
+      "action_hashes": {
+        "geneval@1": "36838d52c41c2c4c357705db272d5c1c6e8a0c2ecd4a9bcc7698f25b59e6220b",
+        "noop": "1841b9c91dddcc740f2ac7854a3ab83e1a43d4647514ea4bdb3666b2d57f156c"
+      },
+      "case": 47,
+      "dt": -0.06732404232025146,
+      "id": "jp1-train-count-08",
+      "index": 3,
+      "pair_id": "c415e328982c5b4a97b19f78",
+      "reason": "unknown",
+      "replicate": 4,
+      "saved_query": "/midtier/minilab/scratch/chw4026/projects/side_project/generative/opd_related/opd_lab/runs/le20_collection_001/queries/c415e328982c5b4a97b19f78.pt",
+      "saved_query_sha256": "58e5f541061b306317b0d79fb15ff6c23ead64ad51d1dd2456d40867ba0e0fe6",
+      "scope": "Provisional assistant label, not automatic verifier acceptance",
+      "seed": 333807481,
+      "target": "noop"
+    },
+    {
+      "accepted": false,
+      "action_hashes": {
+        "geneval@1": "5d624427588bda1769889efc0933be33171c139a8f11aebc79bd8222c94de4ea",
+        "noop": "9c5f1333eadf1522f8bf0f3e79111f5e7f0c67be9ae59b9e2bb4c26e503d1f73"
+      },
+      "case": 48,
+      "dt": -0.06732404232025146,
+      "id": "jp1-train-color-13",
+      "index": 3,
+      "pair_id": "807c917247117e3b3e063d65",
+      "reason": "non_repair",
+      "replicate": 4,
+      "saved_query": "/midtier/minilab/scratch/chw4026/projects/side_project/generative/opd_related/opd_lab/runs/le20_collection_001/queries/807c917247117e3b3e063d65.pt",
+      "saved_query_sha256": "6e83de257a0f2b0a64deffb684debf31825be5e67a015b9b87ce9d7f1a9856c2",
+      "scope": "Provisional assistant label, not automatic verifier acceptance",
+      "seed": 1106517085,
+      "target": "noop"
+    }
+  ],
+  "training_allowed_by_coverage_gate": true
+}

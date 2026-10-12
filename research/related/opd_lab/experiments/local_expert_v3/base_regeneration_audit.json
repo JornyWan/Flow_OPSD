@@ -1,0 +1,15 @@
+{
+  "flow10": {
+    "compared_images": 32,
+    "matching_image_hashes": 32,
+    "phase2": "runs/le2_eval_flow10_job_002/evaluations/base",
+    "phase3": "runs/le3_eval_001/flow10/base"
+  },
+  "flow40": {
+    "compared_images": 32,
+    "matching_image_hashes": 32,
+    "phase2": "runs/le2_eval_flow40_job_002/evaluations/base",
+    "phase3": "runs/le3_eval_001/flow40/base"
+  },
+  "scope": "Reused validation sample identities, not independent new replicates. Post-hoc engineering check."
+}

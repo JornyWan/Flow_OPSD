@@ -1,0 +1,11 @@
+{
+  "backward_queries": 4608,
+  "evaluation_images": 185,
+  "excluded_integer_count": 275,
+  "new_evaluation_seeds": 32,
+  "new_teacher_queries": 0,
+  "plan_sha256": "dfe42a457aff52aa985495ce4e5bd179e6bf727394209714daf609545c354a35",
+  "run": "/midtier/minilab/scratch/chw4026/projects/side_project/generative/opd_related/opd_lab/runs/le18_supervision_002",
+  "seed_source_files": 165,
+  "training_query_states": 15
+}

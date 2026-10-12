@@ -1,0 +1,21 @@
+{
+  "all_image_hashes_verified": true,
+  "complete_predeclared_primary_cohort": true,
+  "four_models_per_group_verified_privately": true,
+  "groups": 12,
+  "historical_phase20_artifacts_unchanged": 1567,
+  "human_labels_created": false,
+  "images": 48,
+  "javascript_syntax_check": "passed",
+  "model_names_or_previous_labels_in_html": false,
+  "ui_cases": [
+    "blank controls",
+    "partial export",
+    "12-group navigation",
+    "unknown labels",
+    "autosave",
+    "48-answer export",
+    "revisit retains answers"
+  ],
+  "ui_smoke": "passed with mock DOM/Blob; no actual-browser rendering test"
+}

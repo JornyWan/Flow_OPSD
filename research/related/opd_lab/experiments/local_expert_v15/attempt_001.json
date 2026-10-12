@@ -1,0 +1,7 @@
+{
+  "backward_queries": 4608,
+  "evaluation_images": 152,
+  "plan_sha256": "69fe84e1724f2ea2e6a21c6bbf49373637d7a0a0a73caac189d5e0109a437cd2",
+  "protocol_sha256": "9b18ab525b0dabe83951f979f9e545057178c7d74352ba01adb88c2f281d1c2e",
+  "run": "/midtier/minilab/scratch/chw4026/projects/side_project/generative/opd_related/opd_lab/runs/le15_annotation_001"
+}

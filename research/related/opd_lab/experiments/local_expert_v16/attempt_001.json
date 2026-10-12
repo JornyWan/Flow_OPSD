@@ -1,0 +1,8 @@
+{
+  "new_images": 42,
+  "new_teacher_queries": 24,
+  "plan_sha256": "436a6a92c5503873918a6d59333443c35546b861fcfa9081336e7b4419881013",
+  "protocol_sha256": "03508f57dd7f5ca8b0e9b8e1bfd89cf36022b38ab77471f80104918c422e1d6a",
+  "run": "/midtier/minilab/scratch/chw4026/projects/side_project/generative/opd_related/opd_lab/runs/le16_transfer_001",
+  "updates": 0
+}

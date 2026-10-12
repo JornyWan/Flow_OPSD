@@ -1,0 +1,202 @@
+{
+  "review_id": "phase20-human-primary-v1",
+  "input_sha256": "95ea438198fb93a6109c99b17274e3e986362d59e41e1587d0aa1f4fde88b46b",
+  "exported_at": "2026-09-17T20:20:37.794Z",
+  "complete_groups": 1,
+  "total_groups": 12,
+  "answers": {
+    "H01-A": {
+      "text": "no",
+      "relation": "no",
+      "visibility": "yes",
+      "visible_text": "BLOM并且模糊"
+    },
+    "H01-B": {
+      "relation": "no",
+      "visibility": "yes",
+      "text": "no",
+      "visible_text": "BLOM"
+    },
+    "H01-C": {
+      "text": "no",
+      "relation": "no",
+      "visibility": "yes",
+      "visible_text": "BLOM, 模糊"
+    },
+    "H01-D": {
+      "text": "no",
+      "relation": "no",
+      "visibility": "yes",
+      "visible_text": "BLOM 模糊"
+    },
+    "H02-A": {
+      "count": "no",
+      "text": "yes"
+    },
+    "H03-A": {},
+    "H04-A": {
+      "text": "yes",
+      "count": "yes",
+      "visibility": "yes"
+    },
+    "H05-A": {
+      "text": "yes",
+      "color": "yes",
+      "visibility": "yes"
+    },
+    "H06-A": {},
+    "H07-A": {
+      "text": "yes",
+      "count": "yes",
+      "visibility": "yes"
+    },
+    "H08-A": {
+      "text": "yes",
+      "relation": "yes",
+      "visibility": "yes",
+      "notes": "苹果有点问题"
+    },
+    "H09-A": {
+      "text": "unclear",
+      "count": "yes",
+      "visibility": "yes"
+    },
+    "H10-A": {},
+    "H11-A": {},
+    "H12-A": {
+      "text": "yes",
+      "color": "yes",
+      "visibility": "yes"
+    },
+    "H02-B": {
+      "count": "unclear",
+      "text": "yes"
+    },
+    "H02-C": {
+      "text": "unclear",
+      "count": "no",
+      "visibility": "no"
+    },
+    "H02-D": {
+      "text": "unclear",
+      "count": "no",
+      "visibility": "no"
+    },
+    "H03-B": {},
+    "H03-C": {},
+    "H03-D": {},
+    "H04-B": {
+      "text": "yes",
+      "count": "yes",
+      "visibility": "yes"
+    },
+    "H04-C": {
+      "text": "yes",
+      "count": "yes",
+      "visibility": "yes"
+    },
+    "H04-D": {
+      "count": "yes",
+      "text": "yes",
+      "visibility": "yes"
+    },
+    "H05-B": {
+      "text": "yes",
+      "color": "yes",
+      "visibility": "yes"
+    },
+    "H05-C": {
+      "text": "yes",
+      "color": "yes",
+      "visibility": "yes"
+    },
+    "H05-D": {
+      "text": "yes",
+      "color": "yes",
+      "visibility": "yes"
+    },
+    "H06-B": {},
+    "H06-C": {},
+    "H06-D": {},
+    "H07-B": {
+      "text": "yes",
+      "count": "yes",
+      "visibility": "yes"
+    },
+    "H07-C": {
+      "text": "yes",
+      "count": "yes",
+      "visibility": "yes"
+    },
+    "H07-D": {
+      "text": "yes",
+      "count": "yes",
+      "visibility": "yes"
+    },
+    "H08-B": {
+      "text": "yes",
+      "relation": "yes",
+      "visibility": "yes"
+    },
+    "H08-C": {
+      "text": "yes",
+      "relation": "yes",
+      "visibility": "yes"
+    },
+    "H08-D": {
+      "text": "yes",
+      "relation": "yes",
+      "visibility": "yes"
+    },
+    "H09-B": {
+      "text": "no",
+      "count": "no",
+      "visibility": "no"
+    },
+    "H09-C": {
+      "visibility": "no",
+      "count": "yes",
+      "text": "no"
+    },
+    "H09-D": {
+      "text": "no",
+      "count": "yes",
+      "visibility": "no"
+    },
+    "H10-B": {},
+    "H10-C": {},
+    "H10-D": {},
+    "H11-B": {},
+    "H11-C": {},
+    "H11-D": {},
+    "H12-B": {
+      "text": "yes",
+      "color": "yes",
+      "visibility": "yes"
+    },
+    "H12-C": {
+      "text": "unclear",
+      "color": "yes",
+      "visibility": "yes"
+    },
+    "H12-D": {
+      "text": "no",
+      "color": "yes",
+      "visibility": "yes"
+    }
+  },
+  "preferences": {
+    "H01": "B",
+    "H02": "B, 只有B稍微能看到一点点杯子, 其他都没杯子并且字都很模糊",
+    "H03": "都一样不好, peach不清晰, 椅子不完整",
+    "H04": "A",
+    "H05": "B/C并列, 字更清晰, 花瓶都差不多",
+    "H06": "都还可以",
+    "H07": "C, 字后面没有明显background",
+    "H08": "C, 碗比A的碗更正常size",
+    "H09": "A, 其他的杯子和字都在一块",
+    "H10": "都不好",
+    "H11": "都不错",
+    "H12": "A/B并列, C,D的字不完整或者不清楚"
+  }
+}

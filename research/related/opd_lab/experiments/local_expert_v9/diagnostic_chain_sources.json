@@ -1,0 +1,127 @@
+{
+  "figure_sha256": "32888cf3f6edd8af88dd196b5b4e25d6ab0accee589558b04c3fb866e6d8812b",
+  "panels": [
+    {
+      "image_sha256": "53af80f04845cc82524e3445794fdf77338092e948e6ec7cb584cd4185bd7bc1",
+      "observation": {
+        "case": 17,
+        "clauses": {
+          "relation": true,
+          "text": true
+        },
+        "full_visibility": true,
+        "notes": "One complete apple clearly right of one complete bowl; correct word.",
+        "visible_text": "CLOUD"
+      },
+      "source": "runs/le8_trajectory_001/query_results/656023e65785baa2976a39c5/d728f8065fdbb4f4cff4.png",
+      "title": "Old prefix / student at k / old suffix"
+    },
+    {
+      "image_sha256": "9d802691ca9b348c4c25f775570905f8701c05c828d99ad088d4638c3efd1009",
+      "observation": {
+        "case": 7,
+        "clauses": {
+          "relation": true,
+          "text": true
+        },
+        "full_visibility": false,
+        "notes": "One apple right of bowl; word correct. Bowl bottom is cropped at image boundary.",
+        "visible_text": "CLOUD"
+      },
+      "source": "runs/le8_trajectory_001/query_results/22f077e0c9349284ecaa54ff/68efb30cf7ab3571198a.png",
+      "title": "Old prefix / student from k onward"
+    },
+    {
+      "image_sha256": "2dd80d4bb2cf837a00da185d6bd20bc34350e0d056f252686bc02005aa31b5cd",
+      "observation": {
+        "case": 6,
+        "clauses": {
+          "relation": false,
+          "text": true
+        },
+        "full_visibility": true,
+        "notes": "Apple is mainly below bowl, within its horizontal extent, not clearly to its right. Word is printed on bowl instead of on a sign above; encoded text is correct.",
+        "visible_text": "CLOUD"
+      },
+      "source": "runs/le8_trajectory_001/query_results/558cf7d27d1569372cf8bd01/250fede9064906f909c1.png",
+      "title": "Student through k / old suffix"
+    },
+    {
+      "image_sha256": "fef2f79986369c651d9324dcb465d7f57d4483fb0a33912eaf51e717d2db1918",
+      "observation": {
+        "case": 16,
+        "clauses": {
+          "relation": false,
+          "text": true
+        },
+        "full_visibility": true,
+        "notes": "Apple is primarily below the bowl, within its horizontal extent, not clearly to its right. Both objects complete; word is printed on bowl rather than a sign above.",
+        "visible_text": "CLOUD"
+      },
+      "source": "runs/le8_trajectory_001/query_results/5ecb365cd881933fdcaaa5b5/007d5414579bac2bb857.png",
+      "title": "Student throughout"
+    },
+    {
+      "image_sha256": "fef2f79986369c651d9324dcb465d7f57d4483fb0a33912eaf51e717d2db1918",
+      "observation": {
+        "case": 16,
+        "clauses": {
+          "relation": false,
+          "text": true
+        },
+        "full_visibility": true,
+        "notes": "Apple is primarily below the bowl, within its horizontal extent, not clearly to its right. Both objects complete; word is printed on bowl rather than a sign above.",
+        "visible_text": "CLOUD"
+      },
+      "source": "runs/le9_requery_001/query_results/34fc6b396a790f0e9bc7c0cf/fa765e0b11a1cc8180f8.png",
+      "title": "Current student baseline"
+    },
+    {
+      "image_sha256": "abf9f5c7f994aedd6cc33341ff2764e49becebb5d3fc0292cf47a9b09745267a",
+      "observation": {
+        "case": 3,
+        "clauses": {
+          "relation": false,
+          "text": true
+        },
+        "full_visibility": true,
+        "notes": "Apple primarily below bowl and within its horizontal extent, not clearly to its right. Word on bowl instead of a separate sign.",
+        "visible_text": "CLOUD"
+      },
+      "source": "runs/le9_requery_001/query_results/39d7fb64e5f171e5ef38dd00/8aac1202794ea5ef91c0.png",
+      "title": "Fresh OCR, alpha = 1"
+    },
+    {
+      "image_sha256": "c49713bfb4d22d6ec61a9bd52009cd3c0e153ecb8aa7a254df9ad8fcee01fe3f",
+      "observation": {
+        "case": 19,
+        "clauses": {
+          "relation": false,
+          "text": true
+        },
+        "full_visibility": true,
+        "notes": "Apple is below bowl, with its center only slightly to the right and horizontal spans overlapping. Both complete; correct word on sign at bowl.",
+        "visible_text": "CLOUD"
+      },
+      "source": "runs/le9_requery_001/query_results/18f8ddc9b82edc8ba7523711/718619a7db5d9c6994a6.png",
+      "title": "Fresh GenEval, alpha = 0.5"
+    },
+    {
+      "image_sha256": "978839fa6588a17d25b7d5ee736179c9195332fe8f757a02a58cc716f17e8529",
+      "observation": {
+        "case": 16,
+        "clauses": {
+          "relation": true,
+          "text": true
+        },
+        "full_visibility": true,
+        "notes": "One complete pale apple with stem clearly right of one complete white bowl. Correct word on separate sign above. Pale color and low contrast remain, but no color was requested.",
+        "visible_text": "CLOUD"
+      },
+      "source": "runs/le9_requery_001/query_results/0e0f246db5de18bde8796a32/8cf8e8456dbd875f1312.png",
+      "title": "Fresh GenEval, alpha = 1"
+    }
+  ],
+  "purpose": "post-unblinding explanatory figure, not a selection input",
+  "script_sha256": "1e038d69a83e85d5bb07a898253666538eba667cdd09c0e5b624474263c42599"
+}

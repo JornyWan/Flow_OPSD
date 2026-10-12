@@ -1,0 +1,50 @@
+{
+  "time_utc": "2026-09-12T02:36:20.671617+00:00",
+  "jobs": [
+    {
+      "job_id": "1048399",
+      "stage": "le6_generation",
+      "run": "/midtier/minilab/scratch/chw4026/projects/side_project/generative/opd_related/opd_lab/runs/le6_generation_001",
+      "state": "COMPLETED",
+      "elapsed_seconds": 60,
+      "allocated_tres": "billing=4,cpu=4,gres/gpu:l40=1,mem=96G,node=1",
+      "exit_code": "0:0",
+      "nodes": "ai-gpu12",
+      "allocated_gpu_hours": 0.016666666666666666
+    },
+    {
+      "job_id": "1048400",
+      "stage": "le6_vlm_smoke",
+      "run": "/midtier/minilab/scratch/chw4026/projects/side_project/generative/opd_related/opd_lab/runs/le6_vlm_smoke_001",
+      "state": "COMPLETED",
+      "elapsed_seconds": 76,
+      "allocated_tres": "billing=4,cpu=4,gres/gpu:l40=1,mem=96G,node=1",
+      "exit_code": "0:0",
+      "nodes": "ai-gpu12",
+      "allocated_gpu_hours": 0.021111111111111112
+    },
+    {
+      "job_id": "1048401",
+      "stage": "le6_vlm_main",
+      "run": "/midtier/minilab/scratch/chw4026/projects/side_project/generative/opd_related/opd_lab/runs/le6_vlm_main_001",
+      "state": "COMPLETED",
+      "elapsed_seconds": 291,
+      "allocated_tres": "billing=4,cpu=4,gres/gpu:l40=1,mem=96G,node=1",
+      "exit_code": "0:0",
+      "nodes": "ai-gpu12",
+      "allocated_gpu_hours": 0.08083333333333333
+    },
+    {
+      "job_id": "1048402",
+      "stage": "le6_relation_control",
+      "run": "/midtier/minilab/scratch/chw4026/projects/side_project/generative/opd_related/opd_lab/runs/le6_relation_control_001",
+      "state": "COMPLETED",
+      "elapsed_seconds": 51,
+      "allocated_tres": "billing=4,cpu=4,gres/gpu:l40=1,mem=96G,node=1",
+      "exit_code": "0:0",
+      "nodes": "ai-gpu12",
+      "allocated_gpu_hours": 0.014166666666666666
+    }
+  ],
+  "allocated_gpu_hours_including_failed_attempts_so_far": 0.13277777777777777
+}

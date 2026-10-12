@@ -1,0 +1,69 @@
+{
+  "all_statistics_recomputed": true,
+  "allocated_gpu_hours": 0.4766666666666667,
+  "checkpoint_files": 12,
+  "common_noise_pairs": 38,
+  "evaluated_images_and_reviewed_views": 152,
+  "exact_reference_images": 18,
+  "historical_artifacts": {
+    "10": {
+      "README_historical_revision": "9dcc18b",
+      "all_recorded_artifacts_unchanged": true,
+      "artifact_count": 154
+    },
+    "11": {
+      "README_historical_revision": "3923b6a",
+      "all_recorded_artifacts_unchanged": true,
+      "artifact_count": 428
+    },
+    "12": {
+      "README_historical_revision": "8e9c655",
+      "all_recorded_artifacts_unchanged": true,
+      "artifact_count": 581
+    },
+    "13": {
+      "README_historical_revision": "bb804ca",
+      "all_recorded_artifacts_unchanged": true,
+      "artifact_count": 42
+    },
+    "14": {
+      "README_historical_revision": "a23a429",
+      "all_recorded_artifacts_unchanged": true,
+      "artifact_count": 53
+    },
+    "6": {
+      "README_historical_revision": "e384a09",
+      "all_recorded_artifacts_unchanged": true,
+      "artifact_count": 153
+    },
+    "7": {
+      "README_historical_revision": "8c1e160",
+      "all_recorded_artifacts_unchanged": true,
+      "artifact_count": 716
+    },
+    "8": {
+      "README_historical_revision": "d9c392c",
+      "all_recorded_artifacts_unchanged": true,
+      "artifact_count": 99
+    },
+    "9": {
+      "README_historical_revision": "d9c392c",
+      "all_recorded_artifacts_unchanged": true,
+      "artifact_count": 97
+    }
+  },
+  "inherited_review_views": 6,
+  "input_and_checkpoint_hashes_valid": true,
+  "job_id": "1049557",
+  "limitations": "Selected train cohorts; assistant annotations; fixed saved states; flow10 only; full shared base/reward content hashes not recomputed.",
+  "new_noise_pairs": 32,
+  "optimizer_state_steps_checked": true,
+  "runtime_asset_audit": [],
+  "saved_noop_replays": 12,
+  "total_backward_queries": 4608,
+  "updates_per_arm": 128,
+  "upstream": {
+    "diffusionopd": "0c85bf0193a6da24bb1f72152b612d353a154999",
+    "diffusionopsd": "9c4c48cdfe5c3fa712d32957345d75fae9295696"
+  }
+}

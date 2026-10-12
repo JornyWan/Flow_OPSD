@@ -1,0 +1,44 @@
+{
+  "allocated_gpu_hours": 0.08194444444444444,
+  "coverage_gate": {
+    "checks": {
+      "prompts_with_two_safe": true,
+      "safe_complete_states": true,
+      "safe_states": true
+    },
+    "measured": {
+      "prompts_with_two_safe": 3,
+      "safe_complete_states": 8,
+      "safe_states": 9
+    },
+    "passed": true,
+    "safe_by_prompt": {
+      "jp1-train-color-11": 1,
+      "jp1-train-color-13": 0,
+      "jp1-train-count-08": 2,
+      "jp1-train-count-12": 1,
+      "jp1-train-relation-01": 2,
+      "jp1-train-relation-12": 3
+    },
+    "thresholds": {
+      "prompts_with_two_safe": 3,
+      "safe_complete_states": 4,
+      "safe_states": 8
+    }
+  },
+  "limits": "Provisional assistant supervision; six familiar prompts; large shared assets stat-audited.",
+  "new_images": 96,
+  "new_seeds_disjoint_from_prior_inventory": 80,
+  "new_states": 48,
+  "observations_and_target_selection_rebuilt": true,
+  "optimizer_updates": 0,
+  "phase19_archive": {
+    "README_historical_revision": "9cbbf01",
+    "all_recorded_artifacts_unchanged": true,
+    "artifact_count": 263
+  },
+  "reference_images_exact": 12,
+  "reserved_evaluation_seeds_unrendered": 32,
+  "review_slots": 96,
+  "runtime_asset_audit": []
+}

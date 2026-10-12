@@ -1,0 +1,32 @@
+\begin{abstract}
+On-policy distillation (OPD) has recently emerged as an efficient paradigm for
+multi-task alignment of diffusion models: task-specific teachers supervise a
+single student along its own rollout trajectory through a closed-form,
+low-variance per-step velocity-matching loss. In the multi-teacher setting,
+DiffusionOPD sums the per-teacher losses uniformly, which drives the student
+toward the per-step \emph{mean} of the teacher velocity fields. We revisit this
+choice through the lens of multi-objective optimization. Our first contribution
+is a rigorous theory: the multi-teacher OPD losses are values of a \emph{single}
+functional---squared velocity error in a shared isotropic output metric,
+evaluated at shared on-policy states---so they are commensurable across teachers,
+and adaptive weighting is well-posed in a way it is not for generic multi-task
+learning. We show that the uniform mean is Pareto-optimal in \emph{loss} space
+(so the naive convex-hull argument does not apply), and locate the real
+difficulty in the nonlinear loss$\to$reward map, under which the loss-sum
+minimizer can be reward-dominated. We then propose \textbf{CA-OPD}, a
+lightweight conflict-averse reweighting that replaces the uniform sum with an
+entropy-regularized (temperature-$\tau$) Tchebycheff min-max over EMA teacher
+losses; an envelope-theorem argument shows the detached-weight gradient is
+\emph{exact} for the smooth surrogate, and $\tau\to\infty$ recovers uniform OPD.
+Empirically, on a faithful reproduction of DiffusionOPD (SD3.5-Medium, three
+teachers) whose numbers match the original, CA-OPD improves \emph{convergence
+efficiency} on the lagging (aesthetics) axis---reaching the uniform baseline's
+best aesthetic score roughly 180 steps earlier---and exposes $\tau$ as a knob
+trading convergence speed against final quality. Honestly, on this near-saturated
+three-teacher benchmark CA-OPD does \emph{not} improve final quality---at
+convergence it is within single-seed noise of the uniform baseline on every reward
+axis and higher on none. We further ablate four
+principled ideas (min-max, Huber-robust, Min-SNR weighting, SDE$\to$ODE
+annealing), each with a mechanistic explanation, mapping the design space of OPD
+improvements.
+\end{abstract}

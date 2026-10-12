@@ -1,0 +1,1 @@
+Independent CPU execution fix after Phase63 git-not-found failure. Preserve original failure and completed verified training; no GPU retries, no new timer, no image reads. Validate actual frozen-input cloning without git and audit saved tensors.

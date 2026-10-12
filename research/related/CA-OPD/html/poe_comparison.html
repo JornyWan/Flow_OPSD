@@ -1,0 +1,41 @@
+<!doctype html>
+<html><head><meta charset="utf-8"><title>POE-OPD reward-hacking comparison</title>
+<style>
+ body{font-family:-apple-system,Segoe UI,Roboto,sans-serif;background:#111;color:#eee;margin:0;padding:24px}
+ h1{font-size:20px;margin:0 0 6px} .sub{color:#aaa;font-size:13px;margin:0 0 18px;max-width:1100px;line-height:1.5}
+ table{border-collapse:collapse;width:100%} th,td{padding:6px;text-align:center;vertical-align:top}
+ th{position:sticky;top:0;background:#1c1c1c;font-size:13px;border-bottom:1px solid #333}
+ .sc{font-size:12px;color:#9cf;font-weight:600} .warn{color:#f88}
+ img{width:100%;max-width:256px;border-radius:6px;display:block;margin:auto;background:#222}
+ td.p{font-size:11px;color:#bbb;max-width:120px;text-align:left}
+ .lam{font-size:11px;color:#888}
+ .key{background:#1a1a1a;border:1px solid #333;border-radius:8px;padding:12px 16px;margin:0 0 18px;max-width:1100px;font-size:13px;line-height:1.6}
+</style></head><body>
+<h1>POE-OPD &mdash; velocity-amplification reward-hacks the aesthetic proxy</h1>
+<p class="sub">Same DrawBench prompts, four students. Columns left&rarr;right increase the residual-amplification &lambda;
+(target = v<sub>base</sub> + &lambda;&middot;(v<sub>teacher</sub> &minus; v<sub>base</sub>)). &lambda;=1 is standard DiffusionOPD-style; &lambda;&gt;1 extrapolates <i>past</i> the teacher.</p>
+<div class="key">
+<b>Per-axis @ ckpt (vs DiffusionOPD@721: GenEval 0.958 / OCR 0.939 / Pick 23.98 / Aes 6.172; Aes-<b>teacher</b> 6.22):</b><br>
+&bull; regret (&lambda;=1, @721): GenEval <b>0.963</b> · OCR 0.938 · Pick 23.98 · Aes 6.157 &nbsp;&mdash;&nbsp; clean, matches baseline<br>
+&bull; POE &lambda;=1.5 (@271): GenEval 0.901 · OCR 0.935 · Pick 23.92 · <span class=sc>Aes 6.256</span><br>
+&bull; POE &lambda;=2.0 (@271): GenEval 0.766 · OCR 0.949 · Pick 23.85 · <span class=sc>Aes 6.364</span><br>
+&bull; POE &lambda;=3.0 (@271): <span class=warn>GenEval 0.501</span> · OCR 0.937 · Pick 23.61 · <span class=sc>Aes 6.406</span><br>
+<span class=warn>&#9888; Aesthetic climbs monotonically <i>above the teacher's own 6.22</i> while GenEval collapses and text corrupts &mdash;
+the signature of exploiting the LAION aesthetic predictor (over-saturation/glow), not genuine quality.</span>
+</div>
+<table id="t"><thead><tr>
+<th>prompt&nbsp;#</th><th>regret &lambda;=1<div class=lam>clean / matches</div></th>
+<th>POE &lambda;=1.5</th><th>POE &lambda;=2.0</th><th>POE &lambda;=3.0<div class=lam>most hacked</div></th>
+</tr></thead><tbody></tbody></table>
+<script>
+ const base="https://dit-scale-up.s3.us-west-2.amazonaws.com/cwan/opd_reproduction/eval/";
+ const runs=["regret_721","poe15_271","poe20_271","poe30_271"];
+ const tb=document.querySelector("#t tbody");
+ for(let i=0;i<20;i++){
+   const idx=String(i).padStart(5,"0");
+   let row="<tr><td class=p>#"+i+"</td>";
+   for(const r of runs){ row+="<td><img loading=lazy src='"+base+r+"_drawbench/images/"+idx+".jpg' onerror=\"this.style.opacity=.15\"></td>"; }
+   tb.insertAdjacentHTML("beforeend", row+"</tr>");
+ }
+</script>
+</body></html>

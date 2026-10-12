@@ -1,0 +1,58 @@
+\section{Preliminaries}
+\label{sec:prelim}
+
+We follow the notation of \opsd~\citep{opsd2026}. Let $v_\theta$ be the trainable
+rectified-flow velocity field and $v_{\mathrm{old}}$ the frozen behavior policy of the
+current outer iteration. For a prompt $\vc$, a noisy latent $z_\sigma$ and a noise level
+$\sigma$, write the query tuple $s=(\vc,z_\sigma,\sigma)$. Under the rectified-flow path
+$z_\sigma=(1-\sigma)y+\sigma\epsilon$ the velocity target is $v=\epsilon-y$, so the
+\emph{clean-output prediction} at that query is
+\begin{equation}
+y_\theta(s)=z_\sigma-\sigma\,v_\theta(s),
+\label{eq:clean}
+\end{equation}
+which is decoder-evaluable through the local reward
+$\widetilde R(y,\vc)=R(D(y),\vc)$.
+
+\paragraph{Query state and anchor.} The behavior policy rolls out a trajectory with the
+sampler's schedule $\{\sigma_j\}_{j=0}^{N}$. Given a \emph{requested} query level
+$\sigma^\star$, the implementation selects the schedule index by nearest value,
+\begin{equation}
+q=\argmin_j\,|\sigma_j-\sigma^\star|,
+\qquad
+s_q=(\vc,z_q,\sigma_q),
+\qquad
+y_0=z_q-\sigma_q\,v_{\mathrm{old}}(s_q).
+\label{eq:query}
+\end{equation}
+Both $z_q$ and $y_0$ are detached. \opsd uses $\sigma^\star=0.278$; on the $10$-step
+schedule of SD3.5-Medium this selects $\sigma_q=0.27805$, the second-to-last
+non-degenerate state.
+
+\paragraph{Target construction.} Starting from $y_0$, normalized reward-gradient steps
+with step size $h=\eta\rho\|y_0\|_2/M$ produce positive and negative targets, each
+projected back onto the trust region $\|y_\pm-y_0\|_2\le\rho\|y_0\|_2$, and finally
+detached:
+\begin{equation}
+\bar y_\pm=\sg\big(y_\pm^{(M)}\big),\qquad
+\|\bar y_\pm-y_0\|_2\le\rho\|y_0\|_2 .
+\label{eq:targets}
+\end{equation}
+This is the only place where the reward and the decoder are differentiated.
+
+\paragraph{Finite fitting.} The trainable field is evaluated \emph{at the same query},
+$y_\theta=z_q-\sigma_q v_\theta(s_q)$, and split into two implicit branches
+$y_\theta^{+}=\beta y_\theta+(1-\beta)y_0$ and
+$y_\theta^{-}=(1+\beta)y_0-\beta y_\theta$. With detached adaptive normalizers
+$\gamma_\pm$ and a group-normalized weight $\omega\in[0,1]$,
+\begin{equation}
+\mathcal L_{\mathrm{OPSD}}(s_q;\bar y_+,\bar y_-)
+=\omega\,\frac{\operatorname{mean}\big[(y_\theta^{+}-\bar y_+)^2\big]}{\gamma_+}
++(1-\omega)\,\frac{\operatorname{mean}\big[(y_\theta^{-}-\bar y_-)^2\big]}{\gamma_-}.
+\label{eq:opsdloss}
+\end{equation}
+
+\paragraph{The unexamined choice.} Equations~\eqref{eq:query}--\eqref{eq:opsdloss} fix
+\emph{one} state: the target is built at $s_q$ and the loss is applied at $s_q$. Nothing
+in the derivation requires these to be the same state, nor that there be only one. The
+rest of this paper studies what happens when that assumption is relaxed.

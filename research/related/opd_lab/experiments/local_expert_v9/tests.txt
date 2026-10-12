@@ -1,0 +1,14 @@
+Recorded results from commands executed during phase9 implementation/review.
+Interpreter: ../../conda_envs/envs/diffusionopd/bin/python; PYTHONPATH=python.
+
+python -m pytest tests/test_state_requery.py -q
+1 passed in 2.03s (initial replay/current-suffix test, before visual-gate test addition)
+python -m pytest -q
+64 passed in 14.82s (final suite, including both new phase9 tests)
+
+Behavioral coverage: a no-op action reproduces the current baseline; interventions
+preserve its prefix and continue with the current student at corrected states;
+accepted encoded repairs cannot trade away a protected clause or visibility,
+and unknown does not count as success. GPU replay/checkpoint/branch checks are
+separate in verification.json. This file records observed command summaries,
+not a reconstructed raw pytest log.

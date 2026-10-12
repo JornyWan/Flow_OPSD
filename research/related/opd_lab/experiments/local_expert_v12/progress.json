@@ -1,0 +1,16 @@
+{
+  "allocated_gpu_hours_including_failed_attempts": 0.11888888888888889,
+  "candidate_images": 192,
+  "completed_queries": 64,
+  "failed_attempts": 1,
+  "job_id": "1049199",
+  "learning_gate_passed": false,
+  "next": "Develop separate verifier version on audited images, then freeze new-seed confirmation before fitting.",
+  "observations_frozen": true,
+  "optimizer_updates": 0,
+  "pending_phase12_jobs": [],
+  "reviewed_views": 192,
+  "stage": "complete",
+  "tests_passed": 73,
+  "updated_at_utc": "2026-09-14T02:04:58.438571+00:00"
+}

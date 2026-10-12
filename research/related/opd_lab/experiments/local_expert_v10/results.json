@@ -1,0 +1,4188 @@
+{
+  "counts": {
+    "dense32_full": {
+      "apple_repaired": false,
+      "controls_known_harm": 0,
+      "controls_preserved": 4,
+      "controls_unknown": 0,
+      "fully_correct": 3
+    },
+    "dense32_local": {
+      "apple_repaired": true,
+      "controls_known_harm": 0,
+      "controls_preserved": 4,
+      "controls_unknown": 0,
+      "fully_correct": 4
+    },
+    "sparse320_full": {
+      "apple_repaired": true,
+      "controls_known_harm": 0,
+      "controls_preserved": 4,
+      "controls_unknown": 0,
+      "fully_correct": 4
+    },
+    "sparse320_local": {
+      "apple_repaired": false,
+      "controls_known_harm": 0,
+      "controls_preserved": 4,
+      "controls_unknown": 0,
+      "fully_correct": 3
+    },
+    "sparse32_full": {
+      "apple_repaired": true,
+      "controls_known_harm": 0,
+      "controls_preserved": 4,
+      "controls_unknown": 0,
+      "fully_correct": 3
+    },
+    "sparse32_local": {
+      "apple_repaired": false,
+      "controls_known_harm": 0,
+      "controls_preserved": 4,
+      "controls_unknown": 0,
+      "fully_correct": 3
+    }
+  },
+  "fitting": [
+    {
+      "all50_loss_over_initial": 1.0,
+      "all50_target_loss": 1.0490320855751633e-05,
+      "apple_query": {
+        "arm": "dense",
+        "gamma": 0.0,
+        "id": "jp1-train-relation-13",
+        "index": 3,
+        "optimizer_step": 0,
+        "origin": "external_expert",
+        "orthogonal_mse_over_initial": 0.0,
+        "preservation_drift_mse": 0.0,
+        "relative_target_mse": 1.0,
+        "student_sha256": "f9c5ad99773510c64e08f9656234d248431f8a7ed86d6ce6a0b011a711f244e2",
+        "target_loss": 0.0005245160427875817,
+        "target_mse": 0.23144532267574763
+      },
+      "arm": "dense",
+      "optimizer_step": 0,
+      "preservation_mean_mse": 0.0
+    },
+    {
+      "all50_loss_over_initial": 0.5141098561991234,
+      "all50_target_loss": 5.393177346633138e-06,
+      "apple_query": {
+        "arm": "dense",
+        "gamma": 0.650350379839846,
+        "id": "jp1-train-relation-13",
+        "index": 3,
+        "optimizer_step": 32,
+        "origin": "external_expert",
+        "orthogonal_mse_over_initial": 0.1751804608303381,
+        "preservation_drift_mse": 0.13843579743511097,
+        "relative_target_mse": 0.2974353177084781,
+        "student_sha256": "2aaa2d49b5b1ba6085e24c58569ed035c8c76f37bb94bd0b909bd9cd1e12da10",
+        "target_loss": 0.00015600959886796772,
+        "target_mse": 0.06884001308220222
+      },
+      "arm": "dense",
+      "optimizer_step": 32,
+      "preservation_mean_mse": 0.0008293859578547691
+    },
+    {
+      "all50_loss_over_initial": 1.0,
+      "all50_target_loss": 1.0490320855751633e-05,
+      "apple_query": {
+        "arm": "sparse",
+        "gamma": 0.0,
+        "id": "jp1-train-relation-13",
+        "index": 3,
+        "optimizer_step": 0,
+        "origin": "external_expert",
+        "orthogonal_mse_over_initial": 0.0,
+        "preservation_drift_mse": 0.0,
+        "relative_target_mse": 1.0,
+        "student_sha256": "f9c5ad99773510c64e08f9656234d248431f8a7ed86d6ce6a0b011a711f244e2",
+        "target_loss": 0.0005245160427875817,
+        "target_mse": 0.23144532267574763
+      },
+      "arm": "sparse",
+      "optimizer_step": 0,
+      "preservation_mean_mse": 0.0
+    },
+    {
+      "all50_loss_over_initial": 2.3437086802437253,
+      "all50_target_loss": 2.458625604816689e-05,
+      "apple_query": {
+        "arm": "sparse",
+        "gamma": 0.8238521228792068,
+        "id": "jp1-train-relation-13",
+        "index": 3,
+        "optimizer_step": 32,
+        "origin": "external_expert",
+        "orthogonal_mse_over_initial": 0.08993740108838852,
+        "preservation_drift_mse": 0.17790501171460993,
+        "relative_target_mse": 0.12096547570255055,
+        "student_sha256": "cab7ea2538dbd358903461daf08d22e8a133bc203436bf8b850533ddce8bba5b",
+        "target_loss": 6.344832945615053e-05,
+        "target_mse": 0.02799689355660212
+      },
+      "arm": "sparse",
+      "optimizer_step": 32,
+      "preservation_mean_mse": 0.009284781812717555
+    },
+    {
+      "all50_loss_over_initial": 3.463648186720142,
+      "all50_target_loss": 3.6334780810136634e-05,
+      "apple_query": {
+        "arm": "sparse",
+        "gamma": 0.9906792455336875,
+        "id": "jp1-train-relation-13",
+        "index": 3,
+        "optimizer_step": 320,
+        "origin": "external_expert",
+        "orthogonal_mse_over_initial": 0.010345405189990673,
+        "preservation_drift_mse": 0.2295453354192842,
+        "relative_target_mse": 0.010432281653811958,
+        "student_sha256": "e8dc6beb04a6facfae7f8c0152f5aa4cd9708b44b1fe8cdfa2e1de059613f658",
+        "target_loss": 5.471898930409225e-06,
+        "target_mse": 0.0024145027936107906
+      },
+      "arm": "sparse",
+      "optimizer_step": 320,
+      "preservation_mean_mse": 0.012609050213805309
+    }
+  ],
+  "gpu_result": {
+    "arms": {
+      "dense": {
+        "counts": {
+          "backward_queries": 1600,
+          "decode_images": 10,
+          "forward_behavior": 39,
+          "forward_examples": 3578,
+          "forward_student": 1750,
+          "geneval_clause_images": 10,
+          "ocr_images": 10,
+          "verifier_images": 10
+        },
+        "initial_student_sha256": "f9c5ad99773510c64e08f9656234d248431f8a7ed86d6ce6a0b011a711f244e2",
+        "optimizer_policy": "reset AdamW and scaler; weight warm start, not full resume",
+        "optimizer_updates": 32,
+        "wall_seconds": 521.5188617035747
+      },
+      "sparse": {
+        "counts": {
+          "backward_queries": 1600,
+          "decode_images": 20,
+          "forward_behavior": 78,
+          "forward_examples": 3856,
+          "forward_student": 1850,
+          "geneval_clause_images": 20,
+          "ocr_images": 20,
+          "verifier_images": 20
+        },
+        "initial_student_sha256": "f9c5ad99773510c64e08f9656234d248431f8a7ed86d6ce6a0b011a711f244e2",
+        "optimizer_policy": "reset AdamW and scaler; weight warm start, not full resume",
+        "optimizer_updates": 320,
+        "wall_seconds": 567.8522485326976
+      }
+    },
+    "checkpoint_hashes": {
+      "checkpoints/dense/metadata.json": "f773346e3ae8d3da76e79076ef9c7b418df86d52bf947e3a21a71dc2ec2e1ff8",
+      "checkpoints/dense/raw_lora/README.md": "968e91709a91418b43f8353e13ea055f747603a9f5ad48082e20b0d478b58628",
+      "checkpoints/dense/raw_lora/adapter_config.json": "3e6f5e9facabadefee35a84e2efbdde9d8564afa356795aff47a30402e2afa1a",
+      "checkpoints/dense/raw_lora/adapter_model.safetensors": "b245defbbd987f418adf288e5e0676108ad184557db2607b6b749cf604d483f5",
+      "checkpoints/dense/step000.pt": "d1133ae43ff661d089052ac6191c86984823cc63ffa2f665453f63a3022abf70",
+      "checkpoints/dense/step032.pt": "75cb1ca72a6ed14312ca40f6d80304c111637ae0a6be5b0e9f4bf66c38b424df",
+      "checkpoints/dense/training.pt": "115615212991ec371d974a918a3843530c521335a74821cd75edcbe94991a646",
+      "checkpoints/dense/trajectory-step032-case09.pt": "45ca2785b3cce31a441702c914587d541cd041da0c77ba01e5e555c5f6e5e216",
+      "checkpoints/dense/trajectory-step032-case11.pt": "a01d234dc8c2bb46e0a4d14e4fd0e8386d28fb9a6f7d2123db9feb4dad01bc24",
+      "checkpoints/dense/trajectory-step032-case12.pt": "131fa3b80b30f426db605bf1220fe28266df936fa66e9dab472ff54a14b6eef1",
+      "checkpoints/dense/trajectory-step032-case17.pt": "62bf8e5b1660a77b36c57f76982e87c6f6ac933719b2be140d336ab57f94c856",
+      "checkpoints/dense/trajectory-step032-case19.pt": "60d1fd23e87a1108fb0ec77d2085a0db34c962d0ce9ac29c2b8afa970223576e",
+      "checkpoints/sparse/metadata.json": "575d2eed46037dbcd5935d9cbc6ac0368ce04a7d76514e1f590148ee092a6d3b",
+      "checkpoints/sparse/raw_lora/README.md": "968e91709a91418b43f8353e13ea055f747603a9f5ad48082e20b0d478b58628",
+      "checkpoints/sparse/raw_lora/adapter_config.json": "3e6f5e9facabadefee35a84e2efbdde9d8564afa356795aff47a30402e2afa1a",
+      "checkpoints/sparse/raw_lora/adapter_model.safetensors": "8958cce49043f4f2ac697487e4786cd7e3d31ef8e33c635335ac7ea9c53fb6a8",
+      "checkpoints/sparse/step000.pt": "d1133ae43ff661d089052ac6191c86984823cc63ffa2f665453f63a3022abf70",
+      "checkpoints/sparse/step032.pt": "f08114d762f88fa8cdc3104f03060573d3c3bc7f57276deac363fdefdfd1d322",
+      "checkpoints/sparse/step320.pt": "840124c0ce2fa396e3b89a63f17da8fe2cc40c689b60af2c294fe807fc6608a8",
+      "checkpoints/sparse/training.pt": "124bb383b151e22674688f3fdfdb23481591a974f857dce36158255648b04527",
+      "checkpoints/sparse/trajectory-step032-case09.pt": "b420acfd815d75bd2fb1a57c4279da48e3b1e436b470b996c26f5d660696e5dc",
+      "checkpoints/sparse/trajectory-step032-case11.pt": "a5545a3d660d49ace42c1741ef41c49d1a56910410f5dba524d1a06cbeef5e4c",
+      "checkpoints/sparse/trajectory-step032-case12.pt": "3d1cef31b47f11244ee93651e346e0d0fb1b55abebf9dd8c95a8384c134d3d2d",
+      "checkpoints/sparse/trajectory-step032-case17.pt": "5fb89c359b63d1bfb964d6da04cc4e8b4552bc76e38a02163247f6c5901551a5",
+      "checkpoints/sparse/trajectory-step032-case19.pt": "5ed8cf1e99b23beb5feef93b42af68ee53f308d9a49d5196af2547931e9d18cc",
+      "checkpoints/sparse/trajectory-step320-case09.pt": "82e0904306f3953dec28dd13d263db2f43e71c67f297d89b018ca29ec86b1a49",
+      "checkpoints/sparse/trajectory-step320-case11.pt": "90b1ebfd82c673a9c64a0e8f57286647cc2e676120f5bc1c9317d74229566b55",
+      "checkpoints/sparse/trajectory-step320-case12.pt": "001f5dbf7ad7614f96d7ca11302a9386ae7addcb11bf02d6eb9ab712b8249aff",
+      "checkpoints/sparse/trajectory-step320-case17.pt": "84672c42348dadad2c086a5063216cc147bf5db75449e4e5b9cdd6e30e0caa1f",
+      "checkpoints/sparse/trajectory-step320-case19.pt": "67e245cd63bff2a3bebdbe4b7bdf971c6b15892e0c2c7b8605ac6dd9f18d24f7"
+    },
+    "counts": {
+      "backward_queries": 3200,
+      "decode_images": 36,
+      "forward_behavior": 223,
+      "forward_examples": 7646,
+      "forward_student": 3600,
+      "geneval_clause_images": 36,
+      "ocr_images": 36,
+      "verifier_images": 36
+    },
+    "elapsed_seconds": 1132.7977128420025,
+    "initial_student_sha256": "f9c5ad99773510c64e08f9656234d248431f8a7ed86d6ce6a0b011a711f244e2",
+    "new_teacher_queries": 0,
+    "optimizer_policy": "common reset, weight warm start",
+    "output_hashes": {
+      "data.jsonl": "5b78af606cf64f3f13bcb70a27f098468caf3d59cfecebd833fcb93ced0bfe2f",
+      "endpoints.jsonl": "cd660c17d0072db813fa5e8d20f65584065ce3fd3c328c3574376f1d823828a3",
+      "metrics.jsonl": "7d0cf6df29696d34ba57d70969d493e3ba6c8f9c636f774049b05f9156335092",
+      "references.jsonl": "938deb74a8460be170288d93d14f663202e1e23b6ec671388e23c963a62da920",
+      "updates.jsonl": "786a442533ce97ca9711a32e92e10430cc02e7d7810574e59c9e32fdf97c73d6"
+    },
+    "source_expert_actions": 1,
+    "status": "complete",
+    "supervision_sha256": "76b7916d1211b8649865d57f9c4d0dedd9a65a918e1c09b59f16c7d362375dd8",
+    "worker_gpu_hours": 0.3146660313450007
+  },
+  "joined_review": [
+    {
+      "comparison": {
+        "accepted_encoded_repair": false,
+        "harmed_clauses": [],
+        "has_unknown": false,
+        "known_harm": false,
+        "repaired_clauses": [],
+        "safe_visibility_gain": false,
+        "visibility_harm": false
+      },
+      "observation": {
+        "case": 1,
+        "clauses": {
+          "count": true,
+          "text": true
+        },
+        "full_visibility": true,
+        "notes": "One complete bowl. BLOOM identifiable despite rough hatched contours on the second O; no separate extra character.",
+        "visible_text": "BLOOM"
+      },
+      "row": {
+        "arm": "dense",
+        "details": {
+          "clauses": [
+            {
+              "exact": true,
+              "expected_text": "BLOOM",
+              "id": "text",
+              "normalized_recognized": "bloom",
+              "progress": 1.0
+            },
+            {
+              "id": "count",
+              "metadata": {
+                "include": [
+                  {
+                    "class": "bowl",
+                    "count": 1
+                  }
+                ],
+                "prompt": "A sharp, realistic studio photograph of exactly one bowl, all fully visible and separated. Above the objects, a large white sign displays only the word \"BLOOM\" in bold black letters. No other letters or words are visible.",
+                "tag": "counting"
+              },
+              "strict": true,
+              "upstream_progress": 1.0
+            }
+          ],
+          "ocr": {
+            "lines": [
+              {
+                "box": [
+                  [
+                    196.0,
+                    146.0
+                  ],
+                  [
+                    307.0,
+                    146.0
+                  ],
+                  [
+                    307.0,
+                    177.0
+                  ],
+                  [
+                    196.0,
+                    177.0
+                  ]
+                ],
+                "confidence": 0.9423412084579468,
+                "text": "BLOOM"
+              }
+            ],
+            "recognized_text": "BLOOM"
+          }
+        },
+        "error": null,
+        "id": "jp1-train-count-12",
+        "image": "query_results/411ef683a5f4abcbd5ab606d/9fcfa70879677de3c447.png",
+        "image_sha256": "2b7efc7bd7f03f3d0d85520ae63a92d5cb482f0a9c8ed1e812ba05525091f9ca",
+        "joint_success": true,
+        "mode": "full",
+        "optimizer_step": 32,
+        "progress": [
+          1.0,
+          1.0
+        ],
+        "quality": null,
+        "query_index": 2,
+        "query_state_mse_vs_phase9": 2.5324093257950153e-06,
+        "satisfied": [
+          true,
+          true
+        ],
+        "seed": 2074542574,
+        "state_mse_vs_phase9_by_index": [
+          0.0,
+          5.542069629882462e-07,
+          2.5324093257950153e-06,
+          9.803909051697701e-06,
+          3.212404408259317e-05,
+          5.64194233447779e-05,
+          0.00013137326459400356,
+          0.00040102191269397736,
+          0.001237636897712946,
+          0.002605543937534094,
+          0.0026428960263729095
+        ],
+        "state_mse_vs_verified_branch_by_index": [
+          0.0,
+          5.542069629882462e-07,
+          2.5324093257950153e-06,
+          9.803909051697701e-06,
+          3.212404408259317e-05,
+          5.64194233447779e-05,
+          0.00013137326459400356,
+          0.00040102191269397736,
+          0.001237636897712946,
+          0.002605543937534094,
+          0.0026428960263729095
+        ],
+        "student_sha256": "2aaa2d49b5b1ba6085e24c58569ed035c8c76f37bb94bd0b909bd9cd1e12da10",
+        "utility": 1.0,
+        "valid": true
+      },
+      "source": "phase10_blinded_unique_image"
+    },
+    {
+      "comparison": {
+        "accepted_encoded_repair": false,
+        "harmed_clauses": [],
+        "has_unknown": false,
+        "known_harm": false,
+        "repaired_clauses": [],
+        "safe_visibility_gain": true,
+        "visibility_harm": false
+      },
+      "observation": {
+        "case": 2,
+        "clauses": {
+          "relation": true,
+          "text": true
+        },
+        "full_visibility": true,
+        "notes": "One cup clearly right of one bottle, both complete. BLOOM is blurred but identifiable; no extra lettering.",
+        "visible_text": "BLOOM"
+      },
+      "row": {
+        "arm": "sparse",
+        "details": {
+          "clauses": [
+            {
+              "exact": true,
+              "expected_text": "BLOOM",
+              "id": "text",
+              "normalized_recognized": "bloom",
+              "progress": 1.0
+            },
+            {
+              "id": "relation",
+              "metadata": {
+                "include": [
+                  {
+                    "class": "bottle",
+                    "count": 1
+                  },
+                  {
+                    "class": "cup",
+                    "count": 1,
+                    "position": [
+                      "right of",
+                      0
+                    ]
+                  }
+                ],
+                "prompt": "A sharp, realistic studio photograph of exactly one cup clearly to the right of exactly one bottle, both fully visible. Above the objects, a large white sign displays only the word \"BLOOM\" in bold black letters. No other letters or words are visible.",
+                "tag": "position"
+              },
+              "strict": true,
+              "upstream_progress": 1.0
+            }
+          ],
+          "ocr": {
+            "lines": [
+              {
+                "box": [
+                  [
+                    193.0,
+                    171.0
+                  ],
+                  [
+                    336.0,
+                    171.0
+                  ],
+                  [
+                    336.0,
+                    210.0
+                  ],
+                  [
+                    193.0,
+                    210.0
+                  ]
+                ],
+                "confidence": 0.9981700778007507,
+                "text": "BLOOM"
+              }
+            ],
+            "recognized_text": "BLOOM"
+          }
+        },
+        "error": null,
+        "id": "jp1-train-relation-12",
+        "image": "query_results/633c289f77221c30ece48a7c/00cc2c016adf8fdf03e2.png",
+        "image_sha256": "972ddda918f395f80de604df016783d615e5e5f641a5219d86fc1e53141a16c8",
+        "joint_success": true,
+        "mode": "local",
+        "optimizer_step": 32,
+        "progress": [
+          1.0,
+          1.0
+        ],
+        "quality": null,
+        "query_index": 0,
+        "query_state_mse_vs_phase9": 0.0,
+        "satisfied": [
+          true,
+          true
+        ],
+        "seed": 1903463636,
+        "state_mse_vs_phase9_by_index": [
+          0.0,
+          7.210455237327551e-07,
+          1.9309956769575365e-05,
+          8.172848174581304e-05,
+          0.000200102775124833,
+          0.0004965205444023013,
+          0.0013783021131530404,
+          0.0034389179199934006,
+          0.0073289950378239155,
+          0.01598447747528553,
+          0.01627105288207531
+        ],
+        "state_mse_vs_verified_branch_by_index": [
+          0.0,
+          7.210455237327551e-07,
+          1.9309956769575365e-05,
+          8.172848174581304e-05,
+          0.000200102775124833,
+          0.0004965205444023013,
+          0.0013783021131530404,
+          0.0034389179199934006,
+          0.0073289950378239155,
+          0.01598447747528553,
+          0.01627105288207531
+        ],
+        "student_sha256": "cab7ea2538dbd358903461daf08d22e8a133bc203436bf8b850533ddce8bba5b",
+        "utility": 1.0,
+        "valid": true
+      },
+      "source": "phase10_blinded_unique_image"
+    },
+    {
+      "comparison": {
+        "accepted_encoded_repair": true,
+        "harmed_clauses": [],
+        "has_unknown": false,
+        "known_harm": false,
+        "repaired_clauses": [
+          "relation"
+        ],
+        "safe_visibility_gain": false,
+        "visibility_harm": false
+      },
+      "observation": {
+        "case": 3,
+        "clauses": {
+          "relation": true,
+          "text": true
+        },
+        "full_visibility": true,
+        "notes": "One small complete bowl at lower left and one apple clearly at right; low contrast, correct sign above.",
+        "visible_text": "CLOUD"
+      },
+      "row": {
+        "arm": "dense",
+        "details": {
+          "clauses": [
+            {
+              "exact": true,
+              "expected_text": "CLOUD",
+              "id": "text",
+              "normalized_recognized": "cloud",
+              "progress": 1.0
+            },
+            {
+              "id": "relation",
+              "metadata": {
+                "include": [
+                  {
+                    "class": "bowl",
+                    "count": 1
+                  },
+                  {
+                    "class": "apple",
+                    "count": 1,
+                    "position": [
+                      "right of",
+                      0
+                    ]
+                  }
+                ],
+                "prompt": "A sharp, realistic studio photograph of exactly one apple clearly to the right of exactly one bowl, both fully visible. Above the objects, a large white sign displays only the word \"CLOUD\" in bold black letters. No other letters or words are visible.",
+                "tag": "position"
+              },
+              "strict": true,
+              "upstream_progress": 1.0
+            }
+          ],
+          "ocr": {
+            "lines": [
+              {
+                "box": [
+                  [
+                    177.0,
+                    113.0
+                  ],
+                  [
+                    334.0,
+                    113.0
+                  ],
+                  [
+                    334.0,
+                    141.0
+                  ],
+                  [
+                    177.0,
+                    141.0
+                  ]
+                ],
+                "confidence": 0.9949060678482056,
+                "text": "CLOUD"
+              }
+            ],
+            "recognized_text": "CLOUD"
+          }
+        },
+        "error": null,
+        "id": "jp1-train-relation-13",
+        "image": "query_results/cc108cbe62e6358230b80342/ac1bc9b492fde3ce94c0.png",
+        "image_sha256": "06efe146e75fd285ce9efb974f68ff35f17b49404e31f5a0cbe349cfe4813cd6",
+        "joint_success": true,
+        "mode": "local",
+        "optimizer_step": 32,
+        "progress": [
+          1.0,
+          1.0
+        ],
+        "quality": null,
+        "query_index": 3,
+        "query_state_mse_vs_phase9": 2.7825117285829037e-05,
+        "satisfied": [
+          true,
+          true
+        ],
+        "seed": 1500595046,
+        "state_mse_vs_phase9_by_index": [
+          0.0,
+          9.27190797028743e-07,
+          7.285239007615019e-06,
+          2.7825117285829037e-05,
+          0.0008108565816655755,
+          0.0015904342290014029,
+          0.0038652587682008743,
+          0.008246291428804398,
+          0.016104988753795624,
+          0.03330492973327637,
+          0.03396185487508774
+        ],
+        "state_mse_vs_verified_branch_by_index": [
+          0.0,
+          9.27190797028743e-07,
+          7.285239007615019e-06,
+          2.7825117285829037e-05,
+          0.00029979116516187787,
+          0.0011035469360649586,
+          0.003533211536705494,
+          0.008475422859191895,
+          0.017796004191040993,
+          0.03814856708049774,
+          0.038875654339790344
+        ],
+        "student_sha256": "2aaa2d49b5b1ba6085e24c58569ed035c8c76f37bb94bd0b909bd9cd1e12da10",
+        "utility": 1.0,
+        "valid": true
+      },
+      "source": "phase10_blinded_unique_image"
+    },
+    {
+      "comparison": {
+        "accepted_encoded_repair": false,
+        "harmed_clauses": [],
+        "has_unknown": false,
+        "known_harm": false,
+        "repaired_clauses": [],
+        "safe_visibility_gain": true,
+        "visibility_harm": false
+      },
+      "observation": {
+        "case": 4,
+        "clauses": {
+          "relation": true,
+          "text": true
+        },
+        "full_visibility": true,
+        "notes": "One cup clearly right of one bottle, both complete. BLOOM is blurred but identifiable; no extra lettering.",
+        "visible_text": "BLOOM"
+      },
+      "row": {
+        "arm": "sparse",
+        "details": {
+          "clauses": [
+            {
+              "exact": true,
+              "expected_text": "BLOOM",
+              "id": "text",
+              "normalized_recognized": "bloom",
+              "progress": 1.0
+            },
+            {
+              "id": "relation",
+              "metadata": {
+                "include": [
+                  {
+                    "class": "bottle",
+                    "count": 1
+                  },
+                  {
+                    "class": "cup",
+                    "count": 1,
+                    "position": [
+                      "right of",
+                      0
+                    ]
+                  }
+                ],
+                "prompt": "A sharp, realistic studio photograph of exactly one cup clearly to the right of exactly one bottle, both fully visible. Above the objects, a large white sign displays only the word \"BLOOM\" in bold black letters. No other letters or words are visible.",
+                "tag": "position"
+              },
+              "strict": true,
+              "upstream_progress": 1.0
+            }
+          ],
+          "ocr": {
+            "lines": [
+              {
+                "box": [
+                  [
+                    191.0,
+                    171.0
+                  ],
+                  [
+                    336.0,
+                    169.0
+                  ],
+                  [
+                    337.0,
+                    216.0
+                  ],
+                  [
+                    192.0,
+                    218.0
+                  ]
+                ],
+                "confidence": 0.997972309589386,
+                "text": "BLOOM"
+              }
+            ],
+            "recognized_text": "BLOOM"
+          }
+        },
+        "error": null,
+        "id": "jp1-train-relation-12",
+        "image": "query_results/9abcd881428237ede8927b82/b27ae2afecac074f7561.png",
+        "image_sha256": "df6e83c8dcb2a9a5011bcc7e2681ccf662375b0d136f4d7489e17131345c97c6",
+        "joint_success": true,
+        "mode": "local",
+        "optimizer_step": 320,
+        "progress": [
+          1.0,
+          1.0
+        ],
+        "quality": null,
+        "query_index": 0,
+        "query_state_mse_vs_phase9": 0.0,
+        "satisfied": [
+          true,
+          true
+        ],
+        "seed": 1903463636,
+        "state_mse_vs_phase9_by_index": [
+          0.0,
+          3.098300282999844e-07,
+          1.305227488046512e-05,
+          4.251012796885334e-05,
+          0.0001313471293542534,
+          0.0003227407578378916,
+          0.0009404466254636645,
+          0.002075286116451025,
+          0.004283695947378874,
+          0.0097513347864151,
+          0.009916061535477638
+        ],
+        "state_mse_vs_verified_branch_by_index": [
+          0.0,
+          3.098300282999844e-07,
+          1.305227488046512e-05,
+          4.251012796885334e-05,
+          0.0001313471293542534,
+          0.0003227407578378916,
+          0.0009404466254636645,
+          0.002075286116451025,
+          0.004283695947378874,
+          0.0097513347864151,
+          0.009916061535477638
+        ],
+        "student_sha256": "e8dc6beb04a6facfae7f8c0152f5aa4cd9708b44b1fe8cdfa2e1de059613f658",
+        "utility": 1.0,
+        "valid": true
+      },
+      "source": "phase10_blinded_unique_image"
+    },
+    {
+      "comparison": {
+        "accepted_encoded_repair": false,
+        "harmed_clauses": [],
+        "has_unknown": false,
+        "known_harm": false,
+        "repaired_clauses": [],
+        "safe_visibility_gain": false,
+        "visibility_harm": false
+      },
+      "observation": {
+        "case": 5,
+        "clauses": {
+          "count": true,
+          "text": true
+        },
+        "full_visibility": true,
+        "notes": "Two separate complete bananas; SUNNY clearly readable. Small surface/fastener-like marks are not recognizable extra lettering.",
+        "visible_text": "SUNNY"
+      },
+      "row": {
+        "arm": "dense",
+        "details": {
+          "clauses": [
+            {
+              "exact": true,
+              "expected_text": "SUNNY",
+              "id": "text",
+              "normalized_recognized": "sunny",
+              "progress": 1.0
+            },
+            {
+              "id": "count",
+              "metadata": {
+                "include": [
+                  {
+                    "class": "banana",
+                    "count": 2
+                  }
+                ],
+                "prompt": "A sharp, realistic studio photograph of exactly two bananas, all fully visible and separated. Above the objects, a large white sign displays only the word \"SUNNY\" in bold black letters. No other letters or words are visible.",
+                "tag": "counting"
+              },
+              "strict": true,
+              "upstream_progress": 1.0
+            }
+          ],
+          "ocr": {
+            "lines": [
+              {
+                "box": [
+                  [
+                    95.0,
+                    125.0
+                  ],
+                  [
+                    395.0,
+                    125.0
+                  ],
+                  [
+                    395.0,
+                    183.0
+                  ],
+                  [
+                    95.0,
+                    183.0
+                  ]
+                ],
+                "confidence": 0.9869735836982727,
+                "text": "SUNNY"
+              }
+            ],
+            "recognized_text": "SUNNY"
+          }
+        },
+        "error": null,
+        "id": "jp1-train-count-15",
+        "image": "query_results/78e3095659e7a271929598e6/44c0537848a034a9f15c.png",
+        "image_sha256": "d31a204a4ebdac573d9ae693b914f5741bbf32fa5716553eabf58ad46ba78164",
+        "joint_success": true,
+        "mode": "full",
+        "optimizer_step": 32,
+        "progress": [
+          1.0,
+          1.0
+        ],
+        "quality": null,
+        "query_index": 1,
+        "query_state_mse_vs_phase9": 5.924953256908339e-07,
+        "satisfied": [
+          true,
+          true
+        ],
+        "seed": 1565007593,
+        "state_mse_vs_phase9_by_index": [
+          0.0,
+          5.924953256908339e-07,
+          2.7518117349245586e-06,
+          2.4111857783282176e-05,
+          9.764647984411567e-05,
+          0.00010865124204428867,
+          0.00014994679077062756,
+          0.00022038596216589212,
+          0.0004139469237998128,
+          0.0009509194642305374,
+          0.0009617284522391856
+        ],
+        "state_mse_vs_verified_branch_by_index": [
+          0.0,
+          5.924953256908339e-07,
+          2.7518117349245586e-06,
+          2.4111857783282176e-05,
+          9.764647984411567e-05,
+          0.00010865124204428867,
+          0.00014994679077062756,
+          0.00022038596216589212,
+          0.0004139469237998128,
+          0.0009509194642305374,
+          0.0009617284522391856
+        ],
+        "student_sha256": "2aaa2d49b5b1ba6085e24c58569ed035c8c76f37bb94bd0b909bd9cd1e12da10",
+        "utility": 1.0,
+        "valid": true
+      },
+      "source": "phase10_blinded_unique_image"
+    },
+    {
+      "comparison": {
+        "accepted_encoded_repair": false,
+        "harmed_clauses": [],
+        "has_unknown": false,
+        "known_harm": false,
+        "repaired_clauses": [],
+        "safe_visibility_gain": false,
+        "visibility_harm": false
+      },
+      "observation": {
+        "case": 6,
+        "clauses": {
+          "relation": true,
+          "text": false
+        },
+        "full_visibility": false,
+        "notes": "Bicycle clearly right of car. Car extends across the left frame edge; additional plate lettering violates the only-word requirement, regardless of stylized sign glyphs.",
+        "visible_text": "WAVE (stylized); additional license-plate lettering"
+      },
+      "row": {
+        "arm": "dense",
+        "details": {
+          "clauses": [
+            {
+              "exact": true,
+              "expected_text": "WAVE",
+              "id": "text",
+              "normalized_recognized": "wave",
+              "progress": 1.0
+            },
+            {
+              "id": "relation",
+              "metadata": {
+                "include": [
+                  {
+                    "class": "car",
+                    "count": 1
+                  },
+                  {
+                    "class": "bicycle",
+                    "count": 1,
+                    "position": [
+                      "right of",
+                      0
+                    ]
+                  }
+                ],
+                "prompt": "A sharp, realistic studio photograph of exactly one bicycle clearly to the right of exactly one car, both fully visible. Above the objects, a large white sign displays only the word \"WAVE\" in bold black letters. No other letters or words are visible.",
+                "tag": "position"
+              },
+              "strict": true,
+              "upstream_progress": 1.0
+            }
+          ],
+          "ocr": {
+            "lines": [
+              {
+                "box": [
+                  [
+                    182.0,
+                    101.0
+                  ],
+                  [
+                    322.0,
+                    99.0
+                  ],
+                  [
+                    323.0,
+                    142.0
+                  ],
+                  [
+                    183.0,
+                    144.0
+                  ]
+                ],
+                "confidence": 0.9629863500595093,
+                "text": "WAVE"
+              }
+            ],
+            "recognized_text": "WAVE"
+          }
+        },
+        "error": null,
+        "id": "jp1-train-relation-07",
+        "image": "query_results/0ae6973ff7e7e1da05bc3413/fd114dba563853b062f9.png",
+        "image_sha256": "1d14a16de45c24efdcc61b4536db723b2b2ed609cd0ec67a62ae2affddfe15b5",
+        "joint_success": true,
+        "mode": "full",
+        "optimizer_step": 32,
+        "progress": [
+          1.0,
+          1.0
+        ],
+        "quality": null,
+        "query_index": 0,
+        "query_state_mse_vs_phase9": 0.0,
+        "satisfied": [
+          true,
+          true
+        ],
+        "seed": 1565083676,
+        "state_mse_vs_phase9_by_index": [
+          0.0,
+          4.300497948861448e-07,
+          1.8464188542566262e-06,
+          9.772593330126256e-06,
+          2.8248647140571848e-05,
+          8.629885269328952e-05,
+          0.00045345042599365115,
+          0.0025595223996788263,
+          0.007016225717961788,
+          0.017232468351721764,
+          0.01753143221139908
+        ],
+        "state_mse_vs_verified_branch_by_index": [
+          0.0,
+          4.300497948861448e-07,
+          1.8464188542566262e-06,
+          9.772593330126256e-06,
+          2.8248647140571848e-05,
+          8.629885269328952e-05,
+          0.00045345042599365115,
+          0.0025595223996788263,
+          0.007016225717961788,
+          0.017232468351721764,
+          0.01753143221139908
+        ],
+        "student_sha256": "2aaa2d49b5b1ba6085e24c58569ed035c8c76f37bb94bd0b909bd9cd1e12da10",
+        "utility": 1.0,
+        "valid": true
+      },
+      "source": "phase10_blinded_unique_image"
+    },
+    {
+      "comparison": {
+        "accepted_encoded_repair": true,
+        "harmed_clauses": [],
+        "has_unknown": false,
+        "known_harm": false,
+        "repaired_clauses": [
+          "relation"
+        ],
+        "safe_visibility_gain": false,
+        "visibility_harm": false
+      },
+      "observation": {
+        "case": 7,
+        "clauses": {
+          "relation": true,
+          "text": true
+        },
+        "full_visibility": true,
+        "notes": "One complete bowl at left and one pale apple clearly right. CLOUD identifiable with irregular letter spacing.",
+        "visible_text": "CLOUD"
+      },
+      "row": {
+        "arm": "sparse",
+        "details": {
+          "clauses": [
+            {
+              "exact": true,
+              "expected_text": "CLOUD",
+              "id": "text",
+              "normalized_recognized": "cloud",
+              "progress": 1.0
+            },
+            {
+              "id": "relation",
+              "metadata": {
+                "include": [
+                  {
+                    "class": "bowl",
+                    "count": 1
+                  },
+                  {
+                    "class": "apple",
+                    "count": 1,
+                    "position": [
+                      "right of",
+                      0
+                    ]
+                  }
+                ],
+                "prompt": "A sharp, realistic studio photograph of exactly one apple clearly to the right of exactly one bowl, both fully visible. Above the objects, a large white sign displays only the word \"CLOUD\" in bold black letters. No other letters or words are visible.",
+                "tag": "position"
+              },
+              "strict": true,
+              "upstream_progress": 1.0
+            }
+          ],
+          "ocr": {
+            "lines": [
+              {
+                "box": [
+                  [
+                    174.0,
+                    111.0
+                  ],
+                  [
+                    337.0,
+                    114.0
+                  ],
+                  [
+                    337.0,
+                    145.0
+                  ],
+                  [
+                    174.0,
+                    142.0
+                  ]
+                ],
+                "confidence": 0.9950557947158813,
+                "text": "CLOUD"
+              }
+            ],
+            "recognized_text": "CLOUD"
+          }
+        },
+        "error": null,
+        "id": "jp1-train-relation-13",
+        "image": "query_results/2be82bcc77ba3954207f6ceb/9cff0b4bfdaf7d2c0bcf.png",
+        "image_sha256": "668916dd090e9162ef5d6896737532e50e45e7bd9be8ad1c8e5f8b3677c683ae",
+        "joint_success": true,
+        "mode": "full",
+        "optimizer_step": 320,
+        "progress": [
+          1.0,
+          1.0
+        ],
+        "quality": null,
+        "query_index": 3,
+        "query_state_mse_vs_phase9": 0.0009011238580569625,
+        "satisfied": [
+          true,
+          true
+        ],
+        "seed": 1500595046,
+        "state_mse_vs_phase9_by_index": [
+          0.0,
+          2.1063704480184242e-05,
+          0.0003505219065118581,
+          0.0009011238580569625,
+          0.002399764722213149,
+          0.005237888544797897,
+          0.010740652680397034,
+          0.02076173946261406,
+          0.03994545340538025,
+          0.08100277185440063,
+          0.08263055235147476
+        ],
+        "state_mse_vs_verified_branch_by_index": [
+          0.0,
+          2.1063704480184242e-05,
+          0.0003505219065118581,
+          0.0009011238580569625,
+          0.000986000057309866,
+          0.002155975205823779,
+          0.004356001038104296,
+          0.008201496675610542,
+          0.016369525343179703,
+          0.0345558300614357,
+          0.03520455211400986
+        ],
+        "student_sha256": "e8dc6beb04a6facfae7f8c0152f5aa4cd9708b44b1fe8cdfa2e1de059613f658",
+        "utility": 1.0,
+        "valid": true
+      },
+      "source": "phase10_blinded_unique_image"
+    },
+    {
+      "comparison": {
+        "accepted_encoded_repair": false,
+        "harmed_clauses": [],
+        "has_unknown": false,
+        "known_harm": false,
+        "repaired_clauses": [],
+        "safe_visibility_gain": false,
+        "visibility_harm": false
+      },
+      "observation": {
+        "case": 8,
+        "clauses": {
+          "relation": true,
+          "text": true
+        },
+        "full_visibility": false,
+        "notes": "Cup clearly right of bottle. Lower foot/base of cup runs into the bottom image boundary; word remains readable.",
+        "visible_text": "BLOOM"
+      },
+      "row": {
+        "arm": "sparse",
+        "details": {
+          "clauses": [
+            {
+              "exact": true,
+              "expected_text": "BLOOM",
+              "id": "text",
+              "normalized_recognized": "bloom",
+              "progress": 1.0
+            },
+            {
+              "id": "relation",
+              "metadata": {
+                "include": [
+                  {
+                    "class": "bottle",
+                    "count": 1
+                  },
+                  {
+                    "class": "cup",
+                    "count": 1,
+                    "position": [
+                      "right of",
+                      0
+                    ]
+                  }
+                ],
+                "prompt": "A sharp, realistic studio photograph of exactly one cup clearly to the right of exactly one bottle, both fully visible. Above the objects, a large white sign displays only the word \"BLOOM\" in bold black letters. No other letters or words are visible.",
+                "tag": "position"
+              },
+              "strict": true,
+              "upstream_progress": 1.0
+            }
+          ],
+          "ocr": {
+            "lines": [
+              {
+                "box": [
+                  [
+                    189.0,
+                    172.0
+                  ],
+                  [
+                    336.0,
+                    170.0
+                  ],
+                  [
+                    337.0,
+                    217.0
+                  ],
+                  [
+                    190.0,
+                    219.0
+                  ]
+                ],
+                "confidence": 0.9971169233322144,
+                "text": "BLOOM"
+              }
+            ],
+            "recognized_text": "BLOOM"
+          }
+        },
+        "error": null,
+        "id": "jp1-train-relation-12",
+        "image": "query_results/5ca07a232b4416004dd1f10b/90f771801003486e1f18.png",
+        "image_sha256": "d44ba3332ae6c4b60300615627107d1a0acbb773611fd8a016a996efa89f2651",
+        "joint_success": true,
+        "mode": "full",
+        "optimizer_step": 32,
+        "progress": [
+          1.0,
+          1.0
+        ],
+        "quality": null,
+        "query_index": 0,
+        "query_state_mse_vs_phase9": 0.0,
+        "satisfied": [
+          true,
+          true
+        ],
+        "seed": 1903463636,
+        "state_mse_vs_phase9_by_index": [
+          0.0,
+          7.210455237327551e-07,
+          1.9309956769575365e-05,
+          8.172848174581304e-05,
+          0.000200102775124833,
+          0.0004965205444023013,
+          0.0013783021131530404,
+          0.0034389179199934006,
+          0.0073289950378239155,
+          0.01598447747528553,
+          0.01627105288207531
+        ],
+        "state_mse_vs_verified_branch_by_index": [
+          0.0,
+          7.210455237327551e-07,
+          1.9309956769575365e-05,
+          8.172848174581304e-05,
+          0.000200102775124833,
+          0.0004965205444023013,
+          0.0013783021131530404,
+          0.0034389179199934006,
+          0.0073289950378239155,
+          0.01598447747528553,
+          0.01627105288207531
+        ],
+        "student_sha256": "cab7ea2538dbd358903461daf08d22e8a133bc203436bf8b850533ddce8bba5b",
+        "utility": 1.0,
+        "valid": true
+      },
+      "source": "phase10_blinded_unique_image"
+    },
+    {
+      "comparison": {
+        "accepted_encoded_repair": false,
+        "harmed_clauses": [],
+        "has_unknown": false,
+        "known_harm": false,
+        "repaired_clauses": [],
+        "safe_visibility_gain": false,
+        "visibility_harm": false
+      },
+      "observation": {
+        "case": 9,
+        "clauses": {
+          "count": true,
+          "text": true
+        },
+        "full_visibility": true,
+        "notes": "Two separate complete bananas; SUNNY clearly readable. Small surface/fastener-like marks are not recognizable extra lettering.",
+        "visible_text": "SUNNY"
+      },
+      "row": {
+        "arm": "sparse",
+        "details": {
+          "clauses": [
+            {
+              "exact": true,
+              "expected_text": "SUNNY",
+              "id": "text",
+              "normalized_recognized": "sunny",
+              "progress": 1.0
+            },
+            {
+              "id": "count",
+              "metadata": {
+                "include": [
+                  {
+                    "class": "banana",
+                    "count": 2
+                  }
+                ],
+                "prompt": "A sharp, realistic studio photograph of exactly two bananas, all fully visible and separated. Above the objects, a large white sign displays only the word \"SUNNY\" in bold black letters. No other letters or words are visible.",
+                "tag": "counting"
+              },
+              "strict": true,
+              "upstream_progress": 1.0
+            }
+          ],
+          "ocr": {
+            "lines": [
+              {
+                "box": [
+                  [
+                    95.0,
+                    126.0
+                  ],
+                  [
+                    396.0,
+                    126.0
+                  ],
+                  [
+                    396.0,
+                    184.0
+                  ],
+                  [
+                    95.0,
+                    184.0
+                  ]
+                ],
+                "confidence": 0.9828978776931763,
+                "text": "SUNNY"
+              }
+            ],
+            "recognized_text": "SUNNY"
+          }
+        },
+        "error": null,
+        "id": "jp1-train-count-15",
+        "image": "query_results/f333e58354017c981d4a779f/0349b25237353ab67c7d.png",
+        "image_sha256": "0060c0328c8ec6f8ba1d0b2aa2200549b510ec9e49afd78229ffff11f05af15b",
+        "joint_success": true,
+        "mode": "local",
+        "optimizer_step": 32,
+        "progress": [
+          1.0,
+          1.0
+        ],
+        "quality": null,
+        "query_index": 1,
+        "query_state_mse_vs_phase9": 7.208156148408307e-06,
+        "satisfied": [
+          true,
+          true
+        ],
+        "seed": 1565007593,
+        "state_mse_vs_phase9_by_index": [
+          0.0,
+          7.208156148408307e-06,
+          1.4332805221783929e-05,
+          0.00012033581151627004,
+          0.00029416431789286435,
+          0.0007266788743436337,
+          0.0025173835456371307,
+          0.006424647755920887,
+          0.014263080433011055,
+          0.030951954424381256,
+          0.03148399293422699
+        ],
+        "state_mse_vs_verified_branch_by_index": [
+          0.0,
+          7.208156148408307e-06,
+          1.4332805221783929e-05,
+          0.00012033581151627004,
+          0.00029416431789286435,
+          0.0007266788743436337,
+          0.0025173835456371307,
+          0.006424647755920887,
+          0.014263080433011055,
+          0.030951954424381256,
+          0.03148399293422699
+        ],
+        "student_sha256": "cab7ea2538dbd358903461daf08d22e8a133bc203436bf8b850533ddce8bba5b",
+        "utility": 1.0,
+        "valid": true
+      },
+      "source": "phase10_blinded_unique_image"
+    },
+    {
+      "comparison": {
+        "accepted_encoded_repair": false,
+        "harmed_clauses": [],
+        "has_unknown": false,
+        "known_harm": false,
+        "repaired_clauses": [],
+        "safe_visibility_gain": false,
+        "visibility_harm": false
+      },
+      "observation": {
+        "case": 10,
+        "clauses": {
+          "relation": true,
+          "text": false
+        },
+        "full_visibility": false,
+        "notes": "Bicycle clearly right of car. Car extends across the left frame edge; additional plate lettering violates the only-word requirement, regardless of stylized sign glyphs.",
+        "visible_text": "Wave; additional license-plate lettering"
+      },
+      "row": {
+        "arm": "sparse",
+        "details": {
+          "clauses": [
+            {
+              "exact": true,
+              "expected_text": "WAVE",
+              "id": "text",
+              "normalized_recognized": "wave",
+              "progress": 1.0
+            },
+            {
+              "id": "relation",
+              "metadata": {
+                "include": [
+                  {
+                    "class": "car",
+                    "count": 1
+                  },
+                  {
+                    "class": "bicycle",
+                    "count": 1,
+                    "position": [
+                      "right of",
+                      0
+                    ]
+                  }
+                ],
+                "prompt": "A sharp, realistic studio photograph of exactly one bicycle clearly to the right of exactly one car, both fully visible. Above the objects, a large white sign displays only the word \"WAVE\" in bold black letters. No other letters or words are visible.",
+                "tag": "position"
+              },
+              "strict": true,
+              "upstream_progress": 1.0
+            }
+          ],
+          "ocr": {
+            "lines": [
+              {
+                "box": [
+                  [
+                    137.0,
+                    96.0
+                  ],
+                  [
+                    330.0,
+                    96.0
+                  ],
+                  [
+                    330.0,
+                    142.0
+                  ],
+                  [
+                    137.0,
+                    142.0
+                  ]
+                ],
+                "confidence": 0.9958446025848389,
+                "text": "Wave"
+              }
+            ],
+            "recognized_text": "Wave"
+          }
+        },
+        "error": null,
+        "id": "jp1-train-relation-07",
+        "image": "query_results/97b5abbf69666946613ef005/0ebded6fd2f34d581341.png",
+        "image_sha256": "e56ea0510857b67b37610af05164e5ef1f79f192be79a8bd513f83123df08ae2",
+        "joint_success": true,
+        "mode": "full",
+        "optimizer_step": 320,
+        "progress": [
+          1.0,
+          1.0
+        ],
+        "quality": null,
+        "query_index": 0,
+        "query_state_mse_vs_phase9": 0.0,
+        "satisfied": [
+          true,
+          true
+        ],
+        "seed": 1565083676,
+        "state_mse_vs_phase9_by_index": [
+          0.0,
+          2.1456156673593796e-07,
+          1.7087433661799878e-05,
+          0.00020517566008493304,
+          0.0004890565178357065,
+          0.0015137342270463705,
+          0.004107596352696419,
+          0.009416958317160606,
+          0.02061309851706028,
+          0.04583044350147247,
+          0.046652652323246
+        ],
+        "state_mse_vs_verified_branch_by_index": [
+          0.0,
+          2.1456156673593796e-07,
+          1.7087433661799878e-05,
+          0.00020517566008493304,
+          0.0004890565178357065,
+          0.0015137342270463705,
+          0.004107596352696419,
+          0.009416958317160606,
+          0.02061309851706028,
+          0.04583044350147247,
+          0.046652652323246
+        ],
+        "student_sha256": "e8dc6beb04a6facfae7f8c0152f5aa4cd9708b44b1fe8cdfa2e1de059613f658",
+        "utility": 1.0,
+        "valid": true
+      },
+      "source": "phase10_blinded_unique_image"
+    },
+    {
+      "comparison": {
+        "accepted_encoded_repair": false,
+        "harmed_clauses": [],
+        "has_unknown": false,
+        "known_harm": false,
+        "repaired_clauses": [],
+        "safe_visibility_gain": false,
+        "visibility_harm": false
+      },
+      "observation": {
+        "case": 11,
+        "clauses": {
+          "relation": false,
+          "text": true
+        },
+        "full_visibility": true,
+        "notes": "Two separate bowls are visible; apple sits in front of the right-hand bowl. This fails the requested exactly-one-bowl relation scene.",
+        "visible_text": "CLOUD"
+      },
+      "row": {
+        "arm": "dense",
+        "details": {
+          "clauses": [
+            {
+              "exact": true,
+              "expected_text": "CLOUD",
+              "id": "text",
+              "normalized_recognized": "cloud",
+              "progress": 1.0
+            },
+            {
+              "id": "relation",
+              "metadata": {
+                "include": [
+                  {
+                    "class": "bowl",
+                    "count": 1
+                  },
+                  {
+                    "class": "apple",
+                    "count": 1,
+                    "position": [
+                      "right of",
+                      0
+                    ]
+                  }
+                ],
+                "prompt": "A sharp, realistic studio photograph of exactly one apple clearly to the right of exactly one bowl, both fully visible. Above the objects, a large white sign displays only the word \"CLOUD\" in bold black letters. No other letters or words are visible.",
+                "tag": "position"
+              },
+              "strict": false,
+              "upstream_progress": 0.3333333333333333
+            }
+          ],
+          "ocr": {
+            "lines": [
+              {
+                "box": [
+                  [
+                    177.0,
+                    113.0
+                  ],
+                  [
+                    333.0,
+                    113.0
+                  ],
+                  [
+                    333.0,
+                    141.0
+                  ],
+                  [
+                    177.0,
+                    141.0
+                  ]
+                ],
+                "confidence": 0.9951637983322144,
+                "text": "CLOUD"
+              }
+            ],
+            "recognized_text": "CLOUD"
+          }
+        },
+        "error": null,
+        "id": "jp1-train-relation-13",
+        "image": "query_results/17970423bdccad0fff329200/c2e7091a8710e424981f.png",
+        "image_sha256": "9589da3cbf94a23d49705ed360d19bfef2f7bbc96726928684843aeacfc4bf0b",
+        "joint_success": false,
+        "mode": "full",
+        "optimizer_step": 32,
+        "progress": [
+          1.0,
+          0.3333333333333333
+        ],
+        "quality": null,
+        "query_index": 3,
+        "query_state_mse_vs_phase9": 2.7825117285829037e-05,
+        "satisfied": [
+          true,
+          false
+        ],
+        "seed": 1500595046,
+        "state_mse_vs_phase9_by_index": [
+          0.0,
+          9.27190797028743e-07,
+          7.285239007615019e-06,
+          2.7825117285829037e-05,
+          0.0008108565816655755,
+          0.0015904342290014029,
+          0.0038652587682008743,
+          0.008246291428804398,
+          0.016104988753795624,
+          0.03330492973327637,
+          0.03396185487508774
+        ],
+        "state_mse_vs_verified_branch_by_index": [
+          0.0,
+          9.27190797028743e-07,
+          7.285239007615019e-06,
+          2.7825117285829037e-05,
+          0.00029979116516187787,
+          0.0011035469360649586,
+          0.003533211536705494,
+          0.008475422859191895,
+          0.017796004191040993,
+          0.03814856708049774,
+          0.038875654339790344
+        ],
+        "student_sha256": "2aaa2d49b5b1ba6085e24c58569ed035c8c76f37bb94bd0b909bd9cd1e12da10",
+        "utility": 0.3333333333333333,
+        "valid": true
+      },
+      "source": "phase10_blinded_unique_image"
+    },
+    {
+      "comparison": {
+        "accepted_encoded_repair": false,
+        "harmed_clauses": [],
+        "has_unknown": false,
+        "known_harm": false,
+        "repaired_clauses": [],
+        "safe_visibility_gain": false,
+        "visibility_harm": false
+      },
+      "observation": {
+        "case": 12,
+        "clauses": {
+          "relation": false,
+          "text": true
+        },
+        "full_visibility": true,
+        "notes": "Apple is directly in front of/below the bowl, within its horizontal extent, not clearly right.",
+        "visible_text": "CLOUD"
+      },
+      "row": {
+        "arm": "sparse",
+        "details": {
+          "clauses": [
+            {
+              "exact": true,
+              "expected_text": "CLOUD",
+              "id": "text",
+              "normalized_recognized": "cloud",
+              "progress": 1.0
+            },
+            {
+              "id": "relation",
+              "metadata": {
+                "include": [
+                  {
+                    "class": "bowl",
+                    "count": 1
+                  },
+                  {
+                    "class": "apple",
+                    "count": 1,
+                    "position": [
+                      "right of",
+                      0
+                    ]
+                  }
+                ],
+                "prompt": "A sharp, realistic studio photograph of exactly one apple clearly to the right of exactly one bowl, both fully visible. Above the objects, a large white sign displays only the word \"CLOUD\" in bold black letters. No other letters or words are visible.",
+                "tag": "position"
+              },
+              "strict": false,
+              "upstream_progress": 0.75
+            }
+          ],
+          "ocr": {
+            "lines": [
+              {
+                "box": [
+                  [
+                    177.0,
+                    112.0
+                  ],
+                  [
+                    333.0,
+                    112.0
+                  ],
+                  [
+                    333.0,
+                    140.0
+                  ],
+                  [
+                    177.0,
+                    140.0
+                  ]
+                ],
+                "confidence": 0.9956254959106445,
+                "text": "CLOUD"
+              }
+            ],
+            "recognized_text": "CLOUD"
+          }
+        },
+        "error": null,
+        "id": "jp1-train-relation-13",
+        "image": "query_results/ac987b1ad8a0d942632523a1/bde95bc336e9fd02e710.png",
+        "image_sha256": "7ae31f47e15ad43ab877292430ad72e6d219ae9bbe3cc29f0424963f2e9905b8",
+        "joint_success": false,
+        "mode": "local",
+        "optimizer_step": 32,
+        "progress": [
+          1.0,
+          0.75
+        ],
+        "quality": null,
+        "query_index": 3,
+        "query_state_mse_vs_phase9": 0.000924833060707897,
+        "satisfied": [
+          true,
+          false
+        ],
+        "seed": 1500595046,
+        "state_mse_vs_phase9_by_index": [
+          0.0,
+          1.5789337339811027e-05,
+          0.00035443337401375175,
+          0.000924833060707897,
+          0.002641854342073202,
+          0.005622308701276779,
+          0.010496075265109539,
+          0.019800452515482903,
+          0.037242863327264786,
+          0.0745851993560791,
+          0.07613454759120941
+        ],
+        "state_mse_vs_verified_branch_by_index": [
+          0.0,
+          1.5789337339811027e-05,
+          0.00035443337401375175,
+          0.000924833060707897,
+          0.0012555662542581558,
+          0.002624654909595847,
+          0.00508336815983057,
+          0.009984994307160378,
+          0.019889231771230698,
+          0.04160444438457489,
+          0.04240074008703232
+        ],
+        "student_sha256": "cab7ea2538dbd358903461daf08d22e8a133bc203436bf8b850533ddce8bba5b",
+        "utility": 0.4375,
+        "valid": true
+      },
+      "source": "phase10_blinded_unique_image"
+    },
+    {
+      "comparison": {
+        "accepted_encoded_repair": false,
+        "harmed_clauses": [],
+        "has_unknown": false,
+        "known_harm": false,
+        "repaired_clauses": [],
+        "safe_visibility_gain": true,
+        "visibility_harm": false
+      },
+      "observation": {
+        "case": 13,
+        "clauses": {
+          "relation": true,
+          "text": true
+        },
+        "full_visibility": true,
+        "notes": "One cup clearly right of one bottle, both complete. BLOOM is blurred but identifiable; no extra lettering.",
+        "visible_text": "BLOOM"
+      },
+      "row": {
+        "arm": "sparse",
+        "details": {
+          "clauses": [
+            {
+              "exact": true,
+              "expected_text": "BLOOM",
+              "id": "text",
+              "normalized_recognized": "bloom",
+              "progress": 1.0
+            },
+            {
+              "id": "relation",
+              "metadata": {
+                "include": [
+                  {
+                    "class": "bottle",
+                    "count": 1
+                  },
+                  {
+                    "class": "cup",
+                    "count": 1,
+                    "position": [
+                      "right of",
+                      0
+                    ]
+                  }
+                ],
+                "prompt": "A sharp, realistic studio photograph of exactly one cup clearly to the right of exactly one bottle, both fully visible. Above the objects, a large white sign displays only the word \"BLOOM\" in bold black letters. No other letters or words are visible.",
+                "tag": "position"
+              },
+              "strict": true,
+              "upstream_progress": 1.0
+            }
+          ],
+          "ocr": {
+            "lines": [
+              {
+                "box": [
+                  [
+                    190.0,
+                    173.0
+                  ],
+                  [
+                    336.0,
+                    171.0
+                  ],
+                  [
+                    336.0,
+                    214.0
+                  ],
+                  [
+                    190.0,
+                    216.0
+                  ]
+                ],
+                "confidence": 0.99785977602005,
+                "text": "BLOOM"
+              }
+            ],
+            "recognized_text": "BLOOM"
+          }
+        },
+        "error": null,
+        "id": "jp1-train-relation-12",
+        "image": "query_results/4ea42e9bd7cfb8e7ec959230/b4fdab5d4f1901299afd.png",
+        "image_sha256": "43fdb82319d1f092b22ee39e669c834f590eb9afe7a260961852d587d4713277",
+        "joint_success": true,
+        "mode": "full",
+        "optimizer_step": 320,
+        "progress": [
+          1.0,
+          1.0
+        ],
+        "quality": null,
+        "query_index": 0,
+        "query_state_mse_vs_phase9": 0.0,
+        "satisfied": [
+          true,
+          true
+        ],
+        "seed": 1903463636,
+        "state_mse_vs_phase9_by_index": [
+          0.0,
+          3.098300282999844e-07,
+          1.305227488046512e-05,
+          4.251012796885334e-05,
+          0.0001313471293542534,
+          0.0003227407578378916,
+          0.0009404466254636645,
+          0.002075286116451025,
+          0.004283695947378874,
+          0.0097513347864151,
+          0.009916061535477638
+        ],
+        "state_mse_vs_verified_branch_by_index": [
+          0.0,
+          3.098300282999844e-07,
+          1.305227488046512e-05,
+          4.251012796885334e-05,
+          0.0001313471293542534,
+          0.0003227407578378916,
+          0.0009404466254636645,
+          0.002075286116451025,
+          0.004283695947378874,
+          0.0097513347864151,
+          0.009916061535477638
+        ],
+        "student_sha256": "e8dc6beb04a6facfae7f8c0152f5aa4cd9708b44b1fe8cdfa2e1de059613f658",
+        "utility": 1.0,
+        "valid": true
+      },
+      "source": "phase10_blinded_unique_image"
+    },
+    {
+      "comparison": {
+        "accepted_encoded_repair": false,
+        "harmed_clauses": [],
+        "has_unknown": false,
+        "known_harm": false,
+        "repaired_clauses": [],
+        "safe_visibility_gain": false,
+        "visibility_harm": false
+      },
+      "observation": {
+        "case": 14,
+        "clauses": {
+          "count": true,
+          "text": true
+        },
+        "full_visibility": true,
+        "notes": "One complete bowl; word identifiable and no other readable lettering.",
+        "visible_text": "BLOOM"
+      },
+      "row": {
+        "arm": "sparse",
+        "details": {
+          "clauses": [
+            {
+              "exact": true,
+              "expected_text": "BLOOM",
+              "id": "text",
+              "normalized_recognized": "bloom",
+              "progress": 1.0
+            },
+            {
+              "id": "count",
+              "metadata": {
+                "include": [
+                  {
+                    "class": "bowl",
+                    "count": 1
+                  }
+                ],
+                "prompt": "A sharp, realistic studio photograph of exactly one bowl, all fully visible and separated. Above the objects, a large white sign displays only the word \"BLOOM\" in bold black letters. No other letters or words are visible.",
+                "tag": "counting"
+              },
+              "strict": true,
+              "upstream_progress": 1.0
+            }
+          ],
+          "ocr": {
+            "lines": [
+              {
+                "box": [
+                  [
+                    196.0,
+                    145.0
+                  ],
+                  [
+                    307.0,
+                    143.0
+                  ],
+                  [
+                    307.0,
+                    175.0
+                  ],
+                  [
+                    196.0,
+                    177.0
+                  ]
+                ],
+                "confidence": 0.9949580430984497,
+                "text": "BLOOM"
+              }
+            ],
+            "recognized_text": "BLOOM"
+          }
+        },
+        "error": null,
+        "id": "jp1-train-count-12",
+        "image": "query_results/723ef09df0d9f3ef93fb24a7/32a5134b595769fa2cef.png",
+        "image_sha256": "663f79c4fff87d2dff5b4e831a9f69a17671075e317767e8357b786f6412d22c",
+        "joint_success": true,
+        "mode": "local",
+        "optimizer_step": 32,
+        "progress": [
+          1.0,
+          1.0
+        ],
+        "quality": null,
+        "query_index": 2,
+        "query_state_mse_vs_phase9": 2.7367306756787002e-05,
+        "satisfied": [
+          true,
+          true
+        ],
+        "seed": 2074542574,
+        "state_mse_vs_phase9_by_index": [
+          0.0,
+          3.2293341973854695e-06,
+          2.7367306756787002e-05,
+          5.36748775630258e-05,
+          0.0001337786961812526,
+          0.0003747815790120512,
+          0.0009966627694666386,
+          0.002552090911194682,
+          0.005292440764605999,
+          0.010399002581834793,
+          0.010570669546723366
+        ],
+        "state_mse_vs_verified_branch_by_index": [
+          0.0,
+          3.2293341973854695e-06,
+          2.7367306756787002e-05,
+          5.36748775630258e-05,
+          0.0001337786961812526,
+          0.0003747815790120512,
+          0.0009966627694666386,
+          0.002552090911194682,
+          0.005292440764605999,
+          0.010399002581834793,
+          0.010570669546723366
+        ],
+        "student_sha256": "cab7ea2538dbd358903461daf08d22e8a133bc203436bf8b850533ddce8bba5b",
+        "utility": 1.0,
+        "valid": true
+      },
+      "source": "phase10_blinded_unique_image"
+    },
+    {
+      "comparison": {
+        "accepted_encoded_repair": false,
+        "harmed_clauses": [],
+        "has_unknown": false,
+        "known_harm": false,
+        "repaired_clauses": [],
+        "safe_visibility_gain": true,
+        "visibility_harm": false
+      },
+      "observation": {
+        "case": 15,
+        "clauses": {
+          "relation": true,
+          "text": true
+        },
+        "full_visibility": true,
+        "notes": "One cup clearly right of one bottle, both complete. BLOOM is blurred but identifiable; no extra lettering.",
+        "visible_text": "BLOOM"
+      },
+      "row": {
+        "arm": "dense",
+        "details": {
+          "clauses": [
+            {
+              "exact": true,
+              "expected_text": "BLOOM",
+              "id": "text",
+              "normalized_recognized": "bloom",
+              "progress": 1.0
+            },
+            {
+              "id": "relation",
+              "metadata": {
+                "include": [
+                  {
+                    "class": "bottle",
+                    "count": 1
+                  },
+                  {
+                    "class": "cup",
+                    "count": 1,
+                    "position": [
+                      "right of",
+                      0
+                    ]
+                  }
+                ],
+                "prompt": "A sharp, realistic studio photograph of exactly one cup clearly to the right of exactly one bottle, both fully visible. Above the objects, a large white sign displays only the word \"BLOOM\" in bold black letters. No other letters or words are visible.",
+                "tag": "position"
+              },
+              "strict": true,
+              "upstream_progress": 1.0
+            }
+          ],
+          "ocr": {
+            "lines": [
+              {
+                "box": [
+                  [
+                    191.0,
+                    172.0
+                  ],
+                  [
+                    337.0,
+                    170.0
+                  ],
+                  [
+                    338.0,
+                    216.0
+                  ],
+                  [
+                    192.0,
+                    218.0
+                  ]
+                ],
+                "confidence": 0.9980440139770508,
+                "text": "BLOOM"
+              }
+            ],
+            "recognized_text": "BLOOM"
+          }
+        },
+        "error": null,
+        "id": "jp1-train-relation-12",
+        "image": "query_results/b5940af4edf3af6223dc84e2/cec0a9f9f2815f879daa.png",
+        "image_sha256": "102e8fe05a6310fc825b08e533cf5b79113dd7dc9a677057170e82ab493fc0c2",
+        "joint_success": true,
+        "mode": "local",
+        "optimizer_step": 32,
+        "progress": [
+          1.0,
+          1.0
+        ],
+        "quality": null,
+        "query_index": 0,
+        "query_state_mse_vs_phase9": 0.0,
+        "satisfied": [
+          true,
+          true
+        ],
+        "seed": 1903463636,
+        "state_mse_vs_phase9_by_index": [
+          0.0,
+          5.384655423767981e-07,
+          2.753786020548432e-06,
+          8.438692020718008e-06,
+          2.3054793928167783e-05,
+          5.812177187181078e-05,
+          0.00016537494957447052,
+          0.0006132150301709771,
+          0.001569045358337462,
+          0.003826063359156251,
+          0.003890927881002426
+        ],
+        "state_mse_vs_verified_branch_by_index": [
+          0.0,
+          5.384655423767981e-07,
+          2.753786020548432e-06,
+          8.438692020718008e-06,
+          2.3054793928167783e-05,
+          5.812177187181078e-05,
+          0.00016537494957447052,
+          0.0006132150301709771,
+          0.001569045358337462,
+          0.003826063359156251,
+          0.003890927881002426
+        ],
+        "student_sha256": "2aaa2d49b5b1ba6085e24c58569ed035c8c76f37bb94bd0b909bd9cd1e12da10",
+        "utility": 1.0,
+        "valid": true
+      },
+      "source": "phase10_blinded_unique_image"
+    },
+    {
+      "comparison": {
+        "accepted_encoded_repair": false,
+        "harmed_clauses": [],
+        "has_unknown": false,
+        "known_harm": false,
+        "repaired_clauses": [],
+        "safe_visibility_gain": false,
+        "visibility_harm": false
+      },
+      "observation": {
+        "case": 16,
+        "clauses": {
+          "relation": true,
+          "text": false
+        },
+        "full_visibility": false,
+        "notes": "Bicycle clearly right of car. Car extends across the left frame edge; additional plate lettering violates the only-word requirement, regardless of stylized sign glyphs.",
+        "visible_text": "WAVE (stylized); additional license-plate lettering"
+      },
+      "row": {
+        "arm": "sparse",
+        "details": {
+          "clauses": [
+            {
+              "exact": true,
+              "expected_text": "WAVE",
+              "id": "text",
+              "normalized_recognized": "wave",
+              "progress": 1.0
+            },
+            {
+              "id": "relation",
+              "metadata": {
+                "include": [
+                  {
+                    "class": "car",
+                    "count": 1
+                  },
+                  {
+                    "class": "bicycle",
+                    "count": 1,
+                    "position": [
+                      "right of",
+                      0
+                    ]
+                  }
+                ],
+                "prompt": "A sharp, realistic studio photograph of exactly one bicycle clearly to the right of exactly one car, both fully visible. Above the objects, a large white sign displays only the word \"WAVE\" in bold black letters. No other letters or words are visible.",
+                "tag": "position"
+              },
+              "strict": true,
+              "upstream_progress": 1.0
+            }
+          ],
+          "ocr": {
+            "lines": [
+              {
+                "box": [
+                  [
+                    183.0,
+                    101.0
+                  ],
+                  [
+                    322.0,
+                    99.0
+                  ],
+                  [
+                    323.0,
+                    141.0
+                  ],
+                  [
+                    184.0,
+                    143.0
+                  ]
+                ],
+                "confidence": 0.9679332375526428,
+                "text": "WAVE"
+              }
+            ],
+            "recognized_text": "WAVE"
+          }
+        },
+        "error": null,
+        "id": "jp1-train-relation-07",
+        "image": "query_results/30a3b01ed8b1a47c73bbc9e4/f1d162eb914404019912.png",
+        "image_sha256": "5ad405ab960b1a2b6d1819120d48542a5490941f4b33658661913bfe48e729cd",
+        "joint_success": true,
+        "mode": "local",
+        "optimizer_step": 320,
+        "progress": [
+          1.0,
+          1.0
+        ],
+        "quality": null,
+        "query_index": 0,
+        "query_state_mse_vs_phase9": 0.0,
+        "satisfied": [
+          true,
+          true
+        ],
+        "seed": 1565083676,
+        "state_mse_vs_phase9_by_index": [
+          0.0,
+          2.1456156673593796e-07,
+          1.7087433661799878e-05,
+          0.00020517566008493304,
+          0.0004890565178357065,
+          0.0015137342270463705,
+          0.004107596352696419,
+          0.009416958317160606,
+          0.02061309851706028,
+          0.04583044350147247,
+          0.046652652323246
+        ],
+        "state_mse_vs_verified_branch_by_index": [
+          0.0,
+          2.1456156673593796e-07,
+          1.7087433661799878e-05,
+          0.00020517566008493304,
+          0.0004890565178357065,
+          0.0015137342270463705,
+          0.004107596352696419,
+          0.009416958317160606,
+          0.02061309851706028,
+          0.04583044350147247,
+          0.046652652323246
+        ],
+        "student_sha256": "e8dc6beb04a6facfae7f8c0152f5aa4cd9708b44b1fe8cdfa2e1de059613f658",
+        "utility": 1.0,
+        "valid": true
+      },
+      "source": "phase10_blinded_unique_image"
+    },
+    {
+      "comparison": {
+        "accepted_encoded_repair": false,
+        "harmed_clauses": [],
+        "has_unknown": false,
+        "known_harm": false,
+        "repaired_clauses": [],
+        "safe_visibility_gain": false,
+        "visibility_harm": false
+      },
+      "observation": {
+        "case": 17,
+        "clauses": {
+          "relation": true,
+          "text": false
+        },
+        "full_visibility": false,
+        "notes": "Bicycle clearly right of car. Car extends across the left frame edge; additional plate lettering violates the only-word requirement, regardless of stylized sign glyphs.",
+        "visible_text": "WAVE (stylized); additional license-plate lettering"
+      },
+      "row": {
+        "arm": "sparse",
+        "details": {
+          "clauses": [
+            {
+              "exact": true,
+              "expected_text": "WAVE",
+              "id": "text",
+              "normalized_recognized": "wave",
+              "progress": 1.0
+            },
+            {
+              "id": "relation",
+              "metadata": {
+                "include": [
+                  {
+                    "class": "car",
+                    "count": 1
+                  },
+                  {
+                    "class": "bicycle",
+                    "count": 1,
+                    "position": [
+                      "right of",
+                      0
+                    ]
+                  }
+                ],
+                "prompt": "A sharp, realistic studio photograph of exactly one bicycle clearly to the right of exactly one car, both fully visible. Above the objects, a large white sign displays only the word \"WAVE\" in bold black letters. No other letters or words are visible.",
+                "tag": "position"
+              },
+              "strict": true,
+              "upstream_progress": 1.0
+            }
+          ],
+          "ocr": {
+            "lines": [
+              {
+                "box": [
+                  [
+                    183.0,
+                    99.0
+                  ],
+                  [
+                    324.0,
+                    99.0
+                  ],
+                  [
+                    324.0,
+                    141.0
+                  ],
+                  [
+                    183.0,
+                    141.0
+                  ]
+                ],
+                "confidence": 0.9627224802970886,
+                "text": "WAVE"
+              }
+            ],
+            "recognized_text": "WAVE"
+          }
+        },
+        "error": null,
+        "id": "jp1-train-relation-07",
+        "image": "query_results/f6621efcb0f991c08b478b23/4f11f0097abbd4e2f3bc.png",
+        "image_sha256": "7a115b1416197c9395cd9bf725fcc747ed2edbe5a9ba7d6a4f5c41871263179f",
+        "joint_success": true,
+        "mode": "full",
+        "optimizer_step": 32,
+        "progress": [
+          1.0,
+          1.0
+        ],
+        "quality": null,
+        "query_index": 0,
+        "query_state_mse_vs_phase9": 0.0,
+        "satisfied": [
+          true,
+          true
+        ],
+        "seed": 1565083676,
+        "state_mse_vs_phase9_by_index": [
+          0.0,
+          5.38213612344407e-07,
+          2.24171562877018e-05,
+          0.00015463204181287438,
+          0.0004256083338987082,
+          0.0009051750530488789,
+          0.002323279157280922,
+          0.006250166334211826,
+          0.014691689983010292,
+          0.03291166573762894,
+          0.0334881991147995
+        ],
+        "state_mse_vs_verified_branch_by_index": [
+          0.0,
+          5.38213612344407e-07,
+          2.24171562877018e-05,
+          0.00015463204181287438,
+          0.0004256083338987082,
+          0.0009051750530488789,
+          0.002323279157280922,
+          0.006250166334211826,
+          0.014691689983010292,
+          0.03291166573762894,
+          0.0334881991147995
+        ],
+        "student_sha256": "cab7ea2538dbd358903461daf08d22e8a133bc203436bf8b850533ddce8bba5b",
+        "utility": 1.0,
+        "valid": true
+      },
+      "source": "phase10_blinded_unique_image"
+    },
+    {
+      "comparison": {
+        "accepted_encoded_repair": false,
+        "harmed_clauses": [],
+        "has_unknown": false,
+        "known_harm": false,
+        "repaired_clauses": [],
+        "safe_visibility_gain": false,
+        "visibility_harm": false
+      },
+      "observation": {
+        "case": 18,
+        "clauses": {
+          "count": true,
+          "text": true
+        },
+        "full_visibility": true,
+        "notes": "One complete bowl; word identifiable and no other readable lettering.",
+        "visible_text": "BLOOM"
+      },
+      "row": {
+        "arm": "sparse",
+        "details": {
+          "clauses": [
+            {
+              "exact": true,
+              "expected_text": "BLOOM",
+              "id": "text",
+              "normalized_recognized": "bloom",
+              "progress": 1.0
+            },
+            {
+              "id": "count",
+              "metadata": {
+                "include": [
+                  {
+                    "class": "bowl",
+                    "count": 1
+                  }
+                ],
+                "prompt": "A sharp, realistic studio photograph of exactly one bowl, all fully visible and separated. Above the objects, a large white sign displays only the word \"BLOOM\" in bold black letters. No other letters or words are visible.",
+                "tag": "counting"
+              },
+              "strict": true,
+              "upstream_progress": 1.0
+            }
+          ],
+          "ocr": {
+            "lines": [
+              {
+                "box": [
+                  [
+                    195.0,
+                    145.0
+                  ],
+                  [
+                    314.0,
+                    145.0
+                  ],
+                  [
+                    314.0,
+                    173.0
+                  ],
+                  [
+                    195.0,
+                    173.0
+                  ]
+                ],
+                "confidence": 0.9977232813835144,
+                "text": "BLOOM"
+              }
+            ],
+            "recognized_text": "BLOOM"
+          }
+        },
+        "error": null,
+        "id": "jp1-train-count-12",
+        "image": "query_results/922af1f3f157c556d0112348/7c1e22d172af23d663a8.png",
+        "image_sha256": "7354affb2a4b382a6810c75736ac9555cabd33cbc02d54478af5f1e3d7bc8d7d",
+        "joint_success": true,
+        "mode": "full",
+        "optimizer_step": 320,
+        "progress": [
+          1.0,
+          1.0
+        ],
+        "quality": null,
+        "query_index": 2,
+        "query_state_mse_vs_phase9": 8.378655184060335e-05,
+        "satisfied": [
+          true,
+          true
+        ],
+        "seed": 2074542574,
+        "state_mse_vs_phase9_by_index": [
+          0.0,
+          1.847401108534541e-05,
+          8.378655184060335e-05,
+          0.00021834971266798675,
+          0.0004239968257024884,
+          0.000873132492415607,
+          0.002038255101069808,
+          0.004351552575826645,
+          0.00861406046897173,
+          0.01705426350235939,
+          0.017351895570755005
+        ],
+        "state_mse_vs_verified_branch_by_index": [
+          0.0,
+          1.847401108534541e-05,
+          8.378655184060335e-05,
+          0.00021834971266798675,
+          0.0004239968257024884,
+          0.000873132492415607,
+          0.002038255101069808,
+          0.004351552575826645,
+          0.00861406046897173,
+          0.01705426350235939,
+          0.017351895570755005
+        ],
+        "student_sha256": "e8dc6beb04a6facfae7f8c0152f5aa4cd9708b44b1fe8cdfa2e1de059613f658",
+        "utility": 1.0,
+        "valid": true
+      },
+      "source": "phase10_blinded_unique_image"
+    },
+    {
+      "comparison": {
+        "accepted_encoded_repair": false,
+        "harmed_clauses": [],
+        "has_unknown": true,
+        "known_harm": false,
+        "repaired_clauses": [],
+        "safe_visibility_gain": false,
+        "visibility_harm": false
+      },
+      "observation": {
+        "case": 19,
+        "clauses": {
+          "relation": null,
+          "text": true
+        },
+        "full_visibility": true,
+        "notes": "Lower apple is clearly right of lower bowl. The CLOUD-bearing object above has a second bowl-like profile; unsure whether it is a sign or another bowl. Exactly-one-bowl relation scene is therefore uncertain, not a pass.",
+        "visible_text": "CLOUD"
+      },
+      "row": {
+        "arm": "sparse",
+        "details": {
+          "clauses": [
+            {
+              "exact": true,
+              "expected_text": "CLOUD",
+              "id": "text",
+              "normalized_recognized": "cloud",
+              "progress": 1.0
+            },
+            {
+              "id": "relation",
+              "metadata": {
+                "include": [
+                  {
+                    "class": "bowl",
+                    "count": 1
+                  },
+                  {
+                    "class": "apple",
+                    "count": 1,
+                    "position": [
+                      "right of",
+                      0
+                    ]
+                  }
+                ],
+                "prompt": "A sharp, realistic studio photograph of exactly one apple clearly to the right of exactly one bowl, both fully visible. Above the objects, a large white sign displays only the word \"CLOUD\" in bold black letters. No other letters or words are visible.",
+                "tag": "position"
+              },
+              "strict": true,
+              "upstream_progress": 1.0
+            }
+          ],
+          "ocr": {
+            "lines": [
+              {
+                "box": [
+                  [
+                    178.0,
+                    112.0
+                  ],
+                  [
+                    333.0,
+                    112.0
+                  ],
+                  [
+                    333.0,
+                    140.0
+                  ],
+                  [
+                    178.0,
+                    140.0
+                  ]
+                ],
+                "confidence": 0.9969237446784973,
+                "text": "CLOUD"
+              }
+            ],
+            "recognized_text": "CLOUD"
+          }
+        },
+        "error": null,
+        "id": "jp1-train-relation-13",
+        "image": "query_results/284c15099dc526af431905a6/5a94f30c016da68c3669.png",
+        "image_sha256": "1a209e2567240d007ba0fe70d6399d82d5ac3de826838e683d4e0db66a1614f7",
+        "joint_success": true,
+        "mode": "local",
+        "optimizer_step": 320,
+        "progress": [
+          1.0,
+          1.0
+        ],
+        "quality": null,
+        "query_index": 3,
+        "query_state_mse_vs_phase9": 0.0009011238580569625,
+        "satisfied": [
+          true,
+          true
+        ],
+        "seed": 1500595046,
+        "state_mse_vs_phase9_by_index": [
+          0.0,
+          2.1063704480184242e-05,
+          0.0003505219065118581,
+          0.0009011238580569625,
+          0.002399764722213149,
+          0.005237888544797897,
+          0.010740652680397034,
+          0.02076173946261406,
+          0.03994545340538025,
+          0.08100277185440063,
+          0.08263055235147476
+        ],
+        "state_mse_vs_verified_branch_by_index": [
+          0.0,
+          2.1063704480184242e-05,
+          0.0003505219065118581,
+          0.0009011238580569625,
+          0.000986000057309866,
+          0.002155975205823779,
+          0.004356001038104296,
+          0.008201496675610542,
+          0.016369525343179703,
+          0.0345558300614357,
+          0.03520455211400986
+        ],
+        "student_sha256": "e8dc6beb04a6facfae7f8c0152f5aa4cd9708b44b1fe8cdfa2e1de059613f658",
+        "utility": 1.0,
+        "valid": true
+      },
+      "source": "phase10_blinded_unique_image"
+    },
+    {
+      "comparison": {
+        "accepted_encoded_repair": false,
+        "harmed_clauses": [],
+        "has_unknown": false,
+        "known_harm": false,
+        "repaired_clauses": [],
+        "safe_visibility_gain": false,
+        "visibility_harm": false
+      },
+      "observation": {
+        "case": 20,
+        "clauses": {
+          "count": true,
+          "text": true
+        },
+        "full_visibility": true,
+        "notes": "One complete bowl; word identifiable and no other readable lettering.",
+        "visible_text": "BLOOM"
+      },
+      "row": {
+        "arm": "sparse",
+        "details": {
+          "clauses": [
+            {
+              "exact": true,
+              "expected_text": "BLOOM",
+              "id": "text",
+              "normalized_recognized": "bloom",
+              "progress": 1.0
+            },
+            {
+              "id": "count",
+              "metadata": {
+                "include": [
+                  {
+                    "class": "bowl",
+                    "count": 1
+                  }
+                ],
+                "prompt": "A sharp, realistic studio photograph of exactly one bowl, all fully visible and separated. Above the objects, a large white sign displays only the word \"BLOOM\" in bold black letters. No other letters or words are visible.",
+                "tag": "counting"
+              },
+              "strict": true,
+              "upstream_progress": 1.0
+            }
+          ],
+          "ocr": {
+            "lines": [
+              {
+                "box": [
+                  [
+                    195.0,
+                    147.0
+                  ],
+                  [
+                    308.0,
+                    147.0
+                  ],
+                  [
+                    308.0,
+                    171.0
+                  ],
+                  [
+                    195.0,
+                    171.0
+                  ]
+                ],
+                "confidence": 0.9973471760749817,
+                "text": "BLOOM"
+              }
+            ],
+            "recognized_text": "BLOOM"
+          }
+        },
+        "error": null,
+        "id": "jp1-train-count-12",
+        "image": "query_results/b753c8a422972260639fc0ab/84e3d4b21cccc2995c6c.png",
+        "image_sha256": "52e7edd2795236d328dfd72e3fbcdd80e1bbe44009c559bb845397c1ce72398d",
+        "joint_success": true,
+        "mode": "full",
+        "optimizer_step": 32,
+        "progress": [
+          1.0,
+          1.0
+        ],
+        "quality": null,
+        "query_index": 2,
+        "query_state_mse_vs_phase9": 2.7367306756787002e-05,
+        "satisfied": [
+          true,
+          true
+        ],
+        "seed": 2074542574,
+        "state_mse_vs_phase9_by_index": [
+          0.0,
+          3.2293341973854695e-06,
+          2.7367306756787002e-05,
+          5.36748775630258e-05,
+          0.0001337786961812526,
+          0.0003747815790120512,
+          0.0009966627694666386,
+          0.002552090911194682,
+          0.005292440764605999,
+          0.010399002581834793,
+          0.010570669546723366
+        ],
+        "state_mse_vs_verified_branch_by_index": [
+          0.0,
+          3.2293341973854695e-06,
+          2.7367306756787002e-05,
+          5.36748775630258e-05,
+          0.0001337786961812526,
+          0.0003747815790120512,
+          0.0009966627694666386,
+          0.002552090911194682,
+          0.005292440764605999,
+          0.010399002581834793,
+          0.010570669546723366
+        ],
+        "student_sha256": "cab7ea2538dbd358903461daf08d22e8a133bc203436bf8b850533ddce8bba5b",
+        "utility": 1.0,
+        "valid": true
+      },
+      "source": "phase10_blinded_unique_image"
+    },
+    {
+      "comparison": {
+        "accepted_encoded_repair": false,
+        "harmed_clauses": [],
+        "has_unknown": false,
+        "known_harm": false,
+        "repaired_clauses": [],
+        "safe_visibility_gain": false,
+        "visibility_harm": false
+      },
+      "observation": {
+        "case": 21,
+        "clauses": {
+          "count": true,
+          "text": true
+        },
+        "full_visibility": true,
+        "notes": "Two recognizable bananas, fully visible. Left banana has a long bent/flared green tip, but no clearly separate third banana; word correct.",
+        "visible_text": "SUNNY"
+      },
+      "row": {
+        "arm": "sparse",
+        "details": {
+          "clauses": [
+            {
+              "exact": true,
+              "expected_text": "SUNNY",
+              "id": "text",
+              "normalized_recognized": "sunny",
+              "progress": 1.0
+            },
+            {
+              "id": "count",
+              "metadata": {
+                "include": [
+                  {
+                    "class": "banana",
+                    "count": 2
+                  }
+                ],
+                "prompt": "A sharp, realistic studio photograph of exactly two bananas, all fully visible and separated. Above the objects, a large white sign displays only the word \"SUNNY\" in bold black letters. No other letters or words are visible.",
+                "tag": "counting"
+              },
+              "strict": true,
+              "upstream_progress": 1.0
+            }
+          ],
+          "ocr": {
+            "lines": [
+              {
+                "box": [
+                  [
+                    95.0,
+                    124.0
+                  ],
+                  [
+                    394.0,
+                    126.0
+                  ],
+                  [
+                    394.0,
+                    186.0
+                  ],
+                  [
+                    95.0,
+                    184.0
+                  ]
+                ],
+                "confidence": 0.9846690893173218,
+                "text": "SUNNY"
+              }
+            ],
+            "recognized_text": "SUNNY"
+          }
+        },
+        "error": null,
+        "id": "jp1-train-count-15",
+        "image": "query_results/cc0dfa9aa566523164cf5c09/b5d760600e7458fb750e.png",
+        "image_sha256": "6857ae12362895a6a2e29fa203945ddd0e9e7a807aa00537bf772759a22f0393",
+        "joint_success": true,
+        "mode": "full",
+        "optimizer_step": 320,
+        "progress": [
+          1.0,
+          1.0
+        ],
+        "quality": null,
+        "query_index": 1,
+        "query_state_mse_vs_phase9": 1.0021934940596111e-05,
+        "satisfied": [
+          true,
+          true
+        ],
+        "seed": 1565007593,
+        "state_mse_vs_phase9_by_index": [
+          0.0,
+          1.0021934940596111e-05,
+          3.412894147913903e-05,
+          0.00021174328867346048,
+          0.0006593321450054646,
+          0.001641133800148964,
+          0.0036927196197211742,
+          0.008268261328339577,
+          0.017570123076438904,
+          0.037470776587724686,
+          0.03811616450548172
+        ],
+        "state_mse_vs_verified_branch_by_index": [
+          0.0,
+          1.0021934940596111e-05,
+          3.412894147913903e-05,
+          0.00021174328867346048,
+          0.0006593321450054646,
+          0.001641133800148964,
+          0.0036927196197211742,
+          0.008268261328339577,
+          0.017570123076438904,
+          0.037470776587724686,
+          0.03811616450548172
+        ],
+        "student_sha256": "e8dc6beb04a6facfae7f8c0152f5aa4cd9708b44b1fe8cdfa2e1de059613f658",
+        "utility": 1.0,
+        "valid": true
+      },
+      "source": "phase10_blinded_unique_image"
+    },
+    {
+      "comparison": {
+        "accepted_encoded_repair": false,
+        "harmed_clauses": [],
+        "has_unknown": false,
+        "known_harm": false,
+        "repaired_clauses": [],
+        "safe_visibility_gain": false,
+        "visibility_harm": false
+      },
+      "observation": {
+        "case": 22,
+        "clauses": {
+          "count": true,
+          "text": true
+        },
+        "full_visibility": true,
+        "notes": "Two separate complete bananas; SUNNY clearly readable. Small surface/fastener-like marks are not recognizable extra lettering.",
+        "visible_text": "SUNNY"
+      },
+      "row": {
+        "arm": "sparse",
+        "details": {
+          "clauses": [
+            {
+              "exact": true,
+              "expected_text": "SUNNY",
+              "id": "text",
+              "normalized_recognized": "sunny",
+              "progress": 1.0
+            },
+            {
+              "id": "count",
+              "metadata": {
+                "include": [
+                  {
+                    "class": "banana",
+                    "count": 2
+                  }
+                ],
+                "prompt": "A sharp, realistic studio photograph of exactly two bananas, all fully visible and separated. Above the objects, a large white sign displays only the word \"SUNNY\" in bold black letters. No other letters or words are visible.",
+                "tag": "counting"
+              },
+              "strict": false,
+              "upstream_progress": 0.5
+            }
+          ],
+          "ocr": {
+            "lines": [
+              {
+                "box": [
+                  [
+                    94.0,
+                    125.0
+                  ],
+                  [
+                    395.0,
+                    127.0
+                  ],
+                  [
+                    395.0,
+                    185.0
+                  ],
+                  [
+                    94.0,
+                    183.0
+                  ]
+                ],
+                "confidence": 0.9868484735488892,
+                "text": "SUNNY"
+              }
+            ],
+            "recognized_text": "SUNNY"
+          }
+        },
+        "error": null,
+        "id": "jp1-train-count-15",
+        "image": "query_results/171d1589f52c22912bcc78d7/fd34b938ea732a9793f5.png",
+        "image_sha256": "3d50a19427185679bcf2e953099db0b5bbd5d8e1e5ab0a198e6ad26a7269f3ff",
+        "joint_success": false,
+        "mode": "full",
+        "optimizer_step": 32,
+        "progress": [
+          1.0,
+          0.5
+        ],
+        "quality": null,
+        "query_index": 1,
+        "query_state_mse_vs_phase9": 7.208156148408307e-06,
+        "satisfied": [
+          true,
+          false
+        ],
+        "seed": 1565007593,
+        "state_mse_vs_phase9_by_index": [
+          0.0,
+          7.208156148408307e-06,
+          1.4332805221783929e-05,
+          0.00012033581151627004,
+          0.00029416431789286435,
+          0.0007266788743436337,
+          0.0025173835456371307,
+          0.006424647755920887,
+          0.014263080433011055,
+          0.030951954424381256,
+          0.03148399293422699
+        ],
+        "state_mse_vs_verified_branch_by_index": [
+          0.0,
+          7.208156148408307e-06,
+          1.4332805221783929e-05,
+          0.00012033581151627004,
+          0.00029416431789286435,
+          0.0007266788743436337,
+          0.0025173835456371307,
+          0.006424647755920887,
+          0.014263080433011055,
+          0.030951954424381256,
+          0.03148399293422699
+        ],
+        "student_sha256": "cab7ea2538dbd358903461daf08d22e8a133bc203436bf8b850533ddce8bba5b",
+        "utility": 0.375,
+        "valid": true
+      },
+      "source": "phase10_blinded_unique_image"
+    },
+    {
+      "comparison": {
+        "accepted_encoded_repair": false,
+        "harmed_clauses": [],
+        "has_unknown": false,
+        "known_harm": false,
+        "repaired_clauses": [],
+        "safe_visibility_gain": false,
+        "visibility_harm": false
+      },
+      "observation": {
+        "case": 23,
+        "clauses": {
+          "count": true,
+          "text": true
+        },
+        "full_visibility": true,
+        "notes": "Two separate complete bananas; SUNNY clearly readable. Small surface/fastener-like marks are not recognizable extra lettering.",
+        "visible_text": "SUNNY"
+      },
+      "row": {
+        "arm": "sparse",
+        "details": {
+          "clauses": [
+            {
+              "exact": true,
+              "expected_text": "SUNNY",
+              "id": "text",
+              "normalized_recognized": "sunny",
+              "progress": 1.0
+            },
+            {
+              "id": "count",
+              "metadata": {
+                "include": [
+                  {
+                    "class": "banana",
+                    "count": 2
+                  }
+                ],
+                "prompt": "A sharp, realistic studio photograph of exactly two bananas, all fully visible and separated. Above the objects, a large white sign displays only the word \"SUNNY\" in bold black letters. No other letters or words are visible.",
+                "tag": "counting"
+              },
+              "strict": true,
+              "upstream_progress": 1.0
+            }
+          ],
+          "ocr": {
+            "lines": [
+              {
+                "box": [
+                  [
+                    95.0,
+                    126.0
+                  ],
+                  [
+                    396.0,
+                    126.0
+                  ],
+                  [
+                    396.0,
+                    184.0
+                  ],
+                  [
+                    95.0,
+                    184.0
+                  ]
+                ],
+                "confidence": 0.985063374042511,
+                "text": "SUNNY"
+              }
+            ],
+            "recognized_text": "SUNNY"
+          }
+        },
+        "error": null,
+        "id": "jp1-train-count-15",
+        "image": "query_results/33364f20c1ba3290ede91530/a458b355d3f22ef1a826.png",
+        "image_sha256": "4d86b18dbed3a80f86b20a5e0f8378977a6ac46b42426d658013c9d41ace44d9",
+        "joint_success": true,
+        "mode": "local",
+        "optimizer_step": 320,
+        "progress": [
+          1.0,
+          1.0
+        ],
+        "quality": null,
+        "query_index": 1,
+        "query_state_mse_vs_phase9": 1.0021934940596111e-05,
+        "satisfied": [
+          true,
+          true
+        ],
+        "seed": 1565007593,
+        "state_mse_vs_phase9_by_index": [
+          0.0,
+          1.0021934940596111e-05,
+          3.412894147913903e-05,
+          0.00021174328867346048,
+          0.0006593321450054646,
+          0.001641133800148964,
+          0.0036927196197211742,
+          0.008268261328339577,
+          0.017570123076438904,
+          0.037470776587724686,
+          0.03811616450548172
+        ],
+        "state_mse_vs_verified_branch_by_index": [
+          0.0,
+          1.0021934940596111e-05,
+          3.412894147913903e-05,
+          0.00021174328867346048,
+          0.0006593321450054646,
+          0.001641133800148964,
+          0.0036927196197211742,
+          0.008268261328339577,
+          0.017570123076438904,
+          0.037470776587724686,
+          0.03811616450548172
+        ],
+        "student_sha256": "e8dc6beb04a6facfae7f8c0152f5aa4cd9708b44b1fe8cdfa2e1de059613f658",
+        "utility": 1.0,
+        "valid": true
+      },
+      "source": "phase10_blinded_unique_image"
+    },
+    {
+      "comparison": {
+        "accepted_encoded_repair": false,
+        "harmed_clauses": [],
+        "has_unknown": false,
+        "known_harm": false,
+        "repaired_clauses": [],
+        "safe_visibility_gain": false,
+        "visibility_harm": false
+      },
+      "observation": {
+        "case": 24,
+        "clauses": {
+          "relation": true,
+          "text": false
+        },
+        "full_visibility": false,
+        "notes": "Bicycle clearly right of car. Car extends across the left frame edge; additional plate lettering violates the only-word requirement, regardless of stylized sign glyphs.",
+        "visible_text": "WAVE (stylized); additional license-plate lettering"
+      },
+      "row": {
+        "arm": "sparse",
+        "details": {
+          "clauses": [
+            {
+              "exact": true,
+              "expected_text": "WAVE",
+              "id": "text",
+              "normalized_recognized": "wave",
+              "progress": 1.0
+            },
+            {
+              "id": "relation",
+              "metadata": {
+                "include": [
+                  {
+                    "class": "car",
+                    "count": 1
+                  },
+                  {
+                    "class": "bicycle",
+                    "count": 1,
+                    "position": [
+                      "right of",
+                      0
+                    ]
+                  }
+                ],
+                "prompt": "A sharp, realistic studio photograph of exactly one bicycle clearly to the right of exactly one car, both fully visible. Above the objects, a large white sign displays only the word \"WAVE\" in bold black letters. No other letters or words are visible.",
+                "tag": "position"
+              },
+              "strict": true,
+              "upstream_progress": 1.0
+            }
+          ],
+          "ocr": {
+            "lines": [
+              {
+                "box": [
+                  [
+                    183.0,
+                    101.0
+                  ],
+                  [
+                    322.0,
+                    99.0
+                  ],
+                  [
+                    323.0,
+                    141.0
+                  ],
+                  [
+                    184.0,
+                    143.0
+                  ]
+                ],
+                "confidence": 0.9309267997741699,
+                "text": "WAVE"
+              }
+            ],
+            "recognized_text": "WAVE"
+          }
+        },
+        "error": null,
+        "id": "jp1-train-relation-07",
+        "image": "query_results/07834b61dc391f99a4c8ba45/d08825663eb67f72b70f.png",
+        "image_sha256": "d00d962ec434364351cae497fa588ebbd383f703fb4cde1abe6e04a9a0190e9e",
+        "joint_success": true,
+        "mode": "local",
+        "optimizer_step": 32,
+        "progress": [
+          1.0,
+          1.0
+        ],
+        "quality": null,
+        "query_index": 0,
+        "query_state_mse_vs_phase9": 0.0,
+        "satisfied": [
+          true,
+          true
+        ],
+        "seed": 1565083676,
+        "state_mse_vs_phase9_by_index": [
+          0.0,
+          5.38213612344407e-07,
+          2.24171562877018e-05,
+          0.00015463204181287438,
+          0.0004256083338987082,
+          0.0009051750530488789,
+          0.002323279157280922,
+          0.006250166334211826,
+          0.014691689983010292,
+          0.03291166573762894,
+          0.0334881991147995
+        ],
+        "state_mse_vs_verified_branch_by_index": [
+          0.0,
+          5.38213612344407e-07,
+          2.24171562877018e-05,
+          0.00015463204181287438,
+          0.0004256083338987082,
+          0.0009051750530488789,
+          0.002323279157280922,
+          0.006250166334211826,
+          0.014691689983010292,
+          0.03291166573762894,
+          0.0334881991147995
+        ],
+        "student_sha256": "cab7ea2538dbd358903461daf08d22e8a133bc203436bf8b850533ddce8bba5b",
+        "utility": 1.0,
+        "valid": true
+      },
+      "source": "phase10_blinded_unique_image"
+    },
+    {
+      "comparison": {
+        "accepted_encoded_repair": false,
+        "harmed_clauses": [],
+        "has_unknown": false,
+        "known_harm": false,
+        "repaired_clauses": [],
+        "safe_visibility_gain": true,
+        "visibility_harm": false
+      },
+      "observation": {
+        "case": 25,
+        "clauses": {
+          "relation": true,
+          "text": true
+        },
+        "full_visibility": true,
+        "notes": "One cup clearly right of one bottle, both complete. BLOOM is blurred but identifiable; no extra lettering.",
+        "visible_text": "BLOOM"
+      },
+      "row": {
+        "arm": "dense",
+        "details": {
+          "clauses": [
+            {
+              "exact": true,
+              "expected_text": "BLOOM",
+              "id": "text",
+              "normalized_recognized": "bloom",
+              "progress": 1.0
+            },
+            {
+              "id": "relation",
+              "metadata": {
+                "include": [
+                  {
+                    "class": "bottle",
+                    "count": 1
+                  },
+                  {
+                    "class": "cup",
+                    "count": 1,
+                    "position": [
+                      "right of",
+                      0
+                    ]
+                  }
+                ],
+                "prompt": "A sharp, realistic studio photograph of exactly one cup clearly to the right of exactly one bottle, both fully visible. Above the objects, a large white sign displays only the word \"BLOOM\" in bold black letters. No other letters or words are visible.",
+                "tag": "position"
+              },
+              "strict": true,
+              "upstream_progress": 1.0
+            }
+          ],
+          "ocr": {
+            "lines": [
+              {
+                "box": [
+                  [
+                    192.0,
+                    172.0
+                  ],
+                  [
+                    335.0,
+                    170.0
+                  ],
+                  [
+                    336.0,
+                    214.0
+                  ],
+                  [
+                    193.0,
+                    216.0
+                  ]
+                ],
+                "confidence": 0.9977359771728516,
+                "text": "BLOOM"
+              }
+            ],
+            "recognized_text": "BLOOM"
+          }
+        },
+        "error": null,
+        "id": "jp1-train-relation-12",
+        "image": "query_results/92d321873a8133e0a66ad7c0/38aaf51d75c5c71c0c24.png",
+        "image_sha256": "b93b8d00ffaf8d2968bbdaef8accaa92af531dc1f3142ad17ce1381f99226c17",
+        "joint_success": true,
+        "mode": "full",
+        "optimizer_step": 32,
+        "progress": [
+          1.0,
+          1.0
+        ],
+        "quality": null,
+        "query_index": 0,
+        "query_state_mse_vs_phase9": 0.0,
+        "satisfied": [
+          true,
+          true
+        ],
+        "seed": 1903463636,
+        "state_mse_vs_phase9_by_index": [
+          0.0,
+          5.384655423767981e-07,
+          2.753786020548432e-06,
+          8.438692020718008e-06,
+          2.3054793928167783e-05,
+          5.812177187181078e-05,
+          0.00016537494957447052,
+          0.0006132150301709771,
+          0.001569045358337462,
+          0.003826063359156251,
+          0.003890927881002426
+        ],
+        "state_mse_vs_verified_branch_by_index": [
+          0.0,
+          5.384655423767981e-07,
+          2.753786020548432e-06,
+          8.438692020718008e-06,
+          2.3054793928167783e-05,
+          5.812177187181078e-05,
+          0.00016537494957447052,
+          0.0006132150301709771,
+          0.001569045358337462,
+          0.003826063359156251,
+          0.003890927881002426
+        ],
+        "student_sha256": "2aaa2d49b5b1ba6085e24c58569ed035c8c76f37bb94bd0b909bd9cd1e12da10",
+        "utility": 1.0,
+        "valid": true
+      },
+      "source": "phase10_blinded_unique_image"
+    },
+    {
+      "comparison": {
+        "accepted_encoded_repair": true,
+        "harmed_clauses": [],
+        "has_unknown": false,
+        "known_harm": false,
+        "repaired_clauses": [
+          "relation"
+        ],
+        "safe_visibility_gain": false,
+        "visibility_harm": false
+      },
+      "observation": {
+        "case": 26,
+        "clauses": {
+          "relation": true,
+          "text": true
+        },
+        "full_visibility": true,
+        "notes": "One complete white bowl and one pale apple clearly at right, with correct word above. Low contrast remains.",
+        "visible_text": "CLOUD"
+      },
+      "row": {
+        "arm": "sparse",
+        "details": {
+          "clauses": [
+            {
+              "exact": true,
+              "expected_text": "CLOUD",
+              "id": "text",
+              "normalized_recognized": "cloud",
+              "progress": 1.0
+            },
+            {
+              "id": "relation",
+              "metadata": {
+                "include": [
+                  {
+                    "class": "bowl",
+                    "count": 1
+                  },
+                  {
+                    "class": "apple",
+                    "count": 1,
+                    "position": [
+                      "right of",
+                      0
+                    ]
+                  }
+                ],
+                "prompt": "A sharp, realistic studio photograph of exactly one apple clearly to the right of exactly one bowl, both fully visible. Above the objects, a large white sign displays only the word \"CLOUD\" in bold black letters. No other letters or words are visible.",
+                "tag": "position"
+              },
+              "strict": true,
+              "upstream_progress": 1.0
+            }
+          ],
+          "ocr": {
+            "lines": [
+              {
+                "box": [
+                  [
+                    178.0,
+                    113.0
+                  ],
+                  [
+                    333.0,
+                    113.0
+                  ],
+                  [
+                    333.0,
+                    141.0
+                  ],
+                  [
+                    178.0,
+                    141.0
+                  ]
+                ],
+                "confidence": 0.9966238737106323,
+                "text": "CLOUD"
+              }
+            ],
+            "recognized_text": "CLOUD"
+          }
+        },
+        "error": null,
+        "id": "jp1-train-relation-13",
+        "image": "query_results/eef23223638a69ff075d6de8/0ee92bf068311eacca44.png",
+        "image_sha256": "7eac94fa76f718bcbd3693021a7548f9063ce0dc6ccc909cc67b01bf9f82c760",
+        "joint_success": true,
+        "mode": "full",
+        "optimizer_step": 32,
+        "progress": [
+          1.0,
+          1.0
+        ],
+        "quality": null,
+        "query_index": 3,
+        "query_state_mse_vs_phase9": 0.000924833060707897,
+        "satisfied": [
+          true,
+          true
+        ],
+        "seed": 1500595046,
+        "state_mse_vs_phase9_by_index": [
+          0.0,
+          1.5789337339811027e-05,
+          0.00035443337401375175,
+          0.000924833060707897,
+          0.002641854342073202,
+          0.005622308701276779,
+          0.010496075265109539,
+          0.019800452515482903,
+          0.037242863327264786,
+          0.0745851993560791,
+          0.07613454759120941
+        ],
+        "state_mse_vs_verified_branch_by_index": [
+          0.0,
+          1.5789337339811027e-05,
+          0.00035443337401375175,
+          0.000924833060707897,
+          0.0012555662542581558,
+          0.002624654909595847,
+          0.00508336815983057,
+          0.009984994307160378,
+          0.019889231771230698,
+          0.04160444438457489,
+          0.04240074008703232
+        ],
+        "student_sha256": "cab7ea2538dbd358903461daf08d22e8a133bc203436bf8b850533ddce8bba5b",
+        "utility": 1.0,
+        "valid": true
+      },
+      "source": "phase10_blinded_unique_image"
+    },
+    {
+      "comparison": {
+        "accepted_encoded_repair": false,
+        "harmed_clauses": [],
+        "has_unknown": false,
+        "known_harm": false,
+        "repaired_clauses": [],
+        "safe_visibility_gain": false,
+        "visibility_harm": false
+      },
+      "observation": {
+        "case": 27,
+        "clauses": {
+          "relation": true,
+          "text": false
+        },
+        "full_visibility": false,
+        "notes": "Bicycle clearly right of car. Car extends across the left frame edge; additional plate lettering violates the only-word requirement, regardless of stylized sign glyphs.",
+        "visible_text": "WAVE (stylized); additional license-plate lettering"
+      },
+      "row": {
+        "arm": "dense",
+        "details": {
+          "clauses": [
+            {
+              "exact": true,
+              "expected_text": "WAVE",
+              "id": "text",
+              "normalized_recognized": "wave",
+              "progress": 1.0
+            },
+            {
+              "id": "relation",
+              "metadata": {
+                "include": [
+                  {
+                    "class": "car",
+                    "count": 1
+                  },
+                  {
+                    "class": "bicycle",
+                    "count": 1,
+                    "position": [
+                      "right of",
+                      0
+                    ]
+                  }
+                ],
+                "prompt": "A sharp, realistic studio photograph of exactly one bicycle clearly to the right of exactly one car, both fully visible. Above the objects, a large white sign displays only the word \"WAVE\" in bold black letters. No other letters or words are visible.",
+                "tag": "position"
+              },
+              "strict": true,
+              "upstream_progress": 1.0
+            }
+          ],
+          "ocr": {
+            "lines": [
+              {
+                "box": [
+                  [
+                    183.0,
+                    101.0
+                  ],
+                  [
+                    322.0,
+                    99.0
+                  ],
+                  [
+                    323.0,
+                    141.0
+                  ],
+                  [
+                    184.0,
+                    143.0
+                  ]
+                ],
+                "confidence": 0.9395546913146973,
+                "text": "WAVE"
+              }
+            ],
+            "recognized_text": "WAVE"
+          }
+        },
+        "error": null,
+        "id": "jp1-train-relation-07",
+        "image": "query_results/180493b120be304a8679fbc7/efea055e7bee7ec07614.png",
+        "image_sha256": "f1798068ce32a7ee50901bc516853ceae8a348fc37604576ce266f621dbec7e6",
+        "joint_success": true,
+        "mode": "local",
+        "optimizer_step": 32,
+        "progress": [
+          1.0,
+          1.0
+        ],
+        "quality": null,
+        "query_index": 0,
+        "query_state_mse_vs_phase9": 0.0,
+        "satisfied": [
+          true,
+          true
+        ],
+        "seed": 1565083676,
+        "state_mse_vs_phase9_by_index": [
+          0.0,
+          4.300497948861448e-07,
+          1.8464188542566262e-06,
+          9.772593330126256e-06,
+          2.8248647140571848e-05,
+          8.629885269328952e-05,
+          0.00045345042599365115,
+          0.0025595223996788263,
+          0.007016225717961788,
+          0.017232468351721764,
+          0.01753143221139908
+        ],
+        "state_mse_vs_verified_branch_by_index": [
+          0.0,
+          4.300497948861448e-07,
+          1.8464188542566262e-06,
+          9.772593330126256e-06,
+          2.8248647140571848e-05,
+          8.629885269328952e-05,
+          0.00045345042599365115,
+          0.0025595223996788263,
+          0.007016225717961788,
+          0.017232468351721764,
+          0.01753143221139908
+        ],
+        "student_sha256": "2aaa2d49b5b1ba6085e24c58569ed035c8c76f37bb94bd0b909bd9cd1e12da10",
+        "utility": 1.0,
+        "valid": true
+      },
+      "source": "phase10_blinded_unique_image"
+    },
+    {
+      "comparison": {
+        "accepted_encoded_repair": false,
+        "harmed_clauses": [],
+        "has_unknown": false,
+        "known_harm": false,
+        "repaired_clauses": [],
+        "safe_visibility_gain": false,
+        "visibility_harm": false
+      },
+      "observation": {
+        "case": 28,
+        "clauses": {
+          "count": true,
+          "text": true
+        },
+        "full_visibility": true,
+        "notes": "One complete bowl; word identifiable and no other readable lettering.",
+        "visible_text": "BLOOM"
+      },
+      "row": {
+        "arm": "sparse",
+        "details": {
+          "clauses": [
+            {
+              "exact": true,
+              "expected_text": "BLOOM",
+              "id": "text",
+              "normalized_recognized": "bloom",
+              "progress": 1.0
+            },
+            {
+              "id": "count",
+              "metadata": {
+                "include": [
+                  {
+                    "class": "bowl",
+                    "count": 1
+                  }
+                ],
+                "prompt": "A sharp, realistic studio photograph of exactly one bowl, all fully visible and separated. Above the objects, a large white sign displays only the word \"BLOOM\" in bold black letters. No other letters or words are visible.",
+                "tag": "counting"
+              },
+              "strict": true,
+              "upstream_progress": 1.0
+            }
+          ],
+          "ocr": {
+            "lines": [
+              {
+                "box": [
+                  [
+                    202.0,
+                    150.0
+                  ],
+                  [
+                    306.0,
+                    148.0
+                  ],
+                  [
+                    306.0,
+                    173.0
+                  ],
+                  [
+                    202.0,
+                    175.0
+                  ]
+                ],
+                "confidence": 0.9972430467605591,
+                "text": "BLOOM"
+              }
+            ],
+            "recognized_text": "BLOOM"
+          }
+        },
+        "error": null,
+        "id": "jp1-train-count-12",
+        "image": "query_results/59b187667b751de78a34fd9d/6a89cae96ef81d2974b6.png",
+        "image_sha256": "3996d75c8a4afdb6a2bea6ac425bdb254b1da0f5720cd4b15677df6d77ebde41",
+        "joint_success": true,
+        "mode": "local",
+        "optimizer_step": 320,
+        "progress": [
+          1.0,
+          1.0
+        ],
+        "quality": null,
+        "query_index": 2,
+        "query_state_mse_vs_phase9": 8.378655184060335e-05,
+        "satisfied": [
+          true,
+          true
+        ],
+        "seed": 2074542574,
+        "state_mse_vs_phase9_by_index": [
+          0.0,
+          1.847401108534541e-05,
+          8.378655184060335e-05,
+          0.00021834971266798675,
+          0.0004239968257024884,
+          0.000873132492415607,
+          0.002038255101069808,
+          0.004351552575826645,
+          0.00861406046897173,
+          0.01705426350235939,
+          0.017351895570755005
+        ],
+        "state_mse_vs_verified_branch_by_index": [
+          0.0,
+          1.847401108534541e-05,
+          8.378655184060335e-05,
+          0.00021834971266798675,
+          0.0004239968257024884,
+          0.000873132492415607,
+          0.002038255101069808,
+          0.004351552575826645,
+          0.00861406046897173,
+          0.01705426350235939,
+          0.017351895570755005
+        ],
+        "student_sha256": "e8dc6beb04a6facfae7f8c0152f5aa4cd9708b44b1fe8cdfa2e1de059613f658",
+        "utility": 1.0,
+        "valid": true
+      },
+      "source": "phase10_blinded_unique_image"
+    },
+    {
+      "comparison": {
+        "accepted_encoded_repair": false,
+        "harmed_clauses": [],
+        "has_unknown": false,
+        "known_harm": false,
+        "repaired_clauses": [],
+        "safe_visibility_gain": false,
+        "visibility_harm": false
+      },
+      "observation": {
+        "case": 29,
+        "clauses": {
+          "count": true,
+          "text": true
+        },
+        "full_visibility": true,
+        "notes": "One complete bowl; word identifiable and no other readable lettering.",
+        "visible_text": "BLOOM"
+      },
+      "row": {
+        "arm": "dense",
+        "details": {
+          "clauses": [
+            {
+              "exact": true,
+              "expected_text": "BLOOM",
+              "id": "text",
+              "normalized_recognized": "bloom",
+              "progress": 1.0
+            },
+            {
+              "id": "count",
+              "metadata": {
+                "include": [
+                  {
+                    "class": "bowl",
+                    "count": 1
+                  }
+                ],
+                "prompt": "A sharp, realistic studio photograph of exactly one bowl, all fully visible and separated. Above the objects, a large white sign displays only the word \"BLOOM\" in bold black letters. No other letters or words are visible.",
+                "tag": "counting"
+              },
+              "strict": true,
+              "upstream_progress": 1.0
+            }
+          ],
+          "ocr": {
+            "lines": [
+              {
+                "box": [
+                  [
+                    198.0,
+                    149.0
+                  ],
+                  [
+                    306.0,
+                    146.0
+                  ],
+                  [
+                    307.0,
+                    173.0
+                  ],
+                  [
+                    199.0,
+                    176.0
+                  ]
+                ],
+                "confidence": 0.9967132806777954,
+                "text": "BLOOM"
+              }
+            ],
+            "recognized_text": "BLOOM"
+          }
+        },
+        "error": null,
+        "id": "jp1-train-count-12",
+        "image": "query_results/4e6452927fac1939b5693d74/d555625e453d12014937.png",
+        "image_sha256": "505dbbdc6f2d58ebf820b34e71eff9abfef5e2f4db68d833cca99fe8806c86bd",
+        "joint_success": true,
+        "mode": "local",
+        "optimizer_step": 32,
+        "progress": [
+          1.0,
+          1.0
+        ],
+        "quality": null,
+        "query_index": 2,
+        "query_state_mse_vs_phase9": 2.5324093257950153e-06,
+        "satisfied": [
+          true,
+          true
+        ],
+        "seed": 2074542574,
+        "state_mse_vs_phase9_by_index": [
+          0.0,
+          5.542069629882462e-07,
+          2.5324093257950153e-06,
+          9.803909051697701e-06,
+          3.212404408259317e-05,
+          5.64194233447779e-05,
+          0.00013137326459400356,
+          0.00040102191269397736,
+          0.001237636897712946,
+          0.002605543937534094,
+          0.0026428960263729095
+        ],
+        "state_mse_vs_verified_branch_by_index": [
+          0.0,
+          5.542069629882462e-07,
+          2.5324093257950153e-06,
+          9.803909051697701e-06,
+          3.212404408259317e-05,
+          5.64194233447779e-05,
+          0.00013137326459400356,
+          0.00040102191269397736,
+          0.001237636897712946,
+          0.002605543937534094,
+          0.0026428960263729095
+        ],
+        "student_sha256": "2aaa2d49b5b1ba6085e24c58569ed035c8c76f37bb94bd0b909bd9cd1e12da10",
+        "utility": 1.0,
+        "valid": true
+      },
+      "source": "phase10_blinded_unique_image"
+    },
+    {
+      "comparison": {
+        "accepted_encoded_repair": false,
+        "harmed_clauses": [],
+        "has_unknown": false,
+        "known_harm": false,
+        "repaired_clauses": [],
+        "safe_visibility_gain": false,
+        "visibility_harm": false
+      },
+      "observation": {
+        "case": 30,
+        "clauses": {
+          "count": true,
+          "text": true
+        },
+        "full_visibility": true,
+        "notes": "Two separate complete bananas; SUNNY clearly readable. Small surface/fastener-like marks are not recognizable extra lettering.",
+        "visible_text": "SUNNY"
+      },
+      "row": {
+        "arm": "dense",
+        "details": {
+          "clauses": [
+            {
+              "exact": true,
+              "expected_text": "SUNNY",
+              "id": "text",
+              "normalized_recognized": "sunny",
+              "progress": 1.0
+            },
+            {
+              "id": "count",
+              "metadata": {
+                "include": [
+                  {
+                    "class": "banana",
+                    "count": 2
+                  }
+                ],
+                "prompt": "A sharp, realistic studio photograph of exactly two bananas, all fully visible and separated. Above the objects, a large white sign displays only the word \"SUNNY\" in bold black letters. No other letters or words are visible.",
+                "tag": "counting"
+              },
+              "strict": true,
+              "upstream_progress": 1.0
+            }
+          ],
+          "ocr": {
+            "lines": [
+              {
+                "box": [
+                  [
+                    95.0,
+                    125.0
+                  ],
+                  [
+                    397.0,
+                    127.0
+                  ],
+                  [
+                    397.0,
+                    183.0
+                  ],
+                  [
+                    95.0,
+                    181.0
+                  ]
+                ],
+                "confidence": 0.9828125238418579,
+                "text": "SUNNY"
+              }
+            ],
+            "recognized_text": "SUNNY"
+          }
+        },
+        "error": null,
+        "id": "jp1-train-count-15",
+        "image": "query_results/acf404f49cca736840e58f2d/48ffb39f84395b396d52.png",
+        "image_sha256": "4e745c90bf07dbfdfceceabcffeec2563ed1305e808ea14d9b88f57ef0da72b0",
+        "joint_success": true,
+        "mode": "local",
+        "optimizer_step": 32,
+        "progress": [
+          1.0,
+          1.0
+        ],
+        "quality": null,
+        "query_index": 1,
+        "query_state_mse_vs_phase9": 5.924953256908339e-07,
+        "satisfied": [
+          true,
+          true
+        ],
+        "seed": 1565007593,
+        "state_mse_vs_phase9_by_index": [
+          0.0,
+          5.924953256908339e-07,
+          2.7518117349245586e-06,
+          2.4111857783282176e-05,
+          9.764647984411567e-05,
+          0.00010865124204428867,
+          0.00014994679077062756,
+          0.00022038596216589212,
+          0.0004139469237998128,
+          0.0009509194642305374,
+          0.0009617284522391856
+        ],
+        "state_mse_vs_verified_branch_by_index": [
+          0.0,
+          5.924953256908339e-07,
+          2.7518117349245586e-06,
+          2.4111857783282176e-05,
+          9.764647984411567e-05,
+          0.00010865124204428867,
+          0.00014994679077062756,
+          0.00022038596216589212,
+          0.0004139469237998128,
+          0.0009509194642305374,
+          0.0009617284522391856
+        ],
+        "student_sha256": "2aaa2d49b5b1ba6085e24c58569ed035c8c76f37bb94bd0b909bd9cd1e12da10",
+        "utility": 1.0,
+        "valid": true
+      },
+      "source": "phase10_blinded_unique_image"
+    }
+  ],
+  "review_inputs": {
+    "endpoint_rows": 30,
+    "inherited_rows": 0,
+    "inherited_sha256": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570",
+    "key_sha256": "3558f7de898a4687348d05c99843057cb3de33d2e5b74e69b948efbbf8512af4",
+    "new_unique_images": 30,
+    "result_sha256": "4d0501e68ac92453d809ac081c85d9ed568232466b05bf6c4e5efb58b7215c88",
+    "run": "/midtier/minilab/scratch/chw4026/projects/side_project/generative/opd_related/opd_lab/runs/le10_fit_001"
+  },
+  "scope": "one selected repair learning diagnostic, not generalization"
+}

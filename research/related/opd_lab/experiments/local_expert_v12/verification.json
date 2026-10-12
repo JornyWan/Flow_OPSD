@@ -1,0 +1,52 @@
+{
+  "aggregate_counts_valid": true,
+  "allocated_gpu_hours_including_failed_attempt": 0.11888888888888889,
+  "asset_audit": [],
+  "automatic_selections_recomputed": 64,
+  "candidate_images": 192,
+  "exact_anchor_checks": 1,
+  "failed_attempt_retained": true,
+  "frozen_review_views": 192,
+  "historical_artifacts": {
+    "10": {
+      "README_historical_revision": "9dcc18b",
+      "all_recorded_artifacts_unchanged": true,
+      "artifact_count": 154
+    },
+    "11": {
+      "README_historical_revision": "3923b6a",
+      "all_recorded_artifacts_unchanged": true,
+      "artifact_count": 428
+    },
+    "6": {
+      "README_historical_revision": "e384a09",
+      "all_recorded_artifacts_unchanged": true,
+      "artifact_count": 153
+    },
+    "7": {
+      "README_historical_revision": "8c1e160",
+      "all_recorded_artifacts_unchanged": true,
+      "artifact_count": 716
+    },
+    "8": {
+      "README_historical_revision": "d9c392c",
+      "all_recorded_artifacts_unchanged": true,
+      "artifact_count": 99
+    },
+    "9": {
+      "README_historical_revision": "d9c392c",
+      "all_recorded_artifacts_unchanged": true,
+      "artifact_count": 97
+    }
+  },
+  "limits": "Shared large pretrained assets use recorded inventories, not newly computed full content hashes; implementing-assistant review; single grid and seed per train prompt",
+  "measurement_diagnosis_harm_witnesses_verified": 4,
+  "retry_plan_identical": true,
+  "saved_states_and_all_actions": 64,
+  "unchanged_selector": true,
+  "unique_candidate_images": 192,
+  "upstream": {
+    "diffusionopd": "0c85bf0193a6da24bb1f72152b612d353a154999",
+    "diffusionopsd": "9c4c48cdfe5c3fa712d32957345d75fae9295696"
+  }
+}

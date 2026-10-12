@@ -1,0 +1,8 @@
+{
+  "cases": 16,
+  "observations_sha256": "1b845edf0a54a929a2510b78f1421e6d57a60671007468d214ef3804f2569d03",
+  "observer": "implementing assistant; provisional labels, not independent human truth; prompts known but image noise realizations new",
+  "rubric_sha256": "f3482aec1dd8a87ad5b9adfa48ae33727a36c8ac79467e45d6c286d9a6c9a548",
+  "scores_revealed": false,
+  "time_utc": "2026-09-11T22:08:53.671933+00:00"
+}

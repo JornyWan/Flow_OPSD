@@ -1,0 +1,32 @@
+{
+  "figure_sha256": "10c774895ded1ce81af809362762c8e4d17c6ffc2b222e6f6bd3db921d7d5000",
+  "results_sha256": "c4063dec0f6aeaee6ed2124b455919ad9d5e62ff4f4b3b674b63496fa29ab95f",
+  "script_sha256": "4a032982a22634069c508391554381492a718fc7b6bf4e492bdb5cccc18bb8d2",
+  "selection": "posthoc illustration of a same-prompt seed reversal; not an aggregate estimate",
+  "sources": [
+    {
+      "case": 31,
+      "image": "query_results/f16302654e1548a081037ac4/41101c0ae0d8a6cbcec0.png",
+      "image_sha256": "7720024f443e26f9515fdcd4bb2303f1d0d610aca3acf976aec9fc1ee881a234",
+      "model": "joint128"
+    },
+    {
+      "case": 31,
+      "image": "query_results/b45429fd28414974db47a24e/ef9fbe687fae3f16da39.png",
+      "image_sha256": "bdce5edc382e97d606c9f62e7a51f651af0d567b42f01f66d545cd0e3fa4d838",
+      "model": "label_selected"
+    },
+    {
+      "case": 16,
+      "image": "query_results/9b285427ef5472f830eb1740/231acc94cd487c2a863c.png",
+      "image_sha256": "3d1d2a7a133ec60e3d6511dc912452b8bcde67fbb1fc467081eb6c7db95fc5e3",
+      "model": "joint128"
+    },
+    {
+      "case": 16,
+      "image": "query_results/3ef87edd9459622c3c20bbc3/3ff37ba1413f992c1203.png",
+      "image_sha256": "847c5bc7db5ce0f08a7d0f0f306d538088bc5a9abec84c00f3847992bd2fc237",
+      "model": "label_selected"
+    }
+  ]
+}

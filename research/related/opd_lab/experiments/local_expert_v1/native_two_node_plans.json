@@ -1,0 +1,20 @@
+{
+  "le1_native_opd_8gpu_2node_plan": {
+    "gpus_per_node": 4,
+    "gradient_accumulation": 3,
+    "nodes": 2,
+    "per_gpu_batch": 3,
+    "sampling_images_per_outer_epoch": 72,
+    "status": "prepared_only_not_submitted",
+    "total_gpus": 8
+  },
+  "le1_native_opsd_8gpu_2node_plan": {
+    "gpus_per_node": 4,
+    "gradient_accumulation": 16,
+    "nodes": 2,
+    "per_gpu_batch": 9,
+    "sampling_images_per_outer_epoch": 1152,
+    "status": "prepared_only_not_submitted",
+    "total_gpus": 8
+  }
+}

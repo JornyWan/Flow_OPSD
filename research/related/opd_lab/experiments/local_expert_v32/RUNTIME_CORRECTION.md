@@ -1,0 +1,3 @@
+# Historical runtime correction
+
+Attempt001 omitted CUBLAS_WORKSPACE_CONFIG=:4096:8 present in the actual Phase29 worker command. Initial164 retention predictions and240 branch action metrics were exact, but the eight-update student comparison failed before any retention fitting. Attempt002 added quantitative audit logging and was cancelled after locating the missing environment binding. Both attempts and costs are preserved. Attempt003 restores the historical binding and asserts it before CUDA initialization; all strict replay checks, loss, data and planned training are unchanged. The binding is recorded in the worker result. Exact replay in003 is still required to establish that the mismatch is resolved.

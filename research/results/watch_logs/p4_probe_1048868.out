@@ -1,0 +1,64 @@
+[p4] host=ai-gpu07 gpu=NVIDIA A100-SXM4-80GB job=1048868 Sun Sep 13 01:50:29 EDT 2026
+WARNING[XFORMERS]: xFormers can't load C++/CUDA extensions. xFormers was built for:
+    PyTorch 2.6.0+cu124 with CUDA 1204 (you have 2.6.0+cu126)
+    Python  3.10.16 (you have 3.10.16)
+  Please reinstall xformers (see https://github.com/facebookresearch/xformers#installing-xformers)
+  Memory-efficient attention, SwiGLU, sparse and more won't be available.
+  Set XFORMERS_MORE_DETAILS=1 for more details
+Couldn't connect to the Hub: Cannot reach https://huggingface.co/api/models/stabilityai/stable-diffusion-3.5-medium: offline mode is enabled. To disable it, please unset the `HF_HUB_OFFLINE` environment variable..
+Will try to load from local cache.
+Loading pipeline components...:   0%|          | 0/9 [00:00<?, ?it/s]Loading pipeline components...:  11%|█         | 1/9 [00:00<00:00,  9.54it/s]Loading pipeline components...:  22%|██▏       | 2/9 [00:01<00:06,  1.08it/s]You set `add_prefix_space`. The tokenizer needs to be converted from the slow tokenizers
+Loading pipeline components...:  33%|███▎      | 3/9 [00:01<00:03,  1.77it/s]
+Loading checkpoint shards:   0%|          | 0/2 [00:00<?, ?it/s][A
+Loading checkpoint shards:  50%|█████     | 1/2 [00:01<00:01,  1.36s/it][A
+Loading checkpoint shards: 100%|██████████| 2/2 [00:03<00:00,  1.57s/it][ALoading checkpoint shards: 100%|██████████| 2/2 [00:03<00:00,  1.54s/it]
+Loading pipeline components...:  56%|█████▌    | 5/9 [00:04<00:04,  1.13s/it]Loading pipeline components...:  78%|███████▊  | 7/9 [00:09<00:03,  1.76s/it]Loading pipeline components...:  89%|████████▉ | 8/9 [00:10<00:01,  1.42s/it]Loading pipeline components...: 100%|██████████| 9/9 [00:10<00:00,  1.15s/it]
+/midtier/minilab/scratch/chw4026/projects/side_project/generative/conda_envs/envs/diffusionopd/lib/python3.10/site-packages/huggingface_hub/file_download.py:797: FutureWarning: `resume_download` is deprecated and will be removed in version 1.0.0. Downloads always resume when possible. If you want to force a new download, use `force_download=True`.
+  warnings.warn(
+2026-09-13 01:51:03,500 - root - INFO - Parsing model identifier. Schema: None, Identifier: ViT-H-14
+2026-09-13 01:51:03,500 - root - INFO - Loaded built-in ViT-H-14 model config.
+2026-09-13 01:51:03,501 - root - INFO - `pretrained` specifies file path: /midtier/minilab/scratch/chw4026/projects/side_project/generative/opd_related/CA-OPD/code/shim_rpi/diffusionopsd/../reward_ckpts/open_clip_pytorch_model.bin
+2026-09-13 01:51:03,501 - root - INFO - Instantiating model architecture: CLIP
+2026-09-13 01:51:09,993 - root - INFO - Loading full pretrained weights from: /midtier/minilab/scratch/chw4026/projects/side_project/generative/opd_related/CA-OPD/code/shim_rpi/diffusionopsd/../reward_ckpts/open_clip_pytorch_model.bin
+2026-09-13 01:51:15,279 - root - INFO - Final image preprocessing configuration set: {'size': (224, 224), 'mode': 'RGB', 'mean': (0.48145466, 0.4578275, 0.40821073), 'std': (0.26862954, 0.26130258, 0.27577711), 'interpolation': 'bicubic', 'resize_mode': 'shortest', 'fill_color': 0}
+2026-09-13 01:51:15,279 - root - INFO - Model ViT-H-14 creation process complete.
+2026-09-13 01:51:19,206 - root - INFO - Parsing tokenizer identifier. Schema: None, Identifier: ViT-H-14
+2026-09-13 01:51:19,206 - root - INFO - Attempting to load config from built-in: ViT-H-14
+2026-09-13 01:51:19,206 - root - INFO - Using default SimpleTokenizer.
+/midtier/minilab/scratch/chw4026/projects/side_project/generative/opd_related/probes/p4_zo_feasibility.py:82: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
+  with torch.no_grad(), torch_autocast(enabled=True, dtype=torch.float16):
+/midtier/minilab/scratch/chw4026/projects/side_project/generative/opd_related/probes/p4_zo_feasibility.py:92: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
+  with torch.no_grad(), torch_autocast(enabled=True, dtype=torch.float16):
+Traceback (most recent call last):
+  File "/midtier/minilab/scratch/chw4026/projects/side_project/generative/opd_related/probes/p4_zo_feasibility.py", line 155, in <module>
+    main()
+  File "/midtier/minilab/scratch/chw4026/projects/side_project/generative/opd_related/probes/p4_zo_feasibility.py", line 102, in main
+    rg = tr._reward_scores_grad(scorer, "open3", tr._decode01(pipe, xg), list(prm))
+  File "/midtier/minilab/scratch/chw4026/projects/side_project/generative/opd_related/CA-OPD/code/DiffusionOPSD-rpi/scripts/train_opsd_ri_sd3.py", line 224, in _decode01
+    img = pipeline.vae.decode(lat.to(pipeline.vae.dtype), return_dict=False)[0]
+  File "/midtier/minilab/scratch/chw4026/projects/side_project/generative/conda_envs/envs/diffusionopd/lib/python3.10/site-packages/diffusers/utils/accelerate_utils.py", line 46, in wrapper
+    return method(self, *args, **kwargs)
+  File "/midtier/minilab/scratch/chw4026/projects/side_project/generative/conda_envs/envs/diffusionopd/lib/python3.10/site-packages/diffusers/models/autoencoders/autoencoder_kl.py", line 323, in decode
+    decoded = self._decode(z).sample
+  File "/midtier/minilab/scratch/chw4026/projects/side_project/generative/conda_envs/envs/diffusionopd/lib/python3.10/site-packages/diffusers/models/autoencoders/autoencoder_kl.py", line 294, in _decode
+    dec = self.decoder(z)
+  File "/midtier/minilab/scratch/chw4026/projects/side_project/generative/conda_envs/envs/diffusionopd/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1739, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/midtier/minilab/scratch/chw4026/projects/side_project/generative/conda_envs/envs/diffusionopd/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1750, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/midtier/minilab/scratch/chw4026/projects/side_project/generative/conda_envs/envs/diffusionopd/lib/python3.10/site-packages/diffusers/models/autoencoders/vae.py", line 305, in forward
+    sample = up_block(sample, latent_embeds)
+  File "/midtier/minilab/scratch/chw4026/projects/side_project/generative/conda_envs/envs/diffusionopd/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1739, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/midtier/minilab/scratch/chw4026/projects/side_project/generative/conda_envs/envs/diffusionopd/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1750, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/midtier/minilab/scratch/chw4026/projects/side_project/generative/conda_envs/envs/diffusionopd/lib/python3.10/site-packages/diffusers/models/unets/unet_2d_blocks.py", line 2639, in forward
+    hidden_states = resnet(hidden_states, temb=temb)
+  File "/midtier/minilab/scratch/chw4026/projects/side_project/generative/conda_envs/envs/diffusionopd/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1739, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/midtier/minilab/scratch/chw4026/projects/side_project/generative/conda_envs/envs/diffusionopd/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1750, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/midtier/minilab/scratch/chw4026/projects/side_project/generative/conda_envs/envs/diffusionopd/lib/python3.10/site-packages/diffusers/models/resnet.py", line 371, in forward
+    output_tensor = (input_tensor + hidden_states) / self.output_scale_factor
+torch.OutOfMemoryError: CUDA out of memory. Tried to allocate 1024.00 MiB. GPU 0 has a total capacity of 79.25 GiB of which 630.62 MiB is free. Process 2439328 has 2.80 GiB memory in use. Including non-PyTorch memory, this process has 75.82 GiB memory in use. Of the allocated memory 73.57 GiB is allocated by PyTorch, and 1.74 GiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True to avoid fragmentation.  See documentation for Memory Management  (https://pytorch.org/docs/stable/notes/cuda.html#environment-variables)
+[p4] exit=1 Sun Sep 13 01:51:28 EDT 2026

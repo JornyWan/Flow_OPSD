@@ -1,0 +1,10 @@
+{
+  "frozen_before_key_join": true,
+  "inherited_sha256": "79abedb9f62b3b9c1833af3215fce4d73edfade0048a6792b268469dbe551e19",
+  "key_sha256": "76cc4e1a533c2c28780fdc7599d46bbf241be74f66f08efd2580ef4ef7ab839a",
+  "observations_sha256": "05cb4fa56af1dfb95b3a0b785f8350467ffdccb68049a271f668968fc5c09eae",
+  "reviewer": "implementing assistant, mode/score-blinded, familiar old prompts; not independent human labels",
+  "rubric_sha256": "bea2a59f969763f59d27e40720c52a3218eb3d612b7ae6c483e36cdf793fd2b4",
+  "scope": "all16 new unique images; uncertain glyphs remain unknown",
+  "time_utc": "2026-09-13T16:35:00.588927+00:00"
+}

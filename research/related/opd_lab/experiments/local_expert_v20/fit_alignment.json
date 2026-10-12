@@ -1,0 +1,188 @@
+{
+  "accepted_targets": [
+    {
+      "arm": "all_teacher",
+      "median_relative_target_mse": 1.0,
+      "states": 9,
+      "step": 0
+    },
+    {
+      "arm": "all_teacher",
+      "median_relative_target_mse": 0.49673653593206096,
+      "states": 9,
+      "step": 32
+    },
+    {
+      "arm": "all_teacher",
+      "median_relative_target_mse": 0.17715455690396664,
+      "states": 9,
+      "step": 128
+    },
+    {
+      "arm": "certified",
+      "median_relative_target_mse": 1.0,
+      "states": 9,
+      "step": 0
+    },
+    {
+      "arm": "certified",
+      "median_relative_target_mse": 0.5060742735181043,
+      "states": 9,
+      "step": 32
+    },
+    {
+      "arm": "certified",
+      "median_relative_target_mse": 0.24495965519058177,
+      "states": 9,
+      "step": 128
+    },
+    {
+      "arm": "random_matched",
+      "median_relative_target_mse": 1.0,
+      "states": 9,
+      "step": 0
+    },
+    {
+      "arm": "random_matched",
+      "median_relative_target_mse": 0.9290994462382461,
+      "states": 9,
+      "step": 32
+    },
+    {
+      "arm": "random_matched",
+      "median_relative_target_mse": 0.9609164143970728,
+      "states": 9,
+      "step": 128
+    }
+  ],
+  "noop_targets": [
+    {
+      "arm": "all_teacher",
+      "median_raw_action_mse": 0.0,
+      "role": "positive",
+      "states": 39,
+      "step": 0
+    },
+    {
+      "arm": "all_teacher",
+      "median_raw_action_mse": 0.0,
+      "role": "preservation",
+      "states": 6,
+      "step": 0
+    },
+    {
+      "arm": "all_teacher",
+      "median_raw_action_mse": 0.04581860256399575,
+      "role": "positive",
+      "states": 39,
+      "step": 32
+    },
+    {
+      "arm": "all_teacher",
+      "median_raw_action_mse": 0.005147434111052257,
+      "role": "preservation",
+      "states": 6,
+      "step": 32
+    },
+    {
+      "arm": "all_teacher",
+      "median_raw_action_mse": 0.08750046861467485,
+      "role": "positive",
+      "states": 39,
+      "step": 128
+    },
+    {
+      "arm": "all_teacher",
+      "median_raw_action_mse": 0.0024742849617645085,
+      "role": "preservation",
+      "states": 6,
+      "step": 128
+    },
+    {
+      "arm": "certified",
+      "median_raw_action_mse": 0.0,
+      "role": "positive",
+      "states": 39,
+      "step": 0
+    },
+    {
+      "arm": "certified",
+      "median_raw_action_mse": 0.0,
+      "role": "preservation",
+      "states": 6,
+      "step": 0
+    },
+    {
+      "arm": "certified",
+      "median_raw_action_mse": 0.0011551402461128825,
+      "role": "positive",
+      "states": 39,
+      "step": 32
+    },
+    {
+      "arm": "certified",
+      "median_raw_action_mse": 0.0005245326961257069,
+      "role": "preservation",
+      "states": 6,
+      "step": 32
+    },
+    {
+      "arm": "certified",
+      "median_raw_action_mse": 0.0008219773735266278,
+      "role": "positive",
+      "states": 39,
+      "step": 128
+    },
+    {
+      "arm": "certified",
+      "median_raw_action_mse": 0.000351177957913883,
+      "role": "preservation",
+      "states": 6,
+      "step": 128
+    },
+    {
+      "arm": "random_matched",
+      "median_raw_action_mse": 0.0,
+      "role": "positive",
+      "states": 39,
+      "step": 0
+    },
+    {
+      "arm": "random_matched",
+      "median_raw_action_mse": 0.0,
+      "role": "preservation",
+      "states": 6,
+      "step": 0
+    },
+    {
+      "arm": "random_matched",
+      "median_raw_action_mse": 0.0011377285691859529,
+      "role": "positive",
+      "states": 39,
+      "step": 32
+    },
+    {
+      "arm": "random_matched",
+      "median_raw_action_mse": 0.00043306126129800254,
+      "role": "preservation",
+      "states": 6,
+      "step": 32
+    },
+    {
+      "arm": "random_matched",
+      "median_raw_action_mse": 0.0007893180705048075,
+      "role": "positive",
+      "states": 39,
+      "step": 128
+    },
+    {
+      "arm": "random_matched",
+      "median_raw_action_mse": 0.00034610368600331183,
+      "role": "preservation",
+      "states": 6,
+      "step": 128
+    }
+  ],
+  "scope": "Training queries only, no endpoint quality or fresh-seed generalization claim.",
+  "source_metrics_sha256": "ee6207110cda6aa19fff107b2937058096f54aaf7ebe3b02fc79b37cd7bea5cf"
+}

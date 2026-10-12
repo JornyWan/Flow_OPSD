@@ -1,0 +1,78 @@
+{
+  "all_action_interpolations_exact": 144,
+  "allocated_gpu_hours": 0.06833333333333333,
+  "exact_reference_images": 12,
+  "excluded_seed_count": 263,
+  "fresh_noise_exact": 12,
+  "historical_artifacts": {
+    "10": {
+      "README_historical_revision": "9dcc18b",
+      "all_recorded_artifacts_unchanged": true,
+      "artifact_count": 154
+    },
+    "11": {
+      "README_historical_revision": "3923b6a",
+      "all_recorded_artifacts_unchanged": true,
+      "artifact_count": 428
+    },
+    "12": {
+      "README_historical_revision": "8e9c655",
+      "all_recorded_artifacts_unchanged": true,
+      "artifact_count": 581
+    },
+    "13": {
+      "README_historical_revision": "bb804ca",
+      "all_recorded_artifacts_unchanged": true,
+      "artifact_count": 42
+    },
+    "14": {
+      "README_historical_revision": "a23a429",
+      "all_recorded_artifacts_unchanged": true,
+      "artifact_count": 53
+    },
+    "15": {
+      "README_historical_revision": "f1b9e79",
+      "all_recorded_artifacts_unchanged": true,
+      "artifact_count": 437
+    },
+    "16": {
+      "README_historical_revision": "198dc28",
+      "all_recorded_artifacts_unchanged": true,
+      "artifact_count": 327
+    },
+    "6": {
+      "README_historical_revision": "e384a09",
+      "all_recorded_artifacts_unchanged": true,
+      "artifact_count": 153
+    },
+    "7": {
+      "README_historical_revision": "8c1e160",
+      "all_recorded_artifacts_unchanged": true,
+      "artifact_count": 716
+    },
+    "8": {
+      "README_historical_revision": "d9c392c",
+      "all_recorded_artifacts_unchanged": true,
+      "artifact_count": 99
+    },
+    "9": {
+      "README_historical_revision": "d9c392c",
+      "all_recorded_artifacts_unchanged": true,
+      "artifact_count": 97
+    }
+  },
+  "job_id": "1049670",
+  "labels_statistics_and_target_selection_rebuilt": true,
+  "limitations": "Selected prompt cohort, assistant labels, development collection, oracle target pool, shared large assets stat-checked rather than full content-rehashed.",
+  "new_images_and_reviewed_views": 156,
+  "new_teacher_queries": 72,
+  "optimizer_updates": 0,
+  "runtime_asset_audit": [],
+  "saved_query_payloads_verified": 36,
+  "seed_source_files": 156,
+  "trajectories_verified": 12,
+  "upstream": {
+    "diffusionopd": "0c85bf0193a6da24bb1f72152b612d353a154999",
+    "diffusionopsd": "9c4c48cdfe5c3fa712d32957345d75fae9295696"
+  }
+}

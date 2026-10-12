@@ -1,0 +1,11 @@
+{
+  "cases": 64,
+  "frozen_at_utc": "2026-09-14T01:56:36.139096+00:00",
+  "frozen_before_key_join": true,
+  "items_sha256": "fb9554a119ca694898e27be6582a29e98b3d405d720f58985a088b1f3f1a187c",
+  "key_sha256": "bd960d4d73756fba130c0cbf152d4d01a0f31e766628233aee5a988003c6c182",
+  "observations_sha256": "778fdd352dff758e97965e7b0f44dbf94ca78b34bf0395dab8944de604ce1289",
+  "reviewer": "implementing assistant; action/model/score/selection hidden; not independent human ground truth",
+  "rubric_sha256": "0dd94a00620f6a26c497efe735fe1480287e8fa6746fc776c079e359644d2a89",
+  "views": 192
+}

@@ -1,0 +1,6 @@
+{
+  "plan_sha256": "3bed3bd90cece50fc0173d4bf9d21c7c7e32e236a753b09839e4def087de3d08",
+  "protocol_sha256": "b4c86d1af67c47df5956c24fc3bce3d0a32acc60d060b5a2fd102f08392c15d2",
+  "run": "/midtier/minilab/scratch/chw4026/projects/side_project/generative/opd_related/opd_lab/runs/le8_trajectory_001",
+  "source_phase7": "/midtier/minilab/scratch/chw4026/projects/side_project/generative/opd_related/opd_lab/runs/le7_fit_001"
+}

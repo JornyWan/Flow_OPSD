@@ -1,0 +1,10 @@
+{
+  "frozen_before_key_join": true,
+  "inherited_sha256": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570",
+  "key_sha256": "3558f7de898a4687348d05c99843057cb3de33d2e5b74e69b948efbbf8512af4",
+  "observations_sha256": "4e7500c32ce8216d2af6d08881ae4656428c0b63af89589bdf06093467c7300d",
+  "reviewer": "implementing assistant, arm/update/mode/score-blinded, familiar old prompts; not independent human truth",
+  "rubric_sha256": "ab03c80672734c6e6a2d7c6c814508dc63c304c58c53e9498469f4aeb17b567d",
+  "scope": "all30 unique endpoint images; case19 remains uncertain due to a possible additional bowl",
+  "time_utc": "2026-09-14T00:21:30.705065+00:00"
+}

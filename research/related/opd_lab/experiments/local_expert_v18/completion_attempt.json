@@ -1,0 +1,13 @@
+{
+  "completed_training_updates": 384,
+  "existing_endpoints": 158,
+  "gpu_job_id": "1050332",
+  "missing_endpoints": 27,
+  "new_optimizer_updates": 0,
+  "qualification_scope": "24 old reference endpoints plus7 existing model/path endpoints; no tolerance change",
+  "required_replays": 31,
+  "run": "/midtier/minilab/scratch/chw4026/projects/side_project/generative/opd_related/opd_lab/runs/le18_completion_001",
+  "source": "/midtier/minilab/scratch/chw4026/projects/side_project/generative/opd_related/opd_lab/runs/le18_supervision_003",
+  "source_allocated_gpu_hours": 0.7527777777777778,
+  "source_status": "TIMEOUT"
+}

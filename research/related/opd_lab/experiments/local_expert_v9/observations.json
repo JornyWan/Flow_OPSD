@@ -1,0 +1,202 @@
+[
+  {
+    "case": 1,
+    "clauses": {
+      "relation": true,
+      "text": null
+    },
+    "full_visibility": true,
+    "notes": "One complete bicycle right of one complete car. Outlined WAVE is legible but an extra dark quote-like shape precedes it; unclear mark prevents a strict only-word success label.",
+    "visible_text": "WAVE with an extra raised dark mark at left"
+  },
+  {
+    "case": 2,
+    "clauses": {
+      "count": true,
+      "text": true
+    },
+    "full_visibility": true,
+    "notes": "One complete bowl. Five identifiable stylized letters, including both Os.",
+    "visible_text": "BLOOM"
+  },
+  {
+    "case": 3,
+    "clauses": {
+      "relation": false,
+      "text": true
+    },
+    "full_visibility": true,
+    "notes": "Apple primarily below bowl and within its horizontal extent, not clearly to its right. Word on bowl instead of a separate sign.",
+    "visible_text": "CLOUD"
+  },
+  {
+    "case": 4,
+    "clauses": {
+      "count": true,
+      "text": true
+    },
+    "full_visibility": true,
+    "notes": "Two complete separated bananas and correct five-letter word.",
+    "visible_text": "SUNNY"
+  },
+  {
+    "case": 5,
+    "clauses": {
+      "count": true,
+      "text": false
+    },
+    "full_visibility": true,
+    "notes": "One complete bowl. Extra narrow I-like character between B and L; word is not BLOOM.",
+    "visible_text": "BILOOM"
+  },
+  {
+    "case": 6,
+    "clauses": {
+      "relation": true,
+      "text": false
+    },
+    "full_visibility": false,
+    "notes": "Bicycle right of car. Main word is correct ignoring case, but visible plate lettering adds text; front of car cropped at left.",
+    "visible_text": "Wave; additional plate lettering"
+  },
+  {
+    "case": 7,
+    "clauses": {
+      "relation": true,
+      "text": false
+    },
+    "full_visibility": true,
+    "notes": "Cup right of complete bottle. Extra B/c-like letters to the left of the main BLOOM word violate only-word constraint.",
+    "visible_text": "Bc + BLOOM"
+  },
+  {
+    "case": 8,
+    "clauses": {
+      "count": true,
+      "text": true
+    },
+    "full_visibility": true,
+    "notes": "One complete white bowl and identifiable BLOOM; second O has rough/overlapping strokes.",
+    "visible_text": "BLOOM"
+  },
+  {
+    "case": 9,
+    "clauses": {
+      "count": true,
+      "text": true
+    },
+    "full_visibility": true,
+    "notes": "One complete bowl; correct word with slightly irregular final M.",
+    "visible_text": "BLOOM"
+  },
+  {
+    "case": 10,
+    "clauses": {
+      "relation": true,
+      "text": false
+    },
+    "full_visibility": true,
+    "notes": "Complete cup right of complete bottle. Main sign is correct, but bottle label has clear additional small text.",
+    "visible_text": "BLOOM; paragraph-like bottle-label text"
+  },
+  {
+    "case": 11,
+    "clauses": {
+      "relation": true,
+      "text": true
+    },
+    "full_visibility": false,
+    "notes": "Cup right of bottle; blurry but readable word. Cup bottom is clipped by image boundary.",
+    "visible_text": "BLOOM"
+  },
+  {
+    "case": 12,
+    "clauses": {
+      "count": true,
+      "text": true
+    },
+    "full_visibility": true,
+    "notes": "Two complete separated bananas with correct word.",
+    "visible_text": "SUNNY"
+  },
+  {
+    "case": 13,
+    "clauses": {
+      "relation": false,
+      "text": true
+    },
+    "full_visibility": true,
+    "notes": "Apple below bowl within its horizontal extent. Word on bowl; objects complete.",
+    "visible_text": "CLOUD"
+  },
+  {
+    "case": 14,
+    "clauses": {
+      "relation": true,
+      "text": false
+    },
+    "full_visibility": false,
+    "notes": "Bicycle right of car. Extra plate lettering; car front cropped at left.",
+    "visible_text": "Wave; additional plate lettering"
+  },
+  {
+    "case": 15,
+    "clauses": {
+      "count": false,
+      "text": true
+    },
+    "full_visibility": false,
+    "notes": "One whole banana and a cut banana piece, not two complete bananas. Correct word; no second complete requested banana.",
+    "visible_text": "SUNNY"
+  },
+  {
+    "case": 16,
+    "clauses": {
+      "relation": true,
+      "text": true
+    },
+    "full_visibility": true,
+    "notes": "One complete pale apple with stem clearly right of one complete white bowl. Correct word on separate sign above. Pale color and low contrast remain, but no color was requested.",
+    "visible_text": "CLOUD"
+  },
+  {
+    "case": 17,
+    "clauses": {
+      "relation": true,
+      "text": false
+    },
+    "full_visibility": true,
+    "notes": "One complete bicycle right of one complete car. Correct main word but visible small alphanumeric rear plate text remains.",
+    "visible_text": "WAVE; small rear plate lettering"
+  },
+  {
+    "case": 18,
+    "clauses": {
+      "relation": true,
+      "text": true
+    },
+    "full_visibility": true,
+    "notes": "One complete cup right of one complete bottle, separated. Correct word is blurry but identifiable; cup base stays within frame.",
+    "visible_text": "BLOOM"
+  },
+  {
+    "case": 19,
+    "clauses": {
+      "relation": false,
+      "text": true
+    },
+    "full_visibility": true,
+    "notes": "Apple is below bowl, with its center only slightly to the right and horizontal spans overlapping. Both complete; correct word on sign at bowl.",
+    "visible_text": "CLOUD"
+  },
+  {
+    "case": 20,
+    "clauses": {
+      "count": false,
+      "text": true
+    },
+    "full_visibility": false,
+    "notes": "Only one complete banana; second requested banana absent. Word correct.",
+    "visible_text": "SUNNY"
+  }
+]

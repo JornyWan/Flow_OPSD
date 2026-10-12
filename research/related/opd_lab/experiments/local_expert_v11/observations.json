@@ -1,0 +1,1756 @@
+[
+  {
+    "case": 1,
+    "views": {
+      "A": {
+        "clauses": {
+          "color": true,
+          "text": true
+        },
+        "full_visibility": true,
+        "notes": "One pale yellow book, complete; MANGO readable. Multiple page edges are not separate books.",
+        "visible_text": "MANGO"
+      },
+      "B": {
+        "clauses": {
+          "color": true,
+          "text": true
+        },
+        "full_visibility": true,
+        "notes": "One pale yellow book, complete; MANGO readable. Multiple page edges are not separate books.",
+        "visible_text": "MANGO"
+      },
+      "C": {
+        "clauses": {
+          "color": true,
+          "text": true
+        },
+        "full_visibility": true,
+        "notes": "One pale yellow book, complete; MANGO readable. Multiple page edges are not separate books.",
+        "visible_text": "MANGO"
+      },
+      "D": {
+        "clauses": {
+          "color": true,
+          "text": null
+        },
+        "full_visibility": true,
+        "notes": "One yellow book complete. Small marked white tabs above/below book may contain extra characters; uncertain.",
+        "visible_text": "MANGO; possible tiny extra print on white tabs"
+      }
+    }
+  },
+  {
+    "case": 2,
+    "views": {
+      "A": {
+        "clauses": {
+          "color": true,
+          "text": true
+        },
+        "full_visibility": false,
+        "notes": "One clearly blue bottle, lower body cropped. CEDAR identifiable with rough glyph texture.",
+        "visible_text": "CEDAR"
+      },
+      "B": {
+        "clauses": {
+          "color": true,
+          "text": false
+        },
+        "full_visibility": false,
+        "notes": "One blue bottle cropped below; text has an extra D-like form.",
+        "visible_text": "CEDDAR (duplicated D-like form)"
+      },
+      "C": {
+        "clauses": {
+          "color": true,
+          "text": null
+        },
+        "full_visibility": false,
+        "notes": "Blue bottle cropped. E/D share a stem and cannot be confidently separated into the requested five letters.",
+        "visible_text": "C[ED ligature?]AR"
+      },
+      "D": {
+        "clauses": {
+          "color": true,
+          "text": null
+        },
+        "full_visibility": false,
+        "notes": "Blue bottle cropped; E/D merged glyph is uncertain.",
+        "visible_text": "C[ED ligature?]AR"
+      }
+    }
+  },
+  {
+    "case": 3,
+    "views": {
+      "A": {
+        "clauses": {
+          "color": true,
+          "count": true,
+          "text": true
+        },
+        "full_visibility": true,
+        "notes": "Exactly two complete blue apples; CORAL clear on sign.",
+        "visible_text": "CORAL"
+      },
+      "B": {
+        "clauses": {
+          "color": true,
+          "count": true,
+          "text": true
+        },
+        "full_visibility": true,
+        "notes": "Exactly two complete blue apples; CORAL clear on sign.",
+        "visible_text": "CORAL"
+      },
+      "C": {
+        "clauses": {
+          "color": true,
+          "count": true,
+          "text": true
+        },
+        "full_visibility": true,
+        "notes": "Exactly two complete blue apples; CORAL clear on sign.",
+        "visible_text": "CORAL"
+      },
+      "D": {
+        "clauses": {
+          "color": true,
+          "count": true,
+          "text": true
+        },
+        "full_visibility": true,
+        "notes": "Exactly two complete blue apples; CORAL clear on sign.",
+        "visible_text": "CORAL"
+      }
+    }
+  },
+  {
+    "case": 4,
+    "views": {
+      "A": {
+        "clauses": {
+          "color": true,
+          "count": true,
+          "text": false
+        },
+        "full_visibility": true,
+        "notes": "Three yellow vases complete; extra printed line beneath STONE violates only-word requirement.",
+        "visible_text": "STONE plus a small second line"
+      },
+      "B": {
+        "clauses": {
+          "color": true,
+          "count": true,
+          "text": false
+        },
+        "full_visibility": true,
+        "notes": "Three yellow vases complete; extra printed line beneath STONE.",
+        "visible_text": "STONE plus a small second line"
+      },
+      "C": {
+        "clauses": {
+          "color": true,
+          "count": true,
+          "text": true
+        },
+        "full_visibility": true,
+        "notes": "Three complete yellow vases; STONE clear. Central vase shape differs but remains one object.",
+        "visible_text": "STONE"
+      },
+      "D": {
+        "clauses": {
+          "color": true,
+          "count": true,
+          "text": true
+        },
+        "full_visibility": true,
+        "notes": "Three complete yellow vases; STONE clear. Central vase shape differs but remains one object.",
+        "visible_text": "STONE"
+      }
+    }
+  },
+  {
+    "case": 5,
+    "views": {
+      "A": {
+        "clauses": {
+          "count": true,
+          "text": true
+        },
+        "full_visibility": true,
+        "notes": "Two complete separated chairs; HAVEN identifiable despite low contrast and nonblack letters.",
+        "visible_text": "HAVEN"
+      },
+      "B": {
+        "clauses": {
+          "count": true,
+          "text": null
+        },
+        "full_visibility": true,
+        "notes": "Two pale chairs complete. Possible small extra print at left edge; cannot distinguish from a rendering mark.",
+        "visible_text": "HAVEN; possible tiny marking at left edge"
+      },
+      "C": {
+        "clauses": {
+          "count": true,
+          "text": true
+        },
+        "full_visibility": true,
+        "notes": "Two complete separated chairs; HAVEN identifiable despite low contrast and nonblack letters.",
+        "visible_text": "HAVEN"
+      },
+      "D": {
+        "clauses": {
+          "count": true,
+          "text": null
+        },
+        "full_visibility": true,
+        "notes": "Two pale chairs complete; tiny left-edge marking uncertain.",
+        "visible_text": "HAVEN; possible tiny marking at left edge"
+      }
+    }
+  },
+  {
+    "case": 6,
+    "views": {
+      "A": {
+        "clauses": {
+          "count": false,
+          "text": null
+        },
+        "full_visibility": false,
+        "notes": "Two rather than three bowls. Small mark after R may be extra lettering or surface detail.",
+        "visible_text": "RIVER; possible small superscript mark"
+      },
+      "B": {
+        "clauses": {
+          "count": false,
+          "text": false
+        },
+        "full_visibility": false,
+        "notes": "Two rather than three bowls; additional circled-R-like character after word.",
+        "visible_text": "RIVER with an additional registered/trademark-like R mark"
+      },
+      "C": {
+        "clauses": {
+          "count": false,
+          "text": true
+        },
+        "full_visibility": false,
+        "notes": "Only two complete bowls are present rather than three; requested third object absent. RIVER readable.",
+        "visible_text": "RIVER"
+      },
+      "D": {
+        "clauses": {
+          "count": false,
+          "text": true
+        },
+        "full_visibility": false,
+        "notes": "Only two complete bowls are present rather than three; requested third object absent. RIVER readable.",
+        "visible_text": "RIVER"
+      }
+    }
+  },
+  {
+    "case": 7,
+    "views": {
+      "A": {
+        "clauses": {
+          "relation": true,
+          "text": true
+        },
+        "full_visibility": true,
+        "notes": "Cup clearly left of bottle, both complete; lowercase ember.",
+        "visible_text": "EMBER"
+      },
+      "B": {
+        "clauses": {
+          "relation": false,
+          "text": false
+        },
+        "full_visibility": false,
+        "notes": "Two cup-like containers, no recognizable bottle; extra text beneath EMBER.",
+        "visible_text": "EMBER plus a fine second line"
+      },
+      "C": {
+        "clauses": {
+          "relation": false,
+          "text": true
+        },
+        "full_visibility": false,
+        "notes": "Small cup at right, tall cup-like vessel at left with floating rim/cap detail. No clear requested bottle/cup-left scene.",
+        "visible_text": "EMBER"
+      },
+      "D": {
+        "clauses": {
+          "relation": false,
+          "text": true
+        },
+        "full_visibility": true,
+        "notes": "Bottle at left and cup at right, opposite requested relation; both complete.",
+        "visible_text": "EMBER"
+      }
+    }
+  },
+  {
+    "case": 8,
+    "views": {
+      "A": {
+        "clauses": {
+          "relation": false,
+          "text": false
+        },
+        "full_visibility": true,
+        "notes": "Apple right of bowl, both visible. Word lacks a distinct A.",
+        "visible_text": "CEDR"
+      },
+      "B": {
+        "clauses": {
+          "relation": false,
+          "text": null
+        },
+        "full_visibility": false,
+        "notes": "Image almost washed out; apple/bowl not recognizable. Word too faint to verify confidently.",
+        "visible_text": "Very faint CEDAR-like forms"
+      },
+      "C": {
+        "clauses": {
+          "relation": false,
+          "text": true
+        },
+        "full_visibility": false,
+        "notes": "Faint CEDAR readable; requested apple and bowl not both recognizable in washed-out scene.",
+        "visible_text": "CEDAR"
+      },
+      "D": {
+        "clauses": {
+          "relation": false,
+          "text": false
+        },
+        "full_visibility": true,
+        "notes": "Apple right of bowl; possible extra stem/object in bowl. D-like letter duplicated.",
+        "visible_text": "CEDDAR with overlapping initial forms"
+      }
+    }
+  },
+  {
+    "case": 9,
+    "views": {
+      "A": {
+        "clauses": {
+          "count": true,
+          "text": true
+        },
+        "full_visibility": false,
+        "notes": "One recognizable bowl; lower base reaches and is clipped by image edge. BLOOM readable, including fractured but recognizable M in D.",
+        "visible_text": "BLOOM"
+      },
+      "B": {
+        "clauses": {
+          "count": true,
+          "text": true
+        },
+        "full_visibility": false,
+        "notes": "One recognizable bowl; lower base reaches and is clipped by image edge. BLOOM readable, including fractured but recognizable M in D.",
+        "visible_text": "BLOOM"
+      },
+      "C": {
+        "clauses": {
+          "count": true,
+          "text": true
+        },
+        "full_visibility": false,
+        "notes": "One recognizable bowl; lower base reaches and is clipped by image edge. BLOOM readable, including fractured but recognizable M in D.",
+        "visible_text": "BLOOM"
+      },
+      "D": {
+        "clauses": {
+          "count": true,
+          "text": true
+        },
+        "full_visibility": false,
+        "notes": "One recognizable bowl; lower base reaches and is clipped by image edge. BLOOM readable, including fractured but recognizable M in D.",
+        "visible_text": "BLOOM"
+      }
+    }
+  },
+  {
+    "case": 10,
+    "views": {
+      "A": {
+        "clauses": {
+          "color": true,
+          "text": true
+        },
+        "full_visibility": false,
+        "notes": "One green chair with feet clipped by lower edge. HAVEN readable with decorative strokes around H/A; letter case is ignored.",
+        "visible_text": "HAVEN"
+      },
+      "B": {
+        "clauses": {
+          "color": true,
+          "text": true
+        },
+        "full_visibility": false,
+        "notes": "One green chair with feet clipped by lower edge. HAVEN readable with decorative strokes around H/A; letter case is ignored.",
+        "visible_text": "HAVEN"
+      },
+      "C": {
+        "clauses": {
+          "color": true,
+          "text": true
+        },
+        "full_visibility": false,
+        "notes": "One green chair with feet clipped by lower edge. HAVEN readable with decorative strokes around H/A; letter case is ignored.",
+        "visible_text": "HAVEN"
+      },
+      "D": {
+        "clauses": {
+          "color": true,
+          "text": true
+        },
+        "full_visibility": false,
+        "notes": "One green chair with feet clipped by lower edge. HAVEN readable with decorative strokes around H/A; letter case is ignored.",
+        "visible_text": "HAVEN"
+      }
+    }
+  },
+  {
+    "case": 11,
+    "views": {
+      "A": {
+        "clauses": {
+          "relation": true,
+          "text": true
+        },
+        "full_visibility": false,
+        "notes": "One bicycle right of one car; car front clipped at left image boundary. Only readable word is wave, case ignored.",
+        "visible_text": "WAVE"
+      },
+      "B": {
+        "clauses": {
+          "relation": true,
+          "text": true
+        },
+        "full_visibility": false,
+        "notes": "One bicycle right of one car; car front clipped at left image boundary. Only readable word is wave, case ignored.",
+        "visible_text": "WAVE"
+      },
+      "C": {
+        "clauses": {
+          "relation": true,
+          "text": true
+        },
+        "full_visibility": false,
+        "notes": "One bicycle right of one car; car front clipped at left image boundary. Only readable word is wave, case ignored.",
+        "visible_text": "WAVE"
+      },
+      "D": {
+        "clauses": {
+          "relation": true,
+          "text": true
+        },
+        "full_visibility": false,
+        "notes": "One bicycle right of one car; car front clipped at left image boundary. Only readable word is wave, case ignored.",
+        "visible_text": "WAVE"
+      }
+    }
+  },
+  {
+    "case": 12,
+    "views": {
+      "A": {
+        "clauses": {
+          "count": true,
+          "text": false
+        },
+        "full_visibility": true,
+        "notes": "One complete book. Clearly duplicated initial M.",
+        "visible_text": "MMANGO"
+      },
+      "B": {
+        "clauses": {
+          "count": true,
+          "text": false
+        },
+        "full_visibility": true,
+        "notes": "One complete book. Two N-like letters before G.",
+        "visible_text": "MANNGO"
+      },
+      "C": {
+        "clauses": {
+          "count": true,
+          "text": true
+        },
+        "full_visibility": true,
+        "notes": "One complete book. MANGO readable; G has decorative descender.",
+        "visible_text": "MANGO"
+      },
+      "D": {
+        "clauses": {
+          "count": true,
+          "text": false
+        },
+        "full_visibility": true,
+        "notes": "One complete book. Two N-like letters before G.",
+        "visible_text": "MANNGO"
+      }
+    }
+  },
+  {
+    "case": 13,
+    "views": {
+      "A": {
+        "clauses": {
+          "count": true,
+          "text": true
+        },
+        "full_visibility": true,
+        "notes": "One complete banana. OLIVE readable, case ignored.",
+        "visible_text": "OLIVE"
+      },
+      "B": {
+        "clauses": {
+          "count": true,
+          "text": true
+        },
+        "full_visibility": true,
+        "notes": "One complete banana. OLIVE readable, case ignored.",
+        "visible_text": "OLIVE"
+      },
+      "C": {
+        "clauses": {
+          "count": true,
+          "text": true
+        },
+        "full_visibility": true,
+        "notes": "One complete banana. OLIVE readable, case ignored.",
+        "visible_text": "OLIVE"
+      },
+      "D": {
+        "clauses": {
+          "count": true,
+          "text": false
+        },
+        "full_visibility": true,
+        "notes": "One complete banana. Missing i between l and v.",
+        "visible_text": "Olve"
+      }
+    }
+  },
+  {
+    "case": 14,
+    "views": {
+      "A": {
+        "clauses": {
+          "color": true,
+          "text": true
+        },
+        "full_visibility": true,
+        "notes": "One complete red banana; green stem allowed. OLIVE readable. A is pale and has a cut-looking tip but identifiable.",
+        "visible_text": "OLIVE"
+      },
+      "B": {
+        "clauses": {
+          "color": true,
+          "text": true
+        },
+        "full_visibility": true,
+        "notes": "One complete red banana; green stem allowed. OLIVE readable. A is pale and has a cut-looking tip but identifiable.",
+        "visible_text": "OLIVE"
+      },
+      "C": {
+        "clauses": {
+          "color": true,
+          "text": true
+        },
+        "full_visibility": true,
+        "notes": "One complete red banana; green stem allowed. OLIVE readable. A is pale and has a cut-looking tip but identifiable.",
+        "visible_text": "OLIVE"
+      },
+      "D": {
+        "clauses": {
+          "color": true,
+          "text": false
+        },
+        "full_visibility": true,
+        "notes": "One complete red banana. Two consecutive I strokes.",
+        "visible_text": "OLIIVE"
+      }
+    }
+  },
+  {
+    "case": 15,
+    "views": {
+      "A": {
+        "clauses": {
+          "color": false,
+          "count": false,
+          "text": false
+        },
+        "full_visibility": false,
+        "notes": "More than three stacked green bowls (about five), overlapping, bottom clipped. Missing I in RVER.",
+        "visible_text": "RVER"
+      },
+      "B": {
+        "clauses": {
+          "color": false,
+          "count": false,
+          "text": true
+        },
+        "full_visibility": false,
+        "notes": "Only two green bowls visible; requested third missing. Count/color metadata require three. RIVER readable.",
+        "visible_text": "RIVER"
+      },
+      "C": {
+        "clauses": {
+          "color": false,
+          "count": false,
+          "text": true
+        },
+        "full_visibility": false,
+        "notes": "Only two green bowls visible; requested third missing. Count/color metadata require three. RIVER readable.",
+        "visible_text": "RIVER"
+      },
+      "D": {
+        "clauses": {
+          "color": false,
+          "count": false,
+          "text": false
+        },
+        "full_visibility": false,
+        "notes": "Only two distorted green bowls, lower bowl clipped. Initial letter is P rather than R.",
+        "visible_text": "PIVER"
+      }
+    }
+  },
+  {
+    "case": 16,
+    "views": {
+      "A": {
+        "clauses": {
+          "count": true,
+          "text": true
+        },
+        "full_visibility": true,
+        "notes": "Two separated complete bananas. SUNNY readable; B has stylized initial S but no distinct extra letter.",
+        "visible_text": "SUNNY"
+      },
+      "B": {
+        "clauses": {
+          "count": true,
+          "text": true
+        },
+        "full_visibility": true,
+        "notes": "Two separated complete bananas. SUNNY readable; B has stylized initial S but no distinct extra letter.",
+        "visible_text": "SUNNY"
+      },
+      "C": {
+        "clauses": {
+          "count": true,
+          "text": true
+        },
+        "full_visibility": true,
+        "notes": "Two separated complete bananas. SUNNY readable; B has stylized initial S but no distinct extra letter.",
+        "visible_text": "SUNNY"
+      },
+      "D": {
+        "clauses": {
+          "count": true,
+          "text": true
+        },
+        "full_visibility": true,
+        "notes": "Two separated complete bananas. SUNNY readable; B has stylized initial S but no distinct extra letter.",
+        "visible_text": "SUNNY"
+      }
+    }
+  },
+  {
+    "case": 17,
+    "views": {
+      "A": {
+        "clauses": {
+          "relation": false,
+          "text": null
+        },
+        "full_visibility": false,
+        "notes": "Bicycle RIGHT of car, opposite requested LEFT. Car clipped at left boundary and bicycle reaches right edge. HAVEN plus tiny superscript circle/mark; extra lettering cannot be resolved.",
+        "visible_text": "HAVEN"
+      },
+      "B": {
+        "clauses": {
+          "relation": false,
+          "text": null
+        },
+        "full_visibility": false,
+        "notes": "Bicycle RIGHT of car, opposite requested LEFT. Car clipped at left boundary and bicycle reaches right edge. HAVEN plus tiny superscript circle/mark; extra lettering cannot be resolved.",
+        "visible_text": "HAVEN"
+      },
+      "C": {
+        "clauses": {
+          "relation": false,
+          "text": false
+        },
+        "full_visibility": false,
+        "notes": "Bicycle right of cropped car. Plate contains additional characters; tiny superscript mark also present.",
+        "visible_text": "HAVEN plus license-plate characters"
+      },
+      "D": {
+        "clauses": {
+          "relation": false,
+          "text": null
+        },
+        "full_visibility": false,
+        "notes": "Bicycle RIGHT of car, opposite requested LEFT. Car clipped at left boundary and bicycle reaches right edge. HAVEN plus tiny superscript circle/mark; extra lettering cannot be resolved.",
+        "visible_text": "HAVEN"
+      }
+    }
+  },
+  {
+    "case": 18,
+    "views": {
+      "A": {
+        "clauses": {
+          "color": false,
+          "count": true,
+          "text": false
+        },
+        "full_visibility": true,
+        "notes": "One white book-like object with visible spine, rather than yellow. Additional fine print below MANGO.",
+        "visible_text": "MANGO plus two fine-print lines"
+      },
+      "B": {
+        "clauses": {
+          "color": true,
+          "count": true,
+          "text": true
+        },
+        "full_visibility": true,
+        "notes": "One complete pale yellow book with white MANGO label; no additional text discernible.",
+        "visible_text": "MANGO"
+      },
+      "C": {
+        "clauses": {
+          "color": false,
+          "count": true,
+          "text": false
+        },
+        "full_visibility": true,
+        "notes": "One white book-like object with visible spine, rather than yellow. Additional fine print below MANGO.",
+        "visible_text": "MANGO plus two fine-print lines"
+      },
+      "D": {
+        "clauses": {
+          "color": true,
+          "count": true,
+          "text": true
+        },
+        "full_visibility": true,
+        "notes": "One complete pale yellow book with white MANGO label; no additional text discernible.",
+        "visible_text": "MANGO"
+      }
+    }
+  },
+  {
+    "case": 19,
+    "views": {
+      "A": {
+        "clauses": {
+          "relation": false,
+          "text": true
+        },
+        "full_visibility": true,
+        "notes": "One external apple right of bowl, but a second white apple with a stem sits in bowl, violating exactly-one apple. Requested external objects within frame.",
+        "visible_text": "CLOUD"
+      },
+      "B": {
+        "clauses": {
+          "relation": true,
+          "text": true
+        },
+        "full_visibility": true,
+        "notes": "One apple clearly right of one complete bowl. CLOUD readable with touching O/U; B has pale O/U but identifiable.",
+        "visible_text": "CLOUD"
+      },
+      "C": {
+        "clauses": {
+          "relation": false,
+          "text": true
+        },
+        "full_visibility": true,
+        "notes": "Apple LEFT of two nested bowls, opposite requested right and wrong bowl multiplicity. CLOUD readable. Objects within frame.",
+        "visible_text": "CLOUD"
+      },
+      "D": {
+        "clauses": {
+          "relation": true,
+          "text": true
+        },
+        "full_visibility": true,
+        "notes": "One apple clearly right of one complete bowl. CLOUD readable with touching O/U; B has pale O/U but identifiable.",
+        "visible_text": "CLOUD"
+      }
+    }
+  },
+  {
+    "case": 20,
+    "views": {
+      "A": {
+        "clauses": {
+          "color": true,
+          "count": true,
+          "text": true
+        },
+        "full_visibility": true,
+        "notes": "One complete red cup; white rim allowed. EMBER readable, including compressed but identifiable letters in A.",
+        "visible_text": "EMBER"
+      },
+      "B": {
+        "clauses": {
+          "color": true,
+          "count": true,
+          "text": true
+        },
+        "full_visibility": true,
+        "notes": "One complete red cup; white rim allowed. EMBER readable, including compressed but identifiable letters in A.",
+        "visible_text": "EMBER"
+      },
+      "C": {
+        "clauses": {
+          "color": true,
+          "count": true,
+          "text": true
+        },
+        "full_visibility": true,
+        "notes": "One complete red cup; white rim allowed. EMBER readable, including compressed but identifiable letters in A.",
+        "visible_text": "EMBER"
+      },
+      "D": {
+        "clauses": {
+          "color": true,
+          "count": true,
+          "text": true
+        },
+        "full_visibility": true,
+        "notes": "One complete red cup; white rim allowed. EMBER readable, including compressed but identifiable letters in A.",
+        "visible_text": "EMBER"
+      }
+    }
+  },
+  {
+    "case": 21,
+    "views": {
+      "A": {
+        "clauses": {
+          "relation": false,
+          "text": true
+        },
+        "full_visibility": true,
+        "notes": "Apple LEFT of bowl, opposite requested RIGHT. Both complete. CLOUD readable with embossed/shadowed letters.",
+        "visible_text": "CLOUD"
+      },
+      "B": {
+        "clauses": {
+          "relation": false,
+          "text": true
+        },
+        "full_visibility": true,
+        "notes": "Apple LEFT of bowl, opposite requested RIGHT. Both complete. CLOUD readable with embossed/shadowed letters.",
+        "visible_text": "CLOUD"
+      },
+      "C": {
+        "clauses": {
+          "relation": false,
+          "text": false
+        },
+        "full_visibility": true,
+        "notes": "Apple left of bowl. Sign has an additional pale U-shaped letter between U and D.",
+        "visible_text": "CLOUUD"
+      },
+      "D": {
+        "clauses": {
+          "relation": false,
+          "text": true
+        },
+        "full_visibility": true,
+        "notes": "Apple LEFT of bowl, opposite requested RIGHT. Both complete. CLOUD readable with embossed/shadowed letters.",
+        "visible_text": "CLOUD"
+      }
+    }
+  },
+  {
+    "case": 22,
+    "views": {
+      "A": {
+        "clauses": {
+          "count": false,
+          "text": false
+        },
+        "full_visibility": false,
+        "notes": "At least three overlapping white cup-like vessels. Lower/back vessel occluded, multiple additional printed labels.",
+        "visible_text": "Multiple tiny labels; not sole EMBER"
+      },
+      "B": {
+        "clauses": {
+          "count": null,
+          "text": false
+        },
+        "full_visibility": null,
+        "notes": "Very pale overturned bowl/cup-like form cannot confidently identify as cup. Additional small characters below main broken word.",
+        "visible_text": "Broken EMBER-like letters plus tiny line"
+      },
+      "C": {
+        "clauses": {
+          "count": true,
+          "text": false
+        },
+        "full_visibility": true,
+        "notes": "One recognizable complete white cup on saucer. Word has R-like fourth glyph instead of E and malformed final glyph.",
+        "visible_text": "EMBRR-like"
+      },
+      "D": {
+        "clauses": {
+          "count": true,
+          "text": true
+        },
+        "full_visibility": true,
+        "notes": "One complete white cup on saucer; Ember readable, case ignored.",
+        "visible_text": "EMBER"
+      }
+    }
+  },
+  {
+    "case": 23,
+    "views": {
+      "A": {
+        "clauses": {
+          "color": true,
+          "count": true,
+          "text": true
+        },
+        "full_visibility": true,
+        "notes": "One complete red banana. OLIVE readable; A pale but recognizable, C decorative inner O stroke.",
+        "visible_text": "OLIVE"
+      },
+      "B": {
+        "clauses": {
+          "color": true,
+          "count": true,
+          "text": false
+        },
+        "full_visibility": true,
+        "notes": "One complete red banana. Missing I in main word; additional faint small print/marks below and above word.",
+        "visible_text": "OLVE plus faint small marks"
+      },
+      "C": {
+        "clauses": {
+          "color": true,
+          "count": true,
+          "text": true
+        },
+        "full_visibility": true,
+        "notes": "One complete red banana. OLIVE readable; A pale but recognizable, C decorative inner O stroke.",
+        "visible_text": "OLIVE"
+      },
+      "D": {
+        "clauses": {
+          "color": true,
+          "count": true,
+          "text": true
+        },
+        "full_visibility": true,
+        "notes": "One complete red banana. OLIVE readable; A pale but recognizable, C decorative inner O stroke.",
+        "visible_text": "OLIVE"
+      }
+    }
+  },
+  {
+    "case": 24,
+    "views": {
+      "A": {
+        "clauses": {
+          "color": true,
+          "count": true,
+          "text": true
+        },
+        "full_visibility": false,
+        "notes": "Two green chairs. Legs clipped at lower edge in all views. HAVEN readable, decorative textured lettering in C.",
+        "visible_text": "HAVEN"
+      },
+      "B": {
+        "clauses": {
+          "color": true,
+          "count": true,
+          "text": true
+        },
+        "full_visibility": false,
+        "notes": "Two green chairs. Legs clipped at lower edge in all views. HAVEN readable, decorative textured lettering in C.",
+        "visible_text": "HAVEN"
+      },
+      "C": {
+        "clauses": {
+          "color": true,
+          "count": true,
+          "text": true
+        },
+        "full_visibility": false,
+        "notes": "Two green chairs. Legs clipped at lower edge in all views. HAVEN readable, decorative textured lettering in C.",
+        "visible_text": "HAVEN"
+      },
+      "D": {
+        "clauses": {
+          "color": true,
+          "count": true,
+          "text": true
+        },
+        "full_visibility": false,
+        "notes": "Two green chairs. Legs clipped at lower edge in all views. HAVEN readable, decorative textured lettering in C.",
+        "visible_text": "HAVEN"
+      }
+    }
+  },
+  {
+    "case": 25,
+    "views": {
+      "A": {
+        "clauses": {
+          "relation": false,
+          "text": false
+        },
+        "full_visibility": true,
+        "notes": "Bicycle left of car. Additional plate characters below car hood.",
+        "visible_text": "OLIVE plus plate characters"
+      },
+      "B": {
+        "clauses": {
+          "relation": false,
+          "text": true
+        },
+        "full_visibility": true,
+        "notes": "Bicycle LEFT of car, opposite requested RIGHT. Both complete but deformed car/wheels. OLIVE readable.",
+        "visible_text": "OLIVE"
+      },
+      "C": {
+        "clauses": {
+          "relation": false,
+          "text": null
+        },
+        "full_visibility": true,
+        "notes": "Bicycle left of car. Tiny rectangular windshield marking may contain extra lettering, unresolved.",
+        "visible_text": "OLIVE plus possible windshield label"
+      },
+      "D": {
+        "clauses": {
+          "relation": false,
+          "text": true
+        },
+        "full_visibility": true,
+        "notes": "Bicycle LEFT of car, opposite requested RIGHT. Both complete but deformed car/wheels. OLIVE readable.",
+        "visible_text": "OLIVE"
+      }
+    }
+  },
+  {
+    "case": 26,
+    "views": {
+      "A": {
+        "clauses": {
+          "relation": true,
+          "text": null
+        },
+        "full_visibility": true,
+        "notes": "Correct relation and complete objects. Tiny plate marks cannot distinguish lettering from texture.",
+        "visible_text": "WAVE plus faint plate marks"
+      },
+      "B": {
+        "clauses": {
+          "relation": true,
+          "text": false
+        },
+        "full_visibility": true,
+        "notes": "Correct relation and complete objects. Clear additional plate characters.",
+        "visible_text": "WAVE plus plate characters"
+      },
+      "C": {
+        "clauses": {
+          "relation": true,
+          "text": null
+        },
+        "full_visibility": true,
+        "notes": "Correct relation and complete objects. Tiny plate pattern potentially contains letters, unresolved.",
+        "visible_text": "WAVE plus possible plate characters"
+      },
+      "D": {
+        "clauses": {
+          "relation": false,
+          "text": false
+        },
+        "full_visibility": false,
+        "notes": "Two cars rather than one; rear car partly hidden by foreground car. Plate characters visible on front car.",
+        "visible_text": "WAVE plus plate characters"
+      }
+    }
+  },
+  {
+    "case": 27,
+    "views": {
+      "A": {
+        "clauses": {
+          "color": true,
+          "text": true
+        },
+        "full_visibility": true,
+        "notes": "One complete blue apple. CORAL identifiable even where pale; absent stem in B does not obscure apple identity. Low-contrast lettering noted.",
+        "visible_text": "CORAL"
+      },
+      "B": {
+        "clauses": {
+          "color": true,
+          "text": true
+        },
+        "full_visibility": true,
+        "notes": "One complete blue apple. CORAL identifiable even where pale; absent stem in B does not obscure apple identity. Low-contrast lettering noted.",
+        "visible_text": "CORAL"
+      },
+      "C": {
+        "clauses": {
+          "color": true,
+          "text": true
+        },
+        "full_visibility": true,
+        "notes": "One complete blue apple. CORAL identifiable even where pale; absent stem in B does not obscure apple identity. Low-contrast lettering noted.",
+        "visible_text": "CORAL"
+      },
+      "D": {
+        "clauses": {
+          "color": true,
+          "text": true
+        },
+        "full_visibility": true,
+        "notes": "One complete blue apple. CORAL identifiable even where pale; absent stem in B does not obscure apple identity. Low-contrast lettering noted.",
+        "visible_text": "CORAL"
+      }
+    }
+  },
+  {
+    "case": 28,
+    "views": {
+      "A": {
+        "clauses": {
+          "relation": false,
+          "text": true
+        },
+        "full_visibility": true,
+        "notes": "Two apples: one in bowl, one outside right. Violates exactly-one apple.",
+        "visible_text": "STONE"
+      },
+      "B": {
+        "clauses": {
+          "relation": true,
+          "text": true
+        },
+        "full_visibility": true,
+        "notes": "One apple clearly right of one empty bowl, both complete. STONE readable.",
+        "visible_text": "STONE"
+      },
+      "C": {
+        "clauses": {
+          "relation": false,
+          "text": true
+        },
+        "full_visibility": true,
+        "notes": "Two apples: one in bowl, one outside right. Violates exactly-one apple. Pale grayscale objects.",
+        "visible_text": "STONE"
+      },
+      "D": {
+        "clauses": {
+          "relation": null,
+          "text": true
+        },
+        "full_visibility": true,
+        "notes": "One apple right of bowl, but small white vessel-like form inside bowl may be an additional bowl/cup; multiplicity unresolved.",
+        "visible_text": "STONE"
+      }
+    }
+  },
+  {
+    "case": 29,
+    "views": {
+      "A": {
+        "clauses": {
+          "relation": true,
+          "text": false
+        },
+        "full_visibility": false,
+        "notes": "One chair left of plant; both bottoms clipped. Missing L in CORA.",
+        "visible_text": "CORA"
+      },
+      "B": {
+        "clauses": {
+          "relation": null,
+          "text": true
+        },
+        "full_visibility": false,
+        "notes": "Main chair left of plant, legs clipped. Additional plant and frame at left may be another object or reflection; multiplicity uncertain.",
+        "visible_text": "CORAL"
+      },
+      "C": {
+        "clauses": {
+          "relation": true,
+          "text": true
+        },
+        "full_visibility": false,
+        "notes": "Chair left of plant. Chair legs clipped at lower boundary. CORAL readable.",
+        "visible_text": "CORAL"
+      },
+      "D": {
+        "clauses": {
+          "relation": false,
+          "text": true
+        },
+        "full_visibility": false,
+        "notes": "Two chairs, one partly outside left boundary, rather than exactly one. Main chair left of plant, legs clipped.",
+        "visible_text": "CORAL"
+      }
+    }
+  },
+  {
+    "case": 30,
+    "views": {
+      "A": {
+        "clauses": {
+          "count": true,
+          "text": null
+        },
+        "full_visibility": true,
+        "notes": "Three complete separated vase-shaped vessels, two with handles. Sign is clipped at top; only lower/malformed glyph fragments remain, cannot verify exact STONE.",
+        "visible_text": "STONE"
+      },
+      "B": {
+        "clauses": {
+          "count": true,
+          "text": null
+        },
+        "full_visibility": true,
+        "notes": "Three complete separated vase-shaped vessels, two with handles. Sign is clipped at top; only lower/malformed glyph fragments remain, cannot verify exact STONE.",
+        "visible_text": "STONE"
+      },
+      "C": {
+        "clauses": {
+          "count": true,
+          "text": null
+        },
+        "full_visibility": true,
+        "notes": "Three complete separated vase-shaped vessels, two with handles. Sign is clipped at top; only lower/malformed glyph fragments remain, cannot verify exact STONE.",
+        "visible_text": "STONE"
+      },
+      "D": {
+        "clauses": {
+          "count": true,
+          "text": null
+        },
+        "full_visibility": true,
+        "notes": "Three complete separated vase-shaped vessels, two with handles. Sign is clipped at top; only lower/malformed glyph fragments remain, cannot verify exact STONE.",
+        "visible_text": "STONE"
+      }
+    }
+  },
+  {
+    "case": 31,
+    "views": {
+      "A": {
+        "clauses": {
+          "count": true,
+          "text": false
+        },
+        "full_visibility": true,
+        "notes": "Two separated complete bananas. Only four letter slots SUNY; missing second N. Low contrast/shadowed letters.",
+        "visible_text": "SUNY"
+      },
+      "B": {
+        "clauses": {
+          "count": true,
+          "text": false
+        },
+        "full_visibility": true,
+        "notes": "Two separated complete bananas. Only four letter slots SUNY; missing second N. Low contrast/shadowed letters.",
+        "visible_text": "SUNY"
+      },
+      "C": {
+        "clauses": {
+          "count": true,
+          "text": false
+        },
+        "full_visibility": true,
+        "notes": "Two separated complete bananas. Only four letter slots SUNY; missing second N. Low contrast/shadowed letters.",
+        "visible_text": "SUNY"
+      },
+      "D": {
+        "clauses": {
+          "count": true,
+          "text": false
+        },
+        "full_visibility": true,
+        "notes": "Two separated complete bananas. Only four letter slots SUNY; missing second N. Low contrast/shadowed letters.",
+        "visible_text": "SUNY"
+      }
+    }
+  },
+  {
+    "case": 32,
+    "views": {
+      "A": {
+        "clauses": {
+          "relation": false,
+          "text": true
+        },
+        "full_visibility": true,
+        "notes": "Two cups right of bottle, including small far-right cup; violates exactly-one cup. All within frame.",
+        "visible_text": "BLOOM"
+      },
+      "B": {
+        "clauses": {
+          "relation": true,
+          "text": true
+        },
+        "full_visibility": true,
+        "notes": "One complete cup right of one complete bottle. BLOOM readable.",
+        "visible_text": "BLOOM"
+      },
+      "C": {
+        "clauses": {
+          "relation": false,
+          "text": true
+        },
+        "full_visibility": true,
+        "notes": "Two cups right of bottle; violates exactly-one cup. All within frame.",
+        "visible_text": "BLOOM"
+      },
+      "D": {
+        "clauses": {
+          "relation": true,
+          "text": true
+        },
+        "full_visibility": true,
+        "notes": "One complete cup right of one complete bottle. BLOOM readable.",
+        "visible_text": "BLOOM"
+      }
+    }
+  },
+  {
+    "case": 33,
+    "views": {
+      "A": {
+        "clauses": {
+          "color": true,
+          "text": false
+        },
+        "full_visibility": true,
+        "notes": "One complete green bowl. Main word places V immediately after R rather than R-I-V; pale overlapping malformed letters do not spell RIVER.",
+        "visible_text": "RVER-like malformed word"
+      },
+      "B": {
+        "clauses": {
+          "color": true,
+          "text": false
+        },
+        "full_visibility": true,
+        "notes": "One complete green bowl. Main word places V immediately after R rather than R-I-V; pale overlapping malformed letters do not spell RIVER.",
+        "visible_text": "RVER-like malformed word"
+      },
+      "C": {
+        "clauses": {
+          "color": true,
+          "text": false
+        },
+        "full_visibility": true,
+        "notes": "One complete green bowl. Main word places V immediately after R rather than R-I-V; pale overlapping malformed letters do not spell RIVER.",
+        "visible_text": "RVER-like malformed word"
+      },
+      "D": {
+        "clauses": {
+          "color": true,
+          "text": false
+        },
+        "full_visibility": true,
+        "notes": "One complete green bowl. Main word places V immediately after R rather than R-I-V; pale overlapping malformed letters do not spell RIVER.",
+        "visible_text": "RVER-like malformed word"
+      }
+    }
+  },
+  {
+    "case": 34,
+    "views": {
+      "A": {
+        "clauses": {
+          "color": true,
+          "text": false
+        },
+        "full_visibility": false,
+        "notes": "One red cup, lower body cropped. Six-letter word rather than EMBER.",
+        "visible_text": "EMBEER"
+      },
+      "B": {
+        "clauses": {
+          "color": true,
+          "text": false
+        },
+        "full_visibility": false,
+        "notes": "One red cup, lower body cropped. Six-letter word rather than EMBER.",
+        "visible_text": "EMBRER"
+      },
+      "C": {
+        "clauses": {
+          "color": true,
+          "text": false
+        },
+        "full_visibility": false,
+        "notes": "One red cup, lower body cropped. Six-letter word rather than EMBER.",
+        "visible_text": "EMBEER"
+      },
+      "D": {
+        "clauses": {
+          "color": true,
+          "text": false
+        },
+        "full_visibility": false,
+        "notes": "One red cup, lower body cropped. Six-letter word rather than EMBER.",
+        "visible_text": "EMBEER"
+      }
+    }
+  },
+  {
+    "case": 35,
+    "views": {
+      "A": {
+        "clauses": {
+          "color": false,
+          "count": false,
+          "text": true
+        },
+        "full_visibility": false,
+        "notes": "Three blue bottles instead of one. Central bottle base clipped by lower image edge.",
+        "visible_text": "CEDAR"
+      },
+      "B": {
+        "clauses": {
+          "color": false,
+          "count": false,
+          "text": true
+        },
+        "full_visibility": false,
+        "notes": "Three blue bottles instead of one. Central/left bases reach clipped lower edge.",
+        "visible_text": "CEDAR"
+      },
+      "C": {
+        "clauses": {
+          "color": false,
+          "count": false,
+          "text": true
+        },
+        "full_visibility": true,
+        "notes": "Three blue bottles instead of one. Bases visible just above lower edge with reflections.",
+        "visible_text": "CEDAR"
+      },
+      "D": {
+        "clauses": {
+          "color": true,
+          "count": true,
+          "text": true
+        },
+        "full_visibility": true,
+        "notes": "One complete blue bottle; bottom reflection not another bottle. CEDAR clear.",
+        "visible_text": "CEDAR"
+      }
+    }
+  },
+  {
+    "case": 36,
+    "views": {
+      "A": {
+        "clauses": {
+          "relation": false,
+          "text": true
+        },
+        "full_visibility": true,
+        "notes": "Two chairs LEFT of plant rather than exactly one chair RIGHT. Objects within frame. MANGO readable.",
+        "visible_text": "MANGO"
+      },
+      "B": {
+        "clauses": {
+          "relation": false,
+          "text": false
+        },
+        "full_visibility": null,
+        "notes": "One left chair and malformed second chair/frame with two plant forms; completeness of malformed objects uncertain. Missing O in MANG.",
+        "visible_text": "MANG"
+      },
+      "C": {
+        "clauses": {
+          "relation": false,
+          "text": true
+        },
+        "full_visibility": true,
+        "notes": "Two chairs LEFT of plant rather than exactly one chair RIGHT. Objects within frame. MANGO readable.",
+        "visible_text": "MANGO"
+      },
+      "D": {
+        "clauses": {
+          "relation": false,
+          "text": null
+        },
+        "full_visibility": true,
+        "notes": "Two chairs left of plant. Pale O identifiable, but tiny markings below main text may be extra print.",
+        "visible_text": "MANGO with possible tiny subline"
+      }
+    }
+  },
+  {
+    "case": 37,
+    "views": {
+      "A": {
+        "clauses": {
+          "color": true,
+          "text": null
+        },
+        "full_visibility": false,
+        "notes": "Yellow vase cropped below. Upper glyphs clipped; exact full lettering cannot be confirmed.",
+        "visible_text": "Top-clipped STONE-like outlines"
+      },
+      "B": {
+        "clauses": {
+          "color": true,
+          "text": false
+        },
+        "full_visibility": false,
+        "notes": "Yellow vase cropped below. Additional clear fine-print line beneath clipped large word.",
+        "visible_text": "Clipped STONE plus fine-print line"
+      },
+      "C": {
+        "clauses": {
+          "color": true,
+          "text": false
+        },
+        "full_visibility": false,
+        "notes": "Yellow vase cropped below. Many extra tiny characters around central fragment.",
+        "visible_text": "STONE-like fragment plus multiple fine-print lines"
+      },
+      "D": {
+        "clauses": {
+          "color": true,
+          "text": false
+        },
+        "full_visibility": false,
+        "notes": "Yellow vase cropped below. Extra fine-print characters around and under central word.",
+        "visible_text": "STONE-like fragment plus fine print"
+      }
+    }
+  },
+  {
+    "case": 38,
+    "views": {
+      "A": {
+        "clauses": {
+          "count": true,
+          "text": true
+        },
+        "full_visibility": true,
+        "notes": "One complete bowl and BLOOM readable. A/C decorative outlined letters still identifiable.",
+        "visible_text": "BLOOM"
+      },
+      "B": {
+        "clauses": {
+          "count": true,
+          "text": true
+        },
+        "full_visibility": true,
+        "notes": "One complete bowl and BLOOM readable. A/C decorative outlined letters still identifiable.",
+        "visible_text": "BLOOM"
+      },
+      "C": {
+        "clauses": {
+          "count": true,
+          "text": true
+        },
+        "full_visibility": true,
+        "notes": "One complete bowl and BLOOM readable. A/C decorative outlined letters still identifiable.",
+        "visible_text": "BLOOM"
+      },
+      "D": {
+        "clauses": {
+          "count": true,
+          "text": true
+        },
+        "full_visibility": true,
+        "notes": "One complete bowl and BLOOM readable. A/C decorative outlined letters still identifiable.",
+        "visible_text": "BLOOM"
+      }
+    }
+  },
+  {
+    "case": 39,
+    "views": {
+      "A": {
+        "clauses": {
+          "count": false,
+          "text": false
+        },
+        "full_visibility": true,
+        "notes": "Three complete bottles with extra label lettering.",
+        "visible_text": "CEDAR plus bottle-label print"
+      },
+      "B": {
+        "clauses": {
+          "count": false,
+          "text": false
+        },
+        "full_visibility": true,
+        "notes": "Three complete bottles with extra label lettering; main text degraded.",
+        "visible_text": "CEDAR-like plus bottle-label print"
+      },
+      "C": {
+        "clauses": {
+          "count": null,
+          "text": false
+        },
+        "full_visibility": null,
+        "notes": "Several extremely pale bottle-like silhouettes; exact recognizable count and completeness uncertain. Clear additional fine print on sign.",
+        "visible_text": "CEDAR plus multiple fine-print lines"
+      },
+      "D": {
+        "clauses": {
+          "count": null,
+          "text": false
+        },
+        "full_visibility": null,
+        "notes": "Several nearly white bottle-like silhouettes; count/completeness uncertain. Additional fine print beneath main word.",
+        "visible_text": "CEDAR plus fine-print lines"
+      }
+    }
+  },
+  {
+    "case": 40,
+    "views": {
+      "A": {
+        "clauses": {
+          "relation": true,
+          "text": true
+        },
+        "full_visibility": true,
+        "notes": "One complete cup right of one complete bottle. RIVER clear.",
+        "visible_text": "RIVER"
+      },
+      "B": {
+        "clauses": {
+          "relation": false,
+          "text": true
+        },
+        "full_visibility": true,
+        "notes": "Two cups/drinking vessels (glass and handled cup) right of bottle, rather than one.",
+        "visible_text": "RIVER"
+      },
+      "C": {
+        "clauses": {
+          "relation": true,
+          "text": true
+        },
+        "full_visibility": true,
+        "notes": "One complete cup right of one complete bottle. RIVER clear.",
+        "visible_text": "RIVER"
+      },
+      "D": {
+        "clauses": {
+          "relation": false,
+          "text": true
+        },
+        "full_visibility": true,
+        "notes": "Two drinking cups LEFT of one bottle, opposite requested right and wrong multiplicity. All complete.",
+        "visible_text": "RIVER"
+      }
+    }
+  },
+  {
+    "case": 41,
+    "views": {
+      "A": {
+        "clauses": {
+          "relation": false,
+          "text": true
+        },
+        "full_visibility": true,
+        "notes": "Cup LEFT of bottle, opposite requested RIGHT. Both complete, extra saucer noted. BLOOM readable.",
+        "visible_text": "BLOOM"
+      },
+      "B": {
+        "clauses": {
+          "relation": false,
+          "text": true
+        },
+        "full_visibility": true,
+        "notes": "Cup LEFT of bottle, opposite requested RIGHT. Both complete, extra saucer noted. BLOOM readable.",
+        "visible_text": "BLOOM"
+      },
+      "C": {
+        "clauses": {
+          "relation": false,
+          "text": true
+        },
+        "full_visibility": true,
+        "notes": "Cup LEFT of bottle, opposite requested RIGHT. Both complete, extra saucer noted. BLOOM readable.",
+        "visible_text": "BLOOM"
+      },
+      "D": {
+        "clauses": {
+          "relation": false,
+          "text": true
+        },
+        "full_visibility": true,
+        "notes": "Cup LEFT of bottle, opposite requested RIGHT. Both complete, extra saucer noted. BLOOM readable.",
+        "visible_text": "BLOOM"
+      }
+    }
+  },
+  {
+    "case": 42,
+    "views": {
+      "A": {
+        "clauses": {
+          "count": true,
+          "text": true
+        },
+        "full_visibility": true,
+        "notes": "Two complete separated apples. CORAL readable; B compressed decorative R/A, C very pale outlined text but letters identifiable.",
+        "visible_text": "CORAL"
+      },
+      "B": {
+        "clauses": {
+          "count": true,
+          "text": true
+        },
+        "full_visibility": true,
+        "notes": "Two complete separated apples. CORAL readable; B compressed decorative R/A, C very pale outlined text but letters identifiable.",
+        "visible_text": "CORAL"
+      },
+      "C": {
+        "clauses": {
+          "count": true,
+          "text": true
+        },
+        "full_visibility": true,
+        "notes": "Two complete separated apples. CORAL readable; B compressed decorative R/A, C very pale outlined text but letters identifiable.",
+        "visible_text": "CORAL"
+      },
+      "D": {
+        "clauses": {
+          "count": true,
+          "text": true
+        },
+        "full_visibility": true,
+        "notes": "Two complete separated apples. CORAL readable; B compressed decorative R/A, C very pale outlined text but letters identifiable.",
+        "visible_text": "CORAL"
+      }
+    }
+  }
+]

@@ -1,0 +1,15 @@
+{
+  "cpu_tests": 109,
+  "fresh_references_exact": 24,
+  "historical_indices_verified": "replay_history_verification.json",
+  "historical_model_128_update_reproduced": false,
+  "original_preparation_index_artifacts_unchanged": 354,
+  "qualified_gpu_fitter_equivalence_updates": 2,
+  "scope": "Preparation and first reference gate; scientific training/evaluation incomplete.",
+  "unchanged_evaluation_seeds": 32,
+  "unchanged_scientific_plan": true,
+  "upstream": {
+    "diffusionopd": "0c85bf0193a6da24bb1f72152b612d353a154999",
+    "diffusionopsd": "9c4c48cdfe5c3fa712d32957345d75fae9295696"
+  }
+}

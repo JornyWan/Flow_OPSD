@@ -1,0 +1,17 @@
+{
+  "time_utc": "2026-09-14T02:24:06.741667+00:00",
+  "jobs": [
+    {
+      "job_id": "1049204",
+      "stage": "le13_measure",
+      "run": "/midtier/minilab/scratch/chw4026/projects/side_project/generative/opd_related/opd_lab/runs/le13_measure_001",
+      "state": "COMPLETED",
+      "elapsed_seconds": 226,
+      "allocated_tres": "billing=4,cpu=4,gres/gpu:l40=1,mem=96G,node=1",
+      "exit_code": "0:0",
+      "nodes": "ai-gpu13",
+      "allocated_gpu_hours": 0.06277777777777778
+    }
+  ],
+  "allocated_gpu_hours_including_failed_attempts_so_far": 0.06277777777777778
+}

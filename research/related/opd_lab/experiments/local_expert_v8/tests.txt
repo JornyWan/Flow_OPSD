@@ -1,0 +1,11 @@
+Recorded results from commands executed before phase8 GPU submission.
+Interpreter: ../../conda_envs/envs/diffusionopd/bin/python; PYTHONPATH=python.
+
+python -m pytest tests/test_trajectory_probe.py -q
+2 passed in 2.08s
+python -m pytest -q
+62 passed in 11.82s
+
+Coverage includes query-boundary masks, same-prefix state identity, full replay,
+unchanged model weights, index-zero duplicate rules and invalid mask rejection.
+Later phase9 additions bring the full CPU suite to64 tests; see phase9/tests.txt.

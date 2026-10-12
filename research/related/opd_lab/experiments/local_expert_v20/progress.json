@@ -1,0 +1,51 @@
+{
+  "active_jobs": [],
+  "all_fresh_single_known_harm": {
+    "all_teacher": 2,
+    "certified": 2,
+    "joint128": 0,
+    "random_matched": 1
+  },
+  "allocated_gpu_hours": 0.8941666666666668,
+  "collection_complete": true,
+  "collection_review_views_frozen": 96,
+  "collection_run": "/midtier/minilab/scratch/chw4026/projects/side_project/generative/opd_related/opd_lab/runs/le20_collection_001",
+  "collection_states": 48,
+  "controller_run": "/midtier/minilab/scratch/chw4026/projects/side_project/generative/opd_related/opd_lab/runs/le20_controller_001",
+  "controller_status": "stopped; evaluation manually continued after audited recovery",
+  "coverage_gate_passed": true,
+  "evaluation_complete": true,
+  "evaluation_images_generated": 224,
+  "evaluation_images_planned": 224,
+  "evaluation_job_id": "1050650",
+  "evaluation_review_cases": 64,
+  "evaluation_review_views_frozen": 256,
+  "evaluation_run": "/midtier/minilab/scratch/chw4026/projects/side_project/generative/opd_related/opd_lab/runs/le20_eval_001",
+  "fit_complete": true,
+  "fit_completed_arms": [
+    "all_teacher",
+    "certified",
+    "random_matched"
+  ],
+  "fit_job_id": "1050602",
+  "fit_optimizer_updates": 384,
+  "fit_run": "/midtier/minilab/scratch/chw4026/projects/side_project/generative/opd_related/opd_lab/runs/le20_fit_002",
+  "next_stage_started": false,
+  "original_fit_allocation_state": "FAILED",
+  "planned_backward_queries_per_arm": 1536,
+  "planned_updates_per_arm": 128,
+  "primary_single_complete": {
+    "all_teacher": 9,
+    "certified": 6,
+    "joint128": 6,
+    "random_matched": 6
+  },
+  "promising_pilot_passed": false,
+  "recovered_fit_run": "/midtier/minilab/scratch/chw4026/projects/side_project/generative/opd_related/opd_lab/runs/le20_fit_recovered_001",
+  "safe_complete": 8,
+  "safe_repairs": 9,
+  "status": "complete_primary_gate_failed",
+  "student_results_available": true,
+  "tests_passed": 122,
+  "updated_utc": "2026-09-15T19:29:03.590572+00:00"
+}

@@ -1,0 +1,22 @@
+{
+  "all_four_slurm_jobs_completed": true,
+  "allocated_gpu_hours": 0.13277777777777777,
+  "audit_images": 76,
+  "calls": 192,
+  "control_call_schema_failures": 15,
+  "generation_images": 16,
+  "model_asset_full_sha_and_index_verified": true,
+  "no_truncated_outputs": true,
+  "optimizer_updates": 0,
+  "original_call_schema_failures": 15,
+  "prior_README_at_commit": "40e9e39",
+  "prior_scientific_artifacts_unchanged": true,
+  "python_sources_parse": true,
+  "relation_control_exposed_images": 20,
+  "teacher_queries": 0,
+  "test_execution": "55 full suite before added relation interface, followed by2 new tests",
+  "tests_passed": 57,
+  "time_utc": "2026-09-12T02:42:22.802165+00:00",
+  "upstream_clean": true,
+  "validation_test_used": false
+}

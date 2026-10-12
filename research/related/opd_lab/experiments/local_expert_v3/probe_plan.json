@@ -1,0 +1,371 @@
+{
+  "arms": {
+    "fit2": [
+      2,
+      0
+    ],
+    "fit2_keep": [
+      2,
+      1
+    ],
+    "fit4": [
+      4,
+      0
+    ],
+    "fit4_keep": [
+      4,
+      1
+    ]
+  },
+  "evaluation": {
+    "cells": [
+      [
+        "flow",
+        10
+      ],
+      [
+        "flow",
+        40
+      ]
+    ],
+    "seeds": [
+      42
+    ],
+    "split": "validation"
+  },
+  "noise_key": "phase3_query",
+  "queries": [
+    {
+      "id": "jp1-train-color-07",
+      "query_index": 4,
+      "seed": 2121468440
+    },
+    {
+      "id": "jp1-train-count-12",
+      "query_index": 2,
+      "seed": 2074542574
+    },
+    {
+      "id": "jp1-train-count_color-14",
+      "query_index": 8,
+      "seed": 1958989032
+    },
+    {
+      "id": "jp1-train-relation-14",
+      "query_index": 8,
+      "seed": 1093703516
+    },
+    {
+      "id": "jp1-train-color-11",
+      "query_index": 5,
+      "seed": 1945860676
+    },
+    {
+      "id": "jp1-train-count-05",
+      "query_index": 7,
+      "seed": 457086072
+    },
+    {
+      "id": "jp1-train-count_color-04",
+      "query_index": 5,
+      "seed": 1410704553
+    },
+    {
+      "id": "jp1-train-relation-12",
+      "query_index": 0,
+      "seed": 1903463636
+    },
+    {
+      "id": "jp1-train-color-15",
+      "query_index": 0,
+      "seed": 1937027424
+    },
+    {
+      "id": "jp1-train-count-02",
+      "query_index": 7,
+      "seed": 85234591
+    },
+    {
+      "id": "jp1-train-count_color-07",
+      "query_index": 0,
+      "seed": 1675638525
+    },
+    {
+      "id": "jp1-train-relation-13",
+      "query_index": 3,
+      "seed": 1500595046
+    },
+    {
+      "id": "jp1-train-color-01",
+      "query_index": 8,
+      "seed": 754075654
+    },
+    {
+      "id": "jp1-train-count-14",
+      "query_index": 8,
+      "seed": 1488781084
+    },
+    {
+      "id": "jp1-train-count_color-03",
+      "query_index": 2,
+      "seed": 1432900075
+    },
+    {
+      "id": "jp1-train-relation-15",
+      "query_index": 7,
+      "seed": 1097882907
+    },
+    {
+      "id": "jp1-train-color-12",
+      "query_index": 0,
+      "seed": 1381260130
+    },
+    {
+      "id": "jp1-train-count-09",
+      "query_index": 3,
+      "seed": 1525237144
+    },
+    {
+      "id": "jp1-train-count_color-09",
+      "query_index": 8,
+      "seed": 87049053
+    },
+    {
+      "id": "jp1-train-relation-00",
+      "query_index": 5,
+      "seed": 1233225395
+    },
+    {
+      "id": "jp1-train-color-00",
+      "query_index": 8,
+      "seed": 1202046581
+    },
+    {
+      "id": "jp1-train-count-15",
+      "query_index": 1,
+      "seed": 1565007593
+    },
+    {
+      "id": "jp1-train-count_color-12",
+      "query_index": 5,
+      "seed": 1152890243
+    },
+    {
+      "id": "jp1-train-relation-09",
+      "query_index": 6,
+      "seed": 406135298
+    },
+    {
+      "id": "jp1-train-color-06",
+      "query_index": 8,
+      "seed": 2071386772
+    },
+    {
+      "id": "jp1-train-count-07",
+      "query_index": 8,
+      "seed": 1541524403
+    },
+    {
+      "id": "jp1-train-count_color-15",
+      "query_index": 5,
+      "seed": 1261527681
+    },
+    {
+      "id": "jp1-train-relation-02",
+      "query_index": 4,
+      "seed": 1439557374
+    },
+    {
+      "id": "jp1-train-color-04",
+      "query_index": 5,
+      "seed": 1425650771
+    },
+    {
+      "id": "jp1-train-count-03",
+      "query_index": 0,
+      "seed": 2003062097
+    },
+    {
+      "id": "jp1-train-count_color-00",
+      "query_index": 4,
+      "seed": 1812315985
+    },
+    {
+      "id": "jp1-train-relation-03",
+      "query_index": 0,
+      "seed": 1341431551
+    },
+    {
+      "id": "jp1-train-color-13",
+      "query_index": 8,
+      "seed": 1584058161
+    },
+    {
+      "id": "jp1-train-count-11",
+      "query_index": 7,
+      "seed": 588886757
+    },
+    {
+      "id": "jp1-train-count_color-08",
+      "query_index": 8,
+      "seed": 297905299
+    },
+    {
+      "id": "jp1-train-relation-05",
+      "query_index": 5,
+      "seed": 1389866339
+    },
+    {
+      "id": "jp1-train-color-08",
+      "query_index": 2,
+      "seed": 503631573
+    },
+    {
+      "id": "jp1-train-count-04",
+      "query_index": 8,
+      "seed": 606181523
+    },
+    {
+      "id": "jp1-train-count_color-11",
+      "query_index": 6,
+      "seed": 1609732477
+    },
+    {
+      "id": "jp1-train-relation-07",
+      "query_index": 0,
+      "seed": 1565083676
+    },
+    {
+      "id": "jp1-train-color-09",
+      "query_index": 1,
+      "seed": 1826876157
+    },
+    {
+      "id": "jp1-train-count-08",
+      "query_index": 7,
+      "seed": 1810020302
+    },
+    {
+      "id": "jp1-train-count_color-10",
+      "query_index": 3,
+      "seed": 847194372
+    },
+    {
+      "id": "jp1-train-relation-11",
+      "query_index": 7,
+      "seed": 1000981114
+    },
+    {
+      "id": "jp1-train-color-05",
+      "query_index": 3,
+      "seed": 1917541247
+    },
+    {
+      "id": "jp1-train-count-01",
+      "query_index": 8,
+      "seed": 1384427642
+    },
+    {
+      "id": "jp1-train-count_color-06",
+      "query_index": 4,
+      "seed": 233855786
+    },
+    {
+      "id": "jp1-train-relation-01",
+      "query_index": 5,
+      "seed": 1673056966
+    },
+    {
+      "id": "jp1-train-color-10",
+      "query_index": 2,
+      "seed": 205545979
+    },
+    {
+      "id": "jp1-train-count-00",
+      "query_index": 3,
+      "seed": 1645693144
+    },
+    {
+      "id": "jp1-train-count_color-13",
+      "query_index": 5,
+      "seed": 27117272
+    },
+    {
+      "id": "jp1-train-relation-08",
+      "query_index": 5,
+      "seed": 1047812152
+    },
+    {
+      "id": "jp1-train-color-14",
+      "query_index": 3,
+      "seed": 1632172794
+    },
+    {
+      "id": "jp1-train-count-13",
+      "query_index": 7,
+      "seed": 1178820948
+    },
+    {
+      "id": "jp1-train-count_color-02",
+      "query_index": 0,
+      "seed": 539805149
+    },
+    {
+      "id": "jp1-train-relation-10",
+      "query_index": 8,
+      "seed": 480202182
+    },
+    {
+      "id": "jp1-train-color-02",
+      "query_index": 0,
+      "seed": 1596692973
+    },
+    {
+      "id": "jp1-train-count-10",
+      "query_index": 2,
+      "seed": 746362020
+    },
+    {
+      "id": "jp1-train-count_color-05",
+      "query_index": 6,
+      "seed": 1525145058
+    },
+    {
+      "id": "jp1-train-relation-06",
+      "query_index": 8,
+      "seed": 1974885731
+    },
+    {
+      "id": "jp1-train-color-03",
+      "query_index": 1,
+      "seed": 720664154
+    },
+    {
+      "id": "jp1-train-count-06",
+      "query_index": 2,
+      "seed": 19345408
+    },
+    {
+      "id": "jp1-train-count_color-01",
+      "query_index": 3,
+      "seed": 2884901
+    },
+    {
+      "id": "jp1-train-relation-04",
+      "query_index": 5,
+      "seed": 1398568385
+    }
+  ],
+  "review_ids": [
+    "jp1-train-color-15",
+    "jp1-train-color-11",
+    "jp1-train-count-07",
+    "jp1-train-count-14",
+    "jp1-train-count_color-04",
+    "jp1-train-count_color-02",
+    "jp1-train-relation-02",
+    "jp1-train-relation-08"
+  ],
+  "time_key": "phase3_time",
+  "version": 1
+}

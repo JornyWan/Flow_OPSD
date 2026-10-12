@@ -1,0 +1,48 @@
+--- a/scripts/train_sd3_opd.py
++++ b/scripts/train_sd3_opd.py
+@@ -3210,6 +3210,15 @@
+                             if _fo is not None:
+                                 _snap = [p.detach().double().flatten().clone()
+                                          for p in transformer_trainable_parameters]
++                                # CODEX-0020: 同时取**累积后**的梯度,用于拆开三种解释。
++                                # cos(u,-g) 低可能来自 (a)单批噪声 (b)retention 项 (c)AdamW 预条件,
++                                # 三者推论完全不同 —— 只测 cos(u,-g) 分不开。
++                                _gacc = torch.cat([
++                                    (p.grad.detach().double().flatten()
++                                     if p.grad is not None
++                                     else torch.zeros(p.numel(), dtype=torch.float64,
++                                                      device=p.device))
++                                    for p in transformer_trainable_parameters])
+                         optimizer.step()
+                         if _snap is not None:
+                             with torch.no_grad():
+@@ -3218,8 +3227,20 @@
+                                                                  _snap)])
+                                 _un = _u.norm()
+                                 info["fo_step_norm"].append(_un.float())
++                                # AdamW 预条件本身把更新旋离**累积梯度**多少:
++                                # 接近 1 => AdamW 基本不改方向,低 cos(u,-g) 来自批噪声/retention;
++                                # 明显 <1 => 预条件确实在旋转更新,基于 g 的一阶推理(含 QP)被削弱。
++                                _gan = _gacc.norm()
++                                info["fo_cos_u_negacc"].append(
++                                    ((_u @ (-_gacc)) / (_un.clamp(min=1e-30)
++                                                        * _gan.clamp(min=1e-30))).float())
++                                info["fo_gacc_norm"].append(_gan.float())
+                                 _gv2 = _fo.get("g")
+                                 if _gv2 is not None:
++                                    # 单批 direct 梯度与累积全梯度的一致性(批噪声 + retention 项)
++                                    info["fo_cos_g_gacc"].append(
++                                        ((_gv2 @ _gacc) / (_gv2.norm().clamp(min=1e-30)
++                                                           * _gan.clamp(min=1e-30))).float())
+                                     # AdamW 把更新旋离 -g 多少:1.0 = 纯梯度下降方向
+                                     info["fo_cos_u_negg"].append(
+                                         ((_u @ (-_gv2)) / (_un.clamp(min=1e-30)
+@@ -3235,7 +3256,7 @@
+                                     info[f"fo_cos_u_a_{_nm2}"].append(
+                                         ((_u @ _a2) / (_un.clamp(min=1e-30)
+                                                        * _a2.norm().clamp(min=1e-30))).float())
+-                            del _snap, _u, _fo
++                            del _snap, _u, _fo, _gacc
+                         optimizer.zero_grad()
+ 
+                     if accelerator.sync_gradients:

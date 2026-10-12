@@ -1,0 +1,482 @@
+[
+  {
+    "criteria": [
+      {
+        "id": "text",
+        "label": "\u6587\u5b57\u4ec5\u4e3a BLOOM\uff0c\u6ca1\u6709\u5176\u4ed6\u6587\u5b57\u6216\u6807\u70b9"
+      },
+      {
+        "id": "relation",
+        "label": "\u6070\u597d1\u4e2a\u74f6\u5b50\uff1b\u6070\u597d1\u4e2a\u676f\u5b50\uff1b\u676f\u5b50\u5728\u74f6\u5b50\u7684\u53f3\u4fa7"
+      }
+    ],
+    "id": "H01",
+    "images": [
+      {
+        "id": "H01-A",
+        "letter": "A",
+        "sha256": "e9fd68ae07637539353a36f6c17d3c2e2eb03f81c4e2e9dea1d534f98c3ec49d",
+        "src": "../../runs/le20_human_review_001/images/H01-A.png"
+      },
+      {
+        "id": "H01-B",
+        "letter": "B",
+        "sha256": "c2d639f2005fa1881feefd2fbc9ecbea3ecf19f04ad2e76d4b2b4a4378a1173a",
+        "src": "../../runs/le20_human_review_001/images/H01-B.png"
+      },
+      {
+        "id": "H01-C",
+        "letter": "C",
+        "sha256": "999d625210956408f78fd3c11c102423c51f65b18b0808945df8662febe0461b",
+        "src": "../../runs/le20_human_review_001/images/H01-C.png"
+      },
+      {
+        "id": "H01-D",
+        "letter": "D",
+        "sha256": "36a6d105a984f9b8bd2b357b76e2661f868eeab9e5ea3ec5f8913f491beeeae9",
+        "src": "../../runs/le20_human_review_001/images/H01-D.png"
+      }
+    ],
+    "prompt": "A sharp, realistic studio photograph of exactly one cup clearly to the right of exactly one bottle, both fully visible. Above the objects, a large white sign displays only the word \"BLOOM\" in bold black letters. No other letters or words are visible."
+  },
+  {
+    "criteria": [
+      {
+        "id": "text",
+        "label": "\u6587\u5b57\u4ec5\u4e3a FRESH\uff0c\u6ca1\u6709\u5176\u4ed6\u6587\u5b57\u6216\u6807\u70b9"
+      },
+      {
+        "id": "count",
+        "label": "\u6070\u597d2\u4e2a\u676f\u5b50"
+      }
+    ],
+    "id": "H02",
+    "images": [
+      {
+        "id": "H02-A",
+        "letter": "A",
+        "sha256": "6069384b24646d37a7c78efe6f3b6136af6cf76b98b546717648955faa0a5319",
+        "src": "../../runs/le20_human_review_001/images/H02-A.png"
+      },
+      {
+        "id": "H02-B",
+        "letter": "B",
+        "sha256": "c940119c4ccf97168760532587e9ad2af9731fd473f99dfead4af4f21cb54de6",
+        "src": "../../runs/le20_human_review_001/images/H02-B.png"
+      },
+      {
+        "id": "H02-C",
+        "letter": "C",
+        "sha256": "133f96e6839cf83cf0b0421cc402ff83914c0a3bca0a2b00ec4d67296967ef7a",
+        "src": "../../runs/le20_human_review_001/images/H02-C.png"
+      },
+      {
+        "id": "H02-D",
+        "letter": "D",
+        "sha256": "edcf304a231d2424efdbf692c025b02c706a919ae5a4d1793a3cb5b677eccec5",
+        "src": "../../runs/le20_human_review_001/images/H02-D.png"
+      }
+    ],
+    "prompt": "A sharp, realistic studio photograph of exactly two cups, all fully visible and separated. Above the objects, a large white sign displays only the word \"FRESH\" in bold black letters. No other letters or words are visible."
+  },
+  {
+    "criteria": [
+      {
+        "id": "text",
+        "label": "\u6587\u5b57\u4ec5\u4e3a PEACH\uff0c\u6ca1\u6709\u5176\u4ed6\u6587\u5b57\u6216\u6807\u70b9"
+      },
+      {
+        "id": "color",
+        "label": "\u6070\u597d1\u4e2a\u7eff\u8272\u6905\u5b50"
+      }
+    ],
+    "id": "H03",
+    "images": [
+      {
+        "id": "H03-A",
+        "letter": "A",
+        "sha256": "f23ba7258d8069f781b6aa608ee62002cb2fd4fdb2520218948187c18349d97b",
+        "src": "../../runs/le20_human_review_001/images/H03-A.png"
+      },
+      {
+        "id": "H03-B",
+        "letter": "B",
+        "sha256": "182baca821da503e230fc24efbec2910697e020fad5ea27e40628d75511018b9",
+        "src": "../../runs/le20_human_review_001/images/H03-B.png"
+      },
+      {
+        "id": "H03-C",
+        "letter": "C",
+        "sha256": "ea87ce413189109b24d2549021c4154482580b63c4575b8026ee3fb785136917",
+        "src": "../../runs/le20_human_review_001/images/H03-C.png"
+      },
+      {
+        "id": "H03-D",
+        "letter": "D",
+        "sha256": "36f67e79863865cba43c1b5aa5e433c161af3b2ed898520b3e8ca9dcde2a7c6b",
+        "src": "../../runs/le20_human_review_001/images/H03-D.png"
+      }
+    ],
+    "prompt": "A sharp, realistic studio photograph of exactly one green chair, fully visible. Above the objects, a large white sign displays only the word \"PEACH\" in bold black letters. No other letters or words are visible."
+  },
+  {
+    "criteria": [
+      {
+        "id": "text",
+        "label": "\u6587\u5b57\u4ec5\u4e3a BLOOM\uff0c\u6ca1\u6709\u5176\u4ed6\u6587\u5b57\u6216\u6807\u70b9"
+      },
+      {
+        "id": "count",
+        "label": "\u6070\u597d1\u4e2a\u7897"
+      }
+    ],
+    "id": "H04",
+    "images": [
+      {
+        "id": "H04-A",
+        "letter": "A",
+        "sha256": "84f5fd2dc7be47657950f85884c689e260c1f7ea32120e3c39f5c17c284082ea",
+        "src": "../../runs/le20_human_review_001/images/H04-A.png"
+      },
+      {
+        "id": "H04-B",
+        "letter": "B",
+        "sha256": "3b07a6e21fd33b7e13ce8fddbff1c3574b89a07014ce972b0766b371de60b378",
+        "src": "../../runs/le20_human_review_001/images/H04-B.png"
+      },
+      {
+        "id": "H04-C",
+        "letter": "C",
+        "sha256": "737615b3b216d45e87699c484c9978b8424992ffdfbac5687217c5956d265814",
+        "src": "../../runs/le20_human_review_001/images/H04-C.png"
+      },
+      {
+        "id": "H04-D",
+        "letter": "D",
+        "sha256": "a69a3261d0a7ee1463e6ea29666774d585e3887eebbbe7431c953c450688ac11",
+        "src": "../../runs/le20_human_review_001/images/H04-D.png"
+      }
+    ],
+    "prompt": "A sharp, realistic studio photograph of exactly one bowl, all fully visible and separated. Above the objects, a large white sign displays only the word \"BLOOM\" in bold black letters. No other letters or words are visible."
+  },
+  {
+    "criteria": [
+      {
+        "id": "text",
+        "label": "\u6587\u5b57\u4ec5\u4e3a CLOUD\uff0c\u6ca1\u6709\u5176\u4ed6\u6587\u5b57\u6216\u6807\u70b9"
+      },
+      {
+        "id": "color",
+        "label": "\u6070\u597d1\u4e2a\u9ec4\u8272\u82b1\u74f6"
+      }
+    ],
+    "id": "H05",
+    "images": [
+      {
+        "id": "H05-A",
+        "letter": "A",
+        "sha256": "44280d523f99efc596e8943cb500be89b2eca8590bfbbd41bd24230ae37cfeed",
+        "src": "../../runs/le20_human_review_001/images/H05-A.png"
+      },
+      {
+        "id": "H05-B",
+        "letter": "B",
+        "sha256": "e47ba7d7349d0fdc4a7799471b31a587581ca1a6d6cdc14fda4d9e294972dfb2",
+        "src": "../../runs/le20_human_review_001/images/H05-B.png"
+      },
+      {
+        "id": "H05-C",
+        "letter": "C",
+        "sha256": "0c9f340a1fa75986aeb3fe41a579645d6c322624efa890931c6f8188004285ad",
+        "src": "../../runs/le20_human_review_001/images/H05-C.png"
+      },
+      {
+        "id": "H05-D",
+        "letter": "D",
+        "sha256": "c4423a0e53780635036316bfb39311e87bf4cd8264b56ef6c72e4068af072417",
+        "src": "../../runs/le20_human_review_001/images/H05-D.png"
+      }
+    ],
+    "prompt": "A sharp, realistic studio photograph of exactly one yellow vase, fully visible. Above the objects, a large white sign displays only the word \"CLOUD\" in bold black letters. No other letters or words are visible."
+  },
+  {
+    "criteria": [
+      {
+        "id": "text",
+        "label": "\u6587\u5b57\u4ec5\u4e3a CLOUD\uff0c\u6ca1\u6709\u5176\u4ed6\u6587\u5b57\u6216\u6807\u70b9"
+      },
+      {
+        "id": "color",
+        "label": "\u6070\u597d1\u4e2a\u9ec4\u8272\u82b1\u74f6"
+      }
+    ],
+    "id": "H06",
+    "images": [
+      {
+        "id": "H06-A",
+        "letter": "A",
+        "sha256": "0343abfe65a03ed2d308825a65120579838506e3402ce7056e9e3756787ac3d6",
+        "src": "../../runs/le20_human_review_001/images/H06-A.png"
+      },
+      {
+        "id": "H06-B",
+        "letter": "B",
+        "sha256": "c74bd93f18985dba3bc6b6f13b1a36e7473cd9c8976ab2c44ca1a4d0759d4d41",
+        "src": "../../runs/le20_human_review_001/images/H06-B.png"
+      },
+      {
+        "id": "H06-C",
+        "letter": "C",
+        "sha256": "6cc3dc0117135570226405bfc1185b1ae56d79e18e90ed855a0ec0deadc5e189",
+        "src": "../../runs/le20_human_review_001/images/H06-C.png"
+      },
+      {
+        "id": "H06-D",
+        "letter": "D",
+        "sha256": "e409dc8b0a18a9b942bf468e29a45d4a263f39c611529ac716a3a967bc931630",
+        "src": "../../runs/le20_human_review_001/images/H06-D.png"
+      }
+    ],
+    "prompt": "A sharp, realistic studio photograph of exactly one yellow vase, fully visible. Above the objects, a large white sign displays only the word \"CLOUD\" in bold black letters. No other letters or words are visible."
+  },
+  {
+    "criteria": [
+      {
+        "id": "text",
+        "label": "\u6587\u5b57\u4ec5\u4e3a BLOOM\uff0c\u6ca1\u6709\u5176\u4ed6\u6587\u5b57\u6216\u6807\u70b9"
+      },
+      {
+        "id": "count",
+        "label": "\u6070\u597d1\u4e2a\u7897"
+      }
+    ],
+    "id": "H07",
+    "images": [
+      {
+        "id": "H07-A",
+        "letter": "A",
+        "sha256": "438b92bbd98c716a40195f143db485e1d18636b556f722a526331e0bb7e54dbf",
+        "src": "../../runs/le20_human_review_001/images/H07-A.png"
+      },
+      {
+        "id": "H07-B",
+        "letter": "B",
+        "sha256": "316cc4de7ea5ded6e1fa458e9b752688cec3551110345fe8967ab9d88fbb6fcc",
+        "src": "../../runs/le20_human_review_001/images/H07-B.png"
+      },
+      {
+        "id": "H07-C",
+        "letter": "C",
+        "sha256": "3a1228f76491647ff0c63962e8216c44cb25462357a01312368126826fef4360",
+        "src": "../../runs/le20_human_review_001/images/H07-C.png"
+      },
+      {
+        "id": "H07-D",
+        "letter": "D",
+        "sha256": "c49a66209cd0a5906c80af7a064a08e4c89c24c4aa384dd8e5bc47f583c01e8a",
+        "src": "../../runs/le20_human_review_001/images/H07-D.png"
+      }
+    ],
+    "prompt": "A sharp, realistic studio photograph of exactly one bowl, all fully visible and separated. Above the objects, a large white sign displays only the word \"BLOOM\" in bold black letters. No other letters or words are visible."
+  },
+  {
+    "criteria": [
+      {
+        "id": "text",
+        "label": "\u6587\u5b57\u4ec5\u4e3a PINE\uff0c\u6ca1\u6709\u5176\u4ed6\u6587\u5b57\u6216\u6807\u70b9"
+      },
+      {
+        "id": "relation",
+        "label": "\u6070\u597d1\u4e2a\u7897\uff1b\u6070\u597d1\u4e2a\u82f9\u679c\uff1b\u82f9\u679c\u5728\u7897\u7684\u5de6\u4fa7"
+      }
+    ],
+    "id": "H08",
+    "images": [
+      {
+        "id": "H08-A",
+        "letter": "A",
+        "sha256": "6c91b7c8b3f29eea6b9f7763178d0384d4bce9815cd2c111f0c0a86703d1b665",
+        "src": "../../runs/le20_human_review_001/images/H08-A.png"
+      },
+      {
+        "id": "H08-B",
+        "letter": "B",
+        "sha256": "fd114e7cadbda13d2df51047c25a9494c5a618fdc760fc371f7c303ae102da97",
+        "src": "../../runs/le20_human_review_001/images/H08-B.png"
+      },
+      {
+        "id": "H08-C",
+        "letter": "C",
+        "sha256": "32f862a5acef7a17ab34e9f995186c29d4e14465d3dde54cc00db52ccc3c940c",
+        "src": "../../runs/le20_human_review_001/images/H08-C.png"
+      },
+      {
+        "id": "H08-D",
+        "letter": "D",
+        "sha256": "d40c6367a61d91fc533e369bf60e800ceab358c7975150139d450dc6cb0f2866",
+        "src": "../../runs/le20_human_review_001/images/H08-D.png"
+      }
+    ],
+    "prompt": "A sharp, realistic studio photograph of exactly one apple clearly to the left of exactly one bowl, both fully visible. Above the objects, a large white sign displays only the word \"PINE\" in bold black letters. No other letters or words are visible."
+  },
+  {
+    "criteria": [
+      {
+        "id": "text",
+        "label": "\u6587\u5b57\u4ec5\u4e3a FRESH\uff0c\u6ca1\u6709\u5176\u4ed6\u6587\u5b57\u6216\u6807\u70b9"
+      },
+      {
+        "id": "count",
+        "label": "\u6070\u597d2\u4e2a\u676f\u5b50"
+      }
+    ],
+    "id": "H09",
+    "images": [
+      {
+        "id": "H09-A",
+        "letter": "A",
+        "sha256": "080a66c880c038bba9b73c38fa98a3b87e1d5430e5382f0192a7a3e89bf9e07a",
+        "src": "../../runs/le20_human_review_001/images/H09-A.png"
+      },
+      {
+        "id": "H09-B",
+        "letter": "B",
+        "sha256": "d6b5de0f08f90f4376ab5c33e545cec510f3287388f0cd58b2aac9c1be93ca5a",
+        "src": "../../runs/le20_human_review_001/images/H09-B.png"
+      },
+      {
+        "id": "H09-C",
+        "letter": "C",
+        "sha256": "4c8ef0989eafb4dfd2e8de85da1557fe45acea60bd0c8c26c0f6a2776d8f033e",
+        "src": "../../runs/le20_human_review_001/images/H09-C.png"
+      },
+      {
+        "id": "H09-D",
+        "letter": "D",
+        "sha256": "53de063ece6158ef626bf8d2dad3a9169ad563959a89533d904c16a8e62b0485",
+        "src": "../../runs/le20_human_review_001/images/H09-D.png"
+      }
+    ],
+    "prompt": "A sharp, realistic studio photograph of exactly two cups, all fully visible and separated. Above the objects, a large white sign displays only the word \"FRESH\" in bold black letters. No other letters or words are visible."
+  },
+  {
+    "criteria": [
+      {
+        "id": "text",
+        "label": "\u6587\u5b57\u4ec5\u4e3a BLOOM\uff0c\u6ca1\u6709\u5176\u4ed6\u6587\u5b57\u6216\u6807\u70b9"
+      },
+      {
+        "id": "relation",
+        "label": "\u6070\u597d1\u4e2a\u74f6\u5b50\uff1b\u6070\u597d1\u4e2a\u676f\u5b50\uff1b\u676f\u5b50\u5728\u74f6\u5b50\u7684\u53f3\u4fa7"
+      }
+    ],
+    "id": "H10",
+    "images": [
+      {
+        "id": "H10-A",
+        "letter": "A",
+        "sha256": "f33497eb61d4a6429753c1d390a9e238d66183da77baccc5fe55e0f212992731",
+        "src": "../../runs/le20_human_review_001/images/H10-A.png"
+      },
+      {
+        "id": "H10-B",
+        "letter": "B",
+        "sha256": "f9ef00a737ab077725453bf2ce62ddc090e7e6c6801b47bd59df5a00664bf7b8",
+        "src": "../../runs/le20_human_review_001/images/H10-B.png"
+      },
+      {
+        "id": "H10-C",
+        "letter": "C",
+        "sha256": "b9fdde3a7b032729bd1fdeea6e70f0aea13292559b759551a9400d586ed4c2d4",
+        "src": "../../runs/le20_human_review_001/images/H10-C.png"
+      },
+      {
+        "id": "H10-D",
+        "letter": "D",
+        "sha256": "21ca721a91bb4f046443222501131053b0ac8717cdc1624f13ed067d801c8c2c",
+        "src": "../../runs/le20_human_review_001/images/H10-D.png"
+      }
+    ],
+    "prompt": "A sharp, realistic studio photograph of exactly one cup clearly to the right of exactly one bottle, both fully visible. Above the objects, a large white sign displays only the word \"BLOOM\" in bold black letters. No other letters or words are visible."
+  },
+  {
+    "criteria": [
+      {
+        "id": "text",
+        "label": "\u6587\u5b57\u4ec5\u4e3a PINE\uff0c\u6ca1\u6709\u5176\u4ed6\u6587\u5b57\u6216\u6807\u70b9"
+      },
+      {
+        "id": "relation",
+        "label": "\u6070\u597d1\u4e2a\u7897\uff1b\u6070\u597d1\u4e2a\u82f9\u679c\uff1b\u82f9\u679c\u5728\u7897\u7684\u5de6\u4fa7"
+      }
+    ],
+    "id": "H11",
+    "images": [
+      {
+        "id": "H11-A",
+        "letter": "A",
+        "sha256": "4e18e89e65f75a85de421e405dd6b12535d49e5aff1da2cbf89d3444b7fb5c4a",
+        "src": "../../runs/le20_human_review_001/images/H11-A.png"
+      },
+      {
+        "id": "H11-B",
+        "letter": "B",
+        "sha256": "6fd1c9f5d280d678322dc14f8ff006d411d61a280318039536cda44cc3fd875d",
+        "src": "../../runs/le20_human_review_001/images/H11-B.png"
+      },
+      {
+        "id": "H11-C",
+        "letter": "C",
+        "sha256": "27f0c6788154d98aa128b0a9cbe5f97349ee9d07dbe2eb56a1e187a79d72b604",
+        "src": "../../runs/le20_human_review_001/images/H11-C.png"
+      },
+      {
+        "id": "H11-D",
+        "letter": "D",
+        "sha256": "d207b54ea73a7fb95a95a51b93a25165e626ec1091f1f5b337d1e70e7642c42b",
+        "src": "../../runs/le20_human_review_001/images/H11-D.png"
+      }
+    ],
+    "prompt": "A sharp, realistic studio photograph of exactly one apple clearly to the left of exactly one bowl, both fully visible. Above the objects, a large white sign displays only the word \"PINE\" in bold black letters. No other letters or words are visible."
+  },
+  {
+    "criteria": [
+      {
+        "id": "text",
+        "label": "\u6587\u5b57\u4ec5\u4e3a PEACH\uff0c\u6ca1\u6709\u5176\u4ed6\u6587\u5b57\u6216\u6807\u70b9"
+      },
+      {
+        "id": "color",
+        "label": "\u6070\u597d1\u4e2a\u7eff\u8272\u6905\u5b50"
+      }
+    ],
+    "id": "H12",
+    "images": [
+      {
+        "id": "H12-A",
+        "letter": "A",
+        "sha256": "2dcefaf1ecf4e569e5c9656540e113e45394bce9207d2e5995dcd2416e7bff3d",
+        "src": "../../runs/le20_human_review_001/images/H12-A.png"
+      },
+      {
+        "id": "H12-B",
+        "letter": "B",
+        "sha256": "007756ac71914dcabf1c7c686d4ced464d91a34df72afc0e8da69f0381782c1a",
+        "src": "../../runs/le20_human_review_001/images/H12-B.png"
+      },
+      {
+        "id": "H12-C",
+        "letter": "C",
+        "sha256": "658e265b812cf7c77e427986f01b1c1a64aac7f9d2d60f7e00cc69c96fc32bb2",
+        "src": "../../runs/le20_human_review_001/images/H12-C.png"
+      },
+      {
+        "id": "H12-D",
+        "letter": "D",
+        "sha256": "bbf8fec20063663558c36e1c92e11424424cb41276710b9432f30a3aa2651c06",
+        "src": "../../runs/le20_human_review_001/images/H12-D.png"
+      }
+    ],
+    "prompt": "A sharp, realistic studio photograph of exactly one green chair, fully visible. Above the objects, a large white sign displays only the word \"PEACH\" in bold black letters. No other letters or words are visible."
+  }
+]

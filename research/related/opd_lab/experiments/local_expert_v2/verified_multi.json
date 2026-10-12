@@ -1,0 +1,56 @@
+{
+  "accept_probability": 0.5,
+  "accumulation": 16,
+  "adam_betas": [
+    0.9,
+    0.999
+  ],
+  "adam_epsilon": 1e-08,
+  "alphas": [
+    0.5,
+    1.0
+  ],
+  "audit_postfit": true,
+  "backend": "sd3",
+  "dataset": "/midtier/minilab/scratch/chw4026/projects/side_project/generative/opd_related/opd_lab/data/joint_pilot_v1/records.jsonl",
+  "diagnostic_manifest": null,
+  "disagreement_min": 0.0,
+  "ema_decay": 0.9,
+  "ema_interval": 1,
+  "fitting_epochs": 1,
+  "fixed_alpha": 1.0,
+  "fixed_teacher": "geneval",
+  "guidance_scale": 4.5,
+  "initial_adapter": null,
+  "learning_rate": 3e-05,
+  "lora_alpha": 64,
+  "lora_rank": 32,
+  "max_grad_norm": 1.0,
+  "max_sequence_length": 256,
+  "method": "verified",
+  "min_gain": 0.0,
+  "outer_epochs": 12,
+  "precision": "fp16",
+  "protect_satisfied": true,
+  "quality_drop_tolerance": null,
+  "quality_floor": null,
+  "queries_per_rank": 16,
+  "resolution": 512,
+  "save_candidates": true,
+  "save_every": 4,
+  "seed": 42,
+  "split": "train",
+  "steps": 10,
+  "teacher_guidance": {
+    "geneval": 1.0,
+    "ocr": 4.5
+  },
+  "teachers": [
+    "ocr",
+    "geneval"
+  ],
+  "timestep_fraction": 0.99,
+  "training_manifest": "/midtier/minilab/scratch/chw4026/projects/side_project/generative/opd_related/opd_lab/experiments/local_expert_v2/training_queries.json",
+  "utility_joint_weight": 0.5,
+  "weight_decay": 0.0001
+}

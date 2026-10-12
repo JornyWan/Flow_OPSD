@@ -1,0 +1,23 @@
+{
+  "allocated_gpu_hours": 0.03611111111111111,
+  "gpu_completed": true,
+  "job_id": "1050350",
+  "known_teacher_complete_student_incomplete_states": 2,
+  "new_teacher_images": 24,
+  "new_teacher_images_planned": 24,
+  "next_step": "New-data single-GenEval acceptance comparison, with collection and independent evaluation protocol to freeze before execution. No pending GPU jobs.",
+  "observations_frozen": true,
+  "reference_images_exact": 24,
+  "reference_images_planned": 24,
+  "results_available": true,
+  "review_sheets": 12,
+  "review_slots": 48,
+  "review_slots_completed": 48,
+  "run": "/midtier/minilab/scratch/chw4026/projects/side_project/generative/opd_related/opd_lab/runs/le19_opportunity_001",
+  "safe_teacher_oracle_complete": 7,
+  "scientific_analysis_complete": true,
+  "status": "complete",
+  "student_complete": 5,
+  "training_updates": 0,
+  "updated_utc": "2026-09-15T04:17:33.478829+00:00"
+}

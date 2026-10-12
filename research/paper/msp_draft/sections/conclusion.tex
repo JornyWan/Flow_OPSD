@@ -1,0 +1,62 @@
+\section{Conclusion and Limitations}
+\label{sec:conclusion}
+
+We asked where the reward target of an on-policy distillation procedure should be applied.
+Moving the query state to higher noise -- whether directly or implicitly by shortening the
+training rollout -- buys large few-step gains at zero or negative cost, but keeps none of
+them at the full budget, where the change turns slightly negative and stops clearing our
+threshold; the two routes are the same mechanism and produce the same gain curve.
+Propagating one reward-constructed target to several noise levels of the same trajectory
+avoids the trade: it is the only one of the three placements that clears the significance
+threshold at every sampling budget on both prompt sets, it costs $1.21\times$ in training
+time, and it requires no additional reward evaluation. The two are composable, and the
+combination is the strongest few-step configuration we measured. One mechanism
+therefore covers the whole deployment range: propagation alone when a single model must
+serve every budget, propagation with a shortened rollout when few-step inference is the
+target.
+
+\paragraph{Limitations.}
+\begin{itemize}[leftmargin=1.4em,itemsep=2pt]
+\item \textbf{One base model; comparisons at one budget.} All results are on SD3.5-Medium
+with LoRA. The reproduction itself is verified at the published $300$-update budget and
+matches it on all five evaluators (Sec.~\ref{sec:exp:repro}), but every \emph{comparison}
+between propagation and the canonical procedure is made at $100$ updates. We do not know
+how the placement effect scales with model size or with a longer schedule.
+\item \textbf{The gain has a measured operating range, and we mapped its edges.} Three
+separate experiments bound it. (i) \emph{Branch coefficient}: a $2\times2$ on the same joint
+objective shows that raising $\beta$ from the published $0.1$ to $1.0$ does not merely
+remove the gain but reverses it, from $+10.70$ to $-15.40$ MDE at four steps
+(App.~\ref{app:rewardspec}). (ii) \emph{Training length}: at the published $300$ updates the forty-step gain
+is gone in both of two independent seeds ($+1.02$ / $+0.24$ MDE in one, $-9.25$ / $-14.28$ in
+the other), while at four steps the seeds split: one keeps a significant lead at every
+checkpoint ($+8.16$ MDE at $300$), the other peaks near $200$ and ends $7.2$ MDE behind.
+Late collapse is therefore a risk we observed once in two runs rather than a ceiling we can
+locate (App.~\ref{app:budgetceiling}). (iii) \emph{Objective}: the
+reward-specific runs disagree among themselves, spanning a significant loss, two null
+results and a significant gain. Propagation as we measure it is
+therefore a method for the published joint objective at its published $\beta$, whose
+forty-step gain we can claim only for at most a couple of hundred updates -- the setting all our comparisons use, but narrower
+than reward distillation in general, and we have not established why the edges fall where
+they do.
+\item \textbf{On single rewards the sign of the effect depends on the reward.}
+Our headline result is on the three-reward objective the published method uses for its main
+table. Trained on one reward at a time under the published reward-specific recipe, the
+outcome is not uniform: at four steps propagation is \emph{harmful} on PickScore ($t=-15.68$
+and $-14.12$ on the two prompt sets), neutral on HPSv2.1 and on CLIPScore, and \emph{helpful}
+on ImageReward ($t=+12.11$ and $+7.92$); on all four, as on the joint objective, the effect at
+forty steps is null. A fifth recipe, Aesthetic, yields no verdict: both of its arms end below
+the untrained base model on the composite while the score they optimise doubles, so there is no
+few-step quality there to compare (App.~\ref{app:rewardspec}). We report every one of these
+because the comparison was pre-registered, and we draw no pattern from four points. One
+reading is ruled out: because the positive case is a single reward, propagation does not
+\emph{require} an objective that mixes several rewards. What the reward-specific block does
+not isolate is $\beta$, which it also changes from $0.1$ to $1.0$; the $2\times2$ above shows
+that change alone, at a fixed three-reward objective, is enough to reverse the sign.
+\item \textbf{Held-out significance at the full budget.} On the held-out prompt set,
+ImageReward favours \MSP significantly for $\mathrm{NFE}\le10$ but not at $20$ and $40$
+($t=+1.50,+1.18$). The full-budget claim rests on the reported composite.
+\item \textbf{We do not compare against dedicated few-step distillation.} The comparison
+would be informative but is a different experiment; see Sec.~\ref{sec:related}.
+\item \textbf{Placement is studied on a fixed schedule family.} We vary which states of a
+rectified-flow schedule are used; we do not study continuous or learned placement.
+\end{itemize}

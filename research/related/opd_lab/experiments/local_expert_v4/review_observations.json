@@ -1,0 +1,560 @@
+[
+  {
+    "case": 1,
+    "better": "tie",
+    "comparison_notes": "Both show one yellow vase and readable stylized SODA; no clear prompt improvement.",
+    "observations": {
+      "A": {
+        "clauses": {
+          "color": true,
+          "text": true
+        },
+        "full_visibility": true,
+        "visible_text": "SODA",
+        "notes": "Vase overlaps lower central letters; final A lacks a crossbar but remains readable."
+      },
+      "B": {
+        "clauses": {
+          "color": true,
+          "text": true
+        },
+        "full_visibility": true,
+        "visible_text": "SODA",
+        "notes": "Same letter styling and overlap."
+      }
+    }
+  },
+  {
+    "case": 2,
+    "better": "B",
+    "comparison_notes": "B exposes more of both chairs; both still fail full visibility.",
+    "observations": {
+      "A": {
+        "clauses": {
+          "color": true,
+          "count": true,
+          "text": true
+        },
+        "full_visibility": false,
+        "visible_text": "LUNA",
+        "notes": "Two green chairs cropped at bottom and sides; mostly backs visible. Spaced black wall letters, no distinct sign boundary."
+      },
+      "B": {
+        "clauses": {
+          "color": true,
+          "count": true,
+          "text": true
+        },
+        "full_visibility": false,
+        "visible_text": "LUNA",
+        "notes": "Two green chairs with more seats/arms visible; bottoms and side still cropped. No distinct white sign boundary."
+      }
+    }
+  },
+  {
+    "case": 3,
+    "better": "B",
+    "comparison_notes": "B puts the correct word on one white sign; both cups remain cropped.",
+    "observations": {
+      "A": {
+        "clauses": {
+          "color": true,
+          "text": true
+        },
+        "full_visibility": false,
+        "visible_text": "FRESH",
+        "notes": "One red cup cut off at bottom. Five separate letter panels rather than one sign."
+      },
+      "B": {
+        "clauses": {
+          "color": true,
+          "text": true
+        },
+        "full_visibility": false,
+        "visible_text": "FRESH",
+        "notes": "One red cup cut off at bottom. Word appears on a single white sign."
+      }
+    }
+  },
+  {
+    "case": 4,
+    "better": "tie",
+    "comparison_notes": "No clear difference in text or fruit count/visibility.",
+    "observations": {
+      "A": {
+        "clauses": {
+          "color": null,
+          "count": null,
+          "text": true
+        },
+        "full_visibility": null,
+        "visible_text": "SUNNY",
+        "notes": "One clear red banana silhouette; underside may be an overlapping fruit or part of the same fruit. Two separated bananas are not established."
+      },
+      "B": {
+        "clauses": {
+          "color": null,
+          "count": null,
+          "text": true
+        },
+        "full_visibility": null,
+        "visible_text": "SUNNY",
+        "notes": "Same ambiguous fruit silhouette and lack of clear separation."
+      }
+    }
+  },
+  {
+    "case": 5,
+    "better": "B",
+    "comparison_notes": "B has a more identifiable L and approaches the requested word; object/text placement remains problematic.",
+    "observations": {
+      "A": {
+        "clauses": {
+          "count": true,
+          "text": false
+        },
+        "full_visibility": null,
+        "visible_text": "COUD",
+        "notes": "One central vase overlaps the lettering. Missing identifiable L; lettering is thin, partly white, and beside/overlaid with the vase rather than above."
+      },
+      "B": {
+        "clauses": {
+          "count": true,
+          "text": true
+        },
+        "full_visibility": null,
+        "visible_text": "CLOUD",
+        "notes": "Stylized L adjoining O is visible. Thin partly white lettering; central vase overlaps U, making complete unobscured visibility uncertain."
+      }
+    }
+  },
+  {
+    "case": 6,
+    "better": "A",
+    "comparison_notes": "A shows slightly more of the cups; both have two instead of one.",
+    "observations": {
+      "A": {
+        "clauses": {
+          "count": false,
+          "text": true
+        },
+        "full_visibility": false,
+        "visible_text": "MINT",
+        "notes": "Two cups, both touching/cut by lateral frame; black spaced letters on white wall."
+      },
+      "B": {
+        "clauses": {
+          "count": false,
+          "text": true
+        },
+        "full_visibility": false,
+        "visible_text": "MINT",
+        "notes": "Two cups more clipped at left/right frame."
+      }
+    }
+  },
+  {
+    "case": 7,
+    "better": "tie",
+    "comparison_notes": "Both preserve one blue apple but show a duplicated/fused character near the beginning of the requested word.",
+    "observations": {
+      "A": {
+        "clauses": {
+          "color": true,
+          "text": false
+        },
+        "full_visibility": true,
+        "visible_text": "MMAPLE (fused initial M shapes)",
+        "notes": "Initial letter has extra M-like strokes rather than clean MAPLE."
+      },
+      "B": {
+        "clauses": {
+          "color": true,
+          "text": false
+        },
+        "full_visibility": true,
+        "visible_text": "MAAPLE",
+        "notes": "Extra A."
+      }
+    }
+  },
+  {
+    "case": 8,
+    "better": "tie",
+    "comparison_notes": "Same reversed spatial relation and severe cropping.",
+    "observations": {
+      "A": {
+        "clauses": {
+          "relation": false,
+          "text": true
+        },
+        "full_visibility": false,
+        "visible_text": "FRESH",
+        "notes": "Cup is right of bottle, not left. Both objects cut off at bottom; sign letters cut at top/right but word remains identifiable."
+      },
+      "B": {
+        "clauses": {
+          "relation": false,
+          "text": true
+        },
+        "full_visibility": false,
+        "visible_text": "FRESH",
+        "notes": "Same reversed relation and clipping."
+      }
+    }
+  },
+  {
+    "case": 9,
+    "better": "A",
+    "comparison_notes": "A clearly contains the requested fully visible bowl; B has only cropped plate-like objects at the bottom.",
+    "observations": {
+      "A": {
+        "clauses": {
+          "count": true,
+          "text": true
+        },
+        "full_visibility": true,
+        "visible_text": "BLOOM",
+        "notes": "One clearly visible white bowl, sign above."
+      },
+      "B": {
+        "clauses": {
+          "count": false,
+          "text": true
+        },
+        "full_visibility": false,
+        "visible_text": "BLOOM",
+        "notes": "Two shallow green plate-like forms clipped by bottom; no clear complete bowl."
+      }
+    }
+  },
+  {
+    "case": 10,
+    "better": "uncertain",
+    "comparison_notes": "A exposes more of the chair but its structure is malformed; B has a more recognizable chair back with greater cropping.",
+    "observations": {
+      "A": {
+        "clauses": {
+          "relation": true,
+          "text": true
+        },
+        "full_visibility": false,
+        "visible_text": "DAWN",
+        "notes": "One malformed chair left of one plant; chair legs/seat area and pot cropped at bottom."
+      },
+      "B": {
+        "clauses": {
+          "relation": true,
+          "text": true
+        },
+        "full_visibility": false,
+        "visible_text": "DAWN",
+        "notes": "One chair left of plant; chair and pot heavily cropped."
+      }
+    }
+  },
+  {
+    "case": 11,
+    "better": "B",
+    "comparison_notes": "B corrects the relation, removes extra label text, and improves framing; some bottle occlusion remains.",
+    "observations": {
+      "A": {
+        "clauses": {
+          "relation": false,
+          "text": false
+        },
+        "full_visibility": false,
+        "visible_text": "BLOOM; small bottle-label writing",
+        "notes": "Cup left of bottle rather than right. Bottle clipped at right and has additional writing. Sign letters pale rather than bold black."
+      },
+      "B": {
+        "clauses": {
+          "relation": true,
+          "text": true
+        },
+        "full_visibility": false,
+        "visible_text": "BLOOM",
+        "notes": "Cup right of bottle, both within frame. Cup overlaps the lower right part of the bottle, so the bottle is not fully unobscured."
+      }
+    }
+  },
+  {
+    "case": 12,
+    "better": "A",
+    "comparison_notes": "A has the right objects and relation and readable word; B misses the car and corrupts the word.",
+    "observations": {
+      "A": {
+        "clauses": {
+          "relation": true,
+          "text": true
+        },
+        "full_visibility": false,
+        "visible_text": "Wave",
+        "notes": "Bicycle to right of car, car front cut by left border."
+      },
+      "B": {
+        "clauses": {
+          "relation": false,
+          "text": false
+        },
+        "full_visibility": false,
+        "visible_text": "[malformed W]AV<E",
+        "notes": "Only a bicycle; no visible car. Extra chevron-like letter stroke and malformed initial letter."
+      }
+    }
+  },
+  {
+    "case": 13,
+    "better": "tie",
+    "comparison_notes": "Both have readable LOFT and multiple overlapping books instead of one.",
+    "observations": {
+      "A": {
+        "clauses": {
+          "count": false,
+          "text": true
+        },
+        "full_visibility": false,
+        "visible_text": "LOFT",
+        "notes": "Several books overlap and extend past side frame."
+      },
+      "B": {
+        "clauses": {
+          "count": false,
+          "text": true
+        },
+        "full_visibility": false,
+        "visible_text": "LOFT",
+        "notes": "Several books overlap and extend past side frame; page shapes differ but no clear count correction."
+      }
+    }
+  },
+  {
+    "case": 14,
+    "better": "A",
+    "comparison_notes": "A has clearer black lettering and a more banana-like curved fruit; both remain readable.",
+    "observations": {
+      "A": {
+        "clauses": {
+          "color": true,
+          "count": true,
+          "text": true
+        },
+        "full_visibility": true,
+        "visible_text": "WAVE",
+        "notes": "Stylized A without crossbar; one curved red banana."
+      },
+      "B": {
+        "clauses": {
+          "color": null,
+          "count": null,
+          "text": true
+        },
+        "full_visibility": true,
+        "visible_text": "WAVE",
+        "notes": "One red elongated fruit, identity less certain (banana/pepper-like). Letters largely white with black inset strokes, not bold black."
+      }
+    }
+  },
+  {
+    "case": 15,
+    "better": "B",
+    "comparison_notes": "B improves bicycle framing and black text and removes obvious license-plate writing; wheel edge still near/cut at bottom.",
+    "observations": {
+      "A": {
+        "clauses": {
+          "relation": true,
+          "text": false
+        },
+        "full_visibility": false,
+        "visible_text": "LUNA; small license-plate characters",
+        "notes": "Bicycle left of car but much of bicycle cropped at bottom. Extra plate writing and partly pale L."
+      },
+      "B": {
+        "clauses": {
+          "relation": true,
+          "text": true
+        },
+        "full_visibility": false,
+        "visible_text": "LUNA",
+        "notes": "Bicycle left of car, bicycle wheel bottom touches/cuts frame; much more bicycle visible."
+      }
+    }
+  },
+  {
+    "case": 16,
+    "better": "tie",
+    "comparison_notes": "Both show three separated blue apples and readable MAPLE; no meaningful fulfillment difference.",
+    "observations": {
+      "A": {
+        "clauses": {
+          "color": true,
+          "count": true,
+          "text": true
+        },
+        "full_visibility": true,
+        "visible_text": "MAPLE",
+        "notes": "Black letters on cream tiles within a white sign."
+      },
+      "B": {
+        "clauses": {
+          "color": true,
+          "count": true,
+          "text": true
+        },
+        "full_visibility": true,
+        "visible_text": "MAPLE",
+        "notes": "Same count/color/word and complete objects."
+      }
+    }
+  },
+  {
+    "case": 17,
+    "better": "B",
+    "comparison_notes": "B removes the extra N and shows two fully visible separated bananas.",
+    "observations": {
+      "A": {
+        "clauses": {
+          "count": true,
+          "text": false
+        },
+        "full_visibility": false,
+        "visible_text": "SUNNNY",
+        "notes": "Three Ns; two bananas overlap, lower one cut by bottom and left border."
+      },
+      "B": {
+        "clauses": {
+          "count": true,
+          "text": true
+        },
+        "full_visibility": true,
+        "visible_text": "SUNNY",
+        "notes": "Compressed stylized Ns, but two Ns only; two separated complete bananas."
+      }
+    }
+  },
+  {
+    "case": 18,
+    "better": "uncertain",
+    "comparison_notes": "B removes extra text and places word above fruit but lettering is much paler; fruit identity in A is less clear.",
+    "observations": {
+      "A": {
+        "clauses": {
+          "color": null,
+          "text": false
+        },
+        "full_visibility": true,
+        "visible_text": "S Sunny",
+        "notes": "Large extra S and small Sunny. One red pepper/banana-like fruit; uncertain banana identity."
+      },
+      "B": {
+        "clauses": {
+          "color": true,
+          "text": true
+        },
+        "full_visibility": true,
+        "visible_text": "SUNNY",
+        "notes": "One elongated curved red banana; very pale white/yellow letters rather than bold black."
+      }
+    }
+  },
+  {
+    "case": 19,
+    "better": "B",
+    "comparison_notes": "B corrects object multiplicity and places the apple right of the bowl; bottom clipping remains.",
+    "observations": {
+      "A": {
+        "clauses": {
+          "relation": false,
+          "text": true
+        },
+        "full_visibility": false,
+        "visible_text": "CLOUD",
+        "notes": "Apple on left plus another red apple-like object in stacked bowls on right; wrong count/relation. Objects cut at bottom."
+      },
+      "B": {
+        "clauses": {
+          "relation": true,
+          "text": true
+        },
+        "full_visibility": false,
+        "visible_text": "CLOUD",
+        "notes": "One apple right of one bowl, both lower edges cropped."
+      }
+    }
+  },
+  {
+    "case": 20,
+    "better": "uncertain",
+    "comparison_notes": "A has darker correct text but puts it on the yellow object; B has a larger sign arrangement but partly pale lettering and text still at object level.",
+    "observations": {
+      "A": {
+        "clauses": {
+          "color": null,
+          "text": true
+        },
+        "full_visibility": true,
+        "visible_text": "CLEAR",
+        "notes": "Small yellow upright book-like object with matching yellow base; exact book identity/count uncertain. Word on yellow object rather than a large white sign above."
+      },
+      "B": {
+        "clauses": {
+          "color": null,
+          "text": true
+        },
+        "full_visibility": true,
+        "visible_text": "CLEAR",
+        "notes": "Yellow central book/tile with E; pale C/L/A on neighboring white tiles. Exact book identity/count uncertain; text not above object."
+      }
+    }
+  },
+  {
+    "case": 21,
+    "better": "A",
+    "comparison_notes": "A restores discernible O and T and is much closer to NORTH, though pale strokes leave transcription ambiguity.",
+    "observations": {
+      "A": {
+        "clauses": {
+          "color": true,
+          "text": null
+        },
+        "full_visibility": null,
+        "visible_text": "NORTH (possible extra pale vertical stroke between R and T)",
+        "notes": "O and parts of other letters are white, not black; unclear whether extra pale stroke is a character. Bottle base coincides with bottom edge."
+      },
+      "B": {
+        "clauses": {
+          "color": true,
+          "text": false
+        },
+        "full_visibility": null,
+        "visible_text": "NRH",
+        "notes": "O and T absent; bottle base coincides with bottom edge."
+      }
+    }
+  },
+  {
+    "case": 22,
+    "better": "tie",
+    "comparison_notes": "Both contain more than two books and retain clipping/overlap.",
+    "observations": {
+      "A": {
+        "clauses": {
+          "count": false,
+          "text": true
+        },
+        "full_visibility": false,
+        "visible_text": "CLEAR",
+        "notes": "Upright open book or adjoining volumes above at least three stacked horizontal books; bottom stack cropped."
+      },
+      "B": {
+        "clauses": {
+          "count": false,
+          "text": true
+        },
+        "full_visibility": false,
+        "visible_text": "CLEAR",
+        "notes": "Same extra stacked books and bottom cropping."
+      }
+    }
+  }
+]

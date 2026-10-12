@@ -1,0 +1,2 @@
+Verified phase17 references, all36 saved queries,144 action blends,156 labels, seed exclusion, target ranking, unchanged phases6-16.
+Post-join supervision inventory rebuilt; 11 mixed-time and9 fixed-index distinct states, query/action hashes verified.

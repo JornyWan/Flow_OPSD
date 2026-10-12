@@ -1,0 +1,4 @@
+{"id":"toy-train-a","prompt":"toy train scene A","split":"train","group":"toy-train","constraints":[{"id":"x","kind":"toy","axis":0,"target":0.0,"tolerance":0.15},{"id":"y","kind":"toy","axis":1,"target":0.0,"tolerance":0.15}]}
+{"id":"toy-train-b","prompt":"toy train scene B","split":"train","group":"toy-train","constraints":[{"id":"x","kind":"toy","axis":0,"target":0.0,"tolerance":0.15},{"id":"y","kind":"toy","axis":1,"target":0.0,"tolerance":0.15}]}
+{"id":"toy-test-a","prompt":"toy held out scene A","split":"test","group":"toy-test","constraints":[{"id":"x","kind":"toy","axis":0,"target":0.0,"tolerance":0.15},{"id":"y","kind":"toy","axis":1,"target":0.0,"tolerance":0.15}]}
+{"id":"toy-test-b","prompt":"toy held out scene B","split":"test","group":"toy-test","constraints":[{"id":"x","kind":"toy","axis":0,"target":0.0,"tolerance":0.15},{"id":"y","kind":"toy","axis":1,"target":0.0,"tolerance":0.15}]}

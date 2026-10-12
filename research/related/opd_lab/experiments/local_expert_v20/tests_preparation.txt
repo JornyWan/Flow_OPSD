@@ -1,0 +1,3 @@
+Command: PYTHONPATH=python:scripts ../../conda_envs/envs/diffusionopd/bin/python -m pytest -q
+116 passed in15.66s; exit0.
+Tests include isolated seeds, minimum prompt/complete coverage, exact-replay abort before collection, one GenEval query per new state and no updates.

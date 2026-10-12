@@ -1,0 +1,11 @@
+Executed before preparing/submitting the frozen GPU worker.
+Interpreter: ../../conda_envs/envs/diffusionopd/bin/python; PYTHONPATH=python.
+
+python -m pytest tests/test_transfer_eval.py -q
+2 passed in 2.17s
+python -m pytest -q
+68 passed in 12.83s
+
+New coverage: deterministic complete two-cohort pairing, rejection of omitted
+pairs and fitting-seed reuse, ordinary full generation from different raw states
+with identical paired noise, exact anchors, frozen behavior and zero backwards.

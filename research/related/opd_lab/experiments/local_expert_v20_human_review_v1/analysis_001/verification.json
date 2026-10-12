@@ -1,0 +1,19 @@
+{
+  "analysis_rows_unique": 48,
+  "artifacts_sha256": {
+    "experiments/local_expert_v20_human_review_v1/STATUS.md": "0af439dff8dc3fa6ee718debac42734d4c54b076715a1f8438a8b65112682acc",
+    "experiments/local_expert_v20_human_review_v1/analysis_001/REPORT.md": "5c1f79913b9a6a9362e39dbdc84af547ccbbf4a66de635828065d05064e2f639",
+    "experiments/local_expert_v20_human_review_v1/analysis_001/answers_source.json": "f017eee1c0cb2dbdd1811e854bceedc5d88cad2710f9bc7c6adcaddc7f518920",
+    "experiments/local_expert_v20_human_review_v1/analysis_001/receipt.json": "cbdf1bf614c65b21ee749df10736b6b62511883ba35492f811f85ca009033bb2",
+    "experiments/local_expert_v20_human_review_v1/analysis_001/results.json": "ee461392ea22ae18c45d2d13026ed46b248517108df7e2770217d8f1182f0afa",
+    "scripts/analyze_phase20_human_review.py": "029faad9a2a30952bb50e33956c7cf652c7a37c043f1a0915d895d88927a9a13",
+    "tests/test_phase20_human_review.py": "57a44b81a4a49571ffcf91c984d9105cb4833e9ab3b8435a2b292aed78741d96"
+  },
+  "original_phase20_hashes_verified": 1567,
+  "raw_input_unchanged": true,
+  "source_cases_checked": 12,
+  "tests": {
+    "command": "PYTHONPATH=python:scripts ../../conda_envs/envs/diffusionopd/bin/python -m pytest -q tests/test_phase20_human_review.py",
+    "passed": 3
+  }
+}

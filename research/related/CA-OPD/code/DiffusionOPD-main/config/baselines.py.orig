@@ -1,0 +1,147 @@
+"""Config functions for the DiffusionOPD paper's Multi-Task RL baselines (Table 1):
+  - mt_grpoguard          -> Multi-Task GRPO-Guard  (scripts/baselines/train_sd3_GRPO_Guard_multireward.py, accelerate)
+  - mt_nft                -> Multi-Task NFT          (scripts/baselines/train_nft_sd3_multireward.py, torchrun)
+  - cascade_nft_s{1,2,3}  -> Cascade NFT stages      (same NFT script, one task per stage, LoRA-chained)
+
+All: SD3.5-Medium @512, LoRA r=32/alpha=64 (hardcoded in the trainers), same 3 reward tasks as OPD's
+`mopd` (Aes = 1:1:1 PickScore+ClipScore+HPSv2.1 / OCR / GenEval) alternating datasets (round-robin).
+Guidance: GRPO-Guard gs=4.5 (CFG), NFT gs=1.0 + dpm2 deterministic (CFG-free). Launch: `--config config/baselines.py:<fn>`.
+"""
+import importlib.util
+import os
+
+import ml_collections
+
+
+def load_source(name, path):
+    spec = importlib.util.spec_from_file_location(name, path)
+    module = importlib.util.module_from_spec(spec)
+    spec.loader.exec_module(module)
+    return module
+
+
+base = load_source("base", os.path.join(os.path.dirname(__file__), "base.py"))
+_MODELS = os.environ.get("OPD_MODELS_DIR", "/mnt/localssd/opd/models")
+SD35_PATH = os.environ.get("SD35_PATH", os.path.join(_MODELS, "stable-diffusion-3.5-medium"))
+
+
+def get_config(name):
+    # config_flags calls get_config(<the :suffix>), e.g. --config config/baselines.py:mt_nft -> get_config("mt_nft")
+    return globals()[name]()
+
+
+def _aes():
+    # paper's Aesthetics objective: equal-weight (1:1:1) mixture
+    return {"pickscore": 1.0, "clipscore": 1.0, "hpsv2": 1.0}
+
+
+def _tasks():
+    cwd = os.getcwd()
+    return [
+        {"name": "aes",     "dataset": os.path.join(cwd, "dataset/pickscore"), "prompt_fn": "general_ocr", "reward_fn": _aes()},
+        {"name": "ocr",     "dataset": os.path.join(cwd, "dataset/ocr"),       "prompt_fn": "general_ocr", "reward_fn": {"ocr": 1.0}},
+        {"name": "geneval", "dataset": os.path.join(cwd, "dataset/geneval"),   "prompt_fn": "geneval",     "reward_fn": {"geneval": 1.0}},
+    ]
+
+
+def _common(config):
+    config.pretrained.model = SD35_PATH
+    config.resolution = 512
+    config.use_lora = True
+    config.mixed_precision = "fp16"
+    config.dataset = os.path.join(os.getcwd(), "dataset/pickscore")  # single-task fallback (unused in multi-task)
+    # group-relative RL: many images per prompt. 8 GPUs * tbs 9 = 72; 72 % nipp 24 == 0; nbpe 6 % 3 tasks == 0.
+    config.sample.num_steps = 10
+    config.sample.eval_num_steps = 40
+    config.sample.train_batch_size = 9
+    config.sample.num_image_per_prompt = 24
+    config.sample.num_batches_per_epoch = 6
+    config.sample.test_batch_size = 16
+    config.sample.global_std = False
+    config.sample.same_latent = False
+    config.sample.noise_level = 0.7
+    config.train.batch_size = config.sample.train_batch_size
+    config.train.num_inner_epochs = 1
+    config.train.timestep_fraction = 0.99
+    config.train.ema = True
+    config.train.adv_clip_max = 5
+    config.train.learning_rate = 1e-4
+    config.train.lora_path = None
+    config.per_prompt_stat_tracking = True
+    config.save_freq = 30
+    config.eval_freq = 30
+    config.num_epochs = 100000  # stop manually at best-performing checkpoint (paper protocol)
+    return config
+
+
+def mt_grpoguard():
+    config = _common(base.get_config())
+    config.sample.guidance_scale = 4.5
+    config.sample.eval_guidance_scale = 4.5
+    config.train.gradient_accumulation_steps = 3
+    config.train.cfg = True
+    config.train.beta = 0.0
+    config.train.clip_range = 4e-6
+    # GRPO-Guard-specific (absent from base.py)
+    config.rationorm = True
+    config.proxy_advantage_ratio = 0.0
+    config.proxy_reward_fn = {}
+    # multi-task tasks live under train.datasets for the GRPO-Guard trainer
+    config.train.datasets = _tasks()
+    config.run_name = "MT-GRPOGuard_SD35M_Aes+OCR+GenEval"
+    config.save_dir = os.path.join("logs", config.run_name)
+    return config
+
+
+def _nft_base():
+    config = _common(base.get_config())
+    config.sample.guidance_scale = 1.0   # DiffusionNFT is CFG-free
+    config.sample.eval_guidance_scale = 1.0
+    config.sample.solver = "dpm2"
+    config.sample.deterministic = True
+    config.train.gradient_accumulation_steps = 6
+    config.train.beta = 0.0001
+    config.train.adv_mode = "all"
+    # NFT-specific top-level (absent from base.py)
+    config.beta = 1.0
+    config.decay_type = 1
+    config.resume_from = None
+    return config
+
+
+def mt_nft():
+    config = _nft_base()
+    config.datasets = _tasks()           # multi-task tasks at TOP-LEVEL for the NFT trainer
+    config.run_name = "MT-NFT_SD35M_Aes+OCR+GenEval"
+    config.save_dir = os.path.join("logs", config.run_name)
+    return config
+
+
+def _nft_stage(name, dataset, prompt_fn, reward_fn, beta, decay_type, num_steps, lora_path):
+    config = _nft_base()                  # no config.datasets -> single-dataset back-compat path
+    config.dataset = os.path.join(os.getcwd(), f"dataset/{dataset}")
+    config.prompt_fn = prompt_fn
+    config.reward_fn = reward_fn
+    config.beta = beta
+    config.decay_type = decay_type
+    config.sample.num_steps = num_steps
+    config.train.lora_path = lora_path    # CASCADE CHAIN: weights-only init from previous stage
+    config.run_name = f"Cascade-NFT_{name}"
+    config.save_dir = os.path.join("logs", config.run_name)
+    return config
+
+
+# Cascade NFT: sequential stages, each a single-task DiffusionNFT run initialized from the previous stage's LoRA.
+# Per-task hyperparameters mirror upstream DiffusionNFT-main/config/nft.py. Set CASCADE_PREV_LORA between stages.
+def cascade_nft_s1_aes():
+    return _nft_stage("s1_aes", "pickscore", "general_ocr", _aes(), beta=0.1, decay_type=1, num_steps=25, lora_path=None)
+
+
+def cascade_nft_s2_ocr():
+    return _nft_stage("s2_ocr", "ocr", "general_ocr", {"ocr": 1.0}, beta=0.1, decay_type=2, num_steps=10,
+                      lora_path=os.environ.get("CASCADE_PREV_LORA"))
+
+
+def cascade_nft_s3_geneval():
+    return _nft_stage("s3_geneval", "geneval", "geneval", {"geneval": 1.0}, beta=1.0, decay_type=1, num_steps=10,
+                      lora_path=os.environ.get("CASCADE_PREV_LORA"))

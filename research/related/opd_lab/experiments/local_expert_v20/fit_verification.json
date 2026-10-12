@@ -1,0 +1,17 @@
+{
+  "counts_are_reconstructed": true,
+  "fit": {
+    "all_schedules_reconstructed": true,
+    "assets": [],
+    "backward_queries": 4608,
+    "complete_optimizer_snapshots": 3,
+    "deterministic_fitting": true,
+    "evaluation_images_generated": 0,
+    "reference_images_exact": 63,
+    "training_states": 54,
+    "updates": 384
+  },
+  "original_allocation_state": "FAILED",
+  "recovery": "/midtier/minilab/scratch/chw4026/projects/side_project/generative/opd_related/opd_lab/runs/le20_fit_recovered_001",
+  "source_run": "/midtier/minilab/scratch/chw4026/projects/side_project/generative/opd_related/opd_lab/runs/le20_fit_002"
+}

@@ -1,0 +1,8 @@
+{
+  "baseline_cases": 12,
+  "descriptive_inventory_rebuilt": true,
+  "distinct_index3_states": 9,
+  "distinct_mixed_time_states": 11,
+  "source_query_and_action_hashes_checked": true,
+  "supervision_inventory_sha256": "109766b2c4b98830401fb08b582a7d4d15129e182017c5a11adadc1dd6f2c210"
+}

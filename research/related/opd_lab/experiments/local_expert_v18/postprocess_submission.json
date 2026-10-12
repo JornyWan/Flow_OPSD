@@ -1,0 +1,40 @@
+{
+  "attestation_sha256": "e9d72009b4d5450efb39ea492b13925139aa58f0b8bb778758bbfe2bf59f6922",
+  "command": [
+    "sbatch",
+    "--parsable",
+    "--account=minilab",
+    "--partition=minilab-cpu",
+    "--cpus-per-task=4",
+    "--mem=16G",
+    "--time=00:10:00",
+    "--dependency=afterany:1049851",
+    "--job-name=opdlab_le18_review_prepare",
+    "--output=/midtier/minilab/scratch/chw4026/projects/side_project/generative/opd_related/opd_lab/runs/le18_supervision_001/postprocess-%j.log",
+    "/midtier/minilab/scratch/chw4026/projects/side_project/generative/opd_related/opd_lab/runs/le18_supervision_001/postprocess/job.sh"
+  ],
+  "dependency": "afterany:1049851",
+  "gpu_count": 0,
+  "job_id": "1049871",
+  "run": "/midtier/minilab/scratch/chw4026/projects/side_project/generative/opd_related/opd_lab/runs/le18_supervision_001",
+  "script_sha256": "f2e85098dc1e98f0218dc4678891dd2a7a4682a7b97a72a153d303135db411e5",
+  "stage": "le18_review_prepare",
+  "worker_command": [
+    [
+      "/midtier/minilab/scratch/chw4026/projects/side_project/generative/conda_envs/envs/diffusionopd/bin/python3.10",
+      "/midtier/minilab/scratch/chw4026/projects/side_project/generative/opd_related/opd_lab/runs/le18_supervision_001/postprocess/refresh_campaign.py",
+      "--campaign",
+      "/midtier/minilab/scratch/chw4026/projects/side_project/generative/opd_related/opd_lab/experiments/local_expert_v18"
+    ],
+    [
+      "/midtier/minilab/scratch/chw4026/projects/side_project/generative/conda_envs/envs/diffusionopd/bin/python3.10",
+      "/midtier/minilab/scratch/chw4026/projects/side_project/generative/opd_related/opd_lab/runs/le18_supervision_001/postprocess/finish_supervision_run.py",
+      "--run",
+      "/midtier/minilab/scratch/chw4026/projects/side_project/generative/opd_related/opd_lab/runs/le18_supervision_001",
+      "--review",
+      "/midtier/minilab/scratch/chw4026/projects/side_project/generative/opd_related/opd_lab/runs/le18_review_001",
+      "--campaign",
+      "/midtier/minilab/scratch/chw4026/projects/side_project/generative/opd_related/opd_lab/experiments/local_expert_v18"
+    ]
+  ]
+}

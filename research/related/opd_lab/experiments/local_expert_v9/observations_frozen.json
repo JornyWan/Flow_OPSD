@@ -1,0 +1,10 @@
+{
+  "frozen_before_key_join": true,
+  "inherited_sha256": "8fbbe2289e04faca4ad0f1d785d5cdac2a8ef169b624c0a957f99ef830e3e7d6",
+  "key_sha256": "0eb53b46c69e6b60db869d40b17b15d76b7310dce1cd579bacad60a4e2638b6f",
+  "observations_sha256": "862068c22d405e76185942372a8e411389f70246868902dd88734814fabe3240",
+  "reviewer": "implementing assistant, candidate/score-blinded, familiar old prompts; not independent human truth",
+  "rubric_sha256": "bea2a59f969763f59d27e40720c52a3218eb3d612b7ae6c483e36cdf793fd2b4",
+  "scope": "all20 unique new images; unknown is not success",
+  "time_utc": "2026-09-13T16:45:35.364486+00:00"
+}

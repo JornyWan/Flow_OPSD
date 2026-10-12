@@ -1,0 +1,33 @@
+{
+  "evaluation": {
+    "adapter_kind": "raw",
+    "cells": [
+      [
+        "flow",
+        10
+      ],
+      [
+        "flow",
+        40
+      ],
+      [
+        "dpm2",
+        40
+      ]
+    ],
+    "checkpoint_epoch": 12,
+    "seeds": [
+      42,
+      43
+    ],
+    "split": "validation"
+  },
+  "protocol_sha256": "880f0efdc556f473b092d8a3ca96b92734d580faa4874e538d11e69a07d078ff",
+  "query_manifest_sha256": "981336a5f3731813557782cbd30b7b41e7f6aa0bc45b7d0e2c75dd0bcfb42465",
+  "training_runs": {
+    "fixed_geneval": "/midtier/minilab/scratch/chw4026/projects/side_project/generative/opd_related/opd_lab/runs/le2_train_fixed_geneval_001",
+    "utility_only": "/midtier/minilab/scratch/chw4026/projects/side_project/generative/opd_related/opd_lab/runs/le2_train_utility_only_001",
+    "verified_fixed": "/midtier/minilab/scratch/chw4026/projects/side_project/generative/opd_related/opd_lab/runs/le2_train_verified_fixed_001",
+    "verified_multi": "/midtier/minilab/scratch/chw4026/projects/side_project/generative/opd_related/opd_lab/runs/le2_train_verified_multi_001"
+  }
+}

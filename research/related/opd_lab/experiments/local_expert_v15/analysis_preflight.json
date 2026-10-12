@@ -1,0 +1,15 @@
+{
+  "analysis_scope": "Predeclared gate and cohort-wise summaries, no checkpoint or seed selection.",
+  "before_evaluation_and_key_join": true,
+  "created_at_utc": "2026-09-14T16:32:35.390736+00:00",
+  "files_sha256": {
+    "experiments/local_expert_v15/REVIEW_RUBRIC.md": "255780eb17d1a014baa874819baba90793a50b5d576b12323af5a6d634ef5b7e",
+    "experiments/local_expert_v15/tests_final.txt": "290dda7d4b0f1d5d56f3fabef786c3d5259af1fca84265bd523ad82705882294",
+    "scripts/plot_annotation_probe.py": "0684923abdf18d4e47ec617eb29ba2ce71f5d600be54f323dfcb7164123f9f51",
+    "scripts/review_annotation_probe.py": "38443029e6f670a7ce00466c30a35d43745921f4e81e3ba76dfb52e0403e8585",
+    "scripts/verify_annotation_probe.py": "d57c538f6541f6f8426094b332d8ca777584cf8c655c92dd1d17c52b674a91a5",
+    "tests/test_annotation_review.py": "ea4aa8913dd5fe12be509ca2280b18626633409393190a70bae472afb24b2df8"
+  },
+  "inputs_verified": 64,
+  "runtime_asset_audit": []
+}

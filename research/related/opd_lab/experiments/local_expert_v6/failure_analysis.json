@@ -1,0 +1,1367 @@
+{
+  "meaning": "Post-hoc failure description only; original strict parsing and scores remain unchanged. No salvage of clauses from invalid responses.",
+  "invalid_outputs": [
+    {
+      "uid": "development:05:target",
+      "stage": "scene",
+      "error": "ValueError: Invalid scene schema",
+      "raw": "```json\n{\n  \"clauses\": [\n    {\n      \"id\": \"count\",\n      \"satisfied\": true,\n      \"evidence\": \"There is one vase in the image.\"\n    }\n  ],\n  \"full_visibility\": null,\n  \"visibility_evidence\": null\n}\n```",
+      "visibility_evidence_is_null": true,
+      "full_visibility_is_null": true
+    },
+    {
+      "uid": "development:05:noop",
+      "stage": "scene",
+      "error": "ValueError: Invalid scene schema",
+      "raw": "```json\n{\n  \"clauses\": [\n    {\n      \"id\": \"count\",\n      \"satisfied\": true,\n      \"evidence\": \"There is one vase visible in the image.\"\n    }\n  ],\n  \"full_visibility\": null,\n  \"visibility_evidence\": null\n}\n```",
+      "visibility_evidence_is_null": true,
+      "full_visibility_is_null": true
+    },
+    {
+      "uid": "development:06:target",
+      "stage": "scene",
+      "error": "ValueError: Invalid scene schema",
+      "raw": "```json\n{\n  \"clauses\": [\n    {\n      \"id\": \"count\",\n      \"satisfied\": false,\n      \"evidence\": \"There are two cups in the image.\"\n    }\n  ],\n  \"full_visibility\": null,\n  \"visibility_evidence\": null\n}\n```",
+      "visibility_evidence_is_null": true,
+      "full_visibility_is_null": true
+    },
+    {
+      "uid": "development:06:noop",
+      "stage": "scene",
+      "error": "ValueError: Invalid scene schema",
+      "raw": "```json\n{\n  \"clauses\": [\n    {\n      \"id\": \"count\",\n      \"satisfied\": false,\n      \"evidence\": \"There are two cups in the image.\"\n    }\n  ],\n  \"full_visibility\": null,\n  \"visibility_evidence\": null\n}\n```",
+      "visibility_evidence_is_null": true,
+      "full_visibility_is_null": true
+    },
+    {
+      "uid": "development:07:target",
+      "stage": "scene",
+      "error": "ValueError: Invalid scene schema",
+      "raw": "```json\n{\n  \"clauses\": [\n    {\n      \"id\": \"color\",\n      \"satisfied\": true,\n      \"evidence\": \"The apple in the image has a blue color.\"\n    }\n  ],\n  \"full_visibility\": null,\n  \"visibility_evidence\": null\n}\n```",
+      "visibility_evidence_is_null": true,
+      "full_visibility_is_null": true
+    },
+    {
+      "uid": "development:09:target",
+      "stage": "scene",
+      "error": "ValueError: Invalid scene schema",
+      "raw": "```json\n{\n  \"clauses\": [\n    {\n      \"id\": \"count\",\n      \"satisfied\": true,\n      \"evidence\": \"There is one bowl in the image.\"\n    }\n  ],\n  \"full_visibility\": null,\n  \"visibility_evidence\": null\n}\n```",
+      "visibility_evidence_is_null": true,
+      "full_visibility_is_null": true
+    },
+    {
+      "uid": "development:17:noop",
+      "stage": "scene",
+      "error": "ValueError: Invalid scene schema",
+      "raw": "```json\n{\n  \"clauses\": [\n    {\n      \"id\": \"count\",\n      \"satisfied\": true,\n      \"evidence\": \"There are two bananas visible in the image.\"\n    }\n  ],\n  \"full_visibility\": null,\n  \"visibility_evidence\": null\n}\n```",
+      "visibility_evidence_is_null": true,
+      "full_visibility_is_null": true
+    },
+    {
+      "uid": "development:18:noop",
+      "stage": "scene",
+      "error": "ValueError: Invalid scene schema",
+      "raw": "```json\n{\n  \"clauses\": [\n    {\n      \"id\": \"color\",\n      \"satisfied\": true,\n      \"evidence\": \"The banana in the image is red.\"\n    }\n  ],\n  \"full_visibility\": null,\n  \"visibility_evidence\": null\n}\n```",
+      "visibility_evidence_is_null": true,
+      "full_visibility_is_null": true
+    },
+    {
+      "uid": "development:20:target",
+      "stage": "scene",
+      "error": "ValueError: Invalid scene schema",
+      "raw": "```json\n{\n  \"clauses\": [\n    {\n      \"id\": \"color\",\n      \"satisfied\": true,\n      \"evidence\": \"The image contains a yellow object.\"\n    }\n  ],\n  \"full_visibility\": null,\n  \"visibility_evidence\": null\n}\n```",
+      "visibility_evidence_is_null": true,
+      "full_visibility_is_null": true
+    },
+    {
+      "uid": "development:20:noop",
+      "stage": "scene",
+      "error": "ValueError: Invalid scene schema",
+      "raw": "```json\n{\n  \"clauses\": [\n    {\n      \"id\": \"color\",\n      \"satisfied\": true,\n      \"evidence\": \"The image contains a yellow book.\"\n    }\n  ],\n  \"full_visibility\": null,\n  \"visibility_evidence\": null\n}\n```",
+      "visibility_evidence_is_null": true,
+      "full_visibility_is_null": true
+    },
+    {
+      "uid": "exposed_calibration:06",
+      "stage": "scene",
+      "error": "ValueError: Invalid scene schema",
+      "raw": "```json\n{\n  \"clauses\": [\n    {\n      \"id\": \"count\",\n      \"satisfied\": false,\n      \"evidence\": \"There is one apple visible in the image.\"\n    }\n  ],\n  \"full_visibility\": null,\n  \"visibility_evidence\": null\n}\n```",
+      "visibility_evidence_is_null": true,
+      "full_visibility_is_null": true
+    },
+    {
+      "uid": "new_calibration:02",
+      "stage": "scene",
+      "error": "ValueError: Invalid scene schema",
+      "raw": "```json\n{\n  \"clauses\": [\n    {\n      \"id\": \"count\",\n      \"satisfied\": false,\n      \"evidence\": \"There are two apples visible in the image.\"\n    }\n  ],\n  \"full_visibility\": null,\n  \"visibility_evidence\": null\n}\n```",
+      "visibility_evidence_is_null": true,
+      "full_visibility_is_null": true
+    },
+    {
+      "uid": "new_calibration:03",
+      "stage": "scene",
+      "error": "ValueError: Invalid scene schema",
+      "raw": "```json\n{\n  \"clauses\": [\n    {\n      \"id\": \"color\",\n      \"satisfied\": true,\n      \"evidence\": \"A blue bottle is visible in the top right corner of the image.\"\n    }\n  ],\n  \"full_visibility\": null,\n  \"visibility_evidence\": null\n}\n```",
+      "visibility_evidence_is_null": true,
+      "full_visibility_is_null": true
+    },
+    {
+      "uid": "new_calibration:13",
+      "stage": "scene",
+      "error": "ValueError: Invalid scene schema",
+      "raw": "```json\n{\n  \"clauses\": [\n    {\n      \"id\": \"color\",\n      \"satisfied\": true,\n      \"evidence\": \"A green bowl is visible in the lower part of the image.\"\n    }\n  ],\n  \"full_visibility\": null,\n  \"visibility_evidence\": null\n}\n```",
+      "visibility_evidence_is_null": true,
+      "full_visibility_is_null": true
+    },
+    {
+      "uid": "new_calibration:14",
+      "stage": "scene",
+      "error": "ValueError: Invalid scene schema",
+      "raw": "```json\n{\n  \"clauses\": [\n    {\n      \"id\": \"count\",\n      \"satisfied\": true,\n      \"evidence\": \"There are two bottles visible in the image.\"\n    }\n  ],\n  \"full_visibility\": null,\n  \"visibility_evidence\": null\n}\n```",
+      "visibility_evidence_is_null": true,
+      "full_visibility_is_null": true
+    }
+  ],
+  "false_positives": [
+    {
+      "uid": "development:07:target",
+      "clause": "text",
+      "reference": {
+        "clauses": {
+          "color": true,
+          "text": false
+        },
+        "full_visibility": true,
+        "notes": "Initial letter has extra M-like strokes rather than clean MAPLE.",
+        "visible_text": "MMAPLE (fused initial M shapes)"
+      },
+      "qwen_responses": {
+        "observation": {
+          "image_grid_thw": [
+            [
+              1,
+              36,
+              36
+            ]
+          ],
+          "input_tokens": 486,
+          "output_tokens": 63,
+          "parse_error": null,
+          "parsed": {
+            "scene_description": "A blue apple with a brown stem is in the foreground. In the background, there is a white rectangular sign with the word 'MAPLE' written on it.",
+            "text_lines": [
+              "MAPLE"
+            ],
+            "text_uncertain": false
+          },
+          "raw": "```json\n{\n  \"text_lines\": [\"MAPLE\"],\n  \"text_uncertain\": false,\n  \"scene_description\": \"A blue apple with a brown stem is in the foreground. In the background, there is a white rectangular sign with the word 'MAPLE' written on it.\"\n}\n```",
+          "request": "Inspect the image itself. Transcribe ALL visible letters, words, digits and symbols anywhere in the image, including small object labels. Copy literally: do not correct spelling, complete missing letters, or infer intended words. If some apparent text cannot be read reliably, set text_uncertain=true and keep any readable fragments. No target text is supplied. Also briefly describe the visible objects and any cropping or occlusion, without guessing hidden objects. Return only JSON with exactly these fields: {\"text_lines\": [\"literal visible line\"], \"text_uncertain\": false, \"scene_description\": \"brief literal description\"}. Use an empty text_lines list if no text is visible; distinguish that from unreadable apparent text.",
+          "truncated": false
+        },
+        "scene": {
+          "image_grid_thw": [
+            [
+              1,
+              36,
+              36
+            ]
+          ],
+          "input_tokens": 559,
+          "output_tokens": 64,
+          "parse_error": "ValueError: Invalid scene schema",
+          "parsed": null,
+          "raw": "```json\n{\n  \"clauses\": [\n    {\n      \"id\": \"color\",\n      \"satisfied\": true,\n      \"evidence\": \"The apple in the image has a blue color.\"\n    }\n  ],\n  \"full_visibility\": null,\n  \"visibility_evidence\": null\n}\n```",
+          "request": "Judge the following explicit scene constraints against the image. For each clause, enforce required object identity and EXACT count, then color or relative position if specified. Count distinct objects, not a group as one; do not invent hidden objects. Return null if identity/count/color/position cannot be reliably determined. full_visibility is separate: all required objects must be present, complete inside the image, and without substantial occlusion; missing objects or clear cropping fail it. Do not judge text and do not infer a scene from the requested constraints. Return only JSON with exactly {\"clauses\": [{\"id\": \"requested id\", \"satisfied\": true, \"evidence\": \"visible evidence\"}], \"full_visibility\": false, \"visibility_evidence\": \"visible evidence\"}. Every requested clause id must occur exactly once. satisfied and full_visibility must be true, false, or null. Constraints: [{\"id\": \"color\", \"metadata\": {\"include\": [{\"class\": \"apple\", \"color\": \"blue\", \"count\": 1}], \"tag\": \"colors\"}}]",
+          "truncated": false
+        }
+      },
+      "image": "/midtier/minilab/scratch/chw4026/projects/side_project/generative/opd_related/opd_lab/runs/le3_probe_001/query_results/207ed6ea2a7efc7593d7283b/862e621aef954418b93e.png",
+      "image_sha256": "77eebc59e3759136b9a4dc7707b42605cd76b8e2c5b88c710f5385a7edf939c4"
+    },
+    {
+      "uid": "development:09:noop",
+      "clause": "count",
+      "reference": {
+        "clauses": {
+          "count": false,
+          "text": true
+        },
+        "full_visibility": false,
+        "notes": "Two shallow green plate-like forms clipped by bottom; no clear complete bowl.",
+        "visible_text": "BLOOM"
+      },
+      "qwen_responses": {
+        "observation": {
+          "image_grid_thw": [
+            [
+              1,
+              36,
+              36
+            ]
+          ],
+          "input_tokens": 486,
+          "output_tokens": 72,
+          "parse_error": null,
+          "parsed": {
+            "scene_description": "A minimalist scene with a white wall featuring a rectangular sign with the word 'BLOOM' in black letters. Below the sign, there is a shelf holding two green objects, possibly bowls or plates.",
+            "text_lines": [
+              "BLOOM"
+            ],
+            "text_uncertain": false
+          },
+          "raw": "```json\n{\n  \"text_lines\": [\"BLOOM\"],\n  \"text_uncertain\": false,\n  \"scene_description\": \"A minimalist scene with a white wall featuring a rectangular sign with the word 'BLOOM' in black letters. Below the sign, there is a shelf holding two green objects, possibly bowls or plates.\"\n}\n```",
+          "request": "Inspect the image itself. Transcribe ALL visible letters, words, digits and symbols anywhere in the image, including small object labels. Copy literally: do not correct spelling, complete missing letters, or infer intended words. If some apparent text cannot be read reliably, set text_uncertain=true and keep any readable fragments. No target text is supplied. Also briefly describe the visible objects and any cropping or occlusion, without guessing hidden objects. Return only JSON with exactly these fields: {\"text_lines\": [\"literal visible line\"], \"text_uncertain\": false, \"scene_description\": \"brief literal description\"}. Use an empty text_lines list if no text is visible; distinguish that from unreadable apparent text.",
+          "truncated": false
+        },
+        "scene": {
+          "image_grid_thw": [
+            [
+              1,
+              36,
+              36
+            ]
+          ],
+          "input_tokens": 555,
+          "output_tokens": 76,
+          "parse_error": null,
+          "parsed": {
+            "clauses": [
+              {
+                "evidence": "There is one bowl visible in the image.",
+                "id": "count",
+                "satisfied": true
+              }
+            ],
+            "full_visibility": true,
+            "visibility_evidence": "The bowl is fully visible and there are no signs of occlusion."
+          },
+          "raw": "```json\n{\n  \"clauses\": [\n    {\n      \"id\": \"count\",\n      \"satisfied\": true,\n      \"evidence\": \"There is one bowl visible in the image.\"\n    }\n  ],\n  \"full_visibility\": true,\n  \"visibility_evidence\": \"The bowl is fully visible and there are no signs of occlusion.\"\n}\n```",
+          "request": "Judge the following explicit scene constraints against the image. For each clause, enforce required object identity and EXACT count, then color or relative position if specified. Count distinct objects, not a group as one; do not invent hidden objects. Return null if identity/count/color/position cannot be reliably determined. full_visibility is separate: all required objects must be present, complete inside the image, and without substantial occlusion; missing objects or clear cropping fail it. Do not judge text and do not infer a scene from the requested constraints. Return only JSON with exactly {\"clauses\": [{\"id\": \"requested id\", \"satisfied\": true, \"evidence\": \"visible evidence\"}], \"full_visibility\": false, \"visibility_evidence\": \"visible evidence\"}. Every requested clause id must occur exactly once. satisfied and full_visibility must be true, false, or null. Constraints: [{\"id\": \"count\", \"metadata\": {\"include\": [{\"class\": \"bowl\", \"count\": 1}], \"tag\": \"counting\"}}]",
+          "truncated": false
+        }
+      },
+      "image": "/midtier/minilab/scratch/chw4026/projects/side_project/generative/opd_related/opd_lab/runs/le3_probe_001/query_results/696b3bf9b4ce9066a2c6539d/519c0a42d1a2c16066bc.png",
+      "image_sha256": "d28febf3eada37a8ec6100c89001ebf4a17ca035c19bee38d1e20812461fd177"
+    },
+    {
+      "uid": "development:11:noop",
+      "clause": "relation",
+      "reference": {
+        "clauses": {
+          "relation": false,
+          "text": false
+        },
+        "full_visibility": false,
+        "notes": "Cup left of bottle rather than right. Bottle clipped at right and has additional writing. Sign letters pale rather than bold black.",
+        "visible_text": "BLOOM; small bottle-label writing"
+      },
+      "qwen_responses": {
+        "observation": {
+          "image_grid_thw": [
+            [
+              1,
+              36,
+              36
+            ]
+          ],
+          "input_tokens": 486,
+          "output_tokens": 68,
+          "parse_error": null,
+          "parsed": {
+            "scene_description": "A white cup on a saucer sits in front of a wall with the word 'BLOOM' spelled out in raised letters. A dark bottle is partially visible to the right.",
+            "text_lines": [
+              "BLOOM"
+            ],
+            "text_uncertain": false
+          },
+          "raw": "```json\n{\n  \"text_lines\": [\"BLOOM\"],\n  \"text_uncertain\": false,\n  \"scene_description\": \"A white cup on a saucer sits in front of a wall with the word 'BLOOM' spelled out in raised letters. A dark bottle is partially visible to the right.\"\n}\n```",
+          "request": "Inspect the image itself. Transcribe ALL visible letters, words, digits and symbols anywhere in the image, including small object labels. Copy literally: do not correct spelling, complete missing letters, or infer intended words. If some apparent text cannot be read reliably, set text_uncertain=true and keep any readable fragments. No target text is supplied. Also briefly describe the visible objects and any cropping or occlusion, without guessing hidden objects. Return only JSON with exactly these fields: {\"text_lines\": [\"literal visible line\"], \"text_uncertain\": false, \"scene_description\": \"brief literal description\"}. Use an empty text_lines list if no text is visible; distinguish that from unreadable apparent text.",
+          "truncated": false
+        },
+        "scene": {
+          "image_grid_thw": [
+            [
+              1,
+              36,
+              36
+            ]
+          ],
+          "input_tokens": 577,
+          "output_tokens": 75,
+          "parse_error": null,
+          "parsed": {
+            "clauses": [
+              {
+                "evidence": "A bottle is visible to the right of a cup.",
+                "id": "relation",
+                "satisfied": true
+              }
+            ],
+            "full_visibility": null,
+            "visibility_evidence": "The bottle and cup are fully visible within the frame."
+          },
+          "raw": "```json\n{\n  \"clauses\": [\n    {\n      \"id\": \"relation\",\n      \"satisfied\": true,\n      \"evidence\": \"A bottle is visible to the right of a cup.\"\n    }\n  ],\n  \"full_visibility\": null,\n  \"visibility_evidence\": \"The bottle and cup are fully visible within the frame.\"\n}\n```",
+          "request": "Judge the following explicit scene constraints against the image. For each clause, enforce required object identity and EXACT count, then color or relative position if specified. Count distinct objects, not a group as one; do not invent hidden objects. Return null if identity/count/color/position cannot be reliably determined. full_visibility is separate: all required objects must be present, complete inside the image, and without substantial occlusion; missing objects or clear cropping fail it. Do not judge text and do not infer a scene from the requested constraints. Return only JSON with exactly {\"clauses\": [{\"id\": \"requested id\", \"satisfied\": true, \"evidence\": \"visible evidence\"}], \"full_visibility\": false, \"visibility_evidence\": \"visible evidence\"}. Every requested clause id must occur exactly once. satisfied and full_visibility must be true, false, or null. Constraints: [{\"id\": \"relation\", \"metadata\": {\"include\": [{\"class\": \"bottle\", \"count\": 1}, {\"class\": \"cup\", \"count\": 1, \"position\": [\"right of\", 0]}], \"tag\": \"position\"}}]",
+          "truncated": false
+        }
+      },
+      "image": "/midtier/minilab/scratch/chw4026/projects/side_project/generative/opd_related/opd_lab/runs/le3_probe_001/query_results/1ad4ba8b760323bbb76819cf/eb7f7f3e3f1abff8cdd4.png",
+      "image_sha256": "152e1050d98fb50e288cbca3700b525301867f85a08f8a45b41e8831c3ff3c85"
+    },
+    {
+      "uid": "development:11:noop",
+      "clause": "text",
+      "reference": {
+        "clauses": {
+          "relation": false,
+          "text": false
+        },
+        "full_visibility": false,
+        "notes": "Cup left of bottle rather than right. Bottle clipped at right and has additional writing. Sign letters pale rather than bold black.",
+        "visible_text": "BLOOM; small bottle-label writing"
+      },
+      "qwen_responses": {
+        "observation": {
+          "image_grid_thw": [
+            [
+              1,
+              36,
+              36
+            ]
+          ],
+          "input_tokens": 486,
+          "output_tokens": 68,
+          "parse_error": null,
+          "parsed": {
+            "scene_description": "A white cup on a saucer sits in front of a wall with the word 'BLOOM' spelled out in raised letters. A dark bottle is partially visible to the right.",
+            "text_lines": [
+              "BLOOM"
+            ],
+            "text_uncertain": false
+          },
+          "raw": "```json\n{\n  \"text_lines\": [\"BLOOM\"],\n  \"text_uncertain\": false,\n  \"scene_description\": \"A white cup on a saucer sits in front of a wall with the word 'BLOOM' spelled out in raised letters. A dark bottle is partially visible to the right.\"\n}\n```",
+          "request": "Inspect the image itself. Transcribe ALL visible letters, words, digits and symbols anywhere in the image, including small object labels. Copy literally: do not correct spelling, complete missing letters, or infer intended words. If some apparent text cannot be read reliably, set text_uncertain=true and keep any readable fragments. No target text is supplied. Also briefly describe the visible objects and any cropping or occlusion, without guessing hidden objects. Return only JSON with exactly these fields: {\"text_lines\": [\"literal visible line\"], \"text_uncertain\": false, \"scene_description\": \"brief literal description\"}. Use an empty text_lines list if no text is visible; distinguish that from unreadable apparent text.",
+          "truncated": false
+        },
+        "scene": {
+          "image_grid_thw": [
+            [
+              1,
+              36,
+              36
+            ]
+          ],
+          "input_tokens": 577,
+          "output_tokens": 75,
+          "parse_error": null,
+          "parsed": {
+            "clauses": [
+              {
+                "evidence": "A bottle is visible to the right of a cup.",
+                "id": "relation",
+                "satisfied": true
+              }
+            ],
+            "full_visibility": null,
+            "visibility_evidence": "The bottle and cup are fully visible within the frame."
+          },
+          "raw": "```json\n{\n  \"clauses\": [\n    {\n      \"id\": \"relation\",\n      \"satisfied\": true,\n      \"evidence\": \"A bottle is visible to the right of a cup.\"\n    }\n  ],\n  \"full_visibility\": null,\n  \"visibility_evidence\": \"The bottle and cup are fully visible within the frame.\"\n}\n```",
+          "request": "Judge the following explicit scene constraints against the image. For each clause, enforce required object identity and EXACT count, then color or relative position if specified. Count distinct objects, not a group as one; do not invent hidden objects. Return null if identity/count/color/position cannot be reliably determined. full_visibility is separate: all required objects must be present, complete inside the image, and without substantial occlusion; missing objects or clear cropping fail it. Do not judge text and do not infer a scene from the requested constraints. Return only JSON with exactly {\"clauses\": [{\"id\": \"requested id\", \"satisfied\": true, \"evidence\": \"visible evidence\"}], \"full_visibility\": false, \"visibility_evidence\": \"visible evidence\"}. Every requested clause id must occur exactly once. satisfied and full_visibility must be true, false, or null. Constraints: [{\"id\": \"relation\", \"metadata\": {\"include\": [{\"class\": \"bottle\", \"count\": 1}, {\"class\": \"cup\", \"count\": 1, \"position\": [\"right of\", 0]}], \"tag\": \"position\"}}]",
+          "truncated": false
+        }
+      },
+      "image": "/midtier/minilab/scratch/chw4026/projects/side_project/generative/opd_related/opd_lab/runs/le3_probe_001/query_results/1ad4ba8b760323bbb76819cf/eb7f7f3e3f1abff8cdd4.png",
+      "image_sha256": "152e1050d98fb50e288cbca3700b525301867f85a08f8a45b41e8831c3ff3c85"
+    },
+    {
+      "uid": "development:12:noop",
+      "clause": "text",
+      "reference": {
+        "clauses": {
+          "relation": false,
+          "text": false
+        },
+        "full_visibility": false,
+        "notes": "Only a bicycle; no visible car. Extra chevron-like letter stroke and malformed initial letter.",
+        "visible_text": "[malformed W]AV<E"
+      },
+      "qwen_responses": {
+        "observation": {
+          "image_grid_thw": [
+            [
+              1,
+              36,
+              36
+            ]
+          ],
+          "input_tokens": 486,
+          "output_tokens": 76,
+          "parse_error": null,
+          "parsed": {
+            "scene_description": "A minimalist scene featuring a bicycle with a bag on its back, positioned in front of a wall with the word 'WAVE' written in large black letters. The background includes horizontal lines and a rectangular cutout in the wall.",
+            "text_lines": [
+              "WAVE"
+            ],
+            "text_uncertain": false
+          },
+          "raw": "```json\n{\n  \"text_lines\": [\"WAVE\"],\n  \"text_uncertain\": false,\n  \"scene_description\": \"A minimalist scene featuring a bicycle with a bag on its back, positioned in front of a wall with the word 'WAVE' written in large black letters. The background includes horizontal lines and a rectangular cutout in the wall.\"\n}\n```",
+          "request": "Inspect the image itself. Transcribe ALL visible letters, words, digits and symbols anywhere in the image, including small object labels. Copy literally: do not correct spelling, complete missing letters, or infer intended words. If some apparent text cannot be read reliably, set text_uncertain=true and keep any readable fragments. No target text is supplied. Also briefly describe the visible objects and any cropping or occlusion, without guessing hidden objects. Return only JSON with exactly these fields: {\"text_lines\": [\"literal visible line\"], \"text_uncertain\": false, \"scene_description\": \"brief literal description\"}. Use an empty text_lines list if no text is visible; distinguish that from unreadable apparent text.",
+          "truncated": false
+        },
+        "scene": {
+          "image_grid_thw": [
+            [
+              1,
+              36,
+              36
+            ]
+          ],
+          "input_tokens": 577,
+          "output_tokens": 74,
+          "parse_error": null,
+          "parsed": {
+            "clauses": [
+              {
+                "evidence": "There is no car in the image.",
+                "id": "relation",
+                "satisfied": false
+              }
+            ],
+            "full_visibility": false,
+            "visibility_evidence": "The bicycle is partially visible on the right side of the image."
+          },
+          "raw": "```json\n{\n  \"clauses\": [\n    {\n      \"id\": \"relation\",\n      \"satisfied\": false,\n      \"evidence\": \"There is no car in the image.\"\n    }\n  ],\n  \"full_visibility\": false,\n  \"visibility_evidence\": \"The bicycle is partially visible on the right side of the image.\"\n}\n```",
+          "request": "Judge the following explicit scene constraints against the image. For each clause, enforce required object identity and EXACT count, then color or relative position if specified. Count distinct objects, not a group as one; do not invent hidden objects. Return null if identity/count/color/position cannot be reliably determined. full_visibility is separate: all required objects must be present, complete inside the image, and without substantial occlusion; missing objects or clear cropping fail it. Do not judge text and do not infer a scene from the requested constraints. Return only JSON with exactly {\"clauses\": [{\"id\": \"requested id\", \"satisfied\": true, \"evidence\": \"visible evidence\"}], \"full_visibility\": false, \"visibility_evidence\": \"visible evidence\"}. Every requested clause id must occur exactly once. satisfied and full_visibility must be true, false, or null. Constraints: [{\"id\": \"relation\", \"metadata\": {\"include\": [{\"class\": \"car\", \"count\": 1}, {\"class\": \"bicycle\", \"count\": 1, \"position\": [\"right of\", 0]}], \"tag\": \"position\"}}]",
+          "truncated": false
+        }
+      },
+      "image": "/midtier/minilab/scratch/chw4026/projects/side_project/generative/opd_related/opd_lab/runs/le3_probe_001/query_results/65ccf8a2117b86f026c4776d/6625289210402a06c614.png",
+      "image_sha256": "a8f72f3bdfd748ec289b1ce71bfccf9fd9d101cd8b1dcaa9b200da34c0147c94"
+    },
+    {
+      "uid": "development:15:target",
+      "clause": "text",
+      "reference": {
+        "clauses": {
+          "relation": true,
+          "text": false
+        },
+        "full_visibility": false,
+        "notes": "Bicycle left of car but much of bicycle cropped at bottom. Extra plate writing and partly pale L.",
+        "visible_text": "LUNA; small license-plate characters"
+      },
+      "qwen_responses": {
+        "observation": {
+          "image_grid_thw": [
+            [
+              1,
+              36,
+              36
+            ]
+          ],
+          "input_tokens": 486,
+          "output_tokens": 67,
+          "parse_error": null,
+          "parsed": {
+            "scene_description": "A minimalist scene featuring a white sign with the word \"LUNA\" in bold black letters above a white car and a bicycle on a tiled floor against a plain white wall.",
+            "text_lines": [
+              "LUNA"
+            ],
+            "text_uncertain": false
+          },
+          "raw": "```json\n{\n  \"text_lines\": [\"LUNA\"],\n  \"text_uncertain\": false,\n  \"scene_description\": \"A minimalist scene featuring a white sign with the word \\\"LUNA\\\" in bold black letters above a white car and a bicycle on a tiled floor against a plain white wall.\"\n}\n```",
+          "request": "Inspect the image itself. Transcribe ALL visible letters, words, digits and symbols anywhere in the image, including small object labels. Copy literally: do not correct spelling, complete missing letters, or infer intended words. If some apparent text cannot be read reliably, set text_uncertain=true and keep any readable fragments. No target text is supplied. Also briefly describe the visible objects and any cropping or occlusion, without guessing hidden objects. Return only JSON with exactly these fields: {\"text_lines\": [\"literal visible line\"], \"text_uncertain\": false, \"scene_description\": \"brief literal description\"}. Use an empty text_lines list if no text is visible; distinguish that from unreadable apparent text.",
+          "truncated": false
+        },
+        "scene": {
+          "image_grid_thw": [
+            [
+              1,
+              36,
+              36
+            ]
+          ],
+          "input_tokens": 577,
+          "output_tokens": 76,
+          "parse_error": null,
+          "parsed": {
+            "clauses": [
+              {
+                "evidence": "A white car is positioned to the right of a bicycle.",
+                "id": "relation",
+                "satisfied": true
+              }
+            ],
+            "full_visibility": true,
+            "visibility_evidence": "The car and bicycle are fully visible within the frame."
+          },
+          "raw": "```json\n{\n  \"clauses\": [\n    {\n      \"id\": \"relation\",\n      \"satisfied\": true,\n      \"evidence\": \"A white car is positioned to the right of a bicycle.\"\n    }\n  ],\n  \"full_visibility\": true,\n  \"visibility_evidence\": \"The car and bicycle are fully visible within the frame.\"\n}\n```",
+          "request": "Judge the following explicit scene constraints against the image. For each clause, enforce required object identity and EXACT count, then color or relative position if specified. Count distinct objects, not a group as one; do not invent hidden objects. Return null if identity/count/color/position cannot be reliably determined. full_visibility is separate: all required objects must be present, complete inside the image, and without substantial occlusion; missing objects or clear cropping fail it. Do not judge text and do not infer a scene from the requested constraints. Return only JSON with exactly {\"clauses\": [{\"id\": \"requested id\", \"satisfied\": true, \"evidence\": \"visible evidence\"}], \"full_visibility\": false, \"visibility_evidence\": \"visible evidence\"}. Every requested clause id must occur exactly once. satisfied and full_visibility must be true, false, or null. Constraints: [{\"id\": \"relation\", \"metadata\": {\"include\": [{\"class\": \"car\", \"count\": 1}, {\"class\": \"bicycle\", \"count\": 1, \"position\": [\"left of\", 0]}], \"tag\": \"position\"}}]",
+          "truncated": false
+        }
+      },
+      "image": "/midtier/minilab/scratch/chw4026/projects/side_project/generative/opd_related/opd_lab/runs/le3_probe_001/query_results/838201ab02ed40be41710bef/821f34f0f8476cd49277.png",
+      "image_sha256": "a6fcc24e2326789e96427ca6cd0e257b11574b067851e52fefdc5183a75a7ef2"
+    },
+    {
+      "uid": "development:17:noop",
+      "clause": "text",
+      "reference": {
+        "clauses": {
+          "count": true,
+          "text": false
+        },
+        "full_visibility": false,
+        "notes": "Three Ns; two bananas overlap, lower one cut by bottom and left border.",
+        "visible_text": "SUNNNY"
+      },
+      "qwen_responses": {
+        "observation": {
+          "image_grid_thw": [
+            [
+              1,
+              36,
+              36
+            ]
+          ],
+          "input_tokens": 486,
+          "output_tokens": 66,
+          "parse_error": null,
+          "parsed": {
+            "scene_description": "The image shows two bananas placed below a sign that reads \"SUNNY.\" The bananas are yellow with brown spots at the ends, and the background is a neutral color.",
+            "text_lines": [
+              "SUNNY"
+            ],
+            "text_uncertain": false
+          },
+          "raw": "```json\n{\n  \"text_lines\": [\"SUNNY\"],\n  \"text_uncertain\": false,\n  \"scene_description\": \"The image shows two bananas placed below a sign that reads \\\"SUNNY.\\\" The bananas are yellow with brown spots at the ends, and the background is a neutral color.\"\n}\n```",
+          "request": "Inspect the image itself. Transcribe ALL visible letters, words, digits and symbols anywhere in the image, including small object labels. Copy literally: do not correct spelling, complete missing letters, or infer intended words. If some apparent text cannot be read reliably, set text_uncertain=true and keep any readable fragments. No target text is supplied. Also briefly describe the visible objects and any cropping or occlusion, without guessing hidden objects. Return only JSON with exactly these fields: {\"text_lines\": [\"literal visible line\"], \"text_uncertain\": false, \"scene_description\": \"brief literal description\"}. Use an empty text_lines list if no text is visible; distinguish that from unreadable apparent text.",
+          "truncated": false
+        },
+        "scene": {
+          "image_grid_thw": [
+            [
+              1,
+              36,
+              36
+            ]
+          ],
+          "input_tokens": 554,
+          "output_tokens": 63,
+          "parse_error": "ValueError: Invalid scene schema",
+          "parsed": null,
+          "raw": "```json\n{\n  \"clauses\": [\n    {\n      \"id\": \"count\",\n      \"satisfied\": true,\n      \"evidence\": \"There are two bananas visible in the image.\"\n    }\n  ],\n  \"full_visibility\": null,\n  \"visibility_evidence\": null\n}\n```",
+          "request": "Judge the following explicit scene constraints against the image. For each clause, enforce required object identity and EXACT count, then color or relative position if specified. Count distinct objects, not a group as one; do not invent hidden objects. Return null if identity/count/color/position cannot be reliably determined. full_visibility is separate: all required objects must be present, complete inside the image, and without substantial occlusion; missing objects or clear cropping fail it. Do not judge text and do not infer a scene from the requested constraints. Return only JSON with exactly {\"clauses\": [{\"id\": \"requested id\", \"satisfied\": true, \"evidence\": \"visible evidence\"}], \"full_visibility\": false, \"visibility_evidence\": \"visible evidence\"}. Every requested clause id must occur exactly once. satisfied and full_visibility must be true, false, or null. Constraints: [{\"id\": \"count\", \"metadata\": {\"include\": [{\"class\": \"banana\", \"count\": 2}], \"tag\": \"counting\"}}]",
+          "truncated": false
+        }
+      },
+      "image": "/midtier/minilab/scratch/chw4026/projects/side_project/generative/opd_related/opd_lab/runs/le3_probe_001/query_results/582e553082c25a3e2b02dd8c/88fbc369ef7c047cbae9.png",
+      "image_sha256": "85e44b61737bff227fcf12af0ca282a559b9ba8dc27a0c0a26c56c4ce7d2f539"
+    },
+    {
+      "uid": "development:18:target",
+      "clause": "text",
+      "reference": {
+        "clauses": {
+          "color": null,
+          "text": false
+        },
+        "full_visibility": true,
+        "notes": "Large extra S and small Sunny. One red pepper/banana-like fruit; uncertain banana identity.",
+        "visible_text": "S Sunny"
+      },
+      "qwen_responses": {
+        "observation": {
+          "image_grid_thw": [
+            [
+              1,
+              36,
+              36
+            ]
+          ],
+          "input_tokens": 486,
+          "output_tokens": 56,
+          "parse_error": null,
+          "parsed": {
+            "scene_description": "A red banana-like fruit with a black tip lies on a white surface. The word 'Sunny' is written above it.",
+            "text_lines": [
+              "Sunny"
+            ],
+            "text_uncertain": false
+          },
+          "raw": "```json\n{\n  \"text_lines\": [\"Sunny\"],\n  \"text_uncertain\": false,\n  \"scene_description\": \"A red banana-like fruit with a black tip lies on a white surface. The word 'Sunny' is written above it.\"\n}\n```",
+          "request": "Inspect the image itself. Transcribe ALL visible letters, words, digits and symbols anywhere in the image, including small object labels. Copy literally: do not correct spelling, complete missing letters, or infer intended words. If some apparent text cannot be read reliably, set text_uncertain=true and keep any readable fragments. No target text is supplied. Also briefly describe the visible objects and any cropping or occlusion, without guessing hidden objects. Return only JSON with exactly these fields: {\"text_lines\": [\"literal visible line\"], \"text_uncertain\": false, \"scene_description\": \"brief literal description\"}. Use an empty text_lines list if no text is visible; distinguish that from unreadable apparent text.",
+          "truncated": false
+        },
+        "scene": {
+          "image_grid_thw": [
+            [
+              1,
+              36,
+              36
+            ]
+          ],
+          "input_tokens": 559,
+          "output_tokens": 70,
+          "parse_error": null,
+          "parsed": {
+            "clauses": [
+              {
+                "evidence": "The banana in the image is red.",
+                "id": "color",
+                "satisfied": true
+              }
+            ],
+            "full_visibility": true,
+            "visibility_evidence": "The entire banana is visible within the image."
+          },
+          "raw": "```json\n{\n  \"clauses\": [\n    {\n      \"id\": \"color\",\n      \"satisfied\": true,\n      \"evidence\": \"The banana in the image is red.\"\n    }\n  ],\n  \"full_visibility\": true,\n  \"visibility_evidence\": \"The entire banana is visible within the image.\"\n}\n```",
+          "request": "Judge the following explicit scene constraints against the image. For each clause, enforce required object identity and EXACT count, then color or relative position if specified. Count distinct objects, not a group as one; do not invent hidden objects. Return null if identity/count/color/position cannot be reliably determined. full_visibility is separate: all required objects must be present, complete inside the image, and without substantial occlusion; missing objects or clear cropping fail it. Do not judge text and do not infer a scene from the requested constraints. Return only JSON with exactly {\"clauses\": [{\"id\": \"requested id\", \"satisfied\": true, \"evidence\": \"visible evidence\"}], \"full_visibility\": false, \"visibility_evidence\": \"visible evidence\"}. Every requested clause id must occur exactly once. satisfied and full_visibility must be true, false, or null. Constraints: [{\"id\": \"color\", \"metadata\": {\"include\": [{\"class\": \"banana\", \"color\": \"red\", \"count\": 1}], \"tag\": \"colors\"}}]",
+          "truncated": false
+        }
+      },
+      "image": "/midtier/minilab/scratch/chw4026/projects/side_project/generative/opd_related/opd_lab/runs/le3_probe_001/query_results/ca02655c6933b2a8d63d7a09/fb8ac07e8b92fcdc8077.png",
+      "image_sha256": "2a661b63019838b197da18a5024b17bd6085263543875a69b34ce7d2ce489dd4"
+    },
+    {
+      "uid": "development:19:noop",
+      "clause": "relation",
+      "reference": {
+        "clauses": {
+          "relation": false,
+          "text": true
+        },
+        "full_visibility": false,
+        "notes": "Apple on left plus another red apple-like object in stacked bowls on right; wrong count/relation. Objects cut at bottom.",
+        "visible_text": "CLOUD"
+      },
+      "qwen_responses": {
+        "observation": {
+          "image_grid_thw": [
+            [
+              1,
+              36,
+              36
+            ]
+          ],
+          "input_tokens": 486,
+          "output_tokens": 73,
+          "parse_error": null,
+          "parsed": {
+            "scene_description": "A minimalist scene featuring the word \"CLOUD\" centered at the top of a white background. Below the text, there is a red apple on the left and a beige bowl containing another red apple on the right.",
+            "text_lines": [
+              "CLOUD"
+            ],
+            "text_uncertain": false
+          },
+          "raw": "```json\n{\n  \"text_lines\": [\"CLOUD\"],\n  \"text_uncertain\": false,\n  \"scene_description\": \"A minimalist scene featuring the word \\\"CLOUD\\\" centered at the top of a white background. Below the text, there is a red apple on the left and a beige bowl containing another red apple on the right.\"\n}\n```",
+          "request": "Inspect the image itself. Transcribe ALL visible letters, words, digits and symbols anywhere in the image, including small object labels. Copy literally: do not correct spelling, complete missing letters, or infer intended words. If some apparent text cannot be read reliably, set text_uncertain=true and keep any readable fragments. No target text is supplied. Also briefly describe the visible objects and any cropping or occlusion, without guessing hidden objects. Return only JSON with exactly these fields: {\"text_lines\": [\"literal visible line\"], \"text_uncertain\": false, \"scene_description\": \"brief literal description\"}. Use an empty text_lines list if no text is visible; distinguish that from unreadable apparent text.",
+          "truncated": false
+        },
+        "scene": {
+          "image_grid_thw": [
+            [
+              1,
+              36,
+              36
+            ]
+          ],
+          "input_tokens": 577,
+          "output_tokens": 85,
+          "parse_error": null,
+          "parsed": {
+            "clauses": [
+              {
+                "evidence": "There is one bowl and one apple in the image. The apple is positioned to the right of the bowl.",
+                "id": "relation",
+                "satisfied": true
+              }
+            ],
+            "full_visibility": true,
+            "visibility_evidence": "The objects are fully visible within the image boundaries."
+          },
+          "raw": "```json\n{\n  \"clauses\": [\n    {\n      \"id\": \"relation\",\n      \"satisfied\": true,\n      \"evidence\": \"There is one bowl and one apple in the image. The apple is positioned to the right of the bowl.\"\n    }\n  ],\n  \"full_visibility\": true,\n  \"visibility_evidence\": \"The objects are fully visible within the image boundaries.\"\n}\n```",
+          "request": "Judge the following explicit scene constraints against the image. For each clause, enforce required object identity and EXACT count, then color or relative position if specified. Count distinct objects, not a group as one; do not invent hidden objects. Return null if identity/count/color/position cannot be reliably determined. full_visibility is separate: all required objects must be present, complete inside the image, and without substantial occlusion; missing objects or clear cropping fail it. Do not judge text and do not infer a scene from the requested constraints. Return only JSON with exactly {\"clauses\": [{\"id\": \"requested id\", \"satisfied\": true, \"evidence\": \"visible evidence\"}], \"full_visibility\": false, \"visibility_evidence\": \"visible evidence\"}. Every requested clause id must occur exactly once. satisfied and full_visibility must be true, false, or null. Constraints: [{\"id\": \"relation\", \"metadata\": {\"include\": [{\"class\": \"bowl\", \"count\": 1}, {\"class\": \"apple\", \"count\": 1, \"position\": [\"right of\", 0]}], \"tag\": \"position\"}}]",
+          "truncated": false
+        }
+      },
+      "image": "/midtier/minilab/scratch/chw4026/projects/side_project/generative/opd_related/opd_lab/runs/le3_probe_001/query_results/00ed2ea728827a8738d8bfe7/1e289b1b789dfffd013b.png",
+      "image_sha256": "cd83869cffd1b4278bcc38975a88abac8b64a3cc1ce7ccb205b5491c57de86a5"
+    },
+    {
+      "uid": "development:22:target",
+      "clause": "count",
+      "reference": {
+        "clauses": {
+          "count": false,
+          "text": true
+        },
+        "full_visibility": false,
+        "notes": "Upright open book or adjoining volumes above at least three stacked horizontal books; bottom stack cropped.",
+        "visible_text": "CLEAR"
+      },
+      "qwen_responses": {
+        "observation": {
+          "image_grid_thw": [
+            [
+              1,
+              36,
+              36
+            ]
+          ],
+          "input_tokens": 486,
+          "output_tokens": 72,
+          "parse_error": null,
+          "parsed": {
+            "scene_description": "A white rectangular sign with the word \"CLEAR\" in black capital letters is mounted on a light gray wall above two stacked books. The books are gold-colored and placed on a stack of four smaller, similar books.",
+            "text_lines": [
+              "CLEAR"
+            ],
+            "text_uncertain": false
+          },
+          "raw": "```json\n{\n  \"text_lines\": [\"CLEAR\"],\n  \"text_uncertain\": false,\n  \"scene_description\": \"A white rectangular sign with the word \\\"CLEAR\\\" in black capital letters is mounted on a light gray wall above two stacked books. The books are gold-colored and placed on a stack of four smaller, similar books.\"\n}\n```",
+          "request": "Inspect the image itself. Transcribe ALL visible letters, words, digits and symbols anywhere in the image, including small object labels. Copy literally: do not correct spelling, complete missing letters, or infer intended words. If some apparent text cannot be read reliably, set text_uncertain=true and keep any readable fragments. No target text is supplied. Also briefly describe the visible objects and any cropping or occlusion, without guessing hidden objects. Return only JSON with exactly these fields: {\"text_lines\": [\"literal visible line\"], \"text_uncertain\": false, \"scene_description\": \"brief literal description\"}. Use an empty text_lines list if no text is visible; distinguish that from unreadable apparent text.",
+          "truncated": false
+        },
+        "scene": {
+          "image_grid_thw": [
+            [
+              1,
+              36,
+              36
+            ]
+          ],
+          "input_tokens": 554,
+          "output_tokens": 74,
+          "parse_error": null,
+          "parsed": {
+            "clauses": [
+              {
+                "evidence": "There are two books visible in the image.",
+                "id": "count",
+                "satisfied": true
+              }
+            ],
+            "full_visibility": true,
+            "visibility_evidence": "The books are fully visible within the frame of the image."
+          },
+          "raw": "```json\n{\n  \"clauses\": [\n    {\n      \"id\": \"count\",\n      \"satisfied\": true,\n      \"evidence\": \"There are two books visible in the image.\"\n    }\n  ],\n  \"full_visibility\": true,\n  \"visibility_evidence\": \"The books are fully visible within the frame of the image.\"\n}\n```",
+          "request": "Judge the following explicit scene constraints against the image. For each clause, enforce required object identity and EXACT count, then color or relative position if specified. Count distinct objects, not a group as one; do not invent hidden objects. Return null if identity/count/color/position cannot be reliably determined. full_visibility is separate: all required objects must be present, complete inside the image, and without substantial occlusion; missing objects or clear cropping fail it. Do not judge text and do not infer a scene from the requested constraints. Return only JSON with exactly {\"clauses\": [{\"id\": \"requested id\", \"satisfied\": true, \"evidence\": \"visible evidence\"}], \"full_visibility\": false, \"visibility_evidence\": \"visible evidence\"}. Every requested clause id must occur exactly once. satisfied and full_visibility must be true, false, or null. Constraints: [{\"id\": \"count\", \"metadata\": {\"include\": [{\"class\": \"book\", \"count\": 2}], \"tag\": \"counting\"}}]",
+          "truncated": false
+        }
+      },
+      "image": "/midtier/minilab/scratch/chw4026/projects/side_project/generative/opd_related/opd_lab/runs/le3_probe_001/query_results/39ba7fd131223f35019f1f27/370604379e01e7410962.png",
+      "image_sha256": "55c7ebd358acf94b4f5a9188098c0f5290b4b5381ec480e13443ebb677183b7a"
+    },
+    {
+      "uid": "development:22:noop",
+      "clause": "count",
+      "reference": {
+        "clauses": {
+          "count": false,
+          "text": true
+        },
+        "full_visibility": false,
+        "notes": "Same extra stacked books and bottom cropping.",
+        "visible_text": "CLEAR"
+      },
+      "qwen_responses": {
+        "observation": {
+          "image_grid_thw": [
+            [
+              1,
+              36,
+              36
+            ]
+          ],
+          "input_tokens": 486,
+          "output_tokens": 69,
+          "parse_error": null,
+          "parsed": {
+            "scene_description": "A rectangular sign with the word \"CLEAR\" in black text on a white background hangs above two stacked books. The books are gold and brown, placed on a light-colored surface against a plain wall.",
+            "text_lines": [
+              "CLEAR"
+            ],
+            "text_uncertain": false
+          },
+          "raw": "```json\n{\n  \"text_lines\": [\"CLEAR\"],\n  \"text_uncertain\": false,\n  \"scene_description\": \"A rectangular sign with the word \\\"CLEAR\\\" in black text on a white background hangs above two stacked books. The books are gold and brown, placed on a light-colored surface against a plain wall.\"\n}\n```",
+          "request": "Inspect the image itself. Transcribe ALL visible letters, words, digits and symbols anywhere in the image, including small object labels. Copy literally: do not correct spelling, complete missing letters, or infer intended words. If some apparent text cannot be read reliably, set text_uncertain=true and keep any readable fragments. No target text is supplied. Also briefly describe the visible objects and any cropping or occlusion, without guessing hidden objects. Return only JSON with exactly these fields: {\"text_lines\": [\"literal visible line\"], \"text_uncertain\": false, \"scene_description\": \"brief literal description\"}. Use an empty text_lines list if no text is visible; distinguish that from unreadable apparent text.",
+          "truncated": false
+        },
+        "scene": {
+          "image_grid_thw": [
+            [
+              1,
+              36,
+              36
+            ]
+          ],
+          "input_tokens": 554,
+          "output_tokens": 73,
+          "parse_error": null,
+          "parsed": {
+            "clauses": [
+              {
+                "evidence": "There are two books in the image.",
+                "id": "count",
+                "satisfied": true
+              }
+            ],
+            "full_visibility": true,
+            "visibility_evidence": "The books are fully visible within the frame of the image."
+          },
+          "raw": "```json\n{\n  \"clauses\": [\n    {\n      \"id\": \"count\",\n      \"satisfied\": true,\n      \"evidence\": \"There are two books in the image.\"\n    }\n  ],\n  \"full_visibility\": true,\n  \"visibility_evidence\": \"The books are fully visible within the frame of the image.\"\n}\n```",
+          "request": "Judge the following explicit scene constraints against the image. For each clause, enforce required object identity and EXACT count, then color or relative position if specified. Count distinct objects, not a group as one; do not invent hidden objects. Return null if identity/count/color/position cannot be reliably determined. full_visibility is separate: all required objects must be present, complete inside the image, and without substantial occlusion; missing objects or clear cropping fail it. Do not judge text and do not infer a scene from the requested constraints. Return only JSON with exactly {\"clauses\": [{\"id\": \"requested id\", \"satisfied\": true, \"evidence\": \"visible evidence\"}], \"full_visibility\": false, \"visibility_evidence\": \"visible evidence\"}. Every requested clause id must occur exactly once. satisfied and full_visibility must be true, false, or null. Constraints: [{\"id\": \"count\", \"metadata\": {\"include\": [{\"class\": \"book\", \"count\": 2}], \"tag\": \"counting\"}}]",
+          "truncated": false
+        }
+      },
+      "image": "/midtier/minilab/scratch/chw4026/projects/side_project/generative/opd_related/opd_lab/runs/le3_probe_001/query_results/39ba7fd131223f35019f1f27/42446e64b4b5f2debd8e.png",
+      "image_sha256": "3dcd7debe459235417b4e514c1574ba8ca122d82ebbb5e700d69cda6c82bebb6"
+    },
+    {
+      "uid": "exposed_calibration:01",
+      "clause": "text",
+      "reference": {
+        "case": 1,
+        "clauses": {
+          "color": true,
+          "count": true,
+          "text": false
+        },
+        "full_visibility": false,
+        "notes": "One yellow vase cropped at bottom; middle letters are corrupted and include extra marks, not clean CLOUD. No distinct white sign.",
+        "visible_text": "CL [malformed extra curved glyphs] UD"
+      },
+      "qwen_responses": {
+        "observation": {
+          "image_grid_thw": [
+            [
+              1,
+              36,
+              36
+            ]
+          ],
+          "input_tokens": 486,
+          "output_tokens": 57,
+          "parse_error": null,
+          "parsed": {
+            "scene_description": "A yellow vase is centered against a plain background. The word \"CLOUD\" is spelled out using individual letter pieces above the vase.",
+            "text_lines": [
+              "CLOUD"
+            ],
+            "text_uncertain": false
+          },
+          "raw": "```json\n{\n  \"text_lines\": [\"CLOUD\"],\n  \"text_uncertain\": false,\n  \"scene_description\": \"A yellow vase is centered against a plain background. The word \\\"CLOUD\\\" is spelled out using individual letter pieces above the vase.\"\n}\n```",
+          "request": "Inspect the image itself. Transcribe ALL visible letters, words, digits and symbols anywhere in the image, including small object labels. Copy literally: do not correct spelling, complete missing letters, or infer intended words. If some apparent text cannot be read reliably, set text_uncertain=true and keep any readable fragments. No target text is supplied. Also briefly describe the visible objects and any cropping or occlusion, without guessing hidden objects. Return only JSON with exactly these fields: {\"text_lines\": [\"literal visible line\"], \"text_uncertain\": false, \"scene_description\": \"brief literal description\"}. Use an empty text_lines list if no text is visible; distinguish that from unreadable apparent text.",
+          "truncated": false
+        },
+        "scene": {
+          "image_grid_thw": [
+            [
+              1,
+              36,
+              36
+            ]
+          ],
+          "input_tokens": 593,
+          "output_tokens": 100,
+          "parse_error": null,
+          "parsed": {
+            "clauses": [
+              {
+                "evidence": "There is one vase in the image.",
+                "id": "count",
+                "satisfied": true
+              },
+              {
+                "evidence": "The vase is yellow.",
+                "id": "color",
+                "satisfied": true
+              }
+            ],
+            "full_visibility": true,
+            "visibility_evidence": "The vase is fully visible within the image boundaries."
+          },
+          "raw": "```json\n{\n  \"clauses\": [\n    {\n      \"id\": \"count\",\n      \"satisfied\": true,\n      \"evidence\": \"There is one vase in the image.\"\n    },\n    {\n      \"id\": \"color\",\n      \"satisfied\": true,\n      \"evidence\": \"The vase is yellow.\"\n    }\n  ],\n  \"full_visibility\": true,\n  \"visibility_evidence\": \"The vase is fully visible within the image boundaries.\"\n}\n```",
+          "request": "Judge the following explicit scene constraints against the image. For each clause, enforce required object identity and EXACT count, then color or relative position if specified. Count distinct objects, not a group as one; do not invent hidden objects. Return null if identity/count/color/position cannot be reliably determined. full_visibility is separate: all required objects must be present, complete inside the image, and without substantial occlusion; missing objects or clear cropping fail it. Do not judge text and do not infer a scene from the requested constraints. Return only JSON with exactly {\"clauses\": [{\"id\": \"requested id\", \"satisfied\": true, \"evidence\": \"visible evidence\"}], \"full_visibility\": false, \"visibility_evidence\": \"visible evidence\"}. Every requested clause id must occur exactly once. satisfied and full_visibility must be true, false, or null. Constraints: [{\"id\": \"count\", \"metadata\": {\"include\": [{\"class\": \"vase\", \"count\": 1}], \"tag\": \"counting\"}}, {\"id\": \"color\", \"metadata\": {\"include\": [{\"class\": \"vase\", \"color\": \"yellow\", \"count\": 1}], \"tag\": \"colors\"}}]",
+          "truncated": false
+        }
+      },
+      "image": "/midtier/minilab/scratch/chw4026/projects/side_project/generative/opd_related/opd_lab/runs/le5_measurement_001/images/01.png",
+      "image_sha256": "9d72f3f9b03f905bbbe7d2384c475528ea0ec11dc3fe38a8eb9084c44e687b91"
+    },
+    {
+      "uid": "exposed_calibration:11",
+      "clause": "relation",
+      "reference": {
+        "case": 11,
+        "clauses": {
+          "relation": false,
+          "text": false
+        },
+        "full_visibility": false,
+        "notes": "Missing letters and extra second row. Bicycle is right of car, not left; car cropped at left.",
+        "visible_text": "P E C (upper row); p e c h (lower row)"
+      },
+      "qwen_responses": {
+        "observation": {
+          "image_grid_thw": [
+            [
+              1,
+              36,
+              36
+            ]
+          ],
+          "input_tokens": 486,
+          "output_tokens": 71,
+          "parse_error": null,
+          "parsed": {
+            "scene_description": "A bicycle is parked next to a car in front of a wall with the letters 'PEC' and 'pech' displayed. The scene appears to be indoors, possibly in a showroom.",
+            "text_lines": [
+              "PEC",
+              "pech"
+            ],
+            "text_uncertain": false
+          },
+          "raw": "```json\n{\n  \"text_lines\": [\"PEC\", \"pech\"],\n  \"text_uncertain\": false,\n  \"scene_description\": \"A bicycle is parked next to a car in front of a wall with the letters 'PEC' and 'pech' displayed. The scene appears to be indoors, possibly in a showroom.\"\n}\n```",
+          "request": "Inspect the image itself. Transcribe ALL visible letters, words, digits and symbols anywhere in the image, including small object labels. Copy literally: do not correct spelling, complete missing letters, or infer intended words. If some apparent text cannot be read reliably, set text_uncertain=true and keep any readable fragments. No target text is supplied. Also briefly describe the visible objects and any cropping or occlusion, without guessing hidden objects. Return only JSON with exactly these fields: {\"text_lines\": [\"literal visible line\"], \"text_uncertain\": false, \"scene_description\": \"brief literal description\"}. Use an empty text_lines list if no text is visible; distinguish that from unreadable apparent text.",
+          "truncated": false
+        },
+        "scene": {
+          "image_grid_thw": [
+            [
+              1,
+              36,
+              36
+            ]
+          ],
+          "input_tokens": 577,
+          "output_tokens": 75,
+          "parse_error": null,
+          "parsed": {
+            "clauses": [
+              {
+                "evidence": "A car is positioned to the left of a bicycle.",
+                "id": "relation",
+                "satisfied": true
+              }
+            ],
+            "full_visibility": true,
+            "visibility_evidence": "The car and bicycle are fully visible within the frame."
+          },
+          "raw": "```json\n{\n  \"clauses\": [\n    {\n      \"id\": \"relation\",\n      \"satisfied\": true,\n      \"evidence\": \"A car is positioned to the left of a bicycle.\"\n    }\n  ],\n  \"full_visibility\": true,\n  \"visibility_evidence\": \"The car and bicycle are fully visible within the frame.\"\n}\n```",
+          "request": "Judge the following explicit scene constraints against the image. For each clause, enforce required object identity and EXACT count, then color or relative position if specified. Count distinct objects, not a group as one; do not invent hidden objects. Return null if identity/count/color/position cannot be reliably determined. full_visibility is separate: all required objects must be present, complete inside the image, and without substantial occlusion; missing objects or clear cropping fail it. Do not judge text and do not infer a scene from the requested constraints. Return only JSON with exactly {\"clauses\": [{\"id\": \"requested id\", \"satisfied\": true, \"evidence\": \"visible evidence\"}], \"full_visibility\": false, \"visibility_evidence\": \"visible evidence\"}. Every requested clause id must occur exactly once. satisfied and full_visibility must be true, false, or null. Constraints: [{\"id\": \"relation\", \"metadata\": {\"include\": [{\"class\": \"car\", \"count\": 1}, {\"class\": \"bicycle\", \"count\": 1, \"position\": [\"left of\", 0]}], \"tag\": \"position\"}}]",
+          "truncated": false
+        }
+      },
+      "image": "/midtier/minilab/scratch/chw4026/projects/side_project/generative/opd_related/opd_lab/runs/le5_measurement_001/images/11.png",
+      "image_sha256": "ba71adc054a22b1ddfaee4ff21590739f9306a55f77cd06ba9dbfe5916262198"
+    },
+    {
+      "uid": "exposed_calibration:15",
+      "clause": "text",
+      "reference": {
+        "case": 15,
+        "clauses": {
+          "count": null,
+          "text": false
+        },
+        "full_visibility": false,
+        "notes": "Extra malformed glyph between R and E. One circular opening behind sign may be a cup; two identifiable fully visible cups are not established. Structures merge with the sign.",
+        "visible_text": "FR[malformed extra R-like glyph]ESH"
+      },
+      "qwen_responses": {
+        "observation": {
+          "image_grid_thw": [
+            [
+              1,
+              36,
+              36
+            ]
+          ],
+          "input_tokens": 486,
+          "output_tokens": 50,
+          "parse_error": null,
+          "parsed": {
+            "scene_description": "A white object with the word \"FRESH\" printed on it, positioned against a plain background.",
+            "text_lines": [
+              "FRESH"
+            ],
+            "text_uncertain": false
+          },
+          "raw": "```json\n{\n  \"text_lines\": [\"FRESH\"],\n  \"text_uncertain\": false,\n  \"scene_description\": \"A white object with the word \\\"FRESH\\\" printed on it, positioned against a plain background.\"\n}\n```",
+          "request": "Inspect the image itself. Transcribe ALL visible letters, words, digits and symbols anywhere in the image, including small object labels. Copy literally: do not correct spelling, complete missing letters, or infer intended words. If some apparent text cannot be read reliably, set text_uncertain=true and keep any readable fragments. No target text is supplied. Also briefly describe the visible objects and any cropping or occlusion, without guessing hidden objects. Return only JSON with exactly these fields: {\"text_lines\": [\"literal visible line\"], \"text_uncertain\": false, \"scene_description\": \"brief literal description\"}. Use an empty text_lines list if no text is visible; distinguish that from unreadable apparent text.",
+          "truncated": false
+        },
+        "scene": {
+          "image_grid_thw": [
+            [
+              1,
+              36,
+              36
+            ]
+          ],
+          "input_tokens": 554,
+          "output_tokens": 68,
+          "parse_error": null,
+          "parsed": {
+            "clauses": [
+              {
+                "evidence": "There is one cup visible in the image.",
+                "id": "count",
+                "satisfied": false
+              }
+            ],
+            "full_visibility": false,
+            "visibility_evidence": "The cup is partially visible."
+          },
+          "raw": "```json\n{\n  \"clauses\": [\n    {\n      \"id\": \"count\",\n      \"satisfied\": false,\n      \"evidence\": \"There is one cup visible in the image.\"\n    }\n  ],\n  \"full_visibility\": false,\n  \"visibility_evidence\": \"The cup is partially visible.\"\n}\n```",
+          "request": "Judge the following explicit scene constraints against the image. For each clause, enforce required object identity and EXACT count, then color or relative position if specified. Count distinct objects, not a group as one; do not invent hidden objects. Return null if identity/count/color/position cannot be reliably determined. full_visibility is separate: all required objects must be present, complete inside the image, and without substantial occlusion; missing objects or clear cropping fail it. Do not judge text and do not infer a scene from the requested constraints. Return only JSON with exactly {\"clauses\": [{\"id\": \"requested id\", \"satisfied\": true, \"evidence\": \"visible evidence\"}], \"full_visibility\": false, \"visibility_evidence\": \"visible evidence\"}. Every requested clause id must occur exactly once. satisfied and full_visibility must be true, false, or null. Constraints: [{\"id\": \"count\", \"metadata\": {\"include\": [{\"class\": \"cup\", \"count\": 2}], \"tag\": \"counting\"}}]",
+          "truncated": false
+        }
+      },
+      "image": "/midtier/minilab/scratch/chw4026/projects/side_project/generative/opd_related/opd_lab/runs/le5_measurement_001/images/15.png",
+      "image_sha256": "9cb545a06abe38907990ca293b8db99668c55f501d9a18915208cb0f9eaddab7"
+    },
+    {
+      "uid": "exposed_calibration:16",
+      "clause": "text",
+      "reference": {
+        "case": 16,
+        "clauses": {
+          "relation": false,
+          "text": false
+        },
+        "full_visibility": false,
+        "notes": "Bottle present but cup absent. Extra bottle-label writing; G/W have distorted strokes. No pair of required objects.",
+        "visible_text": "GLOW; multiple small lines on bottle label"
+      },
+      "qwen_responses": {
+        "observation": {
+          "image_grid_thw": [
+            [
+              1,
+              36,
+              36
+            ]
+          ],
+          "input_tokens": 486,
+          "output_tokens": 64,
+          "parse_error": null,
+          "parsed": {
+            "scene_description": "The image shows a white background with the word \"GLOW\" written in black letters. Below the word, there is a dark bottle with a label, partially visible.",
+            "text_lines": [
+              "GLOW"
+            ],
+            "text_uncertain": false
+          },
+          "raw": "```json\n{\n  \"text_lines\": [\"GLOW\"],\n  \"text_uncertain\": false,\n  \"scene_description\": \"The image shows a white background with the word \\\"GLOW\\\" written in black letters. Below the word, there is a dark bottle with a label, partially visible.\"\n}\n```",
+          "request": "Inspect the image itself. Transcribe ALL visible letters, words, digits and symbols anywhere in the image, including small object labels. Copy literally: do not correct spelling, complete missing letters, or infer intended words. If some apparent text cannot be read reliably, set text_uncertain=true and keep any readable fragments. No target text is supplied. Also briefly describe the visible objects and any cropping or occlusion, without guessing hidden objects. Return only JSON with exactly these fields: {\"text_lines\": [\"literal visible line\"], \"text_uncertain\": false, \"scene_description\": \"brief literal description\"}. Use an empty text_lines list if no text is visible; distinguish that from unreadable apparent text.",
+          "truncated": false
+        },
+        "scene": {
+          "image_grid_thw": [
+            [
+              1,
+              36,
+              36
+            ]
+          ],
+          "input_tokens": 577,
+          "output_tokens": 80,
+          "parse_error": null,
+          "parsed": {
+            "clauses": [
+              {
+                "evidence": "The image contains a bottle but no cup.",
+                "id": "relation",
+                "satisfied": false
+              }
+            ],
+            "full_visibility": false,
+            "visibility_evidence": "The bottle is partially visible in the bottom right corner, and there is no cup present."
+          },
+          "raw": "```json\n{\n  \"clauses\": [\n    {\n      \"id\": \"relation\",\n      \"satisfied\": false,\n      \"evidence\": \"The image contains a bottle but no cup.\"\n    }\n  ],\n  \"full_visibility\": false,\n  \"visibility_evidence\": \"The bottle is partially visible in the bottom right corner, and there is no cup present.\"\n}\n```",
+          "request": "Judge the following explicit scene constraints against the image. For each clause, enforce required object identity and EXACT count, then color or relative position if specified. Count distinct objects, not a group as one; do not invent hidden objects. Return null if identity/count/color/position cannot be reliably determined. full_visibility is separate: all required objects must be present, complete inside the image, and without substantial occlusion; missing objects or clear cropping fail it. Do not judge text and do not infer a scene from the requested constraints. Return only JSON with exactly {\"clauses\": [{\"id\": \"requested id\", \"satisfied\": true, \"evidence\": \"visible evidence\"}], \"full_visibility\": false, \"visibility_evidence\": \"visible evidence\"}. Every requested clause id must occur exactly once. satisfied and full_visibility must be true, false, or null. Constraints: [{\"id\": \"relation\", \"metadata\": {\"include\": [{\"class\": \"bottle\", \"count\": 1}, {\"class\": \"cup\", \"count\": 1, \"position\": [\"right of\", 0]}], \"tag\": \"position\"}}]",
+          "truncated": false
+        }
+      },
+      "image": "/midtier/minilab/scratch/chw4026/projects/side_project/generative/opd_related/opd_lab/runs/le5_measurement_001/images/16.png",
+      "image_sha256": "0d0562e57108f203b20083bcd21466f7ff2d7e07538d090d7b2422c25127df17"
+    },
+    {
+      "uid": "new_calibration:01",
+      "clause": "relation",
+      "reference": {
+        "case": 1,
+        "clauses": {
+          "relation": false,
+          "text": true
+        },
+        "full_visibility": false,
+        "notes": "Chair is LEFT of plant, opposite requested direction. Plant leaves cut by right frame; chair otherwise complete.",
+        "visible_text": "CLEAR"
+      },
+      "qwen_responses": {
+        "observation": {
+          "image_grid_thw": [
+            [
+              1,
+              36,
+              36
+            ]
+          ],
+          "input_tokens": 486,
+          "output_tokens": 63,
+          "parse_error": null,
+          "parsed": {
+            "scene_description": "A minimalist room with a white wall, a framed sign saying \"CLEAR\", a wooden chair with a patterned backrest, and a potted plant to the right.",
+            "text_lines": [
+              "CLEAR"
+            ],
+            "text_uncertain": false
+          },
+          "raw": "```json\n{\n  \"text_lines\": [\"CLEAR\"],\n  \"text_uncertain\": false,\n  \"scene_description\": \"A minimalist room with a white wall, a framed sign saying \\\"CLEAR\\\", a wooden chair with a patterned backrest, and a potted plant to the right.\"\n}\n```",
+          "request": "Inspect the image itself. Transcribe ALL visible letters, words, digits and symbols anywhere in the image, including small object labels. Copy literally: do not correct spelling, complete missing letters, or infer intended words. If some apparent text cannot be read reliably, set text_uncertain=true and keep any readable fragments. No target text is supplied. Also briefly describe the visible objects and any cropping or occlusion, without guessing hidden objects. Return only JSON with exactly these fields: {\"text_lines\": [\"literal visible line\"], \"text_uncertain\": false, \"scene_description\": \"brief literal description\"}. Use an empty text_lines list if no text is visible; distinguish that from unreadable apparent text.",
+          "truncated": false
+        },
+        "scene": {
+          "image_grid_thw": [
+            [
+              1,
+              36,
+              36
+            ]
+          ],
+          "input_tokens": 578,
+          "output_tokens": 76,
+          "parse_error": null,
+          "parsed": {
+            "clauses": [
+              {
+                "evidence": "A potted plant is visible to the right of a chair.",
+                "id": "relation",
+                "satisfied": true
+              }
+            ],
+            "full_visibility": true,
+            "visibility_evidence": "The entire scene is visible within the image boundaries."
+          },
+          "raw": "```json\n{\n  \"clauses\": [\n    {\n      \"id\": \"relation\",\n      \"satisfied\": true,\n      \"evidence\": \"A potted plant is visible to the right of a chair.\"\n    }\n  ],\n  \"full_visibility\": true,\n  \"visibility_evidence\": \"The entire scene is visible within the image boundaries.\"\n}\n```",
+          "request": "Judge the following explicit scene constraints against the image. For each clause, enforce required object identity and EXACT count, then color or relative position if specified. Count distinct objects, not a group as one; do not invent hidden objects. Return null if identity/count/color/position cannot be reliably determined. full_visibility is separate: all required objects must be present, complete inside the image, and without substantial occlusion; missing objects or clear cropping fail it. Do not judge text and do not infer a scene from the requested constraints. Return only JSON with exactly {\"clauses\": [{\"id\": \"requested id\", \"satisfied\": true, \"evidence\": \"visible evidence\"}], \"full_visibility\": false, \"visibility_evidence\": \"visible evidence\"}. Every requested clause id must occur exactly once. satisfied and full_visibility must be true, false, or null. Constraints: [{\"id\": \"relation\", \"metadata\": {\"include\": [{\"class\": \"potted plant\", \"count\": 1}, {\"class\": \"chair\", \"count\": 1, \"position\": [\"right of\", 0]}], \"tag\": \"position\"}}]",
+          "truncated": false
+        }
+      },
+      "image": "/midtier/minilab/scratch/chw4026/projects/side_project/generative/opd_related/opd_lab/runs/le6_generation_001/images/01.png",
+      "image_sha256": "cf77c2743c6e5bb69bd66a75a5ff27aa5cf2a89bff4de4de2f159f4ccf073f08"
+    },
+    {
+      "uid": "new_calibration:06",
+      "clause": "text",
+      "reference": {
+        "case": 6,
+        "clauses": {
+          "color": true,
+          "count": true,
+          "text": false
+        },
+        "full_visibility": false,
+        "notes": "One green bowl cut at left and bottom. Extra fine printed lines are visible beneath the main word although individual tiny letters cannot be transcribed.",
+        "visible_text": "BLOOM; two additional tiny printed lines below"
+      },
+      "qwen_responses": {
+        "observation": {
+          "image_grid_thw": [
+            [
+              1,
+              36,
+              36
+            ]
+          ],
+          "input_tokens": 486,
+          "output_tokens": 71,
+          "parse_error": null,
+          "parsed": {
+            "scene_description": "A minimalist scene featuring a white rectangular sign with the word \"BLOOM\" centered on it, placed against a light green background. A dark green bowl is partially visible in the bottom left corner.",
+            "text_lines": [
+              "BLOOM"
+            ],
+            "text_uncertain": false
+          },
+          "raw": "```json\n{\n  \"text_lines\": [\"BLOOM\"],\n  \"text_uncertain\": false,\n  \"scene_description\": \"A minimalist scene featuring a white rectangular sign with the word \\\"BLOOM\\\" centered on it, placed against a light green background. A dark green bowl is partially visible in the bottom left corner.\"\n}\n```",
+          "request": "Inspect the image itself. Transcribe ALL visible letters, words, digits and symbols anywhere in the image, including small object labels. Copy literally: do not correct spelling, complete missing letters, or infer intended words. If some apparent text cannot be read reliably, set text_uncertain=true and keep any readable fragments. No target text is supplied. Also briefly describe the visible objects and any cropping or occlusion, without guessing hidden objects. Return only JSON with exactly these fields: {\"text_lines\": [\"literal visible line\"], \"text_uncertain\": false, \"scene_description\": \"brief literal description\"}. Use an empty text_lines list if no text is visible; distinguish that from unreadable apparent text.",
+          "truncated": false
+        },
+        "scene": {
+          "image_grid_thw": [
+            [
+              1,
+              36,
+              36
+            ]
+          ],
+          "input_tokens": 593,
+          "output_tokens": 102,
+          "parse_error": null,
+          "parsed": {
+            "clauses": [
+              {
+                "evidence": "There is one bowl in the image.",
+                "id": "count",
+                "satisfied": true
+              },
+              {
+                "evidence": "The bowl is green.",
+                "id": "color",
+                "satisfied": true
+              }
+            ],
+            "full_visibility": true,
+            "visibility_evidence": "The bowl is fully visible and there are no occlusions."
+          },
+          "raw": "```json\n{\n  \"clauses\": [\n    {\n      \"id\": \"count\",\n      \"satisfied\": true,\n      \"evidence\": \"There is one bowl in the image.\"\n    },\n    {\n      \"id\": \"color\",\n      \"satisfied\": true,\n      \"evidence\": \"The bowl is green.\"\n    }\n  ],\n  \"full_visibility\": true,\n  \"visibility_evidence\": \"The bowl is fully visible and there are no occlusions.\"\n}\n```",
+          "request": "Judge the following explicit scene constraints against the image. For each clause, enforce required object identity and EXACT count, then color or relative position if specified. Count distinct objects, not a group as one; do not invent hidden objects. Return null if identity/count/color/position cannot be reliably determined. full_visibility is separate: all required objects must be present, complete inside the image, and without substantial occlusion; missing objects or clear cropping fail it. Do not judge text and do not infer a scene from the requested constraints. Return only JSON with exactly {\"clauses\": [{\"id\": \"requested id\", \"satisfied\": true, \"evidence\": \"visible evidence\"}], \"full_visibility\": false, \"visibility_evidence\": \"visible evidence\"}. Every requested clause id must occur exactly once. satisfied and full_visibility must be true, false, or null. Constraints: [{\"id\": \"count\", \"metadata\": {\"include\": [{\"class\": \"bowl\", \"count\": 1}], \"tag\": \"counting\"}}, {\"id\": \"color\", \"metadata\": {\"include\": [{\"class\": \"bowl\", \"color\": \"green\", \"count\": 1}], \"tag\": \"colors\"}}]",
+          "truncated": false
+        }
+      },
+      "image": "/midtier/minilab/scratch/chw4026/projects/side_project/generative/opd_related/opd_lab/runs/le6_generation_001/images/06.png",
+      "image_sha256": "f80f71dd7550f991580519baf38cc7fedc3b977501c974d7a64997cbbd193275"
+    },
+    {
+      "uid": "new_calibration:07",
+      "clause": "relation",
+      "reference": {
+        "case": 7,
+        "clauses": {
+          "relation": false,
+          "text": false
+        },
+        "full_visibility": false,
+        "notes": "Extra R. Chair is RIGHT of plant rather than left. Chair legs and plant stand cut at bottom; no distinct white sign.",
+        "visible_text": "M ARPLE"
+      },
+      "qwen_responses": {
+        "observation": {
+          "image_grid_thw": [
+            [
+              1,
+              36,
+              36
+            ]
+          ],
+          "input_tokens": 486,
+          "output_tokens": 55,
+          "parse_error": null,
+          "parsed": {
+            "scene_description": "A minimalist room setup featuring a potted plant on a stand to the left of a wooden chair against a plain white wall.",
+            "text_lines": [
+              "MARPLE"
+            ],
+            "text_uncertain": false
+          },
+          "raw": "```json\n{\n  \"text_lines\": [\"MARPLE\"],\n  \"text_uncertain\": false,\n  \"scene_description\": \"A minimalist room setup featuring a potted plant on a stand to the left of a wooden chair against a plain white wall.\"\n}\n```",
+          "request": "Inspect the image itself. Transcribe ALL visible letters, words, digits and symbols anywhere in the image, including small object labels. Copy literally: do not correct spelling, complete missing letters, or infer intended words. If some apparent text cannot be read reliably, set text_uncertain=true and keep any readable fragments. No target text is supplied. Also briefly describe the visible objects and any cropping or occlusion, without guessing hidden objects. Return only JSON with exactly these fields: {\"text_lines\": [\"literal visible line\"], \"text_uncertain\": false, \"scene_description\": \"brief literal description\"}. Use an empty text_lines list if no text is visible; distinguish that from unreadable apparent text.",
+          "truncated": false
+        },
+        "scene": {
+          "image_grid_thw": [
+            [
+              1,
+              36,
+              36
+            ]
+          ],
+          "input_tokens": 578,
+          "output_tokens": 79,
+          "parse_error": null,
+          "parsed": {
+            "clauses": [
+              {
+                "evidence": "A potted plant is visible to the left of a chair.",
+                "id": "relation",
+                "satisfied": true
+              }
+            ],
+            "full_visibility": false,
+            "visibility_evidence": "The potted plant and chair are partially visible within the frame."
+          },
+          "raw": "```json\n{\n  \"clauses\": [\n    {\n      \"id\": \"relation\",\n      \"satisfied\": true,\n      \"evidence\": \"A potted plant is visible to the left of a chair.\"\n    }\n  ],\n  \"full_visibility\": false,\n  \"visibility_evidence\": \"The potted plant and chair are partially visible within the frame.\"\n}\n```",
+          "request": "Judge the following explicit scene constraints against the image. For each clause, enforce required object identity and EXACT count, then color or relative position if specified. Count distinct objects, not a group as one; do not invent hidden objects. Return null if identity/count/color/position cannot be reliably determined. full_visibility is separate: all required objects must be present, complete inside the image, and without substantial occlusion; missing objects or clear cropping fail it. Do not judge text and do not infer a scene from the requested constraints. Return only JSON with exactly {\"clauses\": [{\"id\": \"requested id\", \"satisfied\": true, \"evidence\": \"visible evidence\"}], \"full_visibility\": false, \"visibility_evidence\": \"visible evidence\"}. Every requested clause id must occur exactly once. satisfied and full_visibility must be true, false, or null. Constraints: [{\"id\": \"relation\", \"metadata\": {\"include\": [{\"class\": \"potted plant\", \"count\": 1}, {\"class\": \"chair\", \"count\": 1, \"position\": [\"left of\", 0]}], \"tag\": \"position\"}}]",
+          "truncated": false
+        }
+      },
+      "image": "/midtier/minilab/scratch/chw4026/projects/side_project/generative/opd_related/opd_lab/runs/le6_generation_001/images/07.png",
+      "image_sha256": "958207c4bd2a7e23a1d419334b0d352bd95b4db2c55c3f3520bd3908300f4dea"
+    },
+    {
+      "uid": "new_calibration:11",
+      "clause": "relation",
+      "reference": {
+        "case": 11,
+        "clauses": {
+          "relation": false,
+          "text": true
+        },
+        "full_visibility": true,
+        "notes": "One complete apple is LEFT of one complete bowl, opposite requested direction.",
+        "visible_text": "SODA"
+      },
+      "qwen_responses": {
+        "observation": {
+          "image_grid_thw": [
+            [
+              1,
+              36,
+              36
+            ]
+          ],
+          "input_tokens": 486,
+          "output_tokens": 66,
+          "parse_error": null,
+          "parsed": {
+            "scene_description": "The image shows a red apple on the left, a red bowl on the right, and a white sign with the word 'SODA' in black letters above them.",
+            "text_lines": [
+              "SODA"
+            ],
+            "text_uncertain": false
+          },
+          "raw": "```json\n{\n  \"text_lines\": [\"SODA\"],\n  \"text_uncertain\": false,\n  \"scene_description\": \"The image shows a red apple on the left, a red bowl on the right, and a white sign with the word 'SODA' in black letters above them.\"\n}\n```",
+          "request": "Inspect the image itself. Transcribe ALL visible letters, words, digits and symbols anywhere in the image, including small object labels. Copy literally: do not correct spelling, complete missing letters, or infer intended words. If some apparent text cannot be read reliably, set text_uncertain=true and keep any readable fragments. No target text is supplied. Also briefly describe the visible objects and any cropping or occlusion, without guessing hidden objects. Return only JSON with exactly these fields: {\"text_lines\": [\"literal visible line\"], \"text_uncertain\": false, \"scene_description\": \"brief literal description\"}. Use an empty text_lines list if no text is visible; distinguish that from unreadable apparent text.",
+          "truncated": false
+        },
+        "scene": {
+          "image_grid_thw": [
+            [
+              1,
+              36,
+              36
+            ]
+          ],
+          "input_tokens": 577,
+          "output_tokens": 76,
+          "parse_error": null,
+          "parsed": {
+            "clauses": [
+              {
+                "evidence": "A red bowl is positioned to the right of an apple.",
+                "id": "relation",
+                "satisfied": true
+              }
+            ],
+            "full_visibility": true,
+            "visibility_evidence": "The apple and bowl are fully visible within the image."
+          },
+          "raw": "```json\n{\n  \"clauses\": [\n    {\n      \"id\": \"relation\",\n      \"satisfied\": true,\n      \"evidence\": \"A red bowl is positioned to the right of an apple.\"\n    }\n  ],\n  \"full_visibility\": true,\n  \"visibility_evidence\": \"The apple and bowl are fully visible within the image.\"\n}\n```",
+          "request": "Judge the following explicit scene constraints against the image. For each clause, enforce required object identity and EXACT count, then color or relative position if specified. Count distinct objects, not a group as one; do not invent hidden objects. Return null if identity/count/color/position cannot be reliably determined. full_visibility is separate: all required objects must be present, complete inside the image, and without substantial occlusion; missing objects or clear cropping fail it. Do not judge text and do not infer a scene from the requested constraints. Return only JSON with exactly {\"clauses\": [{\"id\": \"requested id\", \"satisfied\": true, \"evidence\": \"visible evidence\"}], \"full_visibility\": false, \"visibility_evidence\": \"visible evidence\"}. Every requested clause id must occur exactly once. satisfied and full_visibility must be true, false, or null. Constraints: [{\"id\": \"relation\", \"metadata\": {\"include\": [{\"class\": \"bowl\", \"count\": 1}, {\"class\": \"apple\", \"count\": 1, \"position\": [\"right of\", 0]}], \"tag\": \"position\"}}]",
+          "truncated": false
+        }
+      },
+      "image": "/midtier/minilab/scratch/chw4026/projects/side_project/generative/opd_related/opd_lab/runs/le6_generation_001/images/11.png",
+      "image_sha256": "23f3a2eee700a121df16b929bb75775dd0b21ce64c1a0b85e4be420bb0895405"
+    }
+  ],
+  "text_uncertain_true": 0,
+  "image_grids": [
+    "[[1, 36, 36]]"
+  ]
+}

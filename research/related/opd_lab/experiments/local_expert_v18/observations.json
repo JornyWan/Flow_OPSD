@@ -1,0 +1,2060 @@
+[
+  {
+    "case": 1,
+    "views": {
+      "A": {
+        "clauses": {
+          "relation": false,
+          "text": true
+        },
+        "full_visibility": false,
+        "notes": "Only one bottle; required cup absent.",
+        "visible_text": "BLOOM"
+      },
+      "B": {
+        "clauses": {
+          "relation": null,
+          "text": true
+        },
+        "full_visibility": null,
+        "notes": "Two open/capped white vessels; bottle identity not certain even in separate native-size view.",
+        "visible_text": "BLOOM"
+      },
+      "C": {
+        "clauses": {
+          "relation": true,
+          "text": true
+        },
+        "full_visibility": true,
+        "notes": "One bottle left and one cup right, separate and complete.",
+        "visible_text": "BLOOM"
+      },
+      "D": {
+        "clauses": {
+          "relation": null,
+          "text": false
+        },
+        "full_visibility": null,
+        "notes": "Missing one O. Left vessel extremely faint; right vessel resembles a pouring jug; identities/completion uncertain in native view.",
+        "visible_text": "BLOM"
+      }
+    }
+  },
+  {
+    "case": 2,
+    "views": {
+      "A": {
+        "clauses": {
+          "color": true,
+          "text": true
+        },
+        "full_visibility": false,
+        "notes": "One red cup; its bottom runs into image boundary.",
+        "visible_text": "MINT"
+      },
+      "B": {
+        "clauses": {
+          "color": true,
+          "text": true
+        },
+        "full_visibility": false,
+        "notes": "One red cup; lower body/base cut at frame.",
+        "visible_text": "MINT"
+      },
+      "C": {
+        "clauses": {
+          "color": true,
+          "text": false
+        },
+        "full_visibility": false,
+        "notes": "I absent; native view confirms cup base reaches/crosses bottom boundary.",
+        "visible_text": "MNT"
+      },
+      "D": {
+        "clauses": {
+          "color": true,
+          "text": false
+        },
+        "full_visibility": false,
+        "notes": "Sign does not legibly spell MINT; one red cup cropped below.",
+        "visible_text": "[malformed M/\u039b/7-like glyphs]"
+      }
+    }
+  },
+  {
+    "case": 3,
+    "views": {
+      "A": {
+        "clauses": {
+          "color": true,
+          "text": true
+        },
+        "full_visibility": true,
+        "notes": "One complete red handled cup.",
+        "visible_text": "FRESH"
+      },
+      "B": {
+        "clauses": {
+          "color": null,
+          "text": false
+        },
+        "full_visibility": true,
+        "notes": "R missing. Cup is mostly white with a red upper band; requested red color is uncertain.",
+        "visible_text": "FESH"
+      },
+      "C": {
+        "clauses": {
+          "color": true,
+          "text": true
+        },
+        "full_visibility": true,
+        "notes": "Pale but readable word; one fully visible red cup.",
+        "visible_text": "FRESH"
+      },
+      "D": {
+        "clauses": {
+          "color": true,
+          "text": true
+        },
+        "full_visibility": false,
+        "notes": "One red teacup with saucer; sign overlaps and hides its upper rim/body.",
+        "visible_text": "FRESH"
+      }
+    }
+  },
+  {
+    "case": 4,
+    "views": {
+      "A": {
+        "clauses": {
+          "count": true,
+          "text": true
+        },
+        "full_visibility": true,
+        "notes": "One complete vase; readable word.",
+        "visible_text": "CLOUD"
+      },
+      "B": {
+        "clauses": {
+          "count": true,
+          "text": true
+        },
+        "full_visibility": true,
+        "notes": "Widely tracked letters form CLOUD; one complete vase.",
+        "visible_text": "CLOUD"
+      },
+      "C": {
+        "clauses": {
+          "count": true,
+          "text": false
+        },
+        "full_visibility": true,
+        "notes": "Native view shows three-stem W/\u0428-like glyph in place of U; one complete vase.",
+        "visible_text": "CLO[\u0428/W]D"
+      },
+      "D": {
+        "clauses": {
+          "count": true,
+          "text": true
+        },
+        "full_visibility": true,
+        "notes": "Readable widely tracked word and one complete vase.",
+        "visible_text": "CLOUD"
+      }
+    }
+  },
+  {
+    "case": 5,
+    "views": {
+      "A": {
+        "clauses": {
+          "relation": true,
+          "text": true
+        },
+        "full_visibility": true,
+        "notes": "One apple left of one empty bowl, both complete.",
+        "visible_text": "PINE"
+      },
+      "B": {
+        "clauses": {
+          "relation": false,
+          "text": true
+        },
+        "full_visibility": false,
+        "notes": "Second recognizable apple inside the bowl, partly occluded; exact apple count fails.",
+        "visible_text": "PINE"
+      },
+      "C": {
+        "clauses": {
+          "relation": true,
+          "text": true
+        },
+        "full_visibility": true,
+        "notes": "One apple left of one bowl. Red patch on bowl is a surface pattern, not a second apple.",
+        "visible_text": "PINE"
+      },
+      "D": {
+        "clauses": {
+          "relation": true,
+          "text": true
+        },
+        "full_visibility": true,
+        "notes": "One apple left of one bowl, both complete.",
+        "visible_text": "PINE"
+      }
+    }
+  },
+  {
+    "case": 6,
+    "views": {
+      "A": {
+        "clauses": {
+          "count": true,
+          "text": true
+        },
+        "full_visibility": true,
+        "notes": "Two pale handled cups, separated and within frame.",
+        "visible_text": "FRESH"
+      },
+      "B": {
+        "clauses": {
+          "count": false,
+          "text": false
+        },
+        "full_visibility": true,
+        "notes": "Missing E; four pale cup bodies behind large letters, not two; all within frame.",
+        "visible_text": "FRSH"
+      },
+      "C": {
+        "clauses": {
+          "count": true,
+          "text": false
+        },
+        "full_visibility": true,
+        "notes": "Native view shows a merged/malformed middle glyph rather than distinct E and S; two complete cups.",
+        "visible_text": "FR[\u01b7/5]H"
+      },
+      "D": {
+        "clauses": {
+          "count": false,
+          "text": false
+        },
+        "full_visibility": false,
+        "notes": "More than two overlapping cup bodies; rear cup and lower bodies occluded; incomplete word.",
+        "visible_text": "F SH"
+      }
+    }
+  },
+  {
+    "case": 7,
+    "views": {
+      "A": {
+        "clauses": {
+          "count": true,
+          "text": false
+        },
+        "full_visibility": true,
+        "notes": "Trailing circular punctuation; two complete cups.",
+        "visible_text": "FRESH."
+      },
+      "B": {
+        "clauses": {
+          "count": true,
+          "text": false
+        },
+        "full_visibility": true,
+        "notes": "Visible last glyph is only a vertical stroke beside/behind the cup, not a complete H; two cups fully visible.",
+        "visible_text": "FRESI"
+      },
+      "C": {
+        "clauses": {
+          "count": true,
+          "text": false
+        },
+        "full_visibility": true,
+        "notes": "Trailing circular punctuation; two complete cups.",
+        "visible_text": "FRESH."
+      },
+      "D": {
+        "clauses": {
+          "count": true,
+          "text": false
+        },
+        "full_visibility": true,
+        "notes": "Stylized doubled strokes and a trailing dot; two complete cups.",
+        "visible_text": "FRESH."
+      }
+    }
+  },
+  {
+    "case": 8,
+    "views": {
+      "A": {
+        "clauses": {
+          "count": true,
+          "text": true
+        },
+        "full_visibility": true,
+        "notes": "Two complete separated cups; no extra text.",
+        "visible_text": "FRESH"
+      },
+      "B": {
+        "clauses": {
+          "count": true,
+          "text": false
+        },
+        "full_visibility": true,
+        "notes": "Trailing circular punctuation; two complete cups.",
+        "visible_text": "FRESH."
+      },
+      "C": {
+        "clauses": {
+          "count": true,
+          "text": true
+        },
+        "full_visibility": true,
+        "notes": "Two complete cups; sign fasteners are not text.",
+        "visible_text": "FRESH"
+      },
+      "D": {
+        "clauses": {
+          "count": true,
+          "text": true
+        },
+        "full_visibility": true,
+        "notes": "Two complete separated cups.",
+        "visible_text": "FRESH"
+      }
+    }
+  },
+  {
+    "case": 9,
+    "views": {
+      "A": {
+        "clauses": {
+          "color": true,
+          "count": true,
+          "text": true
+        },
+        "full_visibility": true,
+        "notes": "Three separate complete yellow vases.",
+        "visible_text": "SODA"
+      },
+      "B": {
+        "clauses": {
+          "color": true,
+          "count": true,
+          "text": true
+        },
+        "full_visibility": true,
+        "notes": "Three yellow open-neck vases, including a cylindrical middle vase; complete.",
+        "visible_text": "SODA"
+      },
+      "C": {
+        "clauses": {
+          "color": true,
+          "count": true,
+          "text": true
+        },
+        "full_visibility": true,
+        "notes": "Three complete yellow vases.",
+        "visible_text": "SODA"
+      },
+      "D": {
+        "clauses": {
+          "color": true,
+          "count": true,
+          "text": true
+        },
+        "full_visibility": true,
+        "notes": "Three complete yellow vases.",
+        "visible_text": "SODA"
+      }
+    }
+  },
+  {
+    "case": 10,
+    "views": {
+      "A": {
+        "clauses": {
+          "color": true,
+          "text": null
+        },
+        "full_visibility": false,
+        "notes": "Native view has faint possible extra glyphs; exact text uncertain. Green chair legs cropped.",
+        "visible_text": "P [faint E?] E A C H"
+      },
+      "B": {
+        "clauses": {
+          "color": true,
+          "text": false
+        },
+        "full_visibility": false,
+        "notes": "Additional dark boxed P-like glyph between E and A; chair legs cropped.",
+        "visible_text": "PE[boxed P]ACH"
+      },
+      "C": {
+        "clauses": {
+          "color": true,
+          "text": null
+        },
+        "full_visibility": false,
+        "notes": "Native view cannot resolve faint extra and superposed glyphs; green chair legs cropped.",
+        "visible_text": "P [faint/overlaid E/P/A-like glyphs] CH"
+      },
+      "D": {
+        "clauses": {
+          "color": true,
+          "text": false
+        },
+        "full_visibility": false,
+        "notes": "Extra boxed P-like glyph; green chair legs cropped.",
+        "visible_text": "PE[boxed P]ACH"
+      }
+    }
+  },
+  {
+    "case": 11,
+    "views": {
+      "A": {
+        "clauses": {
+          "color": true,
+          "text": false
+        },
+        "full_visibility": false,
+        "notes": "Missing E and H. Green chair front legs cropped.",
+        "visible_text": "PAC"
+      },
+      "B": {
+        "clauses": {
+          "color": true,
+          "text": true
+        },
+        "full_visibility": false,
+        "notes": "One green chair; front legs run out of bottom frame.",
+        "visible_text": "PEACH"
+      },
+      "C": {
+        "clauses": {
+          "color": true,
+          "text": true
+        },
+        "full_visibility": false,
+        "notes": "One green chair; left front leg cropped at bottom.",
+        "visible_text": "PEACH"
+      },
+      "D": {
+        "clauses": {
+          "color": true,
+          "text": true
+        },
+        "full_visibility": true,
+        "notes": "One complete green armchair, all feet inside frame.",
+        "visible_text": "PEACH"
+      }
+    }
+  },
+  {
+    "case": 12,
+    "views": {
+      "A": {
+        "clauses": {
+          "count": true,
+          "text": false
+        },
+        "full_visibility": true,
+        "notes": "Unequal large gap separates FRE and SH; two complete cups.",
+        "visible_text": "FRE SH"
+      },
+      "B": {
+        "clauses": {
+          "count": false,
+          "text": false
+        },
+        "full_visibility": true,
+        "notes": "Within-word gap; three complete cups instead of two.",
+        "visible_text": "FRE SH"
+      },
+      "C": {
+        "clauses": {
+          "count": true,
+          "text": false
+        },
+        "full_visibility": true,
+        "notes": "Within-word gap; two complete glass cups.",
+        "visible_text": "FRE SH"
+      },
+      "D": {
+        "clauses": {
+          "count": false,
+          "text": false
+        },
+        "full_visibility": true,
+        "notes": "Within-word gap; three complete cups instead of two.",
+        "visible_text": "FRE SH"
+      }
+    }
+  },
+  {
+    "case": 13,
+    "views": {
+      "A": {
+        "clauses": {
+          "count": true,
+          "text": true
+        },
+        "full_visibility": false,
+        "notes": "One vase, lower body cropped.",
+        "visible_text": "CLOUD"
+      },
+      "B": {
+        "clauses": {
+          "count": true,
+          "text": true
+        },
+        "full_visibility": false,
+        "notes": "One vase, lower body cropped.",
+        "visible_text": "CLOUD"
+      },
+      "C": {
+        "clauses": {
+          "count": true,
+          "text": true
+        },
+        "full_visibility": false,
+        "notes": "One handled vase; lower body cropped.",
+        "visible_text": "CLOUD"
+      },
+      "D": {
+        "clauses": {
+          "count": true,
+          "text": null
+        },
+        "full_visibility": false,
+        "notes": "Overlaid/slashed middle glyph makes exact text uncertain; one vase cropped below.",
+        "visible_text": "CL[O/\u00d8]UD"
+      }
+    }
+  },
+  {
+    "case": 14,
+    "views": {
+      "A": {
+        "clauses": {
+          "relation": false,
+          "text": true
+        },
+        "full_visibility": false,
+        "notes": "Only one bottle; required cup absent.",
+        "visible_text": "BLOOM"
+      },
+      "B": {
+        "clauses": {
+          "relation": false,
+          "text": true
+        },
+        "full_visibility": true,
+        "notes": "Cup is left of bottle, opposite requested relation; both inside frame.",
+        "visible_text": "BLOOM"
+      },
+      "C": {
+        "clauses": {
+          "relation": false,
+          "text": true
+        },
+        "full_visibility": true,
+        "notes": "Cup left of bottle, opposite requested relation; both complete.",
+        "visible_text": "BLOOM"
+      },
+      "D": {
+        "clauses": {
+          "relation": false,
+          "text": true
+        },
+        "full_visibility": false,
+        "notes": "Only bottle present; cup missing.",
+        "visible_text": "BLOOM"
+      }
+    }
+  },
+  {
+    "case": 15,
+    "views": {
+      "A": {
+        "clauses": {
+          "color": true,
+          "text": true
+        },
+        "full_visibility": true,
+        "notes": "One complete yellow vase.",
+        "visible_text": "CLOUD"
+      },
+      "B": {
+        "clauses": {
+          "color": true,
+          "text": true
+        },
+        "full_visibility": true,
+        "notes": "One complete yellow vase.",
+        "visible_text": "CLOUD"
+      },
+      "C": {
+        "clauses": {
+          "color": true,
+          "text": true
+        },
+        "full_visibility": true,
+        "notes": "One complete yellow vase.",
+        "visible_text": "CLOUD"
+      },
+      "D": {
+        "clauses": {
+          "color": true,
+          "text": true
+        },
+        "full_visibility": true,
+        "notes": "One complete yellow vase.",
+        "visible_text": "CLOUD"
+      }
+    }
+  },
+  {
+    "case": 16,
+    "views": {
+      "A": {
+        "clauses": {
+          "count": true,
+          "text": false
+        },
+        "full_visibility": true,
+        "notes": "I absent; one fully visible cup.",
+        "visible_text": "MNT"
+      },
+      "B": {
+        "clauses": {
+          "count": true,
+          "text": true
+        },
+        "full_visibility": true,
+        "notes": "One complete cup with saucer; no extra text.",
+        "visible_text": "MINT"
+      },
+      "C": {
+        "clauses": {
+          "count": true,
+          "text": false
+        },
+        "full_visibility": true,
+        "notes": "I absent; cup itself fully inside frame.",
+        "visible_text": "MNT"
+      },
+      "D": {
+        "clauses": {
+          "count": true,
+          "text": true
+        },
+        "full_visibility": true,
+        "notes": "One complete cup.",
+        "visible_text": "MINT"
+      }
+    }
+  },
+  {
+    "case": 17,
+    "views": {
+      "A": {
+        "clauses": {
+          "color": false,
+          "count": false,
+          "text": true
+        },
+        "full_visibility": false,
+        "notes": "Four stacks of green vessels; at least four bowls, upper bodies partly hidden.",
+        "visible_text": "GLOW"
+      },
+      "B": {
+        "clauses": {
+          "color": false,
+          "count": false,
+          "text": true
+        },
+        "full_visibility": true,
+        "notes": "Four separate green bowls, not three; all complete.",
+        "visible_text": "GLOW"
+      },
+      "C": {
+        "clauses": {
+          "color": false,
+          "count": false,
+          "text": true
+        },
+        "full_visibility": true,
+        "notes": "Four complete separate green bowls, not three.",
+        "visible_text": "GLOW"
+      },
+      "D": {
+        "clauses": {
+          "color": null,
+          "count": null,
+          "text": false
+        },
+        "full_visibility": null,
+        "notes": "Additional vertical stroke between O and W; three tall green vessels have ambiguous cup/bowl identity.",
+        "visible_text": "GLOIW"
+      }
+    }
+  },
+  {
+    "case": 18,
+    "views": {
+      "A": {
+        "clauses": {
+          "count": true,
+          "text": true
+        },
+        "full_visibility": true,
+        "notes": "Two complete separate apples; regularly spaced letters spell DAWN.",
+        "visible_text": "DAWN"
+      },
+      "B": {
+        "clauses": {
+          "count": true,
+          "text": true
+        },
+        "full_visibility": true,
+        "notes": "Two complete apples and readable word.",
+        "visible_text": "DAWN"
+      },
+      "C": {
+        "clauses": {
+          "count": true,
+          "text": true
+        },
+        "full_visibility": true,
+        "notes": "Two complete apples and readable word.",
+        "visible_text": "DAWN"
+      },
+      "D": {
+        "clauses": {
+          "count": true,
+          "text": true
+        },
+        "full_visibility": true,
+        "notes": "Two complete apples and readable word.",
+        "visible_text": "DAWN"
+      }
+    }
+  },
+  {
+    "case": 19,
+    "views": {
+      "A": {
+        "clauses": {
+          "count": null,
+          "text": null
+        },
+        "full_visibility": true,
+        "notes": "Native view cannot resolve small word/extra marks. One large bowl and one small cup/bowl-like vessel; exact bowl count uncertain, both complete.",
+        "visible_text": "[small bloom-like glyphs; faint marks near rim]"
+      },
+      "B": {
+        "clauses": {
+          "count": null,
+          "text": true
+        },
+        "full_visibility": true,
+        "notes": "Native word readable; large bowl plus small upright cup/bowl-like vessel, exact bowl count uncertain; both complete.",
+        "visible_text": "BLOOM"
+      },
+      "C": {
+        "clauses": {
+          "count": null,
+          "text": null
+        },
+        "full_visibility": true,
+        "notes": "Small irregular word not unambiguously exact; lower vessel cup/bowl identity uncertain; both complete.",
+        "visible_text": "[small BllooM-like glyphs]"
+      },
+      "D": {
+        "clauses": {
+          "count": false,
+          "text": true
+        },
+        "full_visibility": true,
+        "notes": "Native view: readable word and two clear bowls, both complete.",
+        "visible_text": "BLOOM"
+      }
+    }
+  },
+  {
+    "case": 20,
+    "views": {
+      "A": {
+        "clauses": {
+          "relation": false,
+          "text": false
+        },
+        "full_visibility": false,
+        "notes": "L missing; chair left of plant, reversed; chair legs, pot bottom and foliage cropped.",
+        "visible_text": "CEAR"
+      },
+      "B": {
+        "clauses": {
+          "relation": false,
+          "text": false
+        },
+        "full_visibility": false,
+        "notes": "Incomplete CLEAR; chair left of plant; lower objects and right foliage cropped.",
+        "visible_text": "C[malformed E]AR"
+      },
+      "C": {
+        "clauses": {
+          "relation": false,
+          "text": false
+        },
+        "full_visibility": false,
+        "notes": "Incomplete CLEAR; chair left of plant; foliage clipped by right boundary.",
+        "visible_text": "CL[\u039b/R-like glyphs]"
+      },
+      "D": {
+        "clauses": {
+          "relation": false,
+          "text": true
+        },
+        "full_visibility": true,
+        "notes": "Word readable; complete chair left of complete potted plant, opposite requested direction.",
+        "visible_text": "CLEAR"
+      }
+    }
+  },
+  {
+    "case": 21,
+    "views": {
+      "A": {
+        "clauses": {
+          "color": true,
+          "text": true
+        },
+        "full_visibility": false,
+        "notes": "One green chair; legs cropped below.",
+        "visible_text": "PEACH"
+      },
+      "B": {
+        "clauses": {
+          "color": true,
+          "text": true
+        },
+        "full_visibility": false,
+        "notes": "One green chair; legs cropped below.",
+        "visible_text": "PEACH"
+      },
+      "C": {
+        "clauses": {
+          "color": true,
+          "text": true
+        },
+        "full_visibility": false,
+        "notes": "One green chair; legs cropped below.",
+        "visible_text": "PEACH"
+      },
+      "D": {
+        "clauses": {
+          "color": true,
+          "text": true
+        },
+        "full_visibility": false,
+        "notes": "One green chair; legs cropped below.",
+        "visible_text": "PEACH"
+      }
+    }
+  },
+  {
+    "case": 22,
+    "views": {
+      "A": {
+        "clauses": {
+          "color": true,
+          "text": true
+        },
+        "full_visibility": false,
+        "notes": "One yellow vase, base cropped.",
+        "visible_text": "CLOUD"
+      },
+      "B": {
+        "clauses": {
+          "color": true,
+          "text": true
+        },
+        "full_visibility": false,
+        "notes": "One yellow handled vase, lower body cropped.",
+        "visible_text": "CLOUD"
+      },
+      "C": {
+        "clauses": {
+          "color": true,
+          "text": true
+        },
+        "full_visibility": false,
+        "notes": "One yellow two-handled vase, lower body cropped.",
+        "visible_text": "CLOUD"
+      },
+      "D": {
+        "clauses": {
+          "color": true,
+          "text": true
+        },
+        "full_visibility": false,
+        "notes": "One yellow handled vase, lower body cropped.",
+        "visible_text": "CLOUD"
+      }
+    }
+  },
+  {
+    "case": 23,
+    "views": {
+      "A": {
+        "clauses": {
+          "relation": true,
+          "text": true
+        },
+        "full_visibility": true,
+        "notes": "One complete apple left of one complete bowl.",
+        "visible_text": "PINE"
+      },
+      "B": {
+        "clauses": {
+          "relation": true,
+          "text": true
+        },
+        "full_visibility": true,
+        "notes": "One complete apple left of one complete bowl.",
+        "visible_text": "PINE"
+      },
+      "C": {
+        "clauses": {
+          "relation": true,
+          "text": true
+        },
+        "full_visibility": true,
+        "notes": "One complete apple left of one complete bowl.",
+        "visible_text": "PINE"
+      },
+      "D": {
+        "clauses": {
+          "relation": true,
+          "text": true
+        },
+        "full_visibility": true,
+        "notes": "One complete apple left of one complete bowl.",
+        "visible_text": "PINE"
+      }
+    }
+  },
+  {
+    "case": 24,
+    "views": {
+      "A": {
+        "clauses": {
+          "count": true,
+          "text": true
+        },
+        "full_visibility": true,
+        "notes": "One complete bowl; regular letter tracking.",
+        "visible_text": "BLOOM"
+      },
+      "B": {
+        "clauses": {
+          "count": true,
+          "text": null
+        },
+        "full_visibility": true,
+        "notes": "Second O badly distorted and spacing uneven; exact word uncertain; one complete bowl.",
+        "visible_text": "BLO[warped O] M"
+      },
+      "C": {
+        "clauses": {
+          "count": true,
+          "text": true
+        },
+        "full_visibility": true,
+        "notes": "Five legible letters and one complete bowl.",
+        "visible_text": "BLOOM"
+      },
+      "D": {
+        "clauses": {
+          "count": true,
+          "text": false
+        },
+        "full_visibility": true,
+        "notes": "Three O glyphs instead of two; one complete bowl.",
+        "visible_text": "BLOOOM"
+      }
+    }
+  },
+  {
+    "case": 25,
+    "views": {
+      "A": {
+        "clauses": {
+          "color": true,
+          "text": true
+        },
+        "full_visibility": true,
+        "notes": "One complete yellow vase.",
+        "visible_text": "CLOUD"
+      },
+      "B": {
+        "clauses": {
+          "color": true,
+          "text": true
+        },
+        "full_visibility": true,
+        "notes": "One complete yellow vase.",
+        "visible_text": "CLOUD"
+      },
+      "C": {
+        "clauses": {
+          "color": true,
+          "text": true
+        },
+        "full_visibility": true,
+        "notes": "One complete yellow vase.",
+        "visible_text": "CLOUD"
+      },
+      "D": {
+        "clauses": {
+          "color": true,
+          "text": true
+        },
+        "full_visibility": true,
+        "notes": "O/U outline overlap but five glyphs readable; one complete yellow vase.",
+        "visible_text": "CLOUD"
+      }
+    }
+  },
+  {
+    "case": 26,
+    "views": {
+      "A": {
+        "clauses": {
+          "relation": false,
+          "text": false
+        },
+        "full_visibility": false,
+        "notes": "Extra cup text; two cup/glass bodies and no identifiable bottle.",
+        "visible_text": "BLOOM; [small repeated bloom-like text on cup]"
+      },
+      "B": {
+        "clauses": {
+          "relation": false,
+          "text": false
+        },
+        "full_visibility": false,
+        "notes": "Extra lettering; two cups and a bottle behind the right cup, partly occluded.",
+        "visible_text": "BLOOM; [small repeated text on left cup]"
+      },
+      "C": {
+        "clauses": {
+          "relation": false,
+          "text": true
+        },
+        "full_visibility": false,
+        "notes": "Cup is left of bottle, reversed; lower cup and bottle cropped.",
+        "visible_text": "BLOOM"
+      },
+      "D": {
+        "clauses": {
+          "relation": false,
+          "text": true
+        },
+        "full_visibility": false,
+        "notes": "Cup left of bottle, reversed; lower bodies cropped.",
+        "visible_text": "BLOOM"
+      }
+    }
+  },
+  {
+    "case": 27,
+    "views": {
+      "A": {
+        "clauses": {
+          "color": true,
+          "text": null
+        },
+        "full_visibility": false,
+        "notes": "Native view has faint possible extra glyphs; exact text uncertain. Green chair legs cropped.",
+        "visible_text": "P [faint E?] E A C H"
+      },
+      "B": {
+        "clauses": {
+          "color": true,
+          "text": true
+        },
+        "full_visibility": false,
+        "notes": "Five stylized readable letters; one green chair with legs cropped.",
+        "visible_text": "PEACH"
+      },
+      "C": {
+        "clauses": {
+          "color": true,
+          "text": false
+        },
+        "full_visibility": false,
+        "notes": "Additional line of printed glyphs; green chair legs cropped.",
+        "visible_text": "PEACH; [smaller PL\u039b-like subline]"
+      },
+      "D": {
+        "clauses": {
+          "color": true,
+          "text": false
+        },
+        "full_visibility": false,
+        "notes": "Extra boxed P-like glyph; green chair legs cropped.",
+        "visible_text": "PE[boxed P]ACH"
+      }
+    }
+  },
+  {
+    "case": 28,
+    "views": {
+      "A": {
+        "clauses": {
+          "count": true,
+          "text": true
+        },
+        "full_visibility": true,
+        "notes": "Exactly two complete separated chairs.",
+        "visible_text": "LUNA"
+      },
+      "B": {
+        "clauses": {
+          "count": true,
+          "text": true
+        },
+        "full_visibility": true,
+        "notes": "Exactly two complete separated chairs.",
+        "visible_text": "LUNA"
+      },
+      "C": {
+        "clauses": {
+          "count": true,
+          "text": true
+        },
+        "full_visibility": true,
+        "notes": "Exactly two complete separated chairs.",
+        "visible_text": "LUNA"
+      },
+      "D": {
+        "clauses": {
+          "count": true,
+          "text": true
+        },
+        "full_visibility": true,
+        "notes": "Exactly two complete separated chairs.",
+        "visible_text": "LUNA"
+      }
+    }
+  },
+  {
+    "case": 29,
+    "views": {
+      "A": {
+        "clauses": {
+          "count": true,
+          "text": true
+        },
+        "full_visibility": true,
+        "notes": "Two complete chairs.",
+        "visible_text": "LUNA"
+      },
+      "B": {
+        "clauses": {
+          "count": true,
+          "text": true
+        },
+        "full_visibility": true,
+        "notes": "Two complete chairs.",
+        "visible_text": "LUNA"
+      },
+      "C": {
+        "clauses": {
+          "count": true,
+          "text": true
+        },
+        "full_visibility": true,
+        "notes": "Two complete chairs.",
+        "visible_text": "LUNA"
+      },
+      "D": {
+        "clauses": {
+          "count": true,
+          "text": true
+        },
+        "full_visibility": true,
+        "notes": "Two complete chairs.",
+        "visible_text": "LUNA"
+      }
+    }
+  },
+  {
+    "case": 30,
+    "views": {
+      "A": {
+        "clauses": {
+          "relation": true,
+          "text": true
+        },
+        "full_visibility": false,
+        "notes": "Chair right of potted plant; lower chair/planter cropped.",
+        "visible_text": "LOFT"
+      },
+      "B": {
+        "clauses": {
+          "relation": true,
+          "text": true
+        },
+        "full_visibility": false,
+        "notes": "Chair right of plant; feet/planter base cropped.",
+        "visible_text": "LOFT"
+      },
+      "C": {
+        "clauses": {
+          "relation": true,
+          "text": true
+        },
+        "full_visibility": false,
+        "notes": "Correct relation; bottom of chair and planter cropped.",
+        "visible_text": "LOFT"
+      },
+      "D": {
+        "clauses": {
+          "relation": true,
+          "text": true
+        },
+        "full_visibility": false,
+        "notes": "Correct relation; bottom chair/planter cropped.",
+        "visible_text": "LOFT"
+      }
+    }
+  },
+  {
+    "case": 31,
+    "views": {
+      "A": {
+        "clauses": {
+          "color": true,
+          "text": true
+        },
+        "full_visibility": true,
+        "notes": "One complete green bowl.",
+        "visible_text": "GLOW"
+      },
+      "B": {
+        "clauses": {
+          "color": true,
+          "text": true
+        },
+        "full_visibility": true,
+        "notes": "One complete green bowl.",
+        "visible_text": "GLOW"
+      },
+      "C": {
+        "clauses": {
+          "color": true,
+          "text": true
+        },
+        "full_visibility": true,
+        "notes": "One complete green bowl.",
+        "visible_text": "GLOW"
+      },
+      "D": {
+        "clauses": {
+          "color": true,
+          "text": true
+        },
+        "full_visibility": true,
+        "notes": "One complete green bowl.",
+        "visible_text": "GLOW"
+      }
+    }
+  },
+  {
+    "case": 32,
+    "views": {
+      "A": {
+        "clauses": {
+          "relation": false,
+          "text": true
+        },
+        "full_visibility": false,
+        "notes": "Cup left of bottle, reversed; bottom bodies cropped.",
+        "visible_text": "BLOOM"
+      },
+      "B": {
+        "clauses": {
+          "relation": false,
+          "text": true
+        },
+        "full_visibility": false,
+        "notes": "Cup left of bottle, reversed; bottom bodies cropped.",
+        "visible_text": "BLOOM"
+      },
+      "C": {
+        "clauses": {
+          "relation": false,
+          "text": true
+        },
+        "full_visibility": false,
+        "notes": "Cup left of bottle, reversed; bottom bodies cropped.",
+        "visible_text": "BLOOM"
+      },
+      "D": {
+        "clauses": {
+          "relation": false,
+          "text": true
+        },
+        "full_visibility": false,
+        "notes": "Cup left of bottle, reversed; lower bodies cropped.",
+        "visible_text": "BLOOM"
+      }
+    }
+  },
+  {
+    "case": 33,
+    "views": {
+      "A": {
+        "clauses": {
+          "color": true,
+          "text": true
+        },
+        "full_visibility": false,
+        "notes": "One green chair with lower legs cropped.",
+        "visible_text": "PEACH"
+      },
+      "B": {
+        "clauses": {
+          "color": true,
+          "text": true
+        },
+        "full_visibility": false,
+        "notes": "One green chair; legs cropped below.",
+        "visible_text": "PEACH"
+      },
+      "C": {
+        "clauses": {
+          "color": true,
+          "text": true
+        },
+        "full_visibility": false,
+        "notes": "One green armchair; front feet cropped at image bottom.",
+        "visible_text": "PEACH"
+      },
+      "D": {
+        "clauses": {
+          "color": true,
+          "text": false
+        },
+        "full_visibility": true,
+        "notes": "CH absent and additional small glyph line; one green armchair fully within frame.",
+        "visible_text": "PEA; [small extra printed subline]"
+      }
+    }
+  },
+  {
+    "case": 34,
+    "views": {
+      "A": {
+        "clauses": {
+          "count": true,
+          "text": false
+        },
+        "full_visibility": true,
+        "notes": "E missing; two distinct outer cups and a flat central sign, all complete; do not infer hidden cups behind sign.",
+        "visible_text": "FRSH"
+      },
+      "B": {
+        "clauses": {
+          "count": false,
+          "text": false
+        },
+        "full_visibility": true,
+        "notes": "E missing; four complete pale cups.",
+        "visible_text": "FRSH"
+      },
+      "C": {
+        "clauses": {
+          "count": false,
+          "text": false
+        },
+        "full_visibility": true,
+        "notes": "Missing E; four pale cup bodies behind large letters, not two; all within frame.",
+        "visible_text": "FRSH"
+      },
+      "D": {
+        "clauses": {
+          "count": false,
+          "text": false
+        },
+        "full_visibility": true,
+        "notes": "E absent; four distinct complete cups.",
+        "visible_text": "FRSH"
+      }
+    }
+  },
+  {
+    "case": 35,
+    "views": {
+      "A": {
+        "clauses": {
+          "count": true,
+          "text": true
+        },
+        "full_visibility": true,
+        "notes": "One complete bowl; background panel is sign support.",
+        "visible_text": "BLOOM"
+      },
+      "B": {
+        "clauses": {
+          "count": true,
+          "text": true
+        },
+        "full_visibility": true,
+        "notes": "One complete bowl.",
+        "visible_text": "BLOOM"
+      },
+      "C": {
+        "clauses": {
+          "count": true,
+          "text": true
+        },
+        "full_visibility": true,
+        "notes": "Five recognizable letters with overlapping outlines; one complete bowl.",
+        "visible_text": "BLOOM"
+      },
+      "D": {
+        "clauses": {
+          "count": null,
+          "text": true
+        },
+        "full_visibility": true,
+        "notes": "Native word readable; large bowl plus small upright cup/bowl-like vessel, exact bowl count uncertain; both complete.",
+        "visible_text": "BLOOM"
+      }
+    }
+  },
+  {
+    "case": 36,
+    "views": {
+      "A": {
+        "clauses": {
+          "count": true,
+          "text": true
+        },
+        "full_visibility": true,
+        "notes": "Two separate complete cups.",
+        "visible_text": "FRESH"
+      },
+      "B": {
+        "clauses": {
+          "count": true,
+          "text": true
+        },
+        "full_visibility": true,
+        "notes": "Two separate complete cups.",
+        "visible_text": "FRESH"
+      },
+      "C": {
+        "clauses": {
+          "count": true,
+          "text": true
+        },
+        "full_visibility": true,
+        "notes": "Two separate complete cups.",
+        "visible_text": "FRESH"
+      },
+      "D": {
+        "clauses": {
+          "count": true,
+          "text": true
+        },
+        "full_visibility": true,
+        "notes": "Two separate complete cups.",
+        "visible_text": "FRESH"
+      }
+    }
+  },
+  {
+    "case": 37,
+    "views": {
+      "A": {
+        "clauses": {
+          "color": true,
+          "text": false
+        },
+        "full_visibility": true,
+        "notes": "Extra I; one complete blue bottle.",
+        "visible_text": "PIINE"
+      },
+      "B": {
+        "clauses": {
+          "color": true,
+          "text": true
+        },
+        "full_visibility": false,
+        "notes": "Blue bottle base extends beyond frame.",
+        "visible_text": "PINE"
+      },
+      "C": {
+        "clauses": {
+          "color": true,
+          "text": true
+        },
+        "full_visibility": true,
+        "notes": "Complete blue bottle; cropped support is not a requested object.",
+        "visible_text": "PINE"
+      },
+      "D": {
+        "clauses": {
+          "color": true,
+          "text": true
+        },
+        "full_visibility": false,
+        "notes": "Blue bottle base extends beyond frame.",
+        "visible_text": "PINE"
+      }
+    }
+  },
+  {
+    "case": 38,
+    "views": {
+      "A": {
+        "clauses": {
+          "relation": null,
+          "text": true
+        },
+        "full_visibility": false,
+        "notes": "Right chair and left plant; plant support resembles another chair, so exact chair count is uncertain. Lower legs cropped.",
+        "visible_text": "CLEAR"
+      },
+      "B": {
+        "clauses": {
+          "relation": null,
+          "text": true
+        },
+        "full_visibility": false,
+        "notes": "Right chair and left plant; chair-like plant support makes exact chair count uncertain. Lower legs cropped.",
+        "visible_text": "clear"
+      },
+      "C": {
+        "clauses": {
+          "relation": false,
+          "text": true
+        },
+        "full_visibility": false,
+        "notes": "Chair is left of plant, reversing requested relation; lower objects cropped.",
+        "visible_text": "CLEAR"
+      },
+      "D": {
+        "clauses": {
+          "relation": false,
+          "text": false
+        },
+        "full_visibility": false,
+        "notes": "Missing letters; chair left of plant, reversing requested relation; lower objects cropped.",
+        "visible_text": "CER"
+      }
+    }
+  },
+  {
+    "case": 39,
+    "views": {
+      "A": {
+        "clauses": {
+          "relation": true,
+          "text": true
+        },
+        "full_visibility": true,
+        "notes": "Car left and bicycle right; both fully visible. No definite extra lettering.",
+        "visible_text": "WAVE"
+      },
+      "B": {
+        "clauses": {
+          "relation": true,
+          "text": false
+        },
+        "full_visibility": true,
+        "notes": "First letter is V rather than W. Correct relation, both objects complete.",
+        "visible_text": "VAVE"
+      },
+      "C": {
+        "clauses": {
+          "relation": true,
+          "text": null
+        },
+        "full_visibility": true,
+        "notes": "Main word legible; tiny glyph-like mark on front badge cannot be resolved. Correct relation and complete objects.",
+        "visible_text": "WAVE; [tiny front badge unclear]"
+      },
+      "D": {
+        "clauses": {
+          "relation": true,
+          "text": true
+        },
+        "full_visibility": true,
+        "notes": "Correct relation; both objects fully visible.",
+        "visible_text": "WAVE"
+      }
+    }
+  },
+  {
+    "case": 40,
+    "views": {
+      "A": {
+        "clauses": {
+          "count": false,
+          "text": true
+        },
+        "full_visibility": false,
+        "notes": "At least three cups including partial cups at image edges; count wrong and cropped.",
+        "visible_text": "FRESH"
+      },
+      "B": {
+        "clauses": {
+          "count": true,
+          "text": false
+        },
+        "full_visibility": true,
+        "notes": "Unequal internal gap separates word after E; two complete cups.",
+        "visible_text": "FRE SH"
+      },
+      "C": {
+        "clauses": {
+          "count": true,
+          "text": false
+        },
+        "full_visibility": true,
+        "notes": "Unequal internal gap separates word after E; two complete cups.",
+        "visible_text": "FRE SH"
+      },
+      "D": {
+        "clauses": {
+          "count": false,
+          "text": false
+        },
+        "full_visibility": true,
+        "notes": "Within-word gap; three complete cups instead of two.",
+        "visible_text": "FRE SH"
+      }
+    }
+  },
+  {
+    "case": 41,
+    "views": {
+      "A": {
+        "clauses": {
+          "color": true,
+          "text": true
+        },
+        "full_visibility": false,
+        "notes": "One yellow vase; its base is cropped.",
+        "visible_text": "CLOUD"
+      },
+      "B": {
+        "clauses": {
+          "color": true,
+          "text": true
+        },
+        "full_visibility": false,
+        "notes": "One yellow two-handled vase, lower body cropped.",
+        "visible_text": "CLOUD"
+      },
+      "C": {
+        "clauses": {
+          "color": true,
+          "text": true
+        },
+        "full_visibility": false,
+        "notes": "One yellow vase; its base is cropped.",
+        "visible_text": "CLOUD"
+      },
+      "D": {
+        "clauses": {
+          "color": true,
+          "text": true
+        },
+        "full_visibility": false,
+        "notes": "One yellow vase; its base is cropped.",
+        "visible_text": "CLOUD"
+      }
+    }
+  },
+  {
+    "case": 42,
+    "views": {
+      "A": {
+        "clauses": {
+          "color": true,
+          "text": true
+        },
+        "full_visibility": false,
+        "notes": "Green chair front legs cropped.",
+        "visible_text": "PEACH"
+      },
+      "B": {
+        "clauses": {
+          "color": true,
+          "text": true
+        },
+        "full_visibility": false,
+        "notes": "Green chair front legs cropped.",
+        "visible_text": "PEACH"
+      },
+      "C": {
+        "clauses": {
+          "color": true,
+          "text": false
+        },
+        "full_visibility": false,
+        "notes": "Missing E and H. Green chair front legs cropped.",
+        "visible_text": "PAC"
+      },
+      "D": {
+        "clauses": {
+          "color": true,
+          "text": true
+        },
+        "full_visibility": false,
+        "notes": "Green chair front legs cropped.",
+        "visible_text": "PEACH"
+      }
+    }
+  },
+  {
+    "case": 43,
+    "views": {
+      "A": {
+        "clauses": {
+          "count": true,
+          "text": true
+        },
+        "full_visibility": true,
+        "notes": "One complete bowl.",
+        "visible_text": "BLOOM"
+      },
+      "B": {
+        "clauses": {
+          "count": true,
+          "text": true
+        },
+        "full_visibility": true,
+        "notes": "One complete bowl; regular letter tracking.",
+        "visible_text": "BLOOM"
+      },
+      "C": {
+        "clauses": {
+          "count": true,
+          "text": true
+        },
+        "full_visibility": true,
+        "notes": "One complete bowl.",
+        "visible_text": "BLOOM"
+      },
+      "D": {
+        "clauses": {
+          "count": true,
+          "text": true
+        },
+        "full_visibility": true,
+        "notes": "One complete bowl.",
+        "visible_text": "BLOOM"
+      }
+    }
+  },
+  {
+    "case": 44,
+    "views": {
+      "A": {
+        "clauses": {
+          "color": true,
+          "text": true
+        },
+        "full_visibility": true,
+        "notes": "One complete red cup; pale letters legible.",
+        "visible_text": "FRESH"
+      },
+      "B": {
+        "clauses": {
+          "color": true,
+          "text": true
+        },
+        "full_visibility": true,
+        "notes": "One complete red cup.",
+        "visible_text": "FRESH"
+      },
+      "C": {
+        "clauses": {
+          "color": true,
+          "text": true
+        },
+        "full_visibility": true,
+        "notes": "One complete red cup.",
+        "visible_text": "FRESH"
+      },
+      "D": {
+        "clauses": {
+          "color": true,
+          "text": true
+        },
+        "full_visibility": true,
+        "notes": "One complete red cup.",
+        "visible_text": "FRESH"
+      }
+    }
+  },
+  {
+    "case": 45,
+    "views": {
+      "A": {
+        "clauses": {
+          "relation": false,
+          "text": false
+        },
+        "full_visibility": false,
+        "notes": "Requested MINT missing; cup is right of left bottle, with an additional right vessel. Objects cropped.",
+        "visible_text": "[faint I] N I"
+      },
+      "B": {
+        "clauses": {
+          "relation": false,
+          "text": true
+        },
+        "full_visibility": false,
+        "notes": "Cup is right of left bottle; additional right vessel. Lower objects cropped.",
+        "visible_text": "MINT"
+      },
+      "C": {
+        "clauses": {
+          "relation": false,
+          "text": false
+        },
+        "full_visibility": false,
+        "notes": "Extra vertical letters. Cup right of left bottle; additional faint bottle at right. Left bottle cropped.",
+        "visible_text": "MIINIT"
+      },
+      "D": {
+        "clauses": {
+          "relation": false,
+          "text": true
+        },
+        "full_visibility": false,
+        "notes": "Cup right of left bottle, additional faint right bottle. Left bottle cropped.",
+        "visible_text": "MINT"
+      }
+    }
+  },
+  {
+    "case": 46,
+    "views": {
+      "A": {
+        "clauses": {
+          "relation": true,
+          "text": true
+        },
+        "full_visibility": true,
+        "notes": "One complete apple left of one complete bowl.",
+        "visible_text": "PINE"
+      },
+      "B": {
+        "clauses": {
+          "relation": true,
+          "text": true
+        },
+        "full_visibility": true,
+        "notes": "One apple left of one bowl, both complete.",
+        "visible_text": "PINE"
+      },
+      "C": {
+        "clauses": {
+          "relation": null,
+          "text": true
+        },
+        "full_visibility": true,
+        "notes": "Apple left of deep vessel; vessel could be cup or bowl, so required bowl identity uncertain. Objects complete.",
+        "visible_text": "PINE"
+      },
+      "D": {
+        "clauses": {
+          "relation": false,
+          "text": true
+        },
+        "full_visibility": false,
+        "notes": "Two apples, one partly inside the bowl; wrong count and substantial occlusion.",
+        "visible_text": "PINE"
+      }
+    }
+  },
+  {
+    "case": 47,
+    "views": {
+      "A": {
+        "clauses": {
+          "relation": null,
+          "text": false
+        },
+        "full_visibility": false,
+        "notes": "Unequal gap divides word. Very faint and partly hidden vessels prevent reliable identity/count; required objects not clearly complete.",
+        "visible_text": "M INT"
+      },
+      "B": {
+        "clauses": {
+          "relation": null,
+          "text": false
+        },
+        "full_visibility": false,
+        "notes": "Unequal gap divides word. Mostly hidden/faint vessels; right cup cropped, exact required identities uncertain.",
+        "visible_text": "M INT"
+      },
+      "C": {
+        "clauses": {
+          "relation": false,
+          "text": false
+        },
+        "full_visibility": false,
+        "notes": "Missing T and extra vessel markings. Multiple cups to the right of a partly occluded bottle; wrong counts/direction and cropped or hidden objects.",
+        "visible_text": "M IN; [extra markings on vessels]"
+      },
+      "D": {
+        "clauses": {
+          "relation": false,
+          "text": false
+        },
+        "full_visibility": false,
+        "notes": "Unequal gap divides word. Multiple cups including cropped right cup; required exact counts not met.",
+        "visible_text": "M INT"
+      }
+    }
+  },
+  {
+    "case": 48,
+    "views": {
+      "A": {
+        "clauses": {
+          "color": true,
+          "text": true
+        },
+        "full_visibility": true,
+        "notes": "One complete green bowl.",
+        "visible_text": "GLOW"
+      },
+      "B": {
+        "clauses": {
+          "color": true,
+          "text": true
+        },
+        "full_visibility": true,
+        "notes": "One complete green bowl.",
+        "visible_text": "GLOW"
+      },
+      "C": {
+        "clauses": {
+          "color": true,
+          "text": true
+        },
+        "full_visibility": true,
+        "notes": "One complete green bowl.",
+        "visible_text": "GLOW"
+      },
+      "D": {
+        "clauses": {
+          "color": true,
+          "text": true
+        },
+        "full_visibility": true,
+        "notes": "One complete green bowl.",
+        "visible_text": "GLOW"
+      }
+    }
+  },
+  {
+    "case": 49,
+    "views": {
+      "A": {
+        "clauses": {
+          "count": true,
+          "text": true
+        },
+        "full_visibility": true,
+        "notes": "Two separate complete cups.",
+        "visible_text": "FRESH"
+      },
+      "B": {
+        "clauses": {
+          "count": true,
+          "text": true
+        },
+        "full_visibility": true,
+        "notes": "Two complete separate cups.",
+        "visible_text": "FRESH"
+      },
+      "C": {
+        "clauses": {
+          "count": true,
+          "text": true
+        },
+        "full_visibility": true,
+        "notes": "Two complete separate cups.",
+        "visible_text": "FRESH"
+      },
+      "D": {
+        "clauses": {
+          "count": true,
+          "text": false
+        },
+        "full_visibility": true,
+        "notes": "Missing E; two complete cups.",
+        "visible_text": "FRSH"
+      }
+    }
+  },
+  {
+    "case": 50,
+    "views": {
+      "A": {
+        "clauses": {
+          "relation": true,
+          "text": true
+        },
+        "full_visibility": true,
+        "notes": "One apple left of one bowl, both complete.",
+        "visible_text": "PINE"
+      },
+      "B": {
+        "clauses": {
+          "relation": true,
+          "text": true
+        },
+        "full_visibility": true,
+        "notes": "One apple left of one bowl; both complete.",
+        "visible_text": "PINE"
+      },
+      "C": {
+        "clauses": {
+          "relation": true,
+          "text": true
+        },
+        "full_visibility": true,
+        "notes": "One apple left of one bowl; both complete.",
+        "visible_text": "PINE"
+      },
+      "D": {
+        "clauses": {
+          "relation": true,
+          "text": true
+        },
+        "full_visibility": true,
+        "notes": "One apple left of one bowl; both complete.",
+        "visible_text": "PINE"
+      }
+    }
+  }
+]

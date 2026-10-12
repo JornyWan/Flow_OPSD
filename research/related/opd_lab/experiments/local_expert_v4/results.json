@@ -1,0 +1,2502 @@
+{
+  "adjacent_ray": {
+    "0->0.25": {
+      "joint_success_delta": {
+        "ci95": [
+          0.0,
+          0.13636363636363635
+        ],
+        "mean": 0.045454545454545456,
+        "observations": 22,
+        "prompts": 22
+      },
+      "losing_existing_clause_ids": [],
+      "negative": 2,
+      "per_query": {
+        "jp1-train-color-05": 0.0,
+        "jp1-train-color-08": 0.031746031746031744,
+        "jp1-train-color-09": 0.0,
+        "jp1-train-color-10": 0.0,
+        "jp1-train-color-14": -0.05000000000000002,
+        "jp1-train-color-15": -0.2,
+        "jp1-train-count-00": 0.0,
+        "jp1-train-count-06": 0.0,
+        "jp1-train-count-12": 0.0,
+        "jp1-train-count-13": 0.0,
+        "jp1-train-count-14": 0.0,
+        "jp1-train-count-15": 0.0,
+        "jp1-train-count_color-03": 0.0,
+        "jp1-train-count_color-07": 0.5833333333333333,
+        "jp1-train-count_color-10": 0.0,
+        "jp1-train-count_color-15": 0.0,
+        "jp1-train-relation-02": 0.0,
+        "jp1-train-relation-03": 0.0,
+        "jp1-train-relation-07": 0.020833333333333315,
+        "jp1-train-relation-08": 0.0,
+        "jp1-train-relation-12": 0.11249999999999999,
+        "jp1-train-relation-13": 0.0
+      },
+      "positive": 4,
+      "queries_with_existing_clause": 16,
+      "utility": {
+        "ci95": [
+          -0.021551677489177492,
+          0.08353896103896079
+        ],
+        "mean": 0.02265512265512265,
+        "observations": 22,
+        "prompts": 22
+      }
+    },
+    "0.25->0.5": {
+      "joint_success_delta": {
+        "ci95": [
+          -0.09090909090909091,
+          0.22727272727272727
+        ],
+        "mean": 0.045454545454545456,
+        "observations": 22,
+        "prompts": 22
+      },
+      "losing_existing_clause_ids": [
+        "jp1-train-relation-12",
+        "jp1-train-count_color-07",
+        "jp1-train-count-15"
+      ],
+      "negative": 5,
+      "per_query": {
+        "jp1-train-color-05": 0.0,
+        "jp1-train-color-08": 0.06944444444444448,
+        "jp1-train-color-09": 0.0,
+        "jp1-train-color-10": 0.0,
+        "jp1-train-color-14": 0.033333333333333354,
+        "jp1-train-color-15": 0.75,
+        "jp1-train-count-00": 0.75,
+        "jp1-train-count-06": 0.0,
+        "jp1-train-count-12": 0.0,
+        "jp1-train-count-13": 0.0,
+        "jp1-train-count-14": 0.0,
+        "jp1-train-count-15": -0.13333333333333336,
+        "jp1-train-count_color-03": 0.0,
+        "jp1-train-count_color-07": -0.8333333333333334,
+        "jp1-train-count_color-10": 0.07407407407407407,
+        "jp1-train-count_color-15": 0.0,
+        "jp1-train-relation-02": -0.08333333333333331,
+        "jp1-train-relation-03": 0.0,
+        "jp1-train-relation-07": 0.0625,
+        "jp1-train-relation-08": 0.0,
+        "jp1-train-relation-12": -0.15833333333333333,
+        "jp1-train-relation-13": -0.08333333333333331
+      },
+      "positive": 6,
+      "queries_with_existing_clause": 17,
+      "utility": {
+        "ci95": [
+          -0.10067550505050507,
+          0.15477956649831648
+        ],
+        "mean": 0.020349326599326596,
+        "observations": 22,
+        "prompts": 22
+      }
+    },
+    "0.5->0.75": {
+      "joint_success_delta": {
+        "ci95": [
+          0.0,
+          0.45454545454545453
+        ],
+        "mean": 0.22727272727272727,
+        "observations": 22,
+        "prompts": 22
+      },
+      "losing_existing_clause_ids": [
+        "jp1-train-color-15",
+        "jp1-train-relation-07"
+      ],
+      "negative": 3,
+      "per_query": {
+        "jp1-train-color-05": 0.5625,
+        "jp1-train-color-08": -0.041666666666666685,
+        "jp1-train-color-09": 0.0,
+        "jp1-train-color-10": 0.5416666666666666,
+        "jp1-train-color-14": 0.16666666666666666,
+        "jp1-train-color-15": -0.6,
+        "jp1-train-count-00": 0.0,
+        "jp1-train-count-06": 0.0,
+        "jp1-train-count-12": 0.0,
+        "jp1-train-count-13": 0.25,
+        "jp1-train-count-14": 0.0,
+        "jp1-train-count-15": 0.125,
+        "jp1-train-count_color-03": 0.5333333333333334,
+        "jp1-train-count_color-07": 0.8333333333333334,
+        "jp1-train-count_color-10": 0.0,
+        "jp1-train-count_color-15": 0.0,
+        "jp1-train-relation-02": 0.75,
+        "jp1-train-relation-03": 0.6666666666666667,
+        "jp1-train-relation-07": 0.10416666666666669,
+        "jp1-train-relation-08": 0.0,
+        "jp1-train-relation-12": -0.041666666666666685,
+        "jp1-train-relation-13": 0.08333333333333331
+      },
+      "positive": 11,
+      "queries_with_existing_clause": 16,
+      "utility": {
+        "ci95": [
+          0.04336647727272728,
+          0.32216382575757574
+        ],
+        "mean": 0.17878787878787883,
+        "observations": 22,
+        "prompts": 22
+      }
+    },
+    "0.75->1": {
+      "joint_success_delta": {
+        "ci95": [
+          0.2727272727272727,
+          0.6818181818181818
+        ],
+        "mean": 0.45454545454545453,
+        "observations": 22,
+        "prompts": 22
+      },
+      "losing_existing_clause_ids": [],
+      "negative": 0,
+      "per_query": {
+        "jp1-train-color-05": 0.0,
+        "jp1-train-color-08": 0.5833333333333333,
+        "jp1-train-color-09": 0.6,
+        "jp1-train-color-10": 0.0,
+        "jp1-train-color-14": 0.0,
+        "jp1-train-color-15": 0.6,
+        "jp1-train-count-00": 0.0,
+        "jp1-train-count-06": 0.75,
+        "jp1-train-count-12": 0.75,
+        "jp1-train-count-13": 0.0,
+        "jp1-train-count-14": 0.625,
+        "jp1-train-count-15": 0.55,
+        "jp1-train-count_color-03": 0.0,
+        "jp1-train-count_color-07": 0.0,
+        "jp1-train-count_color-10": 0.0,
+        "jp1-train-count_color-15": 0.033333333333333354,
+        "jp1-train-relation-02": 0.0,
+        "jp1-train-relation-03": 0.0,
+        "jp1-train-relation-07": 0.5625,
+        "jp1-train-relation-08": 0.10416666666666667,
+        "jp1-train-relation-12": 0.75,
+        "jp1-train-relation-13": 0.6666666666666667
+      },
+      "positive": 12,
+      "queries_with_existing_clause": 20,
+      "utility": {
+        "ci95": [
+          0.17384943181818183,
+          0.4329640151515151
+        ],
+        "mean": 0.2988636363636364,
+        "observations": 22,
+        "prompts": 22
+      }
+    }
+  },
+  "arms": {
+    "fit2": {
+      "actual_minus_noop": {
+        "joint_success_delta": {
+          "ci95": [
+            0.045454545454545456,
+            0.4090909090909091
+          ],
+          "mean": 0.22727272727272727,
+          "observations": 22,
+          "prompts": 22
+        },
+        "losing_existing_clause_ids": [
+          "jp1-train-count_color-07"
+        ],
+        "negative": 1,
+        "per_query": {
+          "jp1-train-color-05": 0.0,
+          "jp1-train-color-08": 0.6428571428571428,
+          "jp1-train-color-09": 0.0,
+          "jp1-train-color-10": 0.5416666666666666,
+          "jp1-train-color-14": 0.0,
+          "jp1-train-color-15": 0.00833333333333336,
+          "jp1-train-count-00": 0.75,
+          "jp1-train-count-06": 0.0,
+          "jp1-train-count-12": 0.0,
+          "jp1-train-count-13": 0.0,
+          "jp1-train-count-14": 0.0,
+          "jp1-train-count-15": 0.0,
+          "jp1-train-count_color-03": 0.5333333333333334,
+          "jp1-train-count_color-07": -0.041666666666666685,
+          "jp1-train-count_color-10": 0.0,
+          "jp1-train-count_color-15": 0.0,
+          "jp1-train-relation-02": 0.6666666666666667,
+          "jp1-train-relation-03": 0.0,
+          "jp1-train-relation-07": 0.0,
+          "jp1-train-relation-08": 0.0,
+          "jp1-train-relation-12": 0.09999999999999998,
+          "jp1-train-relation-13": 0.0
+        },
+        "positive": 7,
+        "queries_with_existing_clause": 16,
+        "utility": {
+          "ci95": [
+            0.03862824675324675,
+            0.2644629329004328
+          ],
+          "mean": 0.145508658008658,
+          "observations": 22,
+          "prompts": 22
+        }
+      },
+      "geometry": {
+        "cosine_mean": 0.4960087074600846,
+        "gamma_mean": 0.11447488686309872,
+        "gamma_range": [
+          -0.023186770508955238,
+          0.3868783719022968
+        ],
+        "orthogonal_movement_energy_fraction_mean": 0.7094164014573582,
+        "outside_unit_interval": 1
+      },
+      "projected_minus_actual": {
+        "joint_success_delta": {
+          "ci95": [
+            -0.36363636363636365,
+            -0.045454545454545456
+          ],
+          "mean": -0.18181818181818182,
+          "observations": 22,
+          "prompts": 22
+        },
+        "losing_existing_clause_ids": [
+          "jp1-train-relation-12",
+          "jp1-train-count_color-07",
+          "jp1-train-count_color-03",
+          "jp1-train-relation-02",
+          "jp1-train-relation-03",
+          "jp1-train-color-08",
+          "jp1-train-count-00"
+        ],
+        "negative": 8,
+        "per_query": {
+          "jp1-train-color-05": 0.0,
+          "jp1-train-color-08": -0.625,
+          "jp1-train-color-09": 0.0,
+          "jp1-train-color-10": 0.0,
+          "jp1-train-color-14": 0.0,
+          "jp1-train-color-15": -0.00833333333333336,
+          "jp1-train-count-00": -0.75,
+          "jp1-train-count-06": 0.0,
+          "jp1-train-count-12": 0.0,
+          "jp1-train-count-13": 0.0,
+          "jp1-train-count-14": 0.0,
+          "jp1-train-count-15": 0.0,
+          "jp1-train-count_color-03": -0.5333333333333334,
+          "jp1-train-count_color-07": -0.024999999999999967,
+          "jp1-train-count_color-10": 0.0,
+          "jp1-train-count_color-15": 0.0,
+          "jp1-train-relation-02": -0.6666666666666667,
+          "jp1-train-relation-03": -0.0625,
+          "jp1-train-relation-07": 0.0,
+          "jp1-train-relation-08": 0.0,
+          "jp1-train-relation-12": -0.09999999999999998,
+          "jp1-train-relation-13": 0.0
+        },
+        "positive": 0,
+        "queries_with_existing_clause": 17,
+        "utility": {
+          "ci95": [
+            -0.24185606060606063,
+            -0.03427083333333338
+          ],
+          "mean": -0.1259469696969697,
+          "observations": 22,
+          "prompts": 22
+        }
+      },
+      "projected_minus_noop": {
+        "joint_success_delta": {
+          "ci95": [
+            0.0,
+            0.13636363636363635
+          ],
+          "mean": 0.045454545454545456,
+          "observations": 22,
+          "prompts": 22
+        },
+        "losing_existing_clause_ids": [
+          "jp1-train-count_color-07",
+          "jp1-train-relation-03"
+        ],
+        "negative": 2,
+        "per_query": {
+          "jp1-train-color-05": 0.0,
+          "jp1-train-color-08": 0.01785714285714285,
+          "jp1-train-color-09": 0.0,
+          "jp1-train-color-10": 0.5416666666666666,
+          "jp1-train-color-14": 0.0,
+          "jp1-train-color-15": 0.0,
+          "jp1-train-count-00": 0.0,
+          "jp1-train-count-06": 0.0,
+          "jp1-train-count-12": 0.0,
+          "jp1-train-count-13": 0.0,
+          "jp1-train-count-14": 0.0,
+          "jp1-train-count-15": 0.0,
+          "jp1-train-count_color-03": 0.0,
+          "jp1-train-count_color-07": -0.06666666666666665,
+          "jp1-train-count_color-10": 0.0,
+          "jp1-train-count_color-15": 0.0,
+          "jp1-train-relation-02": 0.0,
+          "jp1-train-relation-03": -0.0625,
+          "jp1-train-relation-07": 0.0,
+          "jp1-train-relation-08": 0.0,
+          "jp1-train-relation-12": 0.0,
+          "jp1-train-relation-13": 0.0
+        },
+        "positive": 2,
+        "queries_with_existing_clause": 16,
+        "utility": {
+          "ci95": [
+            -0.011742424242424242,
+            0.07346793831168826
+          ],
+          "mean": 0.01956168831168831,
+          "observations": 22,
+          "prompts": 22
+        }
+      },
+      "target_minus_projected": {
+        "joint_success_delta": {
+          "ci95": [
+            0.5454545454545454,
+            0.9090909090909091
+          ],
+          "mean": 0.7272727272727273,
+          "observations": 22,
+          "prompts": 22
+        },
+        "losing_existing_clause_ids": [],
+        "negative": 0,
+        "per_query": {
+          "jp1-train-color-05": 0.5625,
+          "jp1-train-color-08": 0.625,
+          "jp1-train-color-09": 0.6,
+          "jp1-train-color-10": 0.0,
+          "jp1-train-color-14": 0.15,
+          "jp1-train-color-15": 0.55,
+          "jp1-train-count-00": 0.75,
+          "jp1-train-count-06": 0.75,
+          "jp1-train-count-12": 0.75,
+          "jp1-train-count-13": 0.25,
+          "jp1-train-count-14": 0.625,
+          "jp1-train-count-15": 0.5416666666666666,
+          "jp1-train-count_color-03": 0.5333333333333334,
+          "jp1-train-count_color-07": 0.6499999999999999,
+          "jp1-train-count_color-10": 0.07407407407407407,
+          "jp1-train-count_color-15": 0.033333333333333354,
+          "jp1-train-relation-02": 0.6666666666666667,
+          "jp1-train-relation-03": 0.7291666666666667,
+          "jp1-train-relation-07": 0.75,
+          "jp1-train-relation-08": 0.10416666666666667,
+          "jp1-train-relation-12": 0.6625,
+          "jp1-train-relation-13": 0.6666666666666667
+        },
+        "positive": 21,
+        "queries_with_existing_clause": 15,
+        "utility": {
+          "ci95": [
+            0.39127630471380465,
+            0.6032196969696969
+          ],
+          "mean": 0.501094276094276,
+          "observations": 22,
+          "prompts": 22
+        }
+      }
+    },
+    "fit2_keep": {
+      "actual_minus_noop": {
+        "joint_success_delta": {
+          "ci95": [
+            0.045454545454545456,
+            0.4090909090909091
+          ],
+          "mean": 0.22727272727272727,
+          "observations": 22,
+          "prompts": 22
+        },
+        "losing_existing_clause_ids": [
+          "jp1-train-count_color-07"
+        ],
+        "negative": 1,
+        "per_query": {
+          "jp1-train-color-05": 0.0,
+          "jp1-train-color-08": 0.6428571428571428,
+          "jp1-train-color-09": 0.0,
+          "jp1-train-color-10": 0.5416666666666666,
+          "jp1-train-color-14": 0.0,
+          "jp1-train-color-15": 0.00833333333333336,
+          "jp1-train-count-00": 0.75,
+          "jp1-train-count-06": 0.0,
+          "jp1-train-count-12": 0.0,
+          "jp1-train-count-13": 0.0,
+          "jp1-train-count-14": 0.0,
+          "jp1-train-count-15": 0.0,
+          "jp1-train-count_color-03": 0.5333333333333334,
+          "jp1-train-count_color-07": -0.041666666666666685,
+          "jp1-train-count_color-10": 0.0,
+          "jp1-train-count_color-15": 0.0,
+          "jp1-train-relation-02": 0.6666666666666667,
+          "jp1-train-relation-03": 0.0,
+          "jp1-train-relation-07": 0.0,
+          "jp1-train-relation-08": 0.0,
+          "jp1-train-relation-12": 0.04999999999999999,
+          "jp1-train-relation-13": 0.0
+        },
+        "positive": 7,
+        "queries_with_existing_clause": 16,
+        "utility": {
+          "ci95": [
+            0.033712121212121214,
+            0.26259334415584396
+          ],
+          "mean": 0.14323593073593074,
+          "observations": 22,
+          "prompts": 22
+        }
+      },
+      "geometry": {
+        "cosine_mean": 0.49954375171883086,
+        "gamma_mean": 0.11261541387689332,
+        "gamma_range": [
+          -0.02225895816687822,
+          0.3858303562215185
+        ],
+        "orthogonal_movement_energy_fraction_mean": 0.7053330219103011,
+        "outside_unit_interval": 1
+      },
+      "projected_minus_actual": {
+        "joint_success_delta": {
+          "ci95": [
+            -0.2727272727272727,
+            0.0
+          ],
+          "mean": -0.13636363636363635,
+          "observations": 22,
+          "prompts": 22
+        },
+        "losing_existing_clause_ids": [
+          "jp1-train-count_color-07",
+          "jp1-train-count_color-03",
+          "jp1-train-relation-02",
+          "jp1-train-relation-03",
+          "jp1-train-color-08"
+        ],
+        "negative": 7,
+        "per_query": {
+          "jp1-train-color-05": 0.0,
+          "jp1-train-color-08": -0.625,
+          "jp1-train-color-09": 0.0,
+          "jp1-train-color-10": 0.0,
+          "jp1-train-color-14": 0.0,
+          "jp1-train-color-15": -0.00833333333333336,
+          "jp1-train-count-00": 0.0,
+          "jp1-train-count-06": 0.0,
+          "jp1-train-count-12": 0.0,
+          "jp1-train-count-13": 0.0,
+          "jp1-train-count-14": 0.0,
+          "jp1-train-count-15": 0.0,
+          "jp1-train-count_color-03": -0.5333333333333334,
+          "jp1-train-count_color-07": -0.041666666666666685,
+          "jp1-train-count_color-10": 0.0,
+          "jp1-train-count_color-15": 0.0,
+          "jp1-train-relation-02": -0.6666666666666667,
+          "jp1-train-relation-03": -0.0625,
+          "jp1-train-relation-07": 0.0,
+          "jp1-train-relation-08": 0.0,
+          "jp1-train-relation-12": -0.04999999999999999,
+          "jp1-train-relation-13": 0.0
+        },
+        "positive": 0,
+        "queries_with_existing_clause": 16,
+        "utility": {
+          "ci95": [
+            -0.18258522727272727,
+            -0.00946496212121215
+          ],
+          "mean": -0.0903409090909091,
+          "observations": 22,
+          "prompts": 22
+        }
+      },
+      "projected_minus_noop": {
+        "joint_success_delta": {
+          "ci95": [
+            0.0,
+            0.22727272727272727
+          ],
+          "mean": 0.09090909090909091,
+          "observations": 22,
+          "prompts": 22
+        },
+        "losing_existing_clause_ids": [
+          "jp1-train-count_color-07",
+          "jp1-train-relation-03"
+        ],
+        "negative": 2,
+        "per_query": {
+          "jp1-train-color-05": 0.0,
+          "jp1-train-color-08": 0.01785714285714285,
+          "jp1-train-color-09": 0.0,
+          "jp1-train-color-10": 0.5416666666666666,
+          "jp1-train-color-14": 0.0,
+          "jp1-train-color-15": 0.0,
+          "jp1-train-count-00": 0.75,
+          "jp1-train-count-06": 0.0,
+          "jp1-train-count-12": 0.0,
+          "jp1-train-count-13": 0.0,
+          "jp1-train-count-14": 0.0,
+          "jp1-train-count-15": 0.0,
+          "jp1-train-count_color-03": 0.0,
+          "jp1-train-count_color-07": -0.08333333333333337,
+          "jp1-train-count_color-10": 0.0,
+          "jp1-train-count_color-15": 0.0,
+          "jp1-train-relation-02": 0.0,
+          "jp1-train-relation-03": -0.0625,
+          "jp1-train-relation-07": 0.0,
+          "jp1-train-relation-08": 0.0,
+          "jp1-train-relation-12": 0.0,
+          "jp1-train-relation-13": 0.0
+        },
+        "positive": 3,
+        "queries_with_existing_clause": 16,
+        "utility": {
+          "ci95": [
+            -0.01041666666666667,
+            0.13906926406926404
+          ],
+          "mean": 0.05289502164502165,
+          "observations": 22,
+          "prompts": 22
+        }
+      },
+      "target_minus_projected": {
+        "joint_success_delta": {
+          "ci95": [
+            0.5,
+            0.8636363636363636
+          ],
+          "mean": 0.6818181818181818,
+          "observations": 22,
+          "prompts": 22
+        },
+        "losing_existing_clause_ids": [],
+        "negative": 0,
+        "per_query": {
+          "jp1-train-color-05": 0.5625,
+          "jp1-train-color-08": 0.625,
+          "jp1-train-color-09": 0.6,
+          "jp1-train-color-10": 0.0,
+          "jp1-train-color-14": 0.15,
+          "jp1-train-color-15": 0.55,
+          "jp1-train-count-00": 0.0,
+          "jp1-train-count-06": 0.75,
+          "jp1-train-count-12": 0.75,
+          "jp1-train-count-13": 0.25,
+          "jp1-train-count-14": 0.625,
+          "jp1-train-count-15": 0.5416666666666666,
+          "jp1-train-count_color-03": 0.5333333333333334,
+          "jp1-train-count_color-07": 0.6666666666666667,
+          "jp1-train-count_color-10": 0.07407407407407407,
+          "jp1-train-count_color-15": 0.033333333333333354,
+          "jp1-train-relation-02": 0.6666666666666667,
+          "jp1-train-relation-03": 0.7291666666666667,
+          "jp1-train-relation-07": 0.75,
+          "jp1-train-relation-08": 0.10416666666666667,
+          "jp1-train-relation-12": 0.6625,
+          "jp1-train-relation-13": 0.6666666666666667
+        },
+        "positive": 20,
+        "queries_with_existing_clause": 15,
+        "utility": {
+          "ci95": [
+            0.3527893518518519,
+            0.5752035984848484
+          ],
+          "mean": 0.4677609427609427,
+          "observations": 22,
+          "prompts": 22
+        }
+      }
+    },
+    "fit4": {
+      "actual_minus_noop": {
+        "joint_success_delta": {
+          "ci95": [
+            0.0,
+            0.22727272727272727
+          ],
+          "mean": 0.09090909090909091,
+          "observations": 22,
+          "prompts": 22
+        },
+        "losing_existing_clause_ids": [
+          "jp1-train-count_color-07"
+        ],
+        "negative": 5,
+        "per_query": {
+          "jp1-train-color-05": -0.0625,
+          "jp1-train-color-08": 0.6428571428571428,
+          "jp1-train-color-09": -0.06666666666666665,
+          "jp1-train-color-10": 0.0,
+          "jp1-train-color-14": 0.0,
+          "jp1-train-color-15": -0.2,
+          "jp1-train-count-00": 0.75,
+          "jp1-train-count-06": 0.0,
+          "jp1-train-count-12": 0.0,
+          "jp1-train-count-13": 0.0,
+          "jp1-train-count-14": 0.0,
+          "jp1-train-count-15": -0.00833333333333336,
+          "jp1-train-count_color-03": -0.06666666666666665,
+          "jp1-train-count_color-07": 0.016666666666666663,
+          "jp1-train-count_color-10": 0.07407407407407407,
+          "jp1-train-count_color-15": 0.0,
+          "jp1-train-relation-02": 0.0,
+          "jp1-train-relation-03": 0.0,
+          "jp1-train-relation-07": 0.08750000000000002,
+          "jp1-train-relation-08": 0.0,
+          "jp1-train-relation-12": 0.0,
+          "jp1-train-relation-13": 0.0
+        },
+        "positive": 5,
+        "queries_with_existing_clause": 16,
+        "utility": {
+          "ci95": [
+            -0.020307239057239055,
+            0.15102054773929768
+          ],
+          "mean": 0.053042328042328044,
+          "observations": 22,
+          "prompts": 22
+        }
+      },
+      "geometry": {
+        "cosine_mean": 0.5477295633084455,
+        "gamma_mean": 0.20880398797850608,
+        "gamma_range": [
+          -0.03735408846124128,
+          0.6662234046611283
+        ],
+        "orthogonal_movement_energy_fraction_mean": 0.6592103584847885,
+        "outside_unit_interval": 1
+      },
+      "projected_minus_actual": {
+        "joint_success_delta": {
+          "ci95": [
+            -0.13636363636363635,
+            0.13636363636363635
+          ],
+          "mean": 0.0,
+          "observations": 22,
+          "prompts": 22
+        },
+        "losing_existing_clause_ids": [
+          "jp1-train-relation-03",
+          "jp1-train-count-00"
+        ],
+        "negative": 6,
+        "per_query": {
+          "jp1-train-color-05": 0.0625,
+          "jp1-train-color-08": 0.0,
+          "jp1-train-color-09": 0.06666666666666665,
+          "jp1-train-color-10": 0.5416666666666666,
+          "jp1-train-color-14": 0.0,
+          "jp1-train-color-15": 0.0,
+          "jp1-train-count-00": -0.75,
+          "jp1-train-count-06": 0.0,
+          "jp1-train-count-12": 0.0,
+          "jp1-train-count-13": 0.0,
+          "jp1-train-count-14": 0.0,
+          "jp1-train-count-15": 0.00833333333333336,
+          "jp1-train-count_color-03": 0.06666666666666665,
+          "jp1-train-count_color-07": -0.016666666666666663,
+          "jp1-train-count_color-10": 0.0,
+          "jp1-train-count_color-15": 0.0,
+          "jp1-train-relation-02": 0.0,
+          "jp1-train-relation-03": -0.125,
+          "jp1-train-relation-07": -0.1916666666666667,
+          "jp1-train-relation-08": 0.0,
+          "jp1-train-relation-12": -0.10416666666666669,
+          "jp1-train-relation-13": -0.08333333333333331
+        },
+        "positive": 5,
+        "queries_with_existing_clause": 16,
+        "utility": {
+          "ci95": [
+            -0.11609848484848485,
+            0.05436079545454542
+          ],
+          "mean": -0.02386363636363636,
+          "observations": 22,
+          "prompts": 22
+        }
+      },
+      "projected_minus_noop": {
+        "joint_success_delta": {
+          "ci95": [
+            0.0,
+            0.22727272727272727
+          ],
+          "mean": 0.09090909090909091,
+          "observations": 22,
+          "prompts": 22
+        },
+        "losing_existing_clause_ids": [
+          "jp1-train-count_color-07",
+          "jp1-train-relation-03"
+        ],
+        "negative": 5,
+        "per_query": {
+          "jp1-train-color-05": 0.0,
+          "jp1-train-color-08": 0.6428571428571428,
+          "jp1-train-color-09": 0.0,
+          "jp1-train-color-10": 0.5416666666666666,
+          "jp1-train-color-14": 0.0,
+          "jp1-train-color-15": -0.2,
+          "jp1-train-count-00": 0.0,
+          "jp1-train-count-06": 0.0,
+          "jp1-train-count-12": 0.0,
+          "jp1-train-count-13": 0.0,
+          "jp1-train-count-14": 0.0,
+          "jp1-train-count-15": 0.0,
+          "jp1-train-count_color-03": 0.0,
+          "jp1-train-count_color-07": 0.0,
+          "jp1-train-count_color-10": 0.07407407407407407,
+          "jp1-train-count_color-15": 0.0,
+          "jp1-train-relation-02": 0.0,
+          "jp1-train-relation-03": -0.125,
+          "jp1-train-relation-07": -0.10416666666666669,
+          "jp1-train-relation-08": 0.0,
+          "jp1-train-relation-12": -0.10416666666666669,
+          "jp1-train-relation-13": -0.08333333333333331
+        },
+        "positive": 3,
+        "queries_with_existing_clause": 16,
+        "utility": {
+          "ci95": [
+            -0.03750105218855219,
+            0.11244250541125528
+          ],
+          "mean": 0.02917869167869166,
+          "observations": 22,
+          "prompts": 22
+        }
+      },
+      "target_minus_projected": {
+        "joint_success_delta": {
+          "ci95": [
+            0.5,
+            0.8636363636363636
+          ],
+          "mean": 0.6818181818181818,
+          "observations": 22,
+          "prompts": 22
+        },
+        "losing_existing_clause_ids": [],
+        "negative": 0,
+        "per_query": {
+          "jp1-train-color-05": 0.5625,
+          "jp1-train-color-08": 0.0,
+          "jp1-train-color-09": 0.6,
+          "jp1-train-color-10": 0.0,
+          "jp1-train-color-14": 0.15,
+          "jp1-train-color-15": 0.75,
+          "jp1-train-count-00": 0.75,
+          "jp1-train-count-06": 0.75,
+          "jp1-train-count-12": 0.75,
+          "jp1-train-count-13": 0.25,
+          "jp1-train-count-14": 0.625,
+          "jp1-train-count-15": 0.5416666666666666,
+          "jp1-train-count_color-03": 0.5333333333333334,
+          "jp1-train-count_color-07": 0.5833333333333333,
+          "jp1-train-count_color-10": 0.0,
+          "jp1-train-count_color-15": 0.033333333333333354,
+          "jp1-train-relation-02": 0.6666666666666667,
+          "jp1-train-relation-03": 0.7916666666666667,
+          "jp1-train-relation-07": 0.8541666666666667,
+          "jp1-train-relation-08": 0.10416666666666667,
+          "jp1-train-relation-12": 0.7666666666666666,
+          "jp1-train-relation-13": 0.75
+        },
+        "positive": 19,
+        "queries_with_existing_clause": 15,
+        "utility": {
+          "ci95": [
+            0.3643892045454545,
+            0.6113683712121212
+          ],
+          "mean": 0.4914772727272727,
+          "observations": 22,
+          "prompts": 22
+        }
+      }
+    },
+    "fit4_keep": {
+      "actual_minus_noop": {
+        "joint_success_delta": {
+          "ci95": [
+            0.0,
+            0.22727272727272727
+          ],
+          "mean": 0.09090909090909091,
+          "observations": 22,
+          "prompts": 22
+        },
+        "losing_existing_clause_ids": [
+          "jp1-train-count_color-07"
+        ],
+        "negative": 5,
+        "per_query": {
+          "jp1-train-color-05": 0.0,
+          "jp1-train-color-08": 0.6428571428571428,
+          "jp1-train-color-09": -0.06666666666666665,
+          "jp1-train-color-10": 0.0,
+          "jp1-train-color-14": 0.0,
+          "jp1-train-color-15": -0.2,
+          "jp1-train-count-00": 0.75,
+          "jp1-train-count-06": 0.0,
+          "jp1-train-count-12": 0.0,
+          "jp1-train-count-13": 0.0,
+          "jp1-train-count-14": 0.0,
+          "jp1-train-count-15": -0.00833333333333336,
+          "jp1-train-count_color-03": -0.06666666666666665,
+          "jp1-train-count_color-07": 0.04166666666666663,
+          "jp1-train-count_color-10": 0.07407407407407407,
+          "jp1-train-count_color-15": 0.0,
+          "jp1-train-relation-02": 0.0,
+          "jp1-train-relation-03": 0.0,
+          "jp1-train-relation-07": 0.08750000000000002,
+          "jp1-train-relation-08": 0.0,
+          "jp1-train-relation-12": 0.0,
+          "jp1-train-relation-13": -0.08333333333333331
+        },
+        "positive": 5,
+        "queries_with_existing_clause": 16,
+        "utility": {
+          "ci95": [
+            -0.019935290404040407,
+            0.152031776094276
+          ],
+          "mean": 0.053231721981721984,
+          "observations": 22,
+          "prompts": 22
+        }
+      },
+      "geometry": {
+        "cosine_mean": 0.5476289609452117,
+        "gamma_mean": 0.20079764519306098,
+        "gamma_range": [
+          -0.031942388611093955,
+          0.6504527242563325
+        ],
+        "orthogonal_movement_energy_fraction_mean": 0.6583185468034903,
+        "outside_unit_interval": 1
+      },
+      "projected_minus_actual": {
+        "joint_success_delta": {
+          "ci95": [
+            0.0,
+            0.13636363636363635
+          ],
+          "mean": 0.045454545454545456,
+          "observations": 22,
+          "prompts": 22
+        },
+        "losing_existing_clause_ids": [
+          "jp1-train-count_color-03",
+          "jp1-train-relation-03"
+        ],
+        "negative": 7,
+        "per_query": {
+          "jp1-train-color-05": 0.0,
+          "jp1-train-color-08": 0.0,
+          "jp1-train-color-09": 0.06666666666666665,
+          "jp1-train-color-10": 0.5416666666666666,
+          "jp1-train-color-14": -0.05000000000000002,
+          "jp1-train-color-15": 0.0,
+          "jp1-train-count-00": 0.0,
+          "jp1-train-count-06": 0.0,
+          "jp1-train-count-12": 0.0,
+          "jp1-train-count-13": 0.0,
+          "jp1-train-count-14": 0.0,
+          "jp1-train-count-15": 0.00833333333333336,
+          "jp1-train-count_color-03": -0.05833333333333335,
+          "jp1-train-count_color-07": -0.04166666666666663,
+          "jp1-train-count_color-10": 0.0,
+          "jp1-train-count_color-15": 0.0,
+          "jp1-train-relation-02": -0.08333333333333331,
+          "jp1-train-relation-03": -0.125,
+          "jp1-train-relation-07": -0.1916666666666667,
+          "jp1-train-relation-08": 0.0,
+          "jp1-train-relation-12": -0.18750000000000003,
+          "jp1-train-relation-13": 0.08333333333333331
+        },
+        "positive": 4,
+        "queries_with_existing_clause": 16,
+        "utility": {
+          "ci95": [
+            -0.048484848484848485,
+            0.06193655303030301
+          ],
+          "mean": -0.0017045454545454573,
+          "observations": 22,
+          "prompts": 22
+        }
+      },
+      "projected_minus_noop": {
+        "joint_success_delta": {
+          "ci95": [
+            0.0,
+            0.2727272727272727
+          ],
+          "mean": 0.13636363636363635,
+          "observations": 22,
+          "prompts": 22
+        },
+        "losing_existing_clause_ids": [
+          "jp1-train-count_color-07",
+          "jp1-train-count_color-03",
+          "jp1-train-relation-03"
+        ],
+        "negative": 7,
+        "per_query": {
+          "jp1-train-color-05": 0.0,
+          "jp1-train-color-08": 0.6428571428571428,
+          "jp1-train-color-09": 0.0,
+          "jp1-train-color-10": 0.5416666666666666,
+          "jp1-train-color-14": -0.05000000000000002,
+          "jp1-train-color-15": -0.2,
+          "jp1-train-count-00": 0.75,
+          "jp1-train-count-06": 0.0,
+          "jp1-train-count-12": 0.0,
+          "jp1-train-count-13": 0.0,
+          "jp1-train-count-14": 0.0,
+          "jp1-train-count-15": 0.0,
+          "jp1-train-count_color-03": -0.125,
+          "jp1-train-count_color-07": 0.0,
+          "jp1-train-count_color-10": 0.07407407407407407,
+          "jp1-train-count_color-15": 0.0,
+          "jp1-train-relation-02": -0.08333333333333331,
+          "jp1-train-relation-03": -0.125,
+          "jp1-train-relation-07": -0.10416666666666669,
+          "jp1-train-relation-08": 0.0,
+          "jp1-train-relation-12": -0.18750000000000003,
+          "jp1-train-relation-13": 0.0
+        },
+        "positive": 4,
+        "queries_with_existing_clause": 16,
+        "utility": {
+          "ci95": [
+            -0.03958543771043771,
+            0.16051925505050488
+          ],
+          "mean": 0.05152717652717651,
+          "observations": 22,
+          "prompts": 22
+        }
+      },
+      "target_minus_projected": {
+        "joint_success_delta": {
+          "ci95": [
+            0.45454545454545453,
+            0.8181818181818182
+          ],
+          "mean": 0.6363636363636364,
+          "observations": 22,
+          "prompts": 22
+        },
+        "losing_existing_clause_ids": [],
+        "negative": 0,
+        "per_query": {
+          "jp1-train-color-05": 0.5625,
+          "jp1-train-color-08": 0.0,
+          "jp1-train-color-09": 0.6,
+          "jp1-train-color-10": 0.0,
+          "jp1-train-color-14": 0.2,
+          "jp1-train-color-15": 0.75,
+          "jp1-train-count-00": 0.0,
+          "jp1-train-count-06": 0.75,
+          "jp1-train-count-12": 0.75,
+          "jp1-train-count-13": 0.25,
+          "jp1-train-count-14": 0.625,
+          "jp1-train-count-15": 0.5416666666666666,
+          "jp1-train-count_color-03": 0.6583333333333334,
+          "jp1-train-count_color-07": 0.5833333333333333,
+          "jp1-train-count_color-10": 0.0,
+          "jp1-train-count_color-15": 0.033333333333333354,
+          "jp1-train-relation-02": 0.75,
+          "jp1-train-relation-03": 0.7916666666666667,
+          "jp1-train-relation-07": 0.8541666666666667,
+          "jp1-train-relation-08": 0.10416666666666667,
+          "jp1-train-relation-12": 0.85,
+          "jp1-train-relation-13": 0.6666666666666667
+        },
+        "positive": 18,
+        "queries_with_existing_clause": 15,
+        "utility": {
+          "ci95": [
+            0.33990530303030303,
+            0.5952840909090907
+          ],
+          "mean": 0.46912878787878776,
+          "observations": 22,
+          "prompts": 22
+        }
+      }
+    }
+  },
+  "counts": {
+    "decode_images": 286,
+    "forward_behavior": 1868,
+    "forward_examples": 3912,
+    "forward_student": 88,
+    "geneval_clause_images": 338,
+    "ocr_images": 286,
+    "verifier_images": 286
+  },
+  "integrity": {
+    "action_tensors_verified": 286,
+    "behavior_sha256": "428f6ce46b2937c6e7f0fcdafdb1adbd8491c5ebf4913d4b90c4fd2da6d9cb8f",
+    "comparison_flag_errors": [
+      {
+        "action": "ray@0",
+        "audited_same_verdict": true,
+        "id": "jp1-train-count-12",
+        "logged_same_verdict": false,
+        "reason": "tuple/list comparison bug in attested runtime"
+      },
+      {
+        "action": "ray@1",
+        "audited_same_verdict": true,
+        "id": "jp1-train-count-12",
+        "logged_same_verdict": false,
+        "reason": "tuple/list comparison bug in attested runtime"
+      },
+      {
+        "action": "fit2/actual",
+        "audited_same_verdict": true,
+        "id": "jp1-train-count-12",
+        "logged_same_verdict": false,
+        "reason": "tuple/list comparison bug in attested runtime"
+      },
+      {
+        "action": "fit2_keep/actual",
+        "audited_same_verdict": true,
+        "id": "jp1-train-count-12",
+        "logged_same_verdict": false,
+        "reason": "tuple/list comparison bug in attested runtime"
+      },
+      {
+        "action": "fit4/actual",
+        "audited_same_verdict": true,
+        "id": "jp1-train-count-12",
+        "logged_same_verdict": false,
+        "reason": "tuple/list comparison bug in attested runtime"
+      },
+      {
+        "action": "fit4_keep/actual",
+        "audited_same_verdict": true,
+        "id": "jp1-train-count-12",
+        "logged_same_verdict": false,
+        "reason": "tuple/list comparison bug in attested runtime"
+      },
+      {
+        "action": "ray@0",
+        "audited_same_verdict": true,
+        "id": "jp1-train-relation-12",
+        "logged_same_verdict": false,
+        "reason": "tuple/list comparison bug in attested runtime"
+      },
+      {
+        "action": "ray@1",
+        "audited_same_verdict": true,
+        "id": "jp1-train-relation-12",
+        "logged_same_verdict": false,
+        "reason": "tuple/list comparison bug in attested runtime"
+      },
+      {
+        "action": "fit2/actual",
+        "audited_same_verdict": true,
+        "id": "jp1-train-relation-12",
+        "logged_same_verdict": false,
+        "reason": "tuple/list comparison bug in attested runtime"
+      },
+      {
+        "action": "fit2_keep/actual",
+        "audited_same_verdict": true,
+        "id": "jp1-train-relation-12",
+        "logged_same_verdict": false,
+        "reason": "tuple/list comparison bug in attested runtime"
+      },
+      {
+        "action": "fit4/actual",
+        "audited_same_verdict": true,
+        "id": "jp1-train-relation-12",
+        "logged_same_verdict": false,
+        "reason": "tuple/list comparison bug in attested runtime"
+      },
+      {
+        "action": "fit4_keep/actual",
+        "audited_same_verdict": true,
+        "id": "jp1-train-relation-12",
+        "logged_same_verdict": false,
+        "reason": "tuple/list comparison bug in attested runtime"
+      },
+      {
+        "action": "ray@0",
+        "audited_same_verdict": true,
+        "id": "jp1-train-color-15",
+        "logged_same_verdict": false,
+        "reason": "tuple/list comparison bug in attested runtime"
+      },
+      {
+        "action": "ray@1",
+        "audited_same_verdict": true,
+        "id": "jp1-train-color-15",
+        "logged_same_verdict": false,
+        "reason": "tuple/list comparison bug in attested runtime"
+      },
+      {
+        "action": "fit2/actual",
+        "audited_same_verdict": true,
+        "id": "jp1-train-color-15",
+        "logged_same_verdict": false,
+        "reason": "tuple/list comparison bug in attested runtime"
+      },
+      {
+        "action": "fit2_keep/actual",
+        "audited_same_verdict": true,
+        "id": "jp1-train-color-15",
+        "logged_same_verdict": false,
+        "reason": "tuple/list comparison bug in attested runtime"
+      },
+      {
+        "action": "fit4/actual",
+        "audited_same_verdict": true,
+        "id": "jp1-train-color-15",
+        "logged_same_verdict": false,
+        "reason": "tuple/list comparison bug in attested runtime"
+      },
+      {
+        "action": "fit4_keep/actual",
+        "audited_same_verdict": true,
+        "id": "jp1-train-color-15",
+        "logged_same_verdict": false,
+        "reason": "tuple/list comparison bug in attested runtime"
+      },
+      {
+        "action": "ray@0",
+        "audited_same_verdict": true,
+        "id": "jp1-train-count_color-07",
+        "logged_same_verdict": false,
+        "reason": "tuple/list comparison bug in attested runtime"
+      },
+      {
+        "action": "ray@1",
+        "audited_same_verdict": true,
+        "id": "jp1-train-count_color-07",
+        "logged_same_verdict": false,
+        "reason": "tuple/list comparison bug in attested runtime"
+      },
+      {
+        "action": "fit2/actual",
+        "audited_same_verdict": true,
+        "id": "jp1-train-count_color-07",
+        "logged_same_verdict": false,
+        "reason": "tuple/list comparison bug in attested runtime"
+      },
+      {
+        "action": "fit2_keep/actual",
+        "audited_same_verdict": true,
+        "id": "jp1-train-count_color-07",
+        "logged_same_verdict": false,
+        "reason": "tuple/list comparison bug in attested runtime"
+      },
+      {
+        "action": "fit4/actual",
+        "audited_same_verdict": true,
+        "id": "jp1-train-count_color-07",
+        "logged_same_verdict": false,
+        "reason": "tuple/list comparison bug in attested runtime"
+      },
+      {
+        "action": "fit4_keep/actual",
+        "audited_same_verdict": true,
+        "id": "jp1-train-count_color-07",
+        "logged_same_verdict": false,
+        "reason": "tuple/list comparison bug in attested runtime"
+      },
+      {
+        "action": "ray@0",
+        "audited_same_verdict": true,
+        "id": "jp1-train-relation-13",
+        "logged_same_verdict": false,
+        "reason": "tuple/list comparison bug in attested runtime"
+      },
+      {
+        "action": "ray@1",
+        "audited_same_verdict": true,
+        "id": "jp1-train-relation-13",
+        "logged_same_verdict": false,
+        "reason": "tuple/list comparison bug in attested runtime"
+      },
+      {
+        "action": "fit2/actual",
+        "audited_same_verdict": true,
+        "id": "jp1-train-relation-13",
+        "logged_same_verdict": false,
+        "reason": "tuple/list comparison bug in attested runtime"
+      },
+      {
+        "action": "fit2_keep/actual",
+        "audited_same_verdict": true,
+        "id": "jp1-train-relation-13",
+        "logged_same_verdict": false,
+        "reason": "tuple/list comparison bug in attested runtime"
+      },
+      {
+        "action": "fit4/actual",
+        "audited_same_verdict": true,
+        "id": "jp1-train-relation-13",
+        "logged_same_verdict": false,
+        "reason": "tuple/list comparison bug in attested runtime"
+      },
+      {
+        "action": "fit4_keep/actual",
+        "audited_same_verdict": true,
+        "id": "jp1-train-relation-13",
+        "logged_same_verdict": false,
+        "reason": "tuple/list comparison bug in attested runtime"
+      },
+      {
+        "action": "ray@0",
+        "audited_same_verdict": true,
+        "id": "jp1-train-count-14",
+        "logged_same_verdict": false,
+        "reason": "tuple/list comparison bug in attested runtime"
+      },
+      {
+        "action": "ray@1",
+        "audited_same_verdict": true,
+        "id": "jp1-train-count-14",
+        "logged_same_verdict": false,
+        "reason": "tuple/list comparison bug in attested runtime"
+      },
+      {
+        "action": "fit2/actual",
+        "audited_same_verdict": true,
+        "id": "jp1-train-count-14",
+        "logged_same_verdict": false,
+        "reason": "tuple/list comparison bug in attested runtime"
+      },
+      {
+        "action": "fit2_keep/actual",
+        "audited_same_verdict": true,
+        "id": "jp1-train-count-14",
+        "logged_same_verdict": false,
+        "reason": "tuple/list comparison bug in attested runtime"
+      },
+      {
+        "action": "fit4/actual",
+        "audited_same_verdict": true,
+        "id": "jp1-train-count-14",
+        "logged_same_verdict": false,
+        "reason": "tuple/list comparison bug in attested runtime"
+      },
+      {
+        "action": "fit4_keep/actual",
+        "audited_same_verdict": true,
+        "id": "jp1-train-count-14",
+        "logged_same_verdict": false,
+        "reason": "tuple/list comparison bug in attested runtime"
+      },
+      {
+        "action": "ray@0",
+        "audited_same_verdict": true,
+        "id": "jp1-train-count_color-03",
+        "logged_same_verdict": false,
+        "reason": "tuple/list comparison bug in attested runtime"
+      },
+      {
+        "action": "ray@1",
+        "audited_same_verdict": true,
+        "id": "jp1-train-count_color-03",
+        "logged_same_verdict": false,
+        "reason": "tuple/list comparison bug in attested runtime"
+      },
+      {
+        "action": "fit2/actual",
+        "audited_same_verdict": true,
+        "id": "jp1-train-count_color-03",
+        "logged_same_verdict": false,
+        "reason": "tuple/list comparison bug in attested runtime"
+      },
+      {
+        "action": "fit2_keep/actual",
+        "audited_same_verdict": true,
+        "id": "jp1-train-count_color-03",
+        "logged_same_verdict": false,
+        "reason": "tuple/list comparison bug in attested runtime"
+      },
+      {
+        "action": "fit4/actual",
+        "audited_same_verdict": true,
+        "id": "jp1-train-count_color-03",
+        "logged_same_verdict": false,
+        "reason": "tuple/list comparison bug in attested runtime"
+      },
+      {
+        "action": "fit4_keep/actual",
+        "audited_same_verdict": true,
+        "id": "jp1-train-count_color-03",
+        "logged_same_verdict": false,
+        "reason": "tuple/list comparison bug in attested runtime"
+      },
+      {
+        "action": "ray@0",
+        "audited_same_verdict": true,
+        "id": "jp1-train-count-15",
+        "logged_same_verdict": false,
+        "reason": "tuple/list comparison bug in attested runtime"
+      },
+      {
+        "action": "ray@1",
+        "audited_same_verdict": true,
+        "id": "jp1-train-count-15",
+        "logged_same_verdict": false,
+        "reason": "tuple/list comparison bug in attested runtime"
+      },
+      {
+        "action": "fit2/actual",
+        "audited_same_verdict": true,
+        "id": "jp1-train-count-15",
+        "logged_same_verdict": false,
+        "reason": "tuple/list comparison bug in attested runtime"
+      },
+      {
+        "action": "fit2_keep/actual",
+        "audited_same_verdict": true,
+        "id": "jp1-train-count-15",
+        "logged_same_verdict": false,
+        "reason": "tuple/list comparison bug in attested runtime"
+      },
+      {
+        "action": "fit4/actual",
+        "audited_same_verdict": true,
+        "id": "jp1-train-count-15",
+        "logged_same_verdict": false,
+        "reason": "tuple/list comparison bug in attested runtime"
+      },
+      {
+        "action": "fit4_keep/actual",
+        "audited_same_verdict": true,
+        "id": "jp1-train-count-15",
+        "logged_same_verdict": false,
+        "reason": "tuple/list comparison bug in attested runtime"
+      },
+      {
+        "action": "ray@0",
+        "audited_same_verdict": true,
+        "id": "jp1-train-count_color-15",
+        "logged_same_verdict": false,
+        "reason": "tuple/list comparison bug in attested runtime"
+      },
+      {
+        "action": "ray@1",
+        "audited_same_verdict": true,
+        "id": "jp1-train-count_color-15",
+        "logged_same_verdict": false,
+        "reason": "tuple/list comparison bug in attested runtime"
+      },
+      {
+        "action": "fit2/actual",
+        "audited_same_verdict": true,
+        "id": "jp1-train-count_color-15",
+        "logged_same_verdict": false,
+        "reason": "tuple/list comparison bug in attested runtime"
+      },
+      {
+        "action": "fit2_keep/actual",
+        "audited_same_verdict": true,
+        "id": "jp1-train-count_color-15",
+        "logged_same_verdict": false,
+        "reason": "tuple/list comparison bug in attested runtime"
+      },
+      {
+        "action": "fit4/actual",
+        "audited_same_verdict": true,
+        "id": "jp1-train-count_color-15",
+        "logged_same_verdict": false,
+        "reason": "tuple/list comparison bug in attested runtime"
+      },
+      {
+        "action": "fit4_keep/actual",
+        "audited_same_verdict": true,
+        "id": "jp1-train-count_color-15",
+        "logged_same_verdict": false,
+        "reason": "tuple/list comparison bug in attested runtime"
+      },
+      {
+        "action": "ray@0",
+        "audited_same_verdict": true,
+        "id": "jp1-train-relation-02",
+        "logged_same_verdict": false,
+        "reason": "tuple/list comparison bug in attested runtime"
+      },
+      {
+        "action": "ray@1",
+        "audited_same_verdict": true,
+        "id": "jp1-train-relation-02",
+        "logged_same_verdict": false,
+        "reason": "tuple/list comparison bug in attested runtime"
+      },
+      {
+        "action": "fit2/actual",
+        "audited_same_verdict": true,
+        "id": "jp1-train-relation-02",
+        "logged_same_verdict": false,
+        "reason": "tuple/list comparison bug in attested runtime"
+      },
+      {
+        "action": "fit2_keep/actual",
+        "audited_same_verdict": true,
+        "id": "jp1-train-relation-02",
+        "logged_same_verdict": false,
+        "reason": "tuple/list comparison bug in attested runtime"
+      },
+      {
+        "action": "fit4/actual",
+        "audited_same_verdict": true,
+        "id": "jp1-train-relation-02",
+        "logged_same_verdict": false,
+        "reason": "tuple/list comparison bug in attested runtime"
+      },
+      {
+        "action": "fit4_keep/actual",
+        "audited_same_verdict": true,
+        "id": "jp1-train-relation-02",
+        "logged_same_verdict": false,
+        "reason": "tuple/list comparison bug in attested runtime"
+      },
+      {
+        "action": "ray@0",
+        "audited_same_verdict": true,
+        "id": "jp1-train-relation-03",
+        "logged_same_verdict": false,
+        "reason": "tuple/list comparison bug in attested runtime"
+      },
+      {
+        "action": "ray@1",
+        "audited_same_verdict": true,
+        "id": "jp1-train-relation-03",
+        "logged_same_verdict": false,
+        "reason": "tuple/list comparison bug in attested runtime"
+      },
+      {
+        "action": "fit2/actual",
+        "audited_same_verdict": true,
+        "id": "jp1-train-relation-03",
+        "logged_same_verdict": false,
+        "reason": "tuple/list comparison bug in attested runtime"
+      },
+      {
+        "action": "fit2_keep/actual",
+        "audited_same_verdict": true,
+        "id": "jp1-train-relation-03",
+        "logged_same_verdict": false,
+        "reason": "tuple/list comparison bug in attested runtime"
+      },
+      {
+        "action": "fit4/actual",
+        "audited_same_verdict": true,
+        "id": "jp1-train-relation-03",
+        "logged_same_verdict": false,
+        "reason": "tuple/list comparison bug in attested runtime"
+      },
+      {
+        "action": "fit4_keep/actual",
+        "audited_same_verdict": true,
+        "id": "jp1-train-relation-03",
+        "logged_same_verdict": false,
+        "reason": "tuple/list comparison bug in attested runtime"
+      },
+      {
+        "action": "ray@0",
+        "audited_same_verdict": true,
+        "id": "jp1-train-color-08",
+        "logged_same_verdict": false,
+        "reason": "tuple/list comparison bug in attested runtime"
+      },
+      {
+        "action": "ray@1",
+        "audited_same_verdict": true,
+        "id": "jp1-train-color-08",
+        "logged_same_verdict": false,
+        "reason": "tuple/list comparison bug in attested runtime"
+      },
+      {
+        "action": "fit2/actual",
+        "audited_same_verdict": true,
+        "id": "jp1-train-color-08",
+        "logged_same_verdict": false,
+        "reason": "tuple/list comparison bug in attested runtime"
+      },
+      {
+        "action": "fit2_keep/actual",
+        "audited_same_verdict": true,
+        "id": "jp1-train-color-08",
+        "logged_same_verdict": false,
+        "reason": "tuple/list comparison bug in attested runtime"
+      },
+      {
+        "action": "fit4/actual",
+        "audited_same_verdict": true,
+        "id": "jp1-train-color-08",
+        "logged_same_verdict": false,
+        "reason": "tuple/list comparison bug in attested runtime"
+      },
+      {
+        "action": "fit4_keep/actual",
+        "audited_same_verdict": true,
+        "id": "jp1-train-color-08",
+        "logged_same_verdict": false,
+        "reason": "tuple/list comparison bug in attested runtime"
+      },
+      {
+        "action": "ray@0",
+        "audited_same_verdict": true,
+        "id": "jp1-train-relation-07",
+        "logged_same_verdict": false,
+        "reason": "tuple/list comparison bug in attested runtime"
+      },
+      {
+        "action": "ray@1",
+        "audited_same_verdict": true,
+        "id": "jp1-train-relation-07",
+        "logged_same_verdict": false,
+        "reason": "tuple/list comparison bug in attested runtime"
+      },
+      {
+        "action": "fit2/actual",
+        "audited_same_verdict": true,
+        "id": "jp1-train-relation-07",
+        "logged_same_verdict": false,
+        "reason": "tuple/list comparison bug in attested runtime"
+      },
+      {
+        "action": "fit2_keep/actual",
+        "audited_same_verdict": true,
+        "id": "jp1-train-relation-07",
+        "logged_same_verdict": false,
+        "reason": "tuple/list comparison bug in attested runtime"
+      },
+      {
+        "action": "fit4/actual",
+        "audited_same_verdict": true,
+        "id": "jp1-train-relation-07",
+        "logged_same_verdict": false,
+        "reason": "tuple/list comparison bug in attested runtime"
+      },
+      {
+        "action": "fit4_keep/actual",
+        "audited_same_verdict": true,
+        "id": "jp1-train-relation-07",
+        "logged_same_verdict": false,
+        "reason": "tuple/list comparison bug in attested runtime"
+      },
+      {
+        "action": "ray@0",
+        "audited_same_verdict": true,
+        "id": "jp1-train-color-09",
+        "logged_same_verdict": false,
+        "reason": "tuple/list comparison bug in attested runtime"
+      },
+      {
+        "action": "ray@1",
+        "audited_same_verdict": true,
+        "id": "jp1-train-color-09",
+        "logged_same_verdict": false,
+        "reason": "tuple/list comparison bug in attested runtime"
+      },
+      {
+        "action": "fit2/actual",
+        "audited_same_verdict": true,
+        "id": "jp1-train-color-09",
+        "logged_same_verdict": false,
+        "reason": "tuple/list comparison bug in attested runtime"
+      },
+      {
+        "action": "fit2_keep/actual",
+        "audited_same_verdict": true,
+        "id": "jp1-train-color-09",
+        "logged_same_verdict": false,
+        "reason": "tuple/list comparison bug in attested runtime"
+      },
+      {
+        "action": "fit4/actual",
+        "audited_same_verdict": true,
+        "id": "jp1-train-color-09",
+        "logged_same_verdict": false,
+        "reason": "tuple/list comparison bug in attested runtime"
+      },
+      {
+        "action": "fit4_keep/actual",
+        "audited_same_verdict": true,
+        "id": "jp1-train-color-09",
+        "logged_same_verdict": false,
+        "reason": "tuple/list comparison bug in attested runtime"
+      },
+      {
+        "action": "ray@0",
+        "audited_same_verdict": true,
+        "id": "jp1-train-count_color-10",
+        "logged_same_verdict": false,
+        "reason": "tuple/list comparison bug in attested runtime"
+      },
+      {
+        "action": "ray@1",
+        "audited_same_verdict": true,
+        "id": "jp1-train-count_color-10",
+        "logged_same_verdict": false,
+        "reason": "tuple/list comparison bug in attested runtime"
+      },
+      {
+        "action": "fit2/actual",
+        "audited_same_verdict": true,
+        "id": "jp1-train-count_color-10",
+        "logged_same_verdict": false,
+        "reason": "tuple/list comparison bug in attested runtime"
+      },
+      {
+        "action": "fit2_keep/actual",
+        "audited_same_verdict": true,
+        "id": "jp1-train-count_color-10",
+        "logged_same_verdict": false,
+        "reason": "tuple/list comparison bug in attested runtime"
+      },
+      {
+        "action": "fit4/actual",
+        "audited_same_verdict": true,
+        "id": "jp1-train-count_color-10",
+        "logged_same_verdict": false,
+        "reason": "tuple/list comparison bug in attested runtime"
+      },
+      {
+        "action": "fit4_keep/actual",
+        "audited_same_verdict": true,
+        "id": "jp1-train-count_color-10",
+        "logged_same_verdict": false,
+        "reason": "tuple/list comparison bug in attested runtime"
+      },
+      {
+        "action": "ray@0",
+        "audited_same_verdict": true,
+        "id": "jp1-train-color-05",
+        "logged_same_verdict": false,
+        "reason": "tuple/list comparison bug in attested runtime"
+      },
+      {
+        "action": "ray@1",
+        "audited_same_verdict": true,
+        "id": "jp1-train-color-05",
+        "logged_same_verdict": false,
+        "reason": "tuple/list comparison bug in attested runtime"
+      },
+      {
+        "action": "fit2/actual",
+        "audited_same_verdict": true,
+        "id": "jp1-train-color-05",
+        "logged_same_verdict": false,
+        "reason": "tuple/list comparison bug in attested runtime"
+      },
+      {
+        "action": "fit2_keep/actual",
+        "audited_same_verdict": true,
+        "id": "jp1-train-color-05",
+        "logged_same_verdict": false,
+        "reason": "tuple/list comparison bug in attested runtime"
+      },
+      {
+        "action": "fit4/actual",
+        "audited_same_verdict": true,
+        "id": "jp1-train-color-05",
+        "logged_same_verdict": false,
+        "reason": "tuple/list comparison bug in attested runtime"
+      },
+      {
+        "action": "fit4_keep/actual",
+        "audited_same_verdict": true,
+        "id": "jp1-train-color-05",
+        "logged_same_verdict": false,
+        "reason": "tuple/list comparison bug in attested runtime"
+      },
+      {
+        "action": "ray@0",
+        "audited_same_verdict": true,
+        "id": "jp1-train-color-10",
+        "logged_same_verdict": false,
+        "reason": "tuple/list comparison bug in attested runtime"
+      },
+      {
+        "action": "ray@1",
+        "audited_same_verdict": true,
+        "id": "jp1-train-color-10",
+        "logged_same_verdict": false,
+        "reason": "tuple/list comparison bug in attested runtime"
+      },
+      {
+        "action": "fit2/actual",
+        "audited_same_verdict": true,
+        "id": "jp1-train-color-10",
+        "logged_same_verdict": false,
+        "reason": "tuple/list comparison bug in attested runtime"
+      },
+      {
+        "action": "fit2_keep/actual",
+        "audited_same_verdict": true,
+        "id": "jp1-train-color-10",
+        "logged_same_verdict": false,
+        "reason": "tuple/list comparison bug in attested runtime"
+      },
+      {
+        "action": "fit4/actual",
+        "audited_same_verdict": true,
+        "id": "jp1-train-color-10",
+        "logged_same_verdict": false,
+        "reason": "tuple/list comparison bug in attested runtime"
+      },
+      {
+        "action": "fit4_keep/actual",
+        "audited_same_verdict": true,
+        "id": "jp1-train-color-10",
+        "logged_same_verdict": false,
+        "reason": "tuple/list comparison bug in attested runtime"
+      },
+      {
+        "action": "ray@0",
+        "audited_same_verdict": true,
+        "id": "jp1-train-count-00",
+        "logged_same_verdict": false,
+        "reason": "tuple/list comparison bug in attested runtime"
+      },
+      {
+        "action": "ray@1",
+        "audited_same_verdict": true,
+        "id": "jp1-train-count-00",
+        "logged_same_verdict": false,
+        "reason": "tuple/list comparison bug in attested runtime"
+      },
+      {
+        "action": "fit2/actual",
+        "audited_same_verdict": true,
+        "id": "jp1-train-count-00",
+        "logged_same_verdict": false,
+        "reason": "tuple/list comparison bug in attested runtime"
+      },
+      {
+        "action": "fit2_keep/actual",
+        "audited_same_verdict": true,
+        "id": "jp1-train-count-00",
+        "logged_same_verdict": false,
+        "reason": "tuple/list comparison bug in attested runtime"
+      },
+      {
+        "action": "fit4/actual",
+        "audited_same_verdict": true,
+        "id": "jp1-train-count-00",
+        "logged_same_verdict": false,
+        "reason": "tuple/list comparison bug in attested runtime"
+      },
+      {
+        "action": "fit4_keep/actual",
+        "audited_same_verdict": true,
+        "id": "jp1-train-count-00",
+        "logged_same_verdict": false,
+        "reason": "tuple/list comparison bug in attested runtime"
+      },
+      {
+        "action": "ray@0",
+        "audited_same_verdict": true,
+        "id": "jp1-train-relation-08",
+        "logged_same_verdict": false,
+        "reason": "tuple/list comparison bug in attested runtime"
+      },
+      {
+        "action": "ray@1",
+        "audited_same_verdict": true,
+        "id": "jp1-train-relation-08",
+        "logged_same_verdict": false,
+        "reason": "tuple/list comparison bug in attested runtime"
+      },
+      {
+        "action": "fit2/actual",
+        "audited_same_verdict": true,
+        "id": "jp1-train-relation-08",
+        "logged_same_verdict": false,
+        "reason": "tuple/list comparison bug in attested runtime"
+      },
+      {
+        "action": "fit2_keep/actual",
+        "audited_same_verdict": true,
+        "id": "jp1-train-relation-08",
+        "logged_same_verdict": false,
+        "reason": "tuple/list comparison bug in attested runtime"
+      },
+      {
+        "action": "fit4/actual",
+        "audited_same_verdict": true,
+        "id": "jp1-train-relation-08",
+        "logged_same_verdict": false,
+        "reason": "tuple/list comparison bug in attested runtime"
+      },
+      {
+        "action": "fit4_keep/actual",
+        "audited_same_verdict": true,
+        "id": "jp1-train-relation-08",
+        "logged_same_verdict": false,
+        "reason": "tuple/list comparison bug in attested runtime"
+      },
+      {
+        "action": "ray@0",
+        "audited_same_verdict": true,
+        "id": "jp1-train-color-14",
+        "logged_same_verdict": false,
+        "reason": "tuple/list comparison bug in attested runtime"
+      },
+      {
+        "action": "ray@1",
+        "audited_same_verdict": true,
+        "id": "jp1-train-color-14",
+        "logged_same_verdict": false,
+        "reason": "tuple/list comparison bug in attested runtime"
+      },
+      {
+        "action": "fit2/actual",
+        "audited_same_verdict": true,
+        "id": "jp1-train-color-14",
+        "logged_same_verdict": false,
+        "reason": "tuple/list comparison bug in attested runtime"
+      },
+      {
+        "action": "fit2_keep/actual",
+        "audited_same_verdict": true,
+        "id": "jp1-train-color-14",
+        "logged_same_verdict": false,
+        "reason": "tuple/list comparison bug in attested runtime"
+      },
+      {
+        "action": "fit4/actual",
+        "audited_same_verdict": true,
+        "id": "jp1-train-color-14",
+        "logged_same_verdict": false,
+        "reason": "tuple/list comparison bug in attested runtime"
+      },
+      {
+        "action": "fit4_keep/actual",
+        "audited_same_verdict": true,
+        "id": "jp1-train-color-14",
+        "logged_same_verdict": false,
+        "reason": "tuple/list comparison bug in attested runtime"
+      },
+      {
+        "action": "ray@0",
+        "audited_same_verdict": true,
+        "id": "jp1-train-count-13",
+        "logged_same_verdict": false,
+        "reason": "tuple/list comparison bug in attested runtime"
+      },
+      {
+        "action": "ray@1",
+        "audited_same_verdict": true,
+        "id": "jp1-train-count-13",
+        "logged_same_verdict": false,
+        "reason": "tuple/list comparison bug in attested runtime"
+      },
+      {
+        "action": "fit2/actual",
+        "audited_same_verdict": true,
+        "id": "jp1-train-count-13",
+        "logged_same_verdict": false,
+        "reason": "tuple/list comparison bug in attested runtime"
+      },
+      {
+        "action": "fit2_keep/actual",
+        "audited_same_verdict": true,
+        "id": "jp1-train-count-13",
+        "logged_same_verdict": false,
+        "reason": "tuple/list comparison bug in attested runtime"
+      },
+      {
+        "action": "fit4/actual",
+        "audited_same_verdict": true,
+        "id": "jp1-train-count-13",
+        "logged_same_verdict": false,
+        "reason": "tuple/list comparison bug in attested runtime"
+      },
+      {
+        "action": "fit4_keep/actual",
+        "audited_same_verdict": true,
+        "id": "jp1-train-count-13",
+        "logged_same_verdict": false,
+        "reason": "tuple/list comparison bug in attested runtime"
+      },
+      {
+        "action": "ray@0",
+        "audited_same_verdict": true,
+        "id": "jp1-train-count-06",
+        "logged_same_verdict": false,
+        "reason": "tuple/list comparison bug in attested runtime"
+      },
+      {
+        "action": "ray@1",
+        "audited_same_verdict": true,
+        "id": "jp1-train-count-06",
+        "logged_same_verdict": false,
+        "reason": "tuple/list comparison bug in attested runtime"
+      },
+      {
+        "action": "fit2/actual",
+        "audited_same_verdict": true,
+        "id": "jp1-train-count-06",
+        "logged_same_verdict": false,
+        "reason": "tuple/list comparison bug in attested runtime"
+      },
+      {
+        "action": "fit2_keep/actual",
+        "audited_same_verdict": true,
+        "id": "jp1-train-count-06",
+        "logged_same_verdict": false,
+        "reason": "tuple/list comparison bug in attested runtime"
+      },
+      {
+        "action": "fit4/actual",
+        "audited_same_verdict": true,
+        "id": "jp1-train-count-06",
+        "logged_same_verdict": false,
+        "reason": "tuple/list comparison bug in attested runtime"
+      },
+      {
+        "action": "fit4_keep/actual",
+        "audited_same_verdict": true,
+        "id": "jp1-train-count-06",
+        "logged_same_verdict": false,
+        "reason": "tuple/list comparison bug in attested runtime"
+      }
+    ],
+    "geometry_rows_verified": 88,
+    "images_verified": 286,
+    "mismatches": [],
+    "optimizer_updates": 0,
+    "reference_images": 132,
+    "runtime_logged_same_verdicts": 0,
+    "same_images": 132,
+    "same_verdicts": 132
+  },
+  "interpretation": "22 selected TRAIN prompts, one training seed, fixed flow10 behavior suffix. Oracle projection uses the expert target at inference; no deployment or robustness claim.",
+  "nonmonotonic_ray_ids": [
+    "jp1-train-relation-12",
+    "jp1-train-color-15",
+    "jp1-train-count_color-07",
+    "jp1-train-relation-13",
+    "jp1-train-count-15",
+    "jp1-train-relation-02",
+    "jp1-train-color-08",
+    "jp1-train-color-14"
+  ],
+  "process_seconds": 457.5712125003338,
+  "ray_vs_noop": {
+    "0": {
+      "joint_success_delta": {
+        "ci95": [
+          0.0,
+          0.0
+        ],
+        "mean": 0.0,
+        "observations": 22,
+        "prompts": 22
+      },
+      "losing_existing_clause_ids": [],
+      "negative": 0,
+      "per_query": {
+        "jp1-train-color-05": 0.0,
+        "jp1-train-color-08": 0.0,
+        "jp1-train-color-09": 0.0,
+        "jp1-train-color-10": 0.0,
+        "jp1-train-color-14": 0.0,
+        "jp1-train-color-15": 0.0,
+        "jp1-train-count-00": 0.0,
+        "jp1-train-count-06": 0.0,
+        "jp1-train-count-12": 0.0,
+        "jp1-train-count-13": 0.0,
+        "jp1-train-count-14": 0.0,
+        "jp1-train-count-15": 0.0,
+        "jp1-train-count_color-03": 0.0,
+        "jp1-train-count_color-07": 0.0,
+        "jp1-train-count_color-10": 0.0,
+        "jp1-train-count_color-15": 0.0,
+        "jp1-train-relation-02": 0.0,
+        "jp1-train-relation-03": 0.0,
+        "jp1-train-relation-07": 0.0,
+        "jp1-train-relation-08": 0.0,
+        "jp1-train-relation-12": 0.0,
+        "jp1-train-relation-13": 0.0
+      },
+      "positive": 0,
+      "queries_with_existing_clause": 16,
+      "utility": {
+        "ci95": [
+          0.0,
+          0.0
+        ],
+        "mean": 0.0,
+        "observations": 22,
+        "prompts": 22
+      }
+    },
+    "0.25": {
+      "joint_success_delta": {
+        "ci95": [
+          0.0,
+          0.13636363636363635
+        ],
+        "mean": 0.045454545454545456,
+        "observations": 22,
+        "prompts": 22
+      },
+      "losing_existing_clause_ids": [],
+      "negative": 2,
+      "per_query": {
+        "jp1-train-color-05": 0.0,
+        "jp1-train-color-08": 0.031746031746031744,
+        "jp1-train-color-09": 0.0,
+        "jp1-train-color-10": 0.0,
+        "jp1-train-color-14": -0.05000000000000002,
+        "jp1-train-color-15": -0.2,
+        "jp1-train-count-00": 0.0,
+        "jp1-train-count-06": 0.0,
+        "jp1-train-count-12": 0.0,
+        "jp1-train-count-13": 0.0,
+        "jp1-train-count-14": 0.0,
+        "jp1-train-count-15": 0.0,
+        "jp1-train-count_color-03": 0.0,
+        "jp1-train-count_color-07": 0.5833333333333333,
+        "jp1-train-count_color-10": 0.0,
+        "jp1-train-count_color-15": 0.0,
+        "jp1-train-relation-02": 0.0,
+        "jp1-train-relation-03": 0.0,
+        "jp1-train-relation-07": 0.020833333333333315,
+        "jp1-train-relation-08": 0.0,
+        "jp1-train-relation-12": 0.11249999999999999,
+        "jp1-train-relation-13": 0.0
+      },
+      "positive": 4,
+      "queries_with_existing_clause": 16,
+      "utility": {
+        "ci95": [
+          -0.021551677489177492,
+          0.08353896103896079
+        ],
+        "mean": 0.02265512265512265,
+        "observations": 22,
+        "prompts": 22
+      }
+    },
+    "0.5": {
+      "joint_success_delta": {
+        "ci95": [
+          0.0,
+          0.22727272727272727
+        ],
+        "mean": 0.09090909090909091,
+        "observations": 22,
+        "prompts": 22
+      },
+      "losing_existing_clause_ids": [
+        "jp1-train-count_color-07",
+        "jp1-train-count-15"
+      ],
+      "negative": 6,
+      "per_query": {
+        "jp1-train-color-05": 0.0,
+        "jp1-train-color-08": 0.10119047619047622,
+        "jp1-train-color-09": 0.0,
+        "jp1-train-color-10": 0.0,
+        "jp1-train-color-14": -0.016666666666666663,
+        "jp1-train-color-15": 0.55,
+        "jp1-train-count-00": 0.75,
+        "jp1-train-count-06": 0.0,
+        "jp1-train-count-12": 0.0,
+        "jp1-train-count-13": 0.0,
+        "jp1-train-count-14": 0.0,
+        "jp1-train-count-15": -0.13333333333333336,
+        "jp1-train-count_color-03": 0.0,
+        "jp1-train-count_color-07": -0.25,
+        "jp1-train-count_color-10": 0.07407407407407407,
+        "jp1-train-count_color-15": 0.0,
+        "jp1-train-relation-02": -0.08333333333333331,
+        "jp1-train-relation-03": 0.0,
+        "jp1-train-relation-07": 0.08333333333333331,
+        "jp1-train-relation-08": 0.0,
+        "jp1-train-relation-12": -0.04583333333333334,
+        "jp1-train-relation-13": -0.08333333333333331
+      },
+      "positive": 5,
+      "queries_with_existing_clause": 16,
+      "utility": {
+        "ci95": [
+          -0.030389234607984608,
+          0.13964962121212118
+        ],
+        "mean": 0.04300444925444925,
+        "observations": 22,
+        "prompts": 22
+      }
+    },
+    "0.75": {
+      "joint_success_delta": {
+        "ci95": [
+          0.13636363636363635,
+          0.5454545454545454
+        ],
+        "mean": 0.3181818181818182,
+        "observations": 22,
+        "prompts": 22
+      },
+      "losing_existing_clause_ids": [],
+      "negative": 3,
+      "per_query": {
+        "jp1-train-color-05": 0.5625,
+        "jp1-train-color-08": 0.059523809523809534,
+        "jp1-train-color-09": 0.0,
+        "jp1-train-color-10": 0.5416666666666666,
+        "jp1-train-color-14": 0.15,
+        "jp1-train-color-15": -0.04999999999999999,
+        "jp1-train-count-00": 0.75,
+        "jp1-train-count-06": 0.0,
+        "jp1-train-count-12": 0.0,
+        "jp1-train-count-13": 0.25,
+        "jp1-train-count-14": 0.0,
+        "jp1-train-count-15": -0.00833333333333336,
+        "jp1-train-count_color-03": 0.5333333333333334,
+        "jp1-train-count_color-07": 0.5833333333333333,
+        "jp1-train-count_color-10": 0.07407407407407407,
+        "jp1-train-count_color-15": 0.0,
+        "jp1-train-relation-02": 0.6666666666666667,
+        "jp1-train-relation-03": 0.6666666666666667,
+        "jp1-train-relation-07": 0.1875,
+        "jp1-train-relation-08": 0.0,
+        "jp1-train-relation-12": -0.08750000000000002,
+        "jp1-train-relation-13": 0.0
+      },
+      "positive": 12,
+      "queries_with_existing_clause": 16,
+      "utility": {
+        "ci95": [
+          0.11336016414141416,
+          0.34548047438672436
+        ],
+        "mean": 0.22179232804232807,
+        "observations": 22,
+        "prompts": 22
+      }
+    },
+    "1": {
+      "joint_success_delta": {
+        "ci95": [
+          0.5909090909090909,
+          0.9090909090909091
+        ],
+        "mean": 0.7727272727272727,
+        "observations": 22,
+        "prompts": 22
+      },
+      "losing_existing_clause_ids": [],
+      "negative": 0,
+      "per_query": {
+        "jp1-train-color-05": 0.5625,
+        "jp1-train-color-08": 0.6428571428571428,
+        "jp1-train-color-09": 0.6,
+        "jp1-train-color-10": 0.5416666666666666,
+        "jp1-train-color-14": 0.15,
+        "jp1-train-color-15": 0.55,
+        "jp1-train-count-00": 0.75,
+        "jp1-train-count-06": 0.75,
+        "jp1-train-count-12": 0.75,
+        "jp1-train-count-13": 0.25,
+        "jp1-train-count-14": 0.625,
+        "jp1-train-count-15": 0.5416666666666666,
+        "jp1-train-count_color-03": 0.5333333333333334,
+        "jp1-train-count_color-07": 0.5833333333333333,
+        "jp1-train-count_color-10": 0.07407407407407407,
+        "jp1-train-count_color-15": 0.033333333333333354,
+        "jp1-train-relation-02": 0.6666666666666667,
+        "jp1-train-relation-03": 0.6666666666666667,
+        "jp1-train-relation-07": 0.75,
+        "jp1-train-relation-08": 0.10416666666666667,
+        "jp1-train-relation-12": 0.6625,
+        "jp1-train-relation-13": 0.6666666666666667
+      },
+      "positive": 22,
+      "queries_with_existing_clause": 16,
+      "utility": {
+        "ci95": [
+          0.41930608164983163,
+          0.6111886724386724
+        ],
+        "mean": 0.5206559644059643,
+        "observations": 22,
+        "prompts": 22
+      }
+    }
+  },
+  "result_sha256": "0d1802eaa3b8482b648556296805a9df80e4f90a620f55c0f2d36acfa5ab479b",
+  "review_summary_sha256": "eaf8c7902e704e5ac368ca0cf75335bbd762f8d7ddea54d11b66796932166079",
+  "run": "/midtier/minilab/scratch/chw4026/projects/side_project/generative/opd_related/opd_lab/runs/le4_action_001",
+  "scheduler": {
+    "allocated_gpu_hours_including_failed_attempts_so_far": 0.1288888888888889,
+    "jobs": [
+      {
+        "allocated_gpu_hours": 0.1288888888888889,
+        "allocated_tres": "billing=4,cpu=4,gres/gpu:l40=1,mem=96G,node=1",
+        "elapsed_seconds": 464,
+        "exit_code": "0:0",
+        "job_id": "1048104",
+        "nodes": "ai-gpu13",
+        "run": "/midtier/minilab/scratch/chw4026/projects/side_project/generative/opd_related/opd_lab/runs/le4_action_001",
+        "stage": "le4_action",
+        "state": "COMPLETED"
+      }
+    ],
+    "time_utc": "2026-09-11T20:53:01.282705+00:00"
+  },
+  "source_sha256": "60a19c85ee958856803c1e4ee7fac0675b2e1518d3143b71168cbca9959d4ed8",
+  "statistics": "Paired prompt bootstrap, 2000 resamples, seed0; no multiplicity correction. Step-change contrasts are descriptive follow-up.",
+  "step2_to_step4": {
+    "keep0": {
+      "actual": {
+        "joint_success_delta": {
+          "ci95": [
+            -0.2727272727272727,
+            0.0
+          ],
+          "mean": -0.13636363636363635,
+          "observations": 22,
+          "prompts": 22
+        },
+        "losing_existing_clause_ids": [
+          "jp1-train-relation-12",
+          "jp1-train-count_color-03",
+          "jp1-train-relation-02",
+          "jp1-train-color-10"
+        ],
+        "negative": 8,
+        "per_query": {
+          "jp1-train-color-05": -0.0625,
+          "jp1-train-color-08": 0.0,
+          "jp1-train-color-09": -0.06666666666666665,
+          "jp1-train-color-10": -0.5416666666666666,
+          "jp1-train-color-14": 0.0,
+          "jp1-train-color-15": -0.20833333333333337,
+          "jp1-train-count-00": 0.0,
+          "jp1-train-count-06": 0.0,
+          "jp1-train-count-12": 0.0,
+          "jp1-train-count-13": 0.0,
+          "jp1-train-count-14": 0.0,
+          "jp1-train-count-15": -0.00833333333333336,
+          "jp1-train-count_color-03": -0.6000000000000001,
+          "jp1-train-count_color-07": 0.05833333333333335,
+          "jp1-train-count_color-10": 0.07407407407407407,
+          "jp1-train-count_color-15": 0.0,
+          "jp1-train-relation-02": -0.6666666666666667,
+          "jp1-train-relation-03": 0.0,
+          "jp1-train-relation-07": 0.08750000000000002,
+          "jp1-train-relation-08": 0.0,
+          "jp1-train-relation-12": -0.09999999999999998,
+          "jp1-train-relation-13": 0.0
+        },
+        "positive": 3,
+        "queries_with_existing_clause": 17,
+        "utility": {
+          "ci95": [
+            -0.18432607323232325,
+            -0.012230113636363735
+          ],
+          "mean": -0.09246632996632999,
+          "observations": 22,
+          "prompts": 22
+        }
+      },
+      "projected": {
+        "joint_success_delta": {
+          "ci95": [
+            0.0,
+            0.13636363636363635
+          ],
+          "mean": 0.045454545454545456,
+          "observations": 22,
+          "prompts": 22
+        },
+        "losing_existing_clause_ids": [],
+        "negative": 5,
+        "per_query": {
+          "jp1-train-color-05": 0.0,
+          "jp1-train-color-08": 0.625,
+          "jp1-train-color-09": 0.0,
+          "jp1-train-color-10": 0.0,
+          "jp1-train-color-14": 0.0,
+          "jp1-train-color-15": -0.2,
+          "jp1-train-count-00": 0.0,
+          "jp1-train-count-06": 0.0,
+          "jp1-train-count-12": 0.0,
+          "jp1-train-count-13": 0.0,
+          "jp1-train-count-14": 0.0,
+          "jp1-train-count-15": 0.0,
+          "jp1-train-count_color-03": 0.0,
+          "jp1-train-count_color-07": 0.06666666666666665,
+          "jp1-train-count_color-10": 0.07407407407407407,
+          "jp1-train-count_color-15": 0.0,
+          "jp1-train-relation-02": 0.0,
+          "jp1-train-relation-03": -0.0625,
+          "jp1-train-relation-07": -0.10416666666666669,
+          "jp1-train-relation-08": 0.0,
+          "jp1-train-relation-12": -0.10416666666666669,
+          "jp1-train-relation-13": -0.08333333333333331
+        },
+        "positive": 3,
+        "queries_with_existing_clause": 15,
+        "utility": {
+          "ci95": [
+            -0.03834438131313132,
+            0.07974800084175077
+          ],
+          "mean": 0.009617003367003362,
+          "observations": 22,
+          "prompts": 22
+        }
+      }
+    },
+    "keep1": {
+      "actual": {
+        "joint_success_delta": {
+          "ci95": [
+            -0.2727272727272727,
+            0.0
+          ],
+          "mean": -0.13636363636363635,
+          "observations": 22,
+          "prompts": 22
+        },
+        "losing_existing_clause_ids": [
+          "jp1-train-count_color-03",
+          "jp1-train-relation-02",
+          "jp1-train-color-10"
+        ],
+        "negative": 8,
+        "per_query": {
+          "jp1-train-color-05": 0.0,
+          "jp1-train-color-08": 0.0,
+          "jp1-train-color-09": -0.06666666666666665,
+          "jp1-train-color-10": -0.5416666666666666,
+          "jp1-train-color-14": 0.0,
+          "jp1-train-color-15": -0.20833333333333337,
+          "jp1-train-count-00": 0.0,
+          "jp1-train-count-06": 0.0,
+          "jp1-train-count-12": 0.0,
+          "jp1-train-count-13": 0.0,
+          "jp1-train-count-14": 0.0,
+          "jp1-train-count-15": -0.00833333333333336,
+          "jp1-train-count_color-03": -0.6000000000000001,
+          "jp1-train-count_color-07": 0.08333333333333331,
+          "jp1-train-count_color-10": 0.07407407407407407,
+          "jp1-train-count_color-15": 0.0,
+          "jp1-train-relation-02": -0.6666666666666667,
+          "jp1-train-relation-03": 0.0,
+          "jp1-train-relation-07": 0.08750000000000002,
+          "jp1-train-relation-08": 0.0,
+          "jp1-train-relation-12": -0.04999999999999999,
+          "jp1-train-relation-13": -0.08333333333333331
+        },
+        "positive": 3,
+        "queries_with_existing_clause": 16,
+        "utility": {
+          "ci95": [
+            -0.18258049242424246,
+            -0.010284090909091059
+          ],
+          "mean": -0.09000420875420877,
+          "observations": 22,
+          "prompts": 22
+        }
+      },
+      "projected": {
+        "joint_success_delta": {
+          "ci95": [
+            0.0,
+            0.13636363636363635
+          ],
+          "mean": 0.045454545454545456,
+          "observations": 22,
+          "prompts": 22
+        },
+        "losing_existing_clause_ids": [
+          "jp1-train-count_color-03"
+        ],
+        "negative": 7,
+        "per_query": {
+          "jp1-train-color-05": 0.0,
+          "jp1-train-color-08": 0.625,
+          "jp1-train-color-09": 0.0,
+          "jp1-train-color-10": 0.0,
+          "jp1-train-color-14": -0.05000000000000002,
+          "jp1-train-color-15": -0.2,
+          "jp1-train-count-00": 0.0,
+          "jp1-train-count-06": 0.0,
+          "jp1-train-count-12": 0.0,
+          "jp1-train-count-13": 0.0,
+          "jp1-train-count-14": 0.0,
+          "jp1-train-count-15": 0.0,
+          "jp1-train-count_color-03": -0.125,
+          "jp1-train-count_color-07": 0.08333333333333337,
+          "jp1-train-count_color-10": 0.07407407407407407,
+          "jp1-train-count_color-15": 0.0,
+          "jp1-train-relation-02": -0.08333333333333331,
+          "jp1-train-relation-03": -0.0625,
+          "jp1-train-relation-07": -0.10416666666666669,
+          "jp1-train-relation-08": 0.0,
+          "jp1-train-relation-12": -0.18750000000000003,
+          "jp1-train-relation-13": 0.0
+        },
+        "positive": 3,
+        "queries_with_existing_clause": 15,
+        "utility": {
+          "ci95": [
+            -0.05417245370370371,
+            0.07273463804713802
+          ],
+          "mean": -0.0013678451178451177,
+          "observations": 22,
+          "prompts": 22
+        }
+      }
+    }
+  },
+  "validation": {
+    "action_probe_after_fix": "4 passed in 1.89 seconds; includes new serialization regression",
+    "full_suite_before_comparison_fix": "48 passed in 12.80 seconds",
+    "tensor_and_image_audit": "passed; 286 tensors/images, 88 geometry rows, 132 exact reference verdict/image matches"
+  }
+}

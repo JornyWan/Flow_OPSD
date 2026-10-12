@@ -1,0 +1,33 @@
+{
+  "allocated_gpu_hours": 0.026111111111111113,
+  "asset_audit": [],
+  "attested_input_count": 28,
+  "frozen_inputs_valid": true,
+  "generated_image_hashes_valid": 35,
+  "index_zero_duplicate_checks": 4,
+  "job_id": "1048955",
+  "limits": "Large shared base/reward assets use recorded inventory validation, not a newly computed full content hash",
+  "optimizer_updates": 0,
+  "original_checkpoint_hashes_valid": true,
+  "phase7_image_replay_checks": 15,
+  "prior_artifacts": {
+    "phase6": {
+      "README_historical_revision": "e384a09",
+      "all_recorded_artifacts_unchanged": true,
+      "artifact_count": 153
+    },
+    "phase7": {
+      "README_historical_revision": "8c1e160",
+      "all_recorded_artifacts_unchanged": true,
+      "artifact_count": 716
+    }
+  },
+  "result_sha256": "599496bd6be9220592679697b8c1b1b06b79e0c9b77b8a4a8eecbd0ecfa6f0f3",
+  "review_hashes_and_coverage_valid": true,
+  "trajectory_file_hashes_valid": 5,
+  "unseen_review_images": 16,
+  "upstream": {
+    "diffusionopd": "0c85bf0193a6da24bb1f72152b612d353a154999",
+    "diffusionopsd": "9c4c48cdfe5c3fa712d32957345d75fae9295696"
+  }
+}

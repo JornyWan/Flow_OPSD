@@ -1,0 +1,212 @@
+{
+  "family_counts": {
+    "jp1-train-color": 1,
+    "jp1-train-count": 1,
+    "jp1-train-count_color": 2,
+    "jp1-train-relation": 2
+  },
+  "meaning": "Remaining train prompts not used by the named calibration/review selection sets; not pristine model-training holdout. Do not claim another balanced16 unseen prompt pool exists.",
+  "remaining": [
+    {
+      "constraints": [
+        {
+          "id": "text",
+          "kind": "ocr",
+          "text": "PEACH"
+        },
+        {
+          "id": "count",
+          "kind": "geneval",
+          "metadata": {
+            "include": [
+              {
+                "class": "chair",
+                "count": 3
+              }
+            ],
+            "tag": "counting"
+          }
+        }
+      ],
+      "group": "jp1-train-count",
+      "id": "jp1-train-count-11",
+      "prompt": "A sharp, realistic studio photograph of exactly three chairs, all fully visible and separated. Above the objects, a large white sign displays only the word \"PEACH\" in bold black letters. No other letters or words are visible.",
+      "split": "train"
+    },
+    {
+      "constraints": [
+        {
+          "id": "text",
+          "kind": "ocr",
+          "text": "CLOUD"
+        },
+        {
+          "id": "color",
+          "kind": "geneval",
+          "metadata": {
+            "include": [
+              {
+                "class": "vase",
+                "color": "yellow",
+                "count": 1
+              }
+            ],
+            "tag": "colors"
+          }
+        }
+      ],
+      "group": "jp1-train-color",
+      "id": "jp1-train-color-13",
+      "prompt": "A sharp, realistic studio photograph of exactly one yellow vase, fully visible. Above the objects, a large white sign displays only the word \"CLOUD\" in bold black letters. No other letters or words are visible.",
+      "split": "train"
+    },
+    {
+      "constraints": [
+        {
+          "id": "text",
+          "kind": "ocr",
+          "text": "LOFT"
+        },
+        {
+          "id": "relation",
+          "kind": "geneval",
+          "metadata": {
+            "include": [
+              {
+                "class": "potted plant",
+                "count": 1
+              },
+              {
+                "class": "chair",
+                "count": 1,
+                "position": [
+                  "right of",
+                  0
+                ]
+              }
+            ],
+            "tag": "position"
+          }
+        }
+      ],
+      "group": "jp1-train-relation",
+      "id": "jp1-train-relation-06",
+      "prompt": "A sharp, realistic studio photograph of exactly one chair clearly to the right of exactly one potted plant, both fully visible. Above the objects, a large white sign displays only the word \"LOFT\" in bold black letters. No other letters or words are visible.",
+      "split": "train"
+    },
+    {
+      "constraints": [
+        {
+          "id": "text",
+          "kind": "ocr",
+          "text": "NORTH"
+        },
+        {
+          "id": "relation",
+          "kind": "geneval",
+          "metadata": {
+            "include": [
+              {
+                "class": "bowl",
+                "count": 1
+              },
+              {
+                "class": "apple",
+                "count": 1,
+                "position": [
+                  "left of",
+                  0
+                ]
+              }
+            ],
+            "tag": "position"
+          }
+        }
+      ],
+      "group": "jp1-train-relation",
+      "id": "jp1-train-relation-09",
+      "prompt": "A sharp, realistic studio photograph of exactly one apple clearly to the left of exactly one bowl, both fully visible. Above the objects, a large white sign displays only the word \"NORTH\" in bold black letters. No other letters or words are visible.",
+      "split": "train"
+    },
+    {
+      "constraints": [
+        {
+          "id": "text",
+          "kind": "ocr",
+          "text": "LOFT"
+        },
+        {
+          "id": "count",
+          "kind": "geneval",
+          "metadata": {
+            "include": [
+              {
+                "class": "book",
+                "count": 1
+              }
+            ],
+            "tag": "counting"
+          }
+        },
+        {
+          "id": "color",
+          "kind": "geneval",
+          "metadata": {
+            "include": [
+              {
+                "class": "book",
+                "color": "yellow",
+                "count": 1
+              }
+            ],
+            "tag": "colors"
+          }
+        }
+      ],
+      "group": "jp1-train-count_color",
+      "id": "jp1-train-count_color-06",
+      "prompt": "A sharp, realistic studio photograph of exactly one yellow book, all fully visible and separated. Above the objects, a large white sign displays only the word \"LOFT\" in bold black letters. No other letters or words are visible.",
+      "split": "train"
+    },
+    {
+      "constraints": [
+        {
+          "id": "text",
+          "kind": "ocr",
+          "text": "PEACH"
+        },
+        {
+          "id": "count",
+          "kind": "geneval",
+          "metadata": {
+            "include": [
+              {
+                "class": "chair",
+                "count": 3
+              }
+            ],
+            "tag": "counting"
+          }
+        },
+        {
+          "id": "color",
+          "kind": "geneval",
+          "metadata": {
+            "include": [
+              {
+                "class": "chair",
+                "color": "green",
+                "count": 3
+              }
+            ],
+            "tag": "colors"
+          }
+        }
+      ],
+      "group": "jp1-train-count_color",
+      "id": "jp1-train-count_color-11",
+      "prompt": "A sharp, realistic studio photograph of exactly three green chairs, all fully visible and separated. Above the objects, a large white sign displays only the word \"PEACH\" in bold black letters. No other letters or words are visible.",
+      "split": "train"
+    }
+  ]
+}

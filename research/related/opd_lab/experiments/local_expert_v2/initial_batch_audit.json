@@ -1,0 +1,13 @@
+{
+  "stage": "initial_frozen_batch_before_any_update",
+  "queries_per_arm": 16,
+  "candidate_images_per_arm": 80,
+  "identical_initial_candidates_verdicts_noise_and_times": {
+    "fixed_geneval": true,
+    "utility_only": true,
+    "verified_fixed": true,
+    "verified_multi": true
+  },
+  "all_match": true,
+  "selection_differences_intentional": true
+}

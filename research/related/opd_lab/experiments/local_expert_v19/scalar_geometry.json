@@ -1,0 +1,272 @@
+{
+  "analysis": "Post-hoc exact FP64 tensor geometry for all24 teacher comparisons.",
+  "formula": "min over beta>=0 of ||beta*(student-noop)-(teacher-noop)||^2 / ||teacher-noop||^2",
+  "limit": "Uses teacher actions and per-state oracle scalars. It bounds action MSE only; no endpoint was rendered with rescaling and no quality claim follows.",
+  "results_sha256": "3b634341a80b54bf0ba907b011b77b87aae1bbcdd8fe73bce18ad47f6b052e17",
+  "rows": [
+    {
+      "case": 1,
+      "id": "jp1-train-count-08",
+      "minimum_relative_mse_by_scalar": 0.9733950206531565,
+      "optimal_nonnegative_scalar": 0.22721784294977979,
+      "relative_mse_beta1": 1.2811408903082933,
+      "residual_cosine": 0.16311032875585613,
+      "seed": 1190330343,
+      "teacher": "ocr@1",
+      "teacher_safe_complete": false
+    },
+    {
+      "case": 1,
+      "id": "jp1-train-count-08",
+      "minimum_relative_mse_by_scalar": 0.9005279586335192,
+      "optimal_nonnegative_scalar": 0.5012082091615571,
+      "relative_mse_beta1": 0.999043165558004,
+      "residual_cosine": 0.3153918853846447,
+      "seed": 1190330343,
+      "teacher": "geneval@1",
+      "teacher_safe_complete": false
+    },
+    {
+      "case": 2,
+      "id": "jp1-train-color-11",
+      "minimum_relative_mse_by_scalar": 1.0,
+      "optimal_nonnegative_scalar": 0.0,
+      "relative_mse_beta1": 1.273427561079784,
+      "residual_cosine": -0.11205283898220439,
+      "seed": 83669230,
+      "teacher": "ocr@1",
+      "teacher_safe_complete": false
+    },
+    {
+      "case": 2,
+      "id": "jp1-train-color-11",
+      "minimum_relative_mse_by_scalar": 0.7983954309099937,
+      "optimal_nonnegative_scalar": 1.4553213494768338,
+      "relative_mse_beta1": 0.8181295887867955,
+      "residual_cosine": 0.44900397447016704,
+      "seed": 83669230,
+      "teacher": "geneval@1",
+      "teacher_safe_complete": false
+    },
+    {
+      "case": 3,
+      "id": "jp1-train-count-12",
+      "minimum_relative_mse_by_scalar": 0.764073751520284,
+      "optimal_nonnegative_scalar": 1.5471502662211847,
+      "relative_mse_beta1": 0.7935807136228816,
+      "residual_cosine": 0.4857223985773313,
+      "seed": 274829538,
+      "teacher": "ocr@1",
+      "teacher_safe_complete": false
+    },
+    {
+      "case": 3,
+      "id": "jp1-train-count-12",
+      "minimum_relative_mse_by_scalar": 0.9419490202026012,
+      "optimal_nonnegative_scalar": 0.5952992570783865,
+      "relative_mse_beta1": 0.9687781679059346,
+      "residual_cosine": 0.2409377093719429,
+      "seed": 274829538,
+      "teacher": "geneval@1",
+      "teacher_safe_complete": false
+    },
+    {
+      "case": 4,
+      "id": "jp1-train-color-13",
+      "minimum_relative_mse_by_scalar": 0.9495984846678235,
+      "optimal_nonnegative_scalar": 0.4342813761548438,
+      "relative_mse_beta1": 1.0351252674271794,
+      "residual_cosine": 0.22450281809406442,
+      "seed": 29530503,
+      "teacher": "ocr@1",
+      "teacher_safe_complete": false
+    },
+    {
+      "case": 4,
+      "id": "jp1-train-color-13",
+      "minimum_relative_mse_by_scalar": 0.7492422232757285,
+      "optimal_nonnegative_scalar": 1.1605509391516735,
+      "relative_mse_beta1": 0.7540412337364619,
+      "residual_cosine": 0.5007572033673321,
+      "seed": 29530503,
+      "teacher": "geneval@1",
+      "teacher_safe_complete": false
+    },
+    {
+      "case": 5,
+      "id": "jp1-train-relation-12",
+      "minimum_relative_mse_by_scalar": 0.8714359281287041,
+      "optimal_nonnegative_scalar": 0.7343995101585449,
+      "relative_mse_beta1": 0.8882515373102965,
+      "residual_cosine": 0.3585583242253567,
+      "seed": 946194047,
+      "teacher": "ocr@1",
+      "teacher_safe_complete": false
+    },
+    {
+      "case": 5,
+      "id": "jp1-train-relation-12",
+      "minimum_relative_mse_by_scalar": 0.8908573965012301,
+      "optimal_nonnegative_scalar": 0.7938728860656565,
+      "relative_mse_beta1": 0.8982154444878734,
+      "residual_cosine": 0.33036737656549847,
+      "seed": 946194047,
+      "teacher": "geneval@1",
+      "teacher_safe_complete": false
+    },
+    {
+      "case": 6,
+      "id": "jp1-train-relation-01",
+      "minimum_relative_mse_by_scalar": 0.9736956079634456,
+      "optimal_nonnegative_scalar": 0.3866241821463926,
+      "relative_mse_beta1": 1.0399025516592475,
+      "residual_cosine": 0.16218628806577445,
+      "seed": 377456364,
+      "teacher": "ocr@1",
+      "teacher_safe_complete": false
+    },
+    {
+      "case": 6,
+      "id": "jp1-train-relation-01",
+      "minimum_relative_mse_by_scalar": 0.5570807292841372,
+      "optimal_nonnegative_scalar": 1.760566823841584,
+      "relative_mse_beta1": 0.6397405204123678,
+      "residual_cosine": 0.6655218033361963,
+      "seed": 377456364,
+      "teacher": "geneval@1",
+      "teacher_safe_complete": false
+    },
+    {
+      "case": 7,
+      "id": "jp1-train-count-12",
+      "minimum_relative_mse_by_scalar": 1.0,
+      "optimal_nonnegative_scalar": 0.0,
+      "relative_mse_beta1": 1.3595922103585616,
+      "residual_cosine": -0.21141825114943966,
+      "seed": 1123960886,
+      "teacher": "ocr@1",
+      "teacher_safe_complete": false
+    },
+    {
+      "case": 7,
+      "id": "jp1-train-count-12",
+      "minimum_relative_mse_by_scalar": 0.7200605565256166,
+      "optimal_nonnegative_scalar": 1.1068104540220132,
+      "relative_mse_beta1": 0.7226675810235137,
+      "residual_cosine": 0.5290930385805348,
+      "seed": 1123960886,
+      "teacher": "geneval@1",
+      "teacher_safe_complete": false
+    },
+    {
+      "case": 8,
+      "id": "jp1-train-relation-12",
+      "minimum_relative_mse_by_scalar": 0.9732697579568541,
+      "optimal_nonnegative_scalar": 0.18632050638069172,
+      "relative_mse_beta1": 1.4830562476708682,
+      "residual_cosine": 0.16349385934384783,
+      "seed": 847470047,
+      "teacher": "ocr@1",
+      "teacher_safe_complete": false
+    },
+    {
+      "case": 8,
+      "id": "jp1-train-relation-12",
+      "minimum_relative_mse_by_scalar": 0.7763274708957709,
+      "optimal_nonnegative_scalar": 0.7097940834703738,
+      "relative_mse_beta1": 0.8137178977502479,
+      "residual_cosine": 0.47294030183970254,
+      "seed": 847470047,
+      "teacher": "geneval@1",
+      "teacher_safe_complete": true
+    },
+    {
+      "case": 9,
+      "id": "jp1-train-relation-01",
+      "minimum_relative_mse_by_scalar": 1.0,
+      "optimal_nonnegative_scalar": 0.0,
+      "relative_mse_beta1": 1.3577508829106646,
+      "residual_cosine": -0.214460320302765,
+      "seed": 950336059,
+      "teacher": "ocr@1",
+      "teacher_safe_complete": false
+    },
+    {
+      "case": 9,
+      "id": "jp1-train-relation-01",
+      "minimum_relative_mse_by_scalar": 0.599319788288599,
+      "optimal_nonnegative_scalar": 1.7009694173671308,
+      "relative_mse_beta1": 0.6673658547609848,
+      "residual_cosine": 0.6329930581857917,
+      "seed": 950336059,
+      "teacher": "geneval@1",
+      "teacher_safe_complete": false
+    },
+    {
+      "case": 10,
+      "id": "jp1-train-color-11",
+      "minimum_relative_mse_by_scalar": 0.9005135313726577,
+      "optimal_nonnegative_scalar": 0.5915728785097832,
+      "relative_mse_beta1": 0.9479351804820567,
+      "residual_cosine": 0.315414756514882,
+      "seed": 1337733175,
+      "teacher": "ocr@1",
+      "teacher_safe_complete": false
+    },
+    {
+      "case": 10,
+      "id": "jp1-train-color-11",
+      "minimum_relative_mse_by_scalar": 0.4928381589411756,
+      "optimal_nonnegative_scalar": 1.4956308820723376,
+      "relative_mse_beta1": 0.5485329321010328,
+      "residual_cosine": 0.7121529618409408,
+      "seed": 1337733175,
+      "teacher": "geneval@1",
+      "teacher_safe_complete": false
+    },
+    {
+      "case": 11,
+      "id": "jp1-train-count-08",
+      "minimum_relative_mse_by_scalar": 0.8464658813564818,
+      "optimal_nonnegative_scalar": 0.7150261159286785,
+      "relative_mse_beta1": 0.8708536021749522,
+      "residual_cosine": 0.3918342999834474,
+      "seed": 548063128,
+      "teacher": "ocr@1",
+      "teacher_safe_complete": true
+    },
+    {
+      "case": 11,
+      "id": "jp1-train-count-08",
+      "minimum_relative_mse_by_scalar": 0.623941166153202,
+      "optimal_nonnegative_scalar": 1.3858947931762142,
+      "relative_mse_beta1": 0.6530975128795693,
+      "residual_cosine": 0.6132363605061248,
+      "seed": 548063128,
+      "teacher": "geneval@1",
+      "teacher_safe_complete": true
+    },
+    {
+      "case": 12,
+      "id": "jp1-train-color-13",
+      "minimum_relative_mse_by_scalar": 0.9982627437780743,
+      "optimal_nonnegative_scalar": 0.1023383026135214,
+      "relative_mse_beta1": 1.1319262489703095,
+      "residual_cosine": 0.041680405731297804,
+      "seed": 99466903,
+      "teacher": "ocr@1",
+      "teacher_safe_complete": false
+    },
+    {
+      "case": 12,
+      "id": "jp1-train-color-13",
+      "minimum_relative_mse_by_scalar": 0.655632780102755,
+      "optimal_nonnegative_scalar": 1.7158798003007842,
+      "relative_mse_beta1": 0.7155743754810188,
+      "residual_cosine": 0.5868281008074212,
+      "seed": 99466903,
+      "teacher": "geneval@1",
+      "teacher_safe_complete": false
+    }
+  ]
+}

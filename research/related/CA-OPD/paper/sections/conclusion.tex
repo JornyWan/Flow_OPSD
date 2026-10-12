@@ -1,0 +1,57 @@
+\section{Limitations}
+\label{sec:limitations}
+
+We state the boundaries of our claims plainly.
+\begin{itemize}
+  \item \textbf{Final quality not improved.} On this benchmark CA-OPD does not
+  beat uniform DiffusionOPD on final per-axis quality (within single-seed noise on
+  every axis, higher on none). Its demonstrated benefit is convergence efficiency
+  on the lagging axis and $\tau$-controllability, not final quality.
+  \item \textbf{Near-saturated, low-conflict benchmark.} The three teachers
+  (GenEval, OCR, Aesthetics) are already near their individual ceilings and only
+  mildly conflict, leaving little frontier for min-max to relocate along. The
+  theory predicts larger gains for \emph{higher-conflict} teacher sets, which we
+  did not have.
+  \item \textbf{Statistical strength.} Results are single-seed at $n{=}256$
+  prompts; the OCR trade ($-0.012$) is within eval noise, and a confounding GenEval
+  rise muddies the clean ``gain-aesthetics/pay-OCR'' story. We deliberately report
+  \emph{per-axis} metrics only: a single min-max--normalized average is
+  normalization-dependent (not comparable across papers) and partially circular
+  with a min-max method (\S\ref{sec:th-conv}). Multi-seed runs with per-axis error
+  bars are needed for significance.
+  \item \textbf{No convergence rate.} CA-OPD's EMA-softmax weights are
+  nonstationary; we prove only a conditional Pareto-stationarity guarantee (if the
+  weights converge), not a rate (\S\ref{sec:th-conv}).
+  \item \textbf{Absolute-loss weighting risk.} Weighting by absolute EMA-KL can
+  chase an irreducible or reward-hacked teacher. Here the up-weighted axis
+  (aesthetics) was reducible, so the pathology did not bite, but it is a real
+  failure mode.
+\end{itemize}
+
+\section{Conclusion}
+\label{sec:conclusion}
+
+We revisited multi-teacher on-policy distillation through multi-objective
+optimization. Our main contribution is theoretical: multi-teacher OPD losses are
+one commensurable functional in a shared isotropic output metric; the uniform
+(teacher-mean) student is Pareto-optimal \emph{in loss}, so the real difficulty
+is the nonlinear loss$\to$reward map under which the loss-sum minimizer can be
+reward-dominated; and an adaptive Tchebycheff min-max reweighting whose detached
+weights give the \emph{exact} surrogate gradient (envelope theorem) is a
+principled response, with mopd as its $\tau\to\infty$ limit. Empirically, on a
+faithful, triple-validated reproduction of DiffusionOPD, our CA-OPD improves
+convergence efficiency on the lagging reward axis and exposes $\tau$ as a
+speed-vs-ceiling knob, while an honest four-idea ablation maps the OPD-improvement
+design space (teacher reweighting is safe; per-step and sampler manipulation
+hurt). We do not claim a new state of the art: on this near-saturated benchmark
+CA-OPD does not raise final per-axis quality.
+
+\paragraph{Future work.}
+The theory points to two concrete next steps: (i) \textbf{higher-conflict teacher
+sets}, where min-max frontier selection should yield genuine final-quality gains,
+not just speed; and (ii) \textbf{regret-based weighting}
+$r_m=\mathcal L_m-\mathrm{floor}_m$, weighting the \emph{reducible} gap to a
+teacher's attainable floor rather than absolute loss, to avoid chasing
+irreducible teachers. A two-timescale analysis of the EMA-softmax dynamics, or an
+inner MGDA/CAGrad solve inheriting existing guarantees, would close the
+convergence-rate gap.

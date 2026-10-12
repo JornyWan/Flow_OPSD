@@ -1,0 +1,18 @@
+{
+  "analysis_scripts_sha256": {
+    "scripts/finalize_controlled_evaluation.py": "0e746300cbe8af3561fc6b237dee953a2a313c88e06409409074b9bf3acc5fbf",
+    "scripts/summarize_controlled_pilot.py": "5f1a1f71d0aa8d12e381b20cd97704475eb757918795c4592a47fefef1f9ab79",
+    "scripts/summarize_validation_review.py": "ec335bea08caad11184045a4d0fba448c0774a0dfbec92f1c9c95087ff1eabbe"
+  },
+  "artifacts_sha256": {
+    "experiments/local_expert_v2/NEXT.md": "89a136a3131987103bbad95116db20f0b91c92ef9de9a1f98c346284f32dcebd",
+    "experiments/local_expert_v2/STATUS.md": "1ba6ab30d005eec7030909b1acbdad93afdf2832f57d9b56bcf459db84c9cfa2",
+    "runs/le2_report_001/report.md": "a3ff2b8f271003e1b4c81d274484083b411c4674fdd18ffe5bbb65344f726036",
+    "runs/le2_report_001/results.json": "92521e4801db57dd5cf347509ed483f84a956429c38518a870340e290d1dc83f",
+    "runs/le2_report_001/validation_deltas.pdf": "55d403f78b8e558d32bf781491c6f8943c0829987df6adff1dea854251eb56b1",
+    "runs/le2_report_001/validation_deltas.png": "442f509db820ecea0ba77df25015a10d547ccf147747d9c90bf8d0d34cfe922d",
+    "runs/le2_validation_review_001/assistant_observations.json": "b52d0af60db4833b8fe0cfbbfcaec7d3642eca7baca4872abbb964a6173495c7",
+    "runs/le2_validation_review_001/comparison.json": "b57b8e395ec8605009a302d691823b7fcb98ef9cf200f44ebb6a6fbf01732346",
+    "runs/le2_validation_review_001/report.md": "d13e9235cd497b7f4deaf29f92bce10b81ae7efb436af3df460d28e9958a7291"
+  }
+}

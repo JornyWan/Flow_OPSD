@@ -1,0 +1,22 @@
+{
+  "fit2": {
+    "adam_step": 2,
+    "parameters": 382,
+    "raw_matches_state": true
+  },
+  "fit2_keep": {
+    "adam_step": 2,
+    "parameters": 382,
+    "raw_matches_state": true
+  },
+  "fit4": {
+    "adam_step": 4,
+    "parameters": 382,
+    "raw_matches_state": true
+  },
+  "fit4_keep": {
+    "adam_step": 4,
+    "parameters": 382,
+    "raw_matches_state": true
+  }
+}

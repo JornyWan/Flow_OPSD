@@ -1,0 +1,14 @@
+{
+  "collection_states": 48,
+  "coverage_gate": {
+    "prompts_with_two_safe": 3,
+    "safe_complete_states": 4,
+    "safe_states": 8
+  },
+  "excluded_seed_count": 308,
+  "new_images": 96,
+  "plan_sha256": "6354f48b217f63a08b0f19a1bfa639eed465d4964cb8039819e14b1d22787e05",
+  "reference_images": 12,
+  "reserved_evaluation_states": 32,
+  "run": "/midtier/minilab/scratch/chw4026/projects/side_project/generative/opd_related/opd_lab/runs/le20_collection_001"
+}

@@ -1,0 +1,104 @@
+\section{Method}
+\label{sec:method}
+
+We first recap the base DiffusionOPD objective (\S\ref{sec:m-recap}), then
+present CA-OPD, our conflict-averse multi-teacher reweighting
+(\S\ref{sec:m-caopd}). The full multi-objective theory---including the
+Pareto/reward-space analysis, the envelope-theorem exactness result, and the
+commensurability property---is developed in \S\ref{sec:theory}, which this
+section inputs directly.
+
+\subsection{Recap: DiffusionOPD}
+\label{sec:m-recap}
+
+We adopt DiffusionOPD~\cite{li2026diffusionopd} verbatim as our base method. A
+flow-matching student $v_\theta$ rolls out its own reverse-time trajectory
+$x_{t_0},\dots,x_{t_N}$ ($1{=}t_0{>}\cdots{>}t_N{=}0$) via the Euler--Maruyama
+discretization of Flow-GRPO~\cite{liu2025flow}. At each step, the student and a
+frozen teacher $v_\phi$ define one-step Gaussian transition kernels that (i) are
+evaluated at the \emph{same} on-policy state $x_{t_j}$ and (ii) share the
+\emph{same} covariance $\bar\sigma_j^2 I_d$ (a function only of the scheduler and
+global noise level). They therefore differ only in mean, and the per-step reverse
+KL is closed-form,
+\begin{equation}
+\label{eq:m-kl}
+\mathrm{KL}\!\bigl(\mathcal N(\mu_S,\bar\sigma_j^2 I)\,\Vert\,\mathcal N(\mu_T,\bar\sigma_j^2 I)\bigr)
+=\frac{\|\mu_S(x_{t_j})-\mu_T(x_{t_j})\|_2^2}{2\bar\sigma_j^2}
+\;\propto\;\|v_\theta-v_\phi\|_2^2 ,
+\end{equation}
+introducing no Monte-Carlo variance. This yields dense, pathwise per-step
+velocity matching; in the deterministic ODE regime (the default) it becomes the
+direct $L_2$ loss $\tfrac12\|\mu_S-\mu_T\|_2^2$~\cite{li2026diffusionopd}.
+
+\paragraph{Uniform multi-teacher OPD (mopd).}
+Given $M$ frozen task teachers $\{v_{\phi_m}\}_{m=1}^M$, DiffusionOPD defines the
+per-teacher loss $\mathcal L_m(\theta)$ from \eqref{eq:m-kl} and trains on their
+\emph{uniform} average, implemented as round-robin gradient accumulation with
+factor $G=M$:
+\begin{equation}
+\label{eq:m-mopd}
+\mathcal L_{\mathrm{mopd}}(\theta)=\frac1M\sum_{m=1}^M \mathcal L_m(\theta).
+\end{equation}
+As we show in \S\ref{sec:theory}, the minimizer of \eqref{eq:m-mopd} drives the
+student velocity toward the per-step teacher mean $\tfrac1M\sum_m v_{\phi_m}$.
+
+\subsection{CA-OPD: conflict-averse multi-teacher reweighting}
+\label{sec:m-caopd}
+
+CA-OPD replaces the uniform average \eqref{eq:m-mopd} by an
+entropy-regularized Tchebycheff (min-max) scalarization over per-teacher
+reference-normalized losses. Because per-batch losses are noisy, we drive the
+weights from an exponential moving average of each teacher's per-step KL,
+\begin{equation}
+\label{eq:m-ema}
+\bar\ell_m^{(t)}=\beta\,\bar\ell_m^{(t-1)}+(1-\beta)\,\mathcal L_m(\theta^{(t)}),
+\qquad
+w_m^{(t)}=\frac{\exp\!\bigl(\bar\ell_m^{(t)}/(\tau r_m)\bigr)}{\sum_{k}\exp\!\bigl(\bar\ell_k^{(t)}/(\tau r_k)\bigr)},
+\end{equation}
+and take the \emph{detached}-weight loss
+\begin{equation}
+\label{eq:m-caopd}
+\mathcal L_{\mathrm{CA\text{-}OPD}}^{(t)}(\theta)=\sum_{m=1}^M \mathrm{sg}\!\bigl[w_m^{(t)}\bigr]\,\mathcal L_m(\theta),
+\end{equation}
+where $\mathrm{sg}[\cdot]$ is stop-gradient. This up-weights the currently
+\emph{worst-matched} (largest EMA-KL) teacher. Two properties, proved in
+\S\ref{sec:theory}, make this principled rather than heuristic: (i) by the
+envelope (Danskin) theorem, \eqref{eq:m-caopd} is the \emph{exact} gradient of
+the smooth log-sum-exp Tchebycheff surrogate
+$\mathcal F_\tau(\theta)=\tau\log\sum_m\exp(\mathcal L_m/(\tau r_m))$ (no term
+through the softmax is missed); and (ii) as $\tau\to\infty$, $w_m\to1/M$ and CA-OPD
+reduces \emph{exactly} to mopd \eqref{eq:m-mopd}, so uniform DiffusionOPD is the
+$\tau\to\infty$ special case and lies inside CA-OPD's search space. The
+temperature $\tau$ controls how aggressively the worst teacher is prioritized.
+
+\paragraph{Implementation.}
+CA-OPD is a small addition to the DiffusionOPD trainer and changes nothing about
+teacher training or the rollout. In each round-robin cycle we tag each
+accumulated micro-batch with its \texttt{teacher\_idx}, maintain the per-teacher
+EMA \texttt{teacher\_kl\_ema}, and scale each teacher's contribution by the
+detached softmax weight \eqref{eq:m-ema} before the single backward pass. We use
+$\tau{=}0.5$ and $\beta{=}0.9$; the reference $r_m$ is fixed. Setting the flag off
+recovers the unmodified mopd baseline exactly (\texttt{config.train.ca\_opd}, with
+\texttt{ca\_opd\_tau} and \texttt{ca\_opd\_ema} defaulting via \texttt{getattr}),
+so the two arms differ only in the weighting of an otherwise identical loss.
+Algorithm~\ref{alg:caopd} summarizes Stage~2; Stage~1 (per-task teacher training)
+is unchanged from DiffusionOPD.
+
+\begin{algorithm}[t]
+\caption{CA-OPD (Stage~2 multi-teacher on-policy distillation)}
+\label{alg:caopd}
+\small
+\KwIn{Teachers $\{v_{\phi_m}\}_{m=1}^M$; student $v_\theta\!\leftarrow\!v^{\mathrm{ref}}$; temperature $\tau$; EMA $\beta$; refs $\{r_m\}$.}
+Initialize EMA $\bar\ell_m\!\leftarrow\!0$\;
+\For{each training round}{
+  \For{$m=1,\dots,M$}{
+    Sample prompts $\vc\sim\mathcal C^{(m)}$; roll out student to get $\{x_{t_j}\}$ \tcp*{\texttt{no\_grad}}
+    Compute $\mathcal L_m(\theta)$ from Eq.~\eqref{eq:m-kl} (ODE $L_2$ by default)\;
+    Update EMA: $\bar\ell_m\!\leftarrow\!\beta\bar\ell_m+(1-\beta)\,\mathrm{detach}(\mathcal L_m)$\;
+  }
+  Weights $w_m\!\leftarrow\!\mathrm{softmax}_m(\bar\ell_m/(\tau r_m))$ \tcp*{detached}
+  Backprop $\sum_m \mathrm{sg}[w_m]\,\mathcal L_m$ and take one optimizer step\;
+}
+\end{algorithm}
+
+\input{sections/theory.tex}

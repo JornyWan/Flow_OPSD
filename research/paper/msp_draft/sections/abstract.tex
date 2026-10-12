@@ -1,0 +1,47 @@
+\begin{abstract}
+On-policy reward distillation converts image-level reward gradients into detached
+regression targets at an intermediate state of a sampling trajectory. A design choice
+that has received no attention is \emph{which} state: the strongest current method,
+\opsd, builds its target at a single, low-noise query state ($\sigma\!\approx\!0.28$ on a
+$10$-step schedule) and applies the loss only there. We show that this choice is tuned
+for full-budget sampling and is substantially suboptimal when the sampling budget is cut.
+The shortfall is not undertraining: trained to the published budget rather than a third of
+it, the gap between a model's $40$-step and its $4$-step output \emph{grows}, from $18.8$
+to $22.3$ in units of the measured detectable effect.
+
+We study three answers to ``where should the target be applied''. \textbf{(A)} \emph{Move}
+the query state to a higher noise level -- a one-line configuration change at zero cost.
+\textbf{(B)} \emph{Shorten the training rollout}, which moves the query state implicitly.
+\textbf{(C)} \emph{Propagate} the \emph{same} target to additional, higher-noise states of
+the same trajectory, at no extra reward evaluation and no extra decoding.
+We find that (A) and (B) are the same mechanism -- their gain curves coincide to within
+measurement error -- and that both are a \emph{trade}: large gains below $10$ sampling
+steps, but \emph{nothing left} at the full budget, where their change turns slightly
+negative and falls below our significance threshold. Propagation (C) is not
+a trade, and it is the \emph{only} one of the three that is significant in all four
+prompt-set $\times$ budget cells we evaluate: it gains at every budget we measure.
+
+We reproduce \opsd under its published protocol \emph{at its published training budget}:
+all five reported evaluators land inside the agreement we measure on the untrained backbone
+($1.6\%$), the largest deviation reaching $0.81$ of that tolerance. Everything else is built
+on that reproduction.
+On SD3.5-Medium under a matched $100$-update budget, propagation improves the reported
+composite by $+5.62$ and $+3.34$ MDE at $40$ steps and by $+10.70$ and $+8.20$ MDE at
+$4$ steps on two prompt sets, at $1.21\times$ training cost and with \emph{no} additional
+reward evaluations. At four steps that recovers $67\%$ and $49\%$ of what tripling the
+training budget buys, for a tenth of the extra compute. The noise level the supervision set reaches has an \emph{interior}
+optimum: sets that stop lower or reach higher are both worse in all four
+prompt-set~$\times$~budget cells, by $1.3$ to $3.2$ MDE. Propagation also composes with (B): the combination concentrates the
+gain where sampling is cheapest, reaching $+16.23$ and $+15.91$ MDE at $4$ steps with
+per-image win rates of $92.7\%$ and $95.4\%$ -- the largest few-step improvements we
+measure. Propagation thus gives a practitioner a small family of operating points from a
+single mechanism: propagate for uniform gains across budgets, and add the shorter rollout
+when few-step deployment is the target.
+We also map where the gain stops. It requires the published branch coefficient -- raising
+$\beta$ from $0.1$ to $1.0$ reverses it, to $-15.40$ MDE at four steps -- and at the published $300$ training updates its forty-step gain is gone in both of
+two seeds, while at four steps one seed keeps its lead and the other collapses after
+$200$ updates. Both boundaries come from pre-registered comparisons and we report them as part of
+the result. All effects
+replicate across two random seeds and are calibrated against a measured
+canonical-versus-canonical noise floor.
+\end{abstract}

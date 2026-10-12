@@ -1,0 +1,3536 @@
+{
+  "accepted_classes": {
+    "non_repair": 2,
+    "safe_repair": 4,
+    "unknown": 1
+  },
+  "changed_selection_cases": [
+    34
+  ],
+  "complete_scene": 24,
+  "examples": [
+    {
+      "case": 2,
+      "details": {
+        "geneval@1": {
+          "clauses": {
+            "relation": true,
+            "text": false
+          },
+          "full_visibility": true,
+          "object_reasons": [
+            [
+              {
+                "id": "relation",
+                "reason": "",
+                "strict": true
+              }
+            ],
+            [
+              {
+                "id": "relation",
+                "reason": "",
+                "strict": true
+              }
+            ]
+          ],
+          "ocr": {
+            "reread": [
+              {
+                "confidence": 0.9965952634811401,
+                "text": "BLOM"
+              }
+            ],
+            "rows": [
+              {
+                "confidence": 0.9878592491149902,
+                "text": "blom"
+              }
+            ],
+            "scaled_reread": [
+              {
+                "confidence": 0.9951950907707214,
+                "text": "BLOM"
+              }
+            ],
+            "scaled_rows": [
+              {
+                "confidence": 0.9965101480484009,
+                "text": "blom"
+              }
+            ]
+          },
+          "review": {
+            "clauses": {
+              "relation": true,
+              "text": false
+            },
+            "full_visibility": true,
+            "notes": "One complete cup right of one complete bottle; extra saucer. Missing one O in BLOM.",
+            "visible_text": "BLOM"
+          }
+        },
+        "noop": {
+          "clauses": {
+            "relation": false,
+            "text": false
+          },
+          "full_visibility": true,
+          "object_reasons": [
+            [
+              {
+                "id": "relation",
+                "reason": "expected bottle==1, found 2\nexpected cup==1, found 2",
+                "strict": false
+              }
+            ],
+            [
+              {
+                "id": "relation",
+                "reason": "expected bottle==1, found 2\nexpected cup==1, found 2",
+                "strict": false
+              }
+            ]
+          ],
+          "ocr": {
+            "reread": [
+              {
+                "confidence": 0.9937503337860107,
+                "text": "BLOM"
+              }
+            ],
+            "rows": [
+              {
+                "confidence": 0.846221387386322,
+                "text": "b lom"
+              }
+            ],
+            "scaled_reread": [
+              {
+                "confidence": 0.9704575538635254,
+                "text": "BLOM"
+              }
+            ],
+            "scaled_rows": [
+              {
+                "confidence": 0.9911670088768005,
+                "text": "blom"
+              }
+            ]
+          },
+          "review": {
+            "clauses": {
+              "relation": false,
+              "text": false
+            },
+            "full_visibility": true,
+            "notes": "Two cups left of bottle rather than one right. Additional printed letters on tall cup.",
+            "visible_text": "BLOM plus cup-label print"
+          }
+        },
+        "ocr@1": {
+          "clauses": {
+            "relation": false,
+            "text": null
+          },
+          "full_visibility": true,
+          "object_reasons": [
+            [
+              {
+                "id": "relation",
+                "reason": "expected cup right of target, found left of target",
+                "strict": false
+              }
+            ],
+            [
+              {
+                "id": "relation",
+                "reason": "expected cup right of target, found left of target",
+                "strict": false
+              }
+            ]
+          ],
+          "ocr": {
+            "reread": [
+              {
+                "confidence": 0.9953311085700989,
+                "text": "BLOM"
+              }
+            ],
+            "rows": [
+              {
+                "confidence": 0.6237612962722778,
+                "text": "blom-"
+              }
+            ],
+            "scaled_reread": [
+              {
+                "confidence": 0.9788946509361267,
+                "text": "BLOM"
+              }
+            ],
+            "scaled_rows": [
+              {
+                "confidence": 0.9867219924926758,
+                "text": "blom"
+              }
+            ]
+          },
+          "review": {
+            "clauses": {
+              "relation": false,
+              "text": false
+            },
+            "full_visibility": true,
+            "notes": "Cup left of bottle, opposite requested right. Pale bottle identifiable; extra saucer.",
+            "visible_text": "BLOM"
+          }
+        }
+      },
+      "id": "jp1-train-relation-12",
+      "selections": {
+        "noop": "noop",
+        "v1": "geneval@1",
+        "v1_discrete_event": "geneval@1",
+        "v2": "geneval@1"
+      }
+    },
+    {
+      "case": 6,
+      "details": {
+        "geneval@1": {
+          "clauses": {
+            "count": false,
+            "text": null
+          },
+          "full_visibility": false,
+          "object_reasons": [
+            [
+              {
+                "id": "count",
+                "reason": "expected bowl==1, found 0",
+                "strict": false
+              }
+            ],
+            [
+              {
+                "id": "count",
+                "reason": "expected bowl==1, found 0",
+                "strict": false
+              }
+            ]
+          ],
+          "ocr": {
+            "reread": [
+              {
+                "confidence": 0.9509559273719788,
+                "text": "B LOO M"
+              }
+            ],
+            "rows": [
+              {
+                "confidence": 0.9949976205825806,
+                "text": "bloom"
+              }
+            ],
+            "scaled_reread": [
+              {
+                "confidence": 0.9432559013366699,
+                "text": "B LOO M"
+              }
+            ],
+            "scaled_rows": [
+              {
+                "confidence": 0.9565095901489258,
+                "text": "bloo m"
+              }
+            ]
+          },
+          "review": {
+            "clauses": {
+              "count": true,
+              "text": true
+            },
+            "full_visibility": true,
+            "notes": "One complete bowl. BLOOM readable; A pale letters and C open-bottom decorative O shapes remain identifiable. C bowl has diffuse pale rim/geometry.",
+            "visible_text": "BLOOM"
+          }
+        },
+        "noop": {
+          "clauses": {
+            "count": true,
+            "text": null
+          },
+          "full_visibility": true,
+          "object_reasons": [
+            [
+              {
+                "id": "count",
+                "reason": "",
+                "strict": true
+              }
+            ],
+            [
+              {
+                "id": "count",
+                "reason": "",
+                "strict": true
+              }
+            ]
+          ],
+          "ocr": {
+            "reread": [
+              {
+                "confidence": 0.985848605632782,
+                "text": "BLOM"
+              }
+            ],
+            "rows": [
+              {
+                "confidence": 0.6855401396751404,
+                "text": "bl0m"
+              }
+            ],
+            "scaled_reread": [
+              {
+                "confidence": 0.9920340180397034,
+                "text": "BLOM"
+              }
+            ],
+            "scaled_rows": [
+              {
+                "confidence": 0.6095570921897888,
+                "text": "b0m"
+              }
+            ]
+          },
+          "review": {
+            "clauses": {
+              "count": true,
+              "text": false
+            },
+            "full_visibility": true,
+            "notes": "One complete bowl on small pedestal. Only one O in BLOM.",
+            "visible_text": "BLOM"
+          }
+        },
+        "ocr@1": {
+          "clauses": {
+            "count": true,
+            "text": null
+          },
+          "full_visibility": true,
+          "object_reasons": [
+            [
+              {
+                "id": "count",
+                "reason": "",
+                "strict": true
+              }
+            ],
+            [
+              {
+                "id": "count",
+                "reason": "",
+                "strict": true
+              }
+            ]
+          ],
+          "ocr": {
+            "reread": [
+              {
+                "confidence": 0.9963995218276978,
+                "text": "BLOOM"
+              }
+            ],
+            "rows": [
+              {
+                "confidence": 0.9711946845054626,
+                "text": "bloom"
+              }
+            ],
+            "scaled_reread": [
+              {
+                "confidence": 0.9966303110122681,
+                "text": "BLOOM"
+              }
+            ],
+            "scaled_rows": [
+              {
+                "confidence": 0.993705689907074,
+                "text": "bm"
+              }
+            ]
+          },
+          "review": {
+            "clauses": {
+              "count": true,
+              "text": true
+            },
+            "full_visibility": true,
+            "notes": "One complete bowl. BLOOM readable; A pale letters and C open-bottom decorative O shapes remain identifiable. C bowl has diffuse pale rim/geometry.",
+            "visible_text": "BLOOM"
+          }
+        }
+      },
+      "id": "jp1-train-count-12",
+      "selections": {
+        "noop": "noop",
+        "v1": "ocr@1",
+        "v1_discrete_event": "noop",
+        "v2": "noop"
+      }
+    },
+    {
+      "case": 10,
+      "details": {
+        "geneval@1": {
+          "clauses": {
+            "color": true,
+            "text": false
+          },
+          "full_visibility": true,
+          "object_reasons": [
+            [
+              {
+                "id": "color",
+                "reason": "",
+                "strict": true
+              }
+            ],
+            [
+              {
+                "id": "color",
+                "reason": "",
+                "strict": true
+              }
+            ]
+          ],
+          "ocr": {
+            "reread": [
+              {
+                "confidence": 0.9940235018730164,
+                "text": "EAR"
+              }
+            ],
+            "rows": [
+              {
+                "confidence": 0.9952836632728577,
+                "text": "ear"
+              }
+            ],
+            "scaled_reread": [
+              {
+                "confidence": 0.9958815574645996,
+                "text": "EAR"
+              }
+            ],
+            "scaled_rows": [
+              {
+                "confidence": 0.9962806701660156,
+                "text": "ear"
+              }
+            ]
+          },
+          "review": {
+            "clauses": {
+              "color": false,
+              "text": false
+            },
+            "full_visibility": true,
+            "notes": "Two yellow book-like volumes stacked at an angle, rather than exactly one. Missing C and L in EAR.",
+            "visible_text": "EAR"
+          }
+        },
+        "noop": {
+          "clauses": {
+            "color": false,
+            "text": null
+          },
+          "full_visibility": false,
+          "object_reasons": [
+            [
+              {
+                "id": "color",
+                "reason": "expected book==1, found 0",
+                "strict": false
+              }
+            ],
+            [
+              {
+                "id": "color",
+                "reason": "expected book==1, found 0",
+                "strict": false
+              }
+            ]
+          ],
+          "ocr": {
+            "reread": [
+              {
+                "confidence": 0.9851795434951782,
+                "text": "CLEAR"
+              }
+            ],
+            "rows": [
+              {
+                "confidence": 0.7151873111724854,
+                "text": "cear"
+              }
+            ],
+            "scaled_reread": [
+              {
+                "confidence": 0.9937841296195984,
+                "text": "EAR"
+              }
+            ],
+            "scaled_rows": [
+              {
+                "confidence": 0.9976158142089844,
+                "text": "ear"
+              }
+            ]
+          },
+          "review": {
+            "clauses": {
+              "color": true,
+              "text": true
+            },
+            "full_visibility": true,
+            "notes": "One complete yellow book. CLEAR identifiable, C/L/R pale but recognizable.",
+            "visible_text": "CLEAR"
+          }
+        },
+        "ocr@1": {
+          "clauses": {
+            "color": false,
+            "text": false
+          },
+          "full_visibility": false,
+          "object_reasons": [
+            [
+              {
+                "id": "color",
+                "reason": "expected book==1, found 0",
+                "strict": false
+              }
+            ],
+            [
+              {
+                "id": "color",
+                "reason": "expected book==1, found 0",
+                "strict": false
+              }
+            ]
+          ],
+          "ocr": {
+            "reread": [
+              {
+                "confidence": 0.9969267845153809,
+                "text": "LEAR"
+              }
+            ],
+            "rows": [
+              {
+                "confidence": 0.9982485771179199,
+                "text": "lear"
+              }
+            ],
+            "scaled_reread": [
+              {
+                "confidence": 0.9975922107696533,
+                "text": "LEAR"
+              }
+            ],
+            "scaled_rows": [
+              {
+                "confidence": 0.9988613128662109,
+                "text": "lear"
+              }
+            ]
+          },
+          "review": {
+            "clauses": {
+              "color": true,
+              "text": false
+            },
+            "full_visibility": true,
+            "notes": "One complete yellow book. Missing initial C.",
+            "visible_text": "LEAR"
+          }
+        }
+      },
+      "id": "jp1-train-color-14",
+      "selections": {
+        "noop": "noop",
+        "v1": "geneval@1",
+        "v1_discrete_event": "geneval@1",
+        "v2": "noop"
+      }
+    },
+    {
+      "case": 13,
+      "details": {
+        "geneval@1": {
+          "clauses": {
+            "color": true,
+            "count": true,
+            "text": false
+          },
+          "full_visibility": false,
+          "object_reasons": [
+            [
+              {
+                "id": "count",
+                "reason": "",
+                "strict": true
+              },
+              {
+                "id": "color",
+                "reason": "",
+                "strict": true
+              }
+            ],
+            [
+              {
+                "id": "count",
+                "reason": "",
+                "strict": true
+              },
+              {
+                "id": "color",
+                "reason": "",
+                "strict": true
+              }
+            ]
+          ],
+          "ocr": {
+            "reread": [
+              {
+                "confidence": 0.9962420463562012,
+                "text": "LUNAA"
+              }
+            ],
+            "rows": [
+              {
+                "confidence": 0.9962932467460632,
+                "text": "lunaa"
+              }
+            ],
+            "scaled_reread": [
+              {
+                "confidence": 0.9965709447860718,
+                "text": "LUNAA"
+              }
+            ],
+            "scaled_rows": [
+              {
+                "confidence": 0.9939203262329102,
+                "text": "lunaa"
+              }
+            ]
+          },
+          "review": {
+            "clauses": {
+              "color": true,
+              "count": true,
+              "text": false
+            },
+            "full_visibility": false,
+            "notes": "Two green chairs with clipped legs. Extra final A in LUNAA.",
+            "visible_text": "LUNAA"
+          }
+        },
+        "noop": {
+          "clauses": {
+            "color": true,
+            "count": true,
+            "text": null
+          },
+          "full_visibility": false,
+          "object_reasons": [
+            [
+              {
+                "id": "count",
+                "reason": "",
+                "strict": true
+              },
+              {
+                "id": "color",
+                "reason": "",
+                "strict": true
+              }
+            ],
+            [
+              {
+                "id": "count",
+                "reason": "",
+                "strict": true
+              },
+              {
+                "id": "color",
+                "reason": "",
+                "strict": true
+              }
+            ]
+          ],
+          "ocr": {
+            "reread": [
+              {
+                "confidence": 0.7410039901733398,
+                "text": "LLnd"
+              }
+            ],
+            "rows": [
+              {
+                "confidence": 0.8035392165184021,
+                "text": "lina"
+              }
+            ],
+            "scaled_reread": [
+              {
+                "confidence": 0.6936535835266113,
+                "text": "LLnd"
+              }
+            ],
+            "scaled_rows": [
+              {
+                "confidence": 0.874494194984436,
+                "text": "lina"
+              }
+            ]
+          },
+          "review": {
+            "clauses": {
+              "color": true,
+              "count": true,
+              "text": true
+            },
+            "full_visibility": false,
+            "notes": "Two green chairs; legs cut at lower image edge. LUNA identifiable, case and ordinary spacing ignored.",
+            "visible_text": "LUNA"
+          }
+        },
+        "ocr@1": {
+          "clauses": {
+            "color": true,
+            "count": true,
+            "text": false
+          },
+          "full_visibility": false,
+          "object_reasons": [
+            [
+              {
+                "id": "count",
+                "reason": "",
+                "strict": true
+              },
+              {
+                "id": "color",
+                "reason": "",
+                "strict": true
+              }
+            ],
+            [
+              {
+                "id": "count",
+                "reason": "",
+                "strict": true
+              },
+              {
+                "id": "color",
+                "reason": "",
+                "strict": true
+              }
+            ]
+          ],
+          "ocr": {
+            "reread": [
+              {
+                "confidence": 0.9951665997505188,
+                "text": "LUN A"
+              }
+            ],
+            "rows": [
+              {
+                "confidence": 0.9403842687606812,
+                "text": "lun a"
+              }
+            ],
+            "scaled_reread": [
+              {
+                "confidence": 0.9953241348266602,
+                "text": "LUN A"
+              }
+            ],
+            "scaled_rows": [
+              {
+                "confidence": 0.9566282033920288,
+                "text": "lun a"
+              }
+            ]
+          },
+          "review": {
+            "clauses": {
+              "color": true,
+              "count": true,
+              "text": true
+            },
+            "full_visibility": false,
+            "notes": "Two green chairs; legs cut at lower image edge. LUNA identifiable, case and ordinary spacing ignored.",
+            "visible_text": "LUNA"
+          }
+        }
+      },
+      "id": "jp1-train-count_color-03",
+      "selections": {
+        "noop": "noop",
+        "v1": "geneval@1",
+        "v1_discrete_event": "noop",
+        "v2": "noop"
+      }
+    },
+    {
+      "case": 17,
+      "details": {
+        "geneval@1": {
+          "clauses": {
+            "color": true,
+            "text": true
+          },
+          "full_visibility": false,
+          "object_reasons": [
+            [
+              {
+                "id": "color",
+                "reason": "",
+                "strict": true
+              }
+            ],
+            [
+              {
+                "id": "color",
+                "reason": "",
+                "strict": true
+              }
+            ]
+          ],
+          "ocr": {
+            "reread": [
+              {
+                "confidence": 0.9991544485092163,
+                "text": "Peach"
+              }
+            ],
+            "rows": [
+              {
+                "confidence": 0.9985149502754211,
+                "text": "peach"
+              }
+            ],
+            "scaled_reread": [
+              {
+                "confidence": 0.9987772107124329,
+                "text": "Peach"
+              }
+            ],
+            "scaled_rows": [
+              {
+                "confidence": 0.9982204437255859,
+                "text": "peach"
+              }
+            ]
+          },
+          "review": {
+            "clauses": {
+              "color": true,
+              "text": true
+            },
+            "full_visibility": false,
+            "notes": "One green chair with lower legs cropped. Peach identifiable, case ignored.",
+            "visible_text": "PEACH"
+          }
+        },
+        "noop": {
+          "clauses": {
+            "color": true,
+            "text": null
+          },
+          "full_visibility": false,
+          "object_reasons": [
+            [
+              {
+                "id": "color",
+                "reason": "",
+                "strict": true
+              }
+            ],
+            [
+              {
+                "id": "color",
+                "reason": "",
+                "strict": true
+              }
+            ]
+          ],
+          "ocr": {
+            "reread": [
+              {
+                "confidence": 0.8185022473335266,
+                "text": "Peach"
+              }
+            ],
+            "rows": [
+              {
+                "confidence": 0.7213661074638367,
+                "text": "peacin"
+              }
+            ],
+            "scaled_reread": [
+              {
+                "confidence": 0.733317494392395,
+                "text": "eACn"
+              }
+            ],
+            "scaled_rows": [
+              {
+                "confidence": 0.6512994766235352,
+                "text": "eacil"
+              }
+            ]
+          },
+          "review": {
+            "clauses": {
+              "color": true,
+              "text": false
+            },
+            "full_visibility": false,
+            "notes": "Green chair legs clipped. Extra small sign above main placard contains additional letters; main word also pale.",
+            "visible_text": "Peach plus small upper-placard lettering"
+          }
+        },
+        "ocr@1": {
+          "clauses": {
+            "color": true,
+            "text": true
+          },
+          "full_visibility": false,
+          "object_reasons": [
+            [
+              {
+                "id": "color",
+                "reason": "",
+                "strict": true
+              }
+            ],
+            [
+              {
+                "id": "color",
+                "reason": "",
+                "strict": true
+              }
+            ]
+          ],
+          "ocr": {
+            "reread": [
+              {
+                "confidence": 0.998509407043457,
+                "text": "Peach"
+              }
+            ],
+            "rows": [
+              {
+                "confidence": 0.9960504770278931,
+                "text": "peach"
+              }
+            ],
+            "scaled_reread": [
+              {
+                "confidence": 0.9977434277534485,
+                "text": "Peach"
+              }
+            ],
+            "scaled_rows": [
+              {
+                "confidence": 0.9952436685562134,
+                "text": "peach"
+              }
+            ]
+          },
+          "review": {
+            "clauses": {
+              "color": true,
+              "text": true
+            },
+            "full_visibility": false,
+            "notes": "One green chair with lower legs cropped. Peach identifiable, case ignored.",
+            "visible_text": "PEACH"
+          }
+        }
+      },
+      "id": "jp1-train-color-11",
+      "selections": {
+        "noop": "noop",
+        "v1": "geneval@1",
+        "v1_discrete_event": "geneval@1",
+        "v2": "noop"
+      }
+    },
+    {
+      "case": 25,
+      "details": {
+        "geneval@1": {
+          "clauses": {
+            "relation": false,
+            "text": null
+          },
+          "full_visibility": true,
+          "object_reasons": [
+            [
+              {
+                "id": "relation",
+                "reason": "expected cup right of target, found above and left of target",
+                "strict": false
+              }
+            ],
+            [
+              {
+                "id": "relation",
+                "reason": "expected cup right of target, found above and left of target",
+                "strict": false
+              }
+            ]
+          ],
+          "ocr": {
+            "reread": [
+              {
+                "confidence": 0.8026447296142578,
+                "text": "qLOw"
+              }
+            ],
+            "rows": [
+              {
+                "confidence": 0.8016691207885742,
+                "text": "qlow"
+              }
+            ],
+            "scaled_reread": [
+              {
+                "confidence": 0.8285235166549683,
+                "text": "qL Ow"
+              }
+            ],
+            "scaled_rows": [
+              {
+                "confidence": 0.9137518405914307,
+                "text": "glow"
+              }
+            ]
+          },
+          "review": {
+            "clauses": {
+              "relation": false,
+              "text": false
+            },
+            "full_visibility": true,
+            "notes": "Floating cup left/above bottle; objects inside frame. Additional small printed label on bottle.",
+            "visible_text": "GLOW plus bottle-label lettering"
+          }
+        },
+        "noop": {
+          "clauses": {
+            "relation": false,
+            "text": null
+          },
+          "full_visibility": false,
+          "object_reasons": [
+            [
+              {
+                "id": "relation",
+                "reason": "expected bottle==1, found 2\nno target for cup to be right of",
+                "strict": false
+              }
+            ],
+            [
+              {
+                "id": "relation",
+                "reason": "expected bottle==1, found 2\nexpected cup==1, found 0",
+                "strict": false
+              }
+            ]
+          ],
+          "ocr": {
+            "reread": [
+              {
+                "confidence": 0.9897657632827759,
+                "text": "GLOW"
+              }
+            ],
+            "rows": [
+              {
+                "confidence": 0.8753992915153503,
+                "text": "g.low"
+              }
+            ],
+            "scaled_reread": [
+              {
+                "confidence": 0.8118574023246765,
+                "text": "LO"
+              }
+            ],
+            "scaled_rows": [
+              {
+                "confidence": 0.9431986808776855,
+                "text": "lu"
+              }
+            ]
+          },
+          "review": {
+            "clauses": {
+              "relation": false,
+              "text": true
+            },
+            "full_visibility": false,
+            "notes": "Glass mostly outside left boundary and bottle cut at right edge. GLOW identifiable from partly white embossed letters.",
+            "visible_text": "GLOW"
+          }
+        },
+        "ocr@1": {
+          "clauses": {
+            "relation": false,
+            "text": null
+          },
+          "full_visibility": false,
+          "object_reasons": [
+            [
+              {
+                "id": "relation",
+                "reason": "expected cup==1, found 0",
+                "strict": false
+              }
+            ],
+            [
+              {
+                "id": "relation",
+                "reason": "expected cup==1, found 0",
+                "strict": false
+              }
+            ]
+          ],
+          "ocr": {
+            "reread": [
+              {
+                "confidence": 0.6362583041191101,
+                "text": "1 ow"
+              }
+            ],
+            "rows": [
+              {
+                "confidence": 0.5815170407295227,
+                "text": "iow"
+              }
+            ],
+            "scaled_reread": [
+              {
+                "confidence": 0.7494757175445557,
+                "text": "I Ow"
+              }
+            ],
+            "scaled_rows": [
+              {
+                "confidence": 0.5439900755882263,
+                "text": "ow"
+              }
+            ]
+          },
+          "review": {
+            "clauses": {
+              "relation": false,
+              "text": null
+            },
+            "full_visibility": false,
+            "notes": "Glass mostly outside left boundary and bottle reaches right boundary. Pale initial glyph and split/merged L/O strokes make exact GLOW uncertain.",
+            "visible_text": "G?LOW-like"
+          }
+        }
+      },
+      "id": "jp1-train-relation-04",
+      "selections": {
+        "noop": "noop",
+        "v1": "geneval@1",
+        "v1_discrete_event": "noop",
+        "v2": "noop"
+      }
+    },
+    {
+      "case": 26,
+      "details": {
+        "geneval@1": {
+          "clauses": {
+            "relation": true,
+            "text": true
+          },
+          "full_visibility": true,
+          "object_reasons": [
+            [
+              {
+                "id": "relation",
+                "reason": "",
+                "strict": true
+              }
+            ],
+            [
+              {
+                "id": "relation",
+                "reason": "",
+                "strict": true
+              }
+            ]
+          ],
+          "ocr": {
+            "reread": [
+              {
+                "confidence": 0.9990364909172058,
+                "text": "NORTH"
+              }
+            ],
+            "rows": [
+              {
+                "confidence": 0.9985499382019043,
+                "text": "north"
+              }
+            ],
+            "scaled_reread": [
+              {
+                "confidence": 0.9987732768058777,
+                "text": "NORTH"
+              }
+            ],
+            "scaled_rows": [
+              {
+                "confidence": 0.9987379312515259,
+                "text": "north"
+              }
+            ]
+          },
+          "review": {
+            "clauses": {
+              "relation": null,
+              "text": true
+            },
+            "full_visibility": true,
+            "notes": "Apple clearly left of white bowl-like form, but multiple pale concentric rims may indicate stacked bowls; exact bowl multiplicity unresolved at native resolution. Both external forms within frame.",
+            "visible_text": "NORTH"
+          }
+        },
+        "noop": {
+          "clauses": {
+            "relation": false,
+            "text": true
+          },
+          "full_visibility": true,
+          "object_reasons": [
+            [
+              {
+                "id": "relation",
+                "reason": "expected bowl==1, found 4\nexpected apple==1, found 3",
+                "strict": false
+              }
+            ],
+            [
+              {
+                "id": "relation",
+                "reason": "expected bowl==1, found 3\nexpected apple==1, found 3",
+                "strict": false
+              }
+            ]
+          ],
+          "ocr": {
+            "reread": [
+              {
+                "confidence": 0.9984723925590515,
+                "text": "NORTH"
+              }
+            ],
+            "rows": [
+              {
+                "confidence": 0.998480498790741,
+                "text": "north"
+              }
+            ],
+            "scaled_reread": [
+              {
+                "confidence": 0.9985715746879578,
+                "text": "NORTH"
+              }
+            ],
+            "scaled_rows": [
+              {
+                "confidence": 0.9984191060066223,
+                "text": "north"
+              }
+            ]
+          },
+          "review": {
+            "clauses": {
+              "relation": false,
+              "text": true
+            },
+            "full_visibility": true,
+            "notes": "Apple embedded in left bowl, with a second bowl to right; violates exactly-one bowl. External forms remain within frame.",
+            "visible_text": "NORTH"
+          }
+        },
+        "ocr@1": {
+          "clauses": {
+            "relation": false,
+            "text": true
+          },
+          "full_visibility": true,
+          "object_reasons": [
+            [
+              {
+                "id": "relation",
+                "reason": "expected bowl==1, found 2\nexpected apple==1, found 2",
+                "strict": false
+              }
+            ],
+            [
+              {
+                "id": "relation",
+                "reason": "expected bowl==1, found 2\nexpected apple==1, found 3",
+                "strict": false
+              }
+            ]
+          ],
+          "ocr": {
+            "reread": [
+              {
+                "confidence": 0.9985965490341187,
+                "text": "NORTH"
+              }
+            ],
+            "rows": [
+              {
+                "confidence": 0.9983589053153992,
+                "text": "north"
+              }
+            ],
+            "scaled_reread": [
+              {
+                "confidence": 0.9981020092964172,
+                "text": "NORTH"
+              }
+            ],
+            "scaled_rows": [
+              {
+                "confidence": 0.9982770681381226,
+                "text": "north"
+              }
+            ]
+          },
+          "review": {
+            "clauses": {
+              "relation": false,
+              "text": true
+            },
+            "full_visibility": null,
+            "notes": "Apple embedded in/merged through bowl rather than clearly separated left of bowl. Overlap/fused geometry makes completeness uncertain.",
+            "visible_text": "NORTH"
+          }
+        }
+      },
+      "id": "jp1-train-relation-09",
+      "selections": {
+        "noop": "noop",
+        "v1": "geneval@1",
+        "v1_discrete_event": "geneval@1",
+        "v2": "geneval@1"
+      }
+    },
+    {
+      "case": 34,
+      "details": {
+        "geneval@1": {
+          "clauses": {
+            "relation": true,
+            "text": true
+          },
+          "full_visibility": true,
+          "object_reasons": [
+            [
+              {
+                "id": "relation",
+                "reason": "",
+                "strict": true
+              }
+            ],
+            [
+              {
+                "id": "relation",
+                "reason": "",
+                "strict": true
+              }
+            ]
+          ],
+          "ocr": {
+            "reread": [
+              {
+                "confidence": 0.9982916116714478,
+                "text": "PINE"
+              }
+            ],
+            "rows": [
+              {
+                "confidence": 0.9983058571815491,
+                "text": "pine"
+              }
+            ],
+            "scaled_reread": [
+              {
+                "confidence": 0.9982874989509583,
+                "text": "PINE"
+              }
+            ],
+            "scaled_rows": [
+              {
+                "confidence": 0.9985947608947754,
+                "text": "pine"
+              }
+            ]
+          },
+          "review": {
+            "clauses": {
+              "relation": true,
+              "text": true
+            },
+            "full_visibility": true,
+            "notes": "One apple distinctly left of one bowl, both complete; PINE legible.",
+            "visible_text": "PINE"
+          }
+        },
+        "noop": {
+          "clauses": {
+            "relation": false,
+            "text": null
+          },
+          "full_visibility": true,
+          "object_reasons": [
+            [
+              {
+                "id": "relation",
+                "reason": "expected apple left of target, found above target",
+                "strict": false
+              }
+            ],
+            [
+              {
+                "id": "relation",
+                "reason": "expected bowl==1, found 2\nno target for apple to be left of",
+                "strict": false
+              }
+            ]
+          ],
+          "ocr": {
+            "reread": [
+              {
+                "confidence": 0.9948076009750366,
+                "text": "PINE"
+              }
+            ],
+            "rows": [
+              {
+                "confidence": 0.988248348236084,
+                "text": "pine"
+              }
+            ],
+            "scaled_reread": [
+              {
+                "confidence": 0.9622257947921753,
+                "text": "PPINE"
+              }
+            ],
+            "scaled_rows": [
+              {
+                "confidence": 0.9920752644538879,
+                "text": "ppine"
+              }
+            ]
+          },
+          "review": {
+            "clauses": {
+              "relation": false,
+              "text": false
+            },
+            "full_visibility": true,
+            "notes": "Extra P before PINE. Apple sits inside bowl, not clearly left of it; outer objects within frame.",
+            "visible_text": "P PINE"
+          }
+        },
+        "ocr@1": {
+          "clauses": {
+            "relation": false,
+            "text": true
+          },
+          "full_visibility": true,
+          "object_reasons": [
+            [
+              {
+                "id": "relation",
+                "reason": "expected apple left of target, found above target",
+                "strict": false
+              }
+            ],
+            [
+              {
+                "id": "relation",
+                "reason": "expected apple left of target, found above target",
+                "strict": false
+              }
+            ]
+          ],
+          "ocr": {
+            "reread": [
+              {
+                "confidence": 0.9977259039878845,
+                "text": "PINE"
+              }
+            ],
+            "rows": [
+              {
+                "confidence": 0.9984242916107178,
+                "text": "pine"
+              }
+            ],
+            "scaled_reread": [
+              {
+                "confidence": 0.997894287109375,
+                "text": "PINE"
+              }
+            ],
+            "scaled_rows": [
+              {
+                "confidence": 0.9983065724372864,
+                "text": "pine"
+              }
+            ]
+          },
+          "review": {
+            "clauses": {
+              "relation": false,
+              "text": true
+            },
+            "full_visibility": true,
+            "notes": "Apple sits inside shallow bowl rather than clearly to its left; PINE legible; complete outer forms.",
+            "visible_text": "PINE"
+          }
+        }
+      },
+      "id": "jp1-train-relation-01",
+      "selections": {
+        "noop": "noop",
+        "v1": "geneval@1",
+        "v1_discrete_event": "geneval@1",
+        "v2": "noop"
+      }
+    },
+    {
+      "case": 42,
+      "details": {
+        "geneval@1": {
+          "clauses": {
+            "color": false,
+            "text": false
+          },
+          "full_visibility": true,
+          "object_reasons": [
+            [
+              {
+                "id": "color",
+                "reason": "expected yellow vase>=1, found 0 yellow; and 1 orange",
+                "strict": false
+              }
+            ],
+            [
+              {
+                "id": "color",
+                "reason": "expected yellow vase>=1, found 0 yellow; and 1 orange",
+                "strict": false
+              }
+            ]
+          ],
+          "ocr": {
+            "reread": [
+              {
+                "confidence": 0.9382191300392151,
+                "text": "C OUD D"
+              }
+            ],
+            "rows": [
+              {
+                "confidence": 0.9339923858642578,
+                "text": "coudd"
+              }
+            ],
+            "scaled_reread": [
+              {
+                "confidence": 0.8877474069595337,
+                "text": "C OUD"
+              }
+            ],
+            "scaled_rows": [
+              {
+                "confidence": 0.9424995183944702,
+                "text": "c oud"
+              }
+            ]
+          },
+          "review": {
+            "clauses": {
+              "color": true,
+              "text": false
+            },
+            "full_visibility": true,
+            "notes": "Malformed low-contrast CLOUD-like letters plus an extra pale D at right; vase complete and yellow.",
+            "visible_text": "C [faint L-like mark] O U D D"
+          }
+        },
+        "noop": {
+          "clauses": {
+            "color": true,
+            "text": false
+          },
+          "full_visibility": true,
+          "object_reasons": [
+            [
+              {
+                "id": "color",
+                "reason": "",
+                "strict": true
+              }
+            ],
+            [
+              {
+                "id": "color",
+                "reason": "",
+                "strict": true
+              }
+            ]
+          ],
+          "ocr": {
+            "reread": [
+              {
+                "confidence": 0.9963217973709106,
+                "text": "CLUD"
+              }
+            ],
+            "rows": [
+              {
+                "confidence": 0.9963980913162231,
+                "text": "clud"
+              }
+            ],
+            "scaled_reread": [
+              {
+                "confidence": 0.996619701385498,
+                "text": "CLUD"
+              }
+            ],
+            "scaled_rows": [
+              {
+                "confidence": 0.9732276797294617,
+                "text": "clud"
+              }
+            ]
+          },
+          "review": {
+            "clauses": {
+              "color": true,
+              "text": false
+            },
+            "full_visibility": true,
+            "notes": "Pale embossed letters CL UD, clearly missing O between L and U; complete yellow vase.",
+            "visible_text": "CL UD"
+          }
+        },
+        "ocr@1": {
+          "clauses": {
+            "color": true,
+            "text": true
+          },
+          "full_visibility": true,
+          "object_reasons": [
+            [
+              {
+                "id": "color",
+                "reason": "",
+                "strict": true
+              }
+            ],
+            [
+              {
+                "id": "color",
+                "reason": "",
+                "strict": true
+              }
+            ]
+          ],
+          "ocr": {
+            "reread": [
+              {
+                "confidence": 0.9932953715324402,
+                "text": "CLOUD"
+              }
+            ],
+            "rows": [
+              {
+                "confidence": 0.9968274235725403,
+                "text": "cloud"
+              }
+            ],
+            "scaled_reread": [
+              {
+                "confidence": 0.9639043807983398,
+                "text": "CLOUD"
+              }
+            ],
+            "scaled_rows": [
+              {
+                "confidence": 0.9960147142410278,
+                "text": "cloud"
+              }
+            ]
+          },
+          "review": {
+            "clauses": {
+              "color": true,
+              "text": true
+            },
+            "full_visibility": true,
+            "notes": "CLOUD legible; one complete yellow vase.",
+            "visible_text": "CLOUD"
+          }
+        }
+      },
+      "id": "jp1-train-color-13",
+      "selections": {
+        "noop": "noop",
+        "v1": "ocr@1",
+        "v1_discrete_event": "ocr@1",
+        "v2": "ocr@1"
+      }
+    },
+    {
+      "case": 46,
+      "details": {
+        "geneval@1": {
+          "clauses": {
+            "color": true,
+            "text": true
+          },
+          "full_visibility": true,
+          "object_reasons": [
+            [
+              {
+                "id": "color",
+                "reason": "",
+                "strict": true
+              }
+            ],
+            [
+              {
+                "id": "color",
+                "reason": "",
+                "strict": true
+              }
+            ]
+          ],
+          "ocr": {
+            "reread": [
+              {
+                "confidence": 0.9970264434814453,
+                "text": "SUNNY"
+              }
+            ],
+            "rows": [
+              {
+                "confidence": 0.9977065920829773,
+                "text": "sunny"
+              }
+            ],
+            "scaled_reread": [
+              {
+                "confidence": 0.9976811408996582,
+                "text": "SUNNY"
+              }
+            ],
+            "scaled_rows": [
+              {
+                "confidence": 0.9978833198547363,
+                "text": "sunny"
+              }
+            ]
+          },
+          "review": {
+            "clauses": {
+              "color": true,
+              "text": true
+            },
+            "full_visibility": true,
+            "notes": "SUNNY on tilted sign; one red banana complete. Additional shelf-like geometry left of sign, without visible lettering.",
+            "visible_text": "SUNNY"
+          }
+        },
+        "noop": {
+          "clauses": {
+            "color": true,
+            "text": false
+          },
+          "full_visibility": true,
+          "object_reasons": [
+            [
+              {
+                "id": "color",
+                "reason": "",
+                "strict": true
+              }
+            ],
+            [
+              {
+                "id": "color",
+                "reason": "",
+                "strict": true
+              }
+            ]
+          ],
+          "ocr": {
+            "reread": [
+              {
+                "confidence": 0.8519973754882812,
+                "text": "UNNY"
+              }
+            ],
+            "rows": [
+              {
+                "confidence": 0.9098492860794067,
+                "text": "unny"
+              }
+            ],
+            "scaled_reread": [
+              {
+                "confidence": 0.8565144538879395,
+                "text": "UNNY"
+              }
+            ],
+            "scaled_rows": [
+              {
+                "confidence": 0.8480721116065979,
+                "text": "unay"
+              }
+            ]
+          },
+          "review": {
+            "clauses": {
+              "color": true,
+              "text": true
+            },
+            "full_visibility": true,
+            "notes": "SUNNY is extremely pale embossed white-on-white, not bold black; five glyphs remain identifiable. One red banana fully in frame.",
+            "visible_text": "SUNNY"
+          }
+        },
+        "ocr@1": {
+          "clauses": {
+            "color": true,
+            "text": true
+          },
+          "full_visibility": true,
+          "object_reasons": [
+            [
+              {
+                "id": "color",
+                "reason": "",
+                "strict": true
+              }
+            ],
+            [
+              {
+                "id": "color",
+                "reason": "",
+                "strict": true
+              }
+            ]
+          ],
+          "ocr": {
+            "reread": [
+              {
+                "confidence": 0.9944353103637695,
+                "text": "SUNNY"
+              }
+            ],
+            "rows": [
+              {
+                "confidence": 0.9937543869018555,
+                "text": "sunny"
+              }
+            ],
+            "scaled_reread": [
+              {
+                "confidence": 0.994432806968689,
+                "text": "SUNNY"
+              }
+            ],
+            "scaled_rows": [
+              {
+                "confidence": 0.994092583656311,
+                "text": "sunny"
+              }
+            ]
+          },
+          "review": {
+            "clauses": {
+              "color": true,
+              "text": true
+            },
+            "full_visibility": true,
+            "notes": "One red banana fully within frame; SUNNY letters identifiable.",
+            "visible_text": "SUNNY"
+          }
+        }
+      },
+      "id": "jp1-train-color-15",
+      "selections": {
+        "noop": "noop",
+        "v1": "ocr@1",
+        "v1_discrete_event": "ocr@1",
+        "v2": "ocr@1"
+      }
+    },
+    {
+      "case": 58,
+      "details": {
+        "geneval@1": {
+          "clauses": {
+            "count": true,
+            "text": true
+          },
+          "full_visibility": true,
+          "object_reasons": [
+            [
+              {
+                "id": "count",
+                "reason": "",
+                "strict": true
+              }
+            ],
+            [
+              {
+                "id": "count",
+                "reason": "",
+                "strict": true
+              }
+            ]
+          ],
+          "ocr": {
+            "reread": [
+              {
+                "confidence": 0.9971544146537781,
+                "text": "FRESH"
+              }
+            ],
+            "rows": [
+              {
+                "confidence": 0.9910814166069031,
+                "text": "fresh"
+              }
+            ],
+            "scaled_reread": [
+              {
+                "confidence": 0.9974940419197083,
+                "text": "FRESH"
+              }
+            ],
+            "scaled_rows": [
+              {
+                "confidence": 0.9951229095458984,
+                "text": "fresh"
+              }
+            ]
+          },
+          "review": {
+            "clauses": {
+              "count": true,
+              "text": true
+            },
+            "full_visibility": true,
+            "notes": "Two distinct white cups fully visible below FRESH sign.",
+            "visible_text": "FRESH"
+          }
+        },
+        "noop": {
+          "clauses": {
+            "count": false,
+            "text": true
+          },
+          "full_visibility": false,
+          "object_reasons": [
+            [
+              {
+                "id": "count",
+                "reason": "expected cup==2, found 0",
+                "strict": false
+              }
+            ],
+            [
+              {
+                "id": "count",
+                "reason": "expected cup==2, found 0",
+                "strict": false
+              }
+            ]
+          ],
+          "ocr": {
+            "reread": [
+              {
+                "confidence": 0.9966859817504883,
+                "text": "FRESH"
+              }
+            ],
+            "rows": [
+              {
+                "confidence": 0.9887035489082336,
+                "text": "fresh"
+              }
+            ],
+            "scaled_reread": [
+              {
+                "confidence": 0.9972715377807617,
+                "text": "FRESH"
+              }
+            ],
+            "scaled_rows": [
+              {
+                "confidence": 0.9961244463920593,
+                "text": "fresh"
+              }
+            ]
+          },
+          "review": {
+            "clauses": {
+              "count": false,
+              "text": true
+            },
+            "full_visibility": false,
+            "notes": "Handle-like forms on sign edges without recognizable cup bodies; requested two cups not present as visible objects. FRESH identifiable despite faint H crossbar.",
+            "visible_text": "FRESH"
+          }
+        },
+        "ocr@1": {
+          "clauses": {
+            "count": false,
+            "text": true
+          },
+          "full_visibility": false,
+          "object_reasons": [
+            [
+              {
+                "id": "count",
+                "reason": "expected cup==2, found 0",
+                "strict": false
+              }
+            ],
+            [
+              {
+                "id": "count",
+                "reason": "expected cup==2, found 0",
+                "strict": false
+              }
+            ]
+          ],
+          "ocr": {
+            "reread": [
+              {
+                "confidence": 0.9930381774902344,
+                "text": "FRESH"
+              }
+            ],
+            "rows": [
+              {
+                "confidence": 0.9961379170417786,
+                "text": "fresh"
+              }
+            ],
+            "scaled_reread": [
+              {
+                "confidence": 0.9946338534355164,
+                "text": "FRESH"
+              }
+            ],
+            "scaled_rows": [
+              {
+                "confidence": 0.9962156414985657,
+                "text": "fresh"
+              }
+            ]
+          },
+          "review": {
+            "clauses": {
+              "count": false,
+              "text": true
+            },
+            "full_visibility": false,
+            "notes": "No complete recognizable cup bodies; handle-like forms attached to sign sides. Requested two cups are missing/hidden, so count and full visibility fail.",
+            "visible_text": "FRESH"
+          }
+        }
+      },
+      "id": "jp1-train-count-08",
+      "selections": {
+        "noop": "noop",
+        "v1": "geneval@1",
+        "v1_discrete_event": "geneval@1",
+        "v2": "geneval@1"
+      }
+    },
+    {
+      "case": 64,
+      "details": {
+        "geneval@1": {
+          "clauses": {
+            "color": true,
+            "text": true
+          },
+          "full_visibility": false,
+          "object_reasons": [
+            [
+              {
+                "id": "color",
+                "reason": "",
+                "strict": true
+              }
+            ],
+            [
+              {
+                "id": "color",
+                "reason": "",
+                "strict": true
+              }
+            ]
+          ],
+          "ocr": {
+            "reread": [
+              {
+                "confidence": 0.887732982635498,
+                "text": "GLoW"
+              }
+            ],
+            "rows": [
+              {
+                "confidence": 0.9044052958488464,
+                "text": "glow"
+              }
+            ],
+            "scaled_reread": [
+              {
+                "confidence": 0.8916165828704834,
+                "text": "GLoW"
+              }
+            ],
+            "scaled_rows": [
+              {
+                "confidence": 0.8597610592842102,
+                "text": "glow"
+              }
+            ]
+          },
+          "review": {
+            "clauses": {
+              "color": true,
+              "text": true
+            },
+            "full_visibility": false,
+            "notes": "One green bowl, base cut by bottom frame. GLOW identifiable in all views, with stylized separated/overlapping W strokes in A/C and textured glyph fill in C.",
+            "visible_text": "GLOW"
+          }
+        },
+        "noop": {
+          "clauses": {
+            "color": true,
+            "text": false
+          },
+          "full_visibility": false,
+          "object_reasons": [
+            [
+              {
+                "id": "color",
+                "reason": "",
+                "strict": true
+              }
+            ],
+            [
+              {
+                "id": "color",
+                "reason": "",
+                "strict": true
+              }
+            ]
+          ],
+          "ocr": {
+            "reread": [
+              {
+                "confidence": 0.9582277536392212,
+                "text": "GLOIW"
+              }
+            ],
+            "rows": [
+              {
+                "confidence": 0.9868248701095581,
+                "text": "gloiw"
+              }
+            ],
+            "scaled_reread": [
+              {
+                "confidence": 0.9651888012886047,
+                "text": "GLOIW"
+              }
+            ],
+            "scaled_rows": [
+              {
+                "confidence": 0.9748113751411438,
+                "text": "gloiw"
+              }
+            ]
+          },
+          "review": {
+            "clauses": {
+              "color": true,
+              "text": true
+            },
+            "full_visibility": false,
+            "notes": "One green bowl, base cut by bottom frame. GLOW identifiable in all views, with stylized separated/overlapping W strokes in A/C and textured glyph fill in C.",
+            "visible_text": "GLOW"
+          }
+        },
+        "ocr@1": {
+          "clauses": {
+            "color": true,
+            "text": true
+          },
+          "full_visibility": false,
+          "object_reasons": [
+            [
+              {
+                "id": "color",
+                "reason": "",
+                "strict": true
+              }
+            ],
+            [
+              {
+                "id": "color",
+                "reason": "",
+                "strict": true
+              }
+            ]
+          ],
+          "ocr": {
+            "reread": [
+              {
+                "confidence": 0.9847204685211182,
+                "text": "GLOW"
+              }
+            ],
+            "rows": [
+              {
+                "confidence": 0.9971787333488464,
+                "text": "glow"
+              }
+            ],
+            "scaled_reread": [
+              {
+                "confidence": 0.9926148056983948,
+                "text": "GLOW"
+              }
+            ],
+            "scaled_rows": [
+              {
+                "confidence": 0.9972351789474487,
+                "text": "glow"
+              }
+            ]
+          },
+          "review": {
+            "clauses": {
+              "color": true,
+              "text": true
+            },
+            "full_visibility": false,
+            "notes": "One green bowl, base cut by bottom frame. GLOW identifiable in all views, with stylized separated/overlapping W strokes in A/C and textured glyph fill in C.",
+            "visible_text": "GLOW"
+          }
+        }
+      },
+      "id": "jp1-train-color-04",
+      "selections": {
+        "noop": "noop",
+        "v1": "ocr@1",
+        "v1_discrete_event": "ocr@1",
+        "v2": "ocr@1"
+      }
+    }
+  ],
+  "interpretation_limit": "The logical guarantee assumes the evidence sets contain the truth; correlated confidently wrong readings violate that premise.",
+  "queries": [
+    {
+      "accepted": false,
+      "case": 1,
+      "comparison": {
+        "harmed_clauses": [],
+        "has_unknown": false,
+        "known_harm": false,
+        "repaired_clauses": [],
+        "safe_repair": false,
+        "safe_visibility_gain": false,
+        "status": "non_repair",
+        "visibility_harm": false
+      },
+      "complete_scene": false,
+      "frozen_v2_selected": "noop",
+      "has_safe_candidate": false,
+      "id": "jp1-train-relation-13",
+      "selected": "noop"
+    },
+    {
+      "accepted": true,
+      "case": 2,
+      "comparison": {
+        "harmed_clauses": [],
+        "has_unknown": false,
+        "known_harm": false,
+        "repaired_clauses": [
+          "relation"
+        ],
+        "safe_repair": true,
+        "safe_visibility_gain": false,
+        "status": "safe_repair",
+        "visibility_harm": false
+      },
+      "complete_scene": false,
+      "frozen_v2_selected": "geneval@1",
+      "has_safe_candidate": true,
+      "id": "jp1-train-relation-12",
+      "selected": "geneval@1"
+    },
+    {
+      "accepted": false,
+      "case": 3,
+      "comparison": {
+        "harmed_clauses": [],
+        "has_unknown": false,
+        "known_harm": false,
+        "repaired_clauses": [],
+        "safe_repair": false,
+        "safe_visibility_gain": false,
+        "status": "non_repair",
+        "visibility_harm": false
+      },
+      "complete_scene": false,
+      "frozen_v2_selected": "noop",
+      "has_safe_candidate": false,
+      "id": "jp1-train-color-01",
+      "selected": "noop"
+    },
+    {
+      "accepted": false,
+      "case": 4,
+      "comparison": {
+        "harmed_clauses": [],
+        "has_unknown": true,
+        "known_harm": false,
+        "repaired_clauses": [],
+        "safe_repair": false,
+        "safe_visibility_gain": false,
+        "status": "unknown",
+        "visibility_harm": false
+      },
+      "complete_scene": false,
+      "frozen_v2_selected": "noop",
+      "has_safe_candidate": false,
+      "id": "jp1-train-count-00",
+      "selected": "noop"
+    },
+    {
+      "accepted": false,
+      "case": 5,
+      "comparison": {
+        "harmed_clauses": [],
+        "has_unknown": false,
+        "known_harm": false,
+        "repaired_clauses": [],
+        "safe_repair": false,
+        "safe_visibility_gain": false,
+        "status": "non_repair",
+        "visibility_harm": false
+      },
+      "complete_scene": false,
+      "frozen_v2_selected": "noop",
+      "has_safe_candidate": false,
+      "id": "jp1-train-count-09",
+      "selected": "noop"
+    },
+    {
+      "accepted": false,
+      "case": 6,
+      "comparison": {
+        "harmed_clauses": [],
+        "has_unknown": false,
+        "known_harm": false,
+        "repaired_clauses": [],
+        "safe_repair": false,
+        "safe_visibility_gain": false,
+        "status": "non_repair",
+        "visibility_harm": false
+      },
+      "complete_scene": false,
+      "frozen_v2_selected": "noop",
+      "has_safe_candidate": true,
+      "id": "jp1-train-count-12",
+      "selected": "noop"
+    },
+    {
+      "accepted": false,
+      "case": 7,
+      "comparison": {
+        "harmed_clauses": [],
+        "has_unknown": false,
+        "known_harm": false,
+        "repaired_clauses": [],
+        "safe_repair": false,
+        "safe_visibility_gain": false,
+        "status": "non_repair",
+        "visibility_harm": false
+      },
+      "complete_scene": false,
+      "frozen_v2_selected": "noop",
+      "has_safe_candidate": false,
+      "id": "jp1-train-relation-11",
+      "selected": "noop"
+    },
+    {
+      "accepted": false,
+      "case": 8,
+      "comparison": {
+        "harmed_clauses": [],
+        "has_unknown": false,
+        "known_harm": false,
+        "repaired_clauses": [],
+        "safe_repair": false,
+        "safe_visibility_gain": false,
+        "status": "non_repair",
+        "visibility_harm": false
+      },
+      "complete_scene": false,
+      "frozen_v2_selected": "noop",
+      "has_safe_candidate": false,
+      "id": "jp1-train-relation-10",
+      "selected": "noop"
+    },
+    {
+      "accepted": false,
+      "case": 9,
+      "comparison": {
+        "harmed_clauses": [],
+        "has_unknown": false,
+        "known_harm": false,
+        "repaired_clauses": [],
+        "safe_repair": false,
+        "safe_visibility_gain": false,
+        "status": "non_repair",
+        "visibility_harm": false
+      },
+      "complete_scene": false,
+      "frozen_v2_selected": "noop",
+      "has_safe_candidate": false,
+      "id": "jp1-train-relation-05",
+      "selected": "noop"
+    },
+    {
+      "accepted": false,
+      "case": 10,
+      "comparison": {
+        "harmed_clauses": [],
+        "has_unknown": false,
+        "known_harm": false,
+        "repaired_clauses": [],
+        "safe_repair": false,
+        "safe_visibility_gain": false,
+        "status": "non_repair",
+        "visibility_harm": false
+      },
+      "complete_scene": true,
+      "frozen_v2_selected": "noop",
+      "has_safe_candidate": false,
+      "id": "jp1-train-color-14",
+      "selected": "noop"
+    },
+    {
+      "accepted": false,
+      "case": 11,
+      "comparison": {
+        "harmed_clauses": [],
+        "has_unknown": false,
+        "known_harm": false,
+        "repaired_clauses": [],
+        "safe_repair": false,
+        "safe_visibility_gain": false,
+        "status": "non_repair",
+        "visibility_harm": false
+      },
+      "complete_scene": false,
+      "frozen_v2_selected": "noop",
+      "has_safe_candidate": false,
+      "id": "jp1-train-count-06",
+      "selected": "noop"
+    },
+    {
+      "accepted": false,
+      "case": 12,
+      "comparison": {
+        "harmed_clauses": [],
+        "has_unknown": false,
+        "known_harm": false,
+        "repaired_clauses": [],
+        "safe_repair": false,
+        "safe_visibility_gain": false,
+        "status": "non_repair",
+        "visibility_harm": false
+      },
+      "complete_scene": true,
+      "frozen_v2_selected": "noop",
+      "has_safe_candidate": false,
+      "id": "jp1-train-color-06",
+      "selected": "noop"
+    },
+    {
+      "accepted": false,
+      "case": 13,
+      "comparison": {
+        "harmed_clauses": [],
+        "has_unknown": false,
+        "known_harm": false,
+        "repaired_clauses": [],
+        "safe_repair": false,
+        "safe_visibility_gain": false,
+        "status": "non_repair",
+        "visibility_harm": false
+      },
+      "complete_scene": false,
+      "frozen_v2_selected": "noop",
+      "has_safe_candidate": false,
+      "id": "jp1-train-count_color-03",
+      "selected": "noop"
+    },
+    {
+      "accepted": false,
+      "case": 14,
+      "comparison": {
+        "harmed_clauses": [],
+        "has_unknown": false,
+        "known_harm": false,
+        "repaired_clauses": [],
+        "safe_repair": false,
+        "safe_visibility_gain": false,
+        "status": "non_repair",
+        "visibility_harm": false
+      },
+      "complete_scene": false,
+      "frozen_v2_selected": "noop",
+      "has_safe_candidate": false,
+      "id": "jp1-train-relation-00",
+      "selected": "noop"
+    },
+    {
+      "accepted": false,
+      "case": 15,
+      "comparison": {
+        "harmed_clauses": [],
+        "has_unknown": false,
+        "known_harm": false,
+        "repaired_clauses": [],
+        "safe_repair": false,
+        "safe_visibility_gain": false,
+        "status": "non_repair",
+        "visibility_harm": false
+      },
+      "complete_scene": false,
+      "frozen_v2_selected": "noop",
+      "has_safe_candidate": false,
+      "id": "jp1-train-count-05",
+      "selected": "noop"
+    },
+    {
+      "accepted": false,
+      "case": 16,
+      "comparison": {
+        "harmed_clauses": [],
+        "has_unknown": false,
+        "known_harm": false,
+        "repaired_clauses": [],
+        "safe_repair": false,
+        "safe_visibility_gain": false,
+        "status": "non_repair",
+        "visibility_harm": false
+      },
+      "complete_scene": true,
+      "frozen_v2_selected": "noop",
+      "has_safe_candidate": false,
+      "id": "jp1-train-color-10",
+      "selected": "noop"
+    },
+    {
+      "accepted": false,
+      "case": 17,
+      "comparison": {
+        "harmed_clauses": [],
+        "has_unknown": false,
+        "known_harm": false,
+        "repaired_clauses": [],
+        "safe_repair": false,
+        "safe_visibility_gain": false,
+        "status": "non_repair",
+        "visibility_harm": false
+      },
+      "complete_scene": false,
+      "frozen_v2_selected": "noop",
+      "has_safe_candidate": true,
+      "id": "jp1-train-color-11",
+      "selected": "noop"
+    },
+    {
+      "accepted": false,
+      "case": 18,
+      "comparison": {
+        "harmed_clauses": [],
+        "has_unknown": false,
+        "known_harm": false,
+        "repaired_clauses": [],
+        "safe_repair": false,
+        "safe_visibility_gain": false,
+        "status": "non_repair",
+        "visibility_harm": false
+      },
+      "complete_scene": true,
+      "frozen_v2_selected": "noop",
+      "has_safe_candidate": false,
+      "id": "jp1-train-color-12",
+      "selected": "noop"
+    },
+    {
+      "accepted": false,
+      "case": 19,
+      "comparison": {
+        "harmed_clauses": [],
+        "has_unknown": false,
+        "known_harm": false,
+        "repaired_clauses": [],
+        "safe_repair": false,
+        "safe_visibility_gain": false,
+        "status": "non_repair",
+        "visibility_harm": false
+      },
+      "complete_scene": true,
+      "frozen_v2_selected": "noop",
+      "has_safe_candidate": false,
+      "id": "jp1-train-count_color-02",
+      "selected": "noop"
+    },
+    {
+      "accepted": false,
+      "case": 20,
+      "comparison": {
+        "harmed_clauses": [],
+        "has_unknown": false,
+        "known_harm": false,
+        "repaired_clauses": [],
+        "safe_repair": false,
+        "safe_visibility_gain": false,
+        "status": "non_repair",
+        "visibility_harm": false
+      },
+      "complete_scene": true,
+      "frozen_v2_selected": "noop",
+      "has_safe_candidate": false,
+      "id": "jp1-train-count-04",
+      "selected": "noop"
+    },
+    {
+      "accepted": false,
+      "case": 21,
+      "comparison": {
+        "harmed_clauses": [],
+        "has_unknown": false,
+        "known_harm": false,
+        "repaired_clauses": [],
+        "safe_repair": false,
+        "safe_visibility_gain": false,
+        "status": "non_repair",
+        "visibility_harm": false
+      },
+      "complete_scene": false,
+      "frozen_v2_selected": "noop",
+      "has_safe_candidate": false,
+      "id": "jp1-train-relation-07",
+      "selected": "noop"
+    },
+    {
+      "accepted": false,
+      "case": 22,
+      "comparison": {
+        "harmed_clauses": [],
+        "has_unknown": false,
+        "known_harm": false,
+        "repaired_clauses": [],
+        "safe_repair": false,
+        "safe_visibility_gain": false,
+        "status": "non_repair",
+        "visibility_harm": false
+      },
+      "complete_scene": false,
+      "frozen_v2_selected": "noop",
+      "has_safe_candidate": false,
+      "id": "jp1-train-count_color-12",
+      "selected": "noop"
+    },
+    {
+      "accepted": false,
+      "case": 23,
+      "comparison": {
+        "harmed_clauses": [],
+        "has_unknown": true,
+        "known_harm": false,
+        "repaired_clauses": [],
+        "safe_repair": false,
+        "safe_visibility_gain": false,
+        "status": "unknown",
+        "visibility_harm": false
+      },
+      "complete_scene": false,
+      "frozen_v2_selected": "noop",
+      "has_safe_candidate": false,
+      "id": "jp1-train-relation-08",
+      "selected": "noop"
+    },
+    {
+      "accepted": false,
+      "case": 24,
+      "comparison": {
+        "harmed_clauses": [],
+        "has_unknown": false,
+        "known_harm": false,
+        "repaired_clauses": [],
+        "safe_repair": false,
+        "safe_visibility_gain": false,
+        "status": "non_repair",
+        "visibility_harm": false
+      },
+      "complete_scene": false,
+      "frozen_v2_selected": "noop",
+      "has_safe_candidate": false,
+      "id": "jp1-train-count_color-04",
+      "selected": "noop"
+    },
+    {
+      "accepted": false,
+      "case": 25,
+      "comparison": {
+        "harmed_clauses": [],
+        "has_unknown": false,
+        "known_harm": false,
+        "repaired_clauses": [],
+        "safe_repair": false,
+        "safe_visibility_gain": false,
+        "status": "non_repair",
+        "visibility_harm": false
+      },
+      "complete_scene": false,
+      "frozen_v2_selected": "noop",
+      "has_safe_candidate": false,
+      "id": "jp1-train-relation-04",
+      "selected": "noop"
+    },
+    {
+      "accepted": true,
+      "case": 26,
+      "comparison": {
+        "harmed_clauses": [],
+        "has_unknown": true,
+        "known_harm": false,
+        "repaired_clauses": [],
+        "safe_repair": false,
+        "safe_visibility_gain": false,
+        "status": "unknown",
+        "visibility_harm": false
+      },
+      "complete_scene": false,
+      "frozen_v2_selected": "geneval@1",
+      "has_safe_candidate": false,
+      "id": "jp1-train-relation-09",
+      "selected": "geneval@1"
+    },
+    {
+      "accepted": false,
+      "case": 27,
+      "comparison": {
+        "harmed_clauses": [],
+        "has_unknown": false,
+        "known_harm": false,
+        "repaired_clauses": [],
+        "safe_repair": false,
+        "safe_visibility_gain": false,
+        "status": "non_repair",
+        "visibility_harm": false
+      },
+      "complete_scene": false,
+      "frozen_v2_selected": "noop",
+      "has_safe_candidate": false,
+      "id": "jp1-train-relation-15",
+      "selected": "noop"
+    },
+    {
+      "accepted": false,
+      "case": 28,
+      "comparison": {
+        "harmed_clauses": [],
+        "has_unknown": false,
+        "known_harm": false,
+        "repaired_clauses": [],
+        "safe_repair": false,
+        "safe_visibility_gain": false,
+        "status": "non_repair",
+        "visibility_harm": false
+      },
+      "complete_scene": true,
+      "frozen_v2_selected": "noop",
+      "has_safe_candidate": false,
+      "id": "jp1-train-count_color-11",
+      "selected": "noop"
+    },
+    {
+      "accepted": false,
+      "case": 29,
+      "comparison": {
+        "harmed_clauses": [],
+        "has_unknown": false,
+        "known_harm": false,
+        "repaired_clauses": [],
+        "safe_repair": false,
+        "safe_visibility_gain": false,
+        "status": "non_repair",
+        "visibility_harm": false
+      },
+      "complete_scene": true,
+      "frozen_v2_selected": "noop",
+      "has_safe_candidate": false,
+      "id": "jp1-train-count-10",
+      "selected": "noop"
+    },
+    {
+      "accepted": false,
+      "case": 30,
+      "comparison": {
+        "harmed_clauses": [],
+        "has_unknown": false,
+        "known_harm": false,
+        "repaired_clauses": [],
+        "safe_repair": false,
+        "safe_visibility_gain": false,
+        "status": "non_repair",
+        "visibility_harm": false
+      },
+      "complete_scene": false,
+      "frozen_v2_selected": "noop",
+      "has_safe_candidate": false,
+      "id": "jp1-train-relation-03",
+      "selected": "noop"
+    },
+    {
+      "accepted": false,
+      "case": 31,
+      "comparison": {
+        "harmed_clauses": [],
+        "has_unknown": false,
+        "known_harm": false,
+        "repaired_clauses": [],
+        "safe_repair": false,
+        "safe_visibility_gain": false,
+        "status": "non_repair",
+        "visibility_harm": false
+      },
+      "complete_scene": false,
+      "frozen_v2_selected": "noop",
+      "has_safe_candidate": false,
+      "id": "jp1-train-color-07",
+      "selected": "noop"
+    },
+    {
+      "accepted": false,
+      "case": 32,
+      "comparison": {
+        "harmed_clauses": [],
+        "has_unknown": false,
+        "known_harm": false,
+        "repaired_clauses": [],
+        "safe_repair": false,
+        "safe_visibility_gain": false,
+        "status": "non_repair",
+        "visibility_harm": false
+      },
+      "complete_scene": false,
+      "frozen_v2_selected": "noop",
+      "has_safe_candidate": false,
+      "id": "jp1-train-count_color-01",
+      "selected": "noop"
+    },
+    {
+      "accepted": false,
+      "case": 33,
+      "comparison": {
+        "harmed_clauses": [],
+        "has_unknown": false,
+        "known_harm": false,
+        "repaired_clauses": [],
+        "safe_repair": false,
+        "safe_visibility_gain": false,
+        "status": "non_repair",
+        "visibility_harm": false
+      },
+      "complete_scene": false,
+      "frozen_v2_selected": "noop",
+      "has_safe_candidate": false,
+      "id": "jp1-train-count_color-06",
+      "selected": "noop"
+    },
+    {
+      "accepted": true,
+      "case": 34,
+      "comparison": {
+        "harmed_clauses": [],
+        "has_unknown": false,
+        "known_harm": false,
+        "repaired_clauses": [
+          "relation",
+          "text"
+        ],
+        "safe_repair": true,
+        "safe_visibility_gain": false,
+        "status": "safe_repair",
+        "visibility_harm": false
+      },
+      "complete_scene": true,
+      "frozen_v2_selected": "noop",
+      "has_safe_candidate": true,
+      "id": "jp1-train-relation-01",
+      "selected": "geneval@1"
+    },
+    {
+      "accepted": false,
+      "case": 35,
+      "comparison": {
+        "harmed_clauses": [],
+        "has_unknown": false,
+        "known_harm": false,
+        "repaired_clauses": [],
+        "safe_repair": false,
+        "safe_visibility_gain": false,
+        "status": "non_repair",
+        "visibility_harm": false
+      },
+      "complete_scene": true,
+      "frozen_v2_selected": "noop",
+      "has_safe_candidate": false,
+      "id": "jp1-train-count_color-15",
+      "selected": "noop"
+    },
+    {
+      "accepted": false,
+      "case": 36,
+      "comparison": {
+        "harmed_clauses": [],
+        "has_unknown": false,
+        "known_harm": false,
+        "repaired_clauses": [],
+        "safe_repair": false,
+        "safe_visibility_gain": false,
+        "status": "non_repair",
+        "visibility_harm": false
+      },
+      "complete_scene": false,
+      "frozen_v2_selected": "noop",
+      "has_safe_candidate": false,
+      "id": "jp1-train-count_color-05",
+      "selected": "noop"
+    },
+    {
+      "accepted": false,
+      "case": 37,
+      "comparison": {
+        "harmed_clauses": [],
+        "has_unknown": false,
+        "known_harm": false,
+        "repaired_clauses": [],
+        "safe_repair": false,
+        "safe_visibility_gain": false,
+        "status": "non_repair",
+        "visibility_harm": false
+      },
+      "complete_scene": true,
+      "frozen_v2_selected": "noop",
+      "has_safe_candidate": false,
+      "id": "jp1-train-count-13",
+      "selected": "noop"
+    },
+    {
+      "accepted": false,
+      "case": 38,
+      "comparison": {
+        "harmed_clauses": [],
+        "has_unknown": false,
+        "known_harm": false,
+        "repaired_clauses": [],
+        "safe_repair": false,
+        "safe_visibility_gain": false,
+        "status": "non_repair",
+        "visibility_harm": false
+      },
+      "complete_scene": true,
+      "frozen_v2_selected": "noop",
+      "has_safe_candidate": false,
+      "id": "jp1-train-color-08",
+      "selected": "noop"
+    },
+    {
+      "accepted": false,
+      "case": 39,
+      "comparison": {
+        "harmed_clauses": [],
+        "has_unknown": false,
+        "known_harm": false,
+        "repaired_clauses": [],
+        "safe_repair": false,
+        "safe_visibility_gain": false,
+        "status": "non_repair",
+        "visibility_harm": false
+      },
+      "complete_scene": false,
+      "frozen_v2_selected": "noop",
+      "has_safe_candidate": false,
+      "id": "jp1-train-count_color-13",
+      "selected": "noop"
+    },
+    {
+      "accepted": false,
+      "case": 40,
+      "comparison": {
+        "harmed_clauses": [],
+        "has_unknown": false,
+        "known_harm": false,
+        "repaired_clauses": [],
+        "safe_repair": false,
+        "safe_visibility_gain": false,
+        "status": "non_repair",
+        "visibility_harm": false
+      },
+      "complete_scene": false,
+      "frozen_v2_selected": "noop",
+      "has_safe_candidate": false,
+      "id": "jp1-train-relation-02",
+      "selected": "noop"
+    },
+    {
+      "accepted": false,
+      "case": 41,
+      "comparison": {
+        "harmed_clauses": [],
+        "has_unknown": false,
+        "known_harm": false,
+        "repaired_clauses": [],
+        "safe_repair": false,
+        "safe_visibility_gain": false,
+        "status": "non_repair",
+        "visibility_harm": false
+      },
+      "complete_scene": true,
+      "frozen_v2_selected": "noop",
+      "has_safe_candidate": false,
+      "id": "jp1-train-count_color-07",
+      "selected": "noop"
+    },
+    {
+      "accepted": true,
+      "case": 42,
+      "comparison": {
+        "harmed_clauses": [],
+        "has_unknown": false,
+        "known_harm": false,
+        "repaired_clauses": [
+          "text"
+        ],
+        "safe_repair": true,
+        "safe_visibility_gain": false,
+        "status": "safe_repair",
+        "visibility_harm": false
+      },
+      "complete_scene": true,
+      "frozen_v2_selected": "ocr@1",
+      "has_safe_candidate": true,
+      "id": "jp1-train-color-13",
+      "selected": "ocr@1"
+    },
+    {
+      "accepted": false,
+      "case": 43,
+      "comparison": {
+        "harmed_clauses": [],
+        "has_unknown": true,
+        "known_harm": false,
+        "repaired_clauses": [],
+        "safe_repair": false,
+        "safe_visibility_gain": false,
+        "status": "unknown",
+        "visibility_harm": false
+      },
+      "complete_scene": false,
+      "frozen_v2_selected": "noop",
+      "has_safe_candidate": false,
+      "id": "jp1-train-count-01",
+      "selected": "noop"
+    },
+    {
+      "accepted": false,
+      "case": 44,
+      "comparison": {
+        "harmed_clauses": [],
+        "has_unknown": true,
+        "known_harm": false,
+        "repaired_clauses": [],
+        "safe_repair": false,
+        "safe_visibility_gain": false,
+        "status": "unknown",
+        "visibility_harm": false
+      },
+      "complete_scene": false,
+      "frozen_v2_selected": "noop",
+      "has_safe_candidate": false,
+      "id": "jp1-train-color-00",
+      "selected": "noop"
+    },
+    {
+      "accepted": false,
+      "case": 45,
+      "comparison": {
+        "harmed_clauses": [],
+        "has_unknown": false,
+        "known_harm": false,
+        "repaired_clauses": [],
+        "safe_repair": false,
+        "safe_visibility_gain": false,
+        "status": "non_repair",
+        "visibility_harm": false
+      },
+      "complete_scene": false,
+      "frozen_v2_selected": "noop",
+      "has_safe_candidate": false,
+      "id": "jp1-train-relation-06",
+      "selected": "noop"
+    },
+    {
+      "accepted": true,
+      "case": 46,
+      "comparison": {
+        "harmed_clauses": [],
+        "has_unknown": false,
+        "known_harm": false,
+        "repaired_clauses": [],
+        "safe_repair": false,
+        "safe_visibility_gain": false,
+        "status": "non_repair",
+        "visibility_harm": false
+      },
+      "complete_scene": true,
+      "frozen_v2_selected": "ocr@1",
+      "has_safe_candidate": false,
+      "id": "jp1-train-color-15",
+      "selected": "ocr@1"
+    },
+    {
+      "accepted": false,
+      "case": 47,
+      "comparison": {
+        "harmed_clauses": [],
+        "has_unknown": false,
+        "known_harm": false,
+        "repaired_clauses": [],
+        "safe_repair": false,
+        "safe_visibility_gain": false,
+        "status": "non_repair",
+        "visibility_harm": false
+      },
+      "complete_scene": false,
+      "frozen_v2_selected": "noop",
+      "has_safe_candidate": false,
+      "id": "jp1-train-relation-14",
+      "selected": "noop"
+    },
+    {
+      "accepted": false,
+      "case": 48,
+      "comparison": {
+        "harmed_clauses": [],
+        "has_unknown": false,
+        "known_harm": false,
+        "repaired_clauses": [],
+        "safe_repair": false,
+        "safe_visibility_gain": false,
+        "status": "non_repair",
+        "visibility_harm": false
+      },
+      "complete_scene": true,
+      "frozen_v2_selected": "noop",
+      "has_safe_candidate": false,
+      "id": "jp1-train-count_color-00",
+      "selected": "noop"
+    },
+    {
+      "accepted": false,
+      "case": 49,
+      "comparison": {
+        "harmed_clauses": [],
+        "has_unknown": false,
+        "known_harm": false,
+        "repaired_clauses": [],
+        "safe_repair": false,
+        "safe_visibility_gain": false,
+        "status": "non_repair",
+        "visibility_harm": false
+      },
+      "complete_scene": false,
+      "frozen_v2_selected": "noop",
+      "has_safe_candidate": false,
+      "id": "jp1-train-count-03",
+      "selected": "noop"
+    },
+    {
+      "accepted": false,
+      "case": 50,
+      "comparison": {
+        "harmed_clauses": [],
+        "has_unknown": false,
+        "known_harm": false,
+        "repaired_clauses": [],
+        "safe_repair": false,
+        "safe_visibility_gain": false,
+        "status": "non_repair",
+        "visibility_harm": false
+      },
+      "complete_scene": false,
+      "frozen_v2_selected": "noop",
+      "has_safe_candidate": false,
+      "id": "jp1-train-count_color-08",
+      "selected": "noop"
+    },
+    {
+      "accepted": false,
+      "case": 51,
+      "comparison": {
+        "harmed_clauses": [],
+        "has_unknown": false,
+        "known_harm": false,
+        "repaired_clauses": [],
+        "safe_repair": false,
+        "safe_visibility_gain": false,
+        "status": "non_repair",
+        "visibility_harm": false
+      },
+      "complete_scene": false,
+      "frozen_v2_selected": "noop",
+      "has_safe_candidate": false,
+      "id": "jp1-train-color-02",
+      "selected": "noop"
+    },
+    {
+      "accepted": false,
+      "case": 52,
+      "comparison": {
+        "harmed_clauses": [],
+        "has_unknown": false,
+        "known_harm": false,
+        "repaired_clauses": [],
+        "safe_repair": false,
+        "safe_visibility_gain": false,
+        "status": "non_repair",
+        "visibility_harm": false
+      },
+      "complete_scene": true,
+      "frozen_v2_selected": "noop",
+      "has_safe_candidate": false,
+      "id": "jp1-train-color-09",
+      "selected": "noop"
+    },
+    {
+      "accepted": false,
+      "case": 53,
+      "comparison": {
+        "harmed_clauses": [],
+        "has_unknown": true,
+        "known_harm": false,
+        "repaired_clauses": [],
+        "safe_repair": false,
+        "safe_visibility_gain": false,
+        "status": "unknown",
+        "visibility_harm": false
+      },
+      "complete_scene": false,
+      "frozen_v2_selected": "noop",
+      "has_safe_candidate": false,
+      "id": "jp1-train-color-05",
+      "selected": "noop"
+    },
+    {
+      "accepted": false,
+      "case": 54,
+      "comparison": {
+        "harmed_clauses": [],
+        "has_unknown": false,
+        "known_harm": false,
+        "repaired_clauses": [],
+        "safe_repair": false,
+        "safe_visibility_gain": false,
+        "status": "non_repair",
+        "visibility_harm": false
+      },
+      "complete_scene": true,
+      "frozen_v2_selected": "noop",
+      "has_safe_candidate": false,
+      "id": "jp1-train-color-03",
+      "selected": "noop"
+    },
+    {
+      "accepted": false,
+      "case": 55,
+      "comparison": {
+        "harmed_clauses": [],
+        "has_unknown": false,
+        "known_harm": false,
+        "repaired_clauses": [],
+        "safe_repair": false,
+        "safe_visibility_gain": false,
+        "status": "non_repair",
+        "visibility_harm": false
+      },
+      "complete_scene": false,
+      "frozen_v2_selected": "noop",
+      "has_safe_candidate": false,
+      "id": "jp1-train-count_color-09",
+      "selected": "noop"
+    },
+    {
+      "accepted": false,
+      "case": 56,
+      "comparison": {
+        "harmed_clauses": [],
+        "has_unknown": false,
+        "known_harm": false,
+        "repaired_clauses": [],
+        "safe_repair": false,
+        "safe_visibility_gain": false,
+        "status": "non_repair",
+        "visibility_harm": false
+      },
+      "complete_scene": true,
+      "frozen_v2_selected": "noop",
+      "has_safe_candidate": false,
+      "id": "jp1-train-count_color-10",
+      "selected": "noop"
+    },
+    {
+      "accepted": false,
+      "case": 57,
+      "comparison": {
+        "harmed_clauses": [],
+        "has_unknown": false,
+        "known_harm": false,
+        "repaired_clauses": [],
+        "safe_repair": false,
+        "safe_visibility_gain": false,
+        "status": "non_repair",
+        "visibility_harm": false
+      },
+      "complete_scene": true,
+      "frozen_v2_selected": "noop",
+      "has_safe_candidate": false,
+      "id": "jp1-train-count-07",
+      "selected": "noop"
+    },
+    {
+      "accepted": true,
+      "case": 58,
+      "comparison": {
+        "harmed_clauses": [],
+        "has_unknown": false,
+        "known_harm": false,
+        "repaired_clauses": [
+          "count"
+        ],
+        "safe_repair": true,
+        "safe_visibility_gain": true,
+        "status": "safe_repair",
+        "visibility_harm": false
+      },
+      "complete_scene": true,
+      "frozen_v2_selected": "geneval@1",
+      "has_safe_candidate": true,
+      "id": "jp1-train-count-08",
+      "selected": "geneval@1"
+    },
+    {
+      "accepted": false,
+      "case": 59,
+      "comparison": {
+        "harmed_clauses": [],
+        "has_unknown": false,
+        "known_harm": false,
+        "repaired_clauses": [],
+        "safe_repair": false,
+        "safe_visibility_gain": false,
+        "status": "non_repair",
+        "visibility_harm": false
+      },
+      "complete_scene": true,
+      "frozen_v2_selected": "noop",
+      "has_safe_candidate": false,
+      "id": "jp1-train-count-15",
+      "selected": "noop"
+    },
+    {
+      "accepted": false,
+      "case": 60,
+      "comparison": {
+        "harmed_clauses": [],
+        "has_unknown": false,
+        "known_harm": false,
+        "repaired_clauses": [],
+        "safe_repair": false,
+        "safe_visibility_gain": false,
+        "status": "non_repair",
+        "visibility_harm": false
+      },
+      "complete_scene": true,
+      "frozen_v2_selected": "noop",
+      "has_safe_candidate": false,
+      "id": "jp1-train-count-02",
+      "selected": "noop"
+    },
+    {
+      "accepted": false,
+      "case": 61,
+      "comparison": {
+        "harmed_clauses": [],
+        "has_unknown": false,
+        "known_harm": false,
+        "repaired_clauses": [],
+        "safe_repair": false,
+        "safe_visibility_gain": false,
+        "status": "non_repair",
+        "visibility_harm": false
+      },
+      "complete_scene": false,
+      "frozen_v2_selected": "noop",
+      "has_safe_candidate": false,
+      "id": "jp1-train-count-14",
+      "selected": "noop"
+    },
+    {
+      "accepted": false,
+      "case": 62,
+      "comparison": {
+        "harmed_clauses": [],
+        "has_unknown": false,
+        "known_harm": false,
+        "repaired_clauses": [],
+        "safe_repair": false,
+        "safe_visibility_gain": false,
+        "status": "non_repair",
+        "visibility_harm": false
+      },
+      "complete_scene": true,
+      "frozen_v2_selected": "noop",
+      "has_safe_candidate": false,
+      "id": "jp1-train-count_color-14",
+      "selected": "noop"
+    },
+    {
+      "accepted": false,
+      "case": 63,
+      "comparison": {
+        "harmed_clauses": [],
+        "has_unknown": false,
+        "known_harm": false,
+        "repaired_clauses": [],
+        "safe_repair": false,
+        "safe_visibility_gain": false,
+        "status": "non_repair",
+        "visibility_harm": false
+      },
+      "complete_scene": false,
+      "frozen_v2_selected": "noop",
+      "has_safe_candidate": false,
+      "id": "jp1-train-count-11",
+      "selected": "noop"
+    },
+    {
+      "accepted": true,
+      "case": 64,
+      "comparison": {
+        "harmed_clauses": [],
+        "has_unknown": false,
+        "known_harm": false,
+        "repaired_clauses": [],
+        "safe_repair": false,
+        "safe_visibility_gain": false,
+        "status": "non_repair",
+        "visibility_harm": false
+      },
+      "complete_scene": false,
+      "frozen_v2_selected": "ocr@1",
+      "has_safe_candidate": false,
+      "id": "jp1-train-color-04",
+      "selected": "ocr@1"
+    }
+  ],
+  "results_sha256": "05afd4d4d65fede67d337e1f99d974dda2d4f0046b5032c52908df8881306385",
+  "safe_precision": {
+    "bootstrap_nonzero_denominator": 2000,
+    "ci95": [
+      0.2,
+      1.0
+    ],
+    "denominator": 7,
+    "mean": 0.5714285714285714,
+    "numerator": 4,
+    "prompts": 64
+  },
+  "safe_recall": {
+    "bootstrap_nonzero_denominator": 2000,
+    "ci95": [
+      0.25,
+      1.0
+    ],
+    "denominator": 6,
+    "mean": 0.6666666666666666,
+    "numerator": 4,
+    "prompts": 64
+  },
+  "scope": "posthoc development ablation after frozen v2 failed readiness; no new GPU inference or validation",
+  "script_sha256": "0803ecd523aeeaecf031493a215e8a757a5290bc47e08b9eae402833bb4de917",
+  "selector_sha256": "74c7717e2adb5d37b10d90496664fcd8f3b7ddad9e88874daa13c01fba564d56",
+  "version": "evidence_dominance_posthoc1"
+}

@@ -1,0 +1,17 @@
+{
+  "expected_counts": {
+    "backward_queries": 0,
+    "decode_images": 230,
+    "forward_behavior": 582,
+    "forward_examples": 4036,
+    "forward_geneval": 0,
+    "forward_ocr": 0,
+    "forward_student": 1436,
+    "text_encode_prompts": 40,
+    "verifier_images": 230
+  },
+  "fit_run": "/midtier/minilab/scratch/chw4026/projects/side_project/generative/opd_related/opd_lab/runs/le20_fit_recovered_001",
+  "new_training_updates": 0,
+  "plan_sha256": "b962770a8a393f8e5cf0d26c098d9a3385e2e802feb6c8e3aa7c7eaec179be91",
+  "run": "/midtier/minilab/scratch/chw4026/projects/side_project/generative/opd_related/opd_lab/runs/le20_eval_001"
+}

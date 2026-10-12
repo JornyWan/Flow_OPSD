@@ -1,0 +1,541 @@
+% =====================================================================
+%  CA-OPD --- THEORY SECTION  (revised: reward-space recast)
+%  Conflict-Averse / Pareto-optimal multi-teacher On-Policy Distillation
+%  Self-contained. Reuses the per-step closed-form KL of DiffusionOPD
+%  (\cite{diffusionopd}) and lifts multi-teacher OPD to a multi-objective
+%  problem, with the motivation framed in REWARD space (the loss front is
+%  convex; the loss->reward map is what makes uniform OPD suboptimal).
+%
+%  NOTE (self-containment): the theorem-like environments below are declared
+%  here. If your main preamble already defines them (via amsthm), delete this
+%  block to avoid a "command already defined" error.
+% ---------------------------------------------------------------------
+\ifdefined\theoremstyleisset\else
+  \theoremstyle{plain}
+  \newtheorem{theorem}{Theorem}
+  \newtheorem{proposition}{Proposition}
+  \newtheorem{lemma}{Lemma}
+  \theoremstyle{definition}
+  \newtheorem{definition}{Definition}
+  \newtheorem{assumption}{Assumption}
+  \theoremstyle{remark}
+  \newtheorem{remark}{Remark}
+  \let\theoremstyleisset\relax
+\fi
+% =====================================================================
+
+\section{Theory: Multi-Teacher OPD as Multi-Objective Optimization}
+\label{sec:theory}
+
+We recap the per-step closed-form supervision of DiffusionOPD~\cite{diffusionopd}
+and its uniform multi-teacher extension (\S\ref{sec:th-recap}), formalize
+multi-teacher OPD as a multi-objective problem (\S\ref{sec:th-moo}), and then make
+our central point: in \emph{loss} space the uniform (teacher-mean) student is already
+Pareto-optimal, so the difficulty is \emph{not} a convex-hull artifact of loss
+scalarization; the difficulty lives in the nonlinear, non-monotone map from
+velocity-matching loss to task \emph{reward}, under which the loss-sum minimizer can be
+reward-dominated (\S\ref{sec:th-reward}). We then introduce our adaptive
+Tchebycheff / min-max fix and prove its detached-weight gradient is exact via the
+envelope theorem (\S\ref{sec:th-cheby}), give the output-space commensurability property
+that makes min-max scalarization meaningful in OPD (\S\ref{sec:th-geometry}), discuss
+convergence and weighting risks honestly (\S\ref{sec:th-conv}), and close with a rigor
+remark on why symmetrizing the OPD divergence is vacuous (\S\ref{sec:th-symmetry}).
+
+% ---------------------------------------------------------------------
+\subsection{Recap: per-step closed-form KL and uniform multi-teacher OPD}
+\label{sec:th-recap}
+
+We adopt the DiffusionOPD construction verbatim~\cite{diffusionopd}. A flow-matching
+student $v_\theta$ rolls out its \emph{own} reverse-time trajectory
+$x_{t_0},\dots,x_{t_N}$ ($1{=}t_0{>}\cdots{>}t_N{=}0$) via the Euler--Maruyama
+discretization of Flow-GRPO~\cite{liu2025flow}. At each step the student and teacher
+one-step transition kernels are Gaussians that (i) are evaluated at the \emph{same}
+on-policy state $x_{t_j}$ and (ii) share the \emph{same} covariance
+$\bar\sigma_j^2 I_d$, which depends only on the scheduler $(t_j,\Delta t_j)$ and the
+global noise level. Hence they differ only in their means, and the per-step reverse
+KL between two equal-covariance Gaussians is closed-form,
+\begin{equation}
+\label{eq:th-gauss-kl}
+\mathrm{KL}\!\bigl(\mathcal N(\mu_S,\bar\sigma_j^2 I)\,\Vert\,\mathcal N(\mu_T,\bar\sigma_j^2 I)\bigr)
+=\frac{\|\mu_S(x_{t_j})-\mu_T(x_{t_j})\|_2^2}{2\bar\sigma_j^2},
+\end{equation}
+introducing no Monte-Carlo variance~\cite{diffusionopd}. Because student and teacher
+means share the identical affine map from velocity to transition mean, their difference
+is proportional to the velocity residual,
+\begin{equation}
+\label{eq:th-mean-vel}
+\mu_S(x_{t_j})-\mu_T(x_{t_j}) = c_j\,\bigl(v_\theta(x_{t_j},t_j)-v_\phi(x_{t_j},t_j)\bigr),
+\qquad
+c_j := \Bigl(1+\tfrac{\sigma_{t_j}^2(1-t_j)}{2t_j}\Bigr)\Delta t_j,
+\end{equation}
+so the per-step objective reduces to weighted velocity matching. Writing
+$w_j := c_j^2/2 > 0$ for the ODE regime (resp.\ $c_j^2/(2\bar\sigma_j^2)$ for SDE), the
+single-teacher OPD loss is
+\begin{equation}
+\label{eq:th-single}
+\mathcal L^\phi(\theta)
+=\mathbb E_{x_{0:N}\sim p_{S,\theta}}\!\left[\sum_{j=0}^{N-1} w_j\,
+\bigl\|v_\theta(x_{t_j},t_j)-v_\phi(x_{t_j},t_j)\bigr\|_2^2\right]
+\;\propto\; \|v_\theta-v_\phi\|_2^2 .
+\end{equation}
+
+\paragraph{Multi-teacher (uniform round-robin).}
+Given $M$ frozen task teachers $\{v_{\phi_m}\}_{m=1}^M$, DiffusionOPD defines the
+per-teacher loss $\mathcal L_m(\theta):=\mathcal L^{\phi_m}(\theta)$ and trains on their
+uniform average via gradient accumulation $G=M$:
+$\mathcal L_{\mathrm{total}}(\theta)=\tfrac1M\sum_{m=1}^M \mathcal L_m(\theta)$.
+Throughout we make the standing assumption implicit in DiffusionOPD, whose rollouts are
+generated under \texttt{no\_grad}:
+
+\begin{assumption}[On-policy state distribution frozen within an update]
+\label{as:frozen}
+Within a single parameter update, the trajectory-sampling distribution $p_{S,\theta}$
+is treated as a fixed measure $p_S$ (the current student's rollout law); gradients flow
+only through the per-step velocity heads $v_\theta(x_{t_j},t_j)$, not through the law of
+$x_{0:N}$.
+\end{assumption}
+
+% ---------------------------------------------------------------------
+\subsection{Two objectives: matching loss vs.\ task reward}
+\label{sec:th-moo}
+
+Two vector-valued quantities coexist, and conflating them is the source of the
+multi-teacher difficulty.
+
+\begin{definition}[Loss and reward objectives]
+\label{def:objs}
+The \emph{matching-loss} vector is
+$\mathcal L(\theta)=(\mathcal L_1(\theta),\dots,\mathcal L_M(\theta))\in\mathbb R_{\ge0}^M$
+with achievable region $\mathcal A_L=\{\mathcal L(\theta):\theta\in\Theta\}$. The
+\emph{task-reward} vector is $R(\theta)=(R_1(\theta),\dots,R_M(\theta))\in\mathbb R^M$,
+where $R_m$ is the (evaluation) reward on task $m$; we want to \emph{maximize} every
+$R_m$. Crucially, $R$ is what we ultimately care about, whereas $\mathcal L$ is the
+optimized proxy.
+\end{definition}
+
+\begin{definition}[Pareto notions]
+\label{def:pareto}
+For a minimization objective, $\theta$ \emph{dominates} $\theta'$ if it is
+component-wise no worse and strictly better in some component; a point is
+\emph{Pareto-optimal} if dominated by none. A point is \emph{Pareto-stationary}%
+~\cite{desideri2012mgda,sener2018multi} if $\sum_m\alpha_m\nabla\mathcal L_m=0$ for some
+$\alpha\in\Delta^{M-1}$ (the simplex) --- the first-order (KKT) necessary condition. The
+same notions apply to reward-maximization with inequalities reversed.
+\end{definition}
+
+% ---------------------------------------------------------------------
+\subsection{The uniform sum is loss-optimal but reward-suboptimal}
+\label{sec:th-reward}
+
+We first record that, at the level of the \emph{proxy loss}, uniform OPD has no defect.
+
+\begin{proposition}[Uniform OPD $\Rightarrow$ teacher-mean velocity, and it is loss-Pareto-optimal]
+\label{prop:mean}
+Under Assumption~\ref{as:frozen}, in the pointwise (sufficient-capacity) regime the
+unique minimizer of $\tfrac1M\sum_m\mathcal L_m$ sets the student velocity at every
+$(x_{t_j},t_j)$ to the arithmetic mean
+$v_\theta^\star=\tfrac1M\sum_m v_{\phi_m}$, and a weighted sum with $\lambda\in\Delta^{M-1}$
+gives $v_\theta^\star=\sum_m\lambda_m v_{\phi_m}$. Moreover, because each $\mathcal L_m$
+is a convex quadratic in the velocity in a common isotropic metric, $\mathcal A_L$ is
+convex; hence the teacher-mean is \emph{Pareto-optimal in loss}, and no positive-weight
+scalarizer of $\mathcal L$ is Pareto-dominated.
+\end{proposition}
+
+\begin{proof}
+At a fixed state the integrand $w_j\sum_m\lambda_m\|v-v_{\phi_m}\|_2^2$ is a strictly
+convex quadratic in $v$ ($w_j>0$, $\sum_m\lambda_m=1$); its gradient
+$2w_j\sum_m\lambda_m(v-v_{\phi_m})$ vanishes uniquely at $v^\star=\sum_m\lambda_m v_{\phi_m}$;
+$\lambda_m\equiv1/M$ gives the mean, and state-wise independence makes it global.
+Convexity of each $\mathcal L_m$ in $v$ (shared metric) makes $\mathcal A_L$ convex, on
+which every weighted-sum minimizer is Pareto-optimal by the supporting-hyperplane
+characterization~\cite[\S4.7.5]{boyd2004convex,miettinen1999nonlinear}.
+\end{proof}
+
+\begin{remark}[Why the naive convex-hull argument does \emph{not} apply]
+\label{rem:notconvexhull}
+It is tempting to argue that uniform OPD is dominated because weighted-sum scalarization
+reaches only the convex hull of the front. Proposition~\ref{prop:mean} shows this is
+\emph{false in loss space}: the loss front is convex, so the teacher-mean is genuinely
+loss-Pareto-optimal and \emph{no} scalarizer is loss-dominated. The real problem is not
+in loss space at all.
+\end{remark}
+
+\paragraph{The loss$\to$reward map.}
+The objective we care about is reward, and the reward vector is a \emph{nonlinear,
+generally non-monotone} functional of the whole matching-loss profile,
+$R=\Phi(\mathcal L,\theta)$, for three concrete reasons: (i) rewards are read off the
+\emph{integrated} sample $x_0$, and the ODE/SDE integrator compounds per-step velocity
+errors nonlinearly, so a lower per-step $\mathcal L_m$ need not yield a higher $R_m$;
+(ii) reward models are themselves nonlinear (and teachers are imperfect / partially
+reward-hacked, so \emph{over}-matching a teacher can \emph{lower} its reward); and
+(iii) a finite, shared LoRA adapter couples the tasks, so capacity spent driving one
+$\mathcal L_m$ toward zero is capacity taken from another. Under such a map, loss
+optimality does not imply reward optimality.
+
+\begin{proposition}[The loss-sum minimizer can be reward-dominated]
+\label{prop:reward-dom}
+There exist achievable OPD students at which the summed-loss minimizer, though
+loss-Pareto-optimal (Prop.~\ref{prop:mean}), is \emph{not} reward-Pareto-optimal and is
+reward-dominated by another achievable point.
+\end{proposition}
+
+\begin{proof}[Proof by illustrative construction]
+Consider three achievable students (e.g.\ three LoRA solutions) with matching-loss
+vectors $\mathcal L$ and reward vectors $R$:
+\[
+\begin{array}{c|c|c|c|c}
+\text{point} & \mathcal L=(\mathcal L_1,\mathcal L_2) & \textstyle\sum_m\mathcal L_m
+ & \max_m \mathcal L_m & R=(R_1,R_2)\\\hline
+A\ (\text{teacher-1 specialist}) & (1,\,8) & 9 & 8 & (7,\,2)\\
+B\ (\text{teacher-mean, }\arg\min\textstyle\sum\mathcal L) & (2,\,5) & 7 & 5 & (5,\,5)\\
+D\ (\text{min-max, }\arg\min\max\mathcal L) & (4,\,4) & 8 & 4 & (8,\,8)
+\end{array}
+\]
+$B$ uniquely minimizes $\sum_m\mathcal L_m$ ($7<8<9$) and is loss-Pareto-optimal (no
+point is component-wise $\le B$: $A$ has $\mathcal L_1{<}$ but $\mathcal L_2{>}$, $D$ is
+larger in both). Yet $B$'s reward $(5,5)$ is strictly dominated by $D$'s $(8,8)$. The
+transition $B\to D$ \emph{worsens} $\mathcal L_1$ ($2\to4$) yet \emph{raises} $R_1$
+($5\to8$): reward is a coupled, non-monotone functional (over-serving teacher~2 at $B$
+wastes shared capacity and injects its artifacts through ODE integration), so more
+faithful proxy matching is not more reward. Hence the loss-sum minimizer is
+reward-dominated, and --- critically --- the \emph{min-max} student $D$, which
+reallocates matching effort toward the worst-served teacher, is the achievable point
+that lands higher on the reward frontier.
+\end{proof}
+
+The next toy shows the same phenomenon on a continuum and explains \emph{why} min-max,
+not the sum, recovers the balanced high-reward point. We phrase it directly in
+\emph{reward-gap} space $g_m := R_m^\star - R_m \ge 0$ (gaps to be minimized), whose
+achievable region is generically \emph{non-convex} because $g=\Phi'(\mathcal L)$ is
+nonlinear --- this is \emph{not} the convex loss front of Prop.~\ref{prop:mean}.
+
+\begin{proposition}[Reward-gap toy: uniform collapses to one teacher; min-max balances]
+\label{prop:toy}
+Let $M{=}2$ and let a scalar student control the reward gaps along a \emph{concave}
+front $g_1(\theta)=\theta,\ g_2(\theta)=1-\theta^2$, $\theta\in[0,1]$, so the achievable
+gap region is non-convex. Then (a) every weighted sum
+$\lambda g_1+(1-\lambda)g_2$ is concave in $\theta$ and minimized only at an endpoint
+$\theta^\star\in\{0,1\}$ --- the student collapses to a single teacher, and $\lambda{=}\tfrac12$
+still returns a corner; (b) the balanced Pareto point $g_1{=}g_2$ is at
+$\theta^\star=\tfrac{\sqrt5-1}{2}\approx0.618$, Pareto-optimal yet the minimizer of no
+weighted sum; (c) the min-max objective $\max\{g_1,g_2\}$ is uniquely minimized at this
+balanced point.
+\end{proposition}
+
+\begin{proof}
+(a) $\frac{d^2}{d\theta^2}(\lambda g_1+(1-\lambda)g_2)=-2(1-\lambda)\le0$, so the sum is
+concave and minimized at an endpoint; at $\lambda{=}\tfrac12$ the corners tie at
+$\tfrac12$ while $\theta{=}\tfrac12$ gives $0.625$, so a corner wins. (b)
+$\theta=1-\theta^2\Rightarrow\theta=\tfrac{\sqrt5-1}{2}$; monotonicity of $g_1$ (up) and
+$g_2$ (down) gives Pareto-optimality, and by (a) no weighted sum selects an interior
+point. (c) $\max\{\theta,1-\theta^2\}$ is the upper envelope of an increasing and a
+decreasing branch, quasiconvex with unique minimum at the crossing.
+\end{proof}
+
+\begin{remark}[Reading of the toys]
+\label{rem:toyread}
+Proposition~\ref{prop:toy} is an illustration of the general multi-objective fact
+\emph{in reward-gap space}; it is deliberately \emph{not} derived from the OPD
+velocity-matching losses (which are convex and yield a convex front where the
+teacher-mean is fine, Prop.~\ref{prop:mean}). The non-convexity that makes min-max
+strictly better is a property of the loss$\to$reward map, which we assert (from the ODE
+/ reward-model / shared-capacity mechanism) and support empirically
+(\S\ref{sec:th-conv}, and the experiments), not a property we prove for the trained
+SD3.5 student a priori.
+\end{remark}
+
+% ---------------------------------------------------------------------
+\subsection{CA-OPD: adaptive Tchebycheff scalarization}
+\label{sec:th-cheby}
+
+We replace the linear sum by a \emph{weighted Tchebycheff} (min-max) scalarization over
+per-teacher reference-normalized losses $r_m>0$:
+\begin{equation}
+\label{eq:th-cheby}
+\mathcal L_{\infty}(\theta)=\max_{m\in[M]}\frac{\mathcal L_m(\theta)}{r_m}.
+\end{equation}
+
+\begin{theorem}[Tchebycheff scalarization reaches the full Pareto set; {\cite[Thm.~3.4.2--3.4.5]{miettinen1999nonlinear}}]
+\label{thm:cheby}
+With a utopia reference below the front, for fixed positive weights every minimizer of
+the weighted Tchebycheff problem is weakly Pareto-optimal, and every properly
+Pareto-optimal point is the unique minimizer for some positive weight --- including
+points in \emph{non-convex} regions of the front. Ranging over weights, weighted
+Tchebycheff scalarization characterizes the complete Pareto set, in contrast to the
+convex-hull restriction of weighted-sum scalarization.
+\end{theorem}
+
+Equation~\eqref{eq:th-cheby} is nonsmooth; we use the smooth (log-sum-exp) surrogate
+with temperature $\tau>0$, and --- key for our implementation --- give it an exact
+variational (dual) form.
+
+\begin{proposition}[Entropy-regularized min-max and the envelope theorem]
+\label{prop:envelope}
+Define the smooth Chebyshev surrogate
+\begin{equation}
+\label{eq:th-lse}
+\mathcal F_\tau(\theta)=\tau\,\log\sum_{m=1}^M \exp\!\Bigl(\frac{\mathcal L_m(\theta)}{\tau\,r_m}\Bigr)
+\;=\;\max_{w\in\Delta^{M-1}}\ \Bigl[\ \sum_{m=1}^M w_m\frac{\mathcal L_m(\theta)}{r_m}\;+\;\tau\,\mathcal H(w)\ \Bigr],
+\end{equation}
+where $\mathcal H(w)=-\sum_m w_m\log w_m$ is the Shannon entropy. The inner maximum is
+attained uniquely at $w_m^\star=\mathrm{softmax}\bigl(\mathcal L_m/(\tau r_m)\bigr)$.
+By the envelope (Danskin) theorem,
+\begin{equation}
+\label{eq:th-env}
+\nabla_\theta \mathcal F_\tau(\theta)=\sum_{m=1}^M w_m^\star\,\nabla_\theta \frac{\mathcal L_m(\theta)}{r_m},
+\end{equation}
+i.e.\ the gradient obtained with the weights \emph{detached} (treated as constants)
+equals the \emph{exact} gradient of $\mathcal F_\tau$ --- no term through $w^\star$ is
+missed.
+\end{proposition}
+
+\begin{proof}
+The dual form of log-sum-exp is the Gibbs variational principle: for
+$a_m=\mathcal L_m/(\tau r_m)$, $\max_{w\in\Delta}[\sum_m w_m(\tau a_m)+\tau\mathcal H(w)]
+=\tau\log\sum_m e^{a_m}$, attained at $w^\star=\mathrm{softmax}(a)$. Since $w^\star$ is
+the argmax, its first-order contribution vanishes, so Danskin's theorem gives
+$\nabla_\theta\mathcal F_\tau=\sum_m w_m^\star\nabla_\theta(\mathcal L_m/r_m)$.
+\end{proof}
+
+Proposition~\ref{prop:envelope} makes our detached-weight update \emph{principled rather
+than approximate}: minimizing $\mathcal F_\tau$ is exactly softmax-weighted velocity
+matching that up-weights the worst-matched (largest $\mathcal L_m/r_m$) teacher.
+
+\begin{proposition}[Temperature limits]
+\label{prop:limits}
+As $\tau\to0^+$: $\mathcal F_\tau\to\max_m\mathcal L_m/r_m$ and $w^\star\to$ one-hot on
+$\arg\max$ --- \emph{pure min-max (Tchebycheff)}. As $\tau\to\infty$: $w_m^\star\to1/M$
+and $\nabla\mathcal F_\tau\to\tfrac1M\sum_m\nabla(\mathcal L_m/r_m)$ --- the
+\emph{uniform} DiffusionOPD gradient (mopd), up to the additive constant $\tau\log M$
+that does not affect the descent direction.
+\end{proposition}
+
+\begin{proof}
+$\tau\log\sum_m e^{a_m/\tau}\to\max_m a_m$ and softmax concentrates on the argmax as
+$\tau\to0^+$; as $\tau\to\infty$ the logits $a_m/\tau\to0$ coincide so $w_m^\star\to1/M$.
+\end{proof}
+
+\paragraph{EMA-softmax adaptive weighting (the deployed CA-OPD).}
+Because per-batch losses are noisy, we weight not by the instantaneous $\mathcal L_m$ but
+by an EMA $\bar\ell_m^{(t)}=\beta\bar\ell_m^{(t-1)}+(1-\beta)\mathcal L_m(\theta^{(t)})$
+($\beta{=}0.9$), and set detached weights
+\begin{equation}
+\label{eq:th-ema}
+w_m^{(t)}=\frac{\exp(\bar\ell_m^{(t)}/(\tau r_m))}{\sum_k\exp(\bar\ell_k^{(t)}/(\tau r_k))},
+\qquad
+\mathcal L_{\mathrm{CA\text{-}OPD}}^{(t)}(\theta)=\sum_{m=1}^M \mathrm{sg}\!\bigl[w_m^{(t)}\bigr]\,\mathcal L_m(\theta).
+\end{equation}
+By Proposition~\ref{prop:envelope} this is (variance-reduced, one-step-lagged) descent on
+$\mathcal F_\tau$. The temperature ($\tau{=}0.5$ in our runs) tunes how aggressively the
+worst-matched teacher is prioritized; by Proposition~\ref{prop:limits} mopd is the
+$\tau\to\infty$ special case, so mopd is contained in CA-OPD's search space. Two honest
+caveats: (i) the smooth surrogate reaches only an $O(\tau\log M)$ neighborhood of the
+true Tchebycheff optimum (since $0\le\mathcal F_\tau-\max_m\mathcal L_m/r_m\le\tau\log M$);
+and (ii) the EMA introduces a lag, so \eqref{eq:th-ema} equals the exact
+envelope gradient only in the small-lag limit $\bar\ell_m\approx\mathcal L_m$.
+
+% ---------------------------------------------------------------------
+\subsection{Why min-max scalarization is meaningful \emph{in OPD}: output-space commensurability}
+\label{sec:th-geometry}
+
+Generic multi-task learning min-max / Tchebycheff scalarization is fragile because it
+compares losses of incommensurable units and scales: a cross-entropy and a box-regression
+loss have no common metric, so $\max_m \mathcal L_m$ (or $\mathcal L_m/r_m$ with ad hoc
+$r_m$) is dominated by arbitrary scaling. OPD removes exactly this pathology, at the level
+of the model \emph{output}.
+
+\begin{proposition}[Shared output metric across teachers]
+\label{prop:commens}
+All $M$ per-teacher losses are the \emph{same functional} --- the squared velocity error
+$\|v_\theta-v_{\phi_m}\|_2^2$ evaluated at the \emph{same} on-policy states with the
+\emph{same} per-step weights $w_j$ and covariance $\bar\sigma_j^2$ --- differing only in
+the target $v_{\phi_m}$. Hence the $\mathcal L_m$ are measured in one common isotropic
+metric on velocity-output space and are directly comparable in scale and units: the
+residual fields $\delta_m:=v_\theta-v_{\phi_m}$ live in a single inner-product space, so
+$\mathcal L_m$, the ratios $\mathcal L_m/r_m$, and the max in \eqref{eq:th-cheby} are all
+well-defined without any per-task rescaling.
+\end{proposition}
+
+\begin{proof}
+Immediate from \eqref{eq:th-single}: only $v_{\phi_m}$ carries the teacher index; the
+metric $w_j\,\|\cdot\|_2^2$ and the state law $p_S$ (Assumption~\ref{as:frozen}) are
+shared, so the $M$ losses are values of one functional at $M$ targets.
+\end{proof}
+
+This output-space commensurability --- not any claim about parameter-space geometry ---
+is what makes min-max / Tchebycheff scalarization meaningful here.
+
+\begin{remark}[We do \emph{not} claim meaningful parameter-space conflict angles]
+\label{rem:noparamangle}
+One might hope the shared Jacobian $J_\theta=\nabla_\theta v_\theta$ (common to all
+$\nabla_\theta\mathcal L_m=\mathbb E[\sum_j 2w_j J_\theta^{\!\top}\delta_m]$) makes
+parameter-space gradient angles $\langle\nabla\mathcal L_m,\nabla\mathcal L_{m'}\rangle$
+directly interpretable. We resist this claim: under LoRA the effective Jacobian is
+\emph{low-rank and anisotropic}, so $J_\theta^{\!\top}J_\theta$ badly distorts angles,
+and parameter-space conflict is not a clean invariant. Our commensurability argument
+lives entirely in \emph{output} (velocity) space, where the metric is isotropic and
+teacher-independent. Conflict-averse gradient methods (MGDA~\cite{sener2018multi,desideri2012mgda},
+PCGrad~\cite{yu2020gradient}, CAGrad~\cite{liu2021conflict}) are therefore
+\emph{related} approaches that OPD's commensurability would also make well-posed in
+output space; but the method we ship is the softmax/Tchebycheff scalarization of
+\S\ref{sec:th-cheby}, not a parameter-space gradient surgery.
+\end{remark}
+
+% ---------------------------------------------------------------------
+\subsection{Convergence, weighting risk, and empirical framing}
+\label{sec:th-conv}
+
+\paragraph{Convergence: proven vs.\ heuristic.}
+For \emph{fixed} scalarizations, Pareto-stationarity is standard: MGDA converges to a
+Pareto-stationary point~\cite{desideri2012mgda,sener2018multi}; CAGrad converges to a
+stationary point of the average loss while reducing the worst-case local
+objective~\cite{liu2021conflict}; weighted Tchebycheff minimizers are weakly
+Pareto-optimal and cover the full front (Theorem~\ref{thm:cheby}). For any fixed weight
+$w^\star\in\Delta^{M-1}$, a stationary point of $\sum_m w^\star_m\mathcal L_m$ satisfies
+$\sum_m w^\star_m\nabla\mathcal L_m=0$, i.e.\ is Pareto-stationary. Our EMA-softmax scheme
+\eqref{eq:th-ema} is \emph{not} covered by these theorems as stated: the weights are
+state-dependent and evolve, so CA-OPD is a nonstationary, adaptively scalarized descent
+without a proven rate. We give only a \emph{conditional} guarantee: \emph{if} the EMA
+weights converge, $w^{(t)}\to w^\star$ (as observed once per-teacher losses equilibrate),
+then in the limit CA-OPD is SGD on the fixed weighted objective $\sum_m w^\star_m\mathcal L_m$,
+whose stationary points are Pareto-stationary, and the softmax fixed-point balances the
+active normalized losses (approximating Theorem~\ref{thm:cheby}). We do \emph{not} prove
+$w^{(t)}$ converges nor give a non-asymptotic rate; a two-timescale
+stochastic-approximation analysis, or replacing the EMA-softmax by an inner MGDA/CAGrad
+solve with its existing guarantee, is left to future work. We position CA-OPD as a cheap,
+principled surrogate for adaptive Tchebycheff scalarization, not a new convergence
+theorem.
+
+\paragraph{Weighting risk and a regret-based refinement.}
+Min-max on \emph{absolute} losses has a known failure mode: it can chase a teacher whose
+loss is \emph{irreducible} (intrinsically hard task, or a reward-hacked teacher whose
+velocity field the student should not fully imitate), perpetually starving the others.
+The reference $r_m$ partially guards against this, but a cleaner fix is \emph{regret}-based
+weighting: set $r_m$ or the weighting statistic to the excess over the teacher's own
+attainable floor,
+\begin{equation}
+\label{eq:th-regret}
+\text{regret}_m(\theta)=\mathcal L_m(\theta)-\mathrm{floor}_m,\qquad
+\mathrm{floor}_m := \min_\theta \mathcal L_m(\theta)\ \text{(teacher's single-task attainable loss)},
+\end{equation}
+so an intrinsically hard teacher (large $\mathrm{floor}_m$) is not permanently
+up-weighted, and CA-OPD focuses on \emph{reducible} disagreement. We flag this as the
+recommended refinement; our reported runs use fixed $r_m$.
+
+\paragraph{Empirical framing (cross-reference to experiments).}
+Our observed pattern --- aesthetics reached \emph{faster} early (the lagging axis),
+OCR slightly down --- is \emph{consistent with} the min-max prediction of
+reallocating effort toward the worst-served reward axis (Prop.~\ref{prop:reward-dom},
+\ref{prop:toy}); it is \emph{not} a proof of the reward-non-convexity that motivates
+CA-OPD, and at convergence CA-OPD does \emph{not} exceed mopd on any axis. We disclose
+the limitations that bound this evidence: results are single-seed at $n{=}256$ prompts;
+the OCR decrease is within run-to-run noise; and we report per-axis metrics only,
+because a single min-max-normalized average is normalization-dependent and partially
+circular with a min-max-motivated method. Stronger claims require multi-seed runs and
+per-axis significance.
+
+% ---------------------------------------------------------------------
+\subsection{Remark: symmetrizing the OPD divergence is vacuous}
+\label{sec:th-symmetry}
+
+\begin{remark}[Equal-covariance Gaussians collapse the divergence family to one $L_2$]
+\label{rem:symmetry}
+Because $p_S,p_T$ share covariance $\bar\sigma_j^2 I$ at the same state, forward and
+reverse KL coincide,
+$\mathrm{KL}(p_S\Vert p_T)=\mathrm{KL}(p_T\Vert p_S)=\|\mu_S-\mu_T\|_2^2/(2\bar\sigma_j^2)$,
+so any convex combination (Jeffreys), the Jensen--Shannon divergence, the squared
+Hellinger, and the $2$-Wasserstein distance are all strictly increasing functions of the
+single scalar $\|\mu_S-\mu_T\|_2^2=c_j^2\|v_\theta-v_\phi\|_2^2$. Every such divergence
+therefore induces the same minimizer and descent direction up to a positive monotone
+reweighting: ``symmetrizing the KL'' is vacuous for OPD. The design freedom lives in
+\emph{which} targets to match and \emph{how to weight teachers} (this paper), not in the
+divergence form --- a rigor signal that the equal-covariance structure genuinely
+constrains the space of meaningful modifications. (Scope: this uses both the shared
+covariance and the shared on-policy state; it would not hold for teacher-rollout states
+or unequal/learned covariances.)
+\end{remark}
+
+% =====================================================================
+% SELF-CRITIQUE  (revised for the reward-space recast)
+% ---------------------------------------------------------------------
+% PROVEN vs ARGUED, per claim, with the exact fix for each gap.
+%
+% [1] Prop.~\ref{prop:mean} (teacher-mean; loss front convex => loss-Pareto-
+%     optimal). PROVEN in the pointwise/infinite-capacity regime. The convexity
+%     of A_L is what KILLS the old (wrong) "convex-hull domination" motivation;
+%     Rem.~\ref{rem:notconvexhull} states this explicitly. Finite-capacity caveat
+%     still applies: the true minimizer is the L2-projection of the mean field
+%     onto the realizable class, not the exact pointwise mean. AIRTIGHT FIX:
+%     write the projection operator. Not load-bearing for the corrected story.
+%
+% [2] CORE MOTIVATION now in REWARD space (Prop.~\ref{prop:reward-dom},
+%     Prop.~\ref{prop:toy}, Rem.~\ref{rem:toyread}). This fixes the verifier's
+%     flagged gap. STATUS: the reward-domination is ILLUSTRATED by an explicit
+%     achievable-set toy (proved internally consistent: B=arg min sum-L and
+%     loss-Pareto-optimal, yet reward-dominated by the min-max point D=(8,8));
+%     and the concave-front continuum toy is now explicitly in REWARD-GAP space,
+%     NOT derived from the convex loss front. What remains ARGUED (not proven):
+%     that the ACTUAL SD3.5 loss->reward map is non-monotone/non-convex. This is
+%     asserted from three named mechanisms (ODE integration, imperfect/hacked
+%     teachers, shared LoRA capacity) and supported empirically. THE LOAD-BEARING
+%     ASSUMPTION IS NOW CORRECTLY LOCATED AND LABELED. AIRTIGHT FIX: measure it
+%     -- exhibit two trained students whose reward-midpoint is unattainable, or
+%     directly show a lower-loss student with lower reward. Currently the toy
+%     numbers are hand-chosen to be self-consistent; they are an existence
+%     illustration, not evidence about SD3.5.
+%
+% [3] Prop.~\ref{prop:reward-dom} toy uses COUPLED, non-separable rewards
+%     (R_1 rises as L_1 worsens B->D). PROVEN self-consistent, but the coupling
+%     that makes R_1 non-monotone in L_1 is asserted (capacity/ODE), not modeled.
+%     AIRTIGHT FIX: give an explicit R=Phi(L) closed form generating the table so
+%     the numbers are not free parameters.
+%
+% [4] Prop.~\ref{prop:envelope} (envelope theorem => detached weights are EXACT).
+%     PROVEN and correct (Gibbs variational form + Danskin). This is the strongest
+%     new rigor. Caveat: exactness is for the INSTANTANEOUS softmax; the deployed
+%     EMA (\eqref{eq:th-ema}) is exact only in the small-lag limit -- stated in
+%     the paragraph after and in caveat (ii). Honest.
+%
+% [5] Thm.~\ref{thm:cheby} (full-Pareto coverage). PROVEN (Miettinen), but for
+%     EXACT weighted Tchebycheff with a true utopia point. Our finite-tau LSE +
+%     references r_m reach only an O(tau log M) neighborhood -- now stated
+%     explicitly with the bound 0 <= F_tau - max <= tau log M. Gap disclosed, not
+%     hidden.
+%
+% [6] Prop.~\ref{prop:commens} + Rem.~\ref{rem:noparamangle} (novelty, softened).
+%     Now framed as OUTPUT-SPACE commensurability (PROVEN: same functional, same
+%     metric, same states => comparable losses). The earlier over-claim about
+%     meaningful PARAMETER-SPACE gradient angles is RETRACTED in
+%     Rem.~\ref{rem:noparamangle}, with the LoRA low-rank/anisotropic reason.
+%     CAGrad/MGDA/PCGrad are presented as RELATED, not deployed. The remaining
+%     qualitative claim ("this is what generic MTL lacks") is standard and
+%     argued, not a theorem. AIRTIGHT FIX: formalize commensurability as
+%     invariance of max_m L_m/r_m to the group of per-task positive rescalings,
+%     and note OPD fixes a canonical scale while generic MTL does not.
+%
+% [7] Convergence (\S\ref{sec:th-conv}). Honestly HEURISTIC. Conditional
+%     "if weights converge then Pareto-stationary" is PROVEN-trivial; the premise
+%     (EMA convergence) is NOT proven -- the real hole. FIX: two-timescale SA
+%     analysis, or swap to inner MGDA/CAGrad solve inheriting their guarantee.
+%
+% [8] Weighting-risk / regret weights (\eqref{eq:th-regret}). This is a
+%     RECOMMENDATION, not used in reported runs (disclosed). floor_m is itself
+%     only estimable; single-task min is approximate.
+%
+% [9] Empirical framing. Explicitly "consistent with, not proof of." Discloses
+%     single-seed, n=256, OCR within noise, and aggregate-score circularity
+%     (min-max-normalized score co-designed with a min-max method). This is the
+%     honest statement; the experiments section must not overclaim beyond it.
+%
+% [10] Rem.~\ref{rem:symmetry} (symmetrization vacuous). PROVEN for
+%     KL/Jeffreys/JS/Hellinger/W2 between equal-cov Gaussians; scope caveat
+%     (same state + equal covariance) stated. Airtight within scope.
+%
+% [11] BIBLIOGRAPHY -- \cite keys used here; ensure they exist in the paper .bib:
+%       diffusionopd (base, arXiv-2605.15055), liu2025flow (Flow-GRPO,
+%       arXiv:2505.05470), zheng2025diffusionnft (arXiv:2509.16117),
+%       yu2020gradient (PCGrad, NeurIPS'20), sener2018multi (NeurIPS'18),
+%       liu2021conflict (CAGrad, NeurIPS'21), desideri2012mgda (MGDA, C.R. Math.
+%       2012), miettinen1999nonlinear (Nonlinear Multiobjective Optimization),
+%       boyd2004convex (Convex Optimization). All real; add BibTeX before compile.
+% =====================================================================

@@ -1,0 +1,41 @@
+{
+  "allocated_gpu_hours": 0.31666666666666665,
+  "asset_audit": [],
+  "backward_queries_per_arm": 1600,
+  "baseline_and_target_replays": 6,
+  "checkpoint_file_hashes": 30,
+  "endpoint_count": 30,
+  "frozen_review_hashes_valid": true,
+  "historical_artifacts": {
+    "6": {
+      "README_historical_revision": "e384a09",
+      "all_recorded_artifacts_unchanged": true,
+      "artifact_count": 153
+    },
+    "7": {
+      "README_historical_revision": "8c1e160",
+      "all_recorded_artifacts_unchanged": true,
+      "artifact_count": 716
+    },
+    "8": {
+      "README_historical_revision": "d9c392c",
+      "all_recorded_artifacts_unchanged": true,
+      "artifact_count": 99
+    },
+    "9": {
+      "README_historical_revision": "d9c392c",
+      "all_recorded_artifacts_unchanged": true,
+      "artifact_count": 97
+    }
+  },
+  "initial_weight_identity": true,
+  "limitations": "Saved artifacts/source contracts checked; no additional GPU replay. Shared large assets use recorded inventories, not new full hashes.",
+  "metric_rows": 250,
+  "optimizer_updates": 352,
+  "raw_exports_match": true,
+  "terminal_optimizer_steps_valid": true,
+  "upstream_clean_fixed_commits": {
+    "diffusionopd": "0c85bf0193a6da24bb1f72152b612d353a154999",
+    "diffusionopsd": "9c4c48cdfe5c3fa712d32957345d75fae9295696"
+  }
+}

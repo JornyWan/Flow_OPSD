@@ -1,0 +1,23 @@
+{
+  "baseline": "runs/smoke-eval-base",
+  "images": 4,
+  "interval": "paired prompt bootstrap percentile 95%, 2000 resamples, seed 0",
+  "joint_success": {
+    "ci95": [
+      0.0,
+      0.0
+    ],
+    "paired_delta": 0.0,
+    "prompt_count": 2
+  },
+  "method": "runs/smoke-eval-trained",
+  "statistical_unit": "prompt; average replicate seeds within prompt before paired bootstrap",
+  "utility": {
+    "ci95": [
+      -6.315531209111214e-09,
+      0.013599181547760963
+    ],
+    "paired_delta": 0.006799587616114877,
+    "prompt_count": 2
+  }
+}

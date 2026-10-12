@@ -1,0 +1,53 @@
+\section{Related Work}
+\label{sec:related}
+
+\paragraph{RL and distillation for diffusion alignment.}
+Reinforcement learning has been widely adapted to align diffusion text-to-image
+models to reward signals~\cite{liu2025flow,zheng2025diffusionnft,schulman2017proximal}.
+Flow-GRPO~\cite{liu2025flow} casts flow-matching sampling as an MDP and optimizes
+a GRPO-style objective; DiffusionNFT~\cite{zheng2025diffusionnft} performs online
+reinforcement on the forward process. These methods excel at single rewards but
+struggle to serve several objectives jointly. DiffusionOPD~\cite{li2026diffusionopd}
+reframes multi-task alignment as \emph{on-policy distillation}: specialized
+teachers, trained once per task, supervise a single student along its own rollout
+via a closed-form per-step KL, extending the OPD idea~\cite{thinkingmachines2026opd}
+from tokens to continuous diffusion states. We take DiffusionOPD as our base
+method, reproduce it faithfully, and study how the multiple teachers should be
+combined.
+
+\paragraph{Multi-objective and multi-task optimization.}
+The limitations of uniform loss summation are classical. Linear scalarization
+recovers only the convex hull of the Pareto front~\cite{miettinen1999nonlinear,boyd2004convex},
+whereas weighted Tchebycheff (min-max) scalarization can reach the entire front,
+including non-convex regions~\cite{miettinen1999nonlinear}. In deep multi-task
+learning, MGDA~\cite{sener2018multi,desideri2012mgda} finds a common descent
+direction with a Pareto-stationarity guarantee, PCGrad~\cite{yu2020gradient}
+projects away conflicting gradient components, and CAGrad~\cite{liu2021conflict}
+takes a conflict-averse step that reduces the worst-case local objective while
+converging to a stationary point of the average loss. These methods generally
+assume commensurable objectives, an assumption violated by generic MTL where
+losses have incompatible units and scales. A central theoretical point of our
+work (\S\ref{sec:theory}) is that multi-teacher OPD \emph{does} satisfy
+commensurability---all per-teacher losses are the same velocity-error functional
+in one shared isotropic output metric---so adaptive Tchebycheff scalarization is
+particularly well-posed here. We adopt scalarization rather than gradient surgery
+and are careful not to over-transfer output-space isotropy to parameter space.
+
+\paragraph{Loss weighting in diffusion training.}
+Timestep-dependent loss weighting is common in diffusion training; Min-SNR~\cite{hang2023efficient}
+treats denoising as multi-task learning across noise levels and down-weights
+low-noise (high-SNR) steps to balance the objective. We test an analogous
+per-step reweighting inside OPD (\S\ref{sec:ablation}) and find it harmful,
+because high-noise steps set global structure that OPD must preserve---a useful
+negative result that clarifies why OPD's uniform per-step weighting is a good
+default. Robust regression via the Huber loss~\cite{huber1964robust} motivates our
+trust-region variant on the velocity residual, which we find neutral.
+
+\paragraph{Evaluation.}
+We evaluate with the same reward suite as the base method: GenEval~\cite{ghosh2023geneval}
+and OCR (rule-based), and PickScore~\cite{kirstain2023pick},
+ClipScore~\cite{hessel2021clipscore}, HPSv2.1~\cite{wu2023human},
+Aesthetics~\cite{schuhmann2022aesthetics}, ImageReward~\cite{xu2023imagereward},
+and UnifiedReward~\cite{wang2025unified} (model-based), on
+DrawBench~\cite{saharia2022photorealistic} prompts, with SD3.5-Medium~\cite{esser2024scaling}
+as the base model.

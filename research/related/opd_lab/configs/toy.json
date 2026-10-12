@@ -1,0 +1,14 @@
+{
+  "backend": "toy",
+  "method": "verified",
+  "dataset": "data/demo/toy.jsonl",
+  "precision": "no",
+  "steps": 4,
+  "outer_epochs": 3,
+  "queries_per_rank": 4,
+  "accumulation": 2,
+  "learning_rate": 0.03,
+  "ema_interval": 1,
+  "save_every": 1,
+  "audit_postfit": true
+}

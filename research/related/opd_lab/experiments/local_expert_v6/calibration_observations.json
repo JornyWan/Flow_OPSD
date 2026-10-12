@@ -1,0 +1,166 @@
+[
+  {
+    "case": 1,
+    "clauses": {
+      "relation": false,
+      "text": true
+    },
+    "full_visibility": false,
+    "notes": "Chair is LEFT of plant, opposite requested direction. Plant leaves cut by right frame; chair otherwise complete.",
+    "visible_text": "CLEAR"
+  },
+  {
+    "case": 2,
+    "clauses": {
+      "count": false,
+      "text": true
+    },
+    "full_visibility": false,
+    "notes": "Only two apples, not three. Their bottoms meet/cross the lower image boundary.",
+    "visible_text": "Maple"
+  },
+  {
+    "case": 3,
+    "clauses": {
+      "color": null,
+      "text": true
+    },
+    "full_visibility": false,
+    "notes": "Two blue glass-like fragments at upper corners; bottle identity/exact count is uncertain because most of each is outside the frame. Central white sign itself is cropped at top.",
+    "visible_text": "PINE"
+  },
+  {
+    "case": 4,
+    "clauses": {
+      "color": true,
+      "text": true
+    },
+    "full_visibility": false,
+    "notes": "One large yellow closed book identifiable by spine, cut at left and bottom. Letters on individual panels, dark metallic rather than uniform black.",
+    "visible_text": "L O F T"
+  },
+  {
+    "case": 5,
+    "clauses": {
+      "color": true,
+      "text": true
+    },
+    "full_visibility": false,
+    "notes": "One red banana-shaped fruit; left stem cut at image boundary. Clear word on white sign.",
+    "visible_text": "Wave"
+  },
+  {
+    "case": 6,
+    "clauses": {
+      "color": true,
+      "count": true,
+      "text": false
+    },
+    "full_visibility": false,
+    "notes": "One green bowl cut at left and bottom. Extra fine printed lines are visible beneath the main word although individual tiny letters cannot be transcribed.",
+    "visible_text": "BLOOM; two additional tiny printed lines below"
+  },
+  {
+    "case": 7,
+    "clauses": {
+      "relation": false,
+      "text": false
+    },
+    "full_visibility": false,
+    "notes": "Extra R. Chair is RIGHT of plant rather than left. Chair legs and plant stand cut at bottom; no distinct white sign.",
+    "visible_text": "M ARPLE"
+  },
+  {
+    "case": 8,
+    "clauses": {
+      "color": true,
+      "count": true,
+      "text": null
+    },
+    "full_visibility": false,
+    "notes": "Two red takeaway cups with white lids, both cropped at bottom. Faint marks below E may be tiny writing or image artifact; retain text uncertainty.",
+    "visible_text": "FRESH; faint tiny marks below E panel"
+  },
+  {
+    "case": 9,
+    "clauses": {
+      "count": false,
+      "text": true
+    },
+    "full_visibility": false,
+    "notes": "Only two bowls, not three, both touching/crossing bottom frame. Gray wall letters rather than a clear bold black sign.",
+    "visible_text": "G L O W"
+  },
+  {
+    "case": 10,
+    "clauses": {
+      "color": null,
+      "count": null,
+      "text": false
+    },
+    "full_visibility": false,
+    "notes": "Missing L and malformed final character. Lower yellow areas look like two sides of an open book; upper white sign has page-like edges. Exact book identities/count ambiguous. Clearly cropped at multiple edges.",
+    "visible_text": "C [underline] E A [h-like glyph]"
+  },
+  {
+    "case": 11,
+    "clauses": {
+      "relation": false,
+      "text": true
+    },
+    "full_visibility": true,
+    "notes": "One complete apple is LEFT of one complete bowl, opposite requested direction.",
+    "visible_text": "SODA"
+  },
+  {
+    "case": 12,
+    "clauses": {
+      "count": true,
+      "text": true
+    },
+    "full_visibility": true,
+    "notes": "Two complete separated armchairs and readable spaced lettering on white sign.",
+    "visible_text": "LU N A"
+  },
+  {
+    "case": 13,
+    "clauses": {
+      "color": true,
+      "text": false
+    },
+    "full_visibility": false,
+    "notes": "Extra L. One green bowl cropped through body at bottom. No distinct white sign.",
+    "visible_text": "B L LOOM"
+  },
+  {
+    "case": 14,
+    "clauses": {
+      "count": true,
+      "text": true
+    },
+    "full_visibility": false,
+    "notes": "Two bottle necks clearly visible; almost all of both bodies is below the frame. Stylized N has a pale diagonal but is readable.",
+    "visible_text": "NORTH"
+  },
+  {
+    "case": 15,
+    "clauses": {
+      "relation": false,
+      "text": false
+    },
+    "full_visibility": true,
+    "notes": "Main word is not MINT and additional small label lettering is present. Small white cup-like vessel lies RIGHT of bottle, opposite requested left. Both objects are within frame, sign is beside rather than above.",
+    "visible_text": "MI IN; extra bottle label text"
+  },
+  {
+    "case": 16,
+    "clauses": {
+      "color": true,
+      "count": true,
+      "text": true
+    },
+    "full_visibility": false,
+    "notes": "One blue bottle with neck/shoulder visible, most of body cut at bottom. Black wall letters, no distinct white sign.",
+    "visible_text": "PINE"
+  }
+]

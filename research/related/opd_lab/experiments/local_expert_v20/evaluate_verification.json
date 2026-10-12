@@ -1,0 +1,39 @@
+{
+  "evaluation": {
+    "assets": [],
+    "images": 224,
+    "new_states": 32,
+    "pilot": {
+      "checks": {
+        "at_least1_more_complete_than_all_teacher": false,
+        "at_least1_more_complete_than_random": false,
+        "at_least2_more_complete_than_initial": false,
+        "preservation_local_not_worse": true,
+        "unfitted_local_not_worse": true,
+        "zero_known_harm_all_fresh_local": false
+      },
+      "passed": false
+    },
+    "reference_images_exact": 6,
+    "review_complete": true,
+    "review_slots": 256,
+    "statistics_rebuilt": true
+  },
+  "fit": {
+    "all_schedules_reconstructed": true,
+    "assets": [],
+    "backward_queries": 4608,
+    "complete_optimizer_snapshots": 3,
+    "deterministic_fitting": true,
+    "evaluation_images_generated": 0,
+    "reference_images_exact": 63,
+    "training_states": 54,
+    "updates": 384
+  },
+  "phase19_archive": {
+    "README_historical_revision": "9cbbf01",
+    "all_recorded_artifacts_unchanged": true,
+    "artifact_count": 263
+  },
+  "stage": "evaluate"
+}

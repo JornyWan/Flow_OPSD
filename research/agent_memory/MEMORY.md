@@ -1,0 +1,45 @@
+# Memory Index
+
+- [Cluster Usage Conventions](cluster-usage-conventions.md) — SLURM partitions, conda env paths, ImageNet location, 72h walltime rule
+- [CA-OPD Project](opd-caopd-project.md) — DiffusionOPD 复现 + conflict-averse 扩展,2026-08-23 从 colligo/Pluto 迁到本集群
+- [CA-OPD Cluster Setup](opd-caopd-cluster-setup.md) — diffusionopd env 构建方式、2节点8卡拓扑、mmcv/CPATH 等坑
+- [OPD 跨分区等效性](opd-cross-partition-equivalence.md) — scu/minilab/sablab 都可用，但臂间对比须同硬件；eval 基准是 A40
+- [OPD 需要正向结果](opd-need-positive-results.md) — 不能只堆负结果；优先排先验上最可能赢的实验
+- [不跑 smoke 配置](no-smoke-configs.md) — smoke 仅用于验证代码正确性;实验一律正式配置+完整数据(GuardedOPSD 曾因此判错)
+- [小 n 显著性会翻转](small-n-significance-flips.md) — 一夜栽四次;零模型对照 + 随 n 稳定性,两条都过才写结论
+- [OPSD Open3 Baseline 结构](opsd-open3-baseline-structure.md) — 论文两套结果口径不同;DiffusionOPD 是 OPSD Open3 对比里的一条 baseline;Open3 无 published 数值
+- [OPSD 开关链完整性](opsd-flag-chain-completeness.md) — 加/放宽 env 开关必须追完生产→消费链;只改一端已栽三次
+- [先打印原始序列](print-the-series-first.md) — 汇总量/单点落地前必须先看逐点序列;2026-09-01 一夜栽三次
+- [不要没跑就判负](dont-kill-ideas-before-running.md) — 探针只排优先级;判负必须由真跑出来的 A/B 结果做
+- [OPSD 100 步未收敛](opsd-100-updates-not-converged.md) — ck50→ck100 仍 +0.051(5×MDE);所有 ck100 判定只是"任意早停点比较"
+- [训练指标不是 held-out 代理](train-metric-not-heldout-proxy.md) — 不能用来**比较臂**(可反号);同臂**内部变化**追踪得很好(r=0.82–0.98)
+- [OPSD 镜像退化 bug](opsd-mirror-degeneracy-bug.md) — 一步镜像使 pos_loss≡neg_loss,advantage r1 贡献为零;查差值不查量级
+- [恒等式不是证据](identity-is-not-evidence.md) — A−B=(A−C)+(C−B) 对任意 C 成立;"完美分解"来自算术不是数据
+- [探针步长须按优化器标定](probe-step-scale-must-match-optimizer.md) — Adam 步长≈lr·√N 与 ‖g‖ 无关;拿 lr 当 SGD 的 η 会错 7e5 倍,测到舍入噪声
+- [OPSD 配对三条轴](opsd-pairing-must-match-three-axes.md) — 训练硬件/评测硬件/外层epoch 都要核;A40 评测比 A100 高 0.00098
+- [逐图模式由 seed 主导](per-image-pattern-is-seed-dominated.md) — 同 seed 不同臂的相关(0.41–0.63)高于同臂不同 seed(0.30–0.50);跨臂比逐图必须跨 seed
+- [拟合端 vs 步长的衰减](opsd-fitting-vs-stepsize-decay.md) — 拟合端旋钮(inner/gacc)收益持续流失、步长(lr)回落到平台后守住;"≈k×lr"的换算是阶段依赖的
+- [预登记的格必须穷尽](preregistered-cells-must-be-exhaustive.md) — 一个会话三次漏格;二选一必加"皆非"格,以 0 为界必先切 |Δ|≤MDE 的无效应格
+- [别在精简时删掉安全检查](dont-drop-safety-checks-when-simplifying.md) — 删掉发散检查 ⇒ ep3 就崩的臂跑满 21 卡·小时;发散判据要用"最长连续"
+- [复用正确实现,别现写](reuse-the-correct-impl-dont-rewrite.md) — squeue %b 正则漏算无类型 gres 会高估空闲;free_on 早已写对却又重写踩坑
+- [验证前提要照抄原文口径](verify-premise-with-original-spec.md) — 凭记忆把窗口设成 ep50→100(原文是 ep20→100),差点撤回一条正确判据
+- [模式匹配会杀掉自己](self-kill-by-pattern-match.md) — 已栽七次;写文件再执行**不够**,必须按 cmdline token 位置匹配 + 直接扫 /proc(用 list_watchers.sh)
+- [幅度还是方向进 loss](check-magnitude-or-direction-enters-training.md) — 归一化会吃掉整类效应;大成本臂登记前必须把量追到进 loss 那一行
+- [仓库内不留临时文件](no-temp-files-in-managed-repo.md) — .bak 触发 preflight fork-clean ⇒ 训练 exit 42 并带死 launcher;起训前先本地跑 preflight
+- [首轮为负先归因再判负](dont-kill-idea-on-first-negative.md) — debug 出为什么不 work 再做干净调整;区分实现/口径/机制三种负
+- [尽可能多排实验](maximize-experiment-throughput.md) — minilab/scu 无卡数上限;排队数小时起,等判定再排是白等;硬件按判据的对照臂选
+- [multik 多态蒸馏](multik-multistate-distill.md) — **主臂 multikF4(2 个高噪态)**:ck100 满步 +3.3~5.6×MDE、4 步 +10.7×MDE(胜率 82.7%);multik4 满步为零
+- [aesthetic 不是 held-out 轴](aesthetic-not-a-heldout-axis.md) — r=−0.395 符号一致 4/12;imagereward 才是(r=+0.894,12/12)
+- [OPSD 噪声地板](opsd-noise-floor-measured.md) — canonical 两两差中位 0.39×MDE/最大 1.23×MDE;单 seed 阈要 2.5×MDE
+- [别把实验标成决定性](dont-inflate-decisive-experiments.md) — 用结果喂论文/做反思,不要一个个去裁决整条线的生死
+- [单 reward 与 β 混淆](opsd-single-reward-confounded-with-beta.md) — 官方单 reward 用 β=1.0、open3 用 β=0.1;MSP 在单 reward 上为零不能读成"需要多 reward"
+- [权重范数不是分数代理](weight-norm-not-score-proxy.md) — ‖ΔW‖ 不能预判评测分效应;已两次反向误导(β / EMA 重启)
+- [OPSD 变体的反馈系数 κ](opsd-target-vold-gain-must-be-one.md) — 残差对学生输出的依赖(old≈θ):canonical κ=0、MSP 额外态 κ<0 稳定、κ>0 必发散(LT 实例);κ≤0 必要不充分
+- [autocast 缓存吃掉原地改权重](autocast-cache-stale-weights.md) — 同一 autocast 内原地改 requires_grad 权重无效(fp16 副本被缓存);扰动探针用 cache_enabled=False + ± 必异守卫
+- [ai-gpu04 VAE decode 不可逐位复现](ai-gpu04-decode-nondeterministic.md) — 间歇性(5 个分片里 3 个):同 latent 两次 decode 不同(transformer 正常);需逐位一致的探针排除 ai-gpu04
+- [suffix-aware L1 状态依赖翻转](suffix-aware-l1-state-dependent-flip.md) — L1 一步更新只是**相对** canonical 更好(绝对收益由共用动量主导),(70,80] 间翻负,位置在 query 之后的低噪段;必须同时报 G_L/G_C/G_M
+- [MSP 额外态梯度是平衡残差](msp-extra-grad-balanced-residual.md) — 好/坏样本两半 cos≈−0.97 相互抵消;ADVPOS 删配重 ⇒ ×3.3 同向大梯度;改额外态加权先看 OPT_DIAG=2 分解
+- [OPD idea 总表](opd-ideas-tracker.md) — opd_related/IDEAS_TRACKER.md;每个 idea/在跑与跑完的实验都要记,每轮更新,汇报以 §0 为骨架
+- [别在 bash 读脚本时改它](dont-edit-launcher-while-bash-reads-it.md) — smoke 直接 bash 调 ab_open3_v6.slurm;运行中改脚本 ⇒ 错位执行、FAILED、afterok 链断
+- [首要目标:40 步逐 ckpt 最好](opd-goal-40step-every-ckpt.md) — flow-40 每 ck 胜 canonical;交付 = open3 300 步 + 单 reward 100 步;canonical 已复现完,只配现成对照
+- [OPSD 48GB 卡不可行](opsd-48gb-cards-infeasible.md) — L40S/A40 加载 reward 模型时已 OOM(43 GiB);训练只排 ≥80GB 卡

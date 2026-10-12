@@ -1,0 +1,35 @@
+% Table 1 — 自动生成,勿手改。源:paper_figs/make_table1.py
+% 口径:SD3.5-M,100 optimizer updates,A40,逐图配对 n=1000/格,MDE=0.0033
+\begin{table}[t]
+\centering
+\setlength{\tabcolsep}{4pt}
+\caption{\textbf{Where should the on-policy reward target be applied?} Paired per-image gain over
+the canonical OPSD model trained at the \emph{same} budget and on the \emph{same} hardware,
+in units of MDE$=0.0033$; win\% in parentheses. A cell counts as a gain when it clears
+$2.5\times$MDE with $t>2$, the threshold calibrated against the measured canonical-versus-canonical
+noise floor (Sec.~\ref{sec:exp:protocol}); $^\dagger$ marks the $1$--$2.5\times$MDE band, which a single
+seed cannot resolve. The last column counts cells that clear the threshold: propagation is the only
+\emph{placement} positive at every budget on both prompt sets. The final row is a \emph{reference},
+not a placement choice and not a matched-budget comparison: it is the same run read at $300$
+rather than $100$ updates, included because tripling the budget is the obvious alternative. It
+gains more in absolute terms, at $3.00\times$ the cost; Sec.~\ref{sec:exp:main} gives the
+per-unit-compute comparison and Fig.~\ref{fig:deficit} shows that it \emph{widens} the
+few-step gap that propagation narrows.}
+\label{tab:where}
+\resizebox{0.98\linewidth}{!}{%
+\begin{tabular}{lcc cc cc c}
+\toprule
+& & & \multicolumn{2}{c}{\textbf{DrawBench}} & \multicolumn{2}{c}{\textbf{Unseen-1k}} & \\
+\cmidrule(lr){4-5}\cmidrule(lr){6-7}
+\textbf{Intervention} & \textbf{Cost} & \textbf{Setting} & NFE$=$4 & NFE$=$40 & NFE$=$4 & NFE$=$40 & \textbf{Gains} \\
+\midrule
+(A) move query state $\sigma$ 0.278$\to$0.465 & $1.00\times$ & \scriptsize ck100, np3 & $+12.71$ \scriptsize(89\%) & $-0.32$ \scriptsize(47\%) & $+13.18$ \scriptsize(94\%) & $-1.09$ \scriptsize(42\%) & $2/4$ \\
+(B) shorten rollout 10$\to$6 steps & $0.90\times$ & \scriptsize ck100, np4 & $+12.30$ \scriptsize(91\%) & $-0.05$ \scriptsize(48\%) & $+12.43$ \scriptsize(94\%) & $-0.98$ \scriptsize(43\%) & $2/4$ \\
+(C) propagate target to 2 extra states (ours) & $1.20\times$ & \scriptsize ck100, np4 & $+10.70$ \scriptsize(83\%) & $+5.62$ \scriptsize(71\%) & $+8.20$ \scriptsize(80\%) & $+3.34$ \scriptsize(64\%) & $\mathbf{4/4}$ \\
+(B$+$C) rollout 6 $+$ propagation & $\sim\!1.10\times$ & \scriptsize ck100, np4 & $+16.23$ \scriptsize(93\%) & $+2.26^{\dagger}$ \scriptsize(56\%) & $+15.91$ \scriptsize(95\%) & $+1.45^{\dagger}$ \scriptsize(54\%) & $2/4$ \\
+(A$+$C) query $\sigma$ 0.465 $+$ propagation & $1.20\times$ & \scriptsize ck100, np4 & $+17.00$ \scriptsize(94\%) & $+2.14^{\dagger}$ \scriptsize(57\%) & $+15.32$ \scriptsize(93\%) & $+0.70$ \scriptsize(52\%) & $2/4$ \\
+\midrule
+\;\emph{(reference)} train $3\times$ longer & $3.00\times$ & \scriptsize ck300 vs ck100, np4 & $+15.92$ \scriptsize(92\%) & $+19.11$ \scriptsize(95\%) & $+16.65$ \scriptsize(94\%) & $+22.27$ \scriptsize(98\%) & $\mathbf{4/4}$ \\
+\bottomrule
+\end{tabular}}
+\end{table}

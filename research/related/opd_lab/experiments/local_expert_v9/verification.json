@@ -1,0 +1,35 @@
+{
+  "allocated_gpu_hours": 0.018333333333333333,
+  "asset_audit": [],
+  "attested_input_count": 22,
+  "branch_prefix_shape_and_action_checks": 25,
+  "frozen_inputs_valid": true,
+  "generated_image_hashes_valid": 25,
+  "job_id": "1048968",
+  "limits": "Large shared base/reward assets use recorded inventory validation, not a newly computed full content hash",
+  "optimizer_updates": 0,
+  "original_checkpoint_hashes_valid": true,
+  "phase8_full_trajectory_tensor_replay_checks": 5,
+  "phase8_image_replay_checks": 5,
+  "prior_artifacts": {
+    "phase6": {
+      "README_historical_revision": "e384a09",
+      "all_recorded_artifacts_unchanged": true,
+      "artifact_count": 153
+    },
+    "phase7": {
+      "README_historical_revision": "8c1e160",
+      "all_recorded_artifacts_unchanged": true,
+      "artifact_count": 716
+    }
+  },
+  "result_sha256": "f0b00d8359533f19dd5357cd3a2af087a365495a9e1f84bb417c7a023a9786ca",
+  "review_hashes_and_coverage_valid": true,
+  "suffix_provenance": "Current student verified by frozen worker source and CPU unit test; no second GPU rerun",
+  "trajectory_file_hashes_valid": 5,
+  "unseen_review_images": 20,
+  "upstream": {
+    "diffusionopd": "0c85bf0193a6da24bb1f72152b612d353a154999",
+    "diffusionopsd": "9c4c48cdfe5c3fa712d32957345d75fae9295696"
+  }
+}

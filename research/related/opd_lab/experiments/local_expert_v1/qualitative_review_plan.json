@@ -1,0 +1,139 @@
+{
+  "cases": [
+    {
+      "case": 1,
+      "query": {
+        "id": "jp1-train-color-00",
+        "ordinal": 96,
+        "query_id": "bdcf391f92baa25b04f19f8b",
+        "query_index": 1,
+        "replicate": 42,
+        "seed": 1647547126
+      }
+    },
+    {
+      "case": 2,
+      "query": {
+        "id": "jp1-train-color-14",
+        "ordinal": 181,
+        "query_id": "da20d174aa3e5ac0455ddfe7",
+        "query_index": 4,
+        "replicate": 42,
+        "seed": 28933797
+      }
+    },
+    {
+      "case": 3,
+      "query": {
+        "id": "jp1-train-color-06",
+        "ordinal": 134,
+        "query_id": "83e6d0b6098ef7ab04abb4a7",
+        "query_index": 7,
+        "replicate": 42,
+        "seed": 17661880
+      }
+    },
+    {
+      "case": 4,
+      "query": {
+        "id": "jp1-train-count-02",
+        "ordinal": 15,
+        "query_id": "1325daf9d93edbf05d37540f",
+        "query_index": 1,
+        "replicate": 43,
+        "seed": 1004985371
+      }
+    },
+    {
+      "case": 5,
+      "query": {
+        "id": "jp1-train-count-06",
+        "ordinal": 40,
+        "query_id": "043abe45720f20b47a53a701",
+        "query_index": 4,
+        "replicate": 43,
+        "seed": 875895571
+      }
+    },
+    {
+      "case": 6,
+      "query": {
+        "id": "jp1-train-count-03",
+        "ordinal": 23,
+        "query_id": "0d5101bd8842e61e1bffa3e0",
+        "query_index": 7,
+        "replicate": 43,
+        "seed": 811582021
+      }
+    },
+    {
+      "case": 7,
+      "query": {
+        "id": "jp1-train-count_color-07",
+        "ordinal": 330,
+        "query_id": "1caee164cbc42a8b69f950a3",
+        "query_index": 1,
+        "replicate": 42,
+        "seed": 1621332539
+      }
+    },
+    {
+      "case": 8,
+      "query": {
+        "id": "jp1-train-count_color-02",
+        "ordinal": 304,
+        "query_id": "caaab205348d711742594f38",
+        "query_index": 4,
+        "replicate": 43,
+        "seed": 1755164756
+      }
+    },
+    {
+      "case": 9,
+      "query": {
+        "id": "jp1-train-count_color-01",
+        "ordinal": 299,
+        "query_id": "880aa49f5c4af2412e31f4b2",
+        "query_index": 7,
+        "replicate": 43,
+        "seed": 35328032
+      }
+    },
+    {
+      "case": 10,
+      "query": {
+        "id": "jp1-train-relation-00",
+        "ordinal": 192,
+        "query_id": "395d7bba1f4f055768451053",
+        "query_index": 1,
+        "replicate": 42,
+        "seed": 888723720
+      }
+    },
+    {
+      "case": 11,
+      "query": {
+        "id": "jp1-train-relation-00",
+        "ordinal": 196,
+        "query_id": "2f8b2a7bf53ff85db07fec56",
+        "query_index": 4,
+        "replicate": 43,
+        "seed": 1440533260
+      }
+    },
+    {
+      "case": 12,
+      "query": {
+        "id": "jp1-train-relation-07",
+        "ordinal": 239,
+        "query_id": "c4fc35bb231166b06b2a0a37",
+        "query_index": 7,
+        "replicate": 43,
+        "seed": 1606669564
+      }
+    }
+  ],
+  "query_manifest_sha256": "b46b221be40cac9d69115953ecf4968032cd4b2bf1f53cee62274d040caaf8f5",
+  "run": "/midtier/minilab/scratch/chw4026/projects/side_project/generative/opd_related/opd_lab/runs/le1_diagnostic_001",
+  "selection": "minimum fixed hash within each predefined data group x query position; no outcomes consulted"
+}

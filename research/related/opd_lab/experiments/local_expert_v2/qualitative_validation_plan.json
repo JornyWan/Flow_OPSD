@@ -1,0 +1,34 @@
+{
+  "selection": "four IDs per validation task group by fixed SHA256; no outcomes consulted",
+  "cell": [
+    "flow",
+    40
+  ],
+  "replicate": 42,
+  "ids": [
+    "jp1-validation-color-00",
+    "jp1-validation-color-06",
+    "jp1-validation-color-07",
+    "jp1-validation-color-04",
+    "jp1-validation-count-01",
+    "jp1-validation-count-02",
+    "jp1-validation-count-07",
+    "jp1-validation-count-03",
+    "jp1-validation-count_color-03",
+    "jp1-validation-count_color-01",
+    "jp1-validation-count_color-05",
+    "jp1-validation-count_color-00",
+    "jp1-validation-relation-05",
+    "jp1-validation-relation-07",
+    "jp1-validation-relation-02",
+    "jp1-validation-relation-06"
+  ],
+  "arms": [
+    "base",
+    "fixed_geneval",
+    "utility_only",
+    "verified_fixed",
+    "verified_multi"
+  ],
+  "scope": "All five arms per chosen prompt, 80 images. Implementing-assistant review, method identities hidden; prompt visible for semantic checking, not independent human evaluation."
+}

@@ -1,0 +1,406 @@
+{
+  "analysis_script_sha256": "c9545024b615affc64fa84ec1e69df2f794e0fba79cf24102970b1d4933a15bb",
+  "baseline_partition": {
+    "complete": {
+      "cases": [
+        3,
+        5,
+        9,
+        10
+      ],
+      "count": 4
+    },
+    "known_encoded_failure": {
+      "cases": [
+        4,
+        7,
+        11
+      ],
+      "count": 3
+    },
+    "unknown": {
+      "cases": [
+        1,
+        2,
+        6,
+        12
+      ],
+      "count": 4
+    },
+    "visibility_only_failure": {
+      "cases": [
+        8
+      ],
+      "count": 1
+    }
+  },
+  "known_encoded_failure_safe_covered": [
+    4,
+    7,
+    11
+  ],
+  "limitations": "Assistant labels; 11 mixed-time states cannot isolate a pure state-coverage effect. The fixed-index inventory has multiple states for only two prompts and changes teacher/task mix. Neither inventory includes preservation states or authorizes a method-effectiveness claim.",
+  "selection_notes": "Keep original six targets; phase16 fresh candidates use repaired clauses, then transition MSE, then name. Phase17 uses its frozen pool choices. No observations changed. Historical states are development data, not independent tests.",
+  "source_results_sha256": "e447bc3cdcfa622dd05b25d4bfa4c6253583df95739357e27898ab879d7e8e54",
+  "stage": "post-join descriptive inventory, not a frozen training protocol or automatic acceptance",
+  "supervision_inventory": {
+    "fixed_i3": {
+      "count": 9,
+      "per_prompt_states": {
+        "jp1-train-color-11": 2,
+        "jp1-train-color-13": 1,
+        "jp1-train-count-08": 3,
+        "jp1-train-count-12": 1,
+        "jp1-train-relation-01": 1,
+        "jp1-train-relation-12": 1
+      },
+      "prompts_with_multiple_states": [
+        "jp1-train-color-11",
+        "jp1-train-count-08"
+      ],
+      "states": [
+        {
+          "action_sha256": "5fdccf62e6c4fdabf2e0f8b902075a1296b3a2efcb9fa1d639a7b992d5403124",
+          "id": "jp1-train-count-12",
+          "index": 3,
+          "mode": "ocr@1",
+          "origin": "phase12_original_replayed_in_phase16",
+          "repaired_clauses": [
+            "text"
+          ],
+          "saved_query": "/midtier/minilab/scratch/chw4026/projects/side_project/generative/opd_related/opd_lab/runs/le16_transfer_001/queries/4d47528600103b9d1ac93c7b.pt",
+          "saved_query_sha256": "a3c316fbeed7b640f28dae5ea6114ae25a6e84102eeb8badfd65a1768744b48c",
+          "seed": 239583594,
+          "source_case": 3,
+          "source_results": "/midtier/minilab/scratch/chw4026/projects/side_project/generative/opd_related/opd_lab/experiments/local_expert_v16/results.json",
+          "source_results_sha256": "b04531687c760012712cdb507ca9cdae8240985e11b635b85c1a93e7a7ccae77"
+        },
+        {
+          "action_sha256": "4fecd64754e3b2eb387b31888f0f369e076e778cbf6f1bfcfd6a9e09d3cbc720",
+          "id": "jp1-train-count-08",
+          "index": 3,
+          "mode": "geneval@1",
+          "origin": "phase16_fresh",
+          "repaired_clauses": [
+            "count"
+          ],
+          "saved_query": "/midtier/minilab/scratch/chw4026/projects/side_project/generative/opd_related/opd_lab/runs/le16_transfer_001/queries/9e31740475c052e6d35ba1ee.pt",
+          "saved_query_sha256": "f4fa520d16aef5cadb84d42dd337d1190368717bd703c1aa9d5f8284a7bfe29c",
+          "seed": 1272885951,
+          "source_case": 5,
+          "source_results": "/midtier/minilab/scratch/chw4026/projects/side_project/generative/opd_related/opd_lab/experiments/local_expert_v16/results.json",
+          "source_results_sha256": "b04531687c760012712cdb507ca9cdae8240985e11b635b85c1a93e7a7ccae77"
+        },
+        {
+          "action_sha256": "13831fad846803f5f8946a9cd17e7e0278f38681fd6abe3f9ff31ae1955434bf",
+          "id": "jp1-train-color-13",
+          "index": 3,
+          "mode": "ocr@1",
+          "origin": "phase12_original_replayed_in_phase16",
+          "repaired_clauses": [
+            "text"
+          ],
+          "saved_query": "/midtier/minilab/scratch/chw4026/projects/side_project/generative/opd_related/opd_lab/runs/le16_transfer_001/queries/70018fc0b06bc8e87ff6fed5.pt",
+          "saved_query_sha256": "2cd11b9056fc6d9ac5fe7cb34a0b6949650f9a12a94e931b0fd03bde4b75cd6e",
+          "seed": 179753740,
+          "source_case": 6,
+          "source_results": "/midtier/minilab/scratch/chw4026/projects/side_project/generative/opd_related/opd_lab/experiments/local_expert_v16/results.json",
+          "source_results_sha256": "b04531687c760012712cdb507ca9cdae8240985e11b635b85c1a93e7a7ccae77"
+        },
+        {
+          "action_sha256": "ddf61f1b3a2f38577383cb5dbddc23a0deb449d9fce481674944e4449d78c2a5",
+          "id": "jp1-train-count-08",
+          "index": 3,
+          "mode": "geneval@1",
+          "origin": "phase12_original_replayed_in_phase16",
+          "repaired_clauses": [
+            "count"
+          ],
+          "saved_query": "/midtier/minilab/scratch/chw4026/projects/side_project/generative/opd_related/opd_lab/runs/le16_transfer_001/queries/0265871c0dbbaef2251f467b.pt",
+          "saved_query_sha256": "2fb7c7b532af7c02d457965a99fc0ec14574cd64626c8231b53b7146249e7d59",
+          "seed": 550972855,
+          "source_case": 11,
+          "source_results": "/midtier/minilab/scratch/chw4026/projects/side_project/generative/opd_related/opd_lab/experiments/local_expert_v16/results.json",
+          "source_results_sha256": "b04531687c760012712cdb507ca9cdae8240985e11b635b85c1a93e7a7ccae77"
+        },
+        {
+          "action_sha256": "f588c96f0d5e7e5b075302993f9fa07d8b38c991e71d739ab84fe6b6a1c4eee5",
+          "id": "jp1-train-relation-12",
+          "index": 3,
+          "mode": "geneval@1",
+          "origin": "phase12_original_replayed_in_phase16",
+          "repaired_clauses": [
+            "relation"
+          ],
+          "saved_query": "/midtier/minilab/scratch/chw4026/projects/side_project/generative/opd_related/opd_lab/runs/le16_transfer_001/queries/b2e309055a189adcb77eb401.pt",
+          "saved_query_sha256": "393ade66d9fa704b063fec34f0e47a8952248fe57d68ea53bf705e247b8e6112",
+          "seed": 549703214,
+          "source_case": 12,
+          "source_results": "/midtier/minilab/scratch/chw4026/projects/side_project/generative/opd_related/opd_lab/experiments/local_expert_v16/results.json",
+          "source_results_sha256": "b04531687c760012712cdb507ca9cdae8240985e11b635b85c1a93e7a7ccae77"
+        },
+        {
+          "action_sha256": "ea6218bc4e8bce7350bd1ff128fe613555b367b960c22983b699604ac30bacd6",
+          "id": "jp1-train-color-11",
+          "index": 3,
+          "mode": "geneval@1",
+          "origin": "phase12_original_replayed_in_phase16",
+          "repaired_clauses": [
+            "text"
+          ],
+          "saved_query": "/midtier/minilab/scratch/chw4026/projects/side_project/generative/opd_related/opd_lab/runs/le16_transfer_001/queries/8c20f306b7b2ee6f700b49b3.pt",
+          "saved_query_sha256": "9f08130f666d789b80810d535272764f13d02a80be2e3bcf9937025e8822b934",
+          "seed": 156034178,
+          "source_case": 13,
+          "source_results": "/midtier/minilab/scratch/chw4026/projects/side_project/generative/opd_related/opd_lab/experiments/local_expert_v16/results.json",
+          "source_results_sha256": "b04531687c760012712cdb507ca9cdae8240985e11b635b85c1a93e7a7ccae77"
+        },
+        {
+          "action_sha256": "fdbcaeef2b6dfeec7b9a9d3d3a420012d276027e215ddb4e262ee6e2809d54bb",
+          "id": "jp1-train-relation-01",
+          "index": 3,
+          "mode": "geneval@1",
+          "origin": "phase12_original_replayed_in_phase16",
+          "repaired_clauses": [
+            "relation",
+            "text"
+          ],
+          "saved_query": "/midtier/minilab/scratch/chw4026/projects/side_project/generative/opd_related/opd_lab/runs/le16_transfer_001/queries/0c64f74f1bd5675a617b744c.pt",
+          "saved_query_sha256": "0db1f7e5e1d4e719c3531ac90e91f2d9275b9ad2fdf2b1d640fcc00ba210d6df",
+          "seed": 1582394764,
+          "source_case": 14,
+          "source_results": "/midtier/minilab/scratch/chw4026/projects/side_project/generative/opd_related/opd_lab/experiments/local_expert_v16/results.json",
+          "source_results_sha256": "b04531687c760012712cdb507ca9cdae8240985e11b635b85c1a93e7a7ccae77"
+        },
+        {
+          "action_sha256": "d96d699ce0210b7e0d069f77665bd4d70c6f65b0ca1de6aaf794244cdf27481f",
+          "id": "jp1-train-color-11",
+          "index": 3,
+          "mode": "geneval@1",
+          "origin": "phase16_fresh",
+          "repaired_clauses": [
+            "text"
+          ],
+          "saved_query": "/midtier/minilab/scratch/chw4026/projects/side_project/generative/opd_related/opd_lab/runs/le16_transfer_001/queries/a380d63a583ab3f2922f3801.pt",
+          "saved_query_sha256": "cd6fc50b0e418af2f7b961c9d11cdd9b1600100905abea158e4ec523b0ac8385",
+          "seed": 15411324,
+          "source_case": 18,
+          "source_results": "/midtier/minilab/scratch/chw4026/projects/side_project/generative/opd_related/opd_lab/experiments/local_expert_v16/results.json",
+          "source_results_sha256": "b04531687c760012712cdb507ca9cdae8240985e11b635b85c1a93e7a7ccae77"
+        },
+        {
+          "action_sha256": "3d82a84f5f975215439d08426faa3b28b28601618487bd86a44563b87587ce27",
+          "id": "jp1-train-count-08",
+          "index": 3,
+          "mode": "i3_ocr@1",
+          "origin": "phase17_collection",
+          "repaired_clauses": [
+            "text"
+          ],
+          "saved_query": "/midtier/minilab/scratch/chw4026/projects/side_project/generative/opd_related/opd_lab/runs/le17_coverage_001/queries/920482fd3aee36cea14056bc-i3.pt",
+          "saved_query_sha256": "46dae39c12e51962b1975a7ce2ad5ed0ff986c360a2fd82d0fc41f91b3e2b46d",
+          "seed": 1451226237,
+          "source_case": 7,
+          "source_results": "/midtier/minilab/scratch/chw4026/projects/side_project/generative/opd_related/opd_lab/experiments/local_expert_v17/results.json",
+          "source_results_sha256": "e447bc3cdcfa622dd05b25d4bfa4c6253583df95739357e27898ab879d7e8e54"
+        }
+      ]
+    },
+    "multi_time": {
+      "count": 11,
+      "per_prompt_states": {
+        "jp1-train-color-11": 2,
+        "jp1-train-color-13": 1,
+        "jp1-train-count-08": 3,
+        "jp1-train-count-12": 1,
+        "jp1-train-relation-01": 2,
+        "jp1-train-relation-12": 2
+      },
+      "prompts_with_multiple_states": [
+        "jp1-train-color-11",
+        "jp1-train-count-08",
+        "jp1-train-relation-01",
+        "jp1-train-relation-12"
+      ],
+      "states": [
+        {
+          "action_sha256": "5fdccf62e6c4fdabf2e0f8b902075a1296b3a2efcb9fa1d639a7b992d5403124",
+          "id": "jp1-train-count-12",
+          "index": 3,
+          "mode": "ocr@1",
+          "origin": "phase12_original_replayed_in_phase16",
+          "repaired_clauses": [
+            "text"
+          ],
+          "saved_query": "/midtier/minilab/scratch/chw4026/projects/side_project/generative/opd_related/opd_lab/runs/le16_transfer_001/queries/4d47528600103b9d1ac93c7b.pt",
+          "saved_query_sha256": "a3c316fbeed7b640f28dae5ea6114ae25a6e84102eeb8badfd65a1768744b48c",
+          "seed": 239583594,
+          "source_case": 3,
+          "source_results": "/midtier/minilab/scratch/chw4026/projects/side_project/generative/opd_related/opd_lab/experiments/local_expert_v16/results.json",
+          "source_results_sha256": "b04531687c760012712cdb507ca9cdae8240985e11b635b85c1a93e7a7ccae77"
+        },
+        {
+          "action_sha256": "4fecd64754e3b2eb387b31888f0f369e076e778cbf6f1bfcfd6a9e09d3cbc720",
+          "id": "jp1-train-count-08",
+          "index": 3,
+          "mode": "geneval@1",
+          "origin": "phase16_fresh",
+          "repaired_clauses": [
+            "count"
+          ],
+          "saved_query": "/midtier/minilab/scratch/chw4026/projects/side_project/generative/opd_related/opd_lab/runs/le16_transfer_001/queries/9e31740475c052e6d35ba1ee.pt",
+          "saved_query_sha256": "f4fa520d16aef5cadb84d42dd337d1190368717bd703c1aa9d5f8284a7bfe29c",
+          "seed": 1272885951,
+          "source_case": 5,
+          "source_results": "/midtier/minilab/scratch/chw4026/projects/side_project/generative/opd_related/opd_lab/experiments/local_expert_v16/results.json",
+          "source_results_sha256": "b04531687c760012712cdb507ca9cdae8240985e11b635b85c1a93e7a7ccae77"
+        },
+        {
+          "action_sha256": "13831fad846803f5f8946a9cd17e7e0278f38681fd6abe3f9ff31ae1955434bf",
+          "id": "jp1-train-color-13",
+          "index": 3,
+          "mode": "ocr@1",
+          "origin": "phase12_original_replayed_in_phase16",
+          "repaired_clauses": [
+            "text"
+          ],
+          "saved_query": "/midtier/minilab/scratch/chw4026/projects/side_project/generative/opd_related/opd_lab/runs/le16_transfer_001/queries/70018fc0b06bc8e87ff6fed5.pt",
+          "saved_query_sha256": "2cd11b9056fc6d9ac5fe7cb34a0b6949650f9a12a94e931b0fd03bde4b75cd6e",
+          "seed": 179753740,
+          "source_case": 6,
+          "source_results": "/midtier/minilab/scratch/chw4026/projects/side_project/generative/opd_related/opd_lab/experiments/local_expert_v16/results.json",
+          "source_results_sha256": "b04531687c760012712cdb507ca9cdae8240985e11b635b85c1a93e7a7ccae77"
+        },
+        {
+          "action_sha256": "ddf61f1b3a2f38577383cb5dbddc23a0deb449d9fce481674944e4449d78c2a5",
+          "id": "jp1-train-count-08",
+          "index": 3,
+          "mode": "geneval@1",
+          "origin": "phase12_original_replayed_in_phase16",
+          "repaired_clauses": [
+            "count"
+          ],
+          "saved_query": "/midtier/minilab/scratch/chw4026/projects/side_project/generative/opd_related/opd_lab/runs/le16_transfer_001/queries/0265871c0dbbaef2251f467b.pt",
+          "saved_query_sha256": "2fb7c7b532af7c02d457965a99fc0ec14574cd64626c8231b53b7146249e7d59",
+          "seed": 550972855,
+          "source_case": 11,
+          "source_results": "/midtier/minilab/scratch/chw4026/projects/side_project/generative/opd_related/opd_lab/experiments/local_expert_v16/results.json",
+          "source_results_sha256": "b04531687c760012712cdb507ca9cdae8240985e11b635b85c1a93e7a7ccae77"
+        },
+        {
+          "action_sha256": "f588c96f0d5e7e5b075302993f9fa07d8b38c991e71d739ab84fe6b6a1c4eee5",
+          "id": "jp1-train-relation-12",
+          "index": 3,
+          "mode": "geneval@1",
+          "origin": "phase12_original_replayed_in_phase16",
+          "repaired_clauses": [
+            "relation"
+          ],
+          "saved_query": "/midtier/minilab/scratch/chw4026/projects/side_project/generative/opd_related/opd_lab/runs/le16_transfer_001/queries/b2e309055a189adcb77eb401.pt",
+          "saved_query_sha256": "393ade66d9fa704b063fec34f0e47a8952248fe57d68ea53bf705e247b8e6112",
+          "seed": 549703214,
+          "source_case": 12,
+          "source_results": "/midtier/minilab/scratch/chw4026/projects/side_project/generative/opd_related/opd_lab/experiments/local_expert_v16/results.json",
+          "source_results_sha256": "b04531687c760012712cdb507ca9cdae8240985e11b635b85c1a93e7a7ccae77"
+        },
+        {
+          "action_sha256": "ea6218bc4e8bce7350bd1ff128fe613555b367b960c22983b699604ac30bacd6",
+          "id": "jp1-train-color-11",
+          "index": 3,
+          "mode": "geneval@1",
+          "origin": "phase12_original_replayed_in_phase16",
+          "repaired_clauses": [
+            "text"
+          ],
+          "saved_query": "/midtier/minilab/scratch/chw4026/projects/side_project/generative/opd_related/opd_lab/runs/le16_transfer_001/queries/8c20f306b7b2ee6f700b49b3.pt",
+          "saved_query_sha256": "9f08130f666d789b80810d535272764f13d02a80be2e3bcf9937025e8822b934",
+          "seed": 156034178,
+          "source_case": 13,
+          "source_results": "/midtier/minilab/scratch/chw4026/projects/side_project/generative/opd_related/opd_lab/experiments/local_expert_v16/results.json",
+          "source_results_sha256": "b04531687c760012712cdb507ca9cdae8240985e11b635b85c1a93e7a7ccae77"
+        },
+        {
+          "action_sha256": "fdbcaeef2b6dfeec7b9a9d3d3a420012d276027e215ddb4e262ee6e2809d54bb",
+          "id": "jp1-train-relation-01",
+          "index": 3,
+          "mode": "geneval@1",
+          "origin": "phase12_original_replayed_in_phase16",
+          "repaired_clauses": [
+            "relation",
+            "text"
+          ],
+          "saved_query": "/midtier/minilab/scratch/chw4026/projects/side_project/generative/opd_related/opd_lab/runs/le16_transfer_001/queries/0c64f74f1bd5675a617b744c.pt",
+          "saved_query_sha256": "0db1f7e5e1d4e719c3531ac90e91f2d9275b9ad2fdf2b1d640fcc00ba210d6df",
+          "seed": 1582394764,
+          "source_case": 14,
+          "source_results": "/midtier/minilab/scratch/chw4026/projects/side_project/generative/opd_related/opd_lab/experiments/local_expert_v16/results.json",
+          "source_results_sha256": "b04531687c760012712cdb507ca9cdae8240985e11b635b85c1a93e7a7ccae77"
+        },
+        {
+          "action_sha256": "d96d699ce0210b7e0d069f77665bd4d70c6f65b0ca1de6aaf794244cdf27481f",
+          "id": "jp1-train-color-11",
+          "index": 3,
+          "mode": "geneval@1",
+          "origin": "phase16_fresh",
+          "repaired_clauses": [
+            "text"
+          ],
+          "saved_query": "/midtier/minilab/scratch/chw4026/projects/side_project/generative/opd_related/opd_lab/runs/le16_transfer_001/queries/a380d63a583ab3f2922f3801.pt",
+          "saved_query_sha256": "cd6fc50b0e418af2f7b961c9d11cdd9b1600100905abea158e4ec523b0ac8385",
+          "seed": 15411324,
+          "source_case": 18,
+          "source_results": "/midtier/minilab/scratch/chw4026/projects/side_project/generative/opd_related/opd_lab/experiments/local_expert_v16/results.json",
+          "source_results_sha256": "b04531687c760012712cdb507ca9cdae8240985e11b635b85c1a93e7a7ccae77"
+        },
+        {
+          "action_sha256": "cea80d27543d69cee7535dff5764b6b928c3a14a3bd6e3f9d2312d977d065e5e",
+          "id": "jp1-train-relation-01",
+          "index": 1,
+          "mode": "i1_geneval@1",
+          "origin": "phase17_collection",
+          "repaired_clauses": [
+            "relation"
+          ],
+          "saved_query": "/midtier/minilab/scratch/chw4026/projects/side_project/generative/opd_related/opd_lab/runs/le17_coverage_001/queries/4aeb0427dcbb8a319843e235-i1.pt",
+          "saved_query_sha256": "d8db020f40b839a5858653f978c667a2d9a42a132ba707a3cab55a8fa8e2dcec",
+          "seed": 1010285880,
+          "source_case": 4,
+          "source_results": "/midtier/minilab/scratch/chw4026/projects/side_project/generative/opd_related/opd_lab/experiments/local_expert_v17/results.json",
+          "source_results_sha256": "e447bc3cdcfa622dd05b25d4bfa4c6253583df95739357e27898ab879d7e8e54"
+        },
+        {
+          "action_sha256": "3e0a9692b725dad78254d4b23d6150e2a3a9eea1fb3a6a22842bd7320ff657d8",
+          "id": "jp1-train-count-08",
+          "index": 1,
+          "mode": "i1_geneval@0.5",
+          "origin": "phase17_collection",
+          "repaired_clauses": [
+            "text"
+          ],
+          "saved_query": "/midtier/minilab/scratch/chw4026/projects/side_project/generative/opd_related/opd_lab/runs/le17_coverage_001/queries/920482fd3aee36cea14056bc-i1.pt",
+          "saved_query_sha256": "134d7057a102f1953e688400a11fe5d423c0a462759ef7b1a728cff54cd3bf67",
+          "seed": 1451226237,
+          "source_case": 7,
+          "source_results": "/midtier/minilab/scratch/chw4026/projects/side_project/generative/opd_related/opd_lab/experiments/local_expert_v17/results.json",
+          "source_results_sha256": "e447bc3cdcfa622dd05b25d4bfa4c6253583df95739357e27898ab879d7e8e54"
+        },
+        {
+          "action_sha256": "bc290a4a6b5ca54e8f50e51286bd380c43896a3756ba8c05c215f67ef9bf9e6b",
+          "id": "jp1-train-relation-12",
+          "index": 1,
+          "mode": "i1_geneval@1",
+          "origin": "phase17_collection",
+          "repaired_clauses": [
+            "relation"
+          ],
+          "saved_query": "/midtier/minilab/scratch/chw4026/projects/side_project/generative/opd_related/opd_lab/runs/le17_coverage_001/queries/1a82d2ab4efaa0a086cb9077-i1.pt",
+          "saved_query_sha256": "4c0f417b96ee8da92ae34b03cd2375c38dd704698c2e5231c17b9d4278122f64",
+          "seed": 2125626274,
+          "source_case": 11,
+          "source_results": "/midtier/minilab/scratch/chw4026/projects/side_project/generative/opd_related/opd_lab/experiments/local_expert_v17/results.json",
+          "source_results_sha256": "e447bc3cdcfa622dd05b25d4bfa4c6253583df95739357e27898ab879d7e8e54"
+        }
+      ]
+    }
+  }
+}

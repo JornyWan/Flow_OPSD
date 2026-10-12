@@ -1,0 +1,1237 @@
+{
+  "accepted_harmed_clause_witnesses": [
+    {
+      "baseline_proxy_satisfied": false,
+      "baseline_review": true,
+      "case": 10,
+      "clause": "color",
+      "selected_proxy_satisfied": true,
+      "selected_review": false
+    },
+    {
+      "baseline_proxy_satisfied": false,
+      "baseline_review": true,
+      "case": 10,
+      "clause": "text",
+      "selected_proxy_satisfied": false,
+      "selected_review": false
+    },
+    {
+      "baseline_proxy_satisfied": false,
+      "baseline_review": true,
+      "case": 13,
+      "clause": "text",
+      "selected_proxy_satisfied": false,
+      "selected_review": false
+    },
+    {
+      "baseline_proxy_satisfied": false,
+      "baseline_review": true,
+      "case": 25,
+      "clause": "text",
+      "selected_proxy_satisfied": false,
+      "selected_review": false
+    }
+  ],
+  "accepted_harmed_clauses_outside_proxy_protection": 4,
+  "accepted_queries": [
+    {
+      "after": {
+        "ocr": "BLOM",
+        "proxy_clauses": {
+          "relation": true,
+          "text": false
+        },
+        "review": {
+          "clauses": {
+            "relation": true,
+            "text": false
+          },
+          "full_visibility": true,
+          "notes": "One complete cup right of one complete bottle; extra saucer. Missing one O in BLOM.",
+          "visible_text": "BLOM"
+        },
+        "utility": 0.45
+      },
+      "before": {
+        "ocr": "B LO M",
+        "proxy_clauses": {
+          "relation": false,
+          "text": false
+        },
+        "review": {
+          "clauses": {
+            "relation": false,
+            "text": false
+          },
+          "full_visibility": true,
+          "notes": "Two cups left of bottle rather than one right. Additional printed letters on tall cup.",
+          "visible_text": "BLOM plus cup-label print"
+        },
+        "utility": 0.16666666666666669
+      },
+      "case": 2,
+      "classification": {
+        "harmed_clauses": [],
+        "has_unknown": false,
+        "known_harm": false,
+        "repaired_clauses": [
+          "relation"
+        ],
+        "safe_repair": true,
+        "safe_visibility_gain": false,
+        "status": "safe_repair",
+        "visibility_harm": false
+      },
+      "id": "jp1-train-relation-12",
+      "selected": "geneval@1"
+    },
+    {
+      "after": {
+        "ocr": "I'",
+        "proxy_clauses": {
+          "count": true,
+          "text": false
+        },
+        "review": {
+          "clauses": {
+            "count": true,
+            "text": null
+          },
+          "full_visibility": true,
+          "notes": "One complete cup. Sign and glyphs strongly cropped at top; only malformed fragments remain, cannot verify MINT.",
+          "visible_text": "Top-clipped, unreadable MINT-like fragments"
+        },
+        "utility": 0.3125
+      },
+      "before": {
+        "ocr": "",
+        "proxy_clauses": {
+          "count": true,
+          "text": false
+        },
+        "review": {
+          "clauses": {
+            "count": true,
+            "text": null
+          },
+          "full_visibility": true,
+          "notes": "One complete cup. Sign and glyphs strongly cropped at top; only malformed fragments remain, cannot verify MINT.",
+          "visible_text": "Top-clipped, unreadable MINT-like fragments"
+        },
+        "utility": 0.25
+      },
+      "case": 4,
+      "classification": {
+        "harmed_clauses": [],
+        "has_unknown": true,
+        "known_harm": false,
+        "repaired_clauses": [],
+        "safe_repair": false,
+        "safe_visibility_gain": false,
+        "status": "unknown",
+        "visibility_harm": false
+      },
+      "id": "jp1-train-count-00",
+      "selected": "geneval@1"
+    },
+    {
+      "after": {
+        "ocr": "B LOO M",
+        "proxy_clauses": {
+          "count": true,
+          "text": false
+        },
+        "review": {
+          "clauses": {
+            "count": true,
+            "text": true
+          },
+          "full_visibility": true,
+          "notes": "One complete bowl. BLOOM readable; A pale letters and C open-bottom decorative O shapes remain identifiable. C bowl has diffuse pale rim/geometry.",
+          "visible_text": "BLOOM"
+        },
+        "utility": 0.4285714285714286
+      },
+      "before": {
+        "ocr": "B L 0 M",
+        "proxy_clauses": {
+          "count": true,
+          "text": false
+        },
+        "review": {
+          "clauses": {
+            "count": true,
+            "text": false
+          },
+          "full_visibility": true,
+          "notes": "One complete bowl on small pedestal. Only one O in BLOM.",
+          "visible_text": "BLOM"
+        },
+        "utility": 0.35714285714285715
+      },
+      "case": 6,
+      "classification": {
+        "harmed_clauses": [],
+        "has_unknown": false,
+        "known_harm": false,
+        "repaired_clauses": [
+          "text"
+        ],
+        "safe_repair": true,
+        "safe_visibility_gain": false,
+        "status": "safe_repair",
+        "visibility_harm": false
+      },
+      "id": "jp1-train-count-12",
+      "selected": "ocr@1"
+    },
+    {
+      "after": {
+        "ocr": "EACH",
+        "proxy_clauses": {
+          "relation": true,
+          "text": false
+        },
+        "review": {
+          "clauses": {
+            "relation": true,
+            "text": false
+          },
+          "full_visibility": true,
+          "notes": "One complete bicycle left of one complete car. Requested PEACH not reproduced; additional plate lettering also visible.",
+          "visible_text": "EACH plus plate characters"
+        },
+        "utility": 0.45
+      },
+      "before": {
+        "ocr": "EACi",
+        "proxy_clauses": {
+          "relation": true,
+          "text": false
+        },
+        "review": {
+          "clauses": {
+            "relation": true,
+            "text": false
+          },
+          "full_visibility": true,
+          "notes": "One complete bicycle left of one complete car. Requested PEACH not reproduced; additional plate lettering also visible.",
+          "visible_text": "EACH plus plate characters"
+        },
+        "utility": 0.4
+      },
+      "case": 7,
+      "classification": {
+        "harmed_clauses": [],
+        "has_unknown": false,
+        "known_harm": false,
+        "repaired_clauses": [],
+        "safe_repair": false,
+        "safe_visibility_gain": false,
+        "status": "non_repair",
+        "visibility_harm": false
+      },
+      "id": "jp1-train-relation-11",
+      "selected": "ocr@1"
+    },
+    {
+      "after": {
+        "ocr": "EAR",
+        "proxy_clauses": {
+          "color": true,
+          "text": false
+        },
+        "review": {
+          "clauses": {
+            "color": false,
+            "text": false
+          },
+          "full_visibility": true,
+          "notes": "Two yellow book-like volumes stacked at an angle, rather than exactly one. Missing C and L in EAR.",
+          "visible_text": "EAR"
+        },
+        "utility": 0.4
+      },
+      "before": {
+        "ocr": "C E A R",
+        "proxy_clauses": {
+          "color": false,
+          "text": false
+        },
+        "review": {
+          "clauses": {
+            "color": true,
+            "text": true
+          },
+          "full_visibility": true,
+          "notes": "One complete yellow book. CLEAR identifiable, C/L/R pale but recognizable.",
+          "visible_text": "CLEAR"
+        },
+        "utility": 0.14285714285714285
+      },
+      "case": 10,
+      "classification": {
+        "harmed_clauses": [
+          "color",
+          "text"
+        ],
+        "has_unknown": false,
+        "known_harm": true,
+        "repaired_clauses": [],
+        "safe_repair": false,
+        "safe_visibility_gain": false,
+        "status": "unsafe",
+        "visibility_harm": false
+      },
+      "id": "jp1-train-color-14",
+      "selected": "geneval@1"
+    },
+    {
+      "after": {
+        "ocr": "LUNAA",
+        "proxy_clauses": {
+          "color": true,
+          "count": true,
+          "text": false
+        },
+        "review": {
+          "clauses": {
+            "color": true,
+            "count": true,
+            "text": false
+          },
+          "full_visibility": false,
+          "notes": "Two green chairs with clipped legs. Extra final A in LUNAA.",
+          "visible_text": "LUNAA"
+        },
+        "utility": 0.4666666666666666
+      },
+      "before": {
+        "ocr": "Lina",
+        "proxy_clauses": {
+          "color": true,
+          "count": true,
+          "text": false
+        },
+        "review": {
+          "clauses": {
+            "color": true,
+            "count": true,
+            "text": true
+          },
+          "full_visibility": false,
+          "notes": "Two green chairs; legs cut at lower image edge. LUNA identifiable, case and ordinary spacing ignored.",
+          "visible_text": "LUNA"
+        },
+        "utility": 0.4583333333333333
+      },
+      "case": 13,
+      "classification": {
+        "harmed_clauses": [
+          "text"
+        ],
+        "has_unknown": false,
+        "known_harm": true,
+        "repaired_clauses": [],
+        "safe_repair": false,
+        "safe_visibility_gain": false,
+        "status": "unsafe",
+        "visibility_harm": false
+      },
+      "id": "jp1-train-count_color-03",
+      "selected": "geneval@1"
+    },
+    {
+      "after": {
+        "ocr": "MINT",
+        "proxy_clauses": {
+          "relation": false,
+          "text": true
+        },
+        "review": {
+          "clauses": {
+            "relation": null,
+            "text": true
+          },
+          "full_visibility": null,
+          "notes": "Small white cup/bowl above left side of sign, extremely faint form to right cannot confidently identify as bottle or establish completeness. MINT clear.",
+          "visible_text": "MINT"
+        },
+        "utility": 0.3333333333333333
+      },
+      "before": {
+        "ocr": "MINT",
+        "proxy_clauses": {
+          "relation": false,
+          "text": true
+        },
+        "review": {
+          "clauses": {
+            "relation": false,
+            "text": true
+          },
+          "full_visibility": false,
+          "notes": "Two bottle-like vessels behind sign and no recognizable cup. Objects occluded by sign. MINT clear.",
+          "visible_text": "MINT"
+        },
+        "utility": 0.25
+      },
+      "case": 14,
+      "classification": {
+        "harmed_clauses": [],
+        "has_unknown": true,
+        "known_harm": false,
+        "repaired_clauses": [],
+        "safe_repair": false,
+        "safe_visibility_gain": false,
+        "status": "unknown",
+        "visibility_harm": false
+      },
+      "id": "jp1-train-relation-00",
+      "selected": "ocr@1"
+    },
+    {
+      "after": {
+        "ocr": "Peach",
+        "proxy_clauses": {
+          "color": true,
+          "text": true
+        },
+        "review": {
+          "clauses": {
+            "color": true,
+            "text": true
+          },
+          "full_visibility": false,
+          "notes": "One green chair with lower legs cropped. Peach identifiable, case ignored.",
+          "visible_text": "PEACH"
+        },
+        "utility": 1.0
+      },
+      "before": {
+        "ocr": "PeAcin",
+        "proxy_clauses": {
+          "color": true,
+          "text": false
+        },
+        "review": {
+          "clauses": {
+            "color": true,
+            "text": false
+          },
+          "full_visibility": false,
+          "notes": "Green chair legs clipped. Extra small sign above main placard contains additional letters; main word also pale.",
+          "visible_text": "Peach plus small upper-placard lettering"
+        },
+        "utility": 0.4166666666666667
+      },
+      "case": 17,
+      "classification": {
+        "harmed_clauses": [],
+        "has_unknown": false,
+        "known_harm": false,
+        "repaired_clauses": [
+          "text"
+        ],
+        "safe_repair": true,
+        "safe_visibility_gain": false,
+        "status": "safe_repair",
+        "visibility_harm": false
+      },
+      "id": "jp1-train-color-11",
+      "selected": "geneval@1"
+    },
+    {
+      "after": {
+        "ocr": "GLOW",
+        "proxy_clauses": {
+          "count": true,
+          "text": true
+        },
+        "review": {
+          "clauses": {
+            "count": true,
+            "text": true
+          },
+          "full_visibility": true,
+          "notes": "Three separated complete bowls. GLOW readable from pale embossed/shadowed outlines; poor contrast and nonblack text noted.",
+          "visible_text": "GLOW"
+        },
+        "utility": 1.0
+      },
+      "before": {
+        "ocr": "",
+        "proxy_clauses": {
+          "count": true,
+          "text": false
+        },
+        "review": {
+          "clauses": {
+            "count": true,
+            "text": true
+          },
+          "full_visibility": true,
+          "notes": "Three separated complete bowls. GLOW readable from pale embossed/shadowed outlines; poor contrast and nonblack text noted.",
+          "visible_text": "GLOW"
+        },
+        "utility": 0.25
+      },
+      "case": 20,
+      "classification": {
+        "harmed_clauses": [],
+        "has_unknown": false,
+        "known_harm": false,
+        "repaired_clauses": [],
+        "safe_repair": false,
+        "safe_visibility_gain": false,
+        "status": "non_repair",
+        "visibility_harm": false
+      },
+      "id": "jp1-train-count-04",
+      "selected": "geneval@1"
+    },
+    {
+      "after": {
+        "ocr": "FRESH",
+        "proxy_clauses": {
+          "relation": false,
+          "text": true
+        },
+        "review": {
+          "clauses": {
+            "relation": null,
+            "text": true
+          },
+          "full_visibility": null,
+          "notes": "Handled left vessel also has a narrow bottle-like neck, ambiguous cup versus jug/bottle; right bottle recognizable. Cannot confidently certify requested cup scene.",
+          "visible_text": "FRESH"
+        },
+        "utility": 0.3333333333333333
+      },
+      "before": {
+        "ocr": "FRESH",
+        "proxy_clauses": {
+          "relation": false,
+          "text": true
+        },
+        "review": {
+          "clauses": {
+            "relation": false,
+            "text": true
+          },
+          "full_visibility": null,
+          "notes": "Recognizable bottle at left; possible very pale glass at right would place cup on wrong side. Cannot determine cup completeness confidently.",
+          "visible_text": "FRESH"
+        },
+        "utility": 0.25
+      },
+      "case": 23,
+      "classification": {
+        "harmed_clauses": [],
+        "has_unknown": true,
+        "known_harm": false,
+        "repaired_clauses": [],
+        "safe_repair": false,
+        "safe_visibility_gain": false,
+        "status": "unknown",
+        "visibility_harm": false
+      },
+      "id": "jp1-train-relation-08",
+      "selected": "geneval@1"
+    },
+    {
+      "after": {
+        "ocr": "qLOw",
+        "proxy_clauses": {
+          "relation": false,
+          "text": false
+        },
+        "review": {
+          "clauses": {
+            "relation": false,
+            "text": false
+          },
+          "full_visibility": true,
+          "notes": "Floating cup left/above bottle; objects inside frame. Additional small printed label on bottle.",
+          "visible_text": "GLOW plus bottle-label lettering"
+        },
+        "utility": 0.375
+      },
+      "before": {
+        "ocr": "G.LOW",
+        "proxy_clauses": {
+          "relation": false,
+          "text": false
+        },
+        "review": {
+          "clauses": {
+            "relation": false,
+            "text": true
+          },
+          "full_visibility": false,
+          "notes": "Glass mostly outside left boundary and bottle cut at right edge. GLOW identifiable from partly white embossed letters.",
+          "visible_text": "GLOW"
+        },
+        "utility": 0.2833333333333333
+      },
+      "case": 25,
+      "classification": {
+        "harmed_clauses": [
+          "text"
+        ],
+        "has_unknown": false,
+        "known_harm": true,
+        "repaired_clauses": [],
+        "safe_repair": false,
+        "safe_visibility_gain": false,
+        "status": "unsafe",
+        "visibility_harm": false
+      },
+      "id": "jp1-train-relation-04",
+      "selected": "geneval@1"
+    },
+    {
+      "after": {
+        "ocr": "NORTH",
+        "proxy_clauses": {
+          "relation": true,
+          "text": true
+        },
+        "review": {
+          "clauses": {
+            "relation": null,
+            "text": true
+          },
+          "full_visibility": true,
+          "notes": "Apple clearly left of white bowl-like form, but multiple pale concentric rims may indicate stacked bowls; exact bowl multiplicity unresolved at native resolution. Both external forms within frame.",
+          "visible_text": "NORTH"
+        },
+        "utility": 1.0
+      },
+      "before": {
+        "ocr": "NORTH",
+        "proxy_clauses": {
+          "relation": false,
+          "text": true
+        },
+        "review": {
+          "clauses": {
+            "relation": false,
+            "text": true
+          },
+          "full_visibility": true,
+          "notes": "Apple embedded in left bowl, with a second bowl to right; violates exactly-one bowl. External forms remain within frame.",
+          "visible_text": "NORTH"
+        },
+        "utility": 0.25
+      },
+      "case": 26,
+      "classification": {
+        "harmed_clauses": [],
+        "has_unknown": true,
+        "known_harm": false,
+        "repaired_clauses": [],
+        "safe_repair": false,
+        "safe_visibility_gain": false,
+        "status": "unknown",
+        "visibility_harm": false
+      },
+      "id": "jp1-train-relation-09",
+      "selected": "geneval@1"
+    },
+    {
+      "after": {
+        "ocr": "LUNA",
+        "proxy_clauses": {
+          "relation": false,
+          "text": true
+        },
+        "review": {
+          "clauses": {
+            "relation": false,
+            "text": false
+          },
+          "full_visibility": true,
+          "notes": "Bicycle RIGHT of car, opposite requested LEFT. Both complete; C has extra floor slab. Main word has an added I-like stroke and extra plate/edge-poster text.",
+          "visible_text": "LUINA-like plus plate and edge lettering"
+        },
+        "utility": 0.4375
+      },
+      "before": {
+        "ocr": "LUINA L.",
+        "proxy_clauses": {
+          "relation": false,
+          "text": false
+        },
+        "review": {
+          "clauses": {
+            "relation": false,
+            "text": false
+          },
+          "full_visibility": true,
+          "notes": "Bicycle RIGHT of car, opposite requested LEFT. Both complete; C has extra floor slab. Main word has an added I-like stroke and extra plate/edge-poster text.",
+          "visible_text": "LUINA-like plus plate and edge lettering"
+        },
+        "utility": 0.3125
+      },
+      "case": 30,
+      "classification": {
+        "harmed_clauses": [],
+        "has_unknown": false,
+        "known_harm": false,
+        "repaired_clauses": [],
+        "safe_repair": false,
+        "safe_visibility_gain": false,
+        "status": "non_repair",
+        "visibility_harm": false
+      },
+      "id": "jp1-train-relation-03",
+      "selected": "ocr@1"
+    },
+    {
+      "after": {
+        "ocr": "PINE",
+        "proxy_clauses": {
+          "relation": true,
+          "text": true
+        },
+        "review": {
+          "clauses": {
+            "relation": true,
+            "text": true
+          },
+          "full_visibility": true,
+          "notes": "One apple distinctly left of one bowl, both complete; PINE legible.",
+          "visible_text": "PINE"
+        },
+        "utility": 1.0
+      },
+      "before": {
+        "ocr": "PINE",
+        "proxy_clauses": {
+          "relation": false,
+          "text": true
+        },
+        "review": {
+          "clauses": {
+            "relation": false,
+            "text": false
+          },
+          "full_visibility": true,
+          "notes": "Extra P before PINE. Apple sits inside bowl, not clearly left of it; outer objects within frame.",
+          "visible_text": "P PINE"
+        },
+        "utility": 0.4375
+      },
+      "case": 34,
+      "classification": {
+        "harmed_clauses": [],
+        "has_unknown": false,
+        "known_harm": false,
+        "repaired_clauses": [
+          "relation",
+          "text"
+        ],
+        "safe_repair": true,
+        "safe_visibility_gain": false,
+        "status": "safe_repair",
+        "visibility_harm": false
+      },
+      "id": "jp1-train-relation-01",
+      "selected": "geneval@1"
+    },
+    {
+      "after": {
+        "ocr": "CLOUD",
+        "proxy_clauses": {
+          "color": true,
+          "text": true
+        },
+        "review": {
+          "clauses": {
+            "color": true,
+            "text": true
+          },
+          "full_visibility": true,
+          "notes": "CLOUD legible; one complete yellow vase.",
+          "visible_text": "CLOUD"
+        },
+        "utility": 1.0
+      },
+      "before": {
+        "ocr": "CLUD",
+        "proxy_clauses": {
+          "color": true,
+          "text": false
+        },
+        "review": {
+          "clauses": {
+            "color": true,
+            "text": false
+          },
+          "full_visibility": true,
+          "notes": "Pale embossed letters CL UD, clearly missing O between L and U; complete yellow vase.",
+          "visible_text": "CL UD"
+        },
+        "utility": 0.45
+      },
+      "case": 42,
+      "classification": {
+        "harmed_clauses": [],
+        "has_unknown": false,
+        "known_harm": false,
+        "repaired_clauses": [
+          "text"
+        ],
+        "safe_repair": true,
+        "safe_visibility_gain": false,
+        "status": "safe_repair",
+        "visibility_harm": false
+      },
+      "id": "jp1-train-color-13",
+      "selected": "ocr@1"
+    },
+    {
+      "after": {
+        "ocr": "SUNNY",
+        "proxy_clauses": {
+          "color": true,
+          "text": true
+        },
+        "review": {
+          "clauses": {
+            "color": true,
+            "text": true
+          },
+          "full_visibility": true,
+          "notes": "One red banana fully within frame; SUNNY letters identifiable.",
+          "visible_text": "SUNNY"
+        },
+        "utility": 1.0
+      },
+      "before": {
+        "ocr": "UNNY",
+        "proxy_clauses": {
+          "color": true,
+          "text": false
+        },
+        "review": {
+          "clauses": {
+            "color": true,
+            "text": true
+          },
+          "full_visibility": true,
+          "notes": "SUNNY is extremely pale embossed white-on-white, not bold black; five glyphs remain identifiable. One red banana fully in frame.",
+          "visible_text": "SUNNY"
+        },
+        "utility": 0.45
+      },
+      "case": 46,
+      "classification": {
+        "harmed_clauses": [],
+        "has_unknown": false,
+        "known_harm": false,
+        "repaired_clauses": [],
+        "safe_repair": false,
+        "safe_visibility_gain": false,
+        "status": "non_repair",
+        "visibility_harm": false
+      },
+      "id": "jp1-train-color-15",
+      "selected": "ocr@1"
+    },
+    {
+      "after": {
+        "ocr": "SODA",
+        "proxy_clauses": {
+          "color": true,
+          "text": true
+        },
+        "review": {
+          "clauses": {
+            "color": true,
+            "text": true
+          },
+          "full_visibility": true,
+          "notes": "SODA legible; yellow vase complete on ledge. Sign below object rather than above.",
+          "visible_text": "SODA"
+        },
+        "utility": 1.0
+      },
+      "before": {
+        "ocr": "OA",
+        "proxy_clauses": {
+          "color": true,
+          "text": false
+        },
+        "review": {
+          "clauses": {
+            "color": true,
+            "text": null
+          },
+          "full_visibility": true,
+          "notes": "Pale embossed letters with last two glyphs merged, exact D and A separation unclear. Yellow vase complete on ledge, sign below it.",
+          "visible_text": "SO [merged D/A-like glyphs]"
+        },
+        "utility": 0.375
+      },
+      "case": 53,
+      "classification": {
+        "harmed_clauses": [],
+        "has_unknown": true,
+        "known_harm": false,
+        "repaired_clauses": [],
+        "safe_repair": false,
+        "safe_visibility_gain": false,
+        "status": "unknown",
+        "visibility_harm": false
+      },
+      "id": "jp1-train-color-05",
+      "selected": "geneval@1"
+    },
+    {
+      "after": {
+        "ocr": "FRESH",
+        "proxy_clauses": {
+          "count": true,
+          "text": true
+        },
+        "review": {
+          "clauses": {
+            "count": true,
+            "text": true
+          },
+          "full_visibility": true,
+          "notes": "Two distinct white cups fully visible below FRESH sign.",
+          "visible_text": "FRESH"
+        },
+        "utility": 1.0
+      },
+      "before": {
+        "ocr": "FRESH",
+        "proxy_clauses": {
+          "count": false,
+          "text": true
+        },
+        "review": {
+          "clauses": {
+            "count": false,
+            "text": true
+          },
+          "full_visibility": false,
+          "notes": "Handle-like forms on sign edges without recognizable cup bodies; requested two cups not present as visible objects. FRESH identifiable despite faint H crossbar.",
+          "visible_text": "FRESH"
+        },
+        "utility": 0.25
+      },
+      "case": 58,
+      "classification": {
+        "harmed_clauses": [],
+        "has_unknown": false,
+        "known_harm": false,
+        "repaired_clauses": [
+          "count"
+        ],
+        "safe_repair": true,
+        "safe_visibility_gain": true,
+        "status": "safe_repair",
+        "visibility_harm": false
+      },
+      "id": "jp1-train-count-08",
+      "selected": "geneval@1"
+    },
+    {
+      "after": {
+        "ocr": "C EAR",
+        "proxy_clauses": {
+          "count": false,
+          "text": false
+        },
+        "review": {
+          "clauses": {
+            "count": false,
+            "text": false
+          },
+          "full_visibility": false,
+          "notes": "CEAR missing L. A single open book with connected center spine; second requested book missing. Possible pale page print is additional ambiguity but missing L already fails text.",
+          "visible_text": "CEAR; possible pale page print"
+        },
+        "utility": 0.325
+      },
+      "before": {
+        "ocr": "C E AR",
+        "proxy_clauses": {
+          "count": false,
+          "text": false
+        },
+        "review": {
+          "clauses": {
+            "count": false,
+            "text": false
+          },
+          "full_visibility": false,
+          "notes": "CEAR missing L. A single open book with center spine; requested second book missing.",
+          "visible_text": "CEAR"
+        },
+        "utility": 0.16666666666666669
+      },
+      "case": 61,
+      "classification": {
+        "harmed_clauses": [],
+        "has_unknown": false,
+        "known_harm": false,
+        "repaired_clauses": [],
+        "safe_repair": false,
+        "safe_visibility_gain": false,
+        "status": "non_repair",
+        "visibility_harm": false
+      },
+      "id": "jp1-train-count-14",
+      "selected": "geneval@1"
+    },
+    {
+      "after": {
+        "ocr": "GLOW",
+        "proxy_clauses": {
+          "color": true,
+          "text": true
+        },
+        "review": {
+          "clauses": {
+            "color": true,
+            "text": true
+          },
+          "full_visibility": false,
+          "notes": "One green bowl, base cut by bottom frame. GLOW identifiable in all views, with stylized separated/overlapping W strokes in A/C and textured glyph fill in C.",
+          "visible_text": "GLOW"
+        },
+        "utility": 1.0
+      },
+      "before": {
+        "ocr": "GLOIW",
+        "proxy_clauses": {
+          "color": true,
+          "text": false
+        },
+        "review": {
+          "clauses": {
+            "color": true,
+            "text": true
+          },
+          "full_visibility": false,
+          "notes": "One green bowl, base cut by bottom frame. GLOW identifiable in all views, with stylized separated/overlapping W strokes in A/C and textured glyph fill in C.",
+          "visible_text": "GLOW"
+        },
+        "utility": 0.45
+      },
+      "case": 64,
+      "classification": {
+        "harmed_clauses": [],
+        "has_unknown": false,
+        "known_harm": false,
+        "repaired_clauses": [],
+        "safe_repair": false,
+        "safe_visibility_gain": false,
+        "status": "non_repair",
+        "visibility_harm": false
+      },
+      "id": "jp1-train-color-04",
+      "selected": "ocr@1"
+    }
+  ],
+  "groups": {
+    "jp1-train-color": {
+      "accepted": 6,
+      "candidate_headroom": 2,
+      "non_repair": 2,
+      "queries": 16,
+      "safe_repair": 2,
+      "unknown": 1,
+      "unsafe": 1
+    },
+    "jp1-train-count": {
+      "accepted": 5,
+      "candidate_headroom": 2,
+      "non_repair": 2,
+      "queries": 16,
+      "safe_repair": 2,
+      "unknown": 1
+    },
+    "jp1-train-count_color": {
+      "accepted": 1,
+      "candidate_headroom": 0,
+      "queries": 16,
+      "unsafe": 1
+    },
+    "jp1-train-relation": {
+      "accepted": 8,
+      "candidate_headroom": 2,
+      "non_repair": 2,
+      "queries": 16,
+      "safe_repair": 2,
+      "unknown": 3,
+      "unsafe": 1
+    }
+  },
+  "limits": "Unknown review labels stay separate. Candidate rows share prompts; confusion counts are descriptive, not independent sample inference. Visibility and sign layout are absent from the frozen proxy clauses.",
+  "proxy_review_confusion": {
+    "geneval@1": {
+      "color": {
+        "review_false_proxy_false": 1,
+        "review_false_proxy_true": 1,
+        "review_true_proxy_false": 7,
+        "review_true_proxy_true": 23
+      },
+      "count": {
+        "review_false_proxy_false": 3,
+        "review_true_proxy_false": 3,
+        "review_true_proxy_true": 26
+      },
+      "relation": {
+        "review_false_proxy_false": 6,
+        "review_none_proxy_false": 1,
+        "review_none_proxy_true": 2,
+        "review_true_proxy_false": 1,
+        "review_true_proxy_true": 6
+      },
+      "text": {
+        "review_false_proxy_false": 14,
+        "review_false_proxy_true": 1,
+        "review_none_proxy_false": 3,
+        "review_none_proxy_true": 2,
+        "review_true_proxy_true": 44
+      }
+    },
+    "noop": {
+      "color": {
+        "review_false_proxy_false": 1,
+        "review_true_proxy_false": 7,
+        "review_true_proxy_true": 24
+      },
+      "count": {
+        "review_false_proxy_false": 3,
+        "review_false_proxy_true": 1,
+        "review_true_proxy_false": 2,
+        "review_true_proxy_true": 26
+      },
+      "relation": {
+        "review_false_proxy_false": 10,
+        "review_false_proxy_true": 1,
+        "review_true_proxy_false": 1,
+        "review_true_proxy_true": 4
+      },
+      "text": {
+        "review_false_proxy_false": 9,
+        "review_false_proxy_true": 3,
+        "review_none_proxy_false": 2,
+        "review_none_proxy_true": 1,
+        "review_true_proxy_false": 6,
+        "review_true_proxy_true": 43
+      }
+    },
+    "ocr@1": {
+      "color": {
+        "review_false_proxy_false": 1,
+        "review_true_proxy_false": 7,
+        "review_true_proxy_true": 24
+      },
+      "count": {
+        "review_false_proxy_false": 3,
+        "review_none_proxy_false": 1,
+        "review_true_proxy_false": 2,
+        "review_true_proxy_true": 26
+      },
+      "relation": {
+        "review_false_proxy_false": 9,
+        "review_none_proxy_false": 2,
+        "review_true_proxy_false": 1,
+        "review_true_proxy_true": 4
+      },
+      "text": {
+        "review_false_proxy_false": 9,
+        "review_false_proxy_true": 2,
+        "review_none_proxy_false": 2,
+        "review_none_proxy_true": 1,
+        "review_true_proxy_false": 2,
+        "review_true_proxy_true": 48
+      }
+    },
+    "selected": {
+      "color": {
+        "review_false_proxy_false": 1,
+        "review_false_proxy_true": 1,
+        "review_true_proxy_false": 6,
+        "review_true_proxy_true": 24
+      },
+      "count": {
+        "review_false_proxy_false": 2,
+        "review_false_proxy_true": 1,
+        "review_true_proxy_false": 2,
+        "review_true_proxy_true": 27
+      },
+      "relation": {
+        "review_false_proxy_false": 5,
+        "review_false_proxy_true": 1,
+        "review_none_proxy_false": 2,
+        "review_none_proxy_true": 1,
+        "review_true_proxy_false": 1,
+        "review_true_proxy_true": 6
+      },
+      "text": {
+        "review_false_proxy_false": 8,
+        "review_false_proxy_true": 3,
+        "review_none_proxy_false": 1,
+        "review_none_proxy_true": 1,
+        "review_true_proxy_false": 1,
+        "review_true_proxy_true": 50
+      }
+    }
+  },
+  "results_sha256": "efb5014d0274e6aa75ff4891fe263387484684b1fc82d562971b1ae0761d1d22",
+  "safe_visibility_only_gain_cases": {
+    "geneval@1": [],
+    "ocr@1": [],
+    "selected": []
+  },
+  "scope": "Post-unblind descriptive diagnosis against frozen implementing-assistant labels; no rule tuning or new validation",
+  "script_sha256": "4cc28f41482f87f215dda8071a40f874bc2f6909036decb9047db08db06ef0d4",
+  "selected_complete_scene_changes": [
+    {
+      "after": true,
+      "before": false,
+      "case": 6,
+      "classification": "safe_repair"
+    },
+    {
+      "after": false,
+      "before": true,
+      "case": 10,
+      "classification": "unsafe"
+    },
+    {
+      "after": true,
+      "before": false,
+      "case": 34,
+      "classification": "safe_repair"
+    },
+    {
+      "after": true,
+      "before": false,
+      "case": 42,
+      "classification": "safe_repair"
+    },
+    {
+      "after": true,
+      "before": false,
+      "case": 53,
+      "classification": "unknown"
+    },
+    {
+      "after": true,
+      "before": false,
+      "case": 58,
+      "classification": "safe_repair"
+    }
+  ]
+}

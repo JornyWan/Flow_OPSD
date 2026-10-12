@@ -1,0 +1,7 @@
+{
+  "evaluation_run": "/midtier/minilab/scratch/chw4026/projects/side_project/generative/opd_related/opd_lab/runs/le3_eval_001",
+  "evaluation_worker_sha256": "8e514e81ace5e0050ba4417c2f7f09637e61d66f8bf1f4ad2ad025399465969d",
+  "plan_sha256": "25a05aefaf4b4b027bfce096079a71e15d398c39a72afc093e759eabb2df6985",
+  "protocol_sha256": "97eb423d3ef6ec2ee4416db65a97fa1e285d35c26a7037a9aacd2c669a0444fd",
+  "training_run": "/midtier/minilab/scratch/chw4026/projects/side_project/generative/opd_related/opd_lab/runs/le3_probe_001"
+}

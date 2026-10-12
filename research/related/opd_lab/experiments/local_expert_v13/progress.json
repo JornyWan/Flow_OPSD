@@ -1,0 +1,16 @@
+{
+  "additional_posthoc_tests_passed": 2,
+  "allocated_gpu_hours": 0.06277777777777778,
+  "completed_queries": 64,
+  "confirmation_launched": false,
+  "development_readiness_passed": false,
+  "full_suite_tests_passed": 78,
+  "generated_images": 0,
+  "input_images": 192,
+  "job_id": "1049204",
+  "next": "Freeze and audit paired repair/damage evidence with order and identical-image controls before fresh-seed confirmation.",
+  "optimizer_updates": 0,
+  "pending_jobs": [],
+  "stage": "complete",
+  "updated_at_utc": "2026-09-14T02:36:45.397037+00:00"
+}

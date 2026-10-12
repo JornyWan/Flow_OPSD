@@ -1,0 +1,21 @@
+{
+  "allocated_gpu_hours": 0.06833333333333333,
+  "expanded_safe_states": 3,
+  "fixed_index3_inventory_states": 9,
+  "fixed_safe_states": 1,
+  "gpu_job": "1049670",
+  "gpu_state": "COMPLETED",
+  "historical_plus_new_inventory_states": 11,
+  "new_images_generated": 156,
+  "new_images_reviewed": 156,
+  "new_targets": 3,
+  "new_teacher_queries": 72,
+  "next": "NEXT.md",
+  "next_phase_prepared": false,
+  "optimizer_updates": 0,
+  "results": "STATUS.md",
+  "stage": "complete",
+  "tests_passed": 102,
+  "unresolved_expanded_states": 4,
+  "updated_utc": "2026-09-14T19:15:51.520163+00:00"
+}

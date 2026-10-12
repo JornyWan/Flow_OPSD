@@ -1,0 +1,301 @@
+diff --git a/config/opd.py b/config/opd.py
+--- a/config/opd.py
++++ b/config/opd.py
+@@ -1285,2 +1285,56 @@ def rtc_gn_nodual():
+     """消融: 关掉负分支。"""
+     return _rtc("gn", "GN-NODUAL", dual=False)
++
++
++# CODEX-0002: direct PickScore improvement with external-teacher retention
++# constraints.  This is intentionally a control-flow smoke configuration, not
++# a performance run.  The released Student is mandatory because the retention
++# baseline is defined relative to that exact initialization.
++def codex_cr_smoke():
++    # CODEX-0018: smoke 只能用于验证代码正确与否,绝不能产出任何测量值或结论。
++    # 0015/0016 曾因守卫查 codex_cr_prod、启动行写死 codex_cr_smoke 而静默跑了 smoke 数据,
++    # 守卫全绿但结论全部作废。此处在**被启动的进程内**硬性拦住,外部守卫做不到这件事。
++    if os.environ.get("OPD_ALLOW_SMOKE", "") != "1":
++        raise ValueError("codex_cr_smoke 仅供代码正确性验证;确需运行必须显式设 OPD_ALLOW_SMOKE=1")
++    config = mopd()
++    _init = os.environ.get("OPD_STUDENT_INIT", "").strip()
++    _run_dir = os.environ.get("CODEX_CR_RUN_DIR", "").strip()
++    if not _init:
++        raise ValueError("CODEX-0002 requires OPD_STUDENT_INIT")
++    if not _run_dir:
++        raise ValueError("CODEX-0002 requires CODEX_CR_RUN_DIR")
++
++    config.train.lora_path = _init
++    config.train.rtc = True
++    config.train.rtc_precond = "raw"
++    config.train.rtc_sigma = 0.278
++    config.train.rtc_rho = 0.10
++    config.train.rtc_nascent = 2
++    config.train.rtc_beta = 0.5
++    config.train.rtc_dual = True
++    config.train.rtc_margin = 0.0
++    config.train.itopd_reward_fn = "pickscore"
++
++    config.train.constrained_retention = True
++    config.train.cr_reward_teacher_idx = 0
++    config.train.cr_retention_teacher_indices = [1, 2]
++    config.train.cr_rel_tol = float(os.environ.get("CODEX_CR_REL_TOL", "0.02"))
++    config.train.cr_abs_tol = float(os.environ.get("CODEX_CR_ABS_TOL", "1e-8"))
++    config.train.cr_direct_weight = float(os.environ.get("CODEX_CR_DIRECT_WEIGHT", "1.0"))
++    config.train.cr_retention_weight = float(os.environ.get("CODEX_CR_RETENTION_WEIGHT", "1.0"))
++
++    # Keep three semantically named slots and their real external teachers, but
++    # use the same tiny prompt set and no asynchronous proxy scorers.  The smoke
++    # tests optimization plumbing; it does not estimate task performance.
++    _tiny = "/midtier/minilab/scratch/chw4026/projects/side_project/generative/opd_related/testdata/pickscore"
++    for _tc in config.train.teachers:
++        _tc["dataset"] = _tiny
++        _tc["prompt_fn"] = "general_ocr"
++        _tc["proxy_reward"] = {}
++    config.num_epochs = int(os.environ.get("OPD_NUM_EPOCHS", "3"))
++    config.eval_freq = 0
++    config.save_freq = 1
++    config.run_name = "[CODEX-0002-CR-SMOKE]"
++    config.save_dir = _run_dir
++    config.save_eval_dir = os.path.join(_run_dir, "eval_images")
++    return config
+diff --git a/scripts/train_sd3_opd.py b/scripts/train_sd3_opd.py
+--- a/scripts/train_sd3_opd.py
++++ b/scripts/train_sd3_opd.py
+@@ -1060,5 +1060,30 @@ def main(_):
+     rtc_dual = bool(getattr(config.train, "rtc_dual", True))       # 负分支(排斥)
+     rtc_margin = float(getattr(config.train, "rtc_margin", 0.0))   # 采纳门限: R(y+) >= R(y0)+margin
++    cr = bool(getattr(config.train, "constrained_retention", False))
++    cr_reward_teacher_idx = int(getattr(config.train, "cr_reward_teacher_idx", 0))
++    cr_retention_teacher_indices = tuple(
++        int(x) for x in getattr(config.train, "cr_retention_teacher_indices", [])
++    )
++    cr_rel_tol = float(getattr(config.train, "cr_rel_tol", 0.02))
++    cr_abs_tol = float(getattr(config.train, "cr_abs_tol", 1e-8))
++    cr_direct_weight = float(getattr(config.train, "cr_direct_weight", 1.0))
++    cr_retention_weight = float(getattr(config.train, "cr_retention_weight", 1.0))
++    if cr:
++        if not rtc:
++            raise ValueError("constrained_retention requires rtc target construction")
++        if cr_reward_teacher_idx in cr_retention_teacher_indices:
++            raise ValueError("direct-reward and retention slots must be disjoint")
++        _cr_indices = (cr_reward_teacher_idx, *cr_retention_teacher_indices)
++        if any(x < 0 or x >= n_t for x in _cr_indices):
++            raise ValueError(f"invalid constrained-retention slot(s) {_cr_indices} for n_t={n_t}")
++        if snr_weight:
++            raise ValueError("CODEX-0002 constraint is defined on unweighted step KL; disable Min-SNR")
++        if accelerator.is_main_process:
++            logger.info(
++                f"[CODEX-CR] direct_slot={cr_reward_teacher_idx} retention_slots="
++                f"{cr_retention_teacher_indices} rel_tol={cr_rel_tol} abs_tol={cr_abs_tol} "
++                f"weights=({cr_direct_weight},{cr_retention_weight})"
++            )
+     if rtc and accelerator.is_main_process:
+         logger.info(f"[RTC] precond={rtc_precond} sigma*={rtc_sigma} rho={rtc_rho} "
+                     f"n_ascent={rtc_nascent} beta={rtc_beta} dual={rtc_dual} margin={rtc_margin}")
+@@ -1081,5 +1106,9 @@ def main(_):
+                 _p.data.copy_(_v)
+         return old
++
++    # Frozen once, before any resume state is restored: this is always the
++    # released Student initialization, never a moving self-distillation target.
++    cr_reference_snapshot = [p.detach().clone() for p in transformer_trainable_parameters] if cr else None
+     if ((vteacher and vteacher_mode == "reward")
+             or bool(getattr(config.train, "itopd", False))
+             or bool(getattr(config.train, "diag2_alpha", False))
+@@ -2138,6 +2167,48 @@ def main(_):
+                 finally:
+                     _swap_params(transformer_trainable_parameters, _saved)
+ 
++            cr_reference_prev_sample_means = None
++            if cr:
++                # Same current on-policy states, prompts, time steps and CFG as
++                # the trainable Student.  Only the LoRA parameter vector is
++                # swapped to the frozen released-Student reference.
++                _saved = _swap_params(transformer_trainable_parameters, cr_reference_snapshot)
++                try:
++                    with autocast():
++                        with torch.no_grad():
++                            _cr_ref = []
++                            for j in range(config.sample.num_steps):
++                                _cr_ref.append(compute_teacher_step_mean(
++                                    transformer=transformer,
++                                    pipeline=pipeline,
++                                    latents_at_j=latents[:, j],
++                                    next_latent_at_j=latents[:, j + 1],
++                                    timestep_at_j=timesteps[:, j],
++                                    cond_embeds=prompt_embeds,
++                                    cond_pooled=pooled_prompt_embeds,
++                                    neg_embeds=sample_neg_prompt_embeds_b,
++                                    neg_pooled=sample_neg_pooled_prompt_embeds_b,
++                                    guidance_scale=config.sample.guidance_scale,
++                                    noise_level=config.sample.noise_level,
++                                    solver=sample_solver,
++                                    deterministic=sample_deterministic,
++                                ))
++                            cr_reference_prev_sample_means = torch.stack(_cr_ref, dim=1).float()
++                            if epoch == 0:
++                                _ref_rel = (
++                                    (cr_reference_prev_sample_means - latents[:, 1:].float())
++                                    .flatten(2).norm(dim=2)
++                                    / latents[:, 1:].float().flatten(2).norm(dim=2).clamp(min=1e-12)
++                                ).max()
++                                if accelerator.is_main_process:
++                                    logger.info(f"[CODEX-CR] epoch0 reference/current max_rel={float(_ref_rel):.6e}")
++                                if float(_ref_rel) > 1e-2:
++                                    raise RuntimeError(
++                                        f"frozen-reference replay disagrees with epoch-0 Student: max_rel={float(_ref_rel):.6e}"
++                                    )
++                finally:
++                    _swap_params(transformer_trainable_parameters, _saved)
++
+             batch_proxy_fn = proxy_reward_fns_per_teacher[teacher_idx]
+             if batch_proxy_fn is None:
+                 monitor_fut = None
+@@ -2176,5 +2247,7 @@ def main(_):
+             if retain_prev_sample_means is not None:
+                 _sample_dict["retain_prev_sample_means"] = retain_prev_sample_means
++            if cr_reference_prev_sample_means is not None:
++                _sample_dict["cr_reference_prev_sample_means"] = cr_reference_prev_sample_means
+             if rtc_pack is not None:
+                 _sample_dict.update(rtc_pack)
+             samples.append(_sample_dict)
+@@ -2359,6 +2432,8 @@ def main(_):
+ 
+             pipeline.transformer.train()
+             info = defaultdict(list)
++            _cr_direct_probe_done = False
++            _cr_retention_probe_done = False
+             for i, sample in tqdm(
+                 list(enumerate(samples_batched)),
+                 desc=f"Epoch {epoch}.{inner_epoch}: training",
+@@ -2391,7 +2466,9 @@ def main(_):
+                                     transformer, pipeline, sample, j, embeds, pooled_embeds, config
+                                 )
+ 
+-                        if rtc:
++                        _cr_direct_loss = prev_sample_mean.sum() * 0.0
++
++                        if rtc and not cr:
+                             if not globals().get("_rtc_seen", False):
+                                 globals()["_rtc_seen"] = True
+                                 if accelerator.is_main_process:
+@@ -2882,6 +2959,68 @@ def main(_):
+                         )
+                         per_step_kl_scalar = per_step_kl_per_teacher_scalar.sum(dim=1)
+ 
++                        if cr:
++                            _tidx = sample["teacher_idx"].long()
++                            _ref_mean = sample["cr_reference_prev_sample_means"][:, j].detach().float()
++                            _ref_delta = _ref_mean.unsqueeze(1) - teacher_prev_mean.float()
++                            if float(config.sample.noise_level) <= 0.0:
++                                _ref_kl = 0.5 * (_ref_delta ** 2)
++                            else:
++                                _ref_sigma_sq = (std_dev_t.float() ** 2).clamp(min=1e-8).unsqueeze(1)
++                                _ref_kl = (_ref_delta ** 2) / (2.0 * _ref_sigma_sq)
++                            _ref_kl = _ref_kl.mean(dim=tuple(range(2, _ref_kl.ndim))).sum(dim=1)
++
++                            _ret_mask = torch.zeros_like(per_step_kl_scalar)
++                            for _slot in cr_retention_teacher_indices:
++                                _ret_mask = _ret_mask + (_tidx == _slot).to(_ret_mask.dtype)
++                            _ret_denom = _ret_mask.sum().clamp(min=1.0)
++                            _threshold = (1.0 + cr_rel_tol) * _ref_kl + cr_abs_tol
++                            _violation = per_step_kl_scalar - _threshold
++                            _ret_per_sample = torch.relu(_violation)
++                            _cr_retention_loss = (_ret_mask * _ret_per_sample).sum() / _ret_denom
++
++                            _direct_mask = (
++                                (_tidx == cr_reward_teacher_idx)
++                                & (sample["rtc_jq"].long() == j)
++                            ).to(prev_sample_mean.dtype)
++                            if bool(_direct_mask.any()):
++                                _z = sample["latents"][:, j].float()
++                                _sq = float(pipeline.scheduler.sigmas[j])
++                                _dsg = float(pipeline.scheduler.sigmas[j + 1]) - _sq
++                                if abs(_dsg) < 1e-8:
++                                    raise RuntimeError(f"zero sigma interval at RTC query step {j}")
++                                _yth = _z - _sq * (prev_sample_mean.float() - _z) / _dsg
++                                _y0b = sample["rtc_y0"].float()
++                                _ypb = sample["rtc_yp"].float()
++                                _ymb = sample["rtc_ym"].float()
++                                _ap = sample["rtc_accp"].float().view(-1, *([1] * (_yth.ndim - 1)))
++                                _am = sample["rtc_accm"].float().view(-1, *([1] * (_yth.ndim - 1)))
++                                _ypos = rtc_beta * _yth + (1.0 - rtc_beta) * _y0b
++                                _yneg = (1.0 + rtc_beta) * _y0b - rtc_beta * _yth
++                                _rdim = tuple(range(1, _yth.ndim))
++                                with torch.no_grad():
++                                    _gp = (_ypos - _ypb).abs().mean(dim=_rdim, keepdim=True).clamp(min=1e-5)
++                                    _gn = (_yneg - _ymb).abs().mean(dim=_rdim, keepdim=True).clamp(min=1e-5)
++                                _lp = (_ap * (_ypos - _ypb) ** 2 / _gp).mean(dim=_rdim)
++                                _ln = (_am * (_yneg - _ymb) ** 2 / _gn).mean(dim=_rdim)
++                                if not rtc_dual:
++                                    _ln = _ln * 0.0
++                                _direct_per_sample = 0.5 * _lp + 0.5 * _ln
++                                _cr_direct_loss = (
++                                    _direct_mask * _direct_per_sample
++                                ).sum() / _direct_mask.sum().clamp(min=1.0)
++                                info["cr_direct_loss"].append(_cr_direct_loss.detach())
++
++                            _cur_ret = (_ret_mask * per_step_kl_scalar).sum() / _ret_denom
++                            _ref_ret = (_ret_mask * _ref_kl).sum() / _ret_denom
++                            info["cr_retention_loss"].append(_cr_retention_loss.detach())
++                            info["cr_current_teacher_kl"].append(_cur_ret.detach())
++                            info["cr_reference_teacher_kl"].append(_ref_ret.detach())
++                            info["cr_violation"].append(((_ret_mask * _violation).sum() / _ret_denom).detach())
++                            info["cr_active_frac"].append(
++                                ((_ret_mask * (_violation > 0).to(_ret_mask.dtype)).sum() / _ret_denom).detach()
++                            )
++
+                         if retain_w > 0.0 and "retain_prev_sample_means" in sample:
+                             # 自蒸馏锚: 与 teacher 项同一形式(ODE 用 0.5*d^2, SDE 除以 2 sigma^2),
+                             # 只是目标换成"retain_every 个 epoch 之前的自己",且没有 teacher 维度。
+@@ -2910,7 +3049,37 @@ def main(_):
+                                 w_snr = torch.clamp(((1.0 - t_norm) / t_norm) ** 2, max=snr_gamma) / snr_gamma
+                             per_step_kl_scalar = per_step_kl_scalar * w_snr
+ 
+-                        if ca_opd and "teacher_idx" in sample:
++                        if cr:
++                            distill_loss = _cr_retention_loss
++                            loss = (
++                                cr_direct_weight * _cr_direct_loss
++                                + cr_retention_weight * _cr_retention_loss
++                            )
++
++                            # One branch-wise parameter-gradient probe per rank
++                            # and epoch.  It is diagnostic only and retains the
++                            # graph for the real combined backward below.
++                            if bool(_direct_mask.any()) and not _cr_direct_probe_done:
++                                _gd = torch.autograd.grad(
++                                    _cr_direct_loss, transformer_trainable_parameters,
++                                    retain_graph=True, allow_unused=True,
++                                )
++                                _gdn = torch.sqrt(sum(
++                                    (g.detach().double() ** 2).sum() for g in _gd if g is not None
++                                )).float()
++                                info["cr_direct_param_grad_norm"].append(_gdn)
++                                _cr_direct_probe_done = True
++                            if bool(_ret_mask.any()) and not _cr_retention_probe_done:
++                                _gr = torch.autograd.grad(
++                                    _cr_retention_loss, transformer_trainable_parameters,
++                                    retain_graph=True, allow_unused=True,
++                                )
++                                _grn = torch.sqrt(sum(
++                                    (g.detach().double() ** 2).sum() for g in _gr if g is not None
++                                )).float()
++                                info["cr_retention_param_grad_norm"].append(_grn)
++                                _cr_retention_probe_done = True
++                        elif ca_opd and "teacher_idx" in sample:
+                             # CA-OPD: adaptive Chebyshev (min-max) reweighting over teachers so the
+                             # student is pulled toward the Pareto frontier rather than the (Pareto-
+                             # dominated) uniform teacher-mean velocity. Weights come from an EMA of
+@@ -2941,9 +3110,9 @@ def main(_):
+                             info["ca_opd_w_max"].append(w.max().detach())
+                         else:
+                             distill_loss = per_step_kl_scalar.mean()
+-                        loss = distill_loss
++                            loss = distill_loss
+ 
+-                        info["policy_loss"].append(distill_loss)
++                        info["policy_loss"].append(loss)
+                         info["train_reverse_kl"].append(per_step_kl_scalar.mean())
+                         info["loss"].append(loss)
+ 

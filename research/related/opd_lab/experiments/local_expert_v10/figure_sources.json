@@ -1,0 +1,127 @@
+{
+  "apple_endpoints_sha256": "ac516f0ce9ff222a9284d160d06744b6f02762c100a25b2e491d504561099940",
+  "fitting_sha256": "f0da71b5b3ebc0465989f08dbe0bb009043a5ce76f846f2fd472c8c6d9c4eedf",
+  "panels": [
+    {
+      "observation": {
+        "case": 16,
+        "clauses": {
+          "relation": false,
+          "text": true
+        },
+        "full_visibility": true,
+        "notes": "Apple is primarily below the bowl, within its horizontal extent, not clearly to its right. Both objects complete; word is printed on bowl rather than a sign above.",
+        "visible_text": "CLOUD"
+      },
+      "sha256": "fef2f79986369c651d9324dcb465d7f57d4483fb0a33912eaf51e717d2db1918",
+      "source": "runs/le9_requery_001/query_results/34fc6b396a790f0e9bc7c0cf/fa765e0b11a1cc8180f8.png",
+      "title": "Phase9 baseline"
+    },
+    {
+      "observation": {
+        "case": 12,
+        "clauses": {
+          "relation": false,
+          "text": true
+        },
+        "full_visibility": true,
+        "notes": "Apple is directly in front of/below the bowl, within its horizontal extent, not clearly right.",
+        "visible_text": "CLOUD"
+      },
+      "sha256": "7ae31f47e15ad43ab877292430ad72e6d219ae9bbe3cc29f0424963f2e9905b8",
+      "source": "runs/le10_fit_001/query_results/ac987b1ad8a0d942632523a1/bde95bc336e9fd02e710.png",
+      "title": "sparse32: local"
+    },
+    {
+      "observation": {
+        "case": 19,
+        "clauses": {
+          "relation": null,
+          "text": true
+        },
+        "full_visibility": true,
+        "notes": "Lower apple is clearly right of lower bowl. The CLOUD-bearing object above has a second bowl-like profile; unsure whether it is a sign or another bowl. Exactly-one-bowl relation scene is therefore uncertain, not a pass.",
+        "visible_text": "CLOUD"
+      },
+      "sha256": "1a209e2567240d007ba0fe70d6399d82d5ac3de826838e683d4e0db66a1614f7",
+      "source": "runs/le10_fit_001/query_results/284c15099dc526af431905a6/5a94f30c016da68c3669.png",
+      "title": "sparse320: local"
+    },
+    {
+      "observation": {
+        "case": 3,
+        "clauses": {
+          "relation": true,
+          "text": true
+        },
+        "full_visibility": true,
+        "notes": "One small complete bowl at lower left and one apple clearly at right; low contrast, correct sign above.",
+        "visible_text": "CLOUD"
+      },
+      "sha256": "06efe146e75fd285ce9efb974f68ff35f17b49404e31f5a0cbe349cfe4813cd6",
+      "source": "runs/le10_fit_001/query_results/cc108cbe62e6358230b80342/ac1bc9b492fde3ce94c0.png",
+      "title": "dense32: local"
+    },
+    {
+      "observation": {
+        "case": 16,
+        "clauses": {
+          "relation": true,
+          "text": true
+        },
+        "full_visibility": true,
+        "notes": "One complete pale apple with stem clearly right of one complete white bowl. Correct word on separate sign above. Pale color and low contrast remain, but no color was requested.",
+        "visible_text": "CLOUD"
+      },
+      "sha256": "978839fa6588a17d25b7d5ee736179c9195332fe8f757a02a58cc716f17e8529",
+      "source": "runs/le9_requery_001/query_results/0e0f246db5de18bde8796a32/8cf8e8456dbd875f1312.png",
+      "title": "Phase9 verified target"
+    },
+    {
+      "observation": {
+        "case": 26,
+        "clauses": {
+          "relation": true,
+          "text": true
+        },
+        "full_visibility": true,
+        "notes": "One complete white bowl and one pale apple clearly at right, with correct word above. Low contrast remains.",
+        "visible_text": "CLOUD"
+      },
+      "sha256": "7eac94fa76f718bcbd3693021a7548f9063ce0dc6ccc909cc67b01bf9f82c760",
+      "source": "runs/le10_fit_001/query_results/eef23223638a69ff075d6de8/0ee92bf068311eacca44.png",
+      "title": "sparse32: full"
+    },
+    {
+      "observation": {
+        "case": 7,
+        "clauses": {
+          "relation": true,
+          "text": true
+        },
+        "full_visibility": true,
+        "notes": "One complete bowl at left and one pale apple clearly right. CLOUD identifiable with irregular letter spacing.",
+        "visible_text": "CLOUD"
+      },
+      "sha256": "668916dd090e9162ef5d6896737532e50e45e7bd9be8ad1c8e5f8b3677c683ae",
+      "source": "runs/le10_fit_001/query_results/2be82bcc77ba3954207f6ceb/9cff0b4bfdaf7d2c0bcf.png",
+      "title": "sparse320: full"
+    },
+    {
+      "observation": {
+        "case": 11,
+        "clauses": {
+          "relation": false,
+          "text": true
+        },
+        "full_visibility": true,
+        "notes": "Two separate bowls are visible; apple sits in front of the right-hand bowl. This fails the requested exactly-one-bowl relation scene.",
+        "visible_text": "CLOUD"
+      },
+      "sha256": "9589da3cbf94a23d49705ed360d19bfef2f7bbc96726928684843aeacfc4bf0b",
+      "source": "runs/le10_fit_001/query_results/17970423bdccad0fff329200/c2e7091a8710e424981f.png",
+      "title": "dense32: full"
+    }
+  ],
+  "script_sha256": "c6af9b182ea93107ea2977aab9c8668d79266a3f2f3f161a9516152670a5d864"
+}

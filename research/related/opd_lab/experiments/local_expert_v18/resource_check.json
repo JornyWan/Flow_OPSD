@@ -1,0 +1,18 @@
+{
+  "attempt001_plan_sha256": "dfe42a457aff52aa985495ce4e5bd179e6bf727394209714daf609545c354a35",
+  "attempt002_plan_sha256": "dfe42a457aff52aa985495ce4e5bd179e6bf727394209714daf609545c354a35",
+  "h100_allocated_gpu_hours": 0.010833333333333334,
+  "h100_failed_gate": "first stored intermediate state did not reproduce bitwise",
+  "h100_failure": {
+    "elapsed_seconds": 32.42695853114128,
+    "error": "AssertionError()"
+  },
+  "h100_job": "1049852",
+  "h100_no_optimizer_or_new_evaluation": true,
+  "h100_node": "ai-gpu14",
+  "identical_scientific_plan": true,
+  "identical_worker": true,
+  "l40_fallback_job": "1049851",
+  "meaning": "hardware-equivalence qualification failed before learning, not a method result",
+  "tolerances_unchanged": true
+}

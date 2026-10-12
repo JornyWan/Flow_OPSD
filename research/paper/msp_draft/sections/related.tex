@@ -1,0 +1,33 @@
+\section{Related Work}
+\label{sec:related}
+
+\paragraph{Reward-to-target interfaces.} Differentiable-reward fine-tuning of diffusion
+models backpropagates a reward through the decoder into the
+sampler~\citep{refl2023,draft2023}. \opsd~\citep{opsd2026} instead converts the reward
+gradient into a \emph{detached} target for an intermediate clean-output prediction and
+fits it as a regression, which removes the reward graph from the fitting step. Our work
+takes that interface as given and studies a design choice inside it -- where the target is
+placed -- rather than replacing the interface.
+
+\paragraph{On-policy distillation.} DanceOPD~\citep{danceopd2026},
+DiffusionOPD~\citep{diffusionopd2026} and FlowOPD~\citep{flowopd2026} match a frozen
+teacher field at states drawn from the current policy. \MSP shares their fitting interface
+but not their supervision: the target is constructed from a reward, once, and then reused
+across states of the same trajectory.
+
+\paragraph{Few-step sampling.} A separate line of work distills a diffusion model into a
+few-step sampler directly (consistency and distribution-matching
+objectives~\citep{lcm2023,dmd2024}, adversarial few-step
+models~\citep{sdxlturbo2023}). \textbf{We do not compete with these methods and do not
+claim a state-of-the-art few-step generator.} Our claim is internal to reward
+distillation: given that one is running an on-policy reward-distillation procedure, the
+placement of the reward target materially changes how the resulting model behaves under a
+reduced sampling budget, and one placement strategy improves both regimes at once. The two
+lines are orthogonal and, in principle, composable; we leave that combination to future
+work.
+
+\paragraph{Effect-size calibration.} Reported gains in reward alignment are often of the
+same order as seed-to-seed variation. We follow the practice of measuring the null
+directly~\citep{bouthillier2021accounting} by evaluating many unmodified baselines against
+one another, and we calibrate which held-out evaluator actually tracks the training
+objective before using it. Both are described in the appendix.

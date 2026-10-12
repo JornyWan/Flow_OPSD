@@ -1,0 +1,9 @@
+{
+  "frozen_before_key_join": true,
+  "key_sha256": "63c47585e62f5124f20d3cd87685b0686cc187ae3ee87950d7608c65f7e397fb",
+  "observations_sha256": "4af2f1d1602d81e6fce9d64a5fe0e98d33b21712462d4408c75aa8b0a93f9daf",
+  "reviewer": "implementing assistant, arm/score-blinded; familiar old cases; not independent human review",
+  "rubric_sha256": "d73c92da241e482ac073443514d5374afd091da54428d6a6c49558cfc25052b5",
+  "scope": "all20 update128 endpoints; no checkpoint or image selection",
+  "time_utc": "2026-09-13T05:44:40.511861+00:00"
+}

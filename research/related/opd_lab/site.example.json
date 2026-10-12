@@ -1,0 +1,11 @@
+{
+  "python": "/absolute/path/to/diffusionopd/bin/python",
+  "model": "/absolute/path/to/stable-diffusion-3.5-medium",
+  "teachers": {
+    "pickscore": "/absolute/path/to/DiffusionOPD/AesTeacher/lora",
+    "ocr": "/absolute/path/to/DiffusionOPD/OCRTeacher/lora",
+    "geneval": "/absolute/path/to/DiffusionOPD/GenEvalTeacher/lora"
+  },
+  "reward_ckpts": "/absolute/path/to/reward_ckpts",
+  "pickapic": "/absolute/path/to/verified/pickapic"
+}

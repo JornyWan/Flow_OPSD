@@ -1,0 +1,83 @@
+{
+  "time_utc": "2026-09-15T03:53:35.612992+00:00",
+  "jobs": [
+    {
+      "job_id": "1049851",
+      "stage": "le18_supervision",
+      "run": "/midtier/minilab/scratch/chw4026/projects/side_project/generative/opd_related/opd_lab/runs/le18_supervision_001",
+      "state": "FAILED",
+      "elapsed_seconds": 567,
+      "allocated_tres": "billing=4,cpu=4,gres/gpu:l40=1,mem=96G,node=1",
+      "exit_code": "1:0",
+      "nodes": "ai-gpu12",
+      "allocated_gpu_hours": 0.1575
+    },
+    {
+      "job_id": "1049852",
+      "stage": "le18_h100_equivalence",
+      "run": "/midtier/minilab/scratch/chw4026/projects/side_project/generative/opd_related/opd_lab/runs/le18_supervision_002",
+      "state": "FAILED",
+      "elapsed_seconds": 39,
+      "allocated_tres": "billing=4,cpu=4,gres/gpu:h100=1,mem=96G,node=1",
+      "exit_code": "1:0",
+      "nodes": "ai-gpu14",
+      "allocated_gpu_hours": 0.010833333333333334
+    },
+    {
+      "job_id": "1049871",
+      "stage": "le18_review_prepare",
+      "run": "/midtier/minilab/scratch/chw4026/projects/side_project/generative/opd_related/opd_lab/runs/le18_supervision_001",
+      "state": "COMPLETED",
+      "elapsed_seconds": 4,
+      "allocated_tres": "billing=4,cpu=4,mem=16G,node=1",
+      "exit_code": "0:0",
+      "nodes": "ai-cpu08",
+      "allocated_gpu_hours": 0.0
+    },
+    {
+      "job_id": "1050293",
+      "stage": "le18_replay_check",
+      "run": "/midtier/minilab/scratch/chw4026/projects/side_project/generative/opd_related/opd_lab/runs/le18_repeatability_001",
+      "state": "COMPLETED",
+      "elapsed_seconds": 144,
+      "allocated_tres": "billing=4,cpu=4,gres/gpu:l40=1,mem=96G,node=1",
+      "exit_code": "0:0",
+      "nodes": "ai-gpu12",
+      "allocated_gpu_hours": 0.04
+    },
+    {
+      "job_id": "1050296",
+      "stage": "le18_supervision_deterministic",
+      "run": "/midtier/minilab/scratch/chw4026/projects/side_project/generative/opd_related/opd_lab/runs/le18_supervision_003",
+      "state": "TIMEOUT",
+      "elapsed_seconds": 2710,
+      "allocated_tres": "billing=4,cpu=4,gres/gpu:l40=1,mem=96G,node=1",
+      "exit_code": "0:0",
+      "nodes": "ai-gpu12",
+      "allocated_gpu_hours": 0.7527777777777778
+    },
+    {
+      "job_id": "1050297",
+      "stage": "le18_postprocess_003",
+      "run": "/midtier/minilab/scratch/chw4026/projects/side_project/generative/opd_related/opd_lab/runs/le18_supervision_003",
+      "state": "COMPLETED",
+      "elapsed_seconds": 4,
+      "allocated_tres": "billing=4,cpu=4,mem=16G,node=1",
+      "exit_code": "0:0",
+      "nodes": "ai-cpu07",
+      "allocated_gpu_hours": 0.0
+    },
+    {
+      "job_id": "1050332",
+      "stage": "le18_eval_completion",
+      "run": "/midtier/minilab/scratch/chw4026/projects/side_project/generative/opd_related/opd_lab/runs/le18_completion_001",
+      "state": "COMPLETED",
+      "elapsed_seconds": 255,
+      "allocated_tres": "billing=4,cpu=4,gres/gpu:l40=1,mem=96G,node=1",
+      "exit_code": "0:0",
+      "nodes": "ai-gpu13",
+      "allocated_gpu_hours": 0.07083333333333333
+    }
+  ],
+  "allocated_gpu_hours_including_failed_attempts_so_far": 1.0319444444444446
+}

@@ -1,0 +1,30 @@
+% 主表 — 自动生成,勿手改。源:paper_figs/make_table_main.py
+\begin{table}[t]
+\centering
+\setlength{\tabcolsep}{3.5pt}
+\caption{\textbf{Main results on DrawBench} (SD3.5-Medium, $100$ optimizer updates, A40 eval,
+$n{=}1000$ prompts). Absolute scores; \textbf{bold}: best, \underline{underline}: second best.
+Composite $=$ PickScore$/26+$CLIP$+$HPSv2 is the reported metric; ImageReward is the held-out
+evaluator and is never trained on. Rows marked ``--'' are baselines we have not run yet.
+The (A) row was trained on $3$ processes rather than $4$; the offset this induces is $0.17$ MDE
+(App.~\ref{app:pairing}).}
+\label{tab:main}
+\resizebox{0.98\linewidth}{!}{%
+\begin{tabular}{l ccccc ccccc}
+\toprule
+& \multicolumn{5}{c}{\textbf{NFE}$=$\textbf{4}} & \multicolumn{5}{c}{\textbf{NFE}$=$\textbf{40}} \\
+\cmidrule(lr){2-6}\cmidrule(lr){7-11}
+\textbf{Method} & \textbf{PickScore} & \textbf{CLIP} & \textbf{HPSv2} & \textbf{Composite} & \textbf{ImageReward} & \textbf{PickScore} & \textbf{CLIP} & \textbf{HPSv2} & \textbf{Composite} & \textbf{ImageReward} \\
+\midrule
+SD3.5-M (no reward training) & 19.64 & 0.2170 & 0.1343 & 1.1069 & -1.705 & 20.59 & 0.2408 & 0.2070 & 1.2396 & -0.548 \\
+\quad + SFT on teacher rollouts & -- & -- & -- & -- & -- & -- & -- & -- & -- & -- \\
+\quad + few-step distillation (DMD2/TDM) & -- & -- & -- & -- & -- & -- & -- & -- & -- & -- \\
+\midrule
+\quad + OPSD \citep{opsd2026} \emph{(prior SOTA)} & 23.97 & 0.3100 & 0.3413 & 1.5732 & 1.304 & 24.66 & 0.3165 & 0.3704 & 1.6353 & 1.433 \\
+\quad\quad (A) query $\sigma$ 0.278$\to$0.465 & \underline{24.40} & 0.3189 & \underline{0.3592} & \underline{1.6166} & 1.416 & 24.67 & 0.3164 & 0.3685 & 1.6337 & 1.460 \\
+\quad\quad (B) rollout 10$\to$6 & 24.39 & 0.3167 & 0.3591 & 1.6138 & 1.404 & 24.70 & 0.3149 & 0.3701 & 1.6351 & 1.458 \\
+\quad\quad \textbf{(C) $+$ \MSP (ours)} & 24.26 & \underline{0.3208} & 0.3547 & 1.6085 & \underline{1.435} & \textbf{24.84} & \textbf{0.3228} & \textbf{0.3758} & \textbf{1.6538} & \textbf{1.507} \\
+\quad\quad (B$+$C) & \textbf{24.53} & \textbf{0.3212} & \textbf{0.3621} & \textbf{1.6268} & \textbf{1.456} & \underline{24.77} & \underline{0.3183} & \underline{0.3717} & \underline{1.6427} & \underline{1.469} \\
+\bottomrule
+\end{tabular}}
+\end{table}

@@ -1,0 +1,18 @@
+{
+  "executable": "/midtier/minilab/scratch/chw4026/projects/side_project/generative/opd_related/opd_lab/../../conda_envs/envs/mi_reasoning/bin/python",
+  "packages": {
+    "Pillow": "12.1.1",
+    "accelerate": "1.12.0",
+    "numpy": "2.2.6",
+    "safetensors": "0.7.0",
+    "tokenizers": "0.22.2",
+    "torch": "2.9.1",
+    "transformers": "4.57.6"
+  },
+  "python": "3.10.19 | packaged by conda-forge | (main, Jan 26 2026, 23:45:08) [GCC 14.3.0]",
+  "source_sha256": {
+    "/midtier/minilab/scratch/chw4026/projects/side_project/generative/conda_envs/envs/mi_reasoning/lib/python3.10/site-packages/transformers/models/qwen2_5_vl/modeling_qwen2_5_vl.py": "f5051523300145f66de080765c06bd8080350c15692c096d2c38e73fe9d03099",
+    "/midtier/minilab/scratch/chw4026/projects/side_project/generative/conda_envs/envs/mi_reasoning/lib/python3.10/site-packages/transformers/models/qwen2_5_vl/processing_qwen2_5_vl.py": "6a88107b85320ca9ee1154731530db584ba048a12aff1ebab2f7bdc77062184d",
+    "/midtier/minilab/scratch/chw4026/projects/side_project/generative/conda_envs/envs/mi_reasoning/lib/python3.10/site-packages/transformers/models/qwen2_vl/image_processing_qwen2_vl.py": "7820a0fcca107e75605e08d9b774285ca2b0316f857bc0225c779794705ecf4f"
+  }
+}

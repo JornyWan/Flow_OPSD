@@ -1,0 +1,29 @@
+{
+  "collection_index.json": {
+    "all_unchanged": true,
+    "artifacts": 581
+  },
+  "evaluation_preparation_index.json": {
+    "all_unchanged": true,
+    "artifacts": 379
+  },
+  "failed_fit_source": {
+    "artifacts": 140,
+    "exit_code": "1:0",
+    "state": "FAILED",
+    "unchanged_since_recovery": true
+  },
+  "fit_preparation_index.json": {
+    "all_unchanged": true,
+    "artifacts": 227
+  },
+  "phase19": {
+    "README_historical_revision": "9cbbf01",
+    "all_recorded_artifacts_unchanged": true,
+    "artifact_count": 263
+  },
+  "preparation_index.json": {
+    "all_unchanged": true,
+    "artifacts": 280
+  }
+}

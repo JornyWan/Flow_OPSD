@@ -1,0 +1,28 @@
+{
+  "time_utc": "2026-09-14T01:41:43.553970+00:00",
+  "jobs": [
+    {
+      "job_id": "1049193",
+      "stage": "le12_collect",
+      "run": "/midtier/minilab/scratch/chw4026/projects/side_project/generative/opd_related/opd_lab/runs/le12_collect_001",
+      "state": "FAILED",
+      "elapsed_seconds": 37,
+      "allocated_tres": "billing=4,cpu=4,gres/gpu:l40=1,mem=96G,node=1",
+      "exit_code": "1:0",
+      "nodes": "ai-gpu12",
+      "allocated_gpu_hours": 0.010277777777777778
+    },
+    {
+      "job_id": "1049199",
+      "stage": "le12_collect",
+      "run": "/midtier/minilab/scratch/chw4026/projects/side_project/generative/opd_related/opd_lab/runs/le12_collect_002",
+      "state": "COMPLETED",
+      "elapsed_seconds": 391,
+      "allocated_tres": "billing=4,cpu=4,gres/gpu:l40=1,mem=96G,node=1",
+      "exit_code": "0:0",
+      "nodes": "ai-gpu12",
+      "allocated_gpu_hours": 0.10861111111111112
+    }
+  ],
+  "allocated_gpu_hours_including_failed_attempts_so_far": 0.11888888888888889
+}

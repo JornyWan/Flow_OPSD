@@ -1,0 +1,82 @@
+{
+  "attempts": {
+    "001": {
+      "asset_audit": [],
+      "inputs_valid": 235,
+      "runtime_valid": true,
+      "schedules_rebuilt": true
+    },
+    "002": {
+      "asset_audit": [],
+      "inputs_valid": 235,
+      "runtime_valid": true,
+      "schedules_rebuilt": true
+    }
+  },
+  "historical_artifacts": {
+    "10": {
+      "README_historical_revision": "9dcc18b",
+      "all_recorded_artifacts_unchanged": true,
+      "artifact_count": 154
+    },
+    "11": {
+      "README_historical_revision": "3923b6a",
+      "all_recorded_artifacts_unchanged": true,
+      "artifact_count": 428
+    },
+    "12": {
+      "README_historical_revision": "8e9c655",
+      "all_recorded_artifacts_unchanged": true,
+      "artifact_count": 581
+    },
+    "13": {
+      "README_historical_revision": "bb804ca",
+      "all_recorded_artifacts_unchanged": true,
+      "artifact_count": 42
+    },
+    "14": {
+      "README_historical_revision": "a23a429",
+      "all_recorded_artifacts_unchanged": true,
+      "artifact_count": 53
+    },
+    "15": {
+      "README_historical_revision": "f1b9e79",
+      "all_recorded_artifacts_unchanged": true,
+      "artifact_count": 437
+    },
+    "16": {
+      "README_historical_revision": "198dc28",
+      "all_recorded_artifacts_unchanged": true,
+      "artifact_count": 327
+    },
+    "17": {
+      "README_historical_revision": "70a1213",
+      "all_recorded_artifacts_unchanged": true,
+      "artifact_count": 719
+    },
+    "6": {
+      "README_historical_revision": "e384a09",
+      "all_recorded_artifacts_unchanged": true,
+      "artifact_count": 153
+    },
+    "7": {
+      "README_historical_revision": "8c1e160",
+      "all_recorded_artifacts_unchanged": true,
+      "artifact_count": 716
+    },
+    "8": {
+      "README_historical_revision": "d9c392c",
+      "all_recorded_artifacts_unchanged": true,
+      "artifact_count": 99
+    },
+    "9": {
+      "README_historical_revision": "d9c392c",
+      "all_recorded_artifacts_unchanged": true,
+      "artifact_count": 97
+    }
+  },
+  "postprocess_snapshot_valid": true,
+  "stage": "prepared_only; primary GPU pending, no scientific result",
+  "tests_passed_after_callback": 107,
+  "tests_passed_before_freeze": 106
+}

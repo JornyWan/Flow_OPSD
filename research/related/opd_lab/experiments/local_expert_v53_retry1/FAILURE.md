@@ -1,0 +1,5 @@
+# Phase53 amended attempt failed during an action-metric audit
+
+Slurm1062827 failed after81 GPU seconds. Two endpoint images were saved; no task or quality scoring ran. The third training query failed exact scalar equality between a new CPU float64 MSE reduction and the historical CUDA float64 reduction. The failing actual scalar was not logged, so the size of the discrepancy is unknown. Cross-device scalar bitwise equality is an invalid portability requirement; this is a concrete audit-path defect, but we cannot yet conclude it is the only source of the observed mismatch.
+
+The first attempt's76 seconds plus this81 seconds total157/1200 seconds. No third GPU attempt is submitted under this execution amendment. Original worker, protocol, error and partial artifacts are retained; no efficacy result or completed experiment is reported. A future run needs same-device metric computation, explicit expected/actual/error records and a prospectively specified roundoff tolerance, with all image/model/prefix/evaluator checks unchanged.

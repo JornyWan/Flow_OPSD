@@ -1,0 +1,22 @@
+{
+  "all_noop_batches": {
+    "all_teacher": 0,
+    "certified": 32,
+    "random_matched": 32
+  },
+  "counts": {
+    "backward_queries": 4608,
+    "decode_images": 63,
+    "forward_behavior": 108,
+    "forward_examples": 11484,
+    "forward_geneval": 0,
+    "forward_ocr": 0,
+    "forward_student": 5634,
+    "text_encode_prompts": 12,
+    "verifier_images": 63
+  },
+  "plan_sha256": "cd54869b4a09b5002293025e4c7afe10bd89d8cd8a609531b6c5796e6ddadee9",
+  "reference_images": 63,
+  "run": "/midtier/minilab/scratch/chw4026/projects/side_project/generative/opd_related/opd_lab/runs/le20_fit_001",
+  "training_states": 54
+}

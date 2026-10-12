@@ -1,0 +1,106 @@
+{
+  "default": {
+    "first_updates": [
+      {
+        "arm": "label_selected",
+        "backward_queries": 12,
+        "gradient_norm": 0.000761011615395546,
+        "objective": 0.00014382765039044898,
+        "scale": 65536.0,
+        "step": 1
+      },
+      {
+        "arm": "random_matched",
+        "backward_queries": 12,
+        "gradient_norm": 0.0007610404281876981,
+        "objective": 0.00014382765039044898,
+        "scale": 65536.0,
+        "step": 1
+      },
+      {
+        "arm": "all_teacher",
+        "backward_queries": 12,
+        "gradient_norm": 0.0007608154555782676,
+        "objective": 0.00014382765039044898,
+        "scale": 65536.0,
+        "step": 1
+      }
+    ],
+    "repeat_comparisons": {
+      "all_teacher": {
+        "different_tensors": 380,
+        "exact": false,
+        "max_abs_difference": 7.602074401802383e-05
+      },
+      "random_matched": {
+        "different_tensors": 380,
+        "exact": false,
+        "max_abs_difference": 7.344590267166495e-05
+      }
+    }
+  },
+  "deterministic": {
+    "first_updates": [
+      {
+        "arm": "label_selected",
+        "backward_queries": 12,
+        "gradient_norm": 0.0007609585882164538,
+        "objective": 0.00014382765039044898,
+        "scale": 65536.0,
+        "step": 1
+      },
+      {
+        "arm": "random_matched",
+        "backward_queries": 12,
+        "gradient_norm": 0.0007609585882164538,
+        "objective": 0.00014382765039044898,
+        "scale": 65536.0,
+        "step": 1
+      },
+      {
+        "arm": "all_teacher",
+        "backward_queries": 12,
+        "gradient_norm": 0.0007609585882164538,
+        "objective": 0.00014382765039044898,
+        "scale": 65536.0,
+        "step": 1
+      }
+    ],
+    "repeat_comparisons": {
+      "all_teacher": {
+        "different_tensors": 0,
+        "exact": true,
+        "max_abs_difference": 0.0
+      },
+      "random_matched": {
+        "different_tensors": 0,
+        "exact": true,
+        "max_abs_difference": 0.0
+      }
+    }
+  },
+  "evidence_result_sha256": "7db79d2ec77d397bddd6ec531cd87525751d1f47a387b9d9fe55df1fdafe262c",
+  "initial_actions_exact": {
+    "default": true,
+    "deterministic": true
+  },
+  "old_new_deterministic": {
+    "different_tensors": 0,
+    "exact": true,
+    "max_abs_difference": 0.0
+  },
+  "runtime": {
+    "attention_processors": [
+      "JointAttnProcessor2_0"
+    ],
+    "counts": {
+      "backward_queries": 168,
+      "forward_examples": 744,
+      "forward_student": 372
+    },
+    "elapsed_seconds": 140.09838013909757,
+    "gpu": "NVIDIA L40S",
+    "new_images": 0,
+    "torch": "2.6.0+cu126"
+  }
+}

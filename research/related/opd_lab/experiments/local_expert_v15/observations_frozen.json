@@ -1,0 +1,11 @@
+{
+  "draft_sha256": "36688cf979ae9ab067c8526f3f6eb26e2cc8a5ab4ef0ea3f7061d8c864b34b01",
+  "frozen_at_utc": "2026-09-14T17:01:06.212068+00:00",
+  "frozen_before_key_join": true,
+  "inherited_sha256": "6a3a2de90e1f5ab88fd2170bceb8a26a5036923421f36d950400056275c9d7f6",
+  "items_sha256": "c1a3872b830b49b2178f15abd3329fa088fff58ab240804e6876b1508455a18d",
+  "key_sha256": "d7647b3e4e3a014533963bd69f19ee65fdd06d82254714a7455480f2d3e704cf",
+  "observations_sha256": "250d67dd00235bee77af1ef1735b397d256a0dc2be10593d878f851f9ca5e06b",
+  "reviewer": "implementing assistant, not independent human annotation",
+  "rubric_sha256": "255780eb17d1a014baa874819baba90793a50b5d576b12323af5a6d634ef5b7e"
+}

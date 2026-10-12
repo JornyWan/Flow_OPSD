@@ -1,0 +1,7 @@
+{
+  "assets_sha256": "2d7d9367b61ef855e21de7eb6420c546db9d0c0fa73eca24c7e7815c62ba2107",
+  "cpu_wall_seconds": 1.7808618573471904,
+  "index_exactly_matches_shard_headers": true,
+  "shards": 5,
+  "tensors": 729
+}

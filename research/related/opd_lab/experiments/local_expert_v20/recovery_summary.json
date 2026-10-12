@@ -1,0 +1,14 @@
+{
+  "evaluation_job_id": "1050650",
+  "evaluation_text_examples_corrected_before_generation": 40,
+  "fit_report_sha256": "6a1652cb691795daf3a6a5c50f1499cd8166ddb17efda047db78938914f3bf86",
+  "fit_view": "/midtier/minilab/scratch/chw4026/projects/side_project/generative/opd_related/opd_lab/runs/le20_fit_recovered_001",
+  "new_gpu_allocations_for_recovery": 0,
+  "new_training_updates": 0,
+  "optimizer_updates_preserved": 384,
+  "original_failure": {
+    "elapsed_seconds": 2311.731739619747,
+    "error": "AssertionError(('text_encode_prompts', 24, 12))"
+  },
+  "recovery_manifest_sha256": "c74816950c7d8cf2333da346bddeded6a63d5f051dcd50c48b480116fb2a3013"
+}

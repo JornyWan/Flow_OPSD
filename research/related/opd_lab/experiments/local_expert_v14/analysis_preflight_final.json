@@ -1,0 +1,10 @@
+{
+  "historical_policies_exactly_reproduced": [
+    "noop",
+    "v1",
+    "v1_discrete_event",
+    "v2"
+  ],
+  "purpose": "Repeat historical-statistic parity after adding the separate container diagnostic; no policy tuning.",
+  "summary_script_sha256": "c7ee19f4f6c92b27a8b0f692112d0b14637eb4b6f4c86472fb09ea4d0cb4c036"
+}

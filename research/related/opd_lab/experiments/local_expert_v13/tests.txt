@@ -1,0 +1,15 @@
+
+==================================== ERRORS ====================================
+_______________ ERROR collecting tests/test_measurement_audit.py _______________
+ImportError while importing test module '/midtier/minilab/scratch/chw4026/projects/side_project/generative/opd_related/opd_lab/tests/test_measurement_audit.py'.
+Hint: make sure your test modules/packages have valid Python names.
+Traceback:
+../../conda_envs/envs/diffusionopd/lib/python3.10/importlib/__init__.py:126: in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+tests/test_measurement_audit.py:4: in <module>
+    from opdlab.measurement_audit import ocr_checks, trace_boxes
+E   ImportError: cannot import name 'ocr_checks' from 'opdlab.measurement_audit' (/midtier/minilab/scratch/chw4026/projects/side_project/generative/opd_related/opd_lab/python/opdlab/measurement_audit.py)
+=========================== short test summary info ============================
+ERROR tests/test_measurement_audit.py
+!!!!!!!!!!!!!!!!!!!! Interrupted: 1 error during collection !!!!!!!!!!!!!!!!!!!!
+1 error in 1.95s

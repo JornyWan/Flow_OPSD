@@ -1,0 +1,9 @@
+{
+  "figures": {
+    "annotation_probe.pdf": "58c9b70848e4480fac290adc9cd721bc4f297772989293ff1998b054ef34925e",
+    "annotation_probe.png": "25876513049a6acc944e9462da658076ed9946c712ac837874323c9dd746c4d7"
+  },
+  "metrics_sha256": "89b876993be71e91277feecaaef79d7b4043d6962345f27441ffe7d1515e5bb8",
+  "results_sha256": "c4063dec0f6aeaee6ed2124b455919ad9d5e62ff4f4b3b674b63496fa29ab95f",
+  "script_sha256": "0684923abdf18d4e47ec617eb29ba2ce71f5d600be54f323dfcb7164123f9f51"
+}

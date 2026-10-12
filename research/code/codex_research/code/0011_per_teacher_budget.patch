@@ -1,0 +1,43 @@
+--- a/scripts/train_sd3_opd.py
++++ b/scripts/train_sd3_opd.py
+@@ -2968,14 +2968,29 @@
+                             else:
+                                 _ref_sigma_sq = (std_dev_t.float() ** 2).clamp(min=1e-8).unsqueeze(1)
+                                 _ref_kl = (_ref_delta ** 2) / (2.0 * _ref_sigma_sq)
+-                            _ref_kl = _ref_kl.mean(dim=tuple(range(2, _ref_kl.ndim))).sum(dim=1)
++                            # CODEX-0011: 逐 teacher 预算。
++                            # 0002 用 .sum(dim=1) 把三个 teacher 的 KL 加成一个总量,于是约束变成
++                            # "到所有 teacher 的总 KL 不得超预算"。实测后果(0010 第 9 节):
++                            #   - 总量里含到 **PickScore teacher** 的 KL,而 reward 优化正是要抬高它
++                            #     -> 预算被 reward 自己吃掉 -> hinge 反噬掉 reward 收益
++                            #     (pickscore 0.922 -> 0.876,跌破初始值);
++                            #   - 谁在总和里占比大谁被保护:OCR 守住了(0.80 -> 0.96),
++                            #     GenEval 反而掉 0.04,尽管它同在 retention 槽里。
++                            # 0006 §"OCR prompts:只评估 OCR capability constraint;
++                            # GenEval prompts:只评估 GenEval capability constraint" 本就要求逐 teacher。
++                            # 这里改为:每个样本只用**它自己路由到的**那个 teacher 的 KL 与同一 teacher 的
++                            # 冻结参考比较。唯一改动,与 0002 可直接归因。
++                            _ref_kl_pt = _ref_kl.mean(dim=tuple(range(2, _ref_kl.ndim)))
++                            _own = _tidx.clamp(min=0).unsqueeze(1)
++                            _ref_kl = _ref_kl_pt.gather(1, _own).squeeze(1)
++                            _cur_kl = per_step_kl_per_teacher_scalar.gather(1, _own).squeeze(1)
+ 
+                             _ret_mask = torch.zeros_like(per_step_kl_scalar)
+                             for _slot in cr_retention_teacher_indices:
+                                 _ret_mask = _ret_mask + (_tidx == _slot).to(_ret_mask.dtype)
+                             _ret_denom = _ret_mask.sum().clamp(min=1.0)
+                             _threshold = (1.0 + cr_rel_tol) * _ref_kl + cr_abs_tol
+-                            _violation = per_step_kl_scalar - _threshold
++                            _violation = _cur_kl - _threshold
+                             _ret_per_sample = torch.relu(_violation)
+                             _cr_retention_loss = (_ret_mask * _ret_per_sample).sum() / _ret_denom
+ 
+@@ -3011,7 +3026,7 @@
+                                 ).sum() / _direct_mask.sum().clamp(min=1.0)
+                                 info["cr_direct_loss"].append(_cr_direct_loss.detach())
+ 
+-                            _cur_ret = (_ret_mask * per_step_kl_scalar).sum() / _ret_denom
++                            _cur_ret = (_ret_mask * _cur_kl).sum() / _ret_denom
+                             _ref_ret = (_ret_mask * _ref_kl).sum() / _ret_denom
+                             info["cr_retention_loss"].append(_cr_retention_loss.detach())
+                             info["cr_current_teacher_kl"].append(_cur_ret.detach())

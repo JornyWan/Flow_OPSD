@@ -1,0 +1,19 @@
+% 自动生成,勿手改。源:paper_figs/make_table_rsverdict.py
+\begin{center}
+\begin{tabular}{lcccccc}
+\toprule
+& \multicolumn{2}{c}{NFE$=4$ (paired $t$)} & \multicolumn{2}{c}{NFE$=40$} & &\\
+\cmidrule(lr){2-3}\cmidrule(lr){4-5}
+\textbf{training reward} & DrawB. & Uns.-1k & DrawB. & Uns.-1k & deficit ratio & verdict\\
+\midrule
+HPSv2.1 & $+0.27$ & $-0.31$ & $-1.22$ & $-3.67$ & $0.97$\,/\,$0.95$ & $0$\\
+PickScore & $-15.68$ & $-14.12$ & $-0.42$ & $-3.09$ & $1.70$\,/\,$1.58$ & $-$\\
+CLIPScore & $+5.15$ & $+4.80$ & $-2.30$ & $-2.59$ & $0.48$\,/\,$0.46$ & $0$\\
+ImageReward & $+12.11$ & $+7.92$ & $+4.41$ & $+3.52$ & $0.35$\,/\,$0.47$ & +\\
+Aesthetic & $-274.71$ & $-292.47$ & $-140.82$ & $-158.02$ & $3.81$\,/\,$4.19$ & n/a$^{\dagger}$\\
+\bottomrule
+\end{tabular}
+\\[2pt]{\footnotesize $^{\dagger}$No verdict: both arms of this pair score \emph{below the untrained}
+base model on the reported composite in all four cells, so the comparison is between two
+collapsed models and does not measure few-step quality. Numbers are shown unchanged.}
+\end{center}

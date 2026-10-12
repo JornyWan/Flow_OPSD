@@ -1,0 +1,688 @@
+{
+  "capability_proxy": {
+    "base_cfg1": {
+      "joint_success_proxy": 0.015625,
+      "n": 64,
+      "nontext_clause_success_proxy": 0.234375,
+      "paired_delta_utility_vs_base_cfg4.5": -0.3719964244378307,
+      "paired_prompt_bootstrap_ci95": [
+        -0.4464273701016865,
+        -0.29952182022982804
+      ],
+      "proxy_utility": 0.20689019097222222,
+      "text_exact_proxy": 0.171875
+    },
+    "base_cfg4.5": {
+      "joint_success_proxy": 0.359375,
+      "n": 64,
+      "nontext_clause_success_proxy": 0.6171875,
+      "paired_delta_utility_vs_base_cfg4.5": 0.0,
+      "paired_prompt_bootstrap_ci95": [
+        0.0,
+        0.0
+      ],
+      "proxy_utility": 0.5788866154100529,
+      "text_exact_proxy": 0.578125
+    },
+    "geneval_cfg1": {
+      "joint_success_proxy": 0.765625,
+      "n": 64,
+      "nontext_clause_success_proxy": 0.9453125,
+      "paired_delta_utility_vs_base_cfg4.5": 0.27897652116402116,
+      "paired_prompt_bootstrap_ci95": [
+        0.19882928757440477,
+        0.3611235894097222
+      ],
+      "proxy_utility": 0.8578631365740741,
+      "text_exact_proxy": 0.84375
+    },
+    "geneval_cfg4.5": {
+      "joint_success_proxy": 0.5625,
+      "n": 64,
+      "nontext_clause_success_proxy": 0.8671875,
+      "paired_delta_utility_vs_base_cfg4.5": 0.1583109960063085,
+      "paired_prompt_bootstrap_ci95": [
+        0.0627384926994302,
+        0.2523591218171296
+      ],
+      "proxy_utility": 0.7371976114163614,
+      "text_exact_proxy": 0.6875
+    },
+    "ocr_cfg4.5": {
+      "joint_success_proxy": 0.53125,
+      "n": 64,
+      "nontext_clause_success_proxy": 0.5625,
+      "paired_delta_utility_vs_base_cfg4.5": 0.10231998181216931,
+      "paired_prompt_bootstrap_ci95": [
+        0.026613653273809518,
+        0.17823926814649468
+      ],
+      "proxy_utility": 0.6812065972222223,
+      "text_exact_proxy": 1.0
+    }
+  },
+  "fitting": {
+    "individual": {
+      "full": {
+        "complete_visibility_subset_retained": 1,
+        "complete_visibility_subset_total": 2,
+        "retained": 2,
+        "total": 5
+      },
+      "local_engineering_gate_passed": false,
+      "mean_gamma": 0.986313595280181,
+      "mean_relative_target_mse": 0.015221005597518591,
+      "mse_threshold_pass_count": 5,
+      "per_query": [
+        {
+          "arm": "single_case09",
+          "gamma": 0.9794922016918827,
+          "id": "jp1-train-count-12",
+          "optimizer_step": 128,
+          "orthogonal_mse_over_initial": 0.021973666819459066,
+          "query_index": 2,
+          "relative_target_mse": 0.022394236610905484,
+          "seed": 2074542574,
+          "student_sha256": "648439a2af93fe4742ba2d478119ae58f6647fa0e43ed59cdb8a5f8ebc55738c",
+          "target_mse": 0.003438648979134904
+        },
+        {
+          "arm": "single_case11",
+          "gamma": 0.9879194310926653,
+          "id": "jp1-train-relation-12",
+          "optimizer_step": 128,
+          "orthogonal_mse_over_initial": 0.010793089995875915,
+          "query_index": 0,
+          "relative_target_mse": 0.010939030141000776,
+          "seed": 1903463636,
+          "student_sha256": "4cf17e516e1e431ee2b817ea6c3bc005f5e03cfa658d061b6c7d4e04608e48e5",
+          "target_mse": 0.0032420563961363946
+        },
+        {
+          "arm": "single_case12",
+          "gamma": 0.9808885675594663,
+          "id": "jp1-train-relation-07",
+          "optimizer_step": 128,
+          "orthogonal_mse_over_initial": 0.017651307868266228,
+          "query_index": 0,
+          "relative_target_mse": 0.01801655471819531,
+          "seed": 1565083676,
+          "student_sha256": "3f2a7844657925f1a7d2ec4051185e558e8669a6cf6b44735cf042d6d8b59168",
+          "target_mse": 0.012604024597149266
+        },
+        {
+          "arm": "single_case17",
+          "gamma": 0.9965067218801237,
+          "id": "jp1-train-count-15",
+          "optimizer_step": 128,
+          "orthogonal_mse_over_initial": 0.00792630876622909,
+          "query_index": 1,
+          "relative_target_mse": 0.007938511758251896,
+          "seed": 1565007593,
+          "student_sha256": "977b6fc4023678bc04fa0d6af8c7df78b4e2698252a69cba77a6c21ee1a4202e",
+          "target_mse": 0.01132682287815312
+        },
+        {
+          "arm": "single_case19",
+          "gamma": 0.9867610541767668,
+          "id": "jp1-train-relation-13",
+          "optimizer_step": 128,
+          "orthogonal_mse_over_initial": 0.016641425072728987,
+          "query_index": 3,
+          "relative_target_mse": 0.016816694759239487,
+          "seed": 1500595046,
+          "student_sha256": "6c84a3f6afdef94974ff465d00995e7082b13f3dd2e25fcb44db10a5125d7fb1",
+          "target_mse": 0.005758558038354802
+        }
+      ],
+      "queries": 5,
+      "same_query_mse_and_local_repair_pass_count": 3,
+      "single": {
+        "complete_visibility_subset_retained": 1,
+        "complete_visibility_subset_total": 2,
+        "retained": 3,
+        "total": 5
+      }
+    },
+    "joint": {
+      "full": {
+        "complete_visibility_subset_retained": 2,
+        "complete_visibility_subset_total": 2,
+        "retained": 3,
+        "total": 5
+      },
+      "local_engineering_gate_passed": true,
+      "mean_gamma": 0.966706063565075,
+      "mean_relative_target_mse": 0.03379388376563876,
+      "mse_threshold_pass_count": 4,
+      "per_query": [
+        {
+          "arm": "joint",
+          "gamma": 0.945916307597259,
+          "id": "jp1-train-count-12",
+          "optimizer_step": 128,
+          "orthogonal_mse_over_initial": 0.054545637673877,
+          "query_index": 2,
+          "relative_target_mse": 0.0574706834577913,
+          "seed": 2074542574,
+          "student_sha256": "f9c5ad99773510c64e08f9656234d248431f8a7ed86d6ce6a0b011a711f244e2",
+          "target_mse": 0.008824659238711539
+        },
+        {
+          "arm": "joint",
+          "gamma": 0.9722770761600859,
+          "id": "jp1-train-relation-12",
+          "optimizer_step": 128,
+          "orthogonal_mse_over_initial": 0.029476409698771678,
+          "query_index": 0,
+          "relative_target_mse": 0.03024497020500536,
+          "seed": 1903463636,
+          "student_sha256": "f9c5ad99773510c64e08f9656234d248431f8a7ed86d6ce6a0b011a711f244e2",
+          "target_mse": 0.008963856744170329
+        },
+        {
+          "arm": "joint",
+          "gamma": 0.9496351652791902,
+          "id": "jp1-train-relation-07",
+          "optimizer_step": 128,
+          "orthogonal_mse_over_initial": 0.03784386775650538,
+          "query_index": 0,
+          "relative_target_mse": 0.04038048433295986,
+          "seed": 1565083676,
+          "student_sha256": "f9c5ad99773510c64e08f9656234d248431f8a7ed86d6ce6a0b011a711f244e2",
+          "target_mse": 0.028249386508033103
+        },
+        {
+          "arm": "joint",
+          "gamma": 0.9907232043896378,
+          "id": "jp1-train-count-15",
+          "optimizer_step": 128,
+          "orthogonal_mse_over_initial": 0.01189218072779555,
+          "query_index": 1,
+          "relative_target_mse": 0.011978239664591986,
+          "seed": 1565007593,
+          "student_sha256": "f9c5ad99773510c64e08f9656234d248431f8a7ed86d6ce6a0b011a711f244e2",
+          "target_mse": 0.01709078517542917
+        },
+        {
+          "arm": "joint",
+          "gamma": 0.9749785643992026,
+          "id": "jp1-train-relation-13",
+          "optimizer_step": 128,
+          "orthogonal_mse_over_initial": 0.028268968928320412,
+          "query_index": 3,
+          "relative_target_mse": 0.028895041167845265,
+          "seed": 1500595046,
+          "student_sha256": "f9c5ad99773510c64e08f9656234d248431f8a7ed86d6ce6a0b011a711f244e2",
+          "target_mse": 0.009894558590014702
+        }
+      ],
+      "queries": 5,
+      "same_query_mse_and_local_repair_pass_count": 3,
+      "single": {
+        "complete_visibility_subset_retained": 2,
+        "complete_visibility_subset_total": 2,
+        "retained": 4,
+        "total": 5
+      }
+    }
+  },
+  "native": {
+    "evaluation": [
+      {
+        "ocr_reward": 0.6270248889923096,
+        "step": 0
+      },
+      {
+        "ocr_reward": 0.7517645955085754,
+        "step": 8
+      },
+      {
+        "ocr_reward": 0.8353405594825745,
+        "step": 16
+      },
+      {
+        "ocr_reward": 0.8670415878295898,
+        "step": 24
+      }
+    ],
+    "first_online_loss": 0.000465843069832772,
+    "last_online_loss": 0.0001401678891852498,
+    "online_loss_queries_change_each_update": true,
+    "optimizer_steps": 32,
+    "scope": "native SOPD-OCR subset; EMA eval, unpaired noise, n=16; last eval24 not32",
+    "wandb_source_sha256": "4136406c7e114698a7e641f8c303f3c5e90d4f0d7671b53f185b87c3a803eab6"
+  },
+  "observations_sha256": "4af2f1d1602d81e6fce9d64a5fe0e98d33b21712462d4408c75aa8b0a93f9daf",
+  "reference_replay": {
+    "exact": 10,
+    "total": 10
+  },
+  "scope": "selected-positive learnability, not generalization or policy efficacy",
+  "teacher_copy": {
+    "exact": 10,
+    "total": 10
+  },
+  "visual_review": [
+    {
+      "arm": "joint",
+      "case": 1,
+      "complete_visibility_subset": true,
+      "fit_kind": "joint",
+      "id": "jp1-train-count-12",
+      "mode": "single",
+      "observation": {
+        "case": 1,
+        "clauses": {
+          "count": true,
+          "text": true
+        },
+        "full_visibility": true,
+        "notes": "One complete white bowl. Correct readable word on sign above; bowl rim is asymmetric.",
+        "visible_text": "BLOOM"
+      },
+      "proxy_utility": 1.0,
+      "relative_target_mse": 0.0574706834577913,
+      "repair_retained": true
+    },
+    {
+      "arm": "single_case17",
+      "case": 2,
+      "complete_visibility_subset": true,
+      "fit_kind": "individual",
+      "id": "jp1-train-count-15",
+      "mode": "full",
+      "observation": {
+        "case": 2,
+        "clauses": {
+          "count": true,
+          "text": false
+        },
+        "full_visibility": true,
+        "notes": "Two small complete bananas. The word has only one N; requested SUNNY.",
+        "visible_text": "SUNY"
+      },
+      "proxy_utility": 0.125,
+      "relative_target_mse": 0.007938511758251896,
+      "repair_retained": false
+    },
+    {
+      "arm": "joint",
+      "case": 3,
+      "complete_visibility_subset": false,
+      "fit_kind": "joint",
+      "id": "jp1-train-relation-07",
+      "mode": "full",
+      "observation": {
+        "case": 3,
+        "clauses": {
+          "relation": true,
+          "text": false
+        },
+        "full_visibility": false,
+        "notes": "Bicycle is right of one car. Car cropped at left. Main sign is stylized but identifiable; additional visible alphanumeric plate lettering violates only-word requirement.",
+        "visible_text": "WAVE (stylized); additional plate characters"
+      },
+      "proxy_utility": 1.0,
+      "relative_target_mse": 0.04038048433295986,
+      "repair_retained": false
+    },
+    {
+      "arm": "single_case17",
+      "case": 4,
+      "complete_visibility_subset": true,
+      "fit_kind": "individual",
+      "id": "jp1-train-count-15",
+      "mode": "single",
+      "observation": {
+        "case": 4,
+        "clauses": {
+          "count": true,
+          "text": false
+        },
+        "full_visibility": true,
+        "notes": "Two complete bananas. First expected N is two isolated vertical strokes without its diagonal; not an identifiable N.",
+        "visible_text": "SU I I N Y"
+      },
+      "proxy_utility": 0.45,
+      "relative_target_mse": 0.007938511758251896,
+      "repair_retained": false
+    },
+    {
+      "arm": "joint",
+      "case": 5,
+      "complete_visibility_subset": true,
+      "fit_kind": "joint",
+      "id": "jp1-train-count-12",
+      "mode": "full",
+      "observation": {
+        "case": 5,
+        "clauses": {
+          "count": true,
+          "text": true
+        },
+        "full_visibility": true,
+        "notes": "One complete white bowl; small but readable correct word.",
+        "visible_text": "BLOOM"
+      },
+      "proxy_utility": 1.0,
+      "relative_target_mse": 0.0574706834577913,
+      "repair_retained": true
+    },
+    {
+      "arm": "joint",
+      "case": 6,
+      "complete_visibility_subset": true,
+      "fit_kind": "joint",
+      "id": "jp1-train-count-15",
+      "mode": "full",
+      "observation": {
+        "case": 6,
+        "clauses": {
+          "count": true,
+          "text": true
+        },
+        "full_visibility": true,
+        "notes": "Two complete separated bananas; five clear correct letters.",
+        "visible_text": "SUNNY"
+      },
+      "proxy_utility": 1.0,
+      "relative_target_mse": 0.011978239664591986,
+      "repair_retained": true
+    },
+    {
+      "arm": "single_case19",
+      "case": 7,
+      "complete_visibility_subset": false,
+      "fit_kind": "individual",
+      "id": "jp1-train-relation-13",
+      "mode": "full",
+      "observation": {
+        "case": 7,
+        "clauses": {
+          "relation": true,
+          "text": true
+        },
+        "full_visibility": true,
+        "notes": "One complete bowl at left and apple at right. Spaced letters form the correct word.",
+        "visible_text": "CLOUD"
+      },
+      "proxy_utility": 1.0,
+      "relative_target_mse": 0.016816694759239487,
+      "repair_retained": true
+    },
+    {
+      "arm": "joint",
+      "case": 8,
+      "complete_visibility_subset": false,
+      "fit_kind": "joint",
+      "id": "jp1-train-relation-12",
+      "mode": "single",
+      "observation": {
+        "case": 8,
+        "clauses": {
+          "relation": true,
+          "text": true
+        },
+        "full_visibility": false,
+        "notes": "Cup is right of bottle. Blurred but identifiable correct word; cup occludes the lower right part of bottle.",
+        "visible_text": "BLOOM"
+      },
+      "proxy_utility": 1.0,
+      "relative_target_mse": 0.03024497020500536,
+      "repair_retained": true
+    },
+    {
+      "arm": "single_case11",
+      "case": 9,
+      "complete_visibility_subset": false,
+      "fit_kind": "individual",
+      "id": "jp1-train-relation-12",
+      "mode": "full",
+      "observation": {
+        "case": 9,
+        "clauses": {
+          "relation": false,
+          "text": true
+        },
+        "full_visibility": false,
+        "notes": "One cup only; required bottle is absent, so requested relation is not established.",
+        "visible_text": "BLOOM"
+      },
+      "proxy_utility": 0.3333333333333333,
+      "relative_target_mse": 0.010939030141000776,
+      "repair_retained": false
+    },
+    {
+      "arm": "single_case12",
+      "case": 10,
+      "complete_visibility_subset": false,
+      "fit_kind": "individual",
+      "id": "jp1-train-relation-07",
+      "mode": "full",
+      "observation": {
+        "case": 10,
+        "clauses": {
+          "relation": true,
+          "text": false
+        },
+        "full_visibility": false,
+        "notes": "Main word is correct ignoring case, but small additional plate lettering is visible. Bicycle right of car; car front cropped at left.",
+        "visible_text": "Wave; additional plate characters"
+      },
+      "proxy_utility": 1.0,
+      "relative_target_mse": 0.01801655471819531,
+      "repair_retained": false
+    },
+    {
+      "arm": "joint",
+      "case": 11,
+      "complete_visibility_subset": true,
+      "fit_kind": "joint",
+      "id": "jp1-train-count-15",
+      "mode": "single",
+      "observation": {
+        "case": 11,
+        "clauses": {
+          "count": true,
+          "text": true
+        },
+        "full_visibility": true,
+        "notes": "Two complete bananas. Both Ns retain identifiable diagonal strokes despite small white notches at the top.",
+        "visible_text": "SUNNY"
+      },
+      "proxy_utility": 1.0,
+      "relative_target_mse": 0.011978239664591986,
+      "repair_retained": true
+    },
+    {
+      "arm": "single_case12",
+      "case": 12,
+      "complete_visibility_subset": false,
+      "fit_kind": "individual",
+      "id": "jp1-train-relation-07",
+      "mode": "single",
+      "observation": {
+        "case": 12,
+        "clauses": {
+          "relation": true,
+          "text": false
+        },
+        "full_visibility": false,
+        "notes": "Bicycle is right of car. Sign contains additional/distorted glyphs rather than exactly WAVE. Car front cropped at left; plate also contains lettering.",
+        "visible_text": "WA[extra distorted A-like glyph]VE"
+      },
+      "proxy_utility": 0.4166666666666667,
+      "relative_target_mse": 0.01801655471819531,
+      "repair_retained": false
+    },
+    {
+      "arm": "single_case09",
+      "case": 13,
+      "complete_visibility_subset": true,
+      "fit_kind": "individual",
+      "id": "jp1-train-count-12",
+      "mode": "full",
+      "observation": {
+        "case": 13,
+        "clauses": {
+          "count": true,
+          "text": true
+        },
+        "full_visibility": true,
+        "notes": "One complete bowl. Oversized word remains identifiable, but tops of letters are outside the image; text presentation is poor.",
+        "visible_text": "BLOOM"
+      },
+      "proxy_utility": 0.45,
+      "relative_target_mse": 0.022394236610905484,
+      "repair_retained": true
+    },
+    {
+      "arm": "single_case11",
+      "case": 14,
+      "complete_visibility_subset": false,
+      "fit_kind": "individual",
+      "id": "jp1-train-relation-12",
+      "mode": "single",
+      "observation": {
+        "case": 14,
+        "clauses": {
+          "relation": true,
+          "text": true
+        },
+        "full_visibility": false,
+        "notes": "Cup right of bottle; blurry but identifiable correct word. Cup occludes lower right of bottle.",
+        "visible_text": "BLOOM"
+      },
+      "proxy_utility": 1.0,
+      "relative_target_mse": 0.010939030141000776,
+      "repair_retained": true
+    },
+    {
+      "arm": "single_case09",
+      "case": 15,
+      "complete_visibility_subset": true,
+      "fit_kind": "individual",
+      "id": "jp1-train-count-12",
+      "mode": "single",
+      "observation": {
+        "case": 15,
+        "clauses": {
+          "count": true,
+          "text": true
+        },
+        "full_visibility": true,
+        "notes": "One complete bowl. Correct word on sign above; asymmetrical rim.",
+        "visible_text": "BLOOM"
+      },
+      "proxy_utility": 1.0,
+      "relative_target_mse": 0.022394236610905484,
+      "repair_retained": true
+    },
+    {
+      "arm": "joint",
+      "case": 16,
+      "complete_visibility_subset": false,
+      "fit_kind": "joint",
+      "id": "jp1-train-relation-13",
+      "mode": "full",
+      "observation": {
+        "case": 16,
+        "clauses": {
+          "relation": false,
+          "text": true
+        },
+        "full_visibility": true,
+        "notes": "Apple is primarily below the bowl, within its horizontal extent, not clearly to its right. Both objects complete; word is printed on bowl rather than a sign above.",
+        "visible_text": "CLOUD"
+      },
+      "proxy_utility": 0.3333333333333333,
+      "relative_target_mse": 0.028895041167845265,
+      "repair_retained": false
+    },
+    {
+      "arm": "joint",
+      "case": 17,
+      "complete_visibility_subset": false,
+      "fit_kind": "joint",
+      "id": "jp1-train-relation-13",
+      "mode": "single",
+      "observation": {
+        "case": 17,
+        "clauses": {
+          "relation": true,
+          "text": true
+        },
+        "full_visibility": true,
+        "notes": "One complete apple clearly right of one complete bowl; correct word.",
+        "visible_text": "CLOUD"
+      },
+      "proxy_utility": 1.0,
+      "relative_target_mse": 0.028895041167845265,
+      "repair_retained": true
+    },
+    {
+      "arm": "joint",
+      "case": 18,
+      "complete_visibility_subset": false,
+      "fit_kind": "joint",
+      "id": "jp1-train-relation-07",
+      "mode": "single",
+      "observation": {
+        "case": 18,
+        "clauses": {
+          "relation": true,
+          "text": false
+        },
+        "full_visibility": false,
+        "notes": "Bicycle right of car; front of car cropped. Main word is identifiable despite broken stencil strokes, but visible plate lettering is additional text.",
+        "visible_text": "WAVE (fragmented stencil); additional plate characters"
+      },
+      "proxy_utility": 1.0,
+      "relative_target_mse": 0.04038048433295986,
+      "repair_retained": false
+    },
+    {
+      "arm": "joint",
+      "case": 19,
+      "complete_visibility_subset": false,
+      "fit_kind": "joint",
+      "id": "jp1-train-relation-12",
+      "mode": "full",
+      "observation": {
+        "case": 19,
+        "clauses": {
+          "relation": true,
+          "text": true
+        },
+        "full_visibility": false,
+        "notes": "Cup right of one bottle. Correct word is blurry but identifiable. Bottom of cup is cut by image boundary.",
+        "visible_text": "BLOOM"
+      },
+      "proxy_utility": 1.0,
+      "relative_target_mse": 0.03024497020500536,
+      "repair_retained": true
+    },
+    {
+      "arm": "single_case19",
+      "case": 20,
+      "complete_visibility_subset": false,
+      "fit_kind": "individual",
+      "id": "jp1-train-relation-13",
+      "mode": "single",
+      "observation": {
+        "case": 20,
+        "clauses": {
+          "relation": true,
+          "text": true
+        },
+        "full_visibility": false,
+        "notes": "One apple right of bowl; word correct. Lower part of bowl is cropped at bottom.",
+        "visible_text": "CLOUD"
+      },
+      "proxy_utility": 1.0,
+      "relative_target_mse": 0.016816694759239487,
+      "repair_retained": true
+    }
+  ]
+}

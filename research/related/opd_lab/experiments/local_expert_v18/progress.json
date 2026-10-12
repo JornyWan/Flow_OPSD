@@ -1,0 +1,50 @@
+{
+  "active_run": "/midtier/minilab/scratch/chw4026/projects/side_project/generative/opd_related/opd_lab/runs/le18_completion_001",
+  "allocated_gpu_hours": 1.0319444444444446,
+  "completion": {
+    "counts_basis": "Unique scientific work reconstructed from frozen loops and complete saved records. Source cumulative runtime counters were lost on timeout; these are not measured combined job counters.",
+    "new_endpoints": 27,
+    "new_updates": 0,
+    "replay_images": 31,
+    "runtime_counts": {
+      "decode_images": 58,
+      "forward_behavior": 129,
+      "forward_examples": 1058,
+      "forward_student": 400,
+      "geneval_clause_images": 60,
+      "ocr_images": 58,
+      "text_encode_prompts": 40,
+      "verifier_images": 58
+    },
+    "source": "/midtier/minilab/scratch/chw4026/projects/side_project/generative/opd_related/opd_lab/runs/le18_supervision_003",
+    "source_endpoints": 158,
+    "source_per_arm_timers_available": false,
+    "training_reused_updates": 384
+  },
+  "evaluation_images_generated": 185,
+  "evaluation_images_planned": 185,
+  "next_step": "No-training paired teacher-opportunity diagnostic on all12 phase18 positive fresh states; this is now development data.",
+  "observations_frozen": true,
+  "optimizer_updates": {
+    "multi": 128,
+    "random_matched": 128,
+    "single": 128
+  },
+  "promising_pilot": false,
+  "reference_images_exact": 24,
+  "results_available": true,
+  "review": "/midtier/minilab/scratch/chw4026/projects/side_project/generative/opd_related/opd_lab/runs/le18_review_completed",
+  "review_sheets": 50,
+  "review_slots_completed": 200,
+  "scientific_analysis_complete": true,
+  "status": "complete",
+  "training_completed": true,
+  "training_replay": {
+    "historical_model_exact": false,
+    "limit": "GPU equivalence measured at two updates; no claim of reproducing the historical nondeterministic 128-update model.",
+    "policy": "deterministic_training_qualified_v1",
+    "qualified_old_new_fitter_updates": 2
+  },
+  "training_states": 15,
+  "updated_utc": "2026-09-15T03:59:09.343820+00:00"
+}

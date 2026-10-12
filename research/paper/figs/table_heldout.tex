@@ -1,0 +1,23 @@
+% Table 2 — 自动生成。held-out ImageReward 的配对 t 值。
+\begin{table}[t]
+\centering
+\setlength{\tabcolsep}{5pt}
+\caption{\textbf{Held-out evaluator.} Paired $t$ on ImageReward, the only held-out metric that
+tracks the reported composite in our calibration ($r{=}{+}0.894$, sign agreement 12/12; Aesthetic is
+anti-correlated, $r{=}{-}0.395$, and is therefore not reported). Same pairings as Table~\ref{tab:where}.}
+\label{tab:heldout}
+\begin{tabular}{lc cc cc}
+\toprule
+& & \multicolumn{2}{c}{\textbf{DrawBench}} & \multicolumn{2}{c}{\textbf{Unseen-1k}} \\
+\cmidrule(lr){3-4}\cmidrule(lr){5-6}
+\textbf{Intervention} & \textbf{Cost} & NFE$=$4 & NFE$=$40 & NFE$=$4 & NFE$=$40 \\
+\midrule
+(A) move query state $\sigma$ 0.278$\to$0.465 & $1.00\times$ & $+10.73$ & $+3.29$ & $+12.03$ & $+2.49$ \\
+(B) shorten rollout 10$\to$6 steps & $0.90\times$ & $+10.29$ & $+2.98$ & $+11.28$ & $-1.19$ \\
+(C) propagate target to 2 extra states (ours) & $1.20\times$ & $+11.24$ & $+7.88$ & $+9.95$ & $+1.18$ \\
+(B$+$C) rollout 6 $+$ propagation & $\sim\!1.10\times$ & $+14.43$ & $+3.72$ & $+11.78$ & $+0.31$ \\
+(A$+$C) query $\sigma$ 0.465 $+$ propagation & $1.20\times$ & $+13.77$ & $+4.73$ & $+10.93$ & $+0.39$ \\
+\;\emph{(reference)} train $3\times$ longer & $3.00\times$ & $+8.67$ & $+5.61$ & $+4.73$ & $+5.15$ \\
+\bottomrule
+\end{tabular}
+\end{table}

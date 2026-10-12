@@ -1,0 +1,23 @@
+{
+  "time_utc": "2026-09-12T03:06:19.420894+00:00",
+  "reviewed_lab_commit": "e384a09",
+  "scope": "Research reassessment only; no GPU jobs or implementation change; planned experiments not executed. Historical campaign files unchanged.",
+  "files_sha256": {
+    "/midtier/minilab/scratch/chw4026/projects/side_project/generative/opd_related/opd_lab/docs/research_reassessment_20260912.md": "24d0dc546e60e2717135fa78f473219cd6fcb5c32aa66679ed0ee5de49f59d76",
+    "/midtier/minilab/scratch/chw4026/projects/side_project/generative/opd_related/opd_lab/python/opdlab/method.py": "8479ebdf52dc1de3f5e8c5dc45ccfb522f4a1674a1fd21764c912d0e5a0d8225",
+    "/midtier/minilab/scratch/chw4026/projects/side_project/generative/opd_related/opd_lab/python/opdlab/backends.py": "12575337cff34ce0ff5e377168fd0fe607410b0c8b4b063cdefd15ea90ecbf8e",
+    "/midtier/minilab/scratch/chw4026/projects/side_project/generative/opd_related/opd_lab/python/opdlab/engine.py": "70e6130a581200d968a6726a8a19f9fc9b4cf0bb199be388a5ce542208b7f01c",
+    "/midtier/minilab/scratch/chw4026/projects/side_project/generative/opd_related/opd_lab/upstream/diffusionopd/scripts/train_sd3_opd.py": "1f052a0e9404af9d9fa2b73cca625e8b3039c33bb097baf5bdf8ea6446450ef7",
+    "/midtier/minilab/scratch/chw4026/projects/side_project/generative/opd_related/opd_lab/upstream/diffusionopd/config/opd.py": "cc24cae4fb8b9a01e7e767adaaf372501b5047cb61630fe09107d96ab5d370c5",
+    "/midtier/minilab/scratch/chw4026/projects/side_project/generative/opd_related/opd_lab/runs/le3_probe_001/config.json": "16f8c43388d690101dbbeed4447512133bd52b77e1c32af6787a73c6b31635f3",
+    "/midtier/minilab/scratch/chw4026/projects/side_project/generative/opd_related/codex_research/0074_LATEST_EXPERIMENTS_SETTINGS_AUDIT.md": "b05b9d3f180241531677743788172474db93c5d3aeb27c1fce5678d7b1642e7d",
+    "/midtier/minilab/scratch/chw4026/projects/side_project/generative/opd_related/opd_lab/experiments/local_expert_v1/STATUS.md": "315ba8b9eb9577450290fd7ac5305b11a58206dfd2173bdd221e2cafd958eea4",
+    "/midtier/minilab/scratch/chw4026/projects/side_project/generative/opd_related/opd_lab/experiments/local_expert_v2/STATUS.md": "1ba6ab30d005eec7030909b1acbdad93afdf2832f57d9b56bcf459db84c9cfa2",
+    "/midtier/minilab/scratch/chw4026/projects/side_project/generative/opd_related/opd_lab/experiments/local_expert_v3/STATUS.md": "d73d182f362a218e4b25c870b2277c5eb720b4ebdb697cab46baff9129f9ed5e",
+    "/midtier/minilab/scratch/chw4026/projects/side_project/generative/opd_related/opd_lab/experiments/local_expert_v4/STATUS.md": "629fac5ef1f5d88c61ceb37c434a26aab66f0c40f41a23a336492fdcafb36b6c",
+    "/midtier/minilab/scratch/chw4026/projects/side_project/generative/opd_related/opd_lab/experiments/local_expert_v5/STATUS.md": "132de7e236221494124ba19625abebe988cd5d26a9cbf7a72cd958b7c24fcaf3",
+    "/midtier/minilab/scratch/chw4026/projects/side_project/generative/opd_related/opd_lab/experiments/local_expert_v6/STATUS.md": "83dc733fac8bc2a388ea476dcd95eb8fa1a52f6646d9a4e9d989b7fba92329ca",
+    "/home/chw4026/.codex/attachments/1b6c25da-eb67-4412-8e58-38bf1221c657/pasted-text.txt": "4caf17cab95881ae983980ea52625eba984d91eb4d009ea6738f0ae235bbf788",
+    "/home/chw4026/.codex/attachments/e3537370-abbf-4ddb-b45c-475623f95104/pasted-text.txt": "977b584d2f1bac9e9f74d3ddfc77aa4dec7f2934cbbca6569962bd681b7396c7"
+  }
+}

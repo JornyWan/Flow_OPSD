@@ -1,0 +1,10 @@
+upstream/
+runs/
+.pytest_cache/
+__pycache__/
+*.egg-info/
+site.local.json
+site.*.local.json
+.venv*/
+.tools/
+data/pickapic/

@@ -1,0 +1,119 @@
+{
+  "dataset_sha256": "5b78af606cf64f3f13bcb70a27f098468caf3d59cfecebd833fcb93ced0bfe2f",
+  "format": 1,
+  "indices": [
+    1,
+    4,
+    7
+  ],
+  "queries": [
+    {
+      "id": "jp1-train-count-00",
+      "ordinal": 0,
+      "query_id": "5c4facd8c8bac83685973c17",
+      "query_index": 1,
+      "replicate": 42,
+      "seed": 1903071765
+    },
+    {
+      "id": "jp1-train-count-00",
+      "ordinal": 1,
+      "query_id": "b6e2d726abb01196839ebda3",
+      "query_index": 4,
+      "replicate": 42,
+      "seed": 1903071765
+    },
+    {
+      "id": "jp1-train-count-00",
+      "ordinal": 2,
+      "query_id": "a2fa345b81913d8d1a9ca4f3",
+      "query_index": 7,
+      "replicate": 42,
+      "seed": 1903071765
+    },
+    {
+      "id": "jp1-train-color-00",
+      "ordinal": 3,
+      "query_id": "41de3933239cd7a61406174a",
+      "query_index": 1,
+      "replicate": 42,
+      "seed": 1647547126
+    },
+    {
+      "id": "jp1-train-color-00",
+      "ordinal": 4,
+      "query_id": "3cecd12a002d6dad1f485ec6",
+      "query_index": 4,
+      "replicate": 42,
+      "seed": 1647547126
+    },
+    {
+      "id": "jp1-train-color-00",
+      "ordinal": 5,
+      "query_id": "ecdbebc2d5e7fd4343523b3b",
+      "query_index": 7,
+      "replicate": 42,
+      "seed": 1647547126
+    },
+    {
+      "id": "jp1-train-relation-00",
+      "ordinal": 6,
+      "query_id": "b80d97db272dfe51ec89b31a",
+      "query_index": 1,
+      "replicate": 42,
+      "seed": 888723720
+    },
+    {
+      "id": "jp1-train-relation-00",
+      "ordinal": 7,
+      "query_id": "8b966dc6c238f7921f009c98",
+      "query_index": 4,
+      "replicate": 42,
+      "seed": 888723720
+    },
+    {
+      "id": "jp1-train-relation-00",
+      "ordinal": 8,
+      "query_id": "69485cfbd5cbee58c76b7035",
+      "query_index": 7,
+      "replicate": 42,
+      "seed": 888723720
+    },
+    {
+      "id": "jp1-train-count_color-00",
+      "ordinal": 9,
+      "query_id": "da9fe90de08be3ab97e8b0b5",
+      "query_index": 1,
+      "replicate": 42,
+      "seed": 1403091144
+    },
+    {
+      "id": "jp1-train-count_color-00",
+      "ordinal": 10,
+      "query_id": "8f30f2ffdf5dab4caa0ba0f6",
+      "query_index": 4,
+      "replicate": 42,
+      "seed": 1403091144
+    },
+    {
+      "id": "jp1-train-count_color-00",
+      "ordinal": 11,
+      "query_id": "1684a846f97dda9de969615f",
+      "query_index": 7,
+      "replicate": 42,
+      "seed": 1403091144
+    }
+  ],
+  "record_ids": [
+    "jp1-train-count-00",
+    "jp1-train-color-00",
+    "jp1-train-relation-00",
+    "jp1-train-count_color-00"
+  ],
+  "seed_rule": "sha256(replicate,diagnostic,record_id); independent of intervention time",
+  "seeds": [
+    42
+  ],
+  "split": "train",
+  "steps": 10
+}

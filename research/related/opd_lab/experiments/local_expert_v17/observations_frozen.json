@@ -1,0 +1,12 @@
+{
+  "draft_sha256": "70e73d82a81fa8cffec7e6eda04ac7d38c70e58078a47f0b2d94569521f1ad04",
+  "frozen_at_utc": "2026-09-14T19:07:06.276884+00:00",
+  "frozen_before_key_join": true,
+  "inherited_sha256": "ca3d163bab055381827226140568f3bef7eaac187cebd76878e0b63e9e442356",
+  "items_sha256": "e2547e21e36b0c27267156042da131a1bb91df293afc61f3148f994056241a6f",
+  "key_sha256": "611b0e444c692e67f3d8bc2e04ece383f8799aa70a50e52e7f9381aeb2aa0c7b",
+  "observations_sha256": "679820b6449db623f1a7e27cb9c262977e334424922ef67b2a279399a70eb790",
+  "review_script_sha256": "b7fb97886dfcd3fe0c3cd83559c6ba8770be64d30741494f8f11e30170bab04e",
+  "reviewer": "implementing assistant, not independent human ground truth",
+  "rubric_sha256": "bb0142866d0475be503c10f765f7170cbfed0a9a235a8f81224a9f6dbea5c729"
+}

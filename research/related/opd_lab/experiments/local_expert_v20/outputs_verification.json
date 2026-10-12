@@ -1,0 +1,26 @@
+{
+  "evaluation": {
+    "assets": [],
+    "images": 224,
+    "new_states": 32,
+    "reference_images_exact": 6,
+    "review_complete": false
+  },
+  "fit": {
+    "all_schedules_reconstructed": true,
+    "assets": [],
+    "backward_queries": 4608,
+    "complete_optimizer_snapshots": 3,
+    "deterministic_fitting": true,
+    "evaluation_images_generated": 0,
+    "reference_images_exact": 63,
+    "training_states": 54,
+    "updates": 384
+  },
+  "phase19_archive": {
+    "README_historical_revision": "9cbbf01",
+    "all_recorded_artifacts_unchanged": true,
+    "artifact_count": 263
+  },
+  "stage": "outputs"
+}

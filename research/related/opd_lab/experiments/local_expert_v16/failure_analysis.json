@@ -1,0 +1,600 @@
+{
+  "action_geometry": {
+    "fitting_seed_diagnostic": {
+      "gamma": {
+        "max": 0.954981733616989,
+        "median": 0.94066578559835,
+        "min": 0.9254377858754064
+      },
+      "metric_reference": "Same expert type selected for this prompt in phase15; fresh actions are not all safe targets",
+      "orthogonal_mse_over_initial": {
+        "max": 0.057777951136228536,
+        "median": 0.04721562059715448,
+        "min": 0.035955995802405084
+      },
+      "relative_target_mse": {
+        "max": 0.06333747491139027,
+        "median": 0.050745445708067716,
+        "min": 0.03798264011053682
+      },
+      "states": 6
+    },
+    "positive_fresh_seed": {
+      "gamma": {
+        "max": 0.3476803670004249,
+        "median": 0.16999003802101112,
+        "min": 0.03026532951038053
+      },
+      "metric_reference": "Same expert type selected for this prompt in phase15; fresh actions are not all safe targets",
+      "orthogonal_mse_over_initial": {
+        "max": 0.33034812075617387,
+        "median": 0.19797890392557876,
+        "min": 0.06528054895490612
+      },
+      "relative_target_mse": {
+        "max": 1.1612243372733864,
+        "median": 0.8799633564086716,
+        "min": 0.5069335682617191
+      },
+      "states": 12
+    }
+  },
+  "analysis_script_sha256": "6cec500a20c59bf2d947ff7649f867c8244eaec4677785ca88599a4dbd9b7d7f",
+  "cases": [
+    {
+      "case": 1,
+      "cohort": "positive_fresh_seed",
+      "complete": {
+        "geneval@1": false,
+        "joint128": false,
+        "label_selected": false,
+        "ocr@1": false,
+        "student_single": false
+      },
+      "id": "jp1-train-relation-01",
+      "safe_teachers": [],
+      "same_type_teacher_alignment": {
+        "gamma": 0.3476803670004249,
+        "orthogonal_mse_over_initial": 0.08141266466501869,
+        "relative_target_mse": 0.5069335682617191,
+        "target_mse": 0.07608056310754607
+      },
+      "seed": 1295102599,
+      "status": {
+        "geneval@1": "non_repair",
+        "joint128": "non_repair",
+        "label_selected": "non_repair",
+        "ocr@1": "non_repair",
+        "student_single": "non_repair"
+      }
+    },
+    {
+      "case": 2,
+      "cohort": "positive_fresh_seed",
+      "complete": {
+        "geneval@1": false,
+        "joint128": false,
+        "label_selected": false,
+        "ocr@1": false,
+        "student_single": false
+      },
+      "id": "jp1-train-color-11",
+      "safe_teachers": [],
+      "same_type_teacher_alignment": {
+        "gamma": 0.09755254916550939,
+        "orthogonal_mse_over_initial": 0.06528054895490612,
+        "relative_target_mse": 0.8796919504725764,
+        "target_mse": 0.10417946751951429
+      },
+      "seed": 1435792484,
+      "status": {
+        "geneval@1": "non_repair",
+        "joint128": "non_repair",
+        "label_selected": "safe_repair",
+        "ocr@1": "non_repair",
+        "student_single": "non_repair"
+      }
+    },
+    {
+      "case": 3,
+      "cohort": "fitting_seed_diagnostic",
+      "complete": {
+        "joint128": false,
+        "label_selected": true,
+        "selected_teacher": true,
+        "student_single": true
+      },
+      "id": "jp1-train-count-12",
+      "safe_teachers": [
+        "selected_teacher"
+      ],
+      "same_type_teacher_alignment": {
+        "gamma": 0.9501021639112541,
+        "orthogonal_mse_over_initial": 0.04040701481942737,
+        "relative_target_mse": 0.04289680886576673,
+        "target_mse": 0.0034693387317834695
+      },
+      "seed": 239583594,
+      "status": {
+        "joint128": "non_repair",
+        "label_selected": "safe_repair",
+        "selected_teacher": "safe_repair",
+        "student_single": "safe_repair"
+      }
+    },
+    {
+      "case": 4,
+      "cohort": "positive_fresh_seed",
+      "complete": {
+        "geneval@1": true,
+        "joint128": false,
+        "label_selected": false,
+        "ocr@1": false,
+        "student_single": false
+      },
+      "id": "jp1-train-count-08",
+      "safe_teachers": [],
+      "same_type_teacher_alignment": {
+        "gamma": 0.07984810073111921,
+        "orthogonal_mse_over_initial": 0.08022002586611812,
+        "relative_target_mse": 0.9268995435942466,
+        "target_mse": 0.10116169885567336
+      },
+      "seed": 725761593,
+      "status": {
+        "geneval@1": "unknown",
+        "joint128": "unknown",
+        "label_selected": "unknown",
+        "ocr@1": "unknown",
+        "student_single": "unknown"
+      }
+    },
+    {
+      "case": 5,
+      "cohort": "positive_fresh_seed",
+      "complete": {
+        "geneval@1": false,
+        "joint128": false,
+        "label_selected": false,
+        "ocr@1": false,
+        "student_single": false
+      },
+      "id": "jp1-train-count-08",
+      "safe_teachers": [
+        "geneval@1"
+      ],
+      "same_type_teacher_alignment": {
+        "gamma": 0.25845658145419903,
+        "orthogonal_mse_over_initial": 0.33034812075617387,
+        "relative_target_mse": 0.8802347623447668,
+        "target_mse": 0.05662911831116463
+      },
+      "seed": 1272885951,
+      "status": {
+        "geneval@1": "safe_repair",
+        "joint128": "non_repair",
+        "label_selected": "unsafe",
+        "ocr@1": "non_repair",
+        "student_single": "non_repair"
+      }
+    },
+    {
+      "case": 6,
+      "cohort": "fitting_seed_diagnostic",
+      "complete": {
+        "joint128": false,
+        "label_selected": true,
+        "selected_teacher": true,
+        "student_single": false
+      },
+      "id": "jp1-train-color-13",
+      "safe_teachers": [
+        "selected_teacher"
+      ],
+      "same_type_teacher_alignment": {
+        "gamma": 0.9376201145307063,
+        "orthogonal_mse_over_initial": 0.04672191668372131,
+        "relative_target_mse": 0.050613166794883514,
+        "target_mse": 0.004090988221967198
+      },
+      "seed": 179753740,
+      "status": {
+        "joint128": "non_repair",
+        "label_selected": "safe_repair",
+        "selected_teacher": "safe_repair",
+        "student_single": "unknown"
+      }
+    },
+    {
+      "case": 7,
+      "cohort": "positive_fresh_seed",
+      "complete": {
+        "geneval@1": true,
+        "joint128": false,
+        "label_selected": true,
+        "ocr@1": true,
+        "student_single": true
+      },
+      "id": "jp1-train-relation-01",
+      "safe_teachers": [],
+      "same_type_teacher_alignment": {
+        "gamma": 0.21532291189041025,
+        "orthogonal_mse_over_initial": 0.1041087185395615,
+        "relative_target_mse": 0.7198268511437064,
+        "target_mse": 0.061213051712342204
+      },
+      "seed": 2110052733,
+      "status": {
+        "geneval@1": "unknown",
+        "joint128": "unknown",
+        "label_selected": "unknown",
+        "ocr@1": "unknown",
+        "student_single": "unknown"
+      }
+    },
+    {
+      "case": 8,
+      "cohort": "positive_fresh_seed",
+      "complete": {
+        "geneval@1": false,
+        "joint128": true,
+        "label_selected": false,
+        "ocr@1": true,
+        "student_single": false
+      },
+      "id": "jp1-train-count-12",
+      "safe_teachers": [],
+      "same_type_teacher_alignment": {
+        "gamma": 0.07392484130106138,
+        "orthogonal_mse_over_initial": 0.19378014378943467,
+        "relative_target_mse": 1.051395343348699,
+        "target_mse": 0.06742897437129415
+      },
+      "seed": 1083637527,
+      "status": {
+        "geneval@1": "unsafe",
+        "joint128": "non_repair",
+        "label_selected": "unsafe",
+        "ocr@1": "non_repair",
+        "student_single": "unsafe"
+      }
+    },
+    {
+      "case": 9,
+      "cohort": "positive_fresh_seed",
+      "complete": {
+        "geneval@1": true,
+        "joint128": true,
+        "label_selected": true,
+        "ocr@1": true,
+        "student_single": true
+      },
+      "id": "jp1-train-count-12",
+      "safe_teachers": [],
+      "same_type_teacher_alignment": {
+        "gamma": 0.2195226834655161,
+        "orthogonal_mse_over_initial": 0.10476924053349519,
+        "relative_target_mse": 0.7139140821583642,
+        "target_mse": 0.057657036755557556
+      },
+      "seed": 162560230,
+      "status": {
+        "geneval@1": "non_repair",
+        "joint128": "non_repair",
+        "label_selected": "non_repair",
+        "ocr@1": "non_repair",
+        "student_single": "non_repair"
+      }
+    },
+    {
+      "case": 10,
+      "cohort": "positive_fresh_seed",
+      "complete": {
+        "geneval@1": false,
+        "joint128": false,
+        "label_selected": false,
+        "ocr@1": false,
+        "student_single": false
+      },
+      "id": "jp1-train-relation-12",
+      "safe_teachers": [],
+      "same_type_teacher_alignment": {
+        "gamma": 0.2663312044489954,
+        "orthogonal_mse_over_initial": 0.20308954125262185,
+        "relative_target_mse": 0.7413594428178836,
+        "target_mse": 0.08982392237005277
+      },
+      "seed": 167722162,
+      "status": {
+        "geneval@1": "unknown",
+        "joint128": "unknown",
+        "label_selected": "unknown",
+        "ocr@1": "unknown",
+        "student_single": "unknown"
+      }
+    },
+    {
+      "case": 11,
+      "cohort": "fitting_seed_diagnostic",
+      "complete": {
+        "joint128": false,
+        "label_selected": true,
+        "selected_teacher": true,
+        "student_single": true
+      },
+      "id": "jp1-train-count-08",
+      "safe_teachers": [
+        "selected_teacher"
+      ],
+      "same_type_teacher_alignment": {
+        "gamma": 0.9437114566659939,
+        "orthogonal_mse_over_initial": 0.04770932451058764,
+        "relative_target_mse": 0.050877724621251924,
+        "target_mse": 0.0062064767961296785
+      },
+      "seed": 550972855,
+      "status": {
+        "joint128": "non_repair",
+        "label_selected": "safe_repair",
+        "selected_teacher": "safe_repair",
+        "student_single": "safe_repair"
+      }
+    },
+    {
+      "case": 12,
+      "cohort": "fitting_seed_diagnostic",
+      "complete": {
+        "joint128": false,
+        "label_selected": false,
+        "selected_teacher": false,
+        "student_single": false
+      },
+      "id": "jp1-train-relation-12",
+      "safe_teachers": [
+        "selected_teacher"
+      ],
+      "same_type_teacher_alignment": {
+        "gamma": 0.9259635158543557,
+        "orthogonal_mse_over_initial": 0.05453532742235584,
+        "relative_target_mse": 0.06001672840700408,
+        "target_mse": 0.012867234013719253
+      },
+      "seed": 549703214,
+      "status": {
+        "joint128": "non_repair",
+        "label_selected": "non_repair",
+        "selected_teacher": "safe_repair",
+        "student_single": "safe_repair"
+      }
+    },
+    {
+      "case": 13,
+      "cohort": "fitting_seed_diagnostic",
+      "complete": {
+        "joint128": false,
+        "label_selected": true,
+        "selected_teacher": false,
+        "student_single": false
+      },
+      "id": "jp1-train-color-11",
+      "safe_teachers": [
+        "selected_teacher"
+      ],
+      "same_type_teacher_alignment": {
+        "gamma": 0.9254377858754064,
+        "orthogonal_mse_over_initial": 0.057777951136228536,
+        "relative_target_mse": 0.06333747491139027,
+        "target_mse": 0.006447806212939
+      },
+      "seed": 156034178,
+      "status": {
+        "joint128": "non_repair",
+        "label_selected": "safe_repair",
+        "selected_teacher": "safe_repair",
+        "student_single": "safe_repair"
+      }
+    },
+    {
+      "case": 14,
+      "cohort": "fitting_seed_diagnostic",
+      "complete": {
+        "joint128": false,
+        "label_selected": true,
+        "selected_teacher": true,
+        "student_single": false
+      },
+      "id": "jp1-train-relation-01",
+      "safe_teachers": [
+        "selected_teacher"
+      ],
+      "same_type_teacher_alignment": {
+        "gamma": 0.954981733616989,
+        "orthogonal_mse_over_initial": 0.035955995802405084,
+        "relative_target_mse": 0.03798264011053682,
+        "target_mse": 0.006141338591023948
+      },
+      "seed": 1582394764,
+      "status": {
+        "joint128": "non_repair",
+        "label_selected": "safe_repair",
+        "selected_teacher": "safe_repair",
+        "student_single": "unknown"
+      }
+    },
+    {
+      "case": 15,
+      "cohort": "positive_fresh_seed",
+      "complete": {
+        "geneval@1": false,
+        "joint128": false,
+        "label_selected": false,
+        "ocr@1": false,
+        "student_single": false
+      },
+      "id": "jp1-train-relation-12",
+      "safe_teachers": [],
+      "same_type_teacher_alignment": {
+        "gamma": 0.052230278234619856,
+        "orthogonal_mse_over_initial": 0.21067285298385108,
+        "relative_target_mse": 1.1089402984790773,
+        "target_mse": 0.15339213221058196
+      },
+      "seed": 1227225803,
+      "status": {
+        "geneval@1": "unknown",
+        "joint128": "unknown",
+        "label_selected": "unknown",
+        "ocr@1": "unknown",
+        "student_single": "unknown"
+      }
+    },
+    {
+      "case": 16,
+      "cohort": "positive_fresh_seed",
+      "complete": {
+        "geneval@1": false,
+        "joint128": false,
+        "label_selected": false,
+        "ocr@1": false,
+        "student_single": false
+      },
+      "id": "jp1-train-color-13",
+      "safe_teachers": [],
+      "same_type_teacher_alignment": {
+        "gamma": 0.03026532951038053,
+        "orthogonal_mse_over_initial": 0.22083900612377552,
+        "relative_target_mse": 1.1612243372733864,
+        "target_mse": 0.0740130919188728
+      },
+      "seed": 1035568533,
+      "status": {
+        "geneval@1": "non_repair",
+        "joint128": "non_repair",
+        "label_selected": "non_repair",
+        "ocr@1": "non_repair",
+        "student_single": "non_repair"
+      }
+    },
+    {
+      "case": 17,
+      "cohort": "positive_fresh_seed",
+      "complete": {
+        "geneval@1": false,
+        "joint128": false,
+        "label_selected": false,
+        "ocr@1": false,
+        "student_single": false
+      },
+      "id": "jp1-train-color-13",
+      "safe_teachers": [],
+      "same_type_teacher_alignment": {
+        "gamma": 0.13960907264063308,
+        "orthogonal_mse_over_initial": 0.2219043754526438,
+        "relative_target_mse": 0.9621769233349553,
+        "target_mse": 0.07113073572651901
+      },
+      "seed": 1786479405,
+      "status": {
+        "geneval@1": "non_repair",
+        "joint128": "non_repair",
+        "label_selected": "non_repair",
+        "ocr@1": "non_repair",
+        "student_single": "non_repair"
+      }
+    },
+    {
+      "case": 18,
+      "cohort": "positive_fresh_seed",
+      "complete": {
+        "geneval@1": false,
+        "joint128": false,
+        "label_selected": false,
+        "ocr@1": false,
+        "student_single": false
+      },
+      "id": "jp1-train-color-11",
+      "safe_teachers": [
+        "geneval@1",
+        "ocr@1"
+      ],
+      "same_type_teacher_alignment": {
+        "gamma": 0.20037100340138916,
+        "orthogonal_mse_over_initial": 0.20217766406172286,
+        "relative_target_mse": 0.841584196263024,
+        "target_mse": 0.09408456145949456
+      },
+      "seed": 15411324,
+      "status": {
+        "geneval@1": "safe_repair",
+        "joint128": "non_repair",
+        "label_selected": "safe_repair",
+        "ocr@1": "safe_repair",
+        "student_single": "safe_repair"
+      }
+    }
+  ],
+  "conclusions": [
+    "Fresh single-student and full-student have exactly the same complete-scene indicator on every state (2/12 each), not only equal aggregate counts.",
+    "Fresh expert availability: 2 known-safe states, 4 unresolved, 6 with all teacher comparisons known and no safe repair. Two of the six already have complete initial scenes.",
+    "Case5: GenEval fixes four cups to two, text remains wrong; learned single action keeps four cups, full learned image also loses visibility. Determinate local transfer failure with an available teacher action.",
+    "Case18: both experts and local/full student repair PAC to PEACH, but all retain cropped chair legs. This is a clause repair, not a complete scene.",
+    "Case8: single learned, full learned and GenEval damage correct BLOOM to BLOM; OCR preserves the complete baseline. Acceptance/preservation remains necessary.",
+    "Old case12: learned single action repairs the cup/bottle relation, whereas full learned trajectory loses it; trajectory interference exists on this fitting seed.",
+    "Old single-student has four determinate safe repairs and two uncertain texts. The two uncertain old targets are not proof of terminal repair failure despite low MSE.",
+    "Fresh same-expert action alignment degrades, but matching all fresh expert actions would be inappropriate because many are not safe targets. Improve coverage and certify targets before fitting."
+  ],
+  "source_results_sha256": "b04531687c760012712cdb507ca9cdae8240985e11b635b85c1a93e7a7ccae77",
+  "stage": "post-join descriptive mechanism analysis, no selection or new training",
+  "teacher_availability": {
+    "fitting_seed_diagnostic": {
+      "all_teacher_comparisons_known_no_safe": {
+        "cases": [],
+        "count": 0
+      },
+      "known_safe_available": {
+        "cases": [
+          3,
+          6,
+          11,
+          12,
+          13,
+          14
+        ],
+        "count": 6
+      },
+      "no_known_safe_but_unresolved": {
+        "cases": [],
+        "count": 0
+      }
+    },
+    "positive_fresh_seed": {
+      "all_teacher_comparisons_known_no_safe": {
+        "cases": [
+          1,
+          2,
+          8,
+          9,
+          16,
+          17
+        ],
+        "count": 6
+      },
+      "known_safe_available": {
+        "cases": [
+          5,
+          18
+        ],
+        "count": 2
+      },
+      "no_known_safe_but_unresolved": {
+        "cases": [
+          4,
+          7,
+          10,
+          15
+        ],
+        "count": 4
+      }
+    }
+  }
+}

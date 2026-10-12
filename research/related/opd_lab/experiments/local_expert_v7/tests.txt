@@ -1,0 +1,6 @@
+Commands run with PYTHONPATH=python and the unchanged site.local.json interpreter:
+python -m pytest tests/test_learnability.py tests/test_fitting_probe.py -q
+5 passed in 3.96s
+python -m pytest -q
+60 passed in 11.60s
+New behavioral coverage: reject uncertain/harmful positive selection; direction versus residual; identical starts and frozen behavior in single/joint conflicting-target fits.

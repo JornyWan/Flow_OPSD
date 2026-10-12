@@ -1,0 +1,39 @@
+{
+  "time_utc": "2026-09-15T19:09:37.109404+00:00",
+  "jobs": [
+    {
+      "job_id": "1050595",
+      "stage": "le20_acceptance_collection",
+      "run": "/midtier/minilab/scratch/chw4026/projects/side_project/generative/opd_related/opd_lab/runs/le20_collection_001",
+      "state": "COMPLETED",
+      "elapsed_seconds": 295,
+      "allocated_tres": "billing=4,cpu=4,gres/gpu:l40=1,mem=96G,node=1",
+      "exit_code": "0:0",
+      "nodes": "ai-gpu12",
+      "allocated_gpu_hours": 0.08194444444444444
+    },
+    {
+      "job_id": "1050602",
+      "stage": "le20_acceptance_fit",
+      "run": "/midtier/minilab/scratch/chw4026/projects/side_project/generative/opd_related/opd_lab/runs/le20_fit_002",
+      "state": "FAILED",
+      "elapsed_seconds": 2317,
+      "allocated_tres": "billing=4,cpu=4,gres/gpu:l40=1,mem=96G,node=1",
+      "exit_code": "1:0",
+      "nodes": "ai-gpu13",
+      "allocated_gpu_hours": 0.6436111111111111
+    },
+    {
+      "job_id": "1050650",
+      "stage": "le20_acceptance_evaluate",
+      "run": "/midtier/minilab/scratch/chw4026/projects/side_project/generative/opd_related/opd_lab/runs/le20_eval_001",
+      "state": "COMPLETED",
+      "elapsed_seconds": 607,
+      "allocated_tres": "billing=4,cpu=4,gres/gpu:l40=1,mem=96G,node=1",
+      "exit_code": "0:0",
+      "nodes": "ai-gpu12",
+      "allocated_gpu_hours": 0.1686111111111111
+    }
+  ],
+  "allocated_gpu_hours_including_failed_attempts_so_far": 0.8941666666666668
+}

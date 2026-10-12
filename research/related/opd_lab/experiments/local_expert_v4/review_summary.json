@@ -1,0 +1,842 @@
+{
+  "cases_with_known_clause_improvement": [
+    9,
+    11,
+    12,
+    17,
+    19
+  ],
+  "cases_with_known_clause_regression": [
+    5,
+    15,
+    18
+  ],
+  "clause_transitions": {
+    "color:None->None": 2,
+    "color:None->True": 1,
+    "color:True->None": 1,
+    "color:True->True": 6,
+    "count:False->False": 3,
+    "count:False->True": 1,
+    "count:None->None": 1,
+    "count:None->True": 1,
+    "count:True->True": 4,
+    "relation:False->False": 1,
+    "relation:False->True": 3,
+    "relation:True->True": 2,
+    "text:False->False": 1,
+    "text:False->None": 1,
+    "text:False->True": 3,
+    "text:True->False": 3,
+    "text:True->True": 14
+  },
+  "key_sha256": "e3307c2d416b484182058935c66150c4e0fd0116d836a61ccb58f2a2993ee36d",
+  "observations_frozen": {
+    "cases": 22,
+    "frozen_at_utc": "2026-09-11T20:47:05.740583+00:00",
+    "key_opened": false,
+    "new_ray_results_inspected": false,
+    "observations": 44,
+    "observations_sha256": "bc20613770a4b35843912b4e7f76667f6629cbd12b5e9ab6a44b990caf08ec31",
+    "observer": "implementing assistant; not independent human truth; imperfect blinding due to possible prior phase3 exposure",
+    "rubric_sha256": "7349b2b98fb879f2252d6f707192a02e57e8837fccc9f64b664ea016bb26d8d1"
+  },
+  "preferences": {
+    "noop_better": 2,
+    "target_better": 10,
+    "tie": 7,
+    "uncertain": 3
+  },
+  "proxy_visual_clause_disagreements_44_images": {
+    "color:proxy_False_visual_True": 2,
+    "count:proxy_False_visual_True": 1,
+    "count:proxy_True_visual_False": 3,
+    "relation:proxy_False_visual_True": 2,
+    "text:proxy_False_visual_True": 11,
+    "text:proxy_True_visual_False": 3
+  },
+  "revealed_at_utc": "2026-09-11T20:50:51.449561+00:00",
+  "rows": [
+    {
+      "case": 1,
+      "comparison_notes": "Both show one yellow vase and readable stylized SODA; no clear prompt improvement.",
+      "id": "jp1-train-color-05",
+      "improved_clauses": [],
+      "noop": {
+        "clauses": {
+          "color": true,
+          "text": true
+        },
+        "full_visibility": true,
+        "notes": "Same letter styling and overlap.",
+        "visible_text": "SODA"
+      },
+      "preference": "tie",
+      "proxy_utility_gain": 0.5625,
+      "regressed_clauses": [],
+      "target": {
+        "clauses": {
+          "color": true,
+          "text": true
+        },
+        "full_visibility": true,
+        "notes": "Vase overlaps lower central letters; final A lacks a crossbar but remains readable.",
+        "visible_text": "SODA"
+      },
+      "target_all_visual_clauses_true": true,
+      "target_false_clauses": [],
+      "target_full_visibility": true,
+      "target_proxy_joint_success": true,
+      "target_unknown_clauses": []
+    },
+    {
+      "case": 2,
+      "comparison_notes": "B exposes more of both chairs; both still fail full visibility.",
+      "id": "jp1-train-count_color-03",
+      "improved_clauses": [],
+      "noop": {
+        "clauses": {
+          "color": true,
+          "count": true,
+          "text": true
+        },
+        "full_visibility": false,
+        "notes": "Two green chairs cropped at bottom and sides; mostly backs visible. Spaced black wall letters, no distinct sign boundary.",
+        "visible_text": "LUNA"
+      },
+      "preference": "target_better",
+      "proxy_utility_gain": 0.5333333333333334,
+      "regressed_clauses": [],
+      "target": {
+        "clauses": {
+          "color": true,
+          "count": true,
+          "text": true
+        },
+        "full_visibility": false,
+        "notes": "Two green chairs with more seats/arms visible; bottoms and side still cropped. No distinct white sign boundary.",
+        "visible_text": "LUNA"
+      },
+      "target_all_visual_clauses_true": true,
+      "target_false_clauses": [],
+      "target_full_visibility": false,
+      "target_proxy_joint_success": true,
+      "target_unknown_clauses": []
+    },
+    {
+      "case": 3,
+      "comparison_notes": "B puts the correct word on one white sign; both cups remain cropped.",
+      "id": "jp1-train-color-08",
+      "improved_clauses": [],
+      "noop": {
+        "clauses": {
+          "color": true,
+          "text": true
+        },
+        "full_visibility": false,
+        "notes": "One red cup cut off at bottom. Five separate letter panels rather than one sign.",
+        "visible_text": "FRESH"
+      },
+      "preference": "target_better",
+      "proxy_utility_gain": 0.6428571428571428,
+      "regressed_clauses": [],
+      "target": {
+        "clauses": {
+          "color": true,
+          "text": true
+        },
+        "full_visibility": false,
+        "notes": "One red cup cut off at bottom. Word appears on a single white sign.",
+        "visible_text": "FRESH"
+      },
+      "target_all_visual_clauses_true": true,
+      "target_false_clauses": [],
+      "target_full_visibility": false,
+      "target_proxy_joint_success": true,
+      "target_unknown_clauses": []
+    },
+    {
+      "case": 4,
+      "comparison_notes": "No clear difference in text or fruit count/visibility.",
+      "id": "jp1-train-count_color-15",
+      "improved_clauses": [],
+      "noop": {
+        "clauses": {
+          "color": null,
+          "count": null,
+          "text": true
+        },
+        "full_visibility": null,
+        "notes": "One clear red banana silhouette; underside may be an overlapping fruit or part of the same fruit. Two separated bananas are not established.",
+        "visible_text": "SUNNY"
+      },
+      "preference": "tie",
+      "proxy_utility_gain": 0.033333333333333354,
+      "regressed_clauses": [],
+      "target": {
+        "clauses": {
+          "color": null,
+          "count": null,
+          "text": true
+        },
+        "full_visibility": null,
+        "notes": "Same ambiguous fruit silhouette and lack of clear separation.",
+        "visible_text": "SUNNY"
+      },
+      "target_all_visual_clauses_true": false,
+      "target_false_clauses": [],
+      "target_full_visibility": null,
+      "target_proxy_joint_success": false,
+      "target_unknown_clauses": [
+        "count",
+        "color"
+      ]
+    },
+    {
+      "case": 5,
+      "comparison_notes": "B has a more identifiable L and approaches the requested word; object/text placement remains problematic.",
+      "id": "jp1-train-count-13",
+      "improved_clauses": [],
+      "noop": {
+        "clauses": {
+          "count": true,
+          "text": true
+        },
+        "full_visibility": null,
+        "notes": "Stylized L adjoining O is visible. Thin partly white lettering; central vase overlaps U, making complete unobscured visibility uncertain.",
+        "visible_text": "CLOUD"
+      },
+      "preference": "noop_better",
+      "proxy_utility_gain": 0.25,
+      "regressed_clauses": [
+        "text"
+      ],
+      "target": {
+        "clauses": {
+          "count": true,
+          "text": false
+        },
+        "full_visibility": null,
+        "notes": "One central vase overlaps the lettering. Missing identifiable L; lettering is thin, partly white, and beside/overlaid with the vase rather than above.",
+        "visible_text": "COUD"
+      },
+      "target_all_visual_clauses_true": false,
+      "target_false_clauses": [
+        "text"
+      ],
+      "target_full_visibility": null,
+      "target_proxy_joint_success": false,
+      "target_unknown_clauses": []
+    },
+    {
+      "case": 6,
+      "comparison_notes": "A shows slightly more of the cups; both have two instead of one.",
+      "id": "jp1-train-count-00",
+      "improved_clauses": [],
+      "noop": {
+        "clauses": {
+          "count": false,
+          "text": true
+        },
+        "full_visibility": false,
+        "notes": "Two cups more clipped at left/right frame.",
+        "visible_text": "MINT"
+      },
+      "preference": "target_better",
+      "proxy_utility_gain": 0.75,
+      "regressed_clauses": [],
+      "target": {
+        "clauses": {
+          "count": false,
+          "text": true
+        },
+        "full_visibility": false,
+        "notes": "Two cups, both touching/cut by lateral frame; black spaced letters on white wall.",
+        "visible_text": "MINT"
+      },
+      "target_all_visual_clauses_true": false,
+      "target_false_clauses": [
+        "count"
+      ],
+      "target_full_visibility": false,
+      "target_proxy_joint_success": true,
+      "target_unknown_clauses": []
+    },
+    {
+      "case": 7,
+      "comparison_notes": "Both preserve one blue apple but show a duplicated/fused character near the beginning of the requested word.",
+      "id": "jp1-train-color-10",
+      "improved_clauses": [],
+      "noop": {
+        "clauses": {
+          "color": true,
+          "text": false
+        },
+        "full_visibility": true,
+        "notes": "Extra A.",
+        "visible_text": "MAAPLE"
+      },
+      "preference": "tie",
+      "proxy_utility_gain": 0.5416666666666666,
+      "regressed_clauses": [],
+      "target": {
+        "clauses": {
+          "color": true,
+          "text": false
+        },
+        "full_visibility": true,
+        "notes": "Initial letter has extra M-like strokes rather than clean MAPLE.",
+        "visible_text": "MMAPLE (fused initial M shapes)"
+      },
+      "target_all_visual_clauses_true": false,
+      "target_false_clauses": [
+        "text"
+      ],
+      "target_full_visibility": true,
+      "target_proxy_joint_success": true,
+      "target_unknown_clauses": []
+    },
+    {
+      "case": 8,
+      "comparison_notes": "Same reversed spatial relation and severe cropping.",
+      "id": "jp1-train-relation-08",
+      "improved_clauses": [],
+      "noop": {
+        "clauses": {
+          "relation": false,
+          "text": true
+        },
+        "full_visibility": false,
+        "notes": "Same reversed relation and clipping.",
+        "visible_text": "FRESH"
+      },
+      "preference": "tie",
+      "proxy_utility_gain": 0.10416666666666667,
+      "regressed_clauses": [],
+      "target": {
+        "clauses": {
+          "relation": false,
+          "text": true
+        },
+        "full_visibility": false,
+        "notes": "Cup is right of bottle, not left. Both objects cut off at bottom; sign letters cut at top/right but word remains identifiable.",
+        "visible_text": "FRESH"
+      },
+      "target_all_visual_clauses_true": false,
+      "target_false_clauses": [
+        "relation"
+      ],
+      "target_full_visibility": false,
+      "target_proxy_joint_success": false,
+      "target_unknown_clauses": []
+    },
+    {
+      "case": 9,
+      "comparison_notes": "A clearly contains the requested fully visible bowl; B has only cropped plate-like objects at the bottom.",
+      "id": "jp1-train-count-12",
+      "improved_clauses": [
+        "count"
+      ],
+      "noop": {
+        "clauses": {
+          "count": false,
+          "text": true
+        },
+        "full_visibility": false,
+        "notes": "Two shallow green plate-like forms clipped by bottom; no clear complete bowl.",
+        "visible_text": "BLOOM"
+      },
+      "preference": "target_better",
+      "proxy_utility_gain": 0.75,
+      "regressed_clauses": [],
+      "target": {
+        "clauses": {
+          "count": true,
+          "text": true
+        },
+        "full_visibility": true,
+        "notes": "One clearly visible white bowl, sign above.",
+        "visible_text": "BLOOM"
+      },
+      "target_all_visual_clauses_true": true,
+      "target_false_clauses": [],
+      "target_full_visibility": true,
+      "target_proxy_joint_success": true,
+      "target_unknown_clauses": []
+    },
+    {
+      "case": 10,
+      "comparison_notes": "A exposes more of the chair but its structure is malformed; B has a more recognizable chair back with greater cropping.",
+      "id": "jp1-train-relation-02",
+      "improved_clauses": [],
+      "noop": {
+        "clauses": {
+          "relation": true,
+          "text": true
+        },
+        "full_visibility": false,
+        "notes": "One chair left of plant; chair and pot heavily cropped.",
+        "visible_text": "DAWN"
+      },
+      "preference": "uncertain",
+      "proxy_utility_gain": 0.6666666666666667,
+      "regressed_clauses": [],
+      "target": {
+        "clauses": {
+          "relation": true,
+          "text": true
+        },
+        "full_visibility": false,
+        "notes": "One malformed chair left of one plant; chair legs/seat area and pot cropped at bottom.",
+        "visible_text": "DAWN"
+      },
+      "target_all_visual_clauses_true": true,
+      "target_false_clauses": [],
+      "target_full_visibility": false,
+      "target_proxy_joint_success": true,
+      "target_unknown_clauses": []
+    },
+    {
+      "case": 11,
+      "comparison_notes": "B corrects the relation, removes extra label text, and improves framing; some bottle occlusion remains.",
+      "id": "jp1-train-relation-12",
+      "improved_clauses": [
+        "text",
+        "relation"
+      ],
+      "noop": {
+        "clauses": {
+          "relation": false,
+          "text": false
+        },
+        "full_visibility": false,
+        "notes": "Cup left of bottle rather than right. Bottle clipped at right and has additional writing. Sign letters pale rather than bold black.",
+        "visible_text": "BLOOM; small bottle-label writing"
+      },
+      "preference": "target_better",
+      "proxy_utility_gain": 0.6625,
+      "regressed_clauses": [],
+      "target": {
+        "clauses": {
+          "relation": true,
+          "text": true
+        },
+        "full_visibility": false,
+        "notes": "Cup right of bottle, both within frame. Cup overlaps the lower right part of the bottle, so the bottle is not fully unobscured.",
+        "visible_text": "BLOOM"
+      },
+      "target_all_visual_clauses_true": true,
+      "target_false_clauses": [],
+      "target_full_visibility": false,
+      "target_proxy_joint_success": true,
+      "target_unknown_clauses": []
+    },
+    {
+      "case": 12,
+      "comparison_notes": "A has the right objects and relation and readable word; B misses the car and corrupts the word.",
+      "id": "jp1-train-relation-07",
+      "improved_clauses": [
+        "text",
+        "relation"
+      ],
+      "noop": {
+        "clauses": {
+          "relation": false,
+          "text": false
+        },
+        "full_visibility": false,
+        "notes": "Only a bicycle; no visible car. Extra chevron-like letter stroke and malformed initial letter.",
+        "visible_text": "[malformed W]AV<E"
+      },
+      "preference": "target_better",
+      "proxy_utility_gain": 0.75,
+      "regressed_clauses": [],
+      "target": {
+        "clauses": {
+          "relation": true,
+          "text": true
+        },
+        "full_visibility": false,
+        "notes": "Bicycle to right of car, car front cut by left border.",
+        "visible_text": "Wave"
+      },
+      "target_all_visual_clauses_true": true,
+      "target_false_clauses": [],
+      "target_full_visibility": false,
+      "target_proxy_joint_success": true,
+      "target_unknown_clauses": []
+    },
+    {
+      "case": 13,
+      "comparison_notes": "Both have readable LOFT and multiple overlapping books instead of one.",
+      "id": "jp1-train-count-06",
+      "improved_clauses": [],
+      "noop": {
+        "clauses": {
+          "count": false,
+          "text": true
+        },
+        "full_visibility": false,
+        "notes": "Several books overlap and extend past side frame; page shapes differ but no clear count correction.",
+        "visible_text": "LOFT"
+      },
+      "preference": "tie",
+      "proxy_utility_gain": 0.75,
+      "regressed_clauses": [],
+      "target": {
+        "clauses": {
+          "count": false,
+          "text": true
+        },
+        "full_visibility": false,
+        "notes": "Several books overlap and extend past side frame.",
+        "visible_text": "LOFT"
+      },
+      "target_all_visual_clauses_true": false,
+      "target_false_clauses": [
+        "count"
+      ],
+      "target_full_visibility": false,
+      "target_proxy_joint_success": true,
+      "target_unknown_clauses": []
+    },
+    {
+      "case": 14,
+      "comparison_notes": "A has clearer black lettering and a more banana-like curved fruit; both remain readable.",
+      "id": "jp1-train-count_color-07",
+      "improved_clauses": [],
+      "noop": {
+        "clauses": {
+          "color": null,
+          "count": null,
+          "text": true
+        },
+        "full_visibility": true,
+        "notes": "One red elongated fruit, identity less certain (banana/pepper-like). Letters largely white with black inset strokes, not bold black.",
+        "visible_text": "WAVE"
+      },
+      "preference": "target_better",
+      "proxy_utility_gain": 0.5833333333333333,
+      "regressed_clauses": [],
+      "target": {
+        "clauses": {
+          "color": true,
+          "count": true,
+          "text": true
+        },
+        "full_visibility": true,
+        "notes": "Stylized A without crossbar; one curved red banana.",
+        "visible_text": "WAVE"
+      },
+      "target_all_visual_clauses_true": true,
+      "target_false_clauses": [],
+      "target_full_visibility": true,
+      "target_proxy_joint_success": true,
+      "target_unknown_clauses": []
+    },
+    {
+      "case": 15,
+      "comparison_notes": "B improves bicycle framing and black text and removes obvious license-plate writing; wheel edge still near/cut at bottom.",
+      "id": "jp1-train-relation-03",
+      "improved_clauses": [],
+      "noop": {
+        "clauses": {
+          "relation": true,
+          "text": true
+        },
+        "full_visibility": false,
+        "notes": "Bicycle left of car, bicycle wheel bottom touches/cuts frame; much more bicycle visible.",
+        "visible_text": "LUNA"
+      },
+      "preference": "noop_better",
+      "proxy_utility_gain": 0.6666666666666667,
+      "regressed_clauses": [
+        "text"
+      ],
+      "target": {
+        "clauses": {
+          "relation": true,
+          "text": false
+        },
+        "full_visibility": false,
+        "notes": "Bicycle left of car but much of bicycle cropped at bottom. Extra plate writing and partly pale L.",
+        "visible_text": "LUNA; small license-plate characters"
+      },
+      "target_all_visual_clauses_true": false,
+      "target_false_clauses": [
+        "text"
+      ],
+      "target_full_visibility": false,
+      "target_proxy_joint_success": true,
+      "target_unknown_clauses": []
+    },
+    {
+      "case": 16,
+      "comparison_notes": "Both show three separated blue apples and readable MAPLE; no meaningful fulfillment difference.",
+      "id": "jp1-train-count_color-10",
+      "improved_clauses": [],
+      "noop": {
+        "clauses": {
+          "color": true,
+          "count": true,
+          "text": true
+        },
+        "full_visibility": true,
+        "notes": "Same count/color/word and complete objects.",
+        "visible_text": "MAPLE"
+      },
+      "preference": "tie",
+      "proxy_utility_gain": 0.07407407407407407,
+      "regressed_clauses": [],
+      "target": {
+        "clauses": {
+          "color": true,
+          "count": true,
+          "text": true
+        },
+        "full_visibility": true,
+        "notes": "Black letters on cream tiles within a white sign.",
+        "visible_text": "MAPLE"
+      },
+      "target_all_visual_clauses_true": true,
+      "target_false_clauses": [],
+      "target_full_visibility": true,
+      "target_proxy_joint_success": false,
+      "target_unknown_clauses": []
+    },
+    {
+      "case": 17,
+      "comparison_notes": "B removes the extra N and shows two fully visible separated bananas.",
+      "id": "jp1-train-count-15",
+      "improved_clauses": [
+        "text"
+      ],
+      "noop": {
+        "clauses": {
+          "count": true,
+          "text": false
+        },
+        "full_visibility": false,
+        "notes": "Three Ns; two bananas overlap, lower one cut by bottom and left border.",
+        "visible_text": "SUNNNY"
+      },
+      "preference": "target_better",
+      "proxy_utility_gain": 0.5416666666666666,
+      "regressed_clauses": [],
+      "target": {
+        "clauses": {
+          "count": true,
+          "text": true
+        },
+        "full_visibility": true,
+        "notes": "Compressed stylized Ns, but two Ns only; two separated complete bananas.",
+        "visible_text": "SUNNY"
+      },
+      "target_all_visual_clauses_true": true,
+      "target_false_clauses": [],
+      "target_full_visibility": true,
+      "target_proxy_joint_success": true,
+      "target_unknown_clauses": []
+    },
+    {
+      "case": 18,
+      "comparison_notes": "B removes extra text and places word above fruit but lettering is much paler; fruit identity in A is less clear.",
+      "id": "jp1-train-color-15",
+      "improved_clauses": [],
+      "noop": {
+        "clauses": {
+          "color": true,
+          "text": true
+        },
+        "full_visibility": true,
+        "notes": "One elongated curved red banana; very pale white/yellow letters rather than bold black.",
+        "visible_text": "SUNNY"
+      },
+      "preference": "uncertain",
+      "proxy_utility_gain": 0.55,
+      "regressed_clauses": [
+        "text"
+      ],
+      "target": {
+        "clauses": {
+          "color": null,
+          "text": false
+        },
+        "full_visibility": true,
+        "notes": "Large extra S and small Sunny. One red pepper/banana-like fruit; uncertain banana identity.",
+        "visible_text": "S Sunny"
+      },
+      "target_all_visual_clauses_true": false,
+      "target_false_clauses": [
+        "text"
+      ],
+      "target_full_visibility": true,
+      "target_proxy_joint_success": true,
+      "target_unknown_clauses": [
+        "color"
+      ]
+    },
+    {
+      "case": 19,
+      "comparison_notes": "B corrects object multiplicity and places the apple right of the bowl; bottom clipping remains.",
+      "id": "jp1-train-relation-13",
+      "improved_clauses": [
+        "relation"
+      ],
+      "noop": {
+        "clauses": {
+          "relation": false,
+          "text": true
+        },
+        "full_visibility": false,
+        "notes": "Apple on left plus another red apple-like object in stacked bowls on right; wrong count/relation. Objects cut at bottom.",
+        "visible_text": "CLOUD"
+      },
+      "preference": "target_better",
+      "proxy_utility_gain": 0.6666666666666667,
+      "regressed_clauses": [],
+      "target": {
+        "clauses": {
+          "relation": true,
+          "text": true
+        },
+        "full_visibility": false,
+        "notes": "One apple right of one bowl, both lower edges cropped.",
+        "visible_text": "CLOUD"
+      },
+      "target_all_visual_clauses_true": true,
+      "target_false_clauses": [],
+      "target_full_visibility": false,
+      "target_proxy_joint_success": true,
+      "target_unknown_clauses": []
+    },
+    {
+      "case": 20,
+      "comparison_notes": "A has darker correct text but puts it on the yellow object; B has a larger sign arrangement but partly pale lettering and text still at object level.",
+      "id": "jp1-train-color-14",
+      "improved_clauses": [],
+      "noop": {
+        "clauses": {
+          "color": null,
+          "text": true
+        },
+        "full_visibility": true,
+        "notes": "Yellow central book/tile with E; pale C/L/A on neighboring white tiles. Exact book identity/count uncertain; text not above object.",
+        "visible_text": "CLEAR"
+      },
+      "preference": "uncertain",
+      "proxy_utility_gain": 0.15,
+      "regressed_clauses": [],
+      "target": {
+        "clauses": {
+          "color": null,
+          "text": true
+        },
+        "full_visibility": true,
+        "notes": "Small yellow upright book-like object with matching yellow base; exact book identity/count uncertain. Word on yellow object rather than a large white sign above.",
+        "visible_text": "CLEAR"
+      },
+      "target_all_visual_clauses_true": false,
+      "target_false_clauses": [],
+      "target_full_visibility": true,
+      "target_proxy_joint_success": false,
+      "target_unknown_clauses": [
+        "color"
+      ]
+    },
+    {
+      "case": 21,
+      "comparison_notes": "A restores discernible O and T and is much closer to NORTH, though pale strokes leave transcription ambiguity.",
+      "id": "jp1-train-color-09",
+      "improved_clauses": [],
+      "noop": {
+        "clauses": {
+          "color": true,
+          "text": false
+        },
+        "full_visibility": null,
+        "notes": "O and T absent; bottle base coincides with bottom edge.",
+        "visible_text": "NRH"
+      },
+      "preference": "target_better",
+      "proxy_utility_gain": 0.6,
+      "regressed_clauses": [],
+      "target": {
+        "clauses": {
+          "color": true,
+          "text": null
+        },
+        "full_visibility": null,
+        "notes": "O and parts of other letters are white, not black; unclear whether extra pale stroke is a character. Bottle base coincides with bottom edge.",
+        "visible_text": "NORTH (possible extra pale vertical stroke between R and T)"
+      },
+      "target_all_visual_clauses_true": false,
+      "target_false_clauses": [],
+      "target_full_visibility": null,
+      "target_proxy_joint_success": true,
+      "target_unknown_clauses": [
+        "text"
+      ]
+    },
+    {
+      "case": 22,
+      "comparison_notes": "Both contain more than two books and retain clipping/overlap.",
+      "id": "jp1-train-count-14",
+      "improved_clauses": [],
+      "noop": {
+        "clauses": {
+          "count": false,
+          "text": true
+        },
+        "full_visibility": false,
+        "notes": "Same extra stacked books and bottom cropping.",
+        "visible_text": "CLEAR"
+      },
+      "preference": "tie",
+      "proxy_utility_gain": 0.625,
+      "regressed_clauses": [],
+      "target": {
+        "clauses": {
+          "count": false,
+          "text": true
+        },
+        "full_visibility": false,
+        "notes": "Upright open book or adjoining volumes above at least three stacked horizontal books; bottom stack cropped.",
+        "visible_text": "CLEAR"
+      },
+      "target_all_visual_clauses_true": false,
+      "target_false_clauses": [
+        "count"
+      ],
+      "target_full_visibility": false,
+      "target_proxy_joint_success": true,
+      "target_unknown_clauses": []
+    }
+  ],
+  "scope": "Descriptive implementing-assistant review, not independent human truth. All 22 selected TRAIN pairs, with possible prior phase3 exposure. Known visual disagreements require adjudication; unchanged binary clauses alone do not invalidate progress gains.",
+  "source_sha256": "56bb3a8fd1bce6c0496d0db73cafdb2dd33934dd0932cbd5e56c18c703aede53",
+  "target_proxy_joint_success": 17,
+  "target_proxy_joint_with_known_visual_clause_failure_cases": [
+    6,
+    7,
+    13,
+    15,
+    18,
+    22
+  ],
+  "target_proxy_joint_with_visibility_failure_cases": [
+    2,
+    3,
+    6,
+    10,
+    11,
+    12,
+    13,
+    15,
+    19,
+    22
+  ],
+  "target_visibility_false": 11,
+  "target_visual_all_clauses_true": 11,
+  "target_with_unknown_clause": 4
+}

@@ -1,0 +1,32 @@
+{
+  "final_raw_exports_match_step128": 6,
+  "local_runs": {
+    "le7_capability_001": {
+      "frozen_inputs_valid": true,
+      "result_sha256": "e38144e951c6f1fb14da3d5bfdfe84fc767b46ad85d2f2ea458d9a1204fe01e8"
+    },
+    "le7_fit_001": {
+      "frozen_inputs_valid": true,
+      "result_sha256": "d11b7e07629a4900126aee7ae7035a86baeed6a46891bbeb91cbf732432e03c0"
+    }
+  },
+  "native": {
+    "checkpoints_complete": [
+      8,
+      16,
+      24,
+      32
+    ],
+    "exit_code": 0,
+    "frozen_source_launch_valid": true
+  },
+  "prior_phase6": {
+    "README_historical_revision": "e384a09",
+    "all_recorded_artifacts_unchanged": true,
+    "artifact_count": 153
+  },
+  "upstream": {
+    "diffusionopd": "0c85bf0193a6da24bb1f72152b612d353a154999",
+    "diffusionopsd": "9c4c48cdfe5c3fa712d32957345d75fae9295696"
+  }
+}

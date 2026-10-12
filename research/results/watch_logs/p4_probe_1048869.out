@@ -1,0 +1,49 @@
+[p4] host=ai-gpu07 gpu=NVIDIA A100-SXM4-80GB job=1048869 Sun Sep 13 01:54:22 EDT 2026
+WARNING[XFORMERS]: xFormers can't load C++/CUDA extensions. xFormers was built for:
+    PyTorch 2.6.0+cu124 with CUDA 1204 (you have 2.6.0+cu126)
+    Python  3.10.16 (you have 3.10.16)
+  Please reinstall xformers (see https://github.com/facebookresearch/xformers#installing-xformers)
+  Memory-efficient attention, SwiGLU, sparse and more won't be available.
+  Set XFORMERS_MORE_DETAILS=1 for more details
+Couldn't connect to the Hub: Cannot reach https://huggingface.co/api/models/stabilityai/stable-diffusion-3.5-medium: offline mode is enabled. To disable it, please unset the `HF_HUB_OFFLINE` environment variable..
+Will try to load from local cache.
+Loading pipeline components...:   0%|          | 0/9 [00:00<?, ?it/s]You set `add_prefix_space`. The tokenizer needs to be converted from the slow tokenizers
+Loading pipeline components...:  11%|█         | 1/9 [00:00<00:00,  8.24it/s]Loading pipeline components...:  22%|██▏       | 2/9 [00:00<00:03,  2.08it/s]Loading pipeline components...:  56%|█████▌    | 5/9 [00:02<00:02,  1.64it/s]Loading pipeline components...:  67%|██████▋   | 6/9 [00:03<00:01,  1.99it/s]
+Loading checkpoint shards:   0%|          | 0/2 [00:00<?, ?it/s][A
+Loading checkpoint shards:  50%|█████     | 1/2 [00:00<00:00,  1.13it/s][A
+Loading checkpoint shards: 100%|██████████| 2/2 [00:01<00:00,  1.20it/s][ALoading checkpoint shards: 100%|██████████| 2/2 [00:01<00:00,  1.19it/s]
+Loading pipeline components...:  78%|███████▊  | 7/9 [00:04<00:01,  1.21it/s]Loading pipeline components...: 100%|██████████| 9/9 [00:04<00:00,  2.04it/s]Loading pipeline components...: 100%|██████████| 9/9 [00:04<00:00,  1.86it/s]
+/midtier/minilab/scratch/chw4026/projects/side_project/generative/conda_envs/envs/diffusionopd/lib/python3.10/site-packages/huggingface_hub/file_download.py:797: FutureWarning: `resume_download` is deprecated and will be removed in version 1.0.0. Downloads always resume when possible. If you want to force a new download, use `force_download=True`.
+  warnings.warn(
+2026-09-13 01:54:39,285 - root - INFO - Parsing model identifier. Schema: None, Identifier: ViT-H-14
+2026-09-13 01:54:39,285 - root - INFO - Loaded built-in ViT-H-14 model config.
+2026-09-13 01:54:39,285 - root - INFO - `pretrained` specifies file path: /midtier/minilab/scratch/chw4026/projects/side_project/generative/opd_related/CA-OPD/code/shim_rpi/diffusionopsd/../reward_ckpts/open_clip_pytorch_model.bin
+2026-09-13 01:54:39,285 - root - INFO - Instantiating model architecture: CLIP
+2026-09-13 01:54:45,177 - root - INFO - Loading full pretrained weights from: /midtier/minilab/scratch/chw4026/projects/side_project/generative/opd_related/CA-OPD/code/shim_rpi/diffusionopsd/../reward_ckpts/open_clip_pytorch_model.bin
+2026-09-13 01:54:46,358 - root - INFO - Final image preprocessing configuration set: {'size': (224, 224), 'mode': 'RGB', 'mean': (0.48145466, 0.4578275, 0.40821073), 'std': (0.26862954, 0.26130258, 0.27577711), 'interpolation': 'bicubic', 'resize_mode': 'shortest', 'fill_color': 0}
+2026-09-13 01:54:46,358 - root - INFO - Model ViT-H-14 creation process complete.
+2026-09-13 01:54:47,426 - root - INFO - Parsing tokenizer identifier. Schema: None, Identifier: ViT-H-14
+2026-09-13 01:54:47,426 - root - INFO - Attempting to load config from built-in: ViT-H-14
+2026-09-13 01:54:47,426 - root - INFO - Using default SimpleTokenizer.
+/midtier/minilab/scratch/chw4026/projects/side_project/generative/opd_related/probes/p4_zo_feasibility.py:83: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
+  with torch.no_grad(), torch_autocast(enabled=True, dtype=torch.float16):
+/midtier/minilab/scratch/chw4026/projects/side_project/generative/opd_related/probes/p4_zo_feasibility.py:93: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
+  with torch.no_grad(), torch_autocast(enabled=True, dtype=torch.float16):
+  [p4] 4/64  sigma_q=0.2780  gain_true=+0.07698
+  [p4] 8/64  sigma_q=0.2780  gain_true=+0.05984
+  [p4] 12/64  sigma_q=0.2780  gain_true=+0.05074
+  [p4] 16/64  sigma_q=0.2780  gain_true=+0.09237
+  [p4] 20/64  sigma_q=0.2780  gain_true=+0.06252
+  [p4] 24/64  sigma_q=0.2780  gain_true=+0.07913
+  [p4] 28/64  sigma_q=0.2780  gain_true=+0.06332
+  [p4] 32/64  sigma_q=0.2780  gain_true=+0.05760
+  [p4] 36/64  sigma_q=0.2780  gain_true=+0.08113
+  [p4] 40/64  sigma_q=0.2780  gain_true=+0.05746
+  [p4] 44/64  sigma_q=0.2780  gain_true=+0.06737
+  [p4] 48/64  sigma_q=0.2780  gain_true=+0.06533
+  [p4] 52/64  sigma_q=0.2780  gain_true=+0.07314
+  [p4] 56/64  sigma_q=0.2780  gain_true=+0.05372
+  [p4] 60/64  sigma_q=0.2780  gain_true=+0.08274
+  [p4] 64/64  sigma_q=0.2780  gain_true=+0.05879
+  [p4] wrote /midtier/minilab/scratch/chw4026/projects/side_project/generative/opd_related/outputs/probe_p4_zo.json
+[p4] exit=0 Sun Sep 13 02:45:43 EDT 2026

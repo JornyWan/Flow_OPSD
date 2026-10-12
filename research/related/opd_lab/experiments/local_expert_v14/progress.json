@@ -1,0 +1,39 @@
+{
+  "allocated_gpu_hours": 0.5916666666666667,
+  "job_id": "1049253",
+  "main_readiness": {
+    "checks": {
+      "at_least4_safe_states": false,
+      "complete_attested_coverage": true,
+      "order_agreement_at_least90pct": false,
+      "order_shared_determinate_coverage_at_least80pct": false,
+      "safe_precision_at_least80pct": false,
+      "selected_unknown_at_most10pct": false,
+      "self_determinate_coverage_at_least80pct": false,
+      "zero_selected_known_harm": true,
+      "zero_self_changes": true
+    },
+    "passed": false
+  },
+  "new_seed_confirmation_started": false,
+  "observations_written": 192,
+  "optimizer_updates": 0,
+  "pair_responses_written": 320,
+  "posthoc_array_readiness": {
+    "checks": {
+      "at_least4_safe_states": false,
+      "complete_attested_coverage": true,
+      "order_agreement_at_least90pct": true,
+      "order_shared_determinate_coverage_at_least80pct": true,
+      "safe_precision_at_least80pct": false,
+      "selected_unknown_at_most10pct": false,
+      "self_determinate_coverage_at_least80pct": true,
+      "zero_selected_known_harm": true,
+      "zero_self_changes": true
+    },
+    "passed": false
+  },
+  "result_ready": true,
+  "stage": "complete",
+  "time_utc": "2026-09-14T05:21:33.473681+00:00"
+}

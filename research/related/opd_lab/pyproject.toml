@@ -1,0 +1,20 @@
+[build-system]
+requires = ["setuptools>=64"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "opdlab"
+version = "0.1.0"
+description = "Pinned OPD/OPSD baselines and terminal-verified local expert distillation"
+requires-python = ">=3.10"
+dependencies = ["torch>=2.6", "numpy", "pillow", "ml-collections"]
+
+[project.scripts]
+opdlab = "opdlab.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["python"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["python"]

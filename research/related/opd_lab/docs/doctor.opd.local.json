@@ -1,0 +1,575 @@
+{
+  "assets": {
+    "geneval": {
+      "files": [
+        {
+          "bytes": 5167,
+          "name": "README.md",
+          "sha256": "32581fbec33ab00847065f39befcc28f6a359c23f8eda0ae277066fed27cea46"
+        },
+        {
+          "bytes": 882,
+          "name": "adapter_config.json",
+          "sha256": "a18988ab49b17fa63a926126da96808285b0d16e20b05ac65192b0d851a98b8e"
+        },
+        {
+          "bytes": 1091,
+          "name": "adapter_config.json.orig",
+          "sha256": "335a0db5af6b57b78b5b00e2191527596fd537326a10c6278620373f613bbe1a"
+        },
+        {
+          "bytes": 75156544,
+          "mtime_ns": 1787516018958916452,
+          "name": "adapter_model.safetensors"
+        }
+      ],
+      "inventory_digest": "aeba2a3cd275d897f39518f4a0ace8625432c724511125495539031f1ca04648",
+      "mode": "small_sha256_large_stat",
+      "path": "/midtier/minilab/scratch/chw4026/projects/side_project/generative/opd_related/models/DiffusionOPD/GenEvalTeacher/lora"
+    },
+    "model": {
+      "files": [
+        {
+          "bytes": 1,
+          "name": ".cache/huggingface/.gitignore",
+          "sha256": "684888c0ebb17f374298b65ee2807526c066094c701bcc7ebbe1c1095f494fc1"
+        },
+        {
+          "bytes": 191,
+          "name": ".cache/huggingface/CACHEDIR.TAG",
+          "sha256": "f6572428f6d5e1575e73a1502895a8731f10757dfbb634909c6e154b849af91d"
+        },
+        {
+          "bytes": 100,
+          "name": ".cache/huggingface/download/.gitattributes.metadata",
+          "sha256": "95bdd0f8946ec92a6f0b490426902b7db90308e8672d23d5d292077e2006e993"
+        },
+        {
+          "bytes": 101,
+          "name": ".cache/huggingface/download/LICENSE.md.metadata",
+          "sha256": "68ded01d04649b2348d0b8935489fe1b33f31cbed843243eff597b967af3217b"
+        },
+        {
+          "bytes": 101,
+          "name": ".cache/huggingface/download/README.md.metadata",
+          "sha256": "bee432b6f9012aa9cefe53bd23632210f60fca87822277fe46bb63d938d5f02b"
+        },
+        {
+          "bytes": 101,
+          "name": ".cache/huggingface/download/model_index.json.metadata",
+          "sha256": "7893f81bf3d95f7e5cbe62bd9f954447778b63dbf646068befd100934bbabd56"
+        },
+        {
+          "bytes": 101,
+          "name": ".cache/huggingface/download/scheduler/scheduler_config.json.metadata",
+          "sha256": "f520be4ffd115360dfaec8429386625db58feb7d97321b86501e149d304f7d27"
+        },
+        {
+          "bytes": 101,
+          "name": ".cache/huggingface/download/text_encoder/config.json.metadata",
+          "sha256": "1f1b2ca459672fd84dfecac5abb006cc15b7d4f3c65cb121f0ae21dbd12540b9"
+        },
+        {
+          "bytes": 125,
+          "name": ".cache/huggingface/download/text_encoder/model.fp16.safetensors.metadata",
+          "sha256": "aa330be584157082ad8309c2a3506ecc65f6cb2b75228adf53d61aeb9d1086c8"
+        },
+        {
+          "bytes": 125,
+          "name": ".cache/huggingface/download/text_encoder/model.safetensors.metadata",
+          "sha256": "918fb2c3921f75e8d2df69fa05bc300a461394d5ed10878f697a129c4690d58d"
+        },
+        {
+          "bytes": 101,
+          "name": ".cache/huggingface/download/text_encoder_2/config.json.metadata",
+          "sha256": "fddf0b64cd351fe66f6d2d591e93bb67dd59f35a479dcf66fe9609eef9738b7e"
+        },
+        {
+          "bytes": 125,
+          "name": ".cache/huggingface/download/text_encoder_2/model.fp16.safetensors.metadata",
+          "sha256": "6e80d827234d434c5ed8ebe2724b5253d1dd88f2310c448d1fe2f57155cf0c0a"
+        },
+        {
+          "bytes": 125,
+          "name": ".cache/huggingface/download/text_encoder_2/model.safetensors.metadata",
+          "sha256": "7f69fee45831e9487549f50bd6376c04b9f4e3287caf8cf549a2d81c9d973826"
+        },
+        {
+          "bytes": 100,
+          "name": ".cache/huggingface/download/text_encoder_3/config.json.metadata",
+          "sha256": "f27582182c7c0ad9cb18679867834e61ef5d38dabb910f4e752cf518b5709f93"
+        },
+        {
+          "bytes": 125,
+          "name": ".cache/huggingface/download/text_encoder_3/model-00001-of-00002.safetensors.metadata",
+          "sha256": "f9b176d3d718e433f625ac1d79bc7ed1d982c131797e799f729a2fe7f6a17266"
+        },
+        {
+          "bytes": 125,
+          "name": ".cache/huggingface/download/text_encoder_3/model-00002-of-00002.safetensors.metadata",
+          "sha256": "d74bddd237244d604b7b9ccdf61e47d2ba60dc2c2198c64fac4233fb892721cf"
+        },
+        {
+          "bytes": 124,
+          "name": ".cache/huggingface/download/text_encoder_3/model.fp16-00001-of-00002.safetensors.metadata",
+          "sha256": "5c224544662de1d97acc8bd0f84bf03fc7956495c171266ea38a771fb59c70ec"
+        },
+        {
+          "bytes": 125,
+          "name": ".cache/huggingface/download/text_encoder_3/model.fp16-00002-of-00002.safetensors.metadata",
+          "sha256": "4447e97a5b113f60bad96e8dd746b4d28efbc3b69d996bbb5d4bee9956f25f60"
+        },
+        {
+          "bytes": 99,
+          "name": ".cache/huggingface/download/text_encoder_3/model.safetensors.index.fp16.json.metadata",
+          "sha256": "7580c8d541732f55940c81254abf7c5e4acf9fbc1f9345c239ee23ea565134c6"
+        },
+        {
+          "bytes": 101,
+          "name": ".cache/huggingface/download/text_encoder_3/model.safetensors.index.json.metadata",
+          "sha256": "d9a86e7cb055509115a89f7f3ee877a20d91061ee1487b3d4078cf4ad75013ec"
+        },
+        {
+          "bytes": 101,
+          "name": ".cache/huggingface/download/tokenizer/merges.txt.metadata",
+          "sha256": "f320b5a5bbf18bb499c9e7695efc08c5e777f6b58615e1de068d605f96d84a16"
+        },
+        {
+          "bytes": 101,
+          "name": ".cache/huggingface/download/tokenizer/special_tokens_map.json.metadata",
+          "sha256": "f51e439e8fc7cb324ef765c31c0c605c4ebabc2ee88970705faf8430846f11b3"
+        },
+        {
+          "bytes": 100,
+          "name": ".cache/huggingface/download/tokenizer/tokenizer_config.json.metadata",
+          "sha256": "7857259482565a79bc9d5ba72bdc059d4b4cafabdc99b967044fd7571ecc13cb"
+        },
+        {
+          "bytes": 101,
+          "name": ".cache/huggingface/download/tokenizer/vocab.json.metadata",
+          "sha256": "40fd9a75c1e66c211bc4563771f4cee94f0f2c4e436b93f2e4a370f1e3faf332"
+        },
+        {
+          "bytes": 100,
+          "name": ".cache/huggingface/download/tokenizer_2/merges.txt.metadata",
+          "sha256": "c4b7d187a9e0bfe00bb55f34f7b8437f2260e3d329a09410f7e561a03463c62f"
+        },
+        {
+          "bytes": 101,
+          "name": ".cache/huggingface/download/tokenizer_2/special_tokens_map.json.metadata",
+          "sha256": "c7ad8423271844c84aa57bd9080a4b30bc98f6748642514626fa52a7db119514"
+        },
+        {
+          "bytes": 100,
+          "name": ".cache/huggingface/download/tokenizer_2/tokenizer_config.json.metadata",
+          "sha256": "0ebdfe1e77d916146091a8da51b533a2e354cccc372d0cc51220b81626bddea8"
+        },
+        {
+          "bytes": 101,
+          "name": ".cache/huggingface/download/tokenizer_2/vocab.json.metadata",
+          "sha256": "00b34b6662a7ca73647894d00540d9ab4525e0fe6684a1d041e7e955ea2e5a18"
+        },
+        {
+          "bytes": 101,
+          "name": ".cache/huggingface/download/tokenizer_3/special_tokens_map.json.metadata",
+          "sha256": "d7e3e42ee9a832d064e1e0b2ef41c9717f9bb17db9f59ddf37fbb833d4e2f200"
+        },
+        {
+          "bytes": 125,
+          "name": ".cache/huggingface/download/tokenizer_3/spiece.model.metadata",
+          "sha256": "da353d29d9527537732eea4ab68d143d58a61be76610f1fac4bb3de8ffe84537"
+        },
+        {
+          "bytes": 101,
+          "name": ".cache/huggingface/download/tokenizer_3/tokenizer.json.metadata",
+          "sha256": "dda7bae1640873ac0c413b265abe7d057f6c395f189462128f005d29ddd3c30a"
+        },
+        {
+          "bytes": 101,
+          "name": ".cache/huggingface/download/tokenizer_3/tokenizer_config.json.metadata",
+          "sha256": "55a8cdf385cfba844de0c810251db1046e5e8a92af695ae1303b7953950648f4"
+        },
+        {
+          "bytes": 100,
+          "name": ".cache/huggingface/download/transformer/config.json.metadata",
+          "sha256": "b64419e4dbcf6762bd81237bd79c2da4ba27dc10508c82209505cde58ce74b47"
+        },
+        {
+          "bytes": 125,
+          "name": ".cache/huggingface/download/transformer/diffusion_pytorch_model.safetensors.metadata",
+          "sha256": "e03b65633854f9ce3a1a13e620a18c93669ed37fceeaef847d92434e662ba242"
+        },
+        {
+          "bytes": 101,
+          "name": ".cache/huggingface/download/vae/config.json.metadata",
+          "sha256": "a620d798d931b04f45b03a9df02c9e45074af4aef4a99805e565b33ca3bc265b"
+        },
+        {
+          "bytes": 125,
+          "name": ".cache/huggingface/download/vae/diffusion_pytorch_model.safetensors.metadata",
+          "sha256": "9df48eebbfb436d9e49db6f84e260b878ae5a3a808db3e1664ec018289f5c7f5"
+        },
+        {
+          "bytes": 8535,
+          "name": ".cache/huggingface/trees/b940f670f0eda2d07fbb75229e779da1ad11eb80.json",
+          "sha256": "0caebd2811491aa6d27c7fcc1c230450f688ac3dcbd50e3b6c46e6bbe51bd295"
+        },
+        {
+          "bytes": 1519,
+          "name": ".gitattributes",
+          "sha256": "11ad7efa24975ee4b0c3c3a38ed18737f0658a5f75a0a96787b576a78a023361"
+        },
+        {
+          "bytes": 11726,
+          "name": "LICENSE.md",
+          "sha256": "9b60b9d0411f54d4087484ad4acf28ca6fd9f6a84c30ddacb04de2c623254749"
+        },
+        {
+          "bytes": 12100,
+          "name": "README.md",
+          "sha256": "076c5b3ce1cb9bd33751656cac2b094b6ab93212a82624dab5405f4596737f7a"
+        },
+        {
+          "bytes": 706,
+          "name": "model_index.json",
+          "sha256": "b5e97ca0d3c0cd9a1e3ed91a71bbdd489de7941b23fe038b3aaa9acf36fd1543"
+        },
+        {
+          "bytes": 141,
+          "name": "scheduler/scheduler_config.json",
+          "sha256": "677e1ed36ca0de4ac8cc766ca58869e8649673d5f1d47eb8f8aef511a18ae8f7"
+        },
+        {
+          "bytes": 574,
+          "name": "text_encoder/config.json",
+          "sha256": "3ae637e6409ed10c125e13b935461060d629ee069eea7cb8c3e9eee26b01ff1a"
+        },
+        {
+          "bytes": 247323896,
+          "mtime_ns": 1787515792913147343,
+          "name": "text_encoder/model.fp16.safetensors"
+        },
+        {
+          "bytes": 247323896,
+          "mtime_ns": 1787515789683761895,
+          "name": "text_encoder/model.safetensors"
+        },
+        {
+          "bytes": 570,
+          "name": "text_encoder_2/config.json",
+          "sha256": "786ac791f8ae2168eca583978d89e97b704579e4873a2ca36e2d8b5af561f625"
+        },
+        {
+          "bytes": 1389382176,
+          "mtime_ns": 1787515814946300718,
+          "name": "text_encoder_2/model.fp16.safetensors"
+        },
+        {
+          "bytes": 1389382176,
+          "mtime_ns": 1787515815960942880,
+          "name": "text_encoder_2/model.safetensors"
+        },
+        {
+          "bytes": 740,
+          "name": "text_encoder_3/config.json",
+          "sha256": "9035948b0904c536918a88b5d984a52cfca26a5c57efa9e90149790cf38c151e"
+        },
+        {
+          "bytes": 4994582104,
+          "mtime_ns": 1787516012278731126,
+          "name": "text_encoder_3/model-00001-of-00002.safetensors"
+        },
+        {
+          "bytes": 4530066248,
+          "mtime_ns": 1787515995716728750,
+          "name": "text_encoder_3/model-00002-of-00002.safetensors"
+        },
+        {
+          "bytes": 4994582104,
+          "mtime_ns": 1787516011301033413,
+          "name": "text_encoder_3/model.fp16-00001-of-00002.safetensors"
+        },
+        {
+          "bytes": 4530066248,
+          "mtime_ns": 1787516007675460746,
+          "name": "text_encoder_3/model.fp16-00002-of-00002.safetensors"
+        },
+        {
+          "bytes": 20980,
+          "name": "text_encoder_3/model.safetensors.index.fp16.json",
+          "sha256": "2d9e582d0e2be983581dbbfcfb6ad79e4acc58e9c700d4e855b3825fb3ad6e26"
+        },
+        {
+          "bytes": 19885,
+          "name": "text_encoder_3/model.safetensors.index.json",
+          "sha256": "3bacec0f0cf392399d4a385908f67dd73df99c9e9cfee669f148858ba9fbdb0a"
+        },
+        {
+          "bytes": 524619,
+          "name": "tokenizer/merges.txt",
+          "sha256": "9fd691f7c8039210e0fced15865466c65820d09b63988b0174bfe25de299051a"
+        },
+        {
+          "bytes": 588,
+          "name": "tokenizer/special_tokens_map.json",
+          "sha256": "2cdb3b8331a60c92fc1e55a13e9fd61fd2293c5a51275fdcccd62b780052530e"
+        },
+        {
+          "bytes": 705,
+          "name": "tokenizer/tokenizer_config.json",
+          "sha256": "6bdcee9ccce2a16ca2b4c0c5ed00b42c50ea225f4472a8c4c1e963a2902c2881"
+        },
+        {
+          "bytes": 1059962,
+          "name": "tokenizer/vocab.json",
+          "sha256": "e089ad92ba36837a0d31433e555c8f45fe601ab5c221d4f607ded32d9f7a4349"
+        },
+        {
+          "bytes": 524619,
+          "name": "tokenizer_2/merges.txt",
+          "sha256": "9fd691f7c8039210e0fced15865466c65820d09b63988b0174bfe25de299051a"
+        },
+        {
+          "bytes": 576,
+          "name": "tokenizer_2/special_tokens_map.json",
+          "sha256": "c4dbb96da703fb38f10ccf0490df2fd476811c5a3e71b7e0189cffeed3224e25"
+        },
+        {
+          "bytes": 856,
+          "name": "tokenizer_2/tokenizer_config.json",
+          "sha256": "e70eb3e2b85a508e32bb81c32c13fc3f2b015548ca469b94627c2f32e445cba1"
+        },
+        {
+          "bytes": 1059962,
+          "name": "tokenizer_2/vocab.json",
+          "sha256": "e089ad92ba36837a0d31433e555c8f45fe601ab5c221d4f607ded32d9f7a4349"
+        },
+        {
+          "bytes": 2543,
+          "name": "tokenizer_3/special_tokens_map.json",
+          "sha256": "7a1985a994c41886db38c719d2a3d2f40606663cc19d7c5d6a85d349320e06d2"
+        },
+        {
+          "bytes": 791656,
+          "name": "tokenizer_3/spiece.model",
+          "sha256": "d60acb128cf7b7f2536e8f38a5b18a05535c9e14c7a355904270e15b0945ea86"
+        },
+        {
+          "bytes": 2424035,
+          "mtime_ns": 1787515794463910931,
+          "name": "tokenizer_3/tokenizer.json"
+        },
+        {
+          "bytes": 20617,
+          "name": "tokenizer_3/tokenizer_config.json",
+          "sha256": "83b3e7737eef754efca607d9f580798cc35457daa96052cc60179f095a375c14"
+        },
+        {
+          "bytes": 524,
+          "name": "transformer/config.json",
+          "sha256": "b6ea8128277df286573ce1937c36ce42a5a84e976331091ffccb1d05893dc299"
+        },
+        {
+          "bytes": 4939433672,
+          "mtime_ns": 1787516010543585255,
+          "name": "transformer/diffusion_pytorch_model.safetensors"
+        },
+        {
+          "bytes": 809,
+          "name": "vae/config.json",
+          "sha256": "58557f2439dfa867450caef425b5d11160be8aa9c34d60dbf23a94a6a94cb060"
+        },
+        {
+          "bytes": 167666902,
+          "mtime_ns": 1787515810077849729,
+          "name": "vae/diffusion_pytorch_model.safetensors"
+        }
+      ],
+      "inventory_digest": "46d051ed0fb24d9441eedcd6277384ac986fadb88343049bb69faee6c788cac8",
+      "mode": "small_sha256_large_stat",
+      "path": "/midtier/minilab/scratch/chw4026/projects/side_project/generative/opd_related/models/stable-diffusion-3.5-medium"
+    },
+    "ocr": {
+      "files": [
+        {
+          "bytes": 5167,
+          "name": "README.md",
+          "sha256": "32581fbec33ab00847065f39befcc28f6a359c23f8eda0ae277066fed27cea46"
+        },
+        {
+          "bytes": 882,
+          "name": "adapter_config.json",
+          "sha256": "075ba25e1dabec2230b0cec749abf0dc6cf7558d8bd5cba19dd8e1f9841330f2"
+        },
+        {
+          "bytes": 1091,
+          "name": "adapter_config.json.orig",
+          "sha256": "ff2389ee43728154b532b30c9c0ddddac297bb208872ed9ccdaa97a84b51d1e9"
+        },
+        {
+          "bytes": 75156544,
+          "mtime_ns": 1787516020287742579,
+          "name": "adapter_model.safetensors"
+        }
+      ],
+      "inventory_digest": "57bbac1e51eed068ff13d1170c5bcc8a07afb4b1024ab7a08666541092c3ab3a",
+      "mode": "small_sha256_large_stat",
+      "path": "/midtier/minilab/scratch/chw4026/projects/side_project/generative/opd_related/models/DiffusionOPD/OCRTeacher/lora"
+    },
+    "pickapic": {
+      "files": [
+        {
+          "bytes": 65164,
+          "name": "test.txt",
+          "sha256": "9006b98feabb94b28a2bc0c88de42fd4f31a9ec3c2a19e308a02c5385b7172f0"
+        },
+        {
+          "bytes": 2903904,
+          "mtime_ns": 1787801439707198216,
+          "name": "train.txt"
+        },
+        {
+          "bytes": 104457,
+          "name": "unseen_train1k.txt",
+          "sha256": "adfb6feaca1aed42192f2793f5a38ecb33172679e25d9094f41bca60de455846"
+        }
+      ],
+      "inventory_digest": "9eff9dfc2bac94a8de1f2f2292444e6e25d7215cfce54bf94f85293600ee628a",
+      "mode": "small_sha256_large_stat",
+      "path": "/midtier/minilab/scratch/chw4026/projects/side_project/generative/opd_related/CA-OPD/reference_papers/DiffusionOPSD-main/data/pickapic"
+    },
+    "pickscore": {
+      "files": [
+        {
+          "bytes": 5181,
+          "name": "README.md",
+          "sha256": "7dbeb2e34433b967bbef236e03c20cc48ab04537575f5c1f4a914c207bee5d53"
+        },
+        {
+          "bytes": 882,
+          "name": "adapter_config.json",
+          "sha256": "3ccc5eaf75391e4c62e14aedb263bbcf88e0257533b40d5e79df74e02d97e773"
+        },
+        {
+          "bytes": 1091,
+          "name": "adapter_config.json.orig",
+          "sha256": "924456bf5c7a308038242e284d06412a1a6929788064063614a3952b127cfe78"
+        },
+        {
+          "bytes": 75156544,
+          "mtime_ns": 1787516021213273665,
+          "name": "adapter_model.safetensors"
+        }
+      ],
+      "inventory_digest": "c0b7935fa00c636b869aaaf50475b0b498fca46eb52cce923fc65b4335789757",
+      "mode": "small_sha256_large_stat",
+      "path": "/midtier/minilab/scratch/chw4026/projects/side_project/generative/opd_related/models/DiffusionOPD/AesTeacher/lora"
+    },
+    "reward_ckpts": {
+      "files": [
+        {
+          "bytes": 1972490005,
+          "mtime_ns": 1787516681736866414,
+          "name": "HPS_v2.1_compressed.pt"
+        },
+        {
+          "bytes": 275630991,
+          "mtime_ns": 1653447334000000000,
+          "name": "mask2former_swin-s-p4-w7-224_lsj_8x2_50e_coco_20220504_001756-743b7d99.pth"
+        },
+        {
+          "bytes": 3944692325,
+          "mtime_ns": 1787516391388705267,
+          "name": "open_clip_pytorch_model.bin"
+        },
+        {
+          "bytes": 539978,
+          "name": "paddleocr/cls/inference.pdiparams",
+          "sha256": "d1efda1b80e174b4fcb168a035ac96c1af4938892bd86a55f300a6027105d08c"
+        },
+        {
+          "bytes": 18545,
+          "name": "paddleocr/cls/inference.pdiparams.info",
+          "sha256": "ee0c2eaa4c09814802bf520c01dfdbc1345dc2879dc9e67424d32c7b0ee88e59"
+        },
+        {
+          "bytes": 1624487,
+          "name": "paddleocr/cls/inference.pdmodel",
+          "sha256": "3c4337ec61722a20b1dca2e5bfaffc313c0592bc89ad6e0d45168224186f6683"
+        },
+        {
+          "bytes": 2377917,
+          "mtime_ns": 1787516913797115360,
+          "name": "paddleocr/det/inference.pdiparams"
+        },
+        {
+          "bytes": 26392,
+          "name": "paddleocr/det/inference.pdiparams.info",
+          "sha256": "2fe414d9eadf914bf44e3f9ba212988a6f26f364e4f87c6d0af57438ffffc0c4"
+        },
+        {
+          "bytes": 1590133,
+          "name": "paddleocr/det/inference.pdmodel",
+          "sha256": "c4bfb1b05d9d1d5a760801eaf6d20180ef7e47bcc675fb17d1f3a89da5fef427"
+        },
+        {
+          "bytes": 7607269,
+          "mtime_ns": 1787517027529072261,
+          "name": "paddleocr/rec/inference.pdiparams"
+        },
+        {
+          "bytes": 102540,
+          "name": "paddleocr/rec/inference.pdiparams.info",
+          "sha256": "710d9f3d7c503067ae708f4bc3adc6973c0d6391adb7a1470c36eb70da6b5b83"
+        },
+        {
+          "bytes": 2517366,
+          "mtime_ns": 1787517027502978605,
+          "name": "paddleocr/rec/inference.pdmodel"
+        },
+        {
+          "bytes": 3714759,
+          "mtime_ns": 1787516227554647312,
+          "name": "sac+logos+ava1-l14-linearMSE.pth"
+        }
+      ],
+      "inventory_digest": "53dae5c625e23248728a52c92be4c44b35f37717485efbbe6fa187c441236371",
+      "mode": "small_sha256_large_stat",
+      "path": "/midtier/minilab/scratch/chw4026/projects/side_project/generative/opd_related/CA-OPD/code/DiffusionOPD-main/reward_ckpts"
+    }
+  },
+  "cuda_available": false,
+  "environment": {
+    "executable": "/midtier/minilab/scratch/chw4026/projects/side_project/generative/opd_related/opd_lab/../../conda_envs/envs/diffusionopd/bin/python",
+    "packages": {
+      "accelerate": "1.4.0",
+      "diffusers": "0.33.1",
+      "ml-collections": "1.1.0",
+      "mmcv": null,
+      "mmdet": "2.28.2",
+      "numpy": "1.26.4",
+      "open-clip-torch": "3.3.0",
+      "paddleocr": "2.9.1",
+      "paddlepaddle": null,
+      "peft": "0.10.0",
+      "torch": "2.6.0+cu126",
+      "transformers": "4.40.0"
+    },
+    "platform": "Linux-5.15.0-131-generic-x86_64-with-glibc2.35",
+    "python": "3.10.16 (main, Dec 11 2024, 16:24:50) [GCC 11.2.0]"
+  },
+  "upstreams": {
+    "diffusionopd": {
+      "clean": true,
+      "commit": "0c85bf0193a6da24bb1f72152b612d353a154999",
+      "provenance": "author repository",
+      "url": "https://github.com/ali-vilab/DiffusionOPD.git"
+    },
+    "diffusionopsd": {
+      "clean": true,
+      "commit": "9c4c48cdfe5c3fa712d32957345d75fae9295696",
+      "provenance": "repository linked by https://diffusionopsd.github.io/; README describes it as an external implementation",
+      "url": "https://github.com/worldbench/DiffusionOPSD.git"
+    }
+  }
+}

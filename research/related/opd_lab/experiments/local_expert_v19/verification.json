@@ -1,0 +1,17 @@
+{
+  "allocated_gpu_hours": 0.03611111111111111,
+  "exact_reference_images": 24,
+  "limitations": "Provisional assistant labels, exposed seeds; large shared assets stat-audited.",
+  "max_cpu_cuda_metric_abs_difference": 5.551115123125783e-17,
+  "new_teacher_images": 24,
+  "optimizer_updates": 0,
+  "phase18_archive": {
+    "README_historical_revision": "bd585a7",
+    "all_recorded_artifacts_unchanged": true,
+    "artifact_count": 1350
+  },
+  "queries_and_original_states_verified": 12,
+  "review_slots": 48,
+  "runtime_asset_audit": [],
+  "statistics_and_action_metrics_rebuilt": true
+}

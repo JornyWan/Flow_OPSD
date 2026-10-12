@@ -1,0 +1,167 @@
+{
+  "checkpoint_comparisons": {
+    "0": {
+      "attempt_file_sha256": "d1133ae43ff661d089052ac6191c86984823cc63ffa2f665453f63a3022abf70",
+      "different_tensors": 0,
+      "exact": true,
+      "historical_file_sha256": "d1133ae43ff661d089052ac6191c86984823cc63ffa2f665453f63a3022abf70",
+      "max_abs_difference": 0.0
+    },
+    "128": {
+      "attempt_file_sha256": "b961a400f8d91c717ffd295444229a48761d89dfdbe4ed7c5eb1e5939c5b63b4",
+      "different_tensors": 380,
+      "exact": false,
+      "historical_file_sha256": "c3a1c0004fb4faa0901384cb93477be6ba0efb542172910459dd64d858b14fc1",
+      "max_abs_difference": 0.0013323616785783088
+    },
+    "32": {
+      "attempt_file_sha256": "6c96d8d834e9d1506d41dadb4a0b996a472619fc1359351b0ad214fbdddc44b9",
+      "different_tensors": 380,
+      "exact": false,
+      "historical_file_sha256": "13d1819ad66a962ef01ac31988ab5b390e142ddc15fc6f2ac7325c6b5267f13c",
+      "max_abs_difference": 0.0005626102356472984
+    }
+  },
+  "failure": {
+    "elapsed_seconds": 562.8783549182117,
+    "error": "RuntimeError('single failed exact historical fitting replay')"
+  },
+  "first_two_updates": {
+    "current": [
+      {
+        "arm": "single",
+        "gradient_norm": 0.0007608787855133414,
+        "objective": 0.00014382765039044898,
+        "queries": [
+          {
+            "key": "aa00082f11b21bbbd99519b4",
+            "target": "noop"
+          },
+          {
+            "key": "161cbeb19a2b12e6c5431b38",
+            "target": "noop"
+          },
+          {
+            "key": "7cd5310e03df35aa28de1e4f",
+            "target": "geneval@1"
+          },
+          {
+            "key": "e3cc1bb245ec1c59a951fc86",
+            "target": "ocr@1"
+          },
+          {
+            "key": "d811592e1e4680bf508678a7",
+            "target": "noop"
+          },
+          {
+            "key": "524a1f2136340562f76a7e10",
+            "target": "geneval@1"
+          },
+          {
+            "key": "6224d6d3ccaddd82ea8611f7",
+            "target": "ocr@1"
+          },
+          {
+            "key": "e93c9464eb894ee3df10b443",
+            "target": "noop"
+          },
+          {
+            "key": "6cff2b5ea8036cd42b033a08",
+            "target": "noop"
+          },
+          {
+            "key": "f73f5690a31dcac5f63b2969",
+            "target": "geneval@1"
+          },
+          {
+            "key": "6ea2dd0dd8a04fdc50d8d316",
+            "target": "geneval@1"
+          },
+          {
+            "key": "c32e3f4698f2b7bbfe3ffac9",
+            "target": "noop"
+          }
+        ],
+        "scale": 65536.0,
+        "step": 1
+      },
+      {
+        "arm": "single",
+        "gradient_norm": 0.00047656847164034843,
+        "objective": 0.00011620122321076565,
+        "queries": [
+          {
+            "key": "aa00082f11b21bbbd99519b4",
+            "target": "noop"
+          },
+          {
+            "key": "161cbeb19a2b12e6c5431b38",
+            "target": "noop"
+          },
+          {
+            "key": "7cd5310e03df35aa28de1e4f",
+            "target": "geneval@1"
+          },
+          {
+            "key": "e3cc1bb245ec1c59a951fc86",
+            "target": "ocr@1"
+          },
+          {
+            "key": "d811592e1e4680bf508678a7",
+            "target": "noop"
+          },
+          {
+            "key": "524a1f2136340562f76a7e10",
+            "target": "geneval@1"
+          },
+          {
+            "key": "6224d6d3ccaddd82ea8611f7",
+            "target": "ocr@1"
+          },
+          {
+            "key": "e93c9464eb894ee3df10b443",
+            "target": "noop"
+          },
+          {
+            "key": "6cff2b5ea8036cd42b033a08",
+            "target": "noop"
+          },
+          {
+            "key": "f73f5690a31dcac5f63b2969",
+            "target": "geneval@1"
+          },
+          {
+            "key": "6ea2dd0dd8a04fdc50d8d316",
+            "target": "geneval@1"
+          },
+          {
+            "key": "c32e3f4698f2b7bbfe3ffac9",
+            "target": "noop"
+          }
+        ],
+        "scale": 65536.0,
+        "step": 2
+      }
+    ],
+    "historical": [
+      {
+        "arm": "label_selected",
+        "backward_queries": 12,
+        "gradient_norm": 0.0007607333245687187,
+        "objective": 0.00014382765039044898,
+        "scale": 65536.0,
+        "step": 1
+      },
+      {
+        "arm": "label_selected",
+        "backward_queries": 12,
+        "gradient_norm": 0.00047689976054243743,
+        "objective": 0.00011613169796476086,
+        "scale": 65536.0,
+        "step": 2
+      }
+    ]
+  },
+  "interpretation": "Forward loss matches at initialization; gradients already differ on first update. Nondeterministic backward is a hypothesis pending same-GPU repetition.",
+  "status": "failed_historical_weight_gate"
+}

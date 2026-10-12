@@ -1,0 +1,15 @@
+{
+  "allocated_gpu_hours": 0.09444444444444444,
+  "exact_anchor_images": 4,
+  "job_id": "1049137",
+  "next": "NEXT.md",
+  "next_phase_launched": false,
+  "results": "results.json",
+  "reviewed_views": 168,
+  "slurm_state": "COMPLETED",
+  "stage": "complete",
+  "tests_passed": 68,
+  "transfer_images": 168,
+  "updated_at_utc": "2026-09-14T01:01:35.859951+00:00",
+  "verification": "verification.json"
+}

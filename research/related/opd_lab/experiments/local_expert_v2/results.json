@@ -1,0 +1,3790 @@
+{
+  "artifacts_sha256": {
+    "/midtier/minilab/scratch/chw4026/projects/side_project/generative/opd_related/opd_lab/runs/le2_eval_dpm240_job_002/evaluations/base/checkpoint.json": "9b23a9040033c42b2c61b898f1f795eed43fddeec3f959e852515b34b73399ea",
+    "/midtier/minilab/scratch/chw4026/projects/side_project/generative/opd_related/opd_lab/runs/le2_eval_dpm240_job_002/evaluations/base/per_image.jsonl": "4aacd743a5a98dc7de71e81d5c9deee71d44cfd79666459c5eb5bf435f690e54",
+    "/midtier/minilab/scratch/chw4026/projects/side_project/generative/opd_related/opd_lab/runs/le2_eval_dpm240_job_002/evaluations/base/protocol.json": "4afa3a955e37cbe289b25b193bbf5d89dc8610ebd37affe0066f90a583ed15cc",
+    "/midtier/minilab/scratch/chw4026/projects/side_project/generative/opd_related/opd_lab/runs/le2_eval_dpm240_job_002/evaluations/base/secondary_ocr.json": "a5ce9bf86481cd80dbf6641b8ea0e59c550142317191c2df8d9bae91c251ffaf",
+    "/midtier/minilab/scratch/chw4026/projects/side_project/generative/opd_related/opd_lab/runs/le2_eval_dpm240_job_002/evaluations/fixed_geneval/checkpoint.json": "821b5dc9d7b256804dfad87878291bd892b4561c01b53975c6ab2f8de77d73cf",
+    "/midtier/minilab/scratch/chw4026/projects/side_project/generative/opd_related/opd_lab/runs/le2_eval_dpm240_job_002/evaluations/fixed_geneval/per_image.jsonl": "c195ecb0c3c07d78793bbb5d5dfc921b3472ce136e0cb60dbf13a9336caa81c1",
+    "/midtier/minilab/scratch/chw4026/projects/side_project/generative/opd_related/opd_lab/runs/le2_eval_dpm240_job_002/evaluations/fixed_geneval/protocol.json": "0ae96b6170b996f5b34d8c8fdc987100cf0ac3503fcee84700152fd16579904d",
+    "/midtier/minilab/scratch/chw4026/projects/side_project/generative/opd_related/opd_lab/runs/le2_eval_dpm240_job_002/evaluations/fixed_geneval/secondary_ocr.json": "bd5033e25d7b6dadac69c3d2e7140efc50040f6b8193ad88b0f83ec0e48bdd7b",
+    "/midtier/minilab/scratch/chw4026/projects/side_project/generative/opd_related/opd_lab/runs/le2_eval_dpm240_job_002/evaluations/utility_only/checkpoint.json": "b4185a23634a8eac4f3da284dd9f2973a659c35fc0d6f0dc1031a07ecd475275",
+    "/midtier/minilab/scratch/chw4026/projects/side_project/generative/opd_related/opd_lab/runs/le2_eval_dpm240_job_002/evaluations/utility_only/per_image.jsonl": "9d5e42333391fa6ca04fafefb511054b9316e3a3cd232579272d3f9eb96e3d80",
+    "/midtier/minilab/scratch/chw4026/projects/side_project/generative/opd_related/opd_lab/runs/le2_eval_dpm240_job_002/evaluations/utility_only/protocol.json": "0ae96b6170b996f5b34d8c8fdc987100cf0ac3503fcee84700152fd16579904d",
+    "/midtier/minilab/scratch/chw4026/projects/side_project/generative/opd_related/opd_lab/runs/le2_eval_dpm240_job_002/evaluations/utility_only/secondary_ocr.json": "0ada297aa67f2ec44f7c8330c99b5d696e18cf93fbf4eee8c6cbad9ec039eed3",
+    "/midtier/minilab/scratch/chw4026/projects/side_project/generative/opd_related/opd_lab/runs/le2_eval_dpm240_job_002/evaluations/verified_fixed/checkpoint.json": "b9bd4cb2d444f65931219bbe1a129a4936eaadd61e5dc0f67ca6b5579394e154",
+    "/midtier/minilab/scratch/chw4026/projects/side_project/generative/opd_related/opd_lab/runs/le2_eval_dpm240_job_002/evaluations/verified_fixed/per_image.jsonl": "4062ec58f55f5e351e9a2b1acc058f00ae23ecaedb417694cc381e61382c92d0",
+    "/midtier/minilab/scratch/chw4026/projects/side_project/generative/opd_related/opd_lab/runs/le2_eval_dpm240_job_002/evaluations/verified_fixed/protocol.json": "0ae96b6170b996f5b34d8c8fdc987100cf0ac3503fcee84700152fd16579904d",
+    "/midtier/minilab/scratch/chw4026/projects/side_project/generative/opd_related/opd_lab/runs/le2_eval_dpm240_job_002/evaluations/verified_fixed/secondary_ocr.json": "122ef5ce2e5f0ba5db220be07efe9f403d58f51ddad20af038f090986c053fdb",
+    "/midtier/minilab/scratch/chw4026/projects/side_project/generative/opd_related/opd_lab/runs/le2_eval_dpm240_job_002/evaluations/verified_multi/checkpoint.json": "26e2409def48fc6367e0ce66a525620f5fb82f19be5844bf0c52c18bb8072539",
+    "/midtier/minilab/scratch/chw4026/projects/side_project/generative/opd_related/opd_lab/runs/le2_eval_dpm240_job_002/evaluations/verified_multi/per_image.jsonl": "66aab9199117a429ecb055253c45cbfb96e0b5e76c75d076bfd4141e0c8b6279",
+    "/midtier/minilab/scratch/chw4026/projects/side_project/generative/opd_related/opd_lab/runs/le2_eval_dpm240_job_002/evaluations/verified_multi/protocol.json": "0ae96b6170b996f5b34d8c8fdc987100cf0ac3503fcee84700152fd16579904d",
+    "/midtier/minilab/scratch/chw4026/projects/side_project/generative/opd_related/opd_lab/runs/le2_eval_dpm240_job_002/evaluations/verified_multi/secondary_ocr.json": "0740bc4d04c4890656b7cd5470702464a8089ed85e771e800f8d8ae58be32d9a",
+    "/midtier/minilab/scratch/chw4026/projects/side_project/generative/opd_related/opd_lab/runs/le2_eval_flow10_job_002/evaluations/base/checkpoint.json": "9b23a9040033c42b2c61b898f1f795eed43fddeec3f959e852515b34b73399ea",
+    "/midtier/minilab/scratch/chw4026/projects/side_project/generative/opd_related/opd_lab/runs/le2_eval_flow10_job_002/evaluations/base/per_image.jsonl": "8f021137e454c27eb68ba4bbec63727a6037a042dc8634f7f149ac52b0887b50",
+    "/midtier/minilab/scratch/chw4026/projects/side_project/generative/opd_related/opd_lab/runs/le2_eval_flow10_job_002/evaluations/base/protocol.json": "c1651b58c3987e1979cb20c30c4c35412438382aa927f248d9bf6451dd9397fd",
+    "/midtier/minilab/scratch/chw4026/projects/side_project/generative/opd_related/opd_lab/runs/le2_eval_flow10_job_002/evaluations/base/secondary_ocr.json": "817e8672e8c919cc49f89014481dffbc9a360b8d669e1ec3fbd52c2ecc5b1d76",
+    "/midtier/minilab/scratch/chw4026/projects/side_project/generative/opd_related/opd_lab/runs/le2_eval_flow10_job_002/evaluations/fixed_geneval/checkpoint.json": "821b5dc9d7b256804dfad87878291bd892b4561c01b53975c6ab2f8de77d73cf",
+    "/midtier/minilab/scratch/chw4026/projects/side_project/generative/opd_related/opd_lab/runs/le2_eval_flow10_job_002/evaluations/fixed_geneval/per_image.jsonl": "ba98a93352ec6b501024c0ea8f2cda26e658997342e59da97f8dbef80b59c675",
+    "/midtier/minilab/scratch/chw4026/projects/side_project/generative/opd_related/opd_lab/runs/le2_eval_flow10_job_002/evaluations/fixed_geneval/protocol.json": "59b40f454aac207eb14b85219e70cfa98efb1f05154fc6dbc25bff7cf6eb332a",
+    "/midtier/minilab/scratch/chw4026/projects/side_project/generative/opd_related/opd_lab/runs/le2_eval_flow10_job_002/evaluations/fixed_geneval/secondary_ocr.json": "20d8f3955a72ca4afca6bc6b84690a70e729c5a654058fa9172b67ff0b645ec2",
+    "/midtier/minilab/scratch/chw4026/projects/side_project/generative/opd_related/opd_lab/runs/le2_eval_flow10_job_002/evaluations/utility_only/checkpoint.json": "b4185a23634a8eac4f3da284dd9f2973a659c35fc0d6f0dc1031a07ecd475275",
+    "/midtier/minilab/scratch/chw4026/projects/side_project/generative/opd_related/opd_lab/runs/le2_eval_flow10_job_002/evaluations/utility_only/per_image.jsonl": "c303d271cb50ba445f85f15d74c183755984db7f478294a2933895b4d5fef3a9",
+    "/midtier/minilab/scratch/chw4026/projects/side_project/generative/opd_related/opd_lab/runs/le2_eval_flow10_job_002/evaluations/utility_only/protocol.json": "59b40f454aac207eb14b85219e70cfa98efb1f05154fc6dbc25bff7cf6eb332a",
+    "/midtier/minilab/scratch/chw4026/projects/side_project/generative/opd_related/opd_lab/runs/le2_eval_flow10_job_002/evaluations/utility_only/secondary_ocr.json": "1980454a53e3c01a6de42cfc933bcb875e995dd2f0fcbb9714668f0b386b5c8d",
+    "/midtier/minilab/scratch/chw4026/projects/side_project/generative/opd_related/opd_lab/runs/le2_eval_flow10_job_002/evaluations/verified_fixed/checkpoint.json": "b9bd4cb2d444f65931219bbe1a129a4936eaadd61e5dc0f67ca6b5579394e154",
+    "/midtier/minilab/scratch/chw4026/projects/side_project/generative/opd_related/opd_lab/runs/le2_eval_flow10_job_002/evaluations/verified_fixed/per_image.jsonl": "704f617ada72ac6ebbd1b38129698e8e42fb36f48845034ea21e7b945ae825d2",
+    "/midtier/minilab/scratch/chw4026/projects/side_project/generative/opd_related/opd_lab/runs/le2_eval_flow10_job_002/evaluations/verified_fixed/protocol.json": "59b40f454aac207eb14b85219e70cfa98efb1f05154fc6dbc25bff7cf6eb332a",
+    "/midtier/minilab/scratch/chw4026/projects/side_project/generative/opd_related/opd_lab/runs/le2_eval_flow10_job_002/evaluations/verified_fixed/secondary_ocr.json": "29e59fcb0d8ac11858fbd911803ee93e759d5083b251ca366af64afbb320cc3c",
+    "/midtier/minilab/scratch/chw4026/projects/side_project/generative/opd_related/opd_lab/runs/le2_eval_flow10_job_002/evaluations/verified_multi/checkpoint.json": "26e2409def48fc6367e0ce66a525620f5fb82f19be5844bf0c52c18bb8072539",
+    "/midtier/minilab/scratch/chw4026/projects/side_project/generative/opd_related/opd_lab/runs/le2_eval_flow10_job_002/evaluations/verified_multi/per_image.jsonl": "dfe070b3b9b42c0b68599e036a3962fca37e5d66af06ccc84c9cec323b02694c",
+    "/midtier/minilab/scratch/chw4026/projects/side_project/generative/opd_related/opd_lab/runs/le2_eval_flow10_job_002/evaluations/verified_multi/protocol.json": "59b40f454aac207eb14b85219e70cfa98efb1f05154fc6dbc25bff7cf6eb332a",
+    "/midtier/minilab/scratch/chw4026/projects/side_project/generative/opd_related/opd_lab/runs/le2_eval_flow10_job_002/evaluations/verified_multi/secondary_ocr.json": "0437fa588a15e38656e09bc9308417846000432cc6a18d915803f9214578e9a3",
+    "/midtier/minilab/scratch/chw4026/projects/side_project/generative/opd_related/opd_lab/runs/le2_eval_flow40_job_002/evaluations/base/checkpoint.json": "9b23a9040033c42b2c61b898f1f795eed43fddeec3f959e852515b34b73399ea",
+    "/midtier/minilab/scratch/chw4026/projects/side_project/generative/opd_related/opd_lab/runs/le2_eval_flow40_job_002/evaluations/base/per_image.jsonl": "ac8493dd6218c38c6fba73d932d9a79a9620d7faa19a2c2262cbc7034fe26931",
+    "/midtier/minilab/scratch/chw4026/projects/side_project/generative/opd_related/opd_lab/runs/le2_eval_flow40_job_002/evaluations/base/protocol.json": "6d03de467c508f4fb201e6cadc5f9fc0f601a5a7a049e0cd8e9f36434467e857",
+    "/midtier/minilab/scratch/chw4026/projects/side_project/generative/opd_related/opd_lab/runs/le2_eval_flow40_job_002/evaluations/base/secondary_ocr.json": "9984703cb0a0a29a4d12251e4e58723dfea1e6d836e09602bf44aa67ef1bbe4a",
+    "/midtier/minilab/scratch/chw4026/projects/side_project/generative/opd_related/opd_lab/runs/le2_eval_flow40_job_002/evaluations/fixed_geneval/checkpoint.json": "821b5dc9d7b256804dfad87878291bd892b4561c01b53975c6ab2f8de77d73cf",
+    "/midtier/minilab/scratch/chw4026/projects/side_project/generative/opd_related/opd_lab/runs/le2_eval_flow40_job_002/evaluations/fixed_geneval/per_image.jsonl": "62b3ef077be1773586ac199d83d569062acc0c0123b06faa8100e74d5e0a2cda",
+    "/midtier/minilab/scratch/chw4026/projects/side_project/generative/opd_related/opd_lab/runs/le2_eval_flow40_job_002/evaluations/fixed_geneval/protocol.json": "0f2822e3fe00f52cae69b83fbccc7efb479434a73436e303e4552d5fac335a19",
+    "/midtier/minilab/scratch/chw4026/projects/side_project/generative/opd_related/opd_lab/runs/le2_eval_flow40_job_002/evaluations/fixed_geneval/secondary_ocr.json": "6b12c541ee0e71a99471d69c9b4d33b05cb1f18720e614b5964f509a16b6c1b4",
+    "/midtier/minilab/scratch/chw4026/projects/side_project/generative/opd_related/opd_lab/runs/le2_eval_flow40_job_002/evaluations/utility_only/checkpoint.json": "b4185a23634a8eac4f3da284dd9f2973a659c35fc0d6f0dc1031a07ecd475275",
+    "/midtier/minilab/scratch/chw4026/projects/side_project/generative/opd_related/opd_lab/runs/le2_eval_flow40_job_002/evaluations/utility_only/per_image.jsonl": "8831ddd15c3538cd3c4532ef61dabf28b62954e670893d3a01d918a8b9417ae4",
+    "/midtier/minilab/scratch/chw4026/projects/side_project/generative/opd_related/opd_lab/runs/le2_eval_flow40_job_002/evaluations/utility_only/protocol.json": "0f2822e3fe00f52cae69b83fbccc7efb479434a73436e303e4552d5fac335a19",
+    "/midtier/minilab/scratch/chw4026/projects/side_project/generative/opd_related/opd_lab/runs/le2_eval_flow40_job_002/evaluations/utility_only/secondary_ocr.json": "716b700148f748c03846701c3b6a69d0b9f396b5f0ebca03741fbe0cc502e369",
+    "/midtier/minilab/scratch/chw4026/projects/side_project/generative/opd_related/opd_lab/runs/le2_eval_flow40_job_002/evaluations/verified_fixed/checkpoint.json": "b9bd4cb2d444f65931219bbe1a129a4936eaadd61e5dc0f67ca6b5579394e154",
+    "/midtier/minilab/scratch/chw4026/projects/side_project/generative/opd_related/opd_lab/runs/le2_eval_flow40_job_002/evaluations/verified_fixed/per_image.jsonl": "bcd4ebdf5138cd104a5747292df31a286a915a5b19183761afcda5ed1afdaa63",
+    "/midtier/minilab/scratch/chw4026/projects/side_project/generative/opd_related/opd_lab/runs/le2_eval_flow40_job_002/evaluations/verified_fixed/protocol.json": "0f2822e3fe00f52cae69b83fbccc7efb479434a73436e303e4552d5fac335a19",
+    "/midtier/minilab/scratch/chw4026/projects/side_project/generative/opd_related/opd_lab/runs/le2_eval_flow40_job_002/evaluations/verified_fixed/secondary_ocr.json": "9497250a8a3c6d282fd51d95d8fbe346e7ea15076f8148e3694e3b413586558b",
+    "/midtier/minilab/scratch/chw4026/projects/side_project/generative/opd_related/opd_lab/runs/le2_eval_flow40_job_002/evaluations/verified_multi/checkpoint.json": "26e2409def48fc6367e0ce66a525620f5fb82f19be5844bf0c52c18bb8072539",
+    "/midtier/minilab/scratch/chw4026/projects/side_project/generative/opd_related/opd_lab/runs/le2_eval_flow40_job_002/evaluations/verified_multi/per_image.jsonl": "80fe7b9602214b683d4a77ef8d8fcd0153fa01f70532e4f821f2e77a407e71aa",
+    "/midtier/minilab/scratch/chw4026/projects/side_project/generative/opd_related/opd_lab/runs/le2_eval_flow40_job_002/evaluations/verified_multi/protocol.json": "0f2822e3fe00f52cae69b83fbccc7efb479434a73436e303e4552d5fac335a19",
+    "/midtier/minilab/scratch/chw4026/projects/side_project/generative/opd_related/opd_lab/runs/le2_eval_flow40_job_002/evaluations/verified_multi/secondary_ocr.json": "578e5848ee2b3c4c38f598dbeacc7a5c7e006a8b7adb04245cebde6f062da865",
+    "/midtier/minilab/scratch/chw4026/projects/side_project/generative/opd_related/opd_lab/runs/le2_train_fixed_geneval_001/metrics.jsonl": "c7b17740748c12b6a06d45628ad59ae904f39dbc75c05d702dd8d3c9aa8ca897",
+    "/midtier/minilab/scratch/chw4026/projects/side_project/generative/opd_related/opd_lab/runs/le2_train_fixed_geneval_001/postfit-rank-0.jsonl": "aea43d600ba680c4c10e1af1a9c6277eb123496a70ccf6664354dcc5c33cea34",
+    "/midtier/minilab/scratch/chw4026/projects/side_project/generative/opd_related/opd_lab/runs/le2_train_fixed_geneval_001/postfit_audit.json": "c5dd68ad7ced41c5d504be833aa943a5de9247da6ccc76478091f71743db5e13",
+    "/midtier/minilab/scratch/chw4026/projects/side_project/generative/opd_related/opd_lab/runs/le2_train_fixed_geneval_001/queries-rank-0.jsonl": "f89e4d4e09f685c8db04c57729f8ad01a5a836ec1029b4693863aa68db2b8ce1",
+    "/midtier/minilab/scratch/chw4026/projects/side_project/generative/opd_related/opd_lab/runs/le2_train_fixed_geneval_001/result.json": "7e99de29e308010df42d55fcde825bcdbe42618f8b67690ce227b34048e12560",
+    "/midtier/minilab/scratch/chw4026/projects/side_project/generative/opd_related/opd_lab/runs/le2_train_utility_only_001/metrics.jsonl": "bb112d0778062fcac454b3abad412ded87dc915db1dd113230673cf06c1e4995",
+    "/midtier/minilab/scratch/chw4026/projects/side_project/generative/opd_related/opd_lab/runs/le2_train_utility_only_001/postfit-rank-0.jsonl": "b4d7cafa7c6f3418a3152047b19cd4d423866a14cb6e70fc27ef6d6f8399ff80",
+    "/midtier/minilab/scratch/chw4026/projects/side_project/generative/opd_related/opd_lab/runs/le2_train_utility_only_001/postfit_audit.json": "ea26579068567aff1735cafc48835decdebb445af3d3a3bd74e47c7793ebbff3",
+    "/midtier/minilab/scratch/chw4026/projects/side_project/generative/opd_related/opd_lab/runs/le2_train_utility_only_001/queries-rank-0.jsonl": "f586fef277abbf2b65ad9b7eeaf49a734765cfb3f8b4f3cc4dd2a10a64184324",
+    "/midtier/minilab/scratch/chw4026/projects/side_project/generative/opd_related/opd_lab/runs/le2_train_utility_only_001/result.json": "7e99de29e308010df42d55fcde825bcdbe42618f8b67690ce227b34048e12560",
+    "/midtier/minilab/scratch/chw4026/projects/side_project/generative/opd_related/opd_lab/runs/le2_train_verified_fixed_001/metrics.jsonl": "c66007ad82d48cf903a32858a426bc9e2b7252e61b7e62bd8254d41a00853fd9",
+    "/midtier/minilab/scratch/chw4026/projects/side_project/generative/opd_related/opd_lab/runs/le2_train_verified_fixed_001/postfit-rank-0.jsonl": "ba2f8eb4d68cebf1acdff29154131ebe9f602932b8d56fbf9291a88e2d5e5404",
+    "/midtier/minilab/scratch/chw4026/projects/side_project/generative/opd_related/opd_lab/runs/le2_train_verified_fixed_001/postfit_audit.json": "334715ef47a859a534908a65118a0b59880bcff67768b64b487b48aaf9d3c2cc",
+    "/midtier/minilab/scratch/chw4026/projects/side_project/generative/opd_related/opd_lab/runs/le2_train_verified_fixed_001/queries-rank-0.jsonl": "1cbd8452e33c216394da321276d112506bf19725126288873d1baa8d31610864",
+    "/midtier/minilab/scratch/chw4026/projects/side_project/generative/opd_related/opd_lab/runs/le2_train_verified_fixed_001/result.json": "7e99de29e308010df42d55fcde825bcdbe42618f8b67690ce227b34048e12560",
+    "/midtier/minilab/scratch/chw4026/projects/side_project/generative/opd_related/opd_lab/runs/le2_train_verified_multi_001/metrics.jsonl": "3425eb442c3a3fd6790f4d570fcaa19e913e55e13c14d5f540cabb693f53c9b2",
+    "/midtier/minilab/scratch/chw4026/projects/side_project/generative/opd_related/opd_lab/runs/le2_train_verified_multi_001/postfit-rank-0.jsonl": "d891fbc5efbac2504f55d1586a897bd3edbec0198e66cb9ccbae6f3f8ad12967",
+    "/midtier/minilab/scratch/chw4026/projects/side_project/generative/opd_related/opd_lab/runs/le2_train_verified_multi_001/postfit_audit.json": "a3421e5c0dddbaade501d26e2bc7366c6a21433ab8a73701fca40d5deeafd834",
+    "/midtier/minilab/scratch/chw4026/projects/side_project/generative/opd_related/opd_lab/runs/le2_train_verified_multi_001/queries-rank-0.jsonl": "ff9d17f6ed415ff994b946eada4e64d0efc76a8c7297285818917852394b0676",
+    "/midtier/minilab/scratch/chw4026/projects/side_project/generative/opd_related/opd_lab/runs/le2_train_verified_multi_001/result.json": "7e99de29e308010df42d55fcde825bcdbe42618f8b67690ce227b34048e12560",
+    "/midtier/minilab/scratch/chw4026/projects/side_project/generative/opd_related/opd_lab/runs/le2_validation_review_001/assistant_observations.json": "b52d0af60db4833b8fe0cfbbfcaec7d3642eca7baca4872abbb964a6173495c7",
+    "/midtier/minilab/scratch/chw4026/projects/side_project/generative/opd_related/opd_lab/runs/le2_validation_review_001/case-01.png": "fe88f0dd13f9a84f9fd96a2751c7c1065d00379d5dcb0342a3d669a329acadf0",
+    "/midtier/minilab/scratch/chw4026/projects/side_project/generative/opd_related/opd_lab/runs/le2_validation_review_001/case-02.png": "a5770d3df43eebe3963e7b0d567c36274505405f3f6bdbceff267faeb5845210",
+    "/midtier/minilab/scratch/chw4026/projects/side_project/generative/opd_related/opd_lab/runs/le2_validation_review_001/case-03.png": "dfd3a1842638f5f83a91eb2b49b33191d3f12afa433cf440a1ea06e734cb7fe3",
+    "/midtier/minilab/scratch/chw4026/projects/side_project/generative/opd_related/opd_lab/runs/le2_validation_review_001/case-04.png": "9704f27b0463231b2353acbe5785ac64422faf004cd0dc5b8590f890dbf7bfbc",
+    "/midtier/minilab/scratch/chw4026/projects/side_project/generative/opd_related/opd_lab/runs/le2_validation_review_001/case-05.png": "fd995fb7b22f5f468a25bab2ecfedabf10afe2bd5aa5f06ed7ce73b6df83b442",
+    "/midtier/minilab/scratch/chw4026/projects/side_project/generative/opd_related/opd_lab/runs/le2_validation_review_001/case-06.png": "93d1cd8f4282424120709ed1751eee5d61a655a296a6d89f6730de3b82f9ce66",
+    "/midtier/minilab/scratch/chw4026/projects/side_project/generative/opd_related/opd_lab/runs/le2_validation_review_001/case-07.png": "57929416021d65bd49e8b70a303a134ebf6a58619c30558cb2273c083285296d",
+    "/midtier/minilab/scratch/chw4026/projects/side_project/generative/opd_related/opd_lab/runs/le2_validation_review_001/case-08.png": "2b820fd3a7ebbbbf18ae86ad5fc1d32d3aaab2645e31f4337a78ecc552279a97",
+    "/midtier/minilab/scratch/chw4026/projects/side_project/generative/opd_related/opd_lab/runs/le2_validation_review_001/case-09.png": "bf64e7b51aa42666318501faa44f35521f6932086b243b98022d60379893d0bb",
+    "/midtier/minilab/scratch/chw4026/projects/side_project/generative/opd_related/opd_lab/runs/le2_validation_review_001/case-10.png": "17aa5fcf252f84143b1411c42175524a0ed3d0b84154c26be00a510a5f6e8ede",
+    "/midtier/minilab/scratch/chw4026/projects/side_project/generative/opd_related/opd_lab/runs/le2_validation_review_001/case-11.png": "ac0aebb3c4cc89ccec5eec6c1df6f34fd4da0886e26dc23ca4e5dece62376309",
+    "/midtier/minilab/scratch/chw4026/projects/side_project/generative/opd_related/opd_lab/runs/le2_validation_review_001/case-12.png": "c09b1fea781e8b423803f703478265f037144b54a79ac789630a3a0d21b41df8",
+    "/midtier/minilab/scratch/chw4026/projects/side_project/generative/opd_related/opd_lab/runs/le2_validation_review_001/case-13.png": "01b9b0200f05da940d754e7064a5a259174a0a3b1e95d171b5d12145c94e5cf6",
+    "/midtier/minilab/scratch/chw4026/projects/side_project/generative/opd_related/opd_lab/runs/le2_validation_review_001/case-14.png": "45275c47ee555afeb08f6fa0d70dd77716d77b472db659d471ccdf5a1fe54eb4",
+    "/midtier/minilab/scratch/chw4026/projects/side_project/generative/opd_related/opd_lab/runs/le2_validation_review_001/case-15.png": "4c2601406eb6d34d0b50c23b159019245e12b102b1097f27e1feb7af04e4cff7",
+    "/midtier/minilab/scratch/chw4026/projects/side_project/generative/opd_related/opd_lab/runs/le2_validation_review_001/case-16.png": "8fddaa7c764e7c7186f3edba726b0d165c7732f9c142797dbcdd7e025599e8ca",
+    "/midtier/minilab/scratch/chw4026/projects/side_project/generative/opd_related/opd_lab/runs/le2_validation_review_001/comparison.json": "b57b8e395ec8605009a302d691823b7fcb98ef9cf200f44ebb6a6fbf01732346",
+    "/midtier/minilab/scratch/chw4026/projects/side_project/generative/opd_related/opd_lab/runs/le2_validation_review_001/key.json": "f612eefad1ced804c80355b18d7a54e7176c8d69ea2762565719fe5b9270ed1b",
+    "/midtier/minilab/scratch/chw4026/projects/side_project/generative/opd_related/opd_lab/runs/le2_validation_review_001/provenance.json": "2913f2661119d8a7371b2c3b993173054b0f483191d324489d708f6f0f50b1fc",
+    "/midtier/minilab/scratch/chw4026/projects/side_project/generative/opd_related/opd_lab/runs/le2_validation_review_001/report.md": "d13e9235cd497b7f4deaf29f92bce10b81ae7efb436af3df460d28e9958a7291"
+  },
+  "cells": {
+    "dpm240": {
+      "arms": {
+        "base": {
+          "allocated_gpu_hours": 0.08936296434866058,
+          "counts": {
+            "decode_images": 64,
+            "forward_examples": 5120,
+            "forward_student": 2560,
+            "geneval_clause_images": 80,
+            "ocr_images": 64,
+            "text_encode_prompts": 64,
+            "verifier_images": 64
+          },
+          "elapsed_seconds": 321.70667165517807,
+          "images": 64,
+          "joint_success": 0.546875,
+          "per_image_sha256": "4aacd743a5a98dc7de71e81d5c9deee71d44cfd79666459c5eb5bf435f690e54",
+          "protocol_digest": "9ccced1ad9a053f3d452745f033e573d611bb58a0ecd4c5f197a6820e2677b0c",
+          "status": "complete",
+          "utility": 0.6886984363451589,
+          "valid_images": 64
+        },
+        "fixed_geneval": {
+          "allocated_gpu_hours": 0.10165959033235494,
+          "counts": {
+            "decode_images": 64,
+            "forward_examples": 5120,
+            "forward_student": 2560,
+            "geneval_clause_images": 80,
+            "ocr_images": 64,
+            "text_encode_prompts": 64,
+            "verifier_images": 64
+          },
+          "elapsed_seconds": 365.97452519647777,
+          "images": 64,
+          "joint_success": 0.53125,
+          "per_image_sha256": "c195ecb0c3c07d78793bbb5d5dfc921b3472ce136e0cb60dbf13a9336caa81c1",
+          "protocol_digest": "1a1e54d0a58ddd7d9f52eee97e0e6d52e83bd9ccb5bcac7646c7c7ca2664a6a7",
+          "status": "complete",
+          "utility": 0.6730592757936509,
+          "valid_images": 64
+        },
+        "utility_only": {
+          "allocated_gpu_hours": 0.09823808166974535,
+          "counts": {
+            "decode_images": 64,
+            "forward_examples": 5120,
+            "forward_student": 2560,
+            "geneval_clause_images": 80,
+            "ocr_images": 64,
+            "text_encode_prompts": 64,
+            "verifier_images": 64
+          },
+          "elapsed_seconds": 353.65709401108325,
+          "images": 64,
+          "joint_success": 0.59375,
+          "per_image_sha256": "9d5e42333391fa6ca04fafefb511054b9316e3a3cd232579272d3f9eb96e3d80",
+          "protocol_digest": "1a1e54d0a58ddd7d9f52eee97e0e6d52e83bd9ccb5bcac7646c7c7ca2664a6a7",
+          "status": "complete",
+          "utility": 0.7048992916295307,
+          "valid_images": 64
+        },
+        "verified_fixed": {
+          "allocated_gpu_hours": 0.09373545949864719,
+          "counts": {
+            "decode_images": 64,
+            "forward_examples": 5120,
+            "forward_student": 2560,
+            "geneval_clause_images": 80,
+            "ocr_images": 64,
+            "text_encode_prompts": 64,
+            "verifier_images": 64
+          },
+          "elapsed_seconds": 337.44765419512987,
+          "images": 64,
+          "joint_success": 0.5625,
+          "per_image_sha256": "4062ec58f55f5e351e9a2b1acc058f00ae23ecaedb417694cc381e61382c92d0",
+          "protocol_digest": "1a1e54d0a58ddd7d9f52eee97e0e6d52e83bd9ccb5bcac7646c7c7ca2664a6a7",
+          "status": "complete",
+          "utility": 0.6973918876262626,
+          "valid_images": 64
+        },
+        "verified_multi": {
+          "allocated_gpu_hours": 0.0936993659986183,
+          "counts": {
+            "decode_images": 64,
+            "forward_examples": 5120,
+            "forward_student": 2560,
+            "geneval_clause_images": 80,
+            "ocr_images": 64,
+            "text_encode_prompts": 64,
+            "verifier_images": 64
+          },
+          "elapsed_seconds": 337.3177175950259,
+          "images": 64,
+          "joint_success": 0.5625,
+          "per_image_sha256": "66aab9199117a429ecb055253c45cbfb96e0b5e76c75d076bfd4141e0c8b6279",
+          "protocol_digest": "1a1e54d0a58ddd7d9f52eee97e0e6d52e83bd9ccb5bcac7646c7c7ca2664a6a7",
+          "status": "complete",
+          "utility": 0.6732589567550504,
+          "valid_images": 64
+        }
+      },
+      "contrasts": {
+        "fixed_geneval_minus_base": {
+          "primary": {
+            "baseline": "/midtier/minilab/scratch/chw4026/projects/side_project/generative/opd_related/opd_lab/runs/le2_eval_dpm240_job_002/evaluations/base",
+            "clause_accuracy_delta": {
+              "color": {
+                "ci95": [
+                  -0.125,
+                  0.0625
+                ],
+                "mean": -0.03125,
+                "observations": 32,
+                "prompts": 16
+              },
+              "count": {
+                "ci95": [
+                  -0.125,
+                  0.0625
+                ],
+                "mean": -0.03125,
+                "observations": 32,
+                "prompts": 16
+              },
+              "relation": {
+                "ci95": [
+                  -0.1875,
+                  0.0
+                ],
+                "mean": -0.0625,
+                "observations": 16,
+                "prompts": 8
+              },
+              "text": {
+                "ci95": [
+                  -0.140625,
+                  0.125
+                ],
+                "mean": -0.015625,
+                "observations": 64,
+                "prompts": 32
+              }
+            },
+            "images": 64,
+            "interval": "paired prompt bootstrap percentile 95%, 2000 resamples, seed 0",
+            "joint_success": {
+              "ci95": [
+                -0.125,
+                0.109375
+              ],
+              "paired_delta": -0.015625,
+              "prompt_count": 32
+            },
+            "method": "/midtier/minilab/scratch/chw4026/projects/side_project/generative/opd_related/opd_lab/runs/le2_eval_dpm240_job_002/evaluations/fixed_geneval",
+            "regression_given_baseline_satisfied": {
+              "color": {
+                "ci95": [
+                  0.0,
+                  0.23333333333333334
+                ],
+                "mean": 0.1,
+                "observations": 25,
+                "prompts": 15
+              },
+              "count": {
+                "ci95": [
+                  0.0,
+                  0.2857142857142857
+                ],
+                "mean": 0.10714285714285714,
+                "observations": 21,
+                "prompts": 14
+              },
+              "relation": {
+                "ci95": [
+                  0.0,
+                  0.25
+                ],
+                "mean": 0.08333333333333333,
+                "observations": 9,
+                "prompts": 6
+              },
+              "text": {
+                "ci95": [
+                  0.06666666666666667,
+                  0.25
+                ],
+                "mean": 0.15,
+                "observations": 52,
+                "prompts": 30
+              }
+            },
+            "statistical_unit": "prompt; average replicate seeds within prompt before paired bootstrap",
+            "utility": {
+              "ci95": [
+                -0.08764072082431457,
+                0.06458037577154381
+              ],
+              "paired_delta": -0.015639160551508106,
+              "prompt_count": 32
+            }
+          },
+          "secondary_ocr": {
+            "joint_success": {
+              "ci95": [
+                -0.09375,
+                0.125
+              ],
+              "mean": 0.015625,
+              "observations": 64,
+              "prompts": 32
+            },
+            "text_accuracy_delta": {
+              "ci95": [
+                -0.140625,
+                0.109375
+              ],
+              "mean": -0.015625,
+              "observations": 64,
+              "prompts": 32
+            },
+            "utility": {
+              "ci95": [
+                -0.08695469750091672,
+                0.06684136655083919
+              ],
+              "mean": -0.011100620951673015,
+              "observations": 64,
+              "prompts": 32
+            }
+          }
+        },
+        "utility_only_minus_base": {
+          "primary": {
+            "baseline": "/midtier/minilab/scratch/chw4026/projects/side_project/generative/opd_related/opd_lab/runs/le2_eval_dpm240_job_002/evaluations/base",
+            "clause_accuracy_delta": {
+              "color": {
+                "ci95": [
+                  -0.125,
+                  0.0625
+                ],
+                "mean": -0.03125,
+                "observations": 32,
+                "prompts": 16
+              },
+              "count": {
+                "ci95": [
+                  -0.125,
+                  0.125
+                ],
+                "mean": 0.0,
+                "observations": 32,
+                "prompts": 16
+              },
+              "relation": {
+                "ci95": [
+                  -0.1875,
+                  0.0
+                ],
+                "mean": -0.0625,
+                "observations": 16,
+                "prompts": 8
+              },
+              "text": {
+                "ci95": [
+                  -0.109375,
+                  0.125
+                ],
+                "mean": 0.0,
+                "observations": 64,
+                "prompts": 32
+              }
+            },
+            "images": 64,
+            "interval": "paired prompt bootstrap percentile 95%, 2000 resamples, seed 0",
+            "joint_success": {
+              "ci95": [
+                -0.0625,
+                0.15625
+              ],
+              "paired_delta": 0.046875,
+              "prompt_count": 32
+            },
+            "method": "/midtier/minilab/scratch/chw4026/projects/side_project/generative/opd_related/opd_lab/runs/le2_eval_dpm240_job_002/evaluations/utility_only",
+            "regression_given_baseline_satisfied": {
+              "color": {
+                "ci95": [
+                  0.0,
+                  0.23333333333333334
+                ],
+                "mean": 0.1,
+                "observations": 25,
+                "prompts": 15
+              },
+              "count": {
+                "ci95": [
+                  0.0,
+                  0.39285714285714285
+                ],
+                "mean": 0.17857142857142858,
+                "observations": 21,
+                "prompts": 14
+              },
+              "relation": {
+                "ci95": [
+                  0.0,
+                  0.25
+                ],
+                "mean": 0.08333333333333333,
+                "observations": 9,
+                "prompts": 6
+              },
+              "text": {
+                "ci95": [
+                  0.03333333333333333,
+                  0.18333333333333332
+                ],
+                "mean": 0.1,
+                "observations": 52,
+                "prompts": 30
+              }
+            },
+            "statistical_unit": "prompt; average replicate seeds within prompt before paired bootstrap",
+            "utility": {
+              "ci95": [
+                -0.060063462056223996,
+                0.08564698825934189
+              ],
+              "paired_delta": 0.016200855284371693,
+              "prompt_count": 32
+            }
+          },
+          "secondary_ocr": {
+            "joint_success": {
+              "ci95": [
+                -0.15625,
+                0.0625
+              ],
+              "mean": -0.046875,
+              "observations": 64,
+              "prompts": 32
+            },
+            "text_accuracy_delta": {
+              "ci95": [
+                -0.203125,
+                0.046875
+              ],
+              "mean": -0.078125,
+              "observations": 64,
+              "prompts": 32
+            },
+            "utility": {
+              "ci95": [
+                -0.1183308520002856,
+                0.03546126652571959
+              ],
+              "mean": -0.04094815413174788,
+              "observations": 64,
+              "prompts": 32
+            }
+          }
+        },
+        "verified_fixed_minus_base": {
+          "primary": {
+            "baseline": "/midtier/minilab/scratch/chw4026/projects/side_project/generative/opd_related/opd_lab/runs/le2_eval_dpm240_job_002/evaluations/base",
+            "clause_accuracy_delta": {
+              "color": {
+                "ci95": [
+                  -0.125,
+                  0.0625
+                ],
+                "mean": -0.03125,
+                "observations": 32,
+                "prompts": 16
+              },
+              "count": {
+                "ci95": [
+                  -0.09375,
+                  0.09375
+                ],
+                "mean": 0.0,
+                "observations": 32,
+                "prompts": 16
+              },
+              "relation": {
+                "ci95": [
+                  -0.1875,
+                  0.0
+                ],
+                "mean": -0.0625,
+                "observations": 16,
+                "prompts": 8
+              },
+              "text": {
+                "ci95": [
+                  -0.09375,
+                  0.09375
+                ],
+                "mean": 0.0,
+                "observations": 64,
+                "prompts": 32
+              }
+            },
+            "images": 64,
+            "interval": "paired prompt bootstrap percentile 95%, 2000 resamples, seed 0",
+            "joint_success": {
+              "ci95": [
+                -0.06289062499999998,
+                0.109375
+              ],
+              "paired_delta": 0.015625,
+              "prompt_count": 32
+            },
+            "method": "/midtier/minilab/scratch/chw4026/projects/side_project/generative/opd_related/opd_lab/runs/le2_eval_dpm240_job_002/evaluations/verified_fixed",
+            "regression_given_baseline_satisfied": {
+              "color": {
+                "ci95": [
+                  0.0,
+                  0.23333333333333334
+                ],
+                "mean": 0.1,
+                "observations": 25,
+                "prompts": 15
+              },
+              "count": {
+                "ci95": [
+                  0.0,
+                  0.21428571428571427
+                ],
+                "mean": 0.07142857142857142,
+                "observations": 21,
+                "prompts": 14
+              },
+              "relation": {
+                "ci95": [
+                  0.0,
+                  0.25
+                ],
+                "mean": 0.08333333333333333,
+                "observations": 9,
+                "prompts": 6
+              },
+              "text": {
+                "ci95": [
+                  0.03333333333333333,
+                  0.2
+                ],
+                "mean": 0.1,
+                "observations": 52,
+                "prompts": 30
+              }
+            },
+            "statistical_unit": "prompt; average replicate seeds within prompt before paired bootstrap",
+            "utility": {
+              "ci95": [
+                -0.048295234403871026,
+                0.07025888770517676
+              ],
+              "paired_delta": 0.008693451281103722,
+              "prompt_count": 32
+            }
+          },
+          "secondary_ocr": {
+            "joint_success": {
+              "ci95": [
+                -0.125,
+                0.09375
+              ],
+              "mean": -0.015625,
+              "observations": 64,
+              "prompts": 32
+            },
+            "text_accuracy_delta": {
+              "ci95": [
+                -0.15625,
+                0.09375
+              ],
+              "mean": -0.03125,
+              "observations": 64,
+              "prompts": 32
+            },
+            "utility": {
+              "ci95": [
+                -0.1181715902275113,
+                0.05349563917499257
+              ],
+              "mean": -0.02994636827901631,
+              "observations": 64,
+              "prompts": 32
+            }
+          }
+        },
+        "verified_fixed_minus_fixed_geneval": {
+          "primary": {
+            "baseline": "/midtier/minilab/scratch/chw4026/projects/side_project/generative/opd_related/opd_lab/runs/le2_eval_dpm240_job_002/evaluations/fixed_geneval",
+            "clause_accuracy_delta": {
+              "color": {
+                "ci95": [
+                  0.0,
+                  0.0
+                ],
+                "mean": 0.0,
+                "observations": 32,
+                "prompts": 16
+              },
+              "count": {
+                "ci95": [
+                  0.0,
+                  0.09375
+                ],
+                "mean": 0.03125,
+                "observations": 32,
+                "prompts": 16
+              },
+              "relation": {
+                "ci95": [
+                  0.0,
+                  0.0
+                ],
+                "mean": 0.0,
+                "observations": 16,
+                "prompts": 8
+              },
+              "text": {
+                "ci95": [
+                  -0.078125,
+                  0.109375
+                ],
+                "mean": 0.015625,
+                "observations": 64,
+                "prompts": 32
+              }
+            },
+            "images": 64,
+            "interval": "paired prompt bootstrap percentile 95%, 2000 resamples, seed 0",
+            "joint_success": {
+              "ci95": [
+                -0.0625,
+                0.125
+              ],
+              "paired_delta": 0.03125,
+              "prompt_count": 32
+            },
+            "method": "/midtier/minilab/scratch/chw4026/projects/side_project/generative/opd_related/opd_lab/runs/le2_eval_dpm240_job_002/evaluations/verified_fixed",
+            "regression_given_baseline_satisfied": {
+              "color": {
+                "ci95": [
+                  0.0,
+                  0.0
+                ],
+                "mean": 0.0,
+                "observations": 24,
+                "prompts": 14
+              },
+              "count": {
+                "ci95": [
+                  0.0,
+                  0.0
+                ],
+                "mean": 0.0,
+                "observations": 20,
+                "prompts": 13
+              },
+              "relation": {
+                "ci95": [
+                  0.0,
+                  0.0
+                ],
+                "mean": 0.0,
+                "observations": 8,
+                "prompts": 6
+              },
+              "text": {
+                "ci95": [
+                  0.016129032258064516,
+                  0.12903225806451613
+                ],
+                "mean": 0.06451612903225806,
+                "observations": 51,
+                "prompts": 31
+              }
+            },
+            "statistical_unit": "prompt; average replicate seeds within prompt before paired bootstrap",
+            "utility": {
+              "ci95": [
+                -0.026518223529942278,
+                0.07513206845238092
+              ],
+              "paired_delta": 0.02433261183261183,
+              "prompt_count": 32
+            }
+          },
+          "secondary_ocr": {
+            "joint_success": {
+              "ci95": [
+                -0.125,
+                0.0625
+              ],
+              "mean": -0.03125,
+              "observations": 64,
+              "prompts": 32
+            },
+            "text_accuracy_delta": {
+              "ci95": [
+                -0.125,
+                0.09375
+              ],
+              "mean": -0.015625,
+              "observations": 64,
+              "prompts": 32
+            },
+            "utility": {
+              "ci95": [
+                -0.08775159824527629,
+                0.04245214271365674
+              ],
+              "mean": -0.01884574732734329,
+              "observations": 64,
+              "prompts": 32
+            }
+          }
+        },
+        "verified_multi_minus_base": {
+          "primary": {
+            "baseline": "/midtier/minilab/scratch/chw4026/projects/side_project/generative/opd_related/opd_lab/runs/le2_eval_dpm240_job_002/evaluations/base",
+            "clause_accuracy_delta": {
+              "color": {
+                "ci95": [
+                  -0.15625,
+                  0.0
+                ],
+                "mean": -0.0625,
+                "observations": 32,
+                "prompts": 16
+              },
+              "count": {
+                "ci95": [
+                  -0.15625,
+                  0.0
+                ],
+                "mean": -0.0625,
+                "observations": 32,
+                "prompts": 16
+              },
+              "relation": {
+                "ci95": [
+                  -0.1875,
+                  0.0
+                ],
+                "mean": -0.0625,
+                "observations": 16,
+                "prompts": 8
+              },
+              "text": {
+                "ci95": [
+                  -0.140625,
+                  0.125
+                ],
+                "mean": -0.015625,
+                "observations": 64,
+                "prompts": 32
+              }
+            },
+            "images": 64,
+            "interval": "paired prompt bootstrap percentile 95%, 2000 resamples, seed 0",
+            "joint_success": {
+              "ci95": [
+                -0.078125,
+                0.109375
+              ],
+              "paired_delta": 0.015625,
+              "prompt_count": 32
+            },
+            "method": "/midtier/minilab/scratch/chw4026/projects/side_project/generative/opd_related/opd_lab/runs/le2_eval_dpm240_job_002/evaluations/verified_multi",
+            "regression_given_baseline_satisfied": {
+              "color": {
+                "ci95": [
+                  0.0,
+                  0.36666666666666664
+                ],
+                "mean": 0.16666666666666666,
+                "observations": 25,
+                "prompts": 15
+              },
+              "count": {
+                "ci95": [
+                  0.0,
+                  0.39285714285714285
+                ],
+                "mean": 0.17857142857142858,
+                "observations": 21,
+                "prompts": 14
+              },
+              "relation": {
+                "ci95": [
+                  0.0,
+                  0.25
+                ],
+                "mean": 0.08333333333333333,
+                "observations": 9,
+                "prompts": 6
+              },
+              "text": {
+                "ci95": [
+                  0.06666666666666667,
+                  0.21666666666666667
+                ],
+                "mean": 0.13333333333333333,
+                "observations": 52,
+                "prompts": 30
+              }
+            },
+            "statistical_unit": "prompt; average replicate seeds within prompt before paired bootstrap",
+            "utility": {
+              "ci95": [
+                -0.07696688926228752,
+                0.04604422054962734
+              ],
+              "paired_delta": -0.015439479590108402,
+              "prompt_count": 32
+            }
+          },
+          "secondary_ocr": {
+            "joint_success": {
+              "ci95": [
+                -0.09375,
+                0.09375
+              ],
+              "mean": 0.0,
+              "observations": 64,
+              "prompts": 32
+            },
+            "text_accuracy_delta": {
+              "ci95": [
+                -0.125,
+                0.078125
+              ],
+              "mean": -0.03125,
+              "observations": 64,
+              "prompts": 32
+            },
+            "utility": {
+              "ci95": [
+                -0.0867989427640692,
+                0.04887654330242732
+              ],
+              "mean": -0.020692299028030936,
+              "observations": 64,
+              "prompts": 32
+            }
+          }
+        },
+        "verified_multi_minus_utility_only": {
+          "primary": {
+            "baseline": "/midtier/minilab/scratch/chw4026/projects/side_project/generative/opd_related/opd_lab/runs/le2_eval_dpm240_job_002/evaluations/utility_only",
+            "clause_accuracy_delta": {
+              "color": {
+                "ci95": [
+                  -0.09375,
+                  0.0
+                ],
+                "mean": -0.03125,
+                "observations": 32,
+                "prompts": 16
+              },
+              "count": {
+                "ci95": [
+                  -0.15625,
+                  0.0
+                ],
+                "mean": -0.0625,
+                "observations": 32,
+                "prompts": 16
+              },
+              "relation": {
+                "ci95": [
+                  0.0,
+                  0.0
+                ],
+                "mean": 0.0,
+                "observations": 16,
+                "prompts": 8
+              },
+              "text": {
+                "ci95": [
+                  -0.078125,
+                  0.0625
+                ],
+                "mean": -0.015625,
+                "observations": 64,
+                "prompts": 32
+              }
+            },
+            "images": 64,
+            "interval": "paired prompt bootstrap percentile 95%, 2000 resamples, seed 0",
+            "joint_success": {
+              "ci95": [
+                -0.09375,
+                0.03125
+              ],
+              "paired_delta": -0.03125,
+              "prompt_count": 32
+            },
+            "method": "/midtier/minilab/scratch/chw4026/projects/side_project/generative/opd_related/opd_lab/runs/le2_eval_dpm240_job_002/evaluations/verified_multi",
+            "regression_given_baseline_satisfied": {
+              "color": {
+                "ci95": [
+                  0.0,
+                  0.10714285714285714
+                ],
+                "mean": 0.03571428571428571,
+                "observations": 24,
+                "prompts": 14
+              },
+              "count": {
+                "ci95": [
+                  0.0,
+                  0.3333333333333333
+                ],
+                "mean": 0.13333333333333333,
+                "observations": 21,
+                "prompts": 15
+              },
+              "relation": {
+                "ci95": [
+                  0.0,
+                  0.0
+                ],
+                "mean": 0.0,
+                "observations": 8,
+                "prompts": 6
+              },
+              "text": {
+                "ci95": [
+                  0.0,
+                  0.0967741935483871
+                ],
+                "mean": 0.04838709677419355,
+                "observations": 52,
+                "prompts": 31
+              }
+            },
+            "statistical_unit": "prompt; average replicate seeds within prompt before paired bootstrap",
+            "utility": {
+              "ci95": [
+                -0.07400034786049836,
+                0.008965529896854573
+              ],
+              "paired_delta": -0.03164033487448009,
+              "prompt_count": 32
+            }
+          },
+          "secondary_ocr": {
+            "joint_success": {
+              "ci95": [
+                -0.03125,
+                0.125
+              ],
+              "mean": 0.046875,
+              "observations": 64,
+              "prompts": 32
+            },
+            "text_accuracy_delta": {
+              "ci95": [
+                -0.046875,
+                0.140625
+              ],
+              "mean": 0.046875,
+              "observations": 64,
+              "prompts": 32
+            },
+            "utility": {
+              "ci95": [
+                -0.02877924707347508,
+                0.07139759981030021
+              ],
+              "mean": 0.020255855103716944,
+              "observations": 64,
+              "prompts": 32
+            }
+          }
+        },
+        "verified_multi_minus_verified_fixed": {
+          "primary": {
+            "baseline": "/midtier/minilab/scratch/chw4026/projects/side_project/generative/opd_related/opd_lab/runs/le2_eval_dpm240_job_002/evaluations/verified_fixed",
+            "clause_accuracy_delta": {
+              "color": {
+                "ci95": [
+                  -0.09375,
+                  0.0
+                ],
+                "mean": -0.03125,
+                "observations": 32,
+                "prompts": 16
+              },
+              "count": {
+                "ci95": [
+                  -0.15625,
+                  0.0
+                ],
+                "mean": -0.0625,
+                "observations": 32,
+                "prompts": 16
+              },
+              "relation": {
+                "ci95": [
+                  0.0,
+                  0.0
+                ],
+                "mean": 0.0,
+                "observations": 16,
+                "prompts": 8
+              },
+              "text": {
+                "ci95": [
+                  -0.125,
+                  0.09375
+                ],
+                "mean": -0.015625,
+                "observations": 64,
+                "prompts": 32
+              }
+            },
+            "images": 64,
+            "interval": "paired prompt bootstrap percentile 95%, 2000 resamples, seed 0",
+            "joint_success": {
+              "ci95": [
+                -0.078125,
+                0.078125
+              ],
+              "paired_delta": 0.0,
+              "prompt_count": 32
+            },
+            "method": "/midtier/minilab/scratch/chw4026/projects/side_project/generative/opd_related/opd_lab/runs/le2_eval_dpm240_job_002/evaluations/verified_multi",
+            "regression_given_baseline_satisfied": {
+              "color": {
+                "ci95": [
+                  0.0,
+                  0.10714285714285714
+                ],
+                "mean": 0.03571428571428571,
+                "observations": 24,
+                "prompts": 14
+              },
+              "count": {
+                "ci95": [
+                  0.0,
+                  0.19230769230769232
+                ],
+                "mean": 0.07692307692307693,
+                "observations": 21,
+                "prompts": 13
+              },
+              "relation": {
+                "ci95": [
+                  0.0,
+                  0.0
+                ],
+                "mean": 0.0,
+                "observations": 8,
+                "prompts": 6
+              },
+              "text": {
+                "ci95": [
+                  0.046875,
+                  0.21875
+                ],
+                "mean": 0.125,
+                "observations": 52,
+                "prompts": 32
+              }
+            },
+            "statistical_unit": "prompt; average replicate seeds within prompt before paired bootstrap",
+            "utility": {
+              "ci95": [
+                -0.07077071989425504,
+                0.022305230034722186
+              ],
+              "paired_delta": -0.02413293087121212,
+              "prompt_count": 32
+            }
+          },
+          "secondary_ocr": {
+            "joint_success": {
+              "ci95": [
+                -0.078125,
+                0.109375
+              ],
+              "mean": 0.015625,
+              "observations": 64,
+              "prompts": 32
+            },
+            "text_accuracy_delta": {
+              "ci95": [
+                -0.109375,
+                0.109375
+              ],
+              "mean": 0.0,
+              "observations": 64,
+              "prompts": 32
+            },
+            "utility": {
+              "ci95": [
+                -0.05187744657895253,
+                0.07410393528711785
+              ],
+              "mean": 0.009254069250985372,
+              "observations": 64,
+              "prompts": 32
+            }
+          }
+        }
+      },
+      "ocr_config_sha256": "b9b9fe465760c267235d40d465234f2f60b099b27fd708aa0c61975d0dfac042",
+      "ocr_reader_disagreement": {
+        "base": {
+          "ci95": [
+            0.4375,
+            0.71875
+          ],
+          "mean": 0.578125,
+          "observations": 64,
+          "prompts": 32
+        },
+        "fixed_geneval": {
+          "ci95": [
+            0.484375,
+            0.734375
+          ],
+          "mean": 0.609375,
+          "observations": 64,
+          "prompts": 32
+        },
+        "utility_only": {
+          "ci95": [
+            0.515625,
+            0.75
+          ],
+          "mean": 0.625,
+          "observations": 64,
+          "prompts": 32
+        },
+        "verified_fixed": {
+          "ci95": [
+            0.4375,
+            0.65625
+          ],
+          "mean": 0.546875,
+          "observations": 64,
+          "prompts": 32
+        },
+        "verified_multi": {
+          "ci95": [
+            0.4375,
+            0.703125
+          ],
+          "mean": 0.5625,
+          "observations": 64,
+          "prompts": 32
+        }
+      },
+      "runs_manifest_sha256": "fee3dee33008ac2a8e7cf2fb2388c031b8e62510dbfccd25e9157be127ac2efe",
+      "status": "complete"
+    },
+    "flow10": {
+      "arms": {
+        "base": {
+          "allocated_gpu_hours": 0.039834114156352976,
+          "counts": {
+            "decode_images": 64,
+            "forward_examples": 1280,
+            "forward_student": 640,
+            "geneval_clause_images": 80,
+            "ocr_images": 64,
+            "text_encode_prompts": 64,
+            "verifier_images": 64
+          },
+          "elapsed_seconds": 143.40281096287072,
+          "images": 64,
+          "joint_success": 0.34375,
+          "per_image_sha256": "8f021137e454c27eb68ba4bbec63727a6037a042dc8634f7f149ac52b0887b50",
+          "protocol_digest": "0889a5fa75377fdf90647ab20a24dbd730a20c33e0c4a971d218d8982e71bc23",
+          "status": "complete",
+          "utility": 0.5247976415945166,
+          "valid_images": 64
+        },
+        "fixed_geneval": {
+          "allocated_gpu_hours": 0.03631050969732719,
+          "counts": {
+            "decode_images": 64,
+            "forward_examples": 1280,
+            "forward_student": 640,
+            "geneval_clause_images": 80,
+            "ocr_images": 64,
+            "text_encode_prompts": 64,
+            "verifier_images": 64
+          },
+          "elapsed_seconds": 130.71783491037786,
+          "images": 64,
+          "joint_success": 0.296875,
+          "per_image_sha256": "ba98a93352ec6b501024c0ea8f2cda26e658997342e59da97f8dbef80b59c675",
+          "protocol_digest": "2c74a51ea77575d72a41b5a482c69ce37fc08b4652fa5d2d405fb64f1cdb96ec",
+          "status": "complete",
+          "utility": 0.4866670800264551,
+          "valid_images": 64
+        },
+        "utility_only": {
+          "allocated_gpu_hours": 0.036832071046551895,
+          "counts": {
+            "decode_images": 64,
+            "forward_examples": 1280,
+            "forward_student": 640,
+            "geneval_clause_images": 80,
+            "ocr_images": 64,
+            "text_encode_prompts": 64,
+            "verifier_images": 64
+          },
+          "elapsed_seconds": 132.59545576758683,
+          "images": 64,
+          "joint_success": 0.296875,
+          "per_image_sha256": "c303d271cb50ba445f85f15d74c183755984db7f478294a2933895b4d5fef3a9",
+          "protocol_digest": "2c74a51ea77575d72a41b5a482c69ce37fc08b4652fa5d2d405fb64f1cdb96ec",
+          "status": "complete",
+          "utility": 0.4927496926922479,
+          "valid_images": 64
+        },
+        "verified_fixed": {
+          "allocated_gpu_hours": 0.041854977751564645,
+          "counts": {
+            "decode_images": 64,
+            "forward_examples": 1280,
+            "forward_student": 640,
+            "geneval_clause_images": 80,
+            "ocr_images": 64,
+            "text_encode_prompts": 64,
+            "verifier_images": 64
+          },
+          "elapsed_seconds": 150.67791990563273,
+          "images": 64,
+          "joint_success": 0.3125,
+          "per_image_sha256": "704f617ada72ac6ebbd1b38129698e8e42fb36f48845034ea21e7b945ae825d2",
+          "protocol_digest": "2c74a51ea77575d72a41b5a482c69ce37fc08b4652fa5d2d405fb64f1cdb96ec",
+          "status": "complete",
+          "utility": 0.505692222635582,
+          "valid_images": 64
+        },
+        "verified_multi": {
+          "allocated_gpu_hours": 0.03665911837429222,
+          "counts": {
+            "decode_images": 64,
+            "forward_examples": 1280,
+            "forward_student": 640,
+            "geneval_clause_images": 80,
+            "ocr_images": 64,
+            "text_encode_prompts": 64,
+            "verifier_images": 64
+          },
+          "elapsed_seconds": 131.972826147452,
+          "images": 64,
+          "joint_success": 0.328125,
+          "per_image_sha256": "dfe070b3b9b42c0b68599e036a3962fca37e5d66af06ccc84c9cec323b02694c",
+          "protocol_digest": "2c74a51ea77575d72a41b5a482c69ce37fc08b4652fa5d2d405fb64f1cdb96ec",
+          "status": "complete",
+          "utility": 0.5227933633207071,
+          "valid_images": 64
+        }
+      },
+      "contrasts": {
+        "fixed_geneval_minus_base": {
+          "primary": {
+            "baseline": "/midtier/minilab/scratch/chw4026/projects/side_project/generative/opd_related/opd_lab/runs/le2_eval_flow10_job_002/evaluations/base",
+            "clause_accuracy_delta": {
+              "color": {
+                "ci95": [
+                  -0.28125,
+                  0.15625
+                ],
+                "mean": -0.0625,
+                "observations": 32,
+                "prompts": 16
+              },
+              "count": {
+                "ci95": [
+                  -0.1875,
+                  0.0625
+                ],
+                "mean": -0.0625,
+                "observations": 32,
+                "prompts": 16
+              },
+              "relation": {
+                "ci95": [
+                  -0.0625,
+                  0.3125
+                ],
+                "mean": 0.125,
+                "observations": 16,
+                "prompts": 8
+              },
+              "text": {
+                "ci95": [
+                  -0.203125,
+                  0.07851562499999787
+                ],
+                "mean": -0.0625,
+                "observations": 64,
+                "prompts": 32
+              }
+            },
+            "images": 64,
+            "interval": "paired prompt bootstrap percentile 95%, 2000 resamples, seed 0",
+            "joint_success": {
+              "ci95": [
+                -0.171875,
+                0.0625
+              ],
+              "paired_delta": -0.046875,
+              "prompt_count": 32
+            },
+            "method": "/midtier/minilab/scratch/chw4026/projects/side_project/generative/opd_related/opd_lab/runs/le2_eval_flow10_job_002/evaluations/fixed_geneval",
+            "regression_given_baseline_satisfied": {
+              "color": {
+                "ci95": [
+                  0.07692307692307693,
+                  0.5384615384615384
+                ],
+                "mean": 0.3076923076923077,
+                "observations": 21,
+                "prompts": 13
+              },
+              "count": {
+                "ci95": [
+                  0.041666666666666664,
+                  0.4166666666666667
+                ],
+                "mean": 0.20833333333333334,
+                "observations": 19,
+                "prompts": 12
+              },
+              "relation": {
+                "ci95": [
+                  0.0,
+                  0.375
+                ],
+                "mean": 0.125,
+                "observations": 5,
+                "prompts": 4
+              },
+              "text": {
+                "ci95": [
+                  0.19230769230769232,
+                  0.4807692307692308
+                ],
+                "mean": 0.3269230769230769,
+                "observations": 37,
+                "prompts": 26
+              }
+            },
+            "statistical_unit": "prompt; average replicate seeds within prompt before paired bootstrap",
+            "utility": {
+              "ci95": [
+                -0.12750398328523327,
+                0.04873149745220056
+              ],
+              "paired_delta": -0.03813056156806156,
+              "prompt_count": 32
+            }
+          },
+          "secondary_ocr": {
+            "joint_success": {
+              "ci95": [
+                -0.15625,
+                0.0
+              ],
+              "mean": -0.078125,
+              "observations": 64,
+              "prompts": 32
+            },
+            "text_accuracy_delta": {
+              "ci95": [
+                -0.171875,
+                0.046875
+              ],
+              "mean": -0.0625,
+              "observations": 64,
+              "prompts": 32
+            },
+            "utility": {
+              "ci95": [
+                -0.11842890297416452,
+                0.009574702453313088
+              ],
+              "mean": -0.05163829880772011,
+              "observations": 64,
+              "prompts": 32
+            }
+          }
+        },
+        "utility_only_minus_base": {
+          "primary": {
+            "baseline": "/midtier/minilab/scratch/chw4026/projects/side_project/generative/opd_related/opd_lab/runs/le2_eval_flow10_job_002/evaluations/base",
+            "clause_accuracy_delta": {
+              "color": {
+                "ci95": [
+                  -0.125,
+                  0.1875
+                ],
+                "mean": 0.03125,
+                "observations": 32,
+                "prompts": 16
+              },
+              "count": {
+                "ci95": [
+                  -0.125,
+                  0.125
+                ],
+                "mean": 0.0,
+                "observations": 32,
+                "prompts": 16
+              },
+              "relation": {
+                "ci95": [
+                  -0.125,
+                  0.25
+                ],
+                "mean": 0.0625,
+                "observations": 16,
+                "prompts": 8
+              },
+              "text": {
+                "ci95": [
+                  -0.21875,
+                  0.0
+                ],
+                "mean": -0.109375,
+                "observations": 64,
+                "prompts": 32
+              }
+            },
+            "images": 64,
+            "interval": "paired prompt bootstrap percentile 95%, 2000 resamples, seed 0",
+            "joint_success": {
+              "ci95": [
+                -0.140625,
+                0.03125
+              ],
+              "paired_delta": -0.046875,
+              "prompt_count": 32
+            },
+            "method": "/midtier/minilab/scratch/chw4026/projects/side_project/generative/opd_related/opd_lab/runs/le2_eval_flow10_job_002/evaluations/utility_only",
+            "regression_given_baseline_satisfied": {
+              "color": {
+                "ci95": [
+                  0.0,
+                  0.3076923076923077
+                ],
+                "mean": 0.11538461538461539,
+                "observations": 21,
+                "prompts": 13
+              },
+              "count": {
+                "ci95": [
+                  0.0,
+                  0.375
+                ],
+                "mean": 0.16666666666666666,
+                "observations": 19,
+                "prompts": 12
+              },
+              "relation": {
+                "ci95": [
+                  0.0,
+                  0.375
+                ],
+                "mean": 0.125,
+                "observations": 5,
+                "prompts": 4
+              },
+              "text": {
+                "ci95": [
+                  0.11538461538461539,
+                  0.40384615384615385
+                ],
+                "mean": 0.25,
+                "observations": 37,
+                "prompts": 26
+              }
+            },
+            "statistical_unit": "prompt; average replicate seeds within prompt before paired bootstrap",
+            "utility": {
+              "ci95": [
+                -0.09990559685412626,
+                0.031437182008614624
+              ],
+              "paired_delta": -0.03204794890226875,
+              "prompt_count": 32
+            }
+          },
+          "secondary_ocr": {
+            "joint_success": {
+              "ci95": [
+                -0.078125,
+                0.078125
+              ],
+              "mean": 0.0,
+              "observations": 64,
+              "prompts": 32
+            },
+            "text_accuracy_delta": {
+              "ci95": [
+                -0.109375,
+                0.078125
+              ],
+              "mean": -0.015625,
+              "observations": 64,
+              "prompts": 32
+            },
+            "utility": {
+              "ci95": [
+                -0.05930199119266759,
+                0.07657921720948546
+              ],
+              "mean": 0.008064563512754296,
+              "observations": 64,
+              "prompts": 32
+            }
+          }
+        },
+        "verified_fixed_minus_base": {
+          "primary": {
+            "baseline": "/midtier/minilab/scratch/chw4026/projects/side_project/generative/opd_related/opd_lab/runs/le2_eval_flow10_job_002/evaluations/base",
+            "clause_accuracy_delta": {
+              "color": {
+                "ci95": [
+                  -0.125,
+                  0.25
+                ],
+                "mean": 0.0625,
+                "observations": 32,
+                "prompts": 16
+              },
+              "count": {
+                "ci95": [
+                  -0.25,
+                  0.125
+                ],
+                "mean": -0.0625,
+                "observations": 32,
+                "prompts": 16
+              },
+              "relation": {
+                "ci95": [
+                  -0.125,
+                  0.25
+                ],
+                "mean": 0.0625,
+                "observations": 16,
+                "prompts": 8
+              },
+              "text": {
+                "ci95": [
+                  -0.15625,
+                  0.15625
+                ],
+                "mean": 0.0,
+                "observations": 64,
+                "prompts": 32
+              }
+            },
+            "images": 64,
+            "interval": "paired prompt bootstrap percentile 95%, 2000 resamples, seed 0",
+            "joint_success": {
+              "ci95": [
+                -0.12539062499999998,
+                0.078125
+              ],
+              "paired_delta": -0.03125,
+              "prompt_count": 32
+            },
+            "method": "/midtier/minilab/scratch/chw4026/projects/side_project/generative/opd_related/opd_lab/runs/le2_eval_flow10_job_002/evaluations/verified_fixed",
+            "regression_given_baseline_satisfied": {
+              "color": {
+                "ci95": [
+                  0.0,
+                  0.4230769230769231
+                ],
+                "mean": 0.19230769230769232,
+                "observations": 21,
+                "prompts": 13
+              },
+              "count": {
+                "ci95": [
+                  0.08229166666666672,
+                  0.5
+                ],
+                "mean": 0.25,
+                "observations": 19,
+                "prompts": 12
+              },
+              "relation": {
+                "ci95": [
+                  0.0,
+                  0.375
+                ],
+                "mean": 0.125,
+                "observations": 5,
+                "prompts": 4
+              },
+              "text": {
+                "ci95": [
+                  0.057692307692307696,
+                  0.3269230769230769
+                ],
+                "mean": 0.19230769230769232,
+                "observations": 37,
+                "prompts": 26
+              }
+            },
+            "statistical_unit": "prompt; average replicate seeds within prompt before paired bootstrap",
+            "utility": {
+              "ci95": [
+                -0.10625380831191379,
+                0.06397032429014844
+              ],
+              "paired_delta": -0.01910541895893458,
+              "prompt_count": 32
+            }
+          },
+          "secondary_ocr": {
+            "joint_success": {
+              "ci95": [
+                -0.09375,
+                0.09375
+              ],
+              "mean": 0.0,
+              "observations": 64,
+              "prompts": 32
+            },
+            "text_accuracy_delta": {
+              "ci95": [
+                -0.046875,
+                0.25
+              ],
+              "mean": 0.09375,
+              "observations": 64,
+              "prompts": 32
+            },
+            "utility": {
+              "ci95": [
+                -0.07732010421932554,
+                0.08375192451871882
+              ],
+              "mean": 0.005640208354024142,
+              "observations": 64,
+              "prompts": 32
+            }
+          }
+        },
+        "verified_fixed_minus_fixed_geneval": {
+          "primary": {
+            "baseline": "/midtier/minilab/scratch/chw4026/projects/side_project/generative/opd_related/opd_lab/runs/le2_eval_flow10_job_002/evaluations/fixed_geneval",
+            "clause_accuracy_delta": {
+              "color": {
+                "ci95": [
+                  -0.03125,
+                  0.28125
+                ],
+                "mean": 0.125,
+                "observations": 32,
+                "prompts": 16
+              },
+              "count": {
+                "ci95": [
+                  -0.15625,
+                  0.125
+                ],
+                "mean": 0.0,
+                "observations": 32,
+                "prompts": 16
+              },
+              "relation": {
+                "ci95": [
+                  -0.1875,
+                  0.0
+                ],
+                "mean": -0.0625,
+                "observations": 16,
+                "prompts": 8
+              },
+              "text": {
+                "ci95": [
+                  -0.03125,
+                  0.15625
+                ],
+                "mean": 0.0625,
+                "observations": 64,
+                "prompts": 32
+              }
+            },
+            "images": 64,
+            "interval": "paired prompt bootstrap percentile 95%, 2000 resamples, seed 0",
+            "joint_success": {
+              "ci95": [
+                -0.078125,
+                0.109375
+              ],
+              "paired_delta": 0.015625,
+              "prompt_count": 32
+            },
+            "method": "/midtier/minilab/scratch/chw4026/projects/side_project/generative/opd_related/opd_lab/runs/le2_eval_flow10_job_002/evaluations/verified_fixed",
+            "regression_given_baseline_satisfied": {
+              "color": {
+                "ci95": [
+                  0.0,
+                  0.13636363636363635
+                ],
+                "mean": 0.045454545454545456,
+                "observations": 19,
+                "prompts": 11
+              },
+              "count": {
+                "ci95": [
+                  0.0,
+                  0.23076923076923078
+                ],
+                "mean": 0.07692307692307693,
+                "observations": 17,
+                "prompts": 13
+              },
+              "relation": {
+                "ci95": [
+                  0.0,
+                  0.42857142857142855
+                ],
+                "mean": 0.14285714285714285,
+                "observations": 7,
+                "prompts": 7
+              },
+              "text": {
+                "ci95": [
+                  0.0,
+                  0.25
+                ],
+                "mean": 0.10714285714285714,
+                "observations": 33,
+                "prompts": 28
+              }
+            },
+            "statistical_unit": "prompt; average replicate seeds within prompt before paired bootstrap",
+            "utility": {
+              "ci95": [
+                -0.044355216858878964,
+                0.08342814127604165
+              ],
+              "paired_delta": 0.01902514260912699,
+              "prompt_count": 32
+            }
+          },
+          "secondary_ocr": {
+            "joint_success": {
+              "ci95": [
+                0.015625,
+                0.140625
+              ],
+              "mean": 0.078125,
+              "observations": 64,
+              "prompts": 32
+            },
+            "text_accuracy_delta": {
+              "ci95": [
+                0.046875,
+                0.265625
+              ],
+              "mean": 0.15625,
+              "observations": 64,
+              "prompts": 32
+            },
+            "utility": {
+              "ci95": [
+                0.011986764986457156,
+                0.10853854757705811
+              ],
+              "mean": 0.05727850716174425,
+              "observations": 64,
+              "prompts": 32
+            }
+          }
+        },
+        "verified_multi_minus_base": {
+          "primary": {
+            "baseline": "/midtier/minilab/scratch/chw4026/projects/side_project/generative/opd_related/opd_lab/runs/le2_eval_flow10_job_002/evaluations/base",
+            "clause_accuracy_delta": {
+              "color": {
+                "ci95": [
+                  -0.0625,
+                  0.21875
+                ],
+                "mean": 0.0625,
+                "observations": 32,
+                "prompts": 16
+              },
+              "count": {
+                "ci95": [
+                  -0.125,
+                  0.125
+                ],
+                "mean": 0.0,
+                "observations": 32,
+                "prompts": 16
+              },
+              "relation": {
+                "ci95": [
+                  -0.125,
+                  0.25
+                ],
+                "mean": 0.0625,
+                "observations": 16,
+                "prompts": 8
+              },
+              "text": {
+                "ci95": [
+                  -0.140625,
+                  0.046875
+                ],
+                "mean": -0.046875,
+                "observations": 64,
+                "prompts": 32
+              }
+            },
+            "images": 64,
+            "interval": "paired prompt bootstrap percentile 95%, 2000 resamples, seed 0",
+            "joint_success": {
+              "ci95": [
+                -0.07851562499999998,
+                0.046875
+              ],
+              "paired_delta": -0.015625,
+              "prompt_count": 32
+            },
+            "method": "/midtier/minilab/scratch/chw4026/projects/side_project/generative/opd_related/opd_lab/runs/le2_eval_flow10_job_002/evaluations/verified_multi",
+            "regression_given_baseline_satisfied": {
+              "color": {
+                "ci95": [
+                  0.0,
+                  0.11538461538461539
+                ],
+                "mean": 0.038461538461538464,
+                "observations": 21,
+                "prompts": 13
+              },
+              "count": {
+                "ci95": [
+                  0.0,
+                  0.20833333333333334
+                ],
+                "mean": 0.08333333333333333,
+                "observations": 19,
+                "prompts": 12
+              },
+              "relation": {
+                "ci95": [
+                  0.0,
+                  0.375
+                ],
+                "mean": 0.125,
+                "observations": 5,
+                "prompts": 4
+              },
+              "text": {
+                "ci95": [
+                  0.057692307692307696,
+                  0.2692307692307692
+                ],
+                "mean": 0.15384615384615385,
+                "observations": 37,
+                "prompts": 26
+              }
+            },
+            "statistical_unit": "prompt; average replicate seeds within prompt before paired bootstrap",
+            "utility": {
+              "ci95": [
+                -0.059059449122925683,
+                0.05437761403093433
+              ],
+              "paired_delta": -0.0020042782738095254,
+              "prompt_count": 32
+            }
+          },
+          "secondary_ocr": {
+            "joint_success": {
+              "ci95": [
+                -0.0625,
+                0.0625
+              ],
+              "mean": 0.0,
+              "observations": 64,
+              "prompts": 32
+            },
+            "text_accuracy_delta": {
+              "ci95": [
+                -0.09414062499999998,
+                0.109375
+              ],
+              "mean": 0.0,
+              "observations": 64,
+              "prompts": 32
+            },
+            "utility": {
+              "ci95": [
+                -0.04077104354236087,
+                0.059424960333548896
+              ],
+              "mean": 0.009667201687658104,
+              "observations": 64,
+              "prompts": 32
+            }
+          }
+        },
+        "verified_multi_minus_utility_only": {
+          "primary": {
+            "baseline": "/midtier/minilab/scratch/chw4026/projects/side_project/generative/opd_related/opd_lab/runs/le2_eval_flow10_job_002/evaluations/utility_only",
+            "clause_accuracy_delta": {
+              "color": {
+                "ci95": [
+                  -0.0625,
+                  0.125
+                ],
+                "mean": 0.03125,
+                "observations": 32,
+                "prompts": 16
+              },
+              "count": {
+                "ci95": [
+                  -0.09375,
+                  0.09375
+                ],
+                "mean": 0.0,
+                "observations": 32,
+                "prompts": 16
+              },
+              "relation": {
+                "ci95": [
+                  0.0,
+                  0.0
+                ],
+                "mean": 0.0,
+                "observations": 16,
+                "prompts": 8
+              },
+              "text": {
+                "ci95": [
+                  -0.015625,
+                  0.140625
+                ],
+                "mean": 0.0625,
+                "observations": 64,
+                "prompts": 32
+              }
+            },
+            "images": 64,
+            "interval": "paired prompt bootstrap percentile 95%, 2000 resamples, seed 0",
+            "joint_success": {
+              "ci95": [
+                0.0,
+                0.078125
+              ],
+              "paired_delta": 0.03125,
+              "prompt_count": 32
+            },
+            "method": "/midtier/minilab/scratch/chw4026/projects/side_project/generative/opd_related/opd_lab/runs/le2_eval_flow10_job_002/evaluations/verified_multi",
+            "regression_given_baseline_satisfied": {
+              "color": {
+                "ci95": [
+                  0.0,
+                  0.11538461538461539
+                ],
+                "mean": 0.038461538461538464,
+                "observations": 22,
+                "prompts": 13
+              },
+              "count": {
+                "ci95": [
+                  0.0,
+                  0.11538461538461539
+                ],
+                "mean": 0.038461538461538464,
+                "observations": 19,
+                "prompts": 13
+              },
+              "relation": {
+                "ci95": [
+                  0.0,
+                  0.0
+                ],
+                "mean": 0.0,
+                "observations": 6,
+                "prompts": 6
+              },
+              "text": {
+                "ci95": [
+                  0.0,
+                  0.10416666666666667
+                ],
+                "mean": 0.041666666666666664,
+                "observations": 30,
+                "prompts": 24
+              }
+            },
+            "statistical_unit": "prompt; average replicate seeds within prompt before paired bootstrap",
+            "utility": {
+              "ci95": [
+                0.00409441429604573,
+                0.061714397633658886
+              ],
+              "paired_delta": 0.03004367062845923,
+              "prompt_count": 32
+            }
+          },
+          "secondary_ocr": {
+            "joint_success": {
+              "ci95": [
+                -0.078125,
+                0.078125
+              ],
+              "mean": 0.0,
+              "observations": 64,
+              "prompts": 32
+            },
+            "text_accuracy_delta": {
+              "ci95": [
+                -0.078125,
+                0.125
+              ],
+              "mean": 0.015625,
+              "observations": 64,
+              "prompts": 32
+            },
+            "utility": {
+              "ci95": [
+                -0.057226514940137994,
+                0.05967571748455538
+              ],
+              "mean": 0.0016026381749038032,
+              "observations": 64,
+              "prompts": 32
+            }
+          }
+        },
+        "verified_multi_minus_verified_fixed": {
+          "primary": {
+            "baseline": "/midtier/minilab/scratch/chw4026/projects/side_project/generative/opd_related/opd_lab/runs/le2_eval_flow10_job_002/evaluations/verified_fixed",
+            "clause_accuracy_delta": {
+              "color": {
+                "ci95": [
+                  -0.15625,
+                  0.15625
+                ],
+                "mean": 0.0,
+                "observations": 32,
+                "prompts": 16
+              },
+              "count": {
+                "ci95": [
+                  -0.0625,
+                  0.1875
+                ],
+                "mean": 0.0625,
+                "observations": 32,
+                "prompts": 16
+              },
+              "relation": {
+                "ci95": [
+                  0.0,
+                  0.0
+                ],
+                "mean": 0.0,
+                "observations": 16,
+                "prompts": 8
+              },
+              "text": {
+                "ci95": [
+                  -0.171875,
+                  0.078125
+                ],
+                "mean": -0.046875,
+                "observations": 64,
+                "prompts": 32
+              }
+            },
+            "images": 64,
+            "interval": "paired prompt bootstrap percentile 95%, 2000 resamples, seed 0",
+            "joint_success": {
+              "ci95": [
+                -0.046875,
+                0.078125
+              ],
+              "paired_delta": 0.015625,
+              "prompt_count": 32
+            },
+            "method": "/midtier/minilab/scratch/chw4026/projects/side_project/generative/opd_related/opd_lab/runs/le2_eval_flow10_job_002/evaluations/verified_multi",
+            "regression_given_baseline_satisfied": {
+              "color": {
+                "ci95": [
+                  0.0,
+                  0.39285714285714285
+                ],
+                "mean": 0.17857142857142858,
+                "observations": 23,
+                "prompts": 14
+              },
+              "count": {
+                "ci95": [
+                  0.0,
+                  0.125
+                ],
+                "mean": 0.041666666666666664,
+                "observations": 17,
+                "prompts": 12
+              },
+              "relation": {
+                "ci95": [
+                  0.0,
+                  0.0
+                ],
+                "mean": 0.0,
+                "observations": 6,
+                "prompts": 6
+              },
+              "text": {
+                "ci95": [
+                  0.057692307692307696,
+                  0.25
+                ],
+                "mean": 0.15384615384615385,
+                "observations": 37,
+                "prompts": 26
+              }
+            },
+            "statistical_unit": "prompt; average replicate seeds within prompt before paired bootstrap",
+            "utility": {
+              "ci95": [
+                -0.03247140243111923,
+                0.0668306354561237
+              ],
+              "paired_delta": 0.017101140685125058,
+              "prompt_count": 32
+            }
+          },
+          "secondary_ocr": {
+            "joint_success": {
+              "ci95": [
+                -0.09375,
+                0.078125
+              ],
+              "mean": 0.0,
+              "observations": 64,
+              "prompts": 32
+            },
+            "text_accuracy_delta": {
+              "ci95": [
+                -0.234375,
+                0.03125
+              ],
+              "mean": -0.09375,
+              "observations": 64,
+              "prompts": 32
+            },
+            "utility": {
+              "ci95": [
+                -0.07018884259728987,
+                0.07402403933776
+              ],
+              "mean": 0.0040269933336339655,
+              "observations": 64,
+              "prompts": 32
+            }
+          }
+        }
+      },
+      "ocr_config_sha256": "b9b9fe465760c267235d40d465234f2f60b099b27fd708aa0c61975d0dfac042",
+      "ocr_reader_disagreement": {
+        "base": {
+          "ci95": [
+            0.25,
+            0.484375
+          ],
+          "mean": 0.375,
+          "observations": 64,
+          "prompts": 32
+        },
+        "fixed_geneval": {
+          "ci95": [
+            0.296875,
+            0.5
+          ],
+          "mean": 0.40625,
+          "observations": 64,
+          "prompts": 32
+        },
+        "utility_only": {
+          "ci95": [
+            0.203125,
+            0.4375
+          ],
+          "mean": 0.3125,
+          "observations": 64,
+          "prompts": 32
+        },
+        "verified_fixed": {
+          "ci95": [
+            0.234375,
+            0.453125
+          ],
+          "mean": 0.34375,
+          "observations": 64,
+          "prompts": 32
+        },
+        "verified_multi": {
+          "ci95": [
+            0.265625,
+            0.53125
+          ],
+          "mean": 0.390625,
+          "observations": 64,
+          "prompts": 32
+        }
+      },
+      "runs_manifest_sha256": "fee3dee33008ac2a8e7cf2fb2388c031b8e62510dbfccd25e9157be127ac2efe",
+      "status": "complete"
+    },
+    "flow40": {
+      "arms": {
+        "base": {
+          "allocated_gpu_hours": 0.08214923089835793,
+          "counts": {
+            "decode_images": 64,
+            "forward_examples": 5120,
+            "forward_student": 2560,
+            "geneval_clause_images": 80,
+            "ocr_images": 64,
+            "text_encode_prompts": 64,
+            "verifier_images": 64
+          },
+          "elapsed_seconds": 295.73723123408854,
+          "images": 64,
+          "joint_success": 0.46875,
+          "per_image_sha256": "ac8493dd6218c38c6fba73d932d9a79a9620d7faa19a2c2262cbc7034fe26931",
+          "protocol_digest": "65ef4be5e682860576a185cb9a80778725967eaedb38b73bd616a52da48d3337",
+          "status": "complete",
+          "utility": 0.6420984916718881,
+          "valid_images": 64
+        },
+        "fixed_geneval": {
+          "allocated_gpu_hours": 0.0861456804515587,
+          "counts": {
+            "decode_images": 64,
+            "forward_examples": 5120,
+            "forward_student": 2560,
+            "geneval_clause_images": 80,
+            "ocr_images": 64,
+            "text_encode_prompts": 64,
+            "verifier_images": 64
+          },
+          "elapsed_seconds": 310.1244496256113,
+          "images": 64,
+          "joint_success": 0.53125,
+          "per_image_sha256": "62b3ef077be1773586ac199d83d569062acc0c0123b06faa8100e74d5e0a2cda",
+          "protocol_digest": "3c57b35c15512b1c030bcf5ef51292161298d9c3e1297a897af19708500d5368",
+          "status": "complete",
+          "utility": 0.6734957510964913,
+          "valid_images": 64
+        },
+        "utility_only": {
+          "allocated_gpu_hours": 0.07904587565300365,
+          "counts": {
+            "decode_images": 64,
+            "forward_examples": 5120,
+            "forward_student": 2560,
+            "geneval_clause_images": 80,
+            "ocr_images": 64,
+            "text_encode_prompts": 64,
+            "verifier_images": 64
+          },
+          "elapsed_seconds": 284.56515235081315,
+          "images": 64,
+          "joint_success": 0.546875,
+          "per_image_sha256": "8831ddd15c3538cd3c4532ef61dabf28b62954e670893d3a01d918a8b9417ae4",
+          "protocol_digest": "3c57b35c15512b1c030bcf5ef51292161298d9c3e1297a897af19708500d5368",
+          "status": "complete",
+          "utility": 0.675154164411977,
+          "valid_images": 64
+        },
+        "verified_fixed": {
+          "allocated_gpu_hours": 0.0849994822488063,
+          "counts": {
+            "decode_images": 64,
+            "forward_examples": 5120,
+            "forward_student": 2560,
+            "geneval_clause_images": 80,
+            "ocr_images": 64,
+            "text_encode_prompts": 64,
+            "verifier_images": 64
+          },
+          "elapsed_seconds": 305.99813609570265,
+          "images": 64,
+          "joint_success": 0.484375,
+          "per_image_sha256": "bcd4ebdf5138cd104a5747292df31a286a915a5b19183761afcda5ed1afdaa63",
+          "protocol_digest": "3c57b35c15512b1c030bcf5ef51292161298d9c3e1297a897af19708500d5368",
+          "status": "complete",
+          "utility": 0.6445019390331891,
+          "valid_images": 64
+        },
+        "verified_multi": {
+          "allocated_gpu_hours": 0.08169170254944927,
+          "counts": {
+            "decode_images": 64,
+            "forward_examples": 5120,
+            "forward_student": 2560,
+            "geneval_clause_images": 80,
+            "ocr_images": 64,
+            "text_encode_prompts": 64,
+            "verifier_images": 64
+          },
+          "elapsed_seconds": 294.0901291780174,
+          "images": 64,
+          "joint_success": 0.5,
+          "per_image_sha256": "80fe7b9602214b683d4a77ef8d8fcd0153fa01f70532e4f821f2e77a407e71aa",
+          "protocol_digest": "3c57b35c15512b1c030bcf5ef51292161298d9c3e1297a897af19708500d5368",
+          "status": "complete",
+          "utility": 0.6433709740181992,
+          "valid_images": 64
+        }
+      },
+      "contrasts": {
+        "fixed_geneval_minus_base": {
+          "primary": {
+            "baseline": "/midtier/minilab/scratch/chw4026/projects/side_project/generative/opd_related/opd_lab/runs/le2_eval_flow40_job_002/evaluations/base",
+            "clause_accuracy_delta": {
+              "color": {
+                "ci95": [
+                  -0.125,
+                  0.0625
+                ],
+                "mean": -0.03125,
+                "observations": 32,
+                "prompts": 16
+              },
+              "count": {
+                "ci95": [
+                  0.0,
+                  0.15625
+                ],
+                "mean": 0.0625,
+                "observations": 32,
+                "prompts": 16
+              },
+              "relation": {
+                "ci95": [
+                  -0.1875,
+                  0.0
+                ],
+                "mean": -0.0625,
+                "observations": 16,
+                "prompts": 8
+              },
+              "text": {
+                "ci95": [
+                  -0.109375,
+                  0.125
+                ],
+                "mean": 0.015625,
+                "observations": 64,
+                "prompts": 32
+              }
+            },
+            "images": 64,
+            "interval": "paired prompt bootstrap percentile 95%, 2000 resamples, seed 0",
+            "joint_success": {
+              "ci95": [
+                -0.0625,
+                0.1875
+              ],
+              "paired_delta": 0.0625,
+              "prompt_count": 32
+            },
+            "method": "/midtier/minilab/scratch/chw4026/projects/side_project/generative/opd_related/opd_lab/runs/le2_eval_flow40_job_002/evaluations/fixed_geneval",
+            "regression_given_baseline_satisfied": {
+              "color": {
+                "ci95": [
+                  0.0,
+                  0.23333333333333334
+                ],
+                "mean": 0.1,
+                "observations": 25,
+                "prompts": 15
+              },
+              "count": {
+                "ci95": [
+                  0.0,
+                  0.0
+                ],
+                "mean": 0.0,
+                "observations": 20,
+                "prompts": 13
+              },
+              "relation": {
+                "ci95": [
+                  0.0,
+                  0.25
+                ],
+                "mean": 0.08333333333333333,
+                "observations": 9,
+                "prompts": 6
+              },
+              "text": {
+                "ci95": [
+                  0.04838709677419355,
+                  0.24193548387096775
+                ],
+                "mean": 0.12903225806451613,
+                "observations": 47,
+                "prompts": 31
+              }
+            },
+            "statistical_unit": "prompt; average replicate seeds within prompt before paired bootstrap",
+            "utility": {
+              "ci95": [
+                -0.044696307011017115,
+                0.10711296266382099
+              ],
+              "paired_delta": 0.03139725942460317,
+              "prompt_count": 32
+            }
+          },
+          "secondary_ocr": {
+            "joint_success": {
+              "ci95": [
+                -0.125,
+                0.0625
+              ],
+              "mean": -0.03125,
+              "observations": 64,
+              "prompts": 32
+            },
+            "text_accuracy_delta": {
+              "ci95": [
+                -0.15625,
+                0.078125
+              ],
+              "mean": -0.03125,
+              "observations": 64,
+              "prompts": 32
+            },
+            "utility": {
+              "ci95": [
+                -0.08812580401433227,
+                0.0443235461354286
+              ],
+              "mean": -0.02050628503696059,
+              "observations": 64,
+              "prompts": 32
+            }
+          }
+        },
+        "utility_only_minus_base": {
+          "primary": {
+            "baseline": "/midtier/minilab/scratch/chw4026/projects/side_project/generative/opd_related/opd_lab/runs/le2_eval_flow40_job_002/evaluations/base",
+            "clause_accuracy_delta": {
+              "color": {
+                "ci95": [
+                  -0.15625,
+                  0.0
+                ],
+                "mean": -0.0625,
+                "observations": 32,
+                "prompts": 16
+              },
+              "count": {
+                "ci95": [
+                  0.0,
+                  0.0
+                ],
+                "mean": 0.0,
+                "observations": 32,
+                "prompts": 16
+              },
+              "relation": {
+                "ci95": [
+                  -0.1875,
+                  0.0
+                ],
+                "mean": -0.0625,
+                "observations": 16,
+                "prompts": 8
+              },
+              "text": {
+                "ci95": [
+                  -0.046875,
+                  0.203125
+                ],
+                "mean": 0.078125,
+                "observations": 64,
+                "prompts": 32
+              }
+            },
+            "images": 64,
+            "interval": "paired prompt bootstrap percentile 95%, 2000 resamples, seed 0",
+            "joint_success": {
+              "ci95": [
+                -0.03125,
+                0.1875
+              ],
+              "paired_delta": 0.078125,
+              "prompt_count": 32
+            },
+            "method": "/midtier/minilab/scratch/chw4026/projects/side_project/generative/opd_related/opd_lab/runs/le2_eval_flow40_job_002/evaluations/utility_only",
+            "regression_given_baseline_satisfied": {
+              "color": {
+                "ci95": [
+                  0.0,
+                  0.36666666666666664
+                ],
+                "mean": 0.16666666666666666,
+                "observations": 25,
+                "prompts": 15
+              },
+              "count": {
+                "ci95": [
+                  0.0,
+                  0.23076923076923078
+                ],
+                "mean": 0.07692307692307693,
+                "observations": 20,
+                "prompts": 13
+              },
+              "relation": {
+                "ci95": [
+                  0.0,
+                  0.25
+                ],
+                "mean": 0.08333333333333333,
+                "observations": 9,
+                "prompts": 6
+              },
+              "text": {
+                "ci95": [
+                  0.03225806451612903,
+                  0.20967741935483872
+                ],
+                "mean": 0.11290322580645161,
+                "observations": 47,
+                "prompts": 31
+              }
+            },
+            "statistical_unit": "prompt; average replicate seeds within prompt before paired bootstrap",
+            "utility": {
+              "ci95": [
+                -0.03454410302953169,
+                0.10072315613845217
+              ],
+              "paired_delta": 0.03305567274008886,
+              "prompt_count": 32
+            }
+          },
+          "secondary_ocr": {
+            "joint_success": {
+              "ci95": [
+                -0.09375,
+                0.078125
+              ],
+              "mean": 0.0,
+              "observations": 64,
+              "prompts": 32
+            },
+            "text_accuracy_delta": {
+              "ci95": [
+                -0.12539062499999998,
+                0.09375
+              ],
+              "mean": -0.015625,
+              "observations": 64,
+              "prompts": 32
+            },
+            "utility": {
+              "ci95": [
+                -0.08202055751960968,
+                0.039920471079420886
+              ],
+              "mean": -0.016231964267350296,
+              "observations": 64,
+              "prompts": 32
+            }
+          }
+        },
+        "verified_fixed_minus_base": {
+          "primary": {
+            "baseline": "/midtier/minilab/scratch/chw4026/projects/side_project/generative/opd_related/opd_lab/runs/le2_eval_flow40_job_002/evaluations/base",
+            "clause_accuracy_delta": {
+              "color": {
+                "ci95": [
+                  -0.09375,
+                  0.0
+                ],
+                "mean": -0.03125,
+                "observations": 32,
+                "prompts": 16
+              },
+              "count": {
+                "ci95": [
+                  0.0,
+                  0.09375
+                ],
+                "mean": 0.03125,
+                "observations": 32,
+                "prompts": 16
+              },
+              "relation": {
+                "ci95": [
+                  -0.1875,
+                  0.0
+                ],
+                "mean": -0.0625,
+                "observations": 16,
+                "prompts": 8
+              },
+              "text": {
+                "ci95": [
+                  -0.109375,
+                  0.140625
+                ],
+                "mean": 0.015625,
+                "observations": 64,
+                "prompts": 32
+              }
+            },
+            "images": 64,
+            "interval": "paired prompt bootstrap percentile 95%, 2000 resamples, seed 0",
+            "joint_success": {
+              "ci95": [
+                -0.109375,
+                0.125
+              ],
+              "paired_delta": 0.015625,
+              "prompt_count": 32
+            },
+            "method": "/midtier/minilab/scratch/chw4026/projects/side_project/generative/opd_related/opd_lab/runs/le2_eval_flow40_job_002/evaluations/verified_fixed",
+            "regression_given_baseline_satisfied": {
+              "color": {
+                "ci95": [
+                  0.0,
+                  0.23333333333333334
+                ],
+                "mean": 0.1,
+                "observations": 25,
+                "prompts": 15
+              },
+              "count": {
+                "ci95": [
+                  0.0,
+                  0.23076923076923078
+                ],
+                "mean": 0.07692307692307693,
+                "observations": 20,
+                "prompts": 13
+              },
+              "relation": {
+                "ci95": [
+                  0.0,
+                  0.25
+                ],
+                "mean": 0.08333333333333333,
+                "observations": 9,
+                "prompts": 6
+              },
+              "text": {
+                "ci95": [
+                  0.04838709677419355,
+                  0.27419354838709675
+                ],
+                "mean": 0.16129032258064516,
+                "observations": 47,
+                "prompts": 31
+              }
+            },
+            "statistical_unit": "prompt; average replicate seeds within prompt before paired bootstrap",
+            "utility": {
+              "ci95": [
+                -0.07639585988527188,
+                0.07433690723909676
+              ],
+              "paired_delta": 0.0024034473613009782,
+              "prompt_count": 32
+            }
+          },
+          "secondary_ocr": {
+            "joint_success": {
+              "ci95": [
+                -0.109375,
+                0.109375
+              ],
+              "mean": 0.0,
+              "observations": 64,
+              "prompts": 32
+            },
+            "text_accuracy_delta": {
+              "ci95": [
+                -0.203125,
+                0.078125
+              ],
+              "mean": -0.0625,
+              "observations": 64,
+              "prompts": 32
+            },
+            "utility": {
+              "ci95": [
+                -0.09628900204809422,
+                0.06298085040173138
+              ],
+              "mean": -0.015262903114526091,
+              "observations": 64,
+              "prompts": 32
+            }
+          }
+        },
+        "verified_fixed_minus_fixed_geneval": {
+          "primary": {
+            "baseline": "/midtier/minilab/scratch/chw4026/projects/side_project/generative/opd_related/opd_lab/runs/le2_eval_flow40_job_002/evaluations/fixed_geneval",
+            "clause_accuracy_delta": {
+              "color": {
+                "ci95": [
+                  -0.09375,
+                  0.09375
+                ],
+                "mean": 0.0,
+                "observations": 32,
+                "prompts": 16
+              },
+              "count": {
+                "ci95": [
+                  -0.09375,
+                  0.0
+                ],
+                "mean": -0.03125,
+                "observations": 32,
+                "prompts": 16
+              },
+              "relation": {
+                "ci95": [
+                  0.0,
+                  0.0
+                ],
+                "mean": 0.0,
+                "observations": 16,
+                "prompts": 8
+              },
+              "text": {
+                "ci95": [
+                  -0.109375,
+                  0.109375
+                ],
+                "mean": 0.0,
+                "observations": 64,
+                "prompts": 32
+              }
+            },
+            "images": 64,
+            "interval": "paired prompt bootstrap percentile 95%, 2000 resamples, seed 0",
+            "joint_success": {
+              "ci95": [
+                -0.140625,
+                0.046875
+              ],
+              "paired_delta": -0.046875,
+              "prompt_count": 32
+            },
+            "method": "/midtier/minilab/scratch/chw4026/projects/side_project/generative/opd_related/opd_lab/runs/le2_eval_flow40_job_002/evaluations/verified_fixed",
+            "regression_given_baseline_satisfied": {
+              "color": {
+                "ci95": [
+                  0.0,
+                  0.10714285714285714
+                ],
+                "mean": 0.03571428571428571,
+                "observations": 24,
+                "prompts": 14
+              },
+              "count": {
+                "ci95": [
+                  0.0,
+                  0.10714285714285714
+                ],
+                "mean": 0.03571428571428571,
+                "observations": 22,
+                "prompts": 14
+              },
+              "relation": {
+                "ci95": [
+                  0.0,
+                  0.0
+                ],
+                "mean": 0.0,
+                "observations": 8,
+                "prompts": 6
+              },
+              "text": {
+                "ci95": [
+                  0.04838709677419355,
+                  0.22580645161290322
+                ],
+                "mean": 0.12903225806451613,
+                "observations": 48,
+                "prompts": 31
+              }
+            },
+            "statistical_unit": "prompt; average replicate seeds within prompt before paired bootstrap",
+            "utility": {
+              "ci95": [
+                -0.08575369865537422,
+                0.022584743330271658
+              ],
+              "paired_delta": -0.028993812063302198,
+              "prompt_count": 32
+            }
+          },
+          "secondary_ocr": {
+            "joint_success": {
+              "ci95": [
+                -0.0625,
+                0.125
+              ],
+              "mean": 0.03125,
+              "observations": 64,
+              "prompts": 32
+            },
+            "text_accuracy_delta": {
+              "ci95": [
+                -0.15625,
+                0.078125
+              ],
+              "mean": -0.03125,
+              "observations": 64,
+              "prompts": 32
+            },
+            "utility": {
+              "ci95": [
+                -0.04555694584745052,
+                0.05665342203857842
+              ],
+              "mean": 0.005243381922434502,
+              "observations": 64,
+              "prompts": 32
+            }
+          }
+        },
+        "verified_multi_minus_base": {
+          "primary": {
+            "baseline": "/midtier/minilab/scratch/chw4026/projects/side_project/generative/opd_related/opd_lab/runs/le2_eval_flow40_job_002/evaluations/base",
+            "clause_accuracy_delta": {
+              "color": {
+                "ci95": [
+                  -0.1875,
+                  0.0
+                ],
+                "mean": -0.09375,
+                "observations": 32,
+                "prompts": 16
+              },
+              "count": {
+                "ci95": [
+                  -0.09375,
+                  0.0
+                ],
+                "mean": -0.03125,
+                "observations": 32,
+                "prompts": 16
+              },
+              "relation": {
+                "ci95": [
+                  0.0,
+                  0.0
+                ],
+                "mean": 0.0,
+                "observations": 16,
+                "prompts": 8
+              },
+              "text": {
+                "ci95": [
+                  -0.03125,
+                  0.1875
+                ],
+                "mean": 0.078125,
+                "observations": 64,
+                "prompts": 32
+              }
+            },
+            "images": 64,
+            "interval": "paired prompt bootstrap percentile 95%, 2000 resamples, seed 0",
+            "joint_success": {
+              "ci95": [
+                -0.078125,
+                0.140625
+              ],
+              "paired_delta": 0.03125,
+              "prompt_count": 32
+            },
+            "method": "/midtier/minilab/scratch/chw4026/projects/side_project/generative/opd_related/opd_lab/runs/le2_eval_flow40_job_002/evaluations/verified_multi",
+            "regression_given_baseline_satisfied": {
+              "color": {
+                "ci95": [
+                  0.0,
+                  0.36666666666666664
+                ],
+                "mean": 0.16666666666666666,
+                "observations": 25,
+                "prompts": 15
+              },
+              "count": {
+                "ci95": [
+                  0.0,
+                  0.3076923076923077
+                ],
+                "mean": 0.11538461538461539,
+                "observations": 20,
+                "prompts": 13
+              },
+              "relation": {
+                "ci95": [
+                  0.0,
+                  0.0
+                ],
+                "mean": 0.0,
+                "observations": 9,
+                "prompts": 6
+              },
+              "text": {
+                "ci95": [
+                  0.03225806451612903,
+                  0.20967741935483872
+                ],
+                "mean": 0.11290322580645161,
+                "observations": 47,
+                "prompts": 31
+              }
+            },
+            "statistical_unit": "prompt; average replicate seeds within prompt before paired bootstrap",
+            "utility": {
+              "ci95": [
+                -0.06288397181103801,
+                0.06579614593292216
+              ],
+              "paired_delta": 0.001272482346311183,
+              "prompt_count": 32
+            }
+          },
+          "secondary_ocr": {
+            "joint_success": {
+              "ci95": [
+                -0.109375,
+                0.046875
+              ],
+              "mean": -0.03125,
+              "observations": 64,
+              "prompts": 32
+            },
+            "text_accuracy_delta": {
+              "ci95": [
+                -0.125,
+                0.046875
+              ],
+              "mean": -0.03125,
+              "observations": 64,
+              "prompts": 32
+            },
+            "utility": {
+              "ci95": [
+                -0.08248233621385527,
+                0.022827746255480542
+              ],
+              "mean": -0.030645478755819144,
+              "observations": 64,
+              "prompts": 32
+            }
+          }
+        },
+        "verified_multi_minus_utility_only": {
+          "primary": {
+            "baseline": "/midtier/minilab/scratch/chw4026/projects/side_project/generative/opd_related/opd_lab/runs/le2_eval_flow40_job_002/evaluations/utility_only",
+            "clause_accuracy_delta": {
+              "color": {
+                "ci95": [
+                  -0.09375,
+                  0.0
+                ],
+                "mean": -0.03125,
+                "observations": 32,
+                "prompts": 16
+              },
+              "count": {
+                "ci95": [
+                  -0.09375,
+                  0.0
+                ],
+                "mean": -0.03125,
+                "observations": 32,
+                "prompts": 16
+              },
+              "relation": {
+                "ci95": [
+                  0.0,
+                  0.1875
+                ],
+                "mean": 0.0625,
+                "observations": 16,
+                "prompts": 8
+              },
+              "text": {
+                "ci95": [
+                  -0.0625,
+                  0.0625
+                ],
+                "mean": 0.0,
+                "observations": 64,
+                "prompts": 32
+              }
+            },
+            "images": 64,
+            "interval": "paired prompt bootstrap percentile 95%, 2000 resamples, seed 0",
+            "joint_success": {
+              "ci95": [
+                -0.09414062499999998,
+                0.0
+              ],
+              "paired_delta": -0.046875,
+              "prompt_count": 32
+            },
+            "method": "/midtier/minilab/scratch/chw4026/projects/side_project/generative/opd_related/opd_lab/runs/le2_eval_flow40_job_002/evaluations/verified_multi",
+            "regression_given_baseline_satisfied": {
+              "color": {
+                "ci95": [
+                  0.0,
+                  0.21428571428571427
+                ],
+                "mean": 0.07142857142857142,
+                "observations": 23,
+                "prompts": 14
+              },
+              "count": {
+                "ci95": [
+                  0.0,
+                  0.11538461538461539
+                ],
+                "mean": 0.038461538461538464,
+                "observations": 20,
+                "prompts": 13
+              },
+              "relation": {
+                "ci95": [
+                  0.0,
+                  0.0
+                ],
+                "mean": 0.0,
+                "observations": 8,
+                "prompts": 6
+              },
+              "text": {
+                "ci95": [
+                  0.0,
+                  0.14516129032258066
+                ],
+                "mean": 0.06451612903225806,
+                "observations": 52,
+                "prompts": 31
+              }
+            },
+            "statistical_unit": "prompt; average replicate seeds within prompt before paired bootstrap",
+            "utility": {
+              "ci95": [
+                -0.06811801459211884,
+                -0.0031134905133928617
+              ],
+              "paired_delta": -0.03178319039377768,
+              "prompt_count": 32
+            }
+          },
+          "secondary_ocr": {
+            "joint_success": {
+              "ci95": [
+                -0.109375,
+                0.046875
+              ],
+              "mean": -0.03125,
+              "observations": 64,
+              "prompts": 32
+            },
+            "text_accuracy_delta": {
+              "ci95": [
+                -0.109375,
+                0.078125
+              ],
+              "mean": -0.015625,
+              "observations": 64,
+              "prompts": 32
+            },
+            "utility": {
+              "ci95": [
+                -0.06322100231544861,
+                0.034981244968400334
+              ],
+              "mean": -0.014413514488468846,
+              "observations": 64,
+              "prompts": 32
+            }
+          }
+        },
+        "verified_multi_minus_verified_fixed": {
+          "primary": {
+            "baseline": "/midtier/minilab/scratch/chw4026/projects/side_project/generative/opd_related/opd_lab/runs/le2_eval_flow40_job_002/evaluations/verified_fixed",
+            "clause_accuracy_delta": {
+              "color": {
+                "ci95": [
+                  -0.15625,
+                  0.0
+                ],
+                "mean": -0.0625,
+                "observations": 32,
+                "prompts": 16
+              },
+              "count": {
+                "ci95": [
+                  -0.15625,
+                  0.0
+                ],
+                "mean": -0.0625,
+                "observations": 32,
+                "prompts": 16
+              },
+              "relation": {
+                "ci95": [
+                  0.0,
+                  0.1875
+                ],
+                "mean": 0.0625,
+                "observations": 16,
+                "prompts": 8
+              },
+              "text": {
+                "ci95": [
+                  -0.015625,
+                  0.140625
+                ],
+                "mean": 0.0625,
+                "observations": 64,
+                "prompts": 32
+              }
+            },
+            "images": 64,
+            "interval": "paired prompt bootstrap percentile 95%, 2000 resamples, seed 0",
+            "joint_success": {
+              "ci95": [
+                -0.0625,
+                0.09375
+              ],
+              "paired_delta": 0.015625,
+              "prompt_count": 32
+            },
+            "method": "/midtier/minilab/scratch/chw4026/projects/side_project/generative/opd_related/opd_lab/runs/le2_eval_flow40_job_002/evaluations/verified_multi",
+            "regression_given_baseline_satisfied": {
+              "color": {
+                "ci95": [
+                  0.0,
+                  0.3333333333333333
+                ],
+                "mean": 0.13333333333333333,
+                "observations": 24,
+                "prompts": 15
+              },
+              "count": {
+                "ci95": [
+                  0.0,
+                  0.2857142857142857
+                ],
+                "mean": 0.10714285714285714,
+                "observations": 21,
+                "prompts": 14
+              },
+              "relation": {
+                "ci95": [
+                  0.0,
+                  0.0
+                ],
+                "mean": 0.0,
+                "observations": 8,
+                "prompts": 6
+              },
+              "text": {
+                "ci95": [
+                  0.0,
+                  0.18333333333333332
+                ],
+                "mean": 0.08333333333333333,
+                "observations": 48,
+                "prompts": 30
+              }
+            },
+            "statistical_unit": "prompt; average replicate seeds within prompt before paired bootstrap",
+            "utility": {
+              "ci95": [
+                -0.0550153738013214,
+                0.05339819441626077
+              ],
+              "paired_delta": -0.0011309650149897953,
+              "prompt_count": 32
+            }
+          },
+          "secondary_ocr": {
+            "joint_success": {
+              "ci95": [
+                -0.09375,
+                0.03125
+              ],
+              "mean": -0.03125,
+              "observations": 64,
+              "prompts": 32
+            },
+            "text_accuracy_delta": {
+              "ci95": [
+                -0.06289062499999998,
+                0.140625
+              ],
+              "mean": 0.03125,
+              "observations": 64,
+              "prompts": 32
+            },
+            "utility": {
+              "ci95": [
+                -0.058579351895534815,
+                0.029385127684812946
+              ],
+              "mean": -0.01538257564129306,
+              "observations": 64,
+              "prompts": 32
+            }
+          }
+        }
+      },
+      "ocr_config_sha256": "b9b9fe465760c267235d40d465234f2f60b099b27fd708aa0c61975d0dfac042",
+      "ocr_reader_disagreement": {
+        "base": {
+          "ci95": [
+            0.390625,
+            0.671875
+          ],
+          "mean": 0.53125,
+          "observations": 64,
+          "prompts": 32
+        },
+        "fixed_geneval": {
+          "ci95": [
+            0.421875,
+            0.671875
+          ],
+          "mean": 0.546875,
+          "observations": 64,
+          "prompts": 32
+        },
+        "utility_only": {
+          "ci95": [
+            0.4375,
+            0.6875
+          ],
+          "mean": 0.5625,
+          "observations": 64,
+          "prompts": 32
+        },
+        "verified_fixed": {
+          "ci95": [
+            0.421875,
+            0.671875
+          ],
+          "mean": 0.546875,
+          "observations": 64,
+          "prompts": 32
+        },
+        "verified_multi": {
+          "ci95": [
+            0.53125,
+            0.75
+          ],
+          "mean": 0.640625,
+          "observations": 64,
+          "prompts": 32
+        }
+      },
+      "runs_manifest_sha256": "fee3dee33008ac2a8e7cf2fb2388c031b8e62510dbfccd25e9157be127ac2efe",
+      "status": "complete"
+    }
+  },
+  "scheduler_accounting": {
+    "allocated_gpu_hours_including_failed_attempts_so_far": 3.353888888888889,
+    "jobs": [
+      {
+        "allocated_gpu_hours": 0.5875,
+        "allocated_tres": "billing=4,cpu=4,gres/gpu:l40=1,mem=96G,node=1",
+        "elapsed_seconds": 2115,
+        "exit_code": "0:0",
+        "job_id": "1047846",
+        "nodes": "ai-gpu12",
+        "run": "/midtier/minilab/scratch/chw4026/projects/side_project/generative/opd_related/opd_lab/runs/le2_train_fixed_geneval_001",
+        "stage": "fixed_geneval",
+        "state": "COMPLETED"
+      },
+      {
+        "allocated_gpu_hours": 0.5636111111111111,
+        "allocated_tres": "billing=4,cpu=4,gres/gpu:l40=1,mem=96G,node=1",
+        "elapsed_seconds": 2029,
+        "exit_code": "0:0",
+        "job_id": "1047847",
+        "nodes": "ai-gpu13",
+        "run": "/midtier/minilab/scratch/chw4026/projects/side_project/generative/opd_related/opd_lab/runs/le2_train_utility_only_001",
+        "stage": "utility_only",
+        "state": "COMPLETED"
+      },
+      {
+        "allocated_gpu_hours": 0.5455555555555556,
+        "allocated_tres": "billing=4,cpu=4,gres/gpu:l40=1,mem=96G,node=1",
+        "elapsed_seconds": 1964,
+        "exit_code": "0:0",
+        "job_id": "1047848",
+        "nodes": "ai-gpu13",
+        "run": "/midtier/minilab/scratch/chw4026/projects/side_project/generative/opd_related/opd_lab/runs/le2_train_verified_fixed_001",
+        "stage": "verified_fixed",
+        "state": "COMPLETED"
+      },
+      {
+        "allocated_gpu_hours": 0.5511111111111111,
+        "allocated_tres": "billing=4,cpu=4,gres/gpu:l40=1,mem=96G,node=1",
+        "elapsed_seconds": 1984,
+        "exit_code": "0:0",
+        "job_id": "1047849",
+        "nodes": "ai-gpu13",
+        "run": "/midtier/minilab/scratch/chw4026/projects/side_project/generative/opd_related/opd_lab/runs/le2_train_verified_multi_001",
+        "stage": "verified_multi",
+        "state": "COMPLETED"
+      },
+      {
+        "allocated_gpu_hours": 0.0011111111111111111,
+        "allocated_tres": "billing=4,cpu=4,gres/gpu:l40=1,mem=96G,node=1",
+        "elapsed_seconds": 4,
+        "exit_code": "1:0",
+        "job_id": "1047856",
+        "nodes": "ai-gpu12",
+        "run": "/midtier/minilab/scratch/chw4026/projects/side_project/generative/opd_related/opd_lab/runs/le2_eval_flow10_job_001",
+        "stage": "eval_flow10",
+        "state": "FAILED"
+      },
+      {
+        "allocated_gpu_hours": 0.0022222222222222222,
+        "allocated_tres": "billing=4,cpu=4,gres/gpu:l40=1,mem=96G,node=1",
+        "elapsed_seconds": 8,
+        "exit_code": "1:0",
+        "job_id": "1047857",
+        "nodes": "ai-gpu13",
+        "run": "/midtier/minilab/scratch/chw4026/projects/side_project/generative/opd_related/opd_lab/runs/le2_eval_flow40_job_001",
+        "stage": "eval_flow40",
+        "state": "FAILED"
+      },
+      {
+        "allocated_gpu_hours": 0.0005555555555555556,
+        "allocated_tres": "billing=4,cpu=4,gres/gpu:l40=1,mem=96G,node=1",
+        "elapsed_seconds": 2,
+        "exit_code": "1:0",
+        "job_id": "1047858",
+        "nodes": "ai-gpu13",
+        "run": "/midtier/minilab/scratch/chw4026/projects/side_project/generative/opd_related/opd_lab/runs/le2_eval_dpm240_job_001",
+        "stage": "eval_dpm240",
+        "state": "FAILED"
+      },
+      {
+        "allocated_gpu_hours": 0.1988888888888889,
+        "allocated_tres": "billing=4,cpu=4,gres/gpu:l40=1,mem=96G,node=1",
+        "elapsed_seconds": 716,
+        "exit_code": "0:0",
+        "job_id": "1047887",
+        "nodes": "ai-gpu12",
+        "run": "/midtier/minilab/scratch/chw4026/projects/side_project/generative/opd_related/opd_lab/runs/le2_eval_flow10_job_002",
+        "stage": "eval_flow10_a2",
+        "state": "COMPLETED"
+      },
+      {
+        "allocated_gpu_hours": 0.42027777777777775,
+        "allocated_tres": "billing=4,cpu=4,gres/gpu:l40=1,mem=96G,node=1",
+        "elapsed_seconds": 1513,
+        "exit_code": "0:0",
+        "job_id": "1047888",
+        "nodes": "ai-gpu13",
+        "run": "/midtier/minilab/scratch/chw4026/projects/side_project/generative/opd_related/opd_lab/runs/le2_eval_flow40_job_002",
+        "stage": "eval_flow40_a2",
+        "state": "COMPLETED"
+      },
+      {
+        "allocated_gpu_hours": 0.48305555555555557,
+        "allocated_tres": "billing=4,cpu=4,gres/gpu:l40=1,mem=96G,node=1",
+        "elapsed_seconds": 1739,
+        "exit_code": "0:0",
+        "job_id": "1047889",
+        "nodes": "ai-gpu13",
+        "run": "/midtier/minilab/scratch/chw4026/projects/side_project/generative/opd_related/opd_lab/runs/le2_eval_dpm240_job_002",
+        "stage": "eval_dpm240_a2",
+        "state": "COMPLETED"
+      }
+    ],
+    "time_utc": "2026-09-11T19:07:53.240470+00:00"
+  },
+  "scope": "Controlled development screen; one training seed, 32 validation prompts; no test used.",
+  "training": {
+    "fixed_geneval": {
+      "accepted": 192,
+      "exploratory_time_bins": {
+        "bins": {
+          "0-2": {
+            "accepted": 49,
+            "accepted_prefit_loss_fraction": 0.2856318073948004,
+            "postfit_full_train_utility_delta": -0.06907596371882087,
+            "postfit_local_utility_delta": -0.024137512147716228,
+            "queries": 49,
+            "target_utility_delta": 0.04407007391701269
+          },
+          "3-5": {
+            "accepted": 78,
+            "accepted_prefit_loss_fraction": 0.3224813544171224,
+            "postfit_full_train_utility_delta": 0.04481583231583232,
+            "postfit_local_utility_delta": 0.024180911680911688,
+            "queries": 78,
+            "target_utility_delta": 0.017840184506851174
+          },
+          "6-8": {
+            "accepted": 65,
+            "accepted_prefit_loss_fraction": 0.3918868381880773,
+            "postfit_full_train_utility_delta": -0.014629537129537129,
+            "postfit_local_utility_delta": -0.001282051282051281,
+            "queries": 65,
+            "target_utility_delta": 0.021888528138528138
+          }
+        },
+        "scope": "Post-hoc equal-index bins of repeated training queries; descriptive only."
+      },
+      "interpretation": "Fitting ratio pools evolving training states; not a validation metric.",
+      "measured_operation_counts": {
+        "backward_queries": 192,
+        "decode_images": 1344,
+        "forward_behavior": 6560,
+        "forward_examples": 18304,
+        "forward_geneval": 192,
+        "forward_ocr": 192,
+        "forward_student": 2304,
+        "geneval_clause_images": 1680,
+        "ocr_images": 1344,
+        "text_encode_prompts": 128,
+        "verifier_images": 1344
+      },
+      "optimizer_step": 12,
+      "outer_epoch": 12,
+      "pooled_fitting_after_over_before": 0.9488156641266785,
+      "postfit_full_train_utility_delta_vs_behavior": -0.004375037578162574,
+      "postfit_local_utility_delta_vs_behavior": 0.0032293733465608484,
+      "queries": 192,
+      "rejected_state_local_utility_drift": null,
+      "selected": {
+        "geneval@1": 192
+      },
+      "status": "complete",
+      "target_utility_delta_vs_behavior": 0.025904803867043445,
+      "transfer_by_acceptance": {
+        "accepted": {
+          "full_damaged_queries": 28,
+          "full_mean_delta": -0.004375037578162577,
+          "local_damaged_queries": 6,
+          "local_mean_delta": 0.003229373346560848,
+          "local_positive_given_loss_improved": 0.07291666666666667,
+          "loss_improved_queries": 192,
+          "queries": 192,
+          "queries_with_satisfied_clause": 167,
+          "target_damaged_queries": 28,
+          "target_mean_delta": 0.02590480386704345
+        }
+      }
+    },
+    "utility_only": {
+      "accepted": 68,
+      "exploratory_time_bins": {
+        "bins": {
+          "0-2": {
+            "accepted": 23,
+            "accepted_prefit_loss_fraction": 0.36050315658683574,
+            "postfit_full_train_utility_delta": 0.037979370492158215,
+            "postfit_local_utility_delta": 0.05408902691511387,
+            "queries": 49,
+            "target_utility_delta": 0.503131469979296
+          },
+          "3-5": {
+            "accepted": 31,
+            "accepted_prefit_loss_fraction": 0.47474681006533775,
+            "postfit_full_train_utility_delta": 0.09354974475942217,
+            "postfit_local_utility_delta": 0.049806704645414326,
+            "queries": 78,
+            "target_utility_delta": 0.37408813558007104
+          },
+          "6-8": {
+            "accepted": 14,
+            "accepted_prefit_loss_fraction": 0.16475003334782673,
+            "postfit_full_train_utility_delta": 0.05926870748299319,
+            "postfit_local_utility_delta": 0.046726190476190484,
+            "queries": 65,
+            "target_utility_delta": 0.26849489795918363
+          }
+        },
+        "scope": "Post-hoc equal-index bins of repeated training queries; descriptive only."
+      },
+      "interpretation": "Fitting ratio pools evolving training states; not a validation metric.",
+      "measured_operation_counts": {
+        "backward_queries": 192,
+        "decode_images": 1344,
+        "forward_behavior": 6560,
+        "forward_examples": 18304,
+        "forward_geneval": 192,
+        "forward_ocr": 192,
+        "forward_student": 2304,
+        "geneval_clause_images": 1680,
+        "ocr_images": 1344,
+        "text_encode_prompts": 128,
+        "verifier_images": 1344
+      },
+      "optimizer_step": 12,
+      "outer_epoch": 12,
+      "pooled_fitting_after_over_before": 0.9246198203453965,
+      "postfit_full_train_utility_delta_vs_behavior": 0.009783999616260643,
+      "postfit_local_utility_delta_vs_behavior": 0.0038078698885990535,
+      "queries": 192,
+      "rejected_state_local_utility_drift": -0.02186379928315412,
+      "selected": {
+        "geneval@0.5": 13,
+        "geneval@1": 24,
+        "noop": 124,
+        "ocr@0.5": 22,
+        "ocr@1": 9
+      },
+      "status": "complete",
+      "target_utility_delta_vs_behavior": 0.14024835720799264,
+      "transfer_by_acceptance": {
+        "accepted": {
+          "full_damaged_queries": 1,
+          "full_mean_delta": 0.06769602225917104,
+          "local_damaged_queries": 1,
+          "local_mean_delta": 0.05062091367238426,
+          "local_positive_given_loss_improved": 0.25,
+          "loss_improved_queries": 64,
+          "queries": 68,
+          "queries_with_satisfied_clause": 53,
+          "target_damaged_queries": 3,
+          "target_mean_delta": 0.39599536152844983
+        },
+        "rejected": {
+          "full_damaged_queries": 10,
+          "full_mean_delta": -0.02197420634920635,
+          "local_damaged_queries": 4,
+          "local_mean_delta": -0.02186379928315412,
+          "local_positive_given_loss_improved": null,
+          "loss_improved_queries": 0,
+          "queries": 124,
+          "queries_with_satisfied_clause": 117,
+          "target_damaged_queries": 0,
+          "target_mean_delta": 0.0
+        }
+      }
+    },
+    "verified_fixed": {
+      "accepted": 48,
+      "exploratory_time_bins": {
+        "bins": {
+          "0-2": {
+            "accepted": 18,
+            "accepted_prefit_loss_fraction": 0.4144693269276666,
+            "postfit_full_train_utility_delta": 0.17207892416225748,
+            "postfit_local_utility_delta": 0.060703262786596116,
+            "queries": 49,
+            "target_utility_delta": 0.4983024691358024
+          },
+          "3-5": {
+            "accepted": 27,
+            "accepted_prefit_loss_fraction": 0.5259620330920589,
+            "postfit_full_train_utility_delta": 0.14404399612732946,
+            "postfit_local_utility_delta": 0.00848030570252793,
+            "queries": 78,
+            "target_utility_delta": 0.2676209849820961
+          },
+          "6-8": {
+            "accepted": 3,
+            "accepted_prefit_loss_fraction": 0.05956863998027462,
+            "postfit_full_train_utility_delta": 0.7222222222222223,
+            "postfit_local_utility_delta": 0.0,
+            "queries": 65,
+            "target_utility_delta": 0.7222222222222223
+          }
+        },
+        "scope": "Post-hoc equal-index bins of repeated training queries; descriptive only."
+      },
+      "interpretation": "Fitting ratio pools evolving training states; not a validation metric.",
+      "measured_operation_counts": {
+        "backward_queries": 192,
+        "decode_images": 1344,
+        "forward_behavior": 6560,
+        "forward_examples": 18304,
+        "forward_geneval": 192,
+        "forward_ocr": 192,
+        "forward_student": 2304,
+        "geneval_clause_images": 1680,
+        "ocr_images": 1344,
+        "text_encode_prompts": 128,
+        "verifier_images": 1344
+      },
+      "optimizer_step": 12,
+      "outer_epoch": 12,
+      "pooled_fitting_after_over_before": 0.9227247239780398,
+      "postfit_full_train_utility_delta_vs_behavior": 0.03047081619672766,
+      "postfit_local_utility_delta_vs_behavior": -0.0022361120505651737,
+      "queries": 192,
+      "rejected_state_local_utility_drift": -0.012159447901635402,
+      "selected": {
+        "geneval@1": 48,
+        "noop": 144
+      },
+      "status": "complete",
+      "target_utility_delta_vs_behavior": 0.09563477971681096,
+      "transfer_by_acceptance": {
+        "accepted": {
+          "full_damaged_queries": 1,
+          "full_mean_delta": 0.19069323327135826,
+          "local_damaged_queries": 2,
+          "local_mean_delta": 0.027533895502645508,
+          "local_positive_given_loss_improved": 0.2708333333333333,
+          "loss_improved_queries": 48,
+          "queries": 48,
+          "queries_with_satisfied_clause": 36,
+          "target_damaged_queries": 0,
+          "target_mean_delta": 0.38253911886724384
+        },
+        "rejected": {
+          "full_damaged_queries": 19,
+          "full_mean_delta": -0.02293665616148255,
+          "local_damaged_queries": 4,
+          "local_mean_delta": -0.012159447901635402,
+          "local_positive_given_loss_improved": null,
+          "loss_improved_queries": 0,
+          "queries": 144,
+          "queries_with_satisfied_clause": 135,
+          "target_damaged_queries": 0,
+          "target_mean_delta": 0.0
+        }
+      }
+    },
+    "verified_multi": {
+      "accepted": 58,
+      "exploratory_time_bins": {
+        "bins": {
+          "0-2": {
+            "accepted": 23,
+            "accepted_prefit_loss_fraction": 0.33505304690960924,
+            "postfit_full_train_utility_delta": 0.06639767237593323,
+            "postfit_local_utility_delta": 0.08493004579961103,
+            "queries": 49,
+            "target_utility_delta": 0.5204796411318151
+          },
+          "3-5": {
+            "accepted": 30,
+            "accepted_prefit_loss_fraction": 0.6180963260712673,
+            "postfit_full_train_utility_delta": 0.11577950752950755,
+            "postfit_local_utility_delta": 0.020102258852258855,
+            "queries": 78,
+            "target_utility_delta": 0.42637830687830686
+          },
+          "6-8": {
+            "accepted": 5,
+            "accepted_prefit_loss_fraction": 0.046850627019123764,
+            "postfit_full_train_utility_delta": 0.015000000000000003,
+            "postfit_local_utility_delta": 0.005952380952380954,
+            "queries": 65,
+            "target_utility_delta": 0.17595238095238094
+          }
+        },
+        "scope": "Post-hoc equal-index bins of repeated training queries; descriptive only."
+      },
+      "interpretation": "Fitting ratio pools evolving training states; not a validation metric.",
+      "measured_operation_counts": {
+        "backward_queries": 192,
+        "decode_images": 1344,
+        "forward_behavior": 6560,
+        "forward_examples": 18304,
+        "forward_geneval": 192,
+        "forward_ocr": 192,
+        "forward_student": 2304,
+        "geneval_clause_images": 1680,
+        "ocr_images": 1344,
+        "text_encode_prompts": 128,
+        "verifier_images": 1344
+      },
+      "optimizer_step": 12,
+      "outer_epoch": 12,
+      "pooled_fitting_after_over_before": 0.916349892508067,
+      "postfit_full_train_utility_delta_vs_behavior": -0.0011350035959410982,
+      "postfit_local_utility_delta_vs_behavior": 0.005512723676786176,
+      "queries": 192,
+      "rejected_state_local_utility_drift": -0.011401326699834161,
+      "selected": {
+        "geneval@0.5": 13,
+        "geneval@1": 18,
+        "noop": 134,
+        "ocr@0.5": 16,
+        "ocr@1": 11
+      },
+      "status": "complete",
+      "target_utility_delta_vs_behavior": 0.1335528273809524,
+      "transfer_by_acceptance": {
+        "accepted": {
+          "full_damaged_queries": 1,
+          "full_mean_delta": 0.08750916707813261,
+          "local_damaged_queries": 0,
+          "local_mean_delta": 0.044590012477943516,
+          "local_positive_given_loss_improved": 0.1896551724137931,
+          "loss_improved_queries": 58,
+          "queries": 58,
+          "queries_with_satisfied_clause": 44,
+          "target_damaged_queries": 0,
+          "target_mean_delta": 0.44210591133004934
+        },
+        "rejected": {
+          "full_damaged_queries": 16,
+          "full_mean_delta": -0.039503375977256575,
+          "local_damaged_queries": 2,
+          "local_mean_delta": -0.011401326699834161,
+          "local_positive_given_loss_improved": null,
+          "loss_improved_queries": 0,
+          "queries": 134,
+          "queries_with_satisfied_clause": 124,
+          "target_damaged_queries": 0,
+          "target_mean_delta": 0.0
+        }
+      }
+    }
+  },
+  "validation_image_review": {
+    "counts_relative_to_provisional_observations": {
+      "primary_joint": {
+        "agreement": 64,
+        "assessable": 66,
+        "false_negative": 1,
+        "false_positive": 1,
+        "uncertain": 14
+      },
+      "primary_scene": {
+        "agreement": 68,
+        "assessable": 73,
+        "false_negative": 5,
+        "uncertain": 7
+      },
+      "primary_text": {
+        "agreement": 64,
+        "assessable": 66,
+        "false_negative": 1,
+        "false_positive": 1,
+        "uncertain": 14
+      },
+      "secondary_text": {
+        "agreement": 31,
+        "assessable": 66,
+        "false_negative": 34,
+        "false_positive": 1,
+        "uncertain": 14
+      }
+    },
+    "path": "/midtier/minilab/scratch/chw4026/projects/side_project/generative/opd_related/opd_lab/runs/le2_validation_review_001",
+    "scope": "Preselected 16 prompts, one seed, all five methods; implementing-assistant observations are provisional, not independent human ground truth. Do not rank methods with unequal assessable subsets."
+  }
+}

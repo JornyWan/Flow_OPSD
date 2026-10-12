@@ -1,0 +1,280 @@
+--- a/scripts/train_sd3_opd.py
++++ b/scripts/train_sd3_opd.py
+@@ -610,6 +610,54 @@
+                         except OSError:
+                             pass
+ 
++
++# ===== CODEX-0026: Phase-1 probe 的辅助函数 =====
++# 机制已由 code/0025_probe_machinery_test.py 合成验证(快照/还原含 optimizer state、
++# 真实 AdamW proposal 而非 -lr*g、同缓存状态精确重算、certificate 用精确值判定)。
++def _p1_restore(params, theta0):
++    """把参数还原到 theta0(不动 optimizer state;那个在每趟开始前单独还原)。"""
++    with torch.no_grad():
++        for q, t in zip(params, theta0):
++            q.copy_(t)
++
++
++def _p1_flat(ts):
++    return torch.cat([t.reshape(-1).double() for t in ts])
++
++
++def _p1_proj_delta(alpha, names, C, A, delta_adam, out):
++    """解带 repair RHS 的 update-space 投影,返回 Delta(与参数同形状的列表)。
++
++    backtrack **只缩放 reward 分量**:对 alpha*Delta_adam 重解 QP,repair 分量保持全量。
++    整体缩放会把 repair 一并削弱,C>0 时线性模型下注定失败(预注册附录 A)。
++    """
++    if delta_adam is None or any(n not in A for n in names):
++        return None
++    import importlib.util as _il, os as _os
++    _root = _os.environ.get("CODEX_ROOT", "")
++    _sp = _il.spec_from_file_location("_qp", _os.path.join(_root, "code", "0025_qp_repair_solver.py"))
++    _qp = _il.module_from_spec(_sp); _sp.loader.exec_module(_qp)
++    fa = {n: _p1_flat(A[n]) for n in names}
++    fd = _p1_flat(delta_adam)
++    aa = [[float(fa[i] @ fa[j]) for j in names] for i in names]
++    ad = [float(alpha * (fa[i] @ fd)) for i in names]
++    Cv = [C[i] for i in names]
++    mu, act = _qp.solve_repair_qp(aa, ad, Cv)
++    out[f"mu@{alpha}"] = mu
++    out[f"active@{alpha}"] = act
++    if mu is None:
++        return None
++    delta = [alpha * d.detach().clone().double() for d in delta_adam]
++    for k, n in enumerate(names):
++        if mu[k] == 0.0:
++            continue
++        for t, a in zip(delta, A[n]):
++            t.sub_(mu[k] * a.double())
++    # retention 的分母始终是**全量** Delta_adam,使 alpha<1 如实体现为下降
++    out[f"retention@{alpha}"] = float((_p1_flat(delta) @ fd) / (fd @ fd)) if float(fd @ fd) != 0 else float("nan")
++    return [t.to(d.dtype) for t, d in zip(delta, delta_adam)]
++
++
+ def main(_):
+ 
+     config = FLAGS.config
+@@ -2416,10 +2464,67 @@
+                     f"pred~{pred.mean().item():.4f} target~{Rv.mean().item():.4f}"
+                 )
+ 
++        # ===== CODEX-0026: Phase-1 same-state / optimizer-aware probe =====
++        # 预注册见 codex_research/0025_PHASE1_SAMESTATE_PROBE_PREREG.md(含两份实现期修正)。
++        # 复用 inner_epoch 作为"趟"的循环,避免把 700 行循环体重新缩进。
++        # 每趟的语义(_P1_PASS):
++        #   gC:<slot>  求该受保护能力的 C_m 与 a_m(整窗累积),backward,不 step
++        #   direct     只用 reward objective,backward + **真实 AdamW step** -> Delta_adam
++        #   eval:<tag> 只前向,在同一缓存窗口上**精确重算** C_m
++        _p1 = os.environ.get("OPD_PHASE1_PROBE", "").strip() == "1"
++        if _p1:
++            import copy as _p1copy
++            _p1_slots = list(cr_retention_teacher_indices)
++            _p1_names = [config.train.teachers[i]["name"] for i in _p1_slots]
++            # 趟序:每个约束一趟求梯度 -> direct 一趟 -> 评 direct -> 4 个 backtrack 各一趟
++            _p1_plan = ([f"gC:{n}" for n in _p1_names] + ["direct", "eval:direct"]
++                        + [f"eval:proj{a}" for a in ("1", "0.5", "0.25", "0.125")])
++            config.train.num_inner_epochs = len(_p1_plan)
++            _p1_theta0 = [q.detach().clone() for q in transformer_trainable_parameters]
++            _p1_optstate = _p1copy.deepcopy(optimizer.state_dict())
++            _p1_C, _p1_A, _p1_out = {}, {}, {}
++            _p1_delta_adam = None
++            if accelerator.is_main_process:
++                logger.info(f"[P1] probe 启动 slots={_p1_names} 趟序={_p1_plan}")
++
+         for inner_epoch in range(config.train.num_inner_epochs):
+ 
+-            perm = torch.randperm(total_batch_size, device=accelerator.device)
+-            samples = {k: v[perm] for k, v in samples.items()}
++            if _p1 and inner_epoch > 0:
++                _prev = _p1_plan[inner_epoch - 1]
++                _acc = globals().get("_P1_C_ACC", {})
++                _p1_out[f"C@{_prev}"] = {k: (v[0] / max(v[1], 1)) for k, v in _acc.items()}
++                if _prev.startswith("gC:"):
++                    _nm = _prev.split(":", 1)[1]
++                    _p1_C[_nm] = _p1_out[f"C@{_prev}"].get(_nm)
++                    _g = globals().get("_P1_GRAD", {}).get(_nm)
++                    if _g is not None:
++                        _p1_A[_nm] = _g
++                elif _prev == "direct":
++                    _p1_delta_adam = globals().get("_P1_DELTA")
++                # optimizer state 每趟都还原,probe 不得污染真实轨迹
++                optimizer.load_state_dict(_p1copy.deepcopy(_p1_optstate))
++
++            if _p1:
++                _P1_PASS = _p1_plan[inner_epoch]
++                globals()["_P1_PASS"] = _P1_PASS
++                globals()["_P1_C_ACC"] = {}
++                # **不重排**:_ret_denom 是逐 micro-batch 归一化的,换分组会改变累积梯度,
++                # same-state probe 必须保持窗口分组逐位不变。
++                _p1_restore(transformer_trainable_parameters, _p1_theta0)
++                if _P1_PASS.startswith("eval:"):
++                    _tag = _P1_PASS.split(":", 1)[1]
++                    if _tag == "direct":
++                        _d = _p1_delta_adam
++                    else:
++                        _d = _p1_proj_delta(float(_tag[4:]), _p1_names, _p1_C, _p1_A,
++                                            _p1_delta_adam, _p1_out)
++                    if _d is not None:
++                        with torch.no_grad():
++                            for q, dd in zip(transformer_trainable_parameters, _d):
++                                q.add_(dd)
++            else:
++                perm = torch.randperm(total_batch_size, device=accelerator.device)
++                samples = {k: v[perm] for k, v in samples.items()}
+ 
+             samples_batched = {
+                 k: v.reshape(-1, total_batch_size//config.sample.num_batches_per_epoch, *v.shape[1:])
+@@ -3073,6 +3178,35 @@
+                                 cr_direct_weight * _cr_direct_loss
+                                 + cr_retention_weight * _cr_retention_loss
+                             )
++                            # CODEX-0026: probe 覆写。C_m 用**与被测方法同一个定义**
++                            # (cur_kl - (1+rel_tol)*ref_kl - abs_tol,即 _violation),
++                            # 否则 certificate 要么谁都过不了、要么空洞(预注册附录 C)。
++                            _pp = globals().get("_P1_PASS")
++                            if _pp:
++                                _acc = globals().setdefault("_P1_C_ACC", {})
++                                for _si, _sn in zip(cr_retention_teacher_indices,
++                                                    [config.train.teachers[i]["name"]
++                                                     for i in cr_retention_teacher_indices]):
++                                    _mk = (_tidx == _si).to(_violation.dtype)
++                                    if not bool(_mk.any()):
++                                        continue
++                                    _cm = (_mk * _violation).sum() / _mk.sum().clamp(min=1.0)
++                                    _e = _acc.setdefault(_sn, [0.0, 0, None])
++                                    _e[0] += float(_cm.detach()); _e[1] += 1
++                                    if _pp == f"gC:{_sn}":
++                                        _e[2] = _cm if _e[2] is None else _e[2] + _cm
++                                if _pp.startswith("gC:"):
++                                    _tgt = _pp.split(":", 1)[1]
++                                    _mk = (_tidx == cr_retention_teacher_indices[
++                                        [config.train.teachers[i]["name"]
++                                         for i in cr_retention_teacher_indices].index(_tgt)]
++                                    ).to(_violation.dtype)
++                                    loss = ((_mk * _violation).sum() / _mk.sum().clamp(min=1.0)
++                                            if bool(_mk.any()) else _violation.sum() * 0.0)
++                                elif _pp == "direct":
++                                    loss = cr_direct_weight * _cr_direct_loss
++                                else:  # eval:*  只前向,不建图
++                                    loss = _violation.sum() * 0.0
+ 
+                             # One branch-wise parameter-gradient probe per rank
+                             # and epoch.  It is diagnostic only and retains the
+@@ -3136,14 +3270,52 @@
+                         info["train_reverse_kl"].append(per_step_kl_scalar.mean())
+                         info["loss"].append(loss)
+ 
++                        # CODEX-0026 修正之二:eval 趟**也必须 backward**。
++                        # 前向已经建了图,不 backward 图就不会被释放 ——
++                        # 12 microbatch x 10 timestep 的图全堆在显存里,
++                        # 实测把 H200 的 139.8GiB 耗尽(job 1036866 OOM)。
++                        # loss 已乘 0,backward 得到零梯度但会释放图,代价可接受。
++                        _pp2 = globals().get("_P1_PASS")
+                         accelerator.backward(loss)
+-                        if accelerator.sync_gradients:
++                        # CODEX-0026 修正:非 step 趟**绝不能**调 clip_grad_norm_ ——
++                        # 它内部走 scaler.unscale_(opt),而 unscale_ 在两次 update() 之间只能调一次;
++                        # 我们又跳过了 optimizer.step()(即没有 scaler.step/update),
++                        # 于是下一趟再 unscale 就抛
++                        #   RuntimeError: unscale_() has already been called on this optimizer
++                        # (job 1036848 实测)。非 step 趟改为直接读 .grad 再手动除以 scale。
++                        if accelerator.sync_gradients and (not _pp2 or _pp2 == "direct"):
+                             grad_norm = accelerator.clip_grad_norm_(
+                                 transformer.parameters(), config.train.max_grad_norm
+                             )
+                             info["grad_norm"].append(grad_norm)
+-                        optimizer.step()
+-                        optimizer.zero_grad()
++                        if _pp2:
++                            # gC 趟:取**整窗累积后**的梯度作为 a_m,不 step
++                            #   —— 上一版探针只取第一个 microbatch,codex 0023 §3.3 指出这是错的。
++                            #   a_m 取**未裁剪**的真实梯度(裁剪会改变约束梯度的方向/幅度)。
++                            # direct 趟:真实 AdamW step(含裁剪,与训练一致),记 Delta_adam,再还原参数。
++                            if accelerator.sync_gradients and _pp2.startswith("gC:"):
++                                _nm = _pp2.split(":", 1)[1]
++                                _sc = 1.0
++                                _scaler = getattr(accelerator, "scaler", None)
++                                if _scaler is not None and getattr(_scaler, "is_enabled", lambda: False)():
++                                    _sc = float(_scaler.get_scale())
++                                globals().setdefault("_P1_GRAD", {})[_nm] = [
++                                    ((q.grad.detach().clone() / _sc) if q.grad is not None
++                                     else torch.zeros_like(q))
++                                    for q in transformer_trainable_parameters]
++                            elif accelerator.sync_gradients and _pp2 == "direct":
++                                _before = [q.detach().clone() for q in transformer_trainable_parameters]
++                                optimizer.step()
++                                globals()["_P1_DELTA"] = [
++                                    (q.detach() - b) for q, b in
++                                    zip(transformer_trainable_parameters, _before)]
++                                with torch.no_grad():
++                                    for q, b in zip(transformer_trainable_parameters, _before):
++                                        q.copy_(b)
++                            optimizer.zero_grad()
++                        else:
++                            optimizer.step()
++                            optimizer.zero_grad()
+ 
+                     if accelerator.sync_gradients:
+ 
+@@ -3157,6 +3329,60 @@
+                 if config.train.ema:
+                     ema.step(transformer_trainable_parameters, global_step)
+ 
++        # ===== CODEX-0026: 全部趟跑完 -> 出报告;probe 不写 checkpoint =====
++        if _p1:
++            # 序号在写文件**之前**取并自增,保证 8 份报告文件名互不相同
++            _p1_idx = globals().get("_P1_DONE", 0)
++            globals()["_P1_DONE"] = _p1_idx + 1
++            _acc = globals().get("_P1_C_ACC", {})
++            _p1_out[f"C@{_p1_plan[-1]}"] = {k: (v[0] / max(v[1], 1)) for k, v in _acc.items()}
++            _p1_restore(transformer_trainable_parameters, _p1_theta0)
++            optimizer.load_state_dict(_p1copy.deepcopy(_p1_optstate))
++            if accelerator.is_main_process:
++                import json as _json
++                _Cb, _Cd = _p1_C, _p1_out.get("C@eval:direct", {})
++                # global_step 写进报告:日志被 paddleocr/mmdet 吞掉,无法从日志确认 resume
++                # 是否生效;若 resume 成功它应接近 P1_CKPT 的步数,否则为 0。
++                _rep = {"epoch": epoch, "global_step": int(global_step),
++                        "probe_idx": _p1_idx,
++                        "C_before": _Cb, "C_after_direct": _Cd,
++                        "active": any(_Cd.get(n, -1.0) > 0 for n in _p1_names)}
++                if _p1_delta_adam is not None:
++                    _fd = _p1_flat(_p1_delta_adam)
++                    for _n in _p1_names:
++                        if _n in _p1_A and _n in _Cb and _n in _Cd:
++                            _pred = float(_p1_flat(_p1_A[_n]) @ _fd)
++                            _true = _Cd[_n] - _Cb[_n]
++                            _rep[f"taylor_{_n}"] = {
++                                "pred": _pred, "true": _true,
++                                "ratio": (_pred / _true) if _true else None,
++                                "Cbefore_over_step": (abs(_Cb[_n]) / abs(_pred)) if _pred else None}
++                for _a in ("1", "0.5", "0.25", "0.125"):
++                    _ca = _p1_out.get(f"C@eval:proj{_a}", {})
++                    if not _ca:
++                        continue
++                    _ok = all(_ca.get(n, 1.0) <= 1e-12 for n in _p1_names)
++                    _rep[f"cert@{_a}"] = {"C_after": _ca, "pass": _ok,
++                                          "retention": _p1_out.get(f"retention@{float(_a)}")}
++                    if _ok:
++                        _rep["cert_pass_alpha"] = float(_a); break
++                os.makedirs(config.save_dir, exist_ok=True)
++                # 按 probe 序号命名。`continue` 会跳过循环末尾的 `epoch+=1`,
++                # 于是 epoch 恒为 0 —— 这对 probe 是**期望行为**(8 个 probe 都在同一个
++                # checkpoint 的 theta 上,只有采样窗口不同),但按 epoch 命名会让 8 份报告
++                # 互相覆盖,只剩最后一份(job 1036869 实测只留下 1 份)。
++                _dst = os.path.join(config.save_dir,
++                                    f"phase1_probe_{_p1_idx:02d}.json")
++                with open(_dst, "w") as _f:
++                    _json.dump(_rep, _f, indent=2, default=str)
++                logger.info(f"[P1] 报告 -> {_dst}")
++                logger.info("[P1] " + _json.dumps(_rep, default=str)[:900])
++            if _p1_idx + 1 >= int(os.environ.get("OPD_PHASE1_N", "24")):
++                if accelerator.is_main_process:
++                    logger.info(f"[P1] 已完成 {_p1_idx + 1} 个 probe,退出")
++                break
++            continue
++
+         if config.save_freq and epoch % config.save_freq == 0:
+             accelerator.wait_for_everyone()
+             save_ckpt(config.save_dir, transformer, global_step, accelerator, ema, transformer_trainable_parameters, config,

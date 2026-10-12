@@ -1,0 +1,5493 @@
+{
+  "action_run": "/midtier/minilab/scratch/chw4026/projects/side_project/generative/opd_related/opd_lab/runs/le4_action_001",
+  "audit_ocr_config": "/midtier/minilab/scratch/chw4026/projects/side_project/generative/opd_related/opd_lab/experiments/local_expert_v2/ocr_audit_config.json",
+  "behavior_file": "/midtier/minilab/scratch/chw4026/projects/side_project/generative/opd_related/opd_lab/runs/le3_probe_001/frozen_behavior.pt",
+  "calibration": [
+    {
+      "case": 1,
+      "id": "jp1-train-count_color-13",
+      "noise_seed": 485288142
+    },
+    {
+      "case": 2,
+      "id": "jp1-train-color-04",
+      "noise_seed": 1137740398
+    },
+    {
+      "case": 3,
+      "id": "jp1-train-color-02",
+      "noise_seed": 646287294
+    },
+    {
+      "case": 4,
+      "id": "jp1-train-count-01",
+      "noise_seed": 1643955483
+    },
+    {
+      "case": 5,
+      "id": "jp1-train-color-03",
+      "noise_seed": 924567855
+    },
+    {
+      "case": 6,
+      "id": "jp1-train-count-02",
+      "noise_seed": 160312757
+    },
+    {
+      "case": 7,
+      "id": "jp1-train-relation-01",
+      "noise_seed": 1325985030
+    },
+    {
+      "case": 8,
+      "id": "jp1-train-count_color-09",
+      "noise_seed": 1709289392
+    },
+    {
+      "case": 9,
+      "id": "jp1-train-relation-15",
+      "noise_seed": 408437822
+    },
+    {
+      "case": 10,
+      "id": "jp1-train-color-00",
+      "noise_seed": 299018689
+    },
+    {
+      "case": 11,
+      "id": "jp1-train-relation-11",
+      "noise_seed": 2003821344
+    },
+    {
+      "case": 12,
+      "id": "jp1-train-count_color-05",
+      "noise_seed": 1189588295
+    },
+    {
+      "case": 13,
+      "id": "jp1-train-count-05",
+      "noise_seed": 1979239898
+    },
+    {
+      "case": 14,
+      "id": "jp1-train-count_color-00",
+      "noise_seed": 1524013847
+    },
+    {
+      "case": 15,
+      "id": "jp1-train-count-08",
+      "noise_seed": 146675394
+    },
+    {
+      "case": 16,
+      "id": "jp1-train-relation-04",
+      "noise_seed": 504320563
+    }
+  ],
+  "development": [
+    {
+      "action": "target",
+      "case": 1,
+      "cohort": "development",
+      "image": "/midtier/minilab/scratch/chw4026/projects/side_project/generative/opd_related/opd_lab/runs/le3_probe_001/query_results/6676dadc2169b03f43816871/19df1871b804046b2598.png",
+      "image_sha256": "152522efa3f4e73f0bfd774ed5cb861469ba331fcae44fd7b36fb319aa8d700c",
+      "record": {
+        "constraints": [
+          {
+            "id": "text",
+            "kind": "ocr",
+            "text": "SODA"
+          },
+          {
+            "id": "color",
+            "kind": "geneval",
+            "metadata": {
+              "include": [
+                {
+                  "class": "vase",
+                  "color": "yellow",
+                  "count": 1
+                }
+              ],
+              "tag": "colors"
+            }
+          }
+        ],
+        "group": "jp1-train-color",
+        "id": "jp1-train-color-05",
+        "prompt": "A sharp, realistic studio photograph of exactly one yellow vase, fully visible. Above the objects, a large white sign displays only the word \"SODA\" in bold black letters. No other letters or words are visible.",
+        "split": "train"
+      },
+      "v1": {
+        "admissible": true,
+        "alpha": 0.5,
+        "collateral_damage": false,
+        "details": {
+          "clauses": [
+            {
+              "exact": true,
+              "expected_text": "SODA",
+              "id": "text",
+              "normalized_recognized": "soda",
+              "progress": 1.0
+            },
+            {
+              "id": "color",
+              "metadata": {
+                "include": [
+                  {
+                    "class": "vase",
+                    "color": "yellow",
+                    "count": 1
+                  }
+                ],
+                "prompt": "A sharp, realistic studio photograph of exactly one yellow vase, fully visible. Above the objects, a large white sign displays only the word \"SODA\" in bold black letters. No other letters or words are visible.",
+                "tag": "colors"
+              },
+              "strict": true,
+              "upstream_progress": 1.0
+            }
+          ],
+          "ocr": {
+            "lines": [
+              {
+                "box": [
+                  [
+                    142.0,
+                    119.0
+                  ],
+                  [
+                    355.0,
+                    106.0
+                  ],
+                  [
+                    360.0,
+                    186.0
+                  ],
+                  [
+                    147.0,
+                    199.0
+                  ]
+                ],
+                "confidence": 0.6567889451980591,
+                "text": "SODA"
+              }
+            ],
+            "recognized_text": "SODA"
+          }
+        },
+        "distance": 0.03392323851585388,
+        "error": null,
+        "image": "query_results/6676dadc2169b03f43816871/19df1871b804046b2598.png",
+        "image_sha256": "152522efa3f4e73f0bfd774ed5cb861469ba331fcae44fd7b36fb319aa8d700c",
+        "joint_success": true,
+        "name": "geneval@0.5",
+        "progress": [
+          1.0,
+          1.0
+        ],
+        "quality": null,
+        "satisfied": [
+          true,
+          true
+        ],
+        "teacher": "geneval",
+        "utility": 1.0,
+        "valid": true
+      }
+    },
+    {
+      "action": "noop",
+      "case": 1,
+      "cohort": "development",
+      "image": "/midtier/minilab/scratch/chw4026/projects/side_project/generative/opd_related/opd_lab/runs/le3_probe_001/query_results/6676dadc2169b03f43816871/3701dfff2e0317bdf64d.png",
+      "image_sha256": "b604d4a8d843926afa96d27a6612381c8379eb949b75dc42121c072b64078940",
+      "record": {
+        "constraints": [
+          {
+            "id": "text",
+            "kind": "ocr",
+            "text": "SODA"
+          },
+          {
+            "id": "color",
+            "kind": "geneval",
+            "metadata": {
+              "include": [
+                {
+                  "class": "vase",
+                  "color": "yellow",
+                  "count": 1
+                }
+              ],
+              "tag": "colors"
+            }
+          }
+        ],
+        "group": "jp1-train-color",
+        "id": "jp1-train-color-05",
+        "prompt": "A sharp, realistic studio photograph of exactly one yellow vase, fully visible. Above the objects, a large white sign displays only the word \"SODA\" in bold black letters. No other letters or words are visible.",
+        "split": "train"
+      },
+      "v1": {
+        "admissible": true,
+        "alpha": 0.0,
+        "collateral_damage": false,
+        "details": {
+          "clauses": [
+            {
+              "exact": false,
+              "expected_text": "SODA",
+              "id": "text",
+              "normalized_recognized": "sora",
+              "progress": 0.75
+            },
+            {
+              "id": "color",
+              "metadata": {
+                "include": [
+                  {
+                    "class": "vase",
+                    "color": "yellow",
+                    "count": 1
+                  }
+                ],
+                "prompt": "A sharp, realistic studio photograph of exactly one yellow vase, fully visible. Above the objects, a large white sign displays only the word \"SODA\" in bold black letters. No other letters or words are visible.",
+                "tag": "colors"
+              },
+              "strict": true,
+              "upstream_progress": 1.0
+            }
+          ],
+          "ocr": {
+            "lines": [
+              {
+                "box": [
+                  [
+                    143.0,
+                    117.0
+                  ],
+                  [
+                    356.0,
+                    111.0
+                  ],
+                  [
+                    358.0,
+                    191.0
+                  ],
+                  [
+                    145.0,
+                    197.0
+                  ]
+                ],
+                "confidence": 0.8217971324920654,
+                "text": "SORA"
+              }
+            ],
+            "recognized_text": "SORA"
+          }
+        },
+        "distance": 0.0,
+        "error": null,
+        "image": "query_results/6676dadc2169b03f43816871/3701dfff2e0317bdf64d.png",
+        "image_sha256": "b604d4a8d843926afa96d27a6612381c8379eb949b75dc42121c072b64078940",
+        "joint_success": false,
+        "name": "noop",
+        "progress": [
+          0.75,
+          1.0
+        ],
+        "quality": null,
+        "satisfied": [
+          false,
+          true
+        ],
+        "teacher": null,
+        "utility": 0.4375,
+        "valid": true
+      }
+    },
+    {
+      "action": "noop",
+      "case": 2,
+      "cohort": "development",
+      "image": "/midtier/minilab/scratch/chw4026/projects/side_project/generative/opd_related/opd_lab/runs/le3_probe_001/query_results/b2f31a9bd0cf3b79d6d41ad7/0a4869b6876c1c3d4d81.png",
+      "image_sha256": "98dc842ecad2f09a6f6138703f273c5d698864d269cd997811bb002f370d32a2",
+      "record": {
+        "constraints": [
+          {
+            "id": "text",
+            "kind": "ocr",
+            "text": "LUNA"
+          },
+          {
+            "id": "count",
+            "kind": "geneval",
+            "metadata": {
+              "include": [
+                {
+                  "class": "chair",
+                  "count": 2
+                }
+              ],
+              "tag": "counting"
+            }
+          },
+          {
+            "id": "color",
+            "kind": "geneval",
+            "metadata": {
+              "include": [
+                {
+                  "class": "chair",
+                  "color": "green",
+                  "count": 2
+                }
+              ],
+              "tag": "colors"
+            }
+          }
+        ],
+        "group": "jp1-train-count_color",
+        "id": "jp1-train-count_color-03",
+        "prompt": "A sharp, realistic studio photograph of exactly two green chairs, all fully visible and separated. Above the objects, a large white sign displays only the word \"LUNA\" in bold black letters. No other letters or words are visible.",
+        "split": "train"
+      },
+      "v1": {
+        "admissible": true,
+        "alpha": 0.0,
+        "collateral_damage": false,
+        "details": {
+          "clauses": [
+            {
+              "exact": false,
+              "expected_text": "LUNA",
+              "id": "text",
+              "normalized_recognized": "lun a",
+              "progress": 0.8
+            },
+            {
+              "id": "count",
+              "metadata": {
+                "include": [
+                  {
+                    "class": "chair",
+                    "count": 2
+                  }
+                ],
+                "prompt": "A sharp, realistic studio photograph of exactly two green chairs, all fully visible and separated. Above the objects, a large white sign displays only the word \"LUNA\" in bold black letters. No other letters or words are visible.",
+                "tag": "counting"
+              },
+              "strict": true,
+              "upstream_progress": 1.0
+            },
+            {
+              "id": "color",
+              "metadata": {
+                "include": [
+                  {
+                    "class": "chair",
+                    "color": "green",
+                    "count": 2
+                  }
+                ],
+                "prompt": "A sharp, realistic studio photograph of exactly two green chairs, all fully visible and separated. Above the objects, a large white sign displays only the word \"LUNA\" in bold black letters. No other letters or words are visible.",
+                "tag": "colors"
+              },
+              "strict": true,
+              "upstream_progress": 1.0
+            }
+          ],
+          "ocr": {
+            "lines": [
+              {
+                "box": [
+                  [
+                    67.0,
+                    56.0
+                  ],
+                  [
+                    413.0,
+                    56.0
+                  ],
+                  [
+                    413.0,
+                    114.0
+                  ],
+                  [
+                    67.0,
+                    114.0
+                  ]
+                ],
+                "confidence": 0.9242379069328308,
+                "text": "LUN A"
+              }
+            ],
+            "recognized_text": "LUN A"
+          }
+        },
+        "distance": 0.0,
+        "error": null,
+        "image": "query_results/b2f31a9bd0cf3b79d6d41ad7/0a4869b6876c1c3d4d81.png",
+        "image_sha256": "98dc842ecad2f09a6f6138703f273c5d698864d269cd997811bb002f370d32a2",
+        "joint_success": false,
+        "name": "noop",
+        "progress": [
+          0.8,
+          1.0,
+          1.0
+        ],
+        "quality": null,
+        "satisfied": [
+          false,
+          true,
+          true
+        ],
+        "teacher": null,
+        "utility": 0.4666666666666666,
+        "valid": true
+      }
+    },
+    {
+      "action": "target",
+      "case": 2,
+      "cohort": "development",
+      "image": "/midtier/minilab/scratch/chw4026/projects/side_project/generative/opd_related/opd_lab/runs/le3_probe_001/query_results/b2f31a9bd0cf3b79d6d41ad7/88b2c1475a803dbae15b.png",
+      "image_sha256": "6a85ef8f176d35607cba9163d00c656aa1b5ee68241ac43bc028d6a9e38adc02",
+      "record": {
+        "constraints": [
+          {
+            "id": "text",
+            "kind": "ocr",
+            "text": "LUNA"
+          },
+          {
+            "id": "count",
+            "kind": "geneval",
+            "metadata": {
+              "include": [
+                {
+                  "class": "chair",
+                  "count": 2
+                }
+              ],
+              "tag": "counting"
+            }
+          },
+          {
+            "id": "color",
+            "kind": "geneval",
+            "metadata": {
+              "include": [
+                {
+                  "class": "chair",
+                  "color": "green",
+                  "count": 2
+                }
+              ],
+              "tag": "colors"
+            }
+          }
+        ],
+        "group": "jp1-train-count_color",
+        "id": "jp1-train-count_color-03",
+        "prompt": "A sharp, realistic studio photograph of exactly two green chairs, all fully visible and separated. Above the objects, a large white sign displays only the word \"LUNA\" in bold black letters. No other letters or words are visible.",
+        "split": "train"
+      },
+      "v1": {
+        "admissible": true,
+        "alpha": 1.0,
+        "collateral_damage": false,
+        "details": {
+          "clauses": [
+            {
+              "exact": true,
+              "expected_text": "LUNA",
+              "id": "text",
+              "normalized_recognized": "luna",
+              "progress": 1.0
+            },
+            {
+              "id": "count",
+              "metadata": {
+                "include": [
+                  {
+                    "class": "chair",
+                    "count": 2
+                  }
+                ],
+                "prompt": "A sharp, realistic studio photograph of exactly two green chairs, all fully visible and separated. Above the objects, a large white sign displays only the word \"LUNA\" in bold black letters. No other letters or words are visible.",
+                "tag": "counting"
+              },
+              "strict": true,
+              "upstream_progress": 1.0
+            },
+            {
+              "id": "color",
+              "metadata": {
+                "include": [
+                  {
+                    "class": "chair",
+                    "color": "green",
+                    "count": 2
+                  }
+                ],
+                "prompt": "A sharp, realistic studio photograph of exactly two green chairs, all fully visible and separated. Above the objects, a large white sign displays only the word \"LUNA\" in bold black letters. No other letters or words are visible.",
+                "tag": "colors"
+              },
+              "strict": true,
+              "upstream_progress": 1.0
+            }
+          ],
+          "ocr": {
+            "lines": [
+              {
+                "box": [
+                  [
+                    77.0,
+                    65.0
+                  ],
+                  [
+                    409.0,
+                    63.0
+                  ],
+                  [
+                    409.0,
+                    111.0
+                  ],
+                  [
+                    77.0,
+                    113.0
+                  ]
+                ],
+                "confidence": 0.9976014494895935,
+                "text": "LUNA"
+              }
+            ],
+            "recognized_text": "LUNA"
+          }
+        },
+        "distance": 0.31012940406799316,
+        "error": null,
+        "image": "query_results/b2f31a9bd0cf3b79d6d41ad7/88b2c1475a803dbae15b.png",
+        "image_sha256": "6a85ef8f176d35607cba9163d00c656aa1b5ee68241ac43bc028d6a9e38adc02",
+        "joint_success": true,
+        "name": "geneval@1",
+        "progress": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "quality": null,
+        "satisfied": [
+          true,
+          true,
+          true
+        ],
+        "teacher": "geneval",
+        "utility": 1.0,
+        "valid": true
+      }
+    },
+    {
+      "action": "noop",
+      "case": 3,
+      "cohort": "development",
+      "image": "/midtier/minilab/scratch/chw4026/projects/side_project/generative/opd_related/opd_lab/runs/le3_probe_001/query_results/757b75aab4fc7607e997a7e7/a4d41e9efcbaa3f2d793.png",
+      "image_sha256": "b9f6e5e8bd7a4b2e00041aab32c82fb6015b4e0fa1fdc24a96f9c60123c65a27",
+      "record": {
+        "constraints": [
+          {
+            "id": "text",
+            "kind": "ocr",
+            "text": "FRESH"
+          },
+          {
+            "id": "color",
+            "kind": "geneval",
+            "metadata": {
+              "include": [
+                {
+                  "class": "cup",
+                  "color": "red",
+                  "count": 1
+                }
+              ],
+              "tag": "colors"
+            }
+          }
+        ],
+        "group": "jp1-train-color",
+        "id": "jp1-train-color-08",
+        "prompt": "A sharp, realistic studio photograph of exactly one red cup, fully visible. Above the objects, a large white sign displays only the word \"FRESH\" in bold black letters. No other letters or words are visible.",
+        "split": "train"
+      },
+      "v1": {
+        "admissible": true,
+        "alpha": 0.0,
+        "collateral_damage": false,
+        "details": {
+          "clauses": [
+            {
+              "exact": false,
+              "expected_text": "FRESH",
+              "id": "text",
+              "normalized_recognized": "f r e s",
+              "progress": 0.4285714285714286
+            },
+            {
+              "id": "color",
+              "metadata": {
+                "include": [
+                  {
+                    "class": "cup",
+                    "color": "red",
+                    "count": 1
+                  }
+                ],
+                "prompt": "A sharp, realistic studio photograph of exactly one red cup, fully visible. Above the objects, a large white sign displays only the word \"FRESH\" in bold black letters. No other letters or words are visible.",
+                "tag": "colors"
+              },
+              "strict": true,
+              "upstream_progress": 1.0
+            }
+          ],
+          "ocr": {
+            "lines": [
+              {
+                "box": [
+                  [
+                    34.0,
+                    118.0
+                  ],
+                  [
+                    96.0,
+                    118.0
+                  ],
+                  [
+                    96.0,
+                    189.0
+                  ],
+                  [
+                    34.0,
+                    189.0
+                  ]
+                ],
+                "confidence": 0.9973453879356384,
+                "text": "F"
+              },
+              {
+                "box": [
+                  [
+                    126.0,
+                    115.0
+                  ],
+                  [
+                    186.0,
+                    120.0
+                  ],
+                  [
+                    180.0,
+                    190.0
+                  ],
+                  [
+                    120.0,
+                    185.0
+                  ]
+                ],
+                "confidence": 0.9941626191139221,
+                "text": "R"
+              },
+              {
+                "box": [
+                  [
+                    237.0,
+                    119.0
+                  ],
+                  [
+                    292.0,
+                    119.0
+                  ],
+                  [
+                    292.0,
+                    185.0
+                  ],
+                  [
+                    237.0,
+                    185.0
+                  ]
+                ],
+                "confidence": 0.9979021549224854,
+                "text": "E"
+              },
+              {
+                "box": [
+                  [
+                    331.0,
+                    114.0
+                  ],
+                  [
+                    395.0,
+                    114.0
+                  ],
+                  [
+                    395.0,
+                    190.0
+                  ],
+                  [
+                    331.0,
+                    190.0
+                  ]
+                ],
+                "confidence": 0.876654326915741,
+                "text": "S"
+              }
+            ],
+            "recognized_text": "F R E S"
+          }
+        },
+        "distance": 0.0,
+        "error": null,
+        "image": "query_results/757b75aab4fc7607e997a7e7/a4d41e9efcbaa3f2d793.png",
+        "image_sha256": "b9f6e5e8bd7a4b2e00041aab32c82fb6015b4e0fa1fdc24a96f9c60123c65a27",
+        "joint_success": false,
+        "name": "noop",
+        "progress": [
+          0.4285714285714286,
+          1.0
+        ],
+        "quality": null,
+        "satisfied": [
+          false,
+          true
+        ],
+        "teacher": null,
+        "utility": 0.35714285714285715,
+        "valid": true
+      }
+    },
+    {
+      "action": "target",
+      "case": 3,
+      "cohort": "development",
+      "image": "/midtier/minilab/scratch/chw4026/projects/side_project/generative/opd_related/opd_lab/runs/le3_probe_001/query_results/757b75aab4fc7607e997a7e7/525c3f45190bd5f156b8.png",
+      "image_sha256": "0b7a2e267b148936524cf1b5958ecb80dd94be69cfad919f79ad55dc55add60b",
+      "record": {
+        "constraints": [
+          {
+            "id": "text",
+            "kind": "ocr",
+            "text": "FRESH"
+          },
+          {
+            "id": "color",
+            "kind": "geneval",
+            "metadata": {
+              "include": [
+                {
+                  "class": "cup",
+                  "color": "red",
+                  "count": 1
+                }
+              ],
+              "tag": "colors"
+            }
+          }
+        ],
+        "group": "jp1-train-color",
+        "id": "jp1-train-color-08",
+        "prompt": "A sharp, realistic studio photograph of exactly one red cup, fully visible. Above the objects, a large white sign displays only the word \"FRESH\" in bold black letters. No other letters or words are visible.",
+        "split": "train"
+      },
+      "v1": {
+        "admissible": true,
+        "alpha": 1.0,
+        "collateral_damage": false,
+        "details": {
+          "clauses": [
+            {
+              "exact": true,
+              "expected_text": "FRESH",
+              "id": "text",
+              "normalized_recognized": "fresh",
+              "progress": 1.0
+            },
+            {
+              "id": "color",
+              "metadata": {
+                "include": [
+                  {
+                    "class": "cup",
+                    "color": "red",
+                    "count": 1
+                  }
+                ],
+                "prompt": "A sharp, realistic studio photograph of exactly one red cup, fully visible. Above the objects, a large white sign displays only the word \"FRESH\" in bold black letters. No other letters or words are visible.",
+                "tag": "colors"
+              },
+              "strict": true,
+              "upstream_progress": 1.0
+            }
+          ],
+          "ocr": {
+            "lines": [
+              {
+                "box": [
+                  [
+                    37.0,
+                    119.0
+                  ],
+                  [
+                    460.0,
+                    117.0
+                  ],
+                  [
+                    460.0,
+                    183.0
+                  ],
+                  [
+                    37.0,
+                    185.0
+                  ]
+                ],
+                "confidence": 0.99494868516922,
+                "text": "FRESH"
+              }
+            ],
+            "recognized_text": "FRESH"
+          }
+        },
+        "distance": 0.4623561501502991,
+        "error": null,
+        "image": "query_results/757b75aab4fc7607e997a7e7/525c3f45190bd5f156b8.png",
+        "image_sha256": "0b7a2e267b148936524cf1b5958ecb80dd94be69cfad919f79ad55dc55add60b",
+        "joint_success": true,
+        "name": "geneval@1",
+        "progress": [
+          1.0,
+          1.0
+        ],
+        "quality": null,
+        "satisfied": [
+          true,
+          true
+        ],
+        "teacher": "geneval",
+        "utility": 1.0,
+        "valid": true
+      }
+    },
+    {
+      "action": "noop",
+      "case": 4,
+      "cohort": "development",
+      "image": "/midtier/minilab/scratch/chw4026/projects/side_project/generative/opd_related/opd_lab/runs/le3_probe_001/query_results/8197f579ba819339d677b565/479bb76a3c58771d33eb.png",
+      "image_sha256": "cf768f43a71063ecfd69417a6cc369543b98f8888639ec5a719d0ab08dafde79",
+      "record": {
+        "constraints": [
+          {
+            "id": "text",
+            "kind": "ocr",
+            "text": "SUNNY"
+          },
+          {
+            "id": "count",
+            "kind": "geneval",
+            "metadata": {
+              "include": [
+                {
+                  "class": "banana",
+                  "count": 2
+                }
+              ],
+              "tag": "counting"
+            }
+          },
+          {
+            "id": "color",
+            "kind": "geneval",
+            "metadata": {
+              "include": [
+                {
+                  "class": "banana",
+                  "color": "red",
+                  "count": 2
+                }
+              ],
+              "tag": "colors"
+            }
+          }
+        ],
+        "group": "jp1-train-count_color",
+        "id": "jp1-train-count_color-15",
+        "prompt": "A sharp, realistic studio photograph of exactly two red bananas, all fully visible and separated. Above the objects, a large white sign displays only the word \"SUNNY\" in bold black letters. No other letters or words are visible.",
+        "split": "train"
+      },
+      "v1": {
+        "admissible": true,
+        "alpha": 0.0,
+        "collateral_damage": false,
+        "details": {
+          "clauses": [
+            {
+              "exact": false,
+              "expected_text": "SUNNY",
+              "id": "text",
+              "normalized_recognized": "suwy",
+              "progress": 0.6
+            },
+            {
+              "id": "count",
+              "metadata": {
+                "include": [
+                  {
+                    "class": "banana",
+                    "count": 2
+                  }
+                ],
+                "prompt": "A sharp, realistic studio photograph of exactly two red bananas, all fully visible and separated. Above the objects, a large white sign displays only the word \"SUNNY\" in bold black letters. No other letters or words are visible.",
+                "tag": "counting"
+              },
+              "strict": false,
+              "upstream_progress": 0.5
+            },
+            {
+              "id": "color",
+              "metadata": {
+                "include": [
+                  {
+                    "class": "banana",
+                    "color": "red",
+                    "count": 2
+                  }
+                ],
+                "prompt": "A sharp, realistic studio photograph of exactly two red bananas, all fully visible and separated. Above the objects, a large white sign displays only the word \"SUNNY\" in bold black letters. No other letters or words are visible.",
+                "tag": "colors"
+              },
+              "strict": false,
+              "upstream_progress": 0.25
+            }
+          ],
+          "ocr": {
+            "lines": [
+              {
+                "box": [
+                  [
+                    73.0,
+                    208.0
+                  ],
+                  [
+                    360.0,
+                    208.0
+                  ],
+                  [
+                    360.0,
+                    271.0
+                  ],
+                  [
+                    73.0,
+                    271.0
+                  ]
+                ],
+                "confidence": 0.8926433324813843,
+                "text": "SUWY"
+              }
+            ],
+            "recognized_text": "SUWY"
+          }
+        },
+        "distance": 0.0,
+        "error": null,
+        "image": "query_results/8197f579ba819339d677b565/479bb76a3c58771d33eb.png",
+        "image_sha256": "cf768f43a71063ecfd69417a6cc369543b98f8888639ec5a719d0ab08dafde79",
+        "joint_success": false,
+        "name": "noop",
+        "progress": [
+          0.6,
+          0.5,
+          0.25
+        ],
+        "quality": null,
+        "satisfied": [
+          false,
+          false,
+          false
+        ],
+        "teacher": null,
+        "utility": 0.225,
+        "valid": true
+      }
+    },
+    {
+      "action": "target",
+      "case": 4,
+      "cohort": "development",
+      "image": "/midtier/minilab/scratch/chw4026/projects/side_project/generative/opd_related/opd_lab/runs/le3_probe_001/query_results/8197f579ba819339d677b565/34a7bd31376a7ceae292.png",
+      "image_sha256": "97f828d3744a59844bcf2e564f7141dd9e243dd91c3d7163a832f6de2a2f68ba",
+      "record": {
+        "constraints": [
+          {
+            "id": "text",
+            "kind": "ocr",
+            "text": "SUNNY"
+          },
+          {
+            "id": "count",
+            "kind": "geneval",
+            "metadata": {
+              "include": [
+                {
+                  "class": "banana",
+                  "count": 2
+                }
+              ],
+              "tag": "counting"
+            }
+          },
+          {
+            "id": "color",
+            "kind": "geneval",
+            "metadata": {
+              "include": [
+                {
+                  "class": "banana",
+                  "color": "red",
+                  "count": 2
+                }
+              ],
+              "tag": "colors"
+            }
+          }
+        ],
+        "group": "jp1-train-count_color",
+        "id": "jp1-train-count_color-15",
+        "prompt": "A sharp, realistic studio photograph of exactly two red bananas, all fully visible and separated. Above the objects, a large white sign displays only the word \"SUNNY\" in bold black letters. No other letters or words are visible.",
+        "split": "train"
+      },
+      "v1": {
+        "admissible": true,
+        "alpha": 1.0,
+        "collateral_damage": false,
+        "details": {
+          "clauses": [
+            {
+              "exact": false,
+              "expected_text": "SUNNY",
+              "id": "text",
+              "normalized_recognized": "sunwy",
+              "progress": 0.8
+            },
+            {
+              "id": "count",
+              "metadata": {
+                "include": [
+                  {
+                    "class": "banana",
+                    "count": 2
+                  }
+                ],
+                "prompt": "A sharp, realistic studio photograph of exactly two red bananas, all fully visible and separated. Above the objects, a large white sign displays only the word \"SUNNY\" in bold black letters. No other letters or words are visible.",
+                "tag": "counting"
+              },
+              "strict": false,
+              "upstream_progress": 0.5
+            },
+            {
+              "id": "color",
+              "metadata": {
+                "include": [
+                  {
+                    "class": "banana",
+                    "color": "red",
+                    "count": 2
+                  }
+                ],
+                "prompt": "A sharp, realistic studio photograph of exactly two red bananas, all fully visible and separated. Above the objects, a large white sign displays only the word \"SUNNY\" in bold black letters. No other letters or words are visible.",
+                "tag": "colors"
+              },
+              "strict": false,
+              "upstream_progress": 0.25
+            }
+          ],
+          "ocr": {
+            "lines": [
+              {
+                "box": [
+                  [
+                    72.0,
+                    208.0
+                  ],
+                  [
+                    359.0,
+                    208.0
+                  ],
+                  [
+                    359.0,
+                    271.0
+                  ],
+                  [
+                    72.0,
+                    271.0
+                  ]
+                ],
+                "confidence": 0.839930534362793,
+                "text": "SUNWY"
+              }
+            ],
+            "recognized_text": "SUNWY"
+          }
+        },
+        "distance": 0.008193993009626865,
+        "error": null,
+        "image": "query_results/8197f579ba819339d677b565/34a7bd31376a7ceae292.png",
+        "image_sha256": "97f828d3744a59844bcf2e564f7141dd9e243dd91c3d7163a832f6de2a2f68ba",
+        "joint_success": false,
+        "name": "ocr@1",
+        "progress": [
+          0.8,
+          0.5,
+          0.25
+        ],
+        "quality": null,
+        "satisfied": [
+          false,
+          false,
+          false
+        ],
+        "teacher": "ocr",
+        "utility": 0.25833333333333336,
+        "valid": true
+      }
+    },
+    {
+      "action": "target",
+      "case": 5,
+      "cohort": "development",
+      "image": "/midtier/minilab/scratch/chw4026/projects/side_project/generative/opd_related/opd_lab/runs/le3_probe_001/query_results/ed0c6261a864a82cb8336eb9/3982538cba8497f772fe.png",
+      "image_sha256": "101997258db12a167b55d5513cdd811e6fdf8eb5c9a897f5744a3757b6b2c811",
+      "record": {
+        "constraints": [
+          {
+            "id": "text",
+            "kind": "ocr",
+            "text": "CLOUD"
+          },
+          {
+            "id": "count",
+            "kind": "geneval",
+            "metadata": {
+              "include": [
+                {
+                  "class": "vase",
+                  "count": 1
+                }
+              ],
+              "tag": "counting"
+            }
+          }
+        ],
+        "group": "jp1-train-count",
+        "id": "jp1-train-count-13",
+        "prompt": "A sharp, realistic studio photograph of exactly one vase, all fully visible and separated. Above the objects, a large white sign displays only the word \"CLOUD\" in bold black letters. No other letters or words are visible.",
+        "split": "train"
+      },
+      "v1": {
+        "admissible": true,
+        "alpha": 1.0,
+        "collateral_damage": false,
+        "details": {
+          "clauses": [
+            {
+              "exact": false,
+              "expected_text": "CLOUD",
+              "id": "text",
+              "normalized_recognized": "coud",
+              "progress": 0.8
+            },
+            {
+              "id": "count",
+              "metadata": {
+                "include": [
+                  {
+                    "class": "vase",
+                    "count": 1
+                  }
+                ],
+                "prompt": "A sharp, realistic studio photograph of exactly one vase, all fully visible and separated. Above the objects, a large white sign displays only the word \"CLOUD\" in bold black letters. No other letters or words are visible.",
+                "tag": "counting"
+              },
+              "strict": true,
+              "upstream_progress": 1.0
+            }
+          ],
+          "ocr": {
+            "lines": [
+              {
+                "box": [
+                  [
+                    166.0,
+                    224.0
+                  ],
+                  [
+                    356.0,
+                    229.0
+                  ],
+                  [
+                    355.0,
+                    283.0
+                  ],
+                  [
+                    165.0,
+                    278.0
+                  ]
+                ],
+                "confidence": 0.8597251176834106,
+                "text": "COUD"
+              }
+            ],
+            "recognized_text": "COUD"
+          }
+        },
+        "distance": 0.03721816837787628,
+        "error": null,
+        "image": "query_results/ed0c6261a864a82cb8336eb9/3982538cba8497f772fe.png",
+        "image_sha256": "101997258db12a167b55d5513cdd811e6fdf8eb5c9a897f5744a3757b6b2c811",
+        "joint_success": false,
+        "name": "geneval@1",
+        "progress": [
+          0.8,
+          1.0
+        ],
+        "quality": null,
+        "satisfied": [
+          false,
+          true
+        ],
+        "teacher": "geneval",
+        "utility": 0.45,
+        "valid": true
+      }
+    },
+    {
+      "action": "noop",
+      "case": 5,
+      "cohort": "development",
+      "image": "/midtier/minilab/scratch/chw4026/projects/side_project/generative/opd_related/opd_lab/runs/le3_probe_001/query_results/ed0c6261a864a82cb8336eb9/0e57e6701824b5413f98.png",
+      "image_sha256": "a92d3d181b04d7bccb06c8f245fd7521b479b1992a3a818a46c8b5e407441bd0",
+      "record": {
+        "constraints": [
+          {
+            "id": "text",
+            "kind": "ocr",
+            "text": "CLOUD"
+          },
+          {
+            "id": "count",
+            "kind": "geneval",
+            "metadata": {
+              "include": [
+                {
+                  "class": "vase",
+                  "count": 1
+                }
+              ],
+              "tag": "counting"
+            }
+          }
+        ],
+        "group": "jp1-train-count",
+        "id": "jp1-train-count-13",
+        "prompt": "A sharp, realistic studio photograph of exactly one vase, all fully visible and separated. Above the objects, a large white sign displays only the word \"CLOUD\" in bold black letters. No other letters or words are visible.",
+        "split": "train"
+      },
+      "v1": {
+        "admissible": true,
+        "alpha": 0.0,
+        "collateral_damage": false,
+        "details": {
+          "clauses": [
+            {
+              "exact": false,
+              "expected_text": "CLOUD",
+              "id": "text",
+              "normalized_recognized": "coud",
+              "progress": 0.8
+            },
+            {
+              "id": "count",
+              "metadata": {
+                "include": [
+                  {
+                    "class": "vase",
+                    "count": 1
+                  }
+                ],
+                "prompt": "A sharp, realistic studio photograph of exactly one vase, all fully visible and separated. Above the objects, a large white sign displays only the word \"CLOUD\" in bold black letters. No other letters or words are visible.",
+                "tag": "counting"
+              },
+              "strict": false,
+              "upstream_progress": 0.0
+            }
+          ],
+          "ocr": {
+            "lines": [
+              {
+                "box": [
+                  [
+                    168.0,
+                    229.0
+                  ],
+                  [
+                    350.0,
+                    229.0
+                  ],
+                  [
+                    350.0,
+                    279.0
+                  ],
+                  [
+                    168.0,
+                    279.0
+                  ]
+                ],
+                "confidence": 0.9180796146392822,
+                "text": "COUD"
+              }
+            ],
+            "recognized_text": "COUD"
+          }
+        },
+        "distance": 0.0,
+        "error": null,
+        "image": "query_results/ed0c6261a864a82cb8336eb9/0e57e6701824b5413f98.png",
+        "image_sha256": "a92d3d181b04d7bccb06c8f245fd7521b479b1992a3a818a46c8b5e407441bd0",
+        "joint_success": false,
+        "name": "noop",
+        "progress": [
+          0.8,
+          0.0
+        ],
+        "quality": null,
+        "satisfied": [
+          false,
+          false
+        ],
+        "teacher": null,
+        "utility": 0.2,
+        "valid": true
+      }
+    },
+    {
+      "action": "target",
+      "case": 6,
+      "cohort": "development",
+      "image": "/midtier/minilab/scratch/chw4026/projects/side_project/generative/opd_related/opd_lab/runs/le3_probe_001/query_results/650ca7b7ea3436fdd8fcd5ec/4bb71204d604c5b5c4f7.png",
+      "image_sha256": "8fc6884db580873885741ab634c35ae89dac79e64ea6526b21354c58bae60b45",
+      "record": {
+        "constraints": [
+          {
+            "id": "text",
+            "kind": "ocr",
+            "text": "MINT"
+          },
+          {
+            "id": "count",
+            "kind": "geneval",
+            "metadata": {
+              "include": [
+                {
+                  "class": "cup",
+                  "count": 1
+                }
+              ],
+              "tag": "counting"
+            }
+          }
+        ],
+        "group": "jp1-train-count",
+        "id": "jp1-train-count-00",
+        "prompt": "A sharp, realistic studio photograph of exactly one cup, all fully visible and separated. Above the objects, a large white sign displays only the word \"MINT\" in bold black letters. No other letters or words are visible.",
+        "split": "train"
+      },
+      "v1": {
+        "admissible": true,
+        "alpha": 0.5,
+        "collateral_damage": false,
+        "details": {
+          "clauses": [
+            {
+              "exact": true,
+              "expected_text": "MINT",
+              "id": "text",
+              "normalized_recognized": "mint",
+              "progress": 1.0
+            },
+            {
+              "id": "count",
+              "metadata": {
+                "include": [
+                  {
+                    "class": "cup",
+                    "count": 1
+                  }
+                ],
+                "prompt": "A sharp, realistic studio photograph of exactly one cup, all fully visible and separated. Above the objects, a large white sign displays only the word \"MINT\" in bold black letters. No other letters or words are visible.",
+                "tag": "counting"
+              },
+              "strict": true,
+              "upstream_progress": 1.0
+            }
+          ],
+          "ocr": {
+            "lines": [
+              {
+                "box": [
+                  [
+                    92.0,
+                    55.0
+                  ],
+                  [
+                    402.0,
+                    50.0
+                  ],
+                  [
+                    403.0,
+                    134.0
+                  ],
+                  [
+                    93.0,
+                    139.0
+                  ]
+                ],
+                "confidence": 0.9900363087654114,
+                "text": "MINT"
+              }
+            ],
+            "recognized_text": "MINT"
+          }
+        },
+        "distance": 0.04136987403035164,
+        "error": null,
+        "image": "query_results/650ca7b7ea3436fdd8fcd5ec/4bb71204d604c5b5c4f7.png",
+        "image_sha256": "8fc6884db580873885741ab634c35ae89dac79e64ea6526b21354c58bae60b45",
+        "joint_success": true,
+        "name": "ocr@0.5",
+        "progress": [
+          1.0,
+          1.0
+        ],
+        "quality": null,
+        "satisfied": [
+          true,
+          true
+        ],
+        "teacher": "ocr",
+        "utility": 1.0,
+        "valid": true
+      }
+    },
+    {
+      "action": "noop",
+      "case": 6,
+      "cohort": "development",
+      "image": "/midtier/minilab/scratch/chw4026/projects/side_project/generative/opd_related/opd_lab/runs/le3_probe_001/query_results/650ca7b7ea3436fdd8fcd5ec/46bc61cfc4840beb4a9a.png",
+      "image_sha256": "bafafb9d86ec38346e110dbc049bba9c5a00ce30e13148a70f02a5294ac665bf",
+      "record": {
+        "constraints": [
+          {
+            "id": "text",
+            "kind": "ocr",
+            "text": "MINT"
+          },
+          {
+            "id": "count",
+            "kind": "geneval",
+            "metadata": {
+              "include": [
+                {
+                  "class": "cup",
+                  "count": 1
+                }
+              ],
+              "tag": "counting"
+            }
+          }
+        ],
+        "group": "jp1-train-count",
+        "id": "jp1-train-count-00",
+        "prompt": "A sharp, realistic studio photograph of exactly one cup, all fully visible and separated. Above the objects, a large white sign displays only the word \"MINT\" in bold black letters. No other letters or words are visible.",
+        "split": "train"
+      },
+      "v1": {
+        "admissible": true,
+        "alpha": 0.0,
+        "collateral_damage": false,
+        "details": {
+          "clauses": [
+            {
+              "exact": true,
+              "expected_text": "MINT",
+              "id": "text",
+              "normalized_recognized": "mint",
+              "progress": 1.0
+            },
+            {
+              "id": "count",
+              "metadata": {
+                "include": [
+                  {
+                    "class": "cup",
+                    "count": 1
+                  }
+                ],
+                "prompt": "A sharp, realistic studio photograph of exactly one cup, all fully visible and separated. Above the objects, a large white sign displays only the word \"MINT\" in bold black letters. No other letters or words are visible.",
+                "tag": "counting"
+              },
+              "strict": false,
+              "upstream_progress": 0.0
+            }
+          ],
+          "ocr": {
+            "lines": [
+              {
+                "box": [
+                  [
+                    93.0,
+                    55.0
+                  ],
+                  [
+                    406.0,
+                    51.0
+                  ],
+                  [
+                    407.0,
+                    136.0
+                  ],
+                  [
+                    94.0,
+                    140.0
+                  ]
+                ],
+                "confidence": 0.9949925541877747,
+                "text": "MINT"
+              }
+            ],
+            "recognized_text": "MINT"
+          }
+        },
+        "distance": 0.0,
+        "error": null,
+        "image": "query_results/650ca7b7ea3436fdd8fcd5ec/46bc61cfc4840beb4a9a.png",
+        "image_sha256": "bafafb9d86ec38346e110dbc049bba9c5a00ce30e13148a70f02a5294ac665bf",
+        "joint_success": false,
+        "name": "noop",
+        "progress": [
+          1.0,
+          0.0
+        ],
+        "quality": null,
+        "satisfied": [
+          true,
+          false
+        ],
+        "teacher": null,
+        "utility": 0.25,
+        "valid": true
+      }
+    },
+    {
+      "action": "target",
+      "case": 7,
+      "cohort": "development",
+      "image": "/midtier/minilab/scratch/chw4026/projects/side_project/generative/opd_related/opd_lab/runs/le3_probe_001/query_results/207ed6ea2a7efc7593d7283b/862e621aef954418b93e.png",
+      "image_sha256": "77eebc59e3759136b9a4dc7707b42605cd76b8e2c5b88c710f5385a7edf939c4",
+      "record": {
+        "constraints": [
+          {
+            "id": "text",
+            "kind": "ocr",
+            "text": "MAPLE"
+          },
+          {
+            "id": "color",
+            "kind": "geneval",
+            "metadata": {
+              "include": [
+                {
+                  "class": "apple",
+                  "color": "blue",
+                  "count": 1
+                }
+              ],
+              "tag": "colors"
+            }
+          }
+        ],
+        "group": "jp1-train-color",
+        "id": "jp1-train-color-10",
+        "prompt": "A sharp, realistic studio photograph of exactly one blue apple, fully visible. Above the objects, a large white sign displays only the word \"MAPLE\" in bold black letters. No other letters or words are visible.",
+        "split": "train"
+      },
+      "v1": {
+        "admissible": true,
+        "alpha": 0.5,
+        "collateral_damage": false,
+        "details": {
+          "clauses": [
+            {
+              "exact": true,
+              "expected_text": "MAPLE",
+              "id": "text",
+              "normalized_recognized": "maple",
+              "progress": 1.0
+            },
+            {
+              "id": "color",
+              "metadata": {
+                "include": [
+                  {
+                    "class": "apple",
+                    "color": "blue",
+                    "count": 1
+                  }
+                ],
+                "prompt": "A sharp, realistic studio photograph of exactly one blue apple, fully visible. Above the objects, a large white sign displays only the word \"MAPLE\" in bold black letters. No other letters or words are visible.",
+                "tag": "colors"
+              },
+              "strict": true,
+              "upstream_progress": 1.0
+            }
+          ],
+          "ocr": {
+            "lines": [
+              {
+                "box": [
+                  [
+                    144.0,
+                    163.0
+                  ],
+                  [
+                    363.0,
+                    163.0
+                  ],
+                  [
+                    363.0,
+                    205.0
+                  ],
+                  [
+                    144.0,
+                    205.0
+                  ]
+                ],
+                "confidence": 0.9699442982673645,
+                "text": "MAPLE"
+              }
+            ],
+            "recognized_text": "MAPLE"
+          }
+        },
+        "distance": 0.14466175436973572,
+        "error": null,
+        "image": "query_results/207ed6ea2a7efc7593d7283b/862e621aef954418b93e.png",
+        "image_sha256": "77eebc59e3759136b9a4dc7707b42605cd76b8e2c5b88c710f5385a7edf939c4",
+        "joint_success": true,
+        "name": "geneval@0.5",
+        "progress": [
+          1.0,
+          1.0
+        ],
+        "quality": null,
+        "satisfied": [
+          true,
+          true
+        ],
+        "teacher": "geneval",
+        "utility": 1.0,
+        "valid": true
+      }
+    },
+    {
+      "action": "noop",
+      "case": 7,
+      "cohort": "development",
+      "image": "/midtier/minilab/scratch/chw4026/projects/side_project/generative/opd_related/opd_lab/runs/le3_probe_001/query_results/207ed6ea2a7efc7593d7283b/ec5738f91e30cd9afeca.png",
+      "image_sha256": "20a4727ce868371d355f54d6c607bce146db33e01209f6883b15cbea92d56a44",
+      "record": {
+        "constraints": [
+          {
+            "id": "text",
+            "kind": "ocr",
+            "text": "MAPLE"
+          },
+          {
+            "id": "color",
+            "kind": "geneval",
+            "metadata": {
+              "include": [
+                {
+                  "class": "apple",
+                  "color": "blue",
+                  "count": 1
+                }
+              ],
+              "tag": "colors"
+            }
+          }
+        ],
+        "group": "jp1-train-color",
+        "id": "jp1-train-color-10",
+        "prompt": "A sharp, realistic studio photograph of exactly one blue apple, fully visible. Above the objects, a large white sign displays only the word \"MAPLE\" in bold black letters. No other letters or words are visible.",
+        "split": "train"
+      },
+      "v1": {
+        "admissible": true,
+        "alpha": 0.0,
+        "collateral_damage": false,
+        "details": {
+          "clauses": [
+            {
+              "exact": false,
+              "expected_text": "MAPLE",
+              "id": "text",
+              "normalized_recognized": "maaple",
+              "progress": 0.8333333333333334
+            },
+            {
+              "id": "color",
+              "metadata": {
+                "include": [
+                  {
+                    "class": "apple",
+                    "color": "blue",
+                    "count": 1
+                  }
+                ],
+                "prompt": "A sharp, realistic studio photograph of exactly one blue apple, fully visible. Above the objects, a large white sign displays only the word \"MAPLE\" in bold black letters. No other letters or words are visible.",
+                "tag": "colors"
+              },
+              "strict": true,
+              "upstream_progress": 1.0
+            }
+          ],
+          "ocr": {
+            "lines": [
+              {
+                "box": [
+                  [
+                    142.0,
+                    162.0
+                  ],
+                  [
+                    362.0,
+                    162.0
+                  ],
+                  [
+                    362.0,
+                    207.0
+                  ],
+                  [
+                    142.0,
+                    207.0
+                  ]
+                ],
+                "confidence": 0.9982854723930359,
+                "text": "MAAPLE"
+              }
+            ],
+            "recognized_text": "MAAPLE"
+          }
+        },
+        "distance": 0.0,
+        "error": null,
+        "image": "query_results/207ed6ea2a7efc7593d7283b/ec5738f91e30cd9afeca.png",
+        "image_sha256": "20a4727ce868371d355f54d6c607bce146db33e01209f6883b15cbea92d56a44",
+        "joint_success": false,
+        "name": "noop",
+        "progress": [
+          0.8333333333333334,
+          1.0
+        ],
+        "quality": null,
+        "satisfied": [
+          false,
+          true
+        ],
+        "teacher": null,
+        "utility": 0.45833333333333337,
+        "valid": true
+      }
+    },
+    {
+      "action": "target",
+      "case": 8,
+      "cohort": "development",
+      "image": "/midtier/minilab/scratch/chw4026/projects/side_project/generative/opd_related/opd_lab/runs/le3_probe_001/query_results/2f6b5cd6cd35d5e7a3bab7fb/11ac0b4f6d1390542222.png",
+      "image_sha256": "fed32de4b2d055d3a7916c92fec51eed0ed94dcaa1969bf0f2acc7c89320fdee",
+      "record": {
+        "constraints": [
+          {
+            "id": "text",
+            "kind": "ocr",
+            "text": "FRESH"
+          },
+          {
+            "id": "relation",
+            "kind": "geneval",
+            "metadata": {
+              "include": [
+                {
+                  "class": "bottle",
+                  "count": 1
+                },
+                {
+                  "class": "cup",
+                  "count": 1,
+                  "position": [
+                    "left of",
+                    0
+                  ]
+                }
+              ],
+              "tag": "position"
+            }
+          }
+        ],
+        "group": "jp1-train-relation",
+        "id": "jp1-train-relation-08",
+        "prompt": "A sharp, realistic studio photograph of exactly one cup clearly to the left of exactly one bottle, both fully visible. Above the objects, a large white sign displays only the word \"FRESH\" in bold black letters. No other letters or words are visible.",
+        "split": "train"
+      },
+      "v1": {
+        "admissible": true,
+        "alpha": 0.5,
+        "collateral_damage": false,
+        "details": {
+          "clauses": [
+            {
+              "exact": false,
+              "expected_text": "FRESH",
+              "id": "text",
+              "normalized_recognized": "",
+              "progress": 0.0
+            },
+            {
+              "id": "relation",
+              "metadata": {
+                "include": [
+                  {
+                    "class": "bottle",
+                    "count": 1
+                  },
+                  {
+                    "class": "cup",
+                    "count": 1,
+                    "position": [
+                      "left of",
+                      0
+                    ]
+                  }
+                ],
+                "prompt": "A sharp, realistic studio photograph of exactly one cup clearly to the left of exactly one bottle, both fully visible. Above the objects, a large white sign displays only the word \"FRESH\" in bold black letters. No other letters or words are visible.",
+                "tag": "position"
+              },
+              "strict": false,
+              "upstream_progress": 0.75
+            }
+          ],
+          "ocr": {
+            "lines": [],
+            "recognized_text": ""
+          }
+        },
+        "distance": 0.0035228922497481108,
+        "error": null,
+        "image": "query_results/2f6b5cd6cd35d5e7a3bab7fb/11ac0b4f6d1390542222.png",
+        "image_sha256": "fed32de4b2d055d3a7916c92fec51eed0ed94dcaa1969bf0f2acc7c89320fdee",
+        "joint_success": false,
+        "name": "ocr@0.5",
+        "progress": [
+          0.0,
+          0.75
+        ],
+        "quality": null,
+        "satisfied": [
+          false,
+          false
+        ],
+        "teacher": "ocr",
+        "utility": 0.1875,
+        "valid": true
+      }
+    },
+    {
+      "action": "noop",
+      "case": 8,
+      "cohort": "development",
+      "image": "/midtier/minilab/scratch/chw4026/projects/side_project/generative/opd_related/opd_lab/runs/le3_probe_001/query_results/2f6b5cd6cd35d5e7a3bab7fb/a0cdfdeb71d99c77ba70.png",
+      "image_sha256": "227bbfbedbe3034771e2e32455b9cc4ad44230883aa1f894891e56c7a0c351cd",
+      "record": {
+        "constraints": [
+          {
+            "id": "text",
+            "kind": "ocr",
+            "text": "FRESH"
+          },
+          {
+            "id": "relation",
+            "kind": "geneval",
+            "metadata": {
+              "include": [
+                {
+                  "class": "bottle",
+                  "count": 1
+                },
+                {
+                  "class": "cup",
+                  "count": 1,
+                  "position": [
+                    "left of",
+                    0
+                  ]
+                }
+              ],
+              "tag": "position"
+            }
+          }
+        ],
+        "group": "jp1-train-relation",
+        "id": "jp1-train-relation-08",
+        "prompt": "A sharp, realistic studio photograph of exactly one cup clearly to the left of exactly one bottle, both fully visible. Above the objects, a large white sign displays only the word \"FRESH\" in bold black letters. No other letters or words are visible.",
+        "split": "train"
+      },
+      "v1": {
+        "admissible": true,
+        "alpha": 0.0,
+        "collateral_damage": false,
+        "details": {
+          "clauses": [
+            {
+              "exact": false,
+              "expected_text": "FRESH",
+              "id": "text",
+              "normalized_recognized": "",
+              "progress": 0.0
+            },
+            {
+              "id": "relation",
+              "metadata": {
+                "include": [
+                  {
+                    "class": "bottle",
+                    "count": 1
+                  },
+                  {
+                    "class": "cup",
+                    "count": 1,
+                    "position": [
+                      "left of",
+                      0
+                    ]
+                  }
+                ],
+                "prompt": "A sharp, realistic studio photograph of exactly one cup clearly to the left of exactly one bottle, both fully visible. Above the objects, a large white sign displays only the word \"FRESH\" in bold black letters. No other letters or words are visible.",
+                "tag": "position"
+              },
+              "strict": false,
+              "upstream_progress": 0.3333333333333333
+            }
+          ],
+          "ocr": {
+            "lines": [],
+            "recognized_text": ""
+          }
+        },
+        "distance": 0.0,
+        "error": null,
+        "image": "query_results/2f6b5cd6cd35d5e7a3bab7fb/a0cdfdeb71d99c77ba70.png",
+        "image_sha256": "227bbfbedbe3034771e2e32455b9cc4ad44230883aa1f894891e56c7a0c351cd",
+        "joint_success": false,
+        "name": "noop",
+        "progress": [
+          0.0,
+          0.3333333333333333
+        ],
+        "quality": null,
+        "satisfied": [
+          false,
+          false
+        ],
+        "teacher": null,
+        "utility": 0.08333333333333333,
+        "valid": true
+      }
+    },
+    {
+      "action": "target",
+      "case": 9,
+      "cohort": "development",
+      "image": "/midtier/minilab/scratch/chw4026/projects/side_project/generative/opd_related/opd_lab/runs/le3_probe_001/query_results/696b3bf9b4ce9066a2c6539d/e1814a829a74d87412dd.png",
+      "image_sha256": "584000215ffcf8814e9c332a78a58f2660e32ff01c2e1b29a77af59af65610e7",
+      "record": {
+        "constraints": [
+          {
+            "id": "text",
+            "kind": "ocr",
+            "text": "BLOOM"
+          },
+          {
+            "id": "count",
+            "kind": "geneval",
+            "metadata": {
+              "include": [
+                {
+                  "class": "bowl",
+                  "count": 1
+                }
+              ],
+              "tag": "counting"
+            }
+          }
+        ],
+        "group": "jp1-train-count",
+        "id": "jp1-train-count-12",
+        "prompt": "A sharp, realistic studio photograph of exactly one bowl, all fully visible and separated. Above the objects, a large white sign displays only the word \"BLOOM\" in bold black letters. No other letters or words are visible.",
+        "split": "train"
+      },
+      "v1": {
+        "admissible": true,
+        "alpha": 0.5,
+        "collateral_damage": false,
+        "details": {
+          "clauses": [
+            {
+              "exact": true,
+              "expected_text": "BLOOM",
+              "id": "text",
+              "normalized_recognized": "bloom",
+              "progress": 1.0
+            },
+            {
+              "id": "count",
+              "metadata": {
+                "include": [
+                  {
+                    "class": "bowl",
+                    "count": 1
+                  }
+                ],
+                "prompt": "A sharp, realistic studio photograph of exactly one bowl, all fully visible and separated. Above the objects, a large white sign displays only the word \"BLOOM\" in bold black letters. No other letters or words are visible.",
+                "tag": "counting"
+              },
+              "strict": true,
+              "upstream_progress": 1.0
+            }
+          ],
+          "ocr": {
+            "lines": [
+              {
+                "box": [
+                  [
+                    203.0,
+                    261.0
+                  ],
+                  [
+                    330.0,
+                    263.0
+                  ],
+                  [
+                    329.0,
+                    302.0
+                  ],
+                  [
+                    202.0,
+                    300.0
+                  ]
+                ],
+                "confidence": 0.9983911514282227,
+                "text": "BLOOM"
+              }
+            ],
+            "recognized_text": "BLOOM"
+          }
+        },
+        "distance": 0.15355060994625092,
+        "error": null,
+        "image": "query_results/696b3bf9b4ce9066a2c6539d/e1814a829a74d87412dd.png",
+        "image_sha256": "584000215ffcf8814e9c332a78a58f2660e32ff01c2e1b29a77af59af65610e7",
+        "joint_success": true,
+        "name": "geneval@0.5",
+        "progress": [
+          1.0,
+          1.0
+        ],
+        "quality": null,
+        "satisfied": [
+          true,
+          true
+        ],
+        "teacher": "geneval",
+        "utility": 1.0,
+        "valid": true
+      }
+    },
+    {
+      "action": "noop",
+      "case": 9,
+      "cohort": "development",
+      "image": "/midtier/minilab/scratch/chw4026/projects/side_project/generative/opd_related/opd_lab/runs/le3_probe_001/query_results/696b3bf9b4ce9066a2c6539d/519c0a42d1a2c16066bc.png",
+      "image_sha256": "d28febf3eada37a8ec6100c89001ebf4a17ca035c19bee38d1e20812461fd177",
+      "record": {
+        "constraints": [
+          {
+            "id": "text",
+            "kind": "ocr",
+            "text": "BLOOM"
+          },
+          {
+            "id": "count",
+            "kind": "geneval",
+            "metadata": {
+              "include": [
+                {
+                  "class": "bowl",
+                  "count": 1
+                }
+              ],
+              "tag": "counting"
+            }
+          }
+        ],
+        "group": "jp1-train-count",
+        "id": "jp1-train-count-12",
+        "prompt": "A sharp, realistic studio photograph of exactly one bowl, all fully visible and separated. Above the objects, a large white sign displays only the word \"BLOOM\" in bold black letters. No other letters or words are visible.",
+        "split": "train"
+      },
+      "v1": {
+        "admissible": true,
+        "alpha": 0.0,
+        "collateral_damage": false,
+        "details": {
+          "clauses": [
+            {
+              "exact": true,
+              "expected_text": "BLOOM",
+              "id": "text",
+              "normalized_recognized": "bloom",
+              "progress": 1.0
+            },
+            {
+              "id": "count",
+              "metadata": {
+                "include": [
+                  {
+                    "class": "bowl",
+                    "count": 1
+                  }
+                ],
+                "prompt": "A sharp, realistic studio photograph of exactly one bowl, all fully visible and separated. Above the objects, a large white sign displays only the word \"BLOOM\" in bold black letters. No other letters or words are visible.",
+                "tag": "counting"
+              },
+              "strict": false,
+              "upstream_progress": 0.0
+            }
+          ],
+          "ocr": {
+            "lines": [
+              {
+                "box": [
+                  [
+                    189.0,
+                    262.0
+                  ],
+                  [
+                    332.0,
+                    262.0
+                  ],
+                  [
+                    332.0,
+                    301.0
+                  ],
+                  [
+                    189.0,
+                    301.0
+                  ]
+                ],
+                "confidence": 0.9985893964767456,
+                "text": "BLOOM"
+              }
+            ],
+            "recognized_text": "BLOOM"
+          }
+        },
+        "distance": 0.0,
+        "error": null,
+        "image": "query_results/696b3bf9b4ce9066a2c6539d/519c0a42d1a2c16066bc.png",
+        "image_sha256": "d28febf3eada37a8ec6100c89001ebf4a17ca035c19bee38d1e20812461fd177",
+        "joint_success": false,
+        "name": "noop",
+        "progress": [
+          1.0,
+          0.0
+        ],
+        "quality": null,
+        "satisfied": [
+          true,
+          false
+        ],
+        "teacher": null,
+        "utility": 0.25,
+        "valid": true
+      }
+    },
+    {
+      "action": "target",
+      "case": 10,
+      "cohort": "development",
+      "image": "/midtier/minilab/scratch/chw4026/projects/side_project/generative/opd_related/opd_lab/runs/le3_probe_001/query_results/682955f2af351ffe1b7984e9/8cfd7757c5e7d64b6d85.png",
+      "image_sha256": "463194b0842901d2a0b72efdcf878137750fbbfd3082d89eacdd0b592ad7aaf7",
+      "record": {
+        "constraints": [
+          {
+            "id": "text",
+            "kind": "ocr",
+            "text": "DAWN"
+          },
+          {
+            "id": "relation",
+            "kind": "geneval",
+            "metadata": {
+              "include": [
+                {
+                  "class": "potted plant",
+                  "count": 1
+                },
+                {
+                  "class": "chair",
+                  "count": 1,
+                  "position": [
+                    "left of",
+                    0
+                  ]
+                }
+              ],
+              "tag": "position"
+            }
+          }
+        ],
+        "group": "jp1-train-relation",
+        "id": "jp1-train-relation-02",
+        "prompt": "A sharp, realistic studio photograph of exactly one chair clearly to the left of exactly one potted plant, both fully visible. Above the objects, a large white sign displays only the word \"DAWN\" in bold black letters. No other letters or words are visible.",
+        "split": "train"
+      },
+      "v1": {
+        "admissible": true,
+        "alpha": 0.5,
+        "collateral_damage": false,
+        "details": {
+          "clauses": [
+            {
+              "exact": true,
+              "expected_text": "DAWN",
+              "id": "text",
+              "normalized_recognized": "dawn",
+              "progress": 1.0
+            },
+            {
+              "id": "relation",
+              "metadata": {
+                "include": [
+                  {
+                    "class": "potted plant",
+                    "count": 1
+                  },
+                  {
+                    "class": "chair",
+                    "count": 1,
+                    "position": [
+                      "left of",
+                      0
+                    ]
+                  }
+                ],
+                "prompt": "A sharp, realistic studio photograph of exactly one chair clearly to the left of exactly one potted plant, both fully visible. Above the objects, a large white sign displays only the word \"DAWN\" in bold black letters. No other letters or words are visible.",
+                "tag": "position"
+              },
+              "strict": true,
+              "upstream_progress": 1.0
+            }
+          ],
+          "ocr": {
+            "lines": [
+              {
+                "box": [
+                  [
+                    83.0,
+                    61.0
+                  ],
+                  [
+                    218.0,
+                    59.0
+                  ],
+                  [
+                    219.0,
+                    105.0
+                  ],
+                  [
+                    84.0,
+                    107.0
+                  ]
+                ],
+                "confidence": 0.9963703751564026,
+                "text": "DAWN"
+              }
+            ],
+            "recognized_text": "DAWN"
+          }
+        },
+        "distance": 0.08798415958881378,
+        "error": null,
+        "image": "query_results/682955f2af351ffe1b7984e9/8cfd7757c5e7d64b6d85.png",
+        "image_sha256": "463194b0842901d2a0b72efdcf878137750fbbfd3082d89eacdd0b592ad7aaf7",
+        "joint_success": true,
+        "name": "geneval@0.5",
+        "progress": [
+          1.0,
+          1.0
+        ],
+        "quality": null,
+        "satisfied": [
+          true,
+          true
+        ],
+        "teacher": "geneval",
+        "utility": 1.0,
+        "valid": true
+      }
+    },
+    {
+      "action": "noop",
+      "case": 10,
+      "cohort": "development",
+      "image": "/midtier/minilab/scratch/chw4026/projects/side_project/generative/opd_related/opd_lab/runs/le3_probe_001/query_results/682955f2af351ffe1b7984e9/897980665af72eafd88b.png",
+      "image_sha256": "8de3c89a92795b9390259821e582cb523dca597334bea8fa15418dbc80aa10a7",
+      "record": {
+        "constraints": [
+          {
+            "id": "text",
+            "kind": "ocr",
+            "text": "DAWN"
+          },
+          {
+            "id": "relation",
+            "kind": "geneval",
+            "metadata": {
+              "include": [
+                {
+                  "class": "potted plant",
+                  "count": 1
+                },
+                {
+                  "class": "chair",
+                  "count": 1,
+                  "position": [
+                    "left of",
+                    0
+                  ]
+                }
+              ],
+              "tag": "position"
+            }
+          }
+        ],
+        "group": "jp1-train-relation",
+        "id": "jp1-train-relation-02",
+        "prompt": "A sharp, realistic studio photograph of exactly one chair clearly to the left of exactly one potted plant, both fully visible. Above the objects, a large white sign displays only the word \"DAWN\" in bold black letters. No other letters or words are visible.",
+        "split": "train"
+      },
+      "v1": {
+        "admissible": true,
+        "alpha": 0.0,
+        "collateral_damage": false,
+        "details": {
+          "clauses": [
+            {
+              "exact": true,
+              "expected_text": "DAWN",
+              "id": "text",
+              "normalized_recognized": "dawn",
+              "progress": 1.0
+            },
+            {
+              "id": "relation",
+              "metadata": {
+                "include": [
+                  {
+                    "class": "potted plant",
+                    "count": 1
+                  },
+                  {
+                    "class": "chair",
+                    "count": 1,
+                    "position": [
+                      "left of",
+                      0
+                    ]
+                  }
+                ],
+                "prompt": "A sharp, realistic studio photograph of exactly one chair clearly to the left of exactly one potted plant, both fully visible. Above the objects, a large white sign displays only the word \"DAWN\" in bold black letters. No other letters or words are visible.",
+                "tag": "position"
+              },
+              "strict": false,
+              "upstream_progress": 0.3333333333333333
+            }
+          ],
+          "ocr": {
+            "lines": [
+              {
+                "box": [
+                  [
+                    83.0,
+                    61.0
+                  ],
+                  [
+                    218.0,
+                    58.0
+                  ],
+                  [
+                    219.0,
+                    105.0
+                  ],
+                  [
+                    84.0,
+                    108.0
+                  ]
+                ],
+                "confidence": 0.9965956211090088,
+                "text": "DAWN"
+              }
+            ],
+            "recognized_text": "DAWN"
+          }
+        },
+        "distance": 0.0,
+        "error": null,
+        "image": "query_results/682955f2af351ffe1b7984e9/897980665af72eafd88b.png",
+        "image_sha256": "8de3c89a92795b9390259821e582cb523dca597334bea8fa15418dbc80aa10a7",
+        "joint_success": false,
+        "name": "noop",
+        "progress": [
+          1.0,
+          0.3333333333333333
+        ],
+        "quality": null,
+        "satisfied": [
+          true,
+          false
+        ],
+        "teacher": null,
+        "utility": 0.3333333333333333,
+        "valid": true
+      }
+    },
+    {
+      "action": "noop",
+      "case": 11,
+      "cohort": "development",
+      "image": "/midtier/minilab/scratch/chw4026/projects/side_project/generative/opd_related/opd_lab/runs/le3_probe_001/query_results/1ad4ba8b760323bbb76819cf/eb7f7f3e3f1abff8cdd4.png",
+      "image_sha256": "152e1050d98fb50e288cbca3700b525301867f85a08f8a45b41e8831c3ff3c85",
+      "record": {
+        "constraints": [
+          {
+            "id": "text",
+            "kind": "ocr",
+            "text": "BLOOM"
+          },
+          {
+            "id": "relation",
+            "kind": "geneval",
+            "metadata": {
+              "include": [
+                {
+                  "class": "bottle",
+                  "count": 1
+                },
+                {
+                  "class": "cup",
+                  "count": 1,
+                  "position": [
+                    "right of",
+                    0
+                  ]
+                }
+              ],
+              "tag": "position"
+            }
+          }
+        ],
+        "group": "jp1-train-relation",
+        "id": "jp1-train-relation-12",
+        "prompt": "A sharp, realistic studio photograph of exactly one cup clearly to the right of exactly one bottle, both fully visible. Above the objects, a large white sign displays only the word \"BLOOM\" in bold black letters. No other letters or words are visible.",
+        "split": "train"
+      },
+      "v1": {
+        "admissible": true,
+        "alpha": 0.0,
+        "collateral_damage": false,
+        "details": {
+          "clauses": [
+            {
+              "exact": false,
+              "expected_text": "BLOOM",
+              "id": "text",
+              "normalized_recognized": "loo",
+              "progress": 0.6
+            },
+            {
+              "id": "relation",
+              "metadata": {
+                "include": [
+                  {
+                    "class": "bottle",
+                    "count": 1
+                  },
+                  {
+                    "class": "cup",
+                    "count": 1,
+                    "position": [
+                      "right of",
+                      0
+                    ]
+                  }
+                ],
+                "prompt": "A sharp, realistic studio photograph of exactly one cup clearly to the right of exactly one bottle, both fully visible. Above the objects, a large white sign displays only the word \"BLOOM\" in bold black letters. No other letters or words are visible.",
+                "tag": "position"
+              },
+              "strict": false,
+              "upstream_progress": 0.75
+            }
+          ],
+          "ocr": {
+            "lines": [
+              {
+                "box": [
+                  [
+                    141.0,
+                    143.0
+                  ],
+                  [
+                    383.0,
+                    143.0
+                  ],
+                  [
+                    383.0,
+                    213.0
+                  ],
+                  [
+                    141.0,
+                    213.0
+                  ]
+                ],
+                "confidence": 0.973638117313385,
+                "text": "LOO"
+              }
+            ],
+            "recognized_text": "LOO"
+          }
+        },
+        "distance": 0.0,
+        "error": null,
+        "image": "query_results/1ad4ba8b760323bbb76819cf/eb7f7f3e3f1abff8cdd4.png",
+        "image_sha256": "152e1050d98fb50e288cbca3700b525301867f85a08f8a45b41e8831c3ff3c85",
+        "joint_success": false,
+        "name": "noop",
+        "progress": [
+          0.6,
+          0.75
+        ],
+        "quality": null,
+        "satisfied": [
+          false,
+          false
+        ],
+        "teacher": null,
+        "utility": 0.3375,
+        "valid": true
+      }
+    },
+    {
+      "action": "target",
+      "case": 11,
+      "cohort": "development",
+      "image": "/midtier/minilab/scratch/chw4026/projects/side_project/generative/opd_related/opd_lab/runs/le3_probe_001/query_results/1ad4ba8b760323bbb76819cf/794e4d7495988b9ea80c.png",
+      "image_sha256": "f1cdb1d567ae625571e06ca57382e1d0cf54a4001a93a2f5c2133e3cdf3c8f83",
+      "record": {
+        "constraints": [
+          {
+            "id": "text",
+            "kind": "ocr",
+            "text": "BLOOM"
+          },
+          {
+            "id": "relation",
+            "kind": "geneval",
+            "metadata": {
+              "include": [
+                {
+                  "class": "bottle",
+                  "count": 1
+                },
+                {
+                  "class": "cup",
+                  "count": 1,
+                  "position": [
+                    "right of",
+                    0
+                  ]
+                }
+              ],
+              "tag": "position"
+            }
+          }
+        ],
+        "group": "jp1-train-relation",
+        "id": "jp1-train-relation-12",
+        "prompt": "A sharp, realistic studio photograph of exactly one cup clearly to the right of exactly one bottle, both fully visible. Above the objects, a large white sign displays only the word \"BLOOM\" in bold black letters. No other letters or words are visible.",
+        "split": "train"
+      },
+      "v1": {
+        "admissible": true,
+        "alpha": 1.0,
+        "collateral_damage": false,
+        "details": {
+          "clauses": [
+            {
+              "exact": true,
+              "expected_text": "BLOOM",
+              "id": "text",
+              "normalized_recognized": "bloom",
+              "progress": 1.0
+            },
+            {
+              "id": "relation",
+              "metadata": {
+                "include": [
+                  {
+                    "class": "bottle",
+                    "count": 1
+                  },
+                  {
+                    "class": "cup",
+                    "count": 1,
+                    "position": [
+                      "right of",
+                      0
+                    ]
+                  }
+                ],
+                "prompt": "A sharp, realistic studio photograph of exactly one cup clearly to the right of exactly one bottle, both fully visible. Above the objects, a large white sign displays only the word \"BLOOM\" in bold black letters. No other letters or words are visible.",
+                "tag": "position"
+              },
+              "strict": true,
+              "upstream_progress": 1.0
+            }
+          ],
+          "ocr": {
+            "lines": [
+              {
+                "box": [
+                  [
+                    196.0,
+                    168.0
+                  ],
+                  [
+                    335.0,
+                    168.0
+                  ],
+                  [
+                    335.0,
+                    203.0
+                  ],
+                  [
+                    196.0,
+                    203.0
+                  ]
+                ],
+                "confidence": 0.9963285326957703,
+                "text": "BLOOM"
+              }
+            ],
+            "recognized_text": "BLOOM"
+          }
+        },
+        "distance": 0.2963750958442688,
+        "error": null,
+        "image": "query_results/1ad4ba8b760323bbb76819cf/794e4d7495988b9ea80c.png",
+        "image_sha256": "f1cdb1d567ae625571e06ca57382e1d0cf54a4001a93a2f5c2133e3cdf3c8f83",
+        "joint_success": true,
+        "name": "ocr@1",
+        "progress": [
+          1.0,
+          1.0
+        ],
+        "quality": null,
+        "satisfied": [
+          true,
+          true
+        ],
+        "teacher": "ocr",
+        "utility": 1.0,
+        "valid": true
+      }
+    },
+    {
+      "action": "target",
+      "case": 12,
+      "cohort": "development",
+      "image": "/midtier/minilab/scratch/chw4026/projects/side_project/generative/opd_related/opd_lab/runs/le3_probe_001/query_results/65ccf8a2117b86f026c4776d/7204e87cfc21dee89490.png",
+      "image_sha256": "6ea18f09924e512c44488d4447feb3159154e1dffd35046d0a60227f99f0f7a6",
+      "record": {
+        "constraints": [
+          {
+            "id": "text",
+            "kind": "ocr",
+            "text": "WAVE"
+          },
+          {
+            "id": "relation",
+            "kind": "geneval",
+            "metadata": {
+              "include": [
+                {
+                  "class": "car",
+                  "count": 1
+                },
+                {
+                  "class": "bicycle",
+                  "count": 1,
+                  "position": [
+                    "right of",
+                    0
+                  ]
+                }
+              ],
+              "tag": "position"
+            }
+          }
+        ],
+        "group": "jp1-train-relation",
+        "id": "jp1-train-relation-07",
+        "prompt": "A sharp, realistic studio photograph of exactly one bicycle clearly to the right of exactly one car, both fully visible. Above the objects, a large white sign displays only the word \"WAVE\" in bold black letters. No other letters or words are visible.",
+        "split": "train"
+      },
+      "v1": {
+        "admissible": true,
+        "alpha": 1.0,
+        "collateral_damage": false,
+        "details": {
+          "clauses": [
+            {
+              "exact": true,
+              "expected_text": "WAVE",
+              "id": "text",
+              "normalized_recognized": "wave",
+              "progress": 1.0
+            },
+            {
+              "id": "relation",
+              "metadata": {
+                "include": [
+                  {
+                    "class": "car",
+                    "count": 1
+                  },
+                  {
+                    "class": "bicycle",
+                    "count": 1,
+                    "position": [
+                      "right of",
+                      0
+                    ]
+                  }
+                ],
+                "prompt": "A sharp, realistic studio photograph of exactly one bicycle clearly to the right of exactly one car, both fully visible. Above the objects, a large white sign displays only the word \"WAVE\" in bold black letters. No other letters or words are visible.",
+                "tag": "position"
+              },
+              "strict": true,
+              "upstream_progress": 1.0
+            }
+          ],
+          "ocr": {
+            "lines": [
+              {
+                "box": [
+                  [
+                    135.0,
+                    95.0
+                  ],
+                  [
+                    327.0,
+                    95.0
+                  ],
+                  [
+                    327.0,
+                    148.0
+                  ],
+                  [
+                    135.0,
+                    148.0
+                  ]
+                ],
+                "confidence": 0.9967262744903564,
+                "text": "Wave"
+              }
+            ],
+            "recognized_text": "Wave"
+          }
+        },
+        "distance": 0.6995801329612732,
+        "error": null,
+        "image": "query_results/65ccf8a2117b86f026c4776d/7204e87cfc21dee89490.png",
+        "image_sha256": "6ea18f09924e512c44488d4447feb3159154e1dffd35046d0a60227f99f0f7a6",
+        "joint_success": true,
+        "name": "geneval@1",
+        "progress": [
+          1.0,
+          1.0
+        ],
+        "quality": null,
+        "satisfied": [
+          true,
+          true
+        ],
+        "teacher": "geneval",
+        "utility": 1.0,
+        "valid": true
+      }
+    },
+    {
+      "action": "noop",
+      "case": 12,
+      "cohort": "development",
+      "image": "/midtier/minilab/scratch/chw4026/projects/side_project/generative/opd_related/opd_lab/runs/le3_probe_001/query_results/65ccf8a2117b86f026c4776d/6625289210402a06c614.png",
+      "image_sha256": "a8f72f3bdfd748ec289b1ce71bfccf9fd9d101cd8b1dcaa9b200da34c0147c94",
+      "record": {
+        "constraints": [
+          {
+            "id": "text",
+            "kind": "ocr",
+            "text": "WAVE"
+          },
+          {
+            "id": "relation",
+            "kind": "geneval",
+            "metadata": {
+              "include": [
+                {
+                  "class": "car",
+                  "count": 1
+                },
+                {
+                  "class": "bicycle",
+                  "count": 1,
+                  "position": [
+                    "right of",
+                    0
+                  ]
+                }
+              ],
+              "tag": "position"
+            }
+          }
+        ],
+        "group": "jp1-train-relation",
+        "id": "jp1-train-relation-07",
+        "prompt": "A sharp, realistic studio photograph of exactly one bicycle clearly to the right of exactly one car, both fully visible. Above the objects, a large white sign displays only the word \"WAVE\" in bold black letters. No other letters or words are visible.",
+        "split": "train"
+      },
+      "v1": {
+        "admissible": true,
+        "alpha": 0.0,
+        "collateral_damage": false,
+        "details": {
+          "clauses": [
+            {
+              "exact": false,
+              "expected_text": "WAVE",
+              "id": "text",
+              "normalized_recognized": "rwav(e",
+              "progress": 0.6666666666666667
+            },
+            {
+              "id": "relation",
+              "metadata": {
+                "include": [
+                  {
+                    "class": "car",
+                    "count": 1
+                  },
+                  {
+                    "class": "bicycle",
+                    "count": 1,
+                    "position": [
+                      "right of",
+                      0
+                    ]
+                  }
+                ],
+                "prompt": "A sharp, realistic studio photograph of exactly one bicycle clearly to the right of exactly one car, both fully visible. Above the objects, a large white sign displays only the word \"WAVE\" in bold black letters. No other letters or words are visible.",
+                "tag": "position"
+              },
+              "strict": false,
+              "upstream_progress": 0.3333333333333333
+            }
+          ],
+          "ocr": {
+            "lines": [
+              {
+                "box": [
+                  [
+                    47.0,
+                    79.0
+                  ],
+                  [
+                    482.0,
+                    79.0
+                  ],
+                  [
+                    482.0,
+                    133.0
+                  ],
+                  [
+                    47.0,
+                    133.0
+                  ]
+                ],
+                "confidence": 0.6804697513580322,
+                "text": "RWAV(E"
+              }
+            ],
+            "recognized_text": "RWAV(E"
+          }
+        },
+        "distance": 0.0,
+        "error": null,
+        "image": "query_results/65ccf8a2117b86f026c4776d/6625289210402a06c614.png",
+        "image_sha256": "a8f72f3bdfd748ec289b1ce71bfccf9fd9d101cd8b1dcaa9b200da34c0147c94",
+        "joint_success": false,
+        "name": "noop",
+        "progress": [
+          0.6666666666666667,
+          0.3333333333333333
+        ],
+        "quality": null,
+        "satisfied": [
+          false,
+          false
+        ],
+        "teacher": null,
+        "utility": 0.25,
+        "valid": true
+      }
+    },
+    {
+      "action": "target",
+      "case": 13,
+      "cohort": "development",
+      "image": "/midtier/minilab/scratch/chw4026/projects/side_project/generative/opd_related/opd_lab/runs/le3_probe_001/query_results/3fdaae69519671d0e1e4a0b1/0e6c0c6d9556ef7d945b.png",
+      "image_sha256": "14d4d14eb035aa8509c0658728946738fbaf8b90ecde7a5f6bab2754342a64f8",
+      "record": {
+        "constraints": [
+          {
+            "id": "text",
+            "kind": "ocr",
+            "text": "LOFT"
+          },
+          {
+            "id": "count",
+            "kind": "geneval",
+            "metadata": {
+              "include": [
+                {
+                  "class": "book",
+                  "count": 1
+                }
+              ],
+              "tag": "counting"
+            }
+          }
+        ],
+        "group": "jp1-train-count",
+        "id": "jp1-train-count-06",
+        "prompt": "A sharp, realistic studio photograph of exactly one book, all fully visible and separated. Above the objects, a large white sign displays only the word \"LOFT\" in bold black letters. No other letters or words are visible.",
+        "split": "train"
+      },
+      "v1": {
+        "admissible": true,
+        "alpha": 1.0,
+        "collateral_damage": false,
+        "details": {
+          "clauses": [
+            {
+              "exact": true,
+              "expected_text": "LOFT",
+              "id": "text",
+              "normalized_recognized": "loft",
+              "progress": 1.0
+            },
+            {
+              "id": "count",
+              "metadata": {
+                "include": [
+                  {
+                    "class": "book",
+                    "count": 1
+                  }
+                ],
+                "prompt": "A sharp, realistic studio photograph of exactly one book, all fully visible and separated. Above the objects, a large white sign displays only the word \"LOFT\" in bold black letters. No other letters or words are visible.",
+                "tag": "counting"
+              },
+              "strict": true,
+              "upstream_progress": 1.0
+            }
+          ],
+          "ocr": {
+            "lines": [
+              {
+                "box": [
+                  [
+                    171.0,
+                    224.0
+                  ],
+                  [
+                    343.0,
+                    224.0
+                  ],
+                  [
+                    343.0,
+                    282.0
+                  ],
+                  [
+                    171.0,
+                    282.0
+                  ]
+                ],
+                "confidence": 0.9986956715583801,
+                "text": "LOFT"
+              }
+            ],
+            "recognized_text": "LOFT"
+          }
+        },
+        "distance": 0.08190610259771347,
+        "error": null,
+        "image": "query_results/3fdaae69519671d0e1e4a0b1/0e6c0c6d9556ef7d945b.png",
+        "image_sha256": "14d4d14eb035aa8509c0658728946738fbaf8b90ecde7a5f6bab2754342a64f8",
+        "joint_success": true,
+        "name": "ocr@1",
+        "progress": [
+          1.0,
+          1.0
+        ],
+        "quality": null,
+        "satisfied": [
+          true,
+          true
+        ],
+        "teacher": "ocr",
+        "utility": 1.0,
+        "valid": true
+      }
+    },
+    {
+      "action": "noop",
+      "case": 13,
+      "cohort": "development",
+      "image": "/midtier/minilab/scratch/chw4026/projects/side_project/generative/opd_related/opd_lab/runs/le3_probe_001/query_results/3fdaae69519671d0e1e4a0b1/2c6b171816bdfc03d9ba.png",
+      "image_sha256": "0b793a25bc0ae4a5c2b04a4f3c6e10cbf7d6d4942068c82175fdde6753e4c7e2",
+      "record": {
+        "constraints": [
+          {
+            "id": "text",
+            "kind": "ocr",
+            "text": "LOFT"
+          },
+          {
+            "id": "count",
+            "kind": "geneval",
+            "metadata": {
+              "include": [
+                {
+                  "class": "book",
+                  "count": 1
+                }
+              ],
+              "tag": "counting"
+            }
+          }
+        ],
+        "group": "jp1-train-count",
+        "id": "jp1-train-count-06",
+        "prompt": "A sharp, realistic studio photograph of exactly one book, all fully visible and separated. Above the objects, a large white sign displays only the word \"LOFT\" in bold black letters. No other letters or words are visible.",
+        "split": "train"
+      },
+      "v1": {
+        "admissible": true,
+        "alpha": 0.0,
+        "collateral_damage": false,
+        "details": {
+          "clauses": [
+            {
+              "exact": true,
+              "expected_text": "LOFT",
+              "id": "text",
+              "normalized_recognized": "loft",
+              "progress": 1.0
+            },
+            {
+              "id": "count",
+              "metadata": {
+                "include": [
+                  {
+                    "class": "book",
+                    "count": 1
+                  }
+                ],
+                "prompt": "A sharp, realistic studio photograph of exactly one book, all fully visible and separated. Above the objects, a large white sign displays only the word \"LOFT\" in bold black letters. No other letters or words are visible.",
+                "tag": "counting"
+              },
+              "strict": false,
+              "upstream_progress": 0.0
+            }
+          ],
+          "ocr": {
+            "lines": [
+              {
+                "box": [
+                  [
+                    170.0,
+                    224.0
+                  ],
+                  [
+                    343.0,
+                    224.0
+                  ],
+                  [
+                    343.0,
+                    285.0
+                  ],
+                  [
+                    170.0,
+                    285.0
+                  ]
+                ],
+                "confidence": 0.9984279870986938,
+                "text": "LOFT"
+              }
+            ],
+            "recognized_text": "LOFT"
+          }
+        },
+        "distance": 0.0,
+        "error": null,
+        "image": "query_results/3fdaae69519671d0e1e4a0b1/2c6b171816bdfc03d9ba.png",
+        "image_sha256": "0b793a25bc0ae4a5c2b04a4f3c6e10cbf7d6d4942068c82175fdde6753e4c7e2",
+        "joint_success": false,
+        "name": "noop",
+        "progress": [
+          1.0,
+          0.0
+        ],
+        "quality": null,
+        "satisfied": [
+          true,
+          false
+        ],
+        "teacher": null,
+        "utility": 0.25,
+        "valid": true
+      }
+    },
+    {
+      "action": "target",
+      "case": 14,
+      "cohort": "development",
+      "image": "/midtier/minilab/scratch/chw4026/projects/side_project/generative/opd_related/opd_lab/runs/le3_probe_001/query_results/063a8dd0d8e0e96b4246f337/c6ecfa1b0b119bb7c819.png",
+      "image_sha256": "55126cb8411ffad04b93cf219544d1291c00221b8a718e81ca3dc490f8abdf29",
+      "record": {
+        "constraints": [
+          {
+            "id": "text",
+            "kind": "ocr",
+            "text": "WAVE"
+          },
+          {
+            "id": "count",
+            "kind": "geneval",
+            "metadata": {
+              "include": [
+                {
+                  "class": "banana",
+                  "count": 1
+                }
+              ],
+              "tag": "counting"
+            }
+          },
+          {
+            "id": "color",
+            "kind": "geneval",
+            "metadata": {
+              "include": [
+                {
+                  "class": "banana",
+                  "color": "red",
+                  "count": 1
+                }
+              ],
+              "tag": "colors"
+            }
+          }
+        ],
+        "group": "jp1-train-count_color",
+        "id": "jp1-train-count_color-07",
+        "prompt": "A sharp, realistic studio photograph of exactly one red banana, all fully visible and separated. Above the objects, a large white sign displays only the word \"WAVE\" in bold black letters. No other letters or words are visible.",
+        "split": "train"
+      },
+      "v1": {
+        "admissible": true,
+        "alpha": 0.5,
+        "collateral_damage": false,
+        "details": {
+          "clauses": [
+            {
+              "exact": true,
+              "expected_text": "WAVE",
+              "id": "text",
+              "normalized_recognized": "wave",
+              "progress": 1.0
+            },
+            {
+              "id": "count",
+              "metadata": {
+                "include": [
+                  {
+                    "class": "banana",
+                    "count": 1
+                  }
+                ],
+                "prompt": "A sharp, realistic studio photograph of exactly one red banana, all fully visible and separated. Above the objects, a large white sign displays only the word \"WAVE\" in bold black letters. No other letters or words are visible.",
+                "tag": "counting"
+              },
+              "strict": true,
+              "upstream_progress": 1.0
+            },
+            {
+              "id": "color",
+              "metadata": {
+                "include": [
+                  {
+                    "class": "banana",
+                    "color": "red",
+                    "count": 1
+                  }
+                ],
+                "prompt": "A sharp, realistic studio photograph of exactly one red banana, all fully visible and separated. Above the objects, a large white sign displays only the word \"WAVE\" in bold black letters. No other letters or words are visible.",
+                "tag": "colors"
+              },
+              "strict": true,
+              "upstream_progress": 1.0
+            }
+          ],
+          "ocr": {
+            "lines": [
+              {
+                "box": [
+                  [
+                    113.0,
+                    145.0
+                  ],
+                  [
+                    411.0,
+                    142.0
+                  ],
+                  [
+                    412.0,
+                    234.0
+                  ],
+                  [
+                    114.0,
+                    237.0
+                  ]
+                ],
+                "confidence": 0.9633817672729492,
+                "text": "WAVE"
+              }
+            ],
+            "recognized_text": "WAVE"
+          }
+        },
+        "distance": 0.13250777125358582,
+        "error": null,
+        "image": "query_results/063a8dd0d8e0e96b4246f337/c6ecfa1b0b119bb7c819.png",
+        "image_sha256": "55126cb8411ffad04b93cf219544d1291c00221b8a718e81ca3dc490f8abdf29",
+        "joint_success": true,
+        "name": "ocr@0.5",
+        "progress": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "quality": null,
+        "satisfied": [
+          true,
+          true,
+          true
+        ],
+        "teacher": "ocr",
+        "utility": 1.0,
+        "valid": true
+      }
+    },
+    {
+      "action": "noop",
+      "case": 14,
+      "cohort": "development",
+      "image": "/midtier/minilab/scratch/chw4026/projects/side_project/generative/opd_related/opd_lab/runs/le3_probe_001/query_results/063a8dd0d8e0e96b4246f337/6a2708799213144f7252.png",
+      "image_sha256": "5a52456fe62a7e8a504750f22f62ef194bd0033bdaab3577a38209bfeec5d4b1",
+      "record": {
+        "constraints": [
+          {
+            "id": "text",
+            "kind": "ocr",
+            "text": "WAVE"
+          },
+          {
+            "id": "count",
+            "kind": "geneval",
+            "metadata": {
+              "include": [
+                {
+                  "class": "banana",
+                  "count": 1
+                }
+              ],
+              "tag": "counting"
+            }
+          },
+          {
+            "id": "color",
+            "kind": "geneval",
+            "metadata": {
+              "include": [
+                {
+                  "class": "banana",
+                  "color": "red",
+                  "count": 1
+                }
+              ],
+              "tag": "colors"
+            }
+          }
+        ],
+        "group": "jp1-train-count_color",
+        "id": "jp1-train-count_color-07",
+        "prompt": "A sharp, realistic studio photograph of exactly one red banana, all fully visible and separated. Above the objects, a large white sign displays only the word \"WAVE\" in bold black letters. No other letters or words are visible.",
+        "split": "train"
+      },
+      "v1": {
+        "admissible": true,
+        "alpha": 0.0,
+        "collateral_damage": false,
+        "details": {
+          "clauses": [
+            {
+              "exact": true,
+              "expected_text": "WAVE",
+              "id": "text",
+              "normalized_recognized": "wave",
+              "progress": 1.0
+            },
+            {
+              "id": "count",
+              "metadata": {
+                "include": [
+                  {
+                    "class": "banana",
+                    "count": 1
+                  }
+                ],
+                "prompt": "A sharp, realistic studio photograph of exactly one red banana, all fully visible and separated. Above the objects, a large white sign displays only the word \"WAVE\" in bold black letters. No other letters or words are visible.",
+                "tag": "counting"
+              },
+              "strict": true,
+              "upstream_progress": 1.0
+            },
+            {
+              "id": "color",
+              "metadata": {
+                "include": [
+                  {
+                    "class": "banana",
+                    "color": "red",
+                    "count": 1
+                  }
+                ],
+                "prompt": "A sharp, realistic studio photograph of exactly one red banana, all fully visible and separated. Above the objects, a large white sign displays only the word \"WAVE\" in bold black letters. No other letters or words are visible.",
+                "tag": "colors"
+              },
+              "strict": false,
+              "upstream_progress": 0.5
+            }
+          ],
+          "ocr": {
+            "lines": [
+              {
+                "box": [
+                  [
+                    150.0,
+                    178.0
+                  ],
+                  [
+                    410.0,
+                    178.0
+                  ],
+                  [
+                    410.0,
+                    237.0
+                  ],
+                  [
+                    150.0,
+                    237.0
+                  ]
+                ],
+                "confidence": 0.9235655665397644,
+                "text": "WAVE"
+              }
+            ],
+            "recognized_text": "WAVE"
+          }
+        },
+        "distance": 0.0,
+        "error": null,
+        "image": "query_results/063a8dd0d8e0e96b4246f337/6a2708799213144f7252.png",
+        "image_sha256": "5a52456fe62a7e8a504750f22f62ef194bd0033bdaab3577a38209bfeec5d4b1",
+        "joint_success": false,
+        "name": "noop",
+        "progress": [
+          1.0,
+          1.0,
+          0.5
+        ],
+        "quality": null,
+        "satisfied": [
+          true,
+          true,
+          false
+        ],
+        "teacher": null,
+        "utility": 0.4166666666666667,
+        "valid": true
+      }
+    },
+    {
+      "action": "target",
+      "case": 15,
+      "cohort": "development",
+      "image": "/midtier/minilab/scratch/chw4026/projects/side_project/generative/opd_related/opd_lab/runs/le3_probe_001/query_results/838201ab02ed40be41710bef/821f34f0f8476cd49277.png",
+      "image_sha256": "a6fcc24e2326789e96427ca6cd0e257b11574b067851e52fefdc5183a75a7ef2",
+      "record": {
+        "constraints": [
+          {
+            "id": "text",
+            "kind": "ocr",
+            "text": "LUNA"
+          },
+          {
+            "id": "relation",
+            "kind": "geneval",
+            "metadata": {
+              "include": [
+                {
+                  "class": "car",
+                  "count": 1
+                },
+                {
+                  "class": "bicycle",
+                  "count": 1,
+                  "position": [
+                    "left of",
+                    0
+                  ]
+                }
+              ],
+              "tag": "position"
+            }
+          }
+        ],
+        "group": "jp1-train-relation",
+        "id": "jp1-train-relation-03",
+        "prompt": "A sharp, realistic studio photograph of exactly one bicycle clearly to the left of exactly one car, both fully visible. Above the objects, a large white sign displays only the word \"LUNA\" in bold black letters. No other letters or words are visible.",
+        "split": "train"
+      },
+      "v1": {
+        "admissible": true,
+        "alpha": 0.5,
+        "collateral_damage": false,
+        "details": {
+          "clauses": [
+            {
+              "exact": true,
+              "expected_text": "LUNA",
+              "id": "text",
+              "normalized_recognized": "luna",
+              "progress": 1.0
+            },
+            {
+              "id": "relation",
+              "metadata": {
+                "include": [
+                  {
+                    "class": "car",
+                    "count": 1
+                  },
+                  {
+                    "class": "bicycle",
+                    "count": 1,
+                    "position": [
+                      "left of",
+                      0
+                    ]
+                  }
+                ],
+                "prompt": "A sharp, realistic studio photograph of exactly one bicycle clearly to the left of exactly one car, both fully visible. Above the objects, a large white sign displays only the word \"LUNA\" in bold black letters. No other letters or words are visible.",
+                "tag": "position"
+              },
+              "strict": true,
+              "upstream_progress": 1.0
+            }
+          ],
+          "ocr": {
+            "lines": [
+              {
+                "box": [
+                  [
+                    167.0,
+                    102.0
+                  ],
+                  [
+                    313.0,
+                    104.0
+                  ],
+                  [
+                    312.0,
+                    154.0
+                  ],
+                  [
+                    166.0,
+                    152.0
+                  ]
+                ],
+                "confidence": 0.9982662200927734,
+                "text": "LUNA"
+              }
+            ],
+            "recognized_text": "LUNA"
+          }
+        },
+        "distance": 0.054002054035663605,
+        "error": null,
+        "image": "query_results/838201ab02ed40be41710bef/821f34f0f8476cd49277.png",
+        "image_sha256": "a6fcc24e2326789e96427ca6cd0e257b11574b067851e52fefdc5183a75a7ef2",
+        "joint_success": true,
+        "name": "ocr@0.5",
+        "progress": [
+          1.0,
+          1.0
+        ],
+        "quality": null,
+        "satisfied": [
+          true,
+          true
+        ],
+        "teacher": "ocr",
+        "utility": 1.0,
+        "valid": true
+      }
+    },
+    {
+      "action": "noop",
+      "case": 15,
+      "cohort": "development",
+      "image": "/midtier/minilab/scratch/chw4026/projects/side_project/generative/opd_related/opd_lab/runs/le3_probe_001/query_results/838201ab02ed40be41710bef/d6740a95e08cb0ed08d4.png",
+      "image_sha256": "13c8933f3dda9d056c26d6e6cb94c1ae1c8e0418118276065eb0ed9ef16278db",
+      "record": {
+        "constraints": [
+          {
+            "id": "text",
+            "kind": "ocr",
+            "text": "LUNA"
+          },
+          {
+            "id": "relation",
+            "kind": "geneval",
+            "metadata": {
+              "include": [
+                {
+                  "class": "car",
+                  "count": 1
+                },
+                {
+                  "class": "bicycle",
+                  "count": 1,
+                  "position": [
+                    "left of",
+                    0
+                  ]
+                }
+              ],
+              "tag": "position"
+            }
+          }
+        ],
+        "group": "jp1-train-relation",
+        "id": "jp1-train-relation-03",
+        "prompt": "A sharp, realistic studio photograph of exactly one bicycle clearly to the left of exactly one car, both fully visible. Above the objects, a large white sign displays only the word \"LUNA\" in bold black letters. No other letters or words are visible.",
+        "split": "train"
+      },
+      "v1": {
+        "admissible": true,
+        "alpha": 0.0,
+        "collateral_damage": false,
+        "details": {
+          "clauses": [
+            {
+              "exact": true,
+              "expected_text": "LUNA",
+              "id": "text",
+              "normalized_recognized": "luna",
+              "progress": 1.0
+            },
+            {
+              "id": "relation",
+              "metadata": {
+                "include": [
+                  {
+                    "class": "car",
+                    "count": 1
+                  },
+                  {
+                    "class": "bicycle",
+                    "count": 1,
+                    "position": [
+                      "left of",
+                      0
+                    ]
+                  }
+                ],
+                "prompt": "A sharp, realistic studio photograph of exactly one bicycle clearly to the left of exactly one car, both fully visible. Above the objects, a large white sign displays only the word \"LUNA\" in bold black letters. No other letters or words are visible.",
+                "tag": "position"
+              },
+              "strict": false,
+              "upstream_progress": 0.3333333333333333
+            }
+          ],
+          "ocr": {
+            "lines": [
+              {
+                "box": [
+                  [
+                    149.0,
+                    104.0
+                  ],
+                  [
+                    313.0,
+                    104.0
+                  ],
+                  [
+                    313.0,
+                    150.0
+                  ],
+                  [
+                    149.0,
+                    150.0
+                  ]
+                ],
+                "confidence": 0.9896514415740967,
+                "text": "LUNA"
+              }
+            ],
+            "recognized_text": "LUNA"
+          }
+        },
+        "distance": 0.0,
+        "error": null,
+        "image": "query_results/838201ab02ed40be41710bef/d6740a95e08cb0ed08d4.png",
+        "image_sha256": "13c8933f3dda9d056c26d6e6cb94c1ae1c8e0418118276065eb0ed9ef16278db",
+        "joint_success": false,
+        "name": "noop",
+        "progress": [
+          1.0,
+          0.3333333333333333
+        ],
+        "quality": null,
+        "satisfied": [
+          true,
+          false
+        ],
+        "teacher": null,
+        "utility": 0.3333333333333333,
+        "valid": true
+      }
+    },
+    {
+      "action": "target",
+      "case": 16,
+      "cohort": "development",
+      "image": "/midtier/minilab/scratch/chw4026/projects/side_project/generative/opd_related/opd_lab/runs/le3_probe_001/query_results/4b5df57d9ff1d6d6070290a4/c6b2331f8e7b04ef4cfe.png",
+      "image_sha256": "e0ad8503c6e910c15facf387927416b653dce49305867337c9f6093def5238c0",
+      "record": {
+        "constraints": [
+          {
+            "id": "text",
+            "kind": "ocr",
+            "text": "MAPLE"
+          },
+          {
+            "id": "count",
+            "kind": "geneval",
+            "metadata": {
+              "include": [
+                {
+                  "class": "apple",
+                  "count": 3
+                }
+              ],
+              "tag": "counting"
+            }
+          },
+          {
+            "id": "color",
+            "kind": "geneval",
+            "metadata": {
+              "include": [
+                {
+                  "class": "apple",
+                  "color": "blue",
+                  "count": 3
+                }
+              ],
+              "tag": "colors"
+            }
+          }
+        ],
+        "group": "jp1-train-count_color",
+        "id": "jp1-train-count_color-10",
+        "prompt": "A sharp, realistic studio photograph of exactly three blue apples, all fully visible and separated. Above the objects, a large white sign displays only the word \"MAPLE\" in bold black letters. No other letters or words are visible.",
+        "split": "train"
+      },
+      "v1": {
+        "admissible": true,
+        "alpha": 0.5,
+        "collateral_damage": false,
+        "details": {
+          "clauses": [
+            {
+              "exact": true,
+              "expected_text": "MAPLE",
+              "id": "text",
+              "normalized_recognized": "maple",
+              "progress": 1.0
+            },
+            {
+              "id": "count",
+              "metadata": {
+                "include": [
+                  {
+                    "class": "apple",
+                    "count": 3
+                  }
+                ],
+                "prompt": "A sharp, realistic studio photograph of exactly three blue apples, all fully visible and separated. Above the objects, a large white sign displays only the word \"MAPLE\" in bold black letters. No other letters or words are visible.",
+                "tag": "counting"
+              },
+              "strict": true,
+              "upstream_progress": 1.0
+            },
+            {
+              "id": "color",
+              "metadata": {
+                "include": [
+                  {
+                    "class": "apple",
+                    "color": "blue",
+                    "count": 3
+                  }
+                ],
+                "prompt": "A sharp, realistic studio photograph of exactly three blue apples, all fully visible and separated. Above the objects, a large white sign displays only the word \"MAPLE\" in bold black letters. No other letters or words are visible.",
+                "tag": "colors"
+              },
+              "strict": false,
+              "upstream_progress": 0.33333333333333337
+            }
+          ],
+          "ocr": {
+            "lines": [
+              {
+                "box": [
+                  [
+                    56.0,
+                    109.0
+                  ],
+                  [
+                    436.0,
+                    111.0
+                  ],
+                  [
+                    436.0,
+                    159.0
+                  ],
+                  [
+                    56.0,
+                    157.0
+                  ]
+                ],
+                "confidence": 0.9820392727851868,
+                "text": "MAPLE"
+              }
+            ],
+            "recognized_text": "MAPLE"
+          }
+        },
+        "distance": 0.017824772745370865,
+        "error": null,
+        "image": "query_results/4b5df57d9ff1d6d6070290a4/c6b2331f8e7b04ef4cfe.png",
+        "image_sha256": "e0ad8503c6e910c15facf387927416b653dce49305867337c9f6093def5238c0",
+        "joint_success": false,
+        "name": "ocr@0.5",
+        "progress": [
+          1.0,
+          1.0,
+          0.33333333333333337
+        ],
+        "quality": null,
+        "satisfied": [
+          true,
+          true,
+          false
+        ],
+        "teacher": "ocr",
+        "utility": 0.3888888888888889,
+        "valid": true
+      }
+    },
+    {
+      "action": "noop",
+      "case": 16,
+      "cohort": "development",
+      "image": "/midtier/minilab/scratch/chw4026/projects/side_project/generative/opd_related/opd_lab/runs/le3_probe_001/query_results/4b5df57d9ff1d6d6070290a4/86c6d77e104b6d545c28.png",
+      "image_sha256": "a24a94ad1a3ecbe134b4037de3b1961a69bf593841a9f6723cfbcc2bc8bffaad",
+      "record": {
+        "constraints": [
+          {
+            "id": "text",
+            "kind": "ocr",
+            "text": "MAPLE"
+          },
+          {
+            "id": "count",
+            "kind": "geneval",
+            "metadata": {
+              "include": [
+                {
+                  "class": "apple",
+                  "count": 3
+                }
+              ],
+              "tag": "counting"
+            }
+          },
+          {
+            "id": "color",
+            "kind": "geneval",
+            "metadata": {
+              "include": [
+                {
+                  "class": "apple",
+                  "color": "blue",
+                  "count": 3
+                }
+              ],
+              "tag": "colors"
+            }
+          }
+        ],
+        "group": "jp1-train-count_color",
+        "id": "jp1-train-count_color-10",
+        "prompt": "A sharp, realistic studio photograph of exactly three blue apples, all fully visible and separated. Above the objects, a large white sign displays only the word \"MAPLE\" in bold black letters. No other letters or words are visible.",
+        "split": "train"
+      },
+      "v1": {
+        "admissible": true,
+        "alpha": 0.0,
+        "collateral_damage": false,
+        "details": {
+          "clauses": [
+            {
+              "exact": false,
+              "expected_text": "MAPLE",
+              "id": "text",
+              "normalized_recognized": "m a p l e",
+              "progress": 0.5555555555555556
+            },
+            {
+              "id": "count",
+              "metadata": {
+                "include": [
+                  {
+                    "class": "apple",
+                    "count": 3
+                  }
+                ],
+                "prompt": "A sharp, realistic studio photograph of exactly three blue apples, all fully visible and separated. Above the objects, a large white sign displays only the word \"MAPLE\" in bold black letters. No other letters or words are visible.",
+                "tag": "counting"
+              },
+              "strict": true,
+              "upstream_progress": 1.0
+            },
+            {
+              "id": "color",
+              "metadata": {
+                "include": [
+                  {
+                    "class": "apple",
+                    "color": "blue",
+                    "count": 3
+                  }
+                ],
+                "prompt": "A sharp, realistic studio photograph of exactly three blue apples, all fully visible and separated. Above the objects, a large white sign displays only the word \"MAPLE\" in bold black letters. No other letters or words are visible.",
+                "tag": "colors"
+              },
+              "strict": false,
+              "upstream_progress": 0.33333333333333337
+            }
+          ],
+          "ocr": {
+            "lines": [
+              {
+                "box": [
+                  [
+                    59.0,
+                    111.0
+                  ],
+                  [
+                    434.0,
+                    113.0
+                  ],
+                  [
+                    434.0,
+                    157.0
+                  ],
+                  [
+                    59.0,
+                    155.0
+                  ]
+                ],
+                "confidence": 0.8234155178070068,
+                "text": "M A P L E"
+              }
+            ],
+            "recognized_text": "M A P L E"
+          }
+        },
+        "distance": 0.0,
+        "error": null,
+        "image": "query_results/4b5df57d9ff1d6d6070290a4/86c6d77e104b6d545c28.png",
+        "image_sha256": "a24a94ad1a3ecbe134b4037de3b1961a69bf593841a9f6723cfbcc2bc8bffaad",
+        "joint_success": false,
+        "name": "noop",
+        "progress": [
+          0.5555555555555556,
+          1.0,
+          0.33333333333333337
+        ],
+        "quality": null,
+        "satisfied": [
+          false,
+          true,
+          false
+        ],
+        "teacher": null,
+        "utility": 0.3148148148148148,
+        "valid": true
+      }
+    },
+    {
+      "action": "noop",
+      "case": 17,
+      "cohort": "development",
+      "image": "/midtier/minilab/scratch/chw4026/projects/side_project/generative/opd_related/opd_lab/runs/le3_probe_001/query_results/582e553082c25a3e2b02dd8c/88fbc369ef7c047cbae9.png",
+      "image_sha256": "85e44b61737bff227fcf12af0ca282a559b9ba8dc27a0c0a26c56c4ce7d2f539",
+      "record": {
+        "constraints": [
+          {
+            "id": "text",
+            "kind": "ocr",
+            "text": "SUNNY"
+          },
+          {
+            "id": "count",
+            "kind": "geneval",
+            "metadata": {
+              "include": [
+                {
+                  "class": "banana",
+                  "count": 2
+                }
+              ],
+              "tag": "counting"
+            }
+          }
+        ],
+        "group": "jp1-train-count",
+        "id": "jp1-train-count-15",
+        "prompt": "A sharp, realistic studio photograph of exactly two bananas, all fully visible and separated. Above the objects, a large white sign displays only the word \"SUNNY\" in bold black letters. No other letters or words are visible.",
+        "split": "train"
+      },
+      "v1": {
+        "admissible": true,
+        "alpha": 0.0,
+        "collateral_damage": false,
+        "details": {
+          "clauses": [
+            {
+              "exact": false,
+              "expected_text": "SUNNY",
+              "id": "text",
+              "normalized_recognized": "sunnny",
+              "progress": 0.8333333333333334
+            },
+            {
+              "id": "count",
+              "metadata": {
+                "include": [
+                  {
+                    "class": "banana",
+                    "count": 2
+                  }
+                ],
+                "prompt": "A sharp, realistic studio photograph of exactly two bananas, all fully visible and separated. Above the objects, a large white sign displays only the word \"SUNNY\" in bold black letters. No other letters or words are visible.",
+                "tag": "counting"
+              },
+              "strict": true,
+              "upstream_progress": 1.0
+            }
+          ],
+          "ocr": {
+            "lines": [
+              {
+                "box": [
+                  [
+                    75.0,
+                    111.0
+                  ],
+                  [
+                    453.0,
+                    113.0
+                  ],
+                  [
+                    453.0,
+                    174.0
+                  ],
+                  [
+                    75.0,
+                    172.0
+                  ]
+                ],
+                "confidence": 0.99334317445755,
+                "text": "SUNNNY"
+              }
+            ],
+            "recognized_text": "SUNNNY"
+          }
+        },
+        "distance": 0.0,
+        "error": null,
+        "image": "query_results/582e553082c25a3e2b02dd8c/88fbc369ef7c047cbae9.png",
+        "image_sha256": "85e44b61737bff227fcf12af0ca282a559b9ba8dc27a0c0a26c56c4ce7d2f539",
+        "joint_success": false,
+        "name": "noop",
+        "progress": [
+          0.8333333333333334,
+          1.0
+        ],
+        "quality": null,
+        "satisfied": [
+          false,
+          true
+        ],
+        "teacher": null,
+        "utility": 0.45833333333333337,
+        "valid": true
+      }
+    },
+    {
+      "action": "target",
+      "case": 17,
+      "cohort": "development",
+      "image": "/midtier/minilab/scratch/chw4026/projects/side_project/generative/opd_related/opd_lab/runs/le3_probe_001/query_results/582e553082c25a3e2b02dd8c/e7ad16a7a204cd86d2d9.png",
+      "image_sha256": "2e19f845650ecf68f9ca43fc63d752e55d777c13b28601c1310aefecd30e9218",
+      "record": {
+        "constraints": [
+          {
+            "id": "text",
+            "kind": "ocr",
+            "text": "SUNNY"
+          },
+          {
+            "id": "count",
+            "kind": "geneval",
+            "metadata": {
+              "include": [
+                {
+                  "class": "banana",
+                  "count": 2
+                }
+              ],
+              "tag": "counting"
+            }
+          }
+        ],
+        "group": "jp1-train-count",
+        "id": "jp1-train-count-15",
+        "prompt": "A sharp, realistic studio photograph of exactly two bananas, all fully visible and separated. Above the objects, a large white sign displays only the word \"SUNNY\" in bold black letters. No other letters or words are visible.",
+        "split": "train"
+      },
+      "v1": {
+        "admissible": true,
+        "alpha": 1.0,
+        "collateral_damage": false,
+        "details": {
+          "clauses": [
+            {
+              "exact": true,
+              "expected_text": "SUNNY",
+              "id": "text",
+              "normalized_recognized": "sunny",
+              "progress": 1.0
+            },
+            {
+              "id": "count",
+              "metadata": {
+                "include": [
+                  {
+                    "class": "banana",
+                    "count": 2
+                  }
+                ],
+                "prompt": "A sharp, realistic studio photograph of exactly two bananas, all fully visible and separated. Above the objects, a large white sign displays only the word \"SUNNY\" in bold black letters. No other letters or words are visible.",
+                "tag": "counting"
+              },
+              "strict": true,
+              "upstream_progress": 1.0
+            }
+          ],
+          "ocr": {
+            "lines": [
+              {
+                "box": [
+                  [
+                    69.0,
+                    121.0
+                  ],
+                  [
+                    428.0,
+                    126.0
+                  ],
+                  [
+                    427.0,
+                    196.0
+                  ],
+                  [
+                    68.0,
+                    191.0
+                  ]
+                ],
+                "confidence": 0.9594045877456665,
+                "text": "SUNNY"
+              }
+            ],
+            "recognized_text": "SUNNY"
+          }
+        },
+        "distance": 1.4268193244934082,
+        "error": null,
+        "image": "query_results/582e553082c25a3e2b02dd8c/e7ad16a7a204cd86d2d9.png",
+        "image_sha256": "2e19f845650ecf68f9ca43fc63d752e55d777c13b28601c1310aefecd30e9218",
+        "joint_success": true,
+        "name": "geneval@1",
+        "progress": [
+          1.0,
+          1.0
+        ],
+        "quality": null,
+        "satisfied": [
+          true,
+          true
+        ],
+        "teacher": "geneval",
+        "utility": 1.0,
+        "valid": true
+      }
+    },
+    {
+      "action": "target",
+      "case": 18,
+      "cohort": "development",
+      "image": "/midtier/minilab/scratch/chw4026/projects/side_project/generative/opd_related/opd_lab/runs/le3_probe_001/query_results/ca02655c6933b2a8d63d7a09/fb8ac07e8b92fcdc8077.png",
+      "image_sha256": "2a661b63019838b197da18a5024b17bd6085263543875a69b34ce7d2ce489dd4",
+      "record": {
+        "constraints": [
+          {
+            "id": "text",
+            "kind": "ocr",
+            "text": "SUNNY"
+          },
+          {
+            "id": "color",
+            "kind": "geneval",
+            "metadata": {
+              "include": [
+                {
+                  "class": "banana",
+                  "color": "red",
+                  "count": 1
+                }
+              ],
+              "tag": "colors"
+            }
+          }
+        ],
+        "group": "jp1-train-color",
+        "id": "jp1-train-color-15",
+        "prompt": "A sharp, realistic studio photograph of exactly one red banana, fully visible. Above the objects, a large white sign displays only the word \"SUNNY\" in bold black letters. No other letters or words are visible.",
+        "split": "train"
+      },
+      "v1": {
+        "admissible": true,
+        "alpha": 0.5,
+        "collateral_damage": false,
+        "details": {
+          "clauses": [
+            {
+              "exact": true,
+              "expected_text": "SUNNY",
+              "id": "text",
+              "normalized_recognized": "sunny",
+              "progress": 1.0
+            },
+            {
+              "id": "color",
+              "metadata": {
+                "include": [
+                  {
+                    "class": "banana",
+                    "color": "red",
+                    "count": 1
+                  }
+                ],
+                "prompt": "A sharp, realistic studio photograph of exactly one red banana, fully visible. Above the objects, a large white sign displays only the word \"SUNNY\" in bold black letters. No other letters or words are visible.",
+                "tag": "colors"
+              },
+              "strict": true,
+              "upstream_progress": 1.0
+            }
+          ],
+          "ocr": {
+            "lines": [
+              {
+                "box": [
+                  [
+                    132.0,
+                    118.0
+                  ],
+                  [
+                    172.0,
+                    120.0
+                  ],
+                  [
+                    171.0,
+                    138.0
+                  ],
+                  [
+                    131.0,
+                    136.0
+                  ]
+                ],
+                "confidence": 0.99810791015625,
+                "text": "Sunny"
+              }
+            ],
+            "recognized_text": "Sunny"
+          }
+        },
+        "distance": 0.4951714277267456,
+        "error": null,
+        "image": "query_results/ca02655c6933b2a8d63d7a09/fb8ac07e8b92fcdc8077.png",
+        "image_sha256": "2a661b63019838b197da18a5024b17bd6085263543875a69b34ce7d2ce489dd4",
+        "joint_success": true,
+        "name": "geneval@0.5",
+        "progress": [
+          1.0,
+          1.0
+        ],
+        "quality": null,
+        "satisfied": [
+          true,
+          true
+        ],
+        "teacher": "geneval",
+        "utility": 1.0,
+        "valid": true
+      }
+    },
+    {
+      "action": "noop",
+      "case": 18,
+      "cohort": "development",
+      "image": "/midtier/minilab/scratch/chw4026/projects/side_project/generative/opd_related/opd_lab/runs/le3_probe_001/query_results/ca02655c6933b2a8d63d7a09/1a860df288d191a6f853.png",
+      "image_sha256": "27719a34f7e71355fe30c567454c8e3a1979c74cc3a5752c1f526f51d80b62b7",
+      "record": {
+        "constraints": [
+          {
+            "id": "text",
+            "kind": "ocr",
+            "text": "SUNNY"
+          },
+          {
+            "id": "color",
+            "kind": "geneval",
+            "metadata": {
+              "include": [
+                {
+                  "class": "banana",
+                  "color": "red",
+                  "count": 1
+                }
+              ],
+              "tag": "colors"
+            }
+          }
+        ],
+        "group": "jp1-train-color",
+        "id": "jp1-train-color-15",
+        "prompt": "A sharp, realistic studio photograph of exactly one red banana, fully visible. Above the objects, a large white sign displays only the word \"SUNNY\" in bold black letters. No other letters or words are visible.",
+        "split": "train"
+      },
+      "v1": {
+        "admissible": true,
+        "alpha": 0.0,
+        "collateral_damage": false,
+        "details": {
+          "clauses": [
+            {
+              "exact": false,
+              "expected_text": "SUNNY",
+              "id": "text",
+              "normalized_recognized": "sunay",
+              "progress": 0.8
+            },
+            {
+              "id": "color",
+              "metadata": {
+                "include": [
+                  {
+                    "class": "banana",
+                    "color": "red",
+                    "count": 1
+                  }
+                ],
+                "prompt": "A sharp, realistic studio photograph of exactly one red banana, fully visible. Above the objects, a large white sign displays only the word \"SUNNY\" in bold black letters. No other letters or words are visible.",
+                "tag": "colors"
+              },
+              "strict": true,
+              "upstream_progress": 1.0
+            }
+          ],
+          "ocr": {
+            "lines": [
+              {
+                "box": [
+                  [
+                    179.0,
+                    194.0
+                  ],
+                  [
+                    357.0,
+                    194.0
+                  ],
+                  [
+                    357.0,
+                    228.0
+                  ],
+                  [
+                    179.0,
+                    228.0
+                  ]
+                ],
+                "confidence": 0.8541256189346313,
+                "text": "SUNAY"
+              }
+            ],
+            "recognized_text": "SUNAY"
+          }
+        },
+        "distance": 0.0,
+        "error": null,
+        "image": "query_results/ca02655c6933b2a8d63d7a09/1a860df288d191a6f853.png",
+        "image_sha256": "27719a34f7e71355fe30c567454c8e3a1979c74cc3a5752c1f526f51d80b62b7",
+        "joint_success": false,
+        "name": "noop",
+        "progress": [
+          0.8,
+          1.0
+        ],
+        "quality": null,
+        "satisfied": [
+          false,
+          true
+        ],
+        "teacher": null,
+        "utility": 0.45,
+        "valid": true
+      }
+    },
+    {
+      "action": "noop",
+      "case": 19,
+      "cohort": "development",
+      "image": "/midtier/minilab/scratch/chw4026/projects/side_project/generative/opd_related/opd_lab/runs/le3_probe_001/query_results/00ed2ea728827a8738d8bfe7/1e289b1b789dfffd013b.png",
+      "image_sha256": "cd83869cffd1b4278bcc38975a88abac8b64a3cc1ce7ccb205b5491c57de86a5",
+      "record": {
+        "constraints": [
+          {
+            "id": "text",
+            "kind": "ocr",
+            "text": "CLOUD"
+          },
+          {
+            "id": "relation",
+            "kind": "geneval",
+            "metadata": {
+              "include": [
+                {
+                  "class": "bowl",
+                  "count": 1
+                },
+                {
+                  "class": "apple",
+                  "count": 1,
+                  "position": [
+                    "right of",
+                    0
+                  ]
+                }
+              ],
+              "tag": "position"
+            }
+          }
+        ],
+        "group": "jp1-train-relation",
+        "id": "jp1-train-relation-13",
+        "prompt": "A sharp, realistic studio photograph of exactly one apple clearly to the right of exactly one bowl, both fully visible. Above the objects, a large white sign displays only the word \"CLOUD\" in bold black letters. No other letters or words are visible.",
+        "split": "train"
+      },
+      "v1": {
+        "admissible": true,
+        "alpha": 0.0,
+        "collateral_damage": false,
+        "details": {
+          "clauses": [
+            {
+              "exact": true,
+              "expected_text": "CLOUD",
+              "id": "text",
+              "normalized_recognized": "cloud",
+              "progress": 1.0
+            },
+            {
+              "id": "relation",
+              "metadata": {
+                "include": [
+                  {
+                    "class": "bowl",
+                    "count": 1
+                  },
+                  {
+                    "class": "apple",
+                    "count": 1,
+                    "position": [
+                      "right of",
+                      0
+                    ]
+                  }
+                ],
+                "prompt": "A sharp, realistic studio photograph of exactly one apple clearly to the right of exactly one bowl, both fully visible. Above the objects, a large white sign displays only the word \"CLOUD\" in bold black letters. No other letters or words are visible.",
+                "tag": "position"
+              },
+              "strict": false,
+              "upstream_progress": 0.3333333333333333
+            }
+          ],
+          "ocr": {
+            "lines": [
+              {
+                "box": [
+                  [
+                    180.0,
+                    111.0
+                  ],
+                  [
+                    332.0,
+                    111.0
+                  ],
+                  [
+                    332.0,
+                    139.0
+                  ],
+                  [
+                    180.0,
+                    139.0
+                  ]
+                ],
+                "confidence": 0.9875059127807617,
+                "text": "CLOUD"
+              }
+            ],
+            "recognized_text": "CLOUD"
+          }
+        },
+        "distance": 0.0,
+        "error": null,
+        "image": "query_results/00ed2ea728827a8738d8bfe7/1e289b1b789dfffd013b.png",
+        "image_sha256": "cd83869cffd1b4278bcc38975a88abac8b64a3cc1ce7ccb205b5491c57de86a5",
+        "joint_success": false,
+        "name": "noop",
+        "progress": [
+          1.0,
+          0.3333333333333333
+        ],
+        "quality": null,
+        "satisfied": [
+          true,
+          false
+        ],
+        "teacher": null,
+        "utility": 0.3333333333333333,
+        "valid": true
+      }
+    },
+    {
+      "action": "target",
+      "case": 19,
+      "cohort": "development",
+      "image": "/midtier/minilab/scratch/chw4026/projects/side_project/generative/opd_related/opd_lab/runs/le3_probe_001/query_results/00ed2ea728827a8738d8bfe7/8a7aa4dfd86014b935b7.png",
+      "image_sha256": "f72a7c2d5c1f4f23a74a0a136d1fd40ddda020d8a61c0442b51f2370bc52e18d",
+      "record": {
+        "constraints": [
+          {
+            "id": "text",
+            "kind": "ocr",
+            "text": "CLOUD"
+          },
+          {
+            "id": "relation",
+            "kind": "geneval",
+            "metadata": {
+              "include": [
+                {
+                  "class": "bowl",
+                  "count": 1
+                },
+                {
+                  "class": "apple",
+                  "count": 1,
+                  "position": [
+                    "right of",
+                    0
+                  ]
+                }
+              ],
+              "tag": "position"
+            }
+          }
+        ],
+        "group": "jp1-train-relation",
+        "id": "jp1-train-relation-13",
+        "prompt": "A sharp, realistic studio photograph of exactly one apple clearly to the right of exactly one bowl, both fully visible. Above the objects, a large white sign displays only the word \"CLOUD\" in bold black letters. No other letters or words are visible.",
+        "split": "train"
+      },
+      "v1": {
+        "admissible": true,
+        "alpha": 1.0,
+        "collateral_damage": false,
+        "details": {
+          "clauses": [
+            {
+              "exact": true,
+              "expected_text": "CLOUD",
+              "id": "text",
+              "normalized_recognized": "cloud",
+              "progress": 1.0
+            },
+            {
+              "id": "relation",
+              "metadata": {
+                "include": [
+                  {
+                    "class": "bowl",
+                    "count": 1
+                  },
+                  {
+                    "class": "apple",
+                    "count": 1,
+                    "position": [
+                      "right of",
+                      0
+                    ]
+                  }
+                ],
+                "prompt": "A sharp, realistic studio photograph of exactly one apple clearly to the right of exactly one bowl, both fully visible. Above the objects, a large white sign displays only the word \"CLOUD\" in bold black letters. No other letters or words are visible.",
+                "tag": "position"
+              },
+              "strict": true,
+              "upstream_progress": 1.0
+            }
+          ],
+          "ocr": {
+            "lines": [
+              {
+                "box": [
+                  [
+                    177.0,
+                    110.0
+                  ],
+                  [
+                    333.0,
+                    108.0
+                  ],
+                  [
+                    333.0,
+                    139.0
+                  ],
+                  [
+                    177.0,
+                    141.0
+                  ]
+                ],
+                "confidence": 0.9754183888435364,
+                "text": "CLOUD"
+              }
+            ],
+            "recognized_text": "CLOUD"
+          }
+        },
+        "distance": 0.3424310088157654,
+        "error": null,
+        "image": "query_results/00ed2ea728827a8738d8bfe7/8a7aa4dfd86014b935b7.png",
+        "image_sha256": "f72a7c2d5c1f4f23a74a0a136d1fd40ddda020d8a61c0442b51f2370bc52e18d",
+        "joint_success": true,
+        "name": "geneval@1",
+        "progress": [
+          1.0,
+          1.0
+        ],
+        "quality": null,
+        "satisfied": [
+          true,
+          true
+        ],
+        "teacher": "geneval",
+        "utility": 1.0,
+        "valid": true
+      }
+    },
+    {
+      "action": "target",
+      "case": 20,
+      "cohort": "development",
+      "image": "/midtier/minilab/scratch/chw4026/projects/side_project/generative/opd_related/opd_lab/runs/le3_probe_001/query_results/25f4de471f1c22083ebc1f56/6ae3170ab0810ff5fae0.png",
+      "image_sha256": "38d5651609be95f9670e5b37e44de4b37073c1d0ed15f2c08de7ac91cfe01488",
+      "record": {
+        "constraints": [
+          {
+            "id": "text",
+            "kind": "ocr",
+            "text": "CLEAR"
+          },
+          {
+            "id": "color",
+            "kind": "geneval",
+            "metadata": {
+              "include": [
+                {
+                  "class": "book",
+                  "color": "yellow",
+                  "count": 1
+                }
+              ],
+              "tag": "colors"
+            }
+          }
+        ],
+        "group": "jp1-train-color",
+        "id": "jp1-train-color-14",
+        "prompt": "A sharp, realistic studio photograph of exactly one yellow book, fully visible. Above the objects, a large white sign displays only the word \"CLEAR\" in bold black letters. No other letters or words are visible.",
+        "split": "train"
+      },
+      "v1": {
+        "admissible": true,
+        "alpha": 0.5,
+        "collateral_damage": false,
+        "details": {
+          "clauses": [
+            {
+              "exact": true,
+              "expected_text": "CLEAR",
+              "id": "text",
+              "normalized_recognized": "clear",
+              "progress": 1.0
+            },
+            {
+              "id": "color",
+              "metadata": {
+                "include": [
+                  {
+                    "class": "book",
+                    "color": "yellow",
+                    "count": 1
+                  }
+                ],
+                "prompt": "A sharp, realistic studio photograph of exactly one yellow book, fully visible. Above the objects, a large white sign displays only the word \"CLEAR\" in bold black letters. No other letters or words are visible.",
+                "tag": "colors"
+              },
+              "strict": false,
+              "upstream_progress": 0.0
+            }
+          ],
+          "ocr": {
+            "lines": [
+              {
+                "box": [
+                  [
+                    225.0,
+                    243.0
+                  ],
+                  [
+                    267.0,
+                    243.0
+                  ],
+                  [
+                    267.0,
+                    267.0
+                  ],
+                  [
+                    225.0,
+                    267.0
+                  ]
+                ],
+                "confidence": 0.997458815574646,
+                "text": "CLEAR"
+              }
+            ],
+            "recognized_text": "CLEAR"
+          }
+        },
+        "distance": 0.018835686147212982,
+        "error": null,
+        "image": "query_results/25f4de471f1c22083ebc1f56/6ae3170ab0810ff5fae0.png",
+        "image_sha256": "38d5651609be95f9670e5b37e44de4b37073c1d0ed15f2c08de7ac91cfe01488",
+        "joint_success": false,
+        "name": "geneval@0.5",
+        "progress": [
+          1.0,
+          0.0
+        ],
+        "quality": null,
+        "satisfied": [
+          true,
+          false
+        ],
+        "teacher": "geneval",
+        "utility": 0.25,
+        "valid": true
+      }
+    },
+    {
+      "action": "noop",
+      "case": 20,
+      "cohort": "development",
+      "image": "/midtier/minilab/scratch/chw4026/projects/side_project/generative/opd_related/opd_lab/runs/le3_probe_001/query_results/25f4de471f1c22083ebc1f56/30e839f4ea55644ece90.png",
+      "image_sha256": "5da4ee098266bdaeaa54369b2ab5d855ce14952b0fc899f114a20dd35272d7d4",
+      "record": {
+        "constraints": [
+          {
+            "id": "text",
+            "kind": "ocr",
+            "text": "CLEAR"
+          },
+          {
+            "id": "color",
+            "kind": "geneval",
+            "metadata": {
+              "include": [
+                {
+                  "class": "book",
+                  "color": "yellow",
+                  "count": 1
+                }
+              ],
+              "tag": "colors"
+            }
+          }
+        ],
+        "group": "jp1-train-color",
+        "id": "jp1-train-color-14",
+        "prompt": "A sharp, realistic studio photograph of exactly one yellow book, fully visible. Above the objects, a large white sign displays only the word \"CLEAR\" in bold black letters. No other letters or words are visible.",
+        "split": "train"
+      },
+      "v1": {
+        "admissible": true,
+        "alpha": 0.0,
+        "collateral_damage": false,
+        "details": {
+          "clauses": [
+            {
+              "exact": false,
+              "expected_text": "CLEAR",
+              "id": "text",
+              "normalized_recognized": "e r",
+              "progress": 0.4
+            },
+            {
+              "id": "color",
+              "metadata": {
+                "include": [
+                  {
+                    "class": "book",
+                    "color": "yellow",
+                    "count": 1
+                  }
+                ],
+                "prompt": "A sharp, realistic studio photograph of exactly one yellow book, fully visible. Above the objects, a large white sign displays only the word \"CLEAR\" in bold black letters. No other letters or words are visible.",
+                "tag": "colors"
+              },
+              "strict": false,
+              "upstream_progress": 0.0
+            }
+          ],
+          "ocr": {
+            "lines": [
+              {
+                "box": [
+                  [
+                    234.0,
+                    243.0
+                  ],
+                  [
+                    251.0,
+                    243.0
+                  ],
+                  [
+                    251.0,
+                    266.0
+                  ],
+                  [
+                    234.0,
+                    266.0
+                  ]
+                ],
+                "confidence": 0.9975355863571167,
+                "text": "E"
+              },
+              {
+                "box": [
+                  [
+                    309.0,
+                    238.0
+                  ],
+                  [
+                    334.0,
+                    238.0
+                  ],
+                  [
+                    334.0,
+                    269.0
+                  ],
+                  [
+                    309.0,
+                    269.0
+                  ]
+                ],
+                "confidence": 0.9936264753341675,
+                "text": "R"
+              }
+            ],
+            "recognized_text": "E R"
+          }
+        },
+        "distance": 0.0,
+        "error": null,
+        "image": "query_results/25f4de471f1c22083ebc1f56/30e839f4ea55644ece90.png",
+        "image_sha256": "5da4ee098266bdaeaa54369b2ab5d855ce14952b0fc899f114a20dd35272d7d4",
+        "joint_success": false,
+        "name": "noop",
+        "progress": [
+          0.4,
+          0.0
+        ],
+        "quality": null,
+        "satisfied": [
+          false,
+          false
+        ],
+        "teacher": null,
+        "utility": 0.1,
+        "valid": true
+      }
+    },
+    {
+      "action": "target",
+      "case": 21,
+      "cohort": "development",
+      "image": "/midtier/minilab/scratch/chw4026/projects/side_project/generative/opd_related/opd_lab/runs/le3_probe_001/query_results/73c7e2d5cf4b16c3fdc50510/ff7e8f2baa4b92787fe5.png",
+      "image_sha256": "f6ca675d11b94ab9da56a70d4cfc7cce50a8deeefc522a1cabd5ed4c87c261df",
+      "record": {
+        "constraints": [
+          {
+            "id": "text",
+            "kind": "ocr",
+            "text": "NORTH"
+          },
+          {
+            "id": "color",
+            "kind": "geneval",
+            "metadata": {
+              "include": [
+                {
+                  "class": "bottle",
+                  "color": "blue",
+                  "count": 1
+                }
+              ],
+              "tag": "colors"
+            }
+          }
+        ],
+        "group": "jp1-train-color",
+        "id": "jp1-train-color-09",
+        "prompt": "A sharp, realistic studio photograph of exactly one blue bottle, fully visible. Above the objects, a large white sign displays only the word \"NORTH\" in bold black letters. No other letters or words are visible.",
+        "split": "train"
+      },
+      "v1": {
+        "admissible": true,
+        "alpha": 0.5,
+        "collateral_damage": false,
+        "details": {
+          "clauses": [
+            {
+              "exact": true,
+              "expected_text": "NORTH",
+              "id": "text",
+              "normalized_recognized": "north",
+              "progress": 1.0
+            },
+            {
+              "id": "color",
+              "metadata": {
+                "include": [
+                  {
+                    "class": "bottle",
+                    "color": "blue",
+                    "count": 1
+                  }
+                ],
+                "prompt": "A sharp, realistic studio photograph of exactly one blue bottle, fully visible. Above the objects, a large white sign displays only the word \"NORTH\" in bold black letters. No other letters or words are visible.",
+                "tag": "colors"
+              },
+              "strict": true,
+              "upstream_progress": 1.0
+            }
+          ],
+          "ocr": {
+            "lines": [
+              {
+                "box": [
+                  [
+                    77.0,
+                    94.0
+                  ],
+                  [
+                    453.0,
+                    94.0
+                  ],
+                  [
+                    453.0,
+                    160.0
+                  ],
+                  [
+                    77.0,
+                    160.0
+                  ]
+                ],
+                "confidence": 0.9514161348342896,
+                "text": "NORTH"
+              }
+            ],
+            "recognized_text": "NORTH"
+          }
+        },
+        "distance": 0.09983372688293457,
+        "error": null,
+        "image": "query_results/73c7e2d5cf4b16c3fdc50510/ff7e8f2baa4b92787fe5.png",
+        "image_sha256": "f6ca675d11b94ab9da56a70d4cfc7cce50a8deeefc522a1cabd5ed4c87c261df",
+        "joint_success": true,
+        "name": "geneval@0.5",
+        "progress": [
+          1.0,
+          1.0
+        ],
+        "quality": null,
+        "satisfied": [
+          true,
+          true
+        ],
+        "teacher": "geneval",
+        "utility": 1.0,
+        "valid": true
+      }
+    },
+    {
+      "action": "noop",
+      "case": 21,
+      "cohort": "development",
+      "image": "/midtier/minilab/scratch/chw4026/projects/side_project/generative/opd_related/opd_lab/runs/le3_probe_001/query_results/73c7e2d5cf4b16c3fdc50510/e48eeb22d18b0912017b.png",
+      "image_sha256": "ad216b4986b7ed6fa0c416dfbcac95a165d0de9f3304cdf697065c9583f1cbc7",
+      "record": {
+        "constraints": [
+          {
+            "id": "text",
+            "kind": "ocr",
+            "text": "NORTH"
+          },
+          {
+            "id": "color",
+            "kind": "geneval",
+            "metadata": {
+              "include": [
+                {
+                  "class": "bottle",
+                  "color": "blue",
+                  "count": 1
+                }
+              ],
+              "tag": "colors"
+            }
+          }
+        ],
+        "group": "jp1-train-color",
+        "id": "jp1-train-color-09",
+        "prompt": "A sharp, realistic studio photograph of exactly one blue bottle, fully visible. Above the objects, a large white sign displays only the word \"NORTH\" in bold black letters. No other letters or words are visible.",
+        "split": "train"
+      },
+      "v1": {
+        "admissible": true,
+        "alpha": 0.0,
+        "collateral_damage": false,
+        "details": {
+          "clauses": [
+            {
+              "exact": false,
+              "expected_text": "NORTH",
+              "id": "text",
+              "normalized_recognized": "n r h",
+              "progress": 0.6
+            },
+            {
+              "id": "color",
+              "metadata": {
+                "include": [
+                  {
+                    "class": "bottle",
+                    "color": "blue",
+                    "count": 1
+                  }
+                ],
+                "prompt": "A sharp, realistic studio photograph of exactly one blue bottle, fully visible. Above the objects, a large white sign displays only the word \"NORTH\" in bold black letters. No other letters or words are visible.",
+                "tag": "colors"
+              },
+              "strict": true,
+              "upstream_progress": 1.0
+            }
+          ],
+          "ocr": {
+            "lines": [
+              {
+                "box": [
+                  [
+                    72.0,
+                    87.0
+                  ],
+                  [
+                    416.0,
+                    87.0
+                  ],
+                  [
+                    416.0,
+                    164.0
+                  ],
+                  [
+                    72.0,
+                    164.0
+                  ]
+                ],
+                "confidence": 0.9136463403701782,
+                "text": "N R H"
+              }
+            ],
+            "recognized_text": "N R H"
+          }
+        },
+        "distance": 0.0,
+        "error": null,
+        "image": "query_results/73c7e2d5cf4b16c3fdc50510/e48eeb22d18b0912017b.png",
+        "image_sha256": "ad216b4986b7ed6fa0c416dfbcac95a165d0de9f3304cdf697065c9583f1cbc7",
+        "joint_success": false,
+        "name": "noop",
+        "progress": [
+          0.6,
+          1.0
+        ],
+        "quality": null,
+        "satisfied": [
+          false,
+          true
+        ],
+        "teacher": null,
+        "utility": 0.4,
+        "valid": true
+      }
+    },
+    {
+      "action": "target",
+      "case": 22,
+      "cohort": "development",
+      "image": "/midtier/minilab/scratch/chw4026/projects/side_project/generative/opd_related/opd_lab/runs/le3_probe_001/query_results/39ba7fd131223f35019f1f27/370604379e01e7410962.png",
+      "image_sha256": "55c7ebd358acf94b4f5a9188098c0f5290b4b5381ec480e13443ebb677183b7a",
+      "record": {
+        "constraints": [
+          {
+            "id": "text",
+            "kind": "ocr",
+            "text": "CLEAR"
+          },
+          {
+            "id": "count",
+            "kind": "geneval",
+            "metadata": {
+              "include": [
+                {
+                  "class": "book",
+                  "count": 2
+                }
+              ],
+              "tag": "counting"
+            }
+          }
+        ],
+        "group": "jp1-train-count",
+        "id": "jp1-train-count-14",
+        "prompt": "A sharp, realistic studio photograph of exactly two books, all fully visible and separated. Above the objects, a large white sign displays only the word \"CLEAR\" in bold black letters. No other letters or words are visible.",
+        "split": "train"
+      },
+      "v1": {
+        "admissible": true,
+        "alpha": 1.0,
+        "collateral_damage": false,
+        "details": {
+          "clauses": [
+            {
+              "exact": true,
+              "expected_text": "CLEAR",
+              "id": "text",
+              "normalized_recognized": "clear",
+              "progress": 1.0
+            },
+            {
+              "id": "count",
+              "metadata": {
+                "include": [
+                  {
+                    "class": "book",
+                    "count": 2
+                  }
+                ],
+                "prompt": "A sharp, realistic studio photograph of exactly two books, all fully visible and separated. Above the objects, a large white sign displays only the word \"CLEAR\" in bold black letters. No other letters or words are visible.",
+                "tag": "counting"
+              },
+              "strict": true,
+              "upstream_progress": 1.0
+            }
+          ],
+          "ocr": {
+            "lines": [
+              {
+                "box": [
+                  [
+                    183.0,
+                    177.0
+                  ],
+                  [
+                    336.0,
+                    177.0
+                  ],
+                  [
+                    336.0,
+                    208.0
+                  ],
+                  [
+                    183.0,
+                    208.0
+                  ]
+                ],
+                "confidence": 0.9993308186531067,
+                "text": "CLEAR"
+              }
+            ],
+            "recognized_text": "CLEAR"
+          }
+        },
+        "distance": 0.005162614397704601,
+        "error": null,
+        "image": "query_results/39ba7fd131223f35019f1f27/370604379e01e7410962.png",
+        "image_sha256": "55c7ebd358acf94b4f5a9188098c0f5290b4b5381ec480e13443ebb677183b7a",
+        "joint_success": true,
+        "name": "ocr@1",
+        "progress": [
+          1.0,
+          1.0
+        ],
+        "quality": null,
+        "satisfied": [
+          true,
+          true
+        ],
+        "teacher": "ocr",
+        "utility": 1.0,
+        "valid": true
+      }
+    },
+    {
+      "action": "noop",
+      "case": 22,
+      "cohort": "development",
+      "image": "/midtier/minilab/scratch/chw4026/projects/side_project/generative/opd_related/opd_lab/runs/le3_probe_001/query_results/39ba7fd131223f35019f1f27/42446e64b4b5f2debd8e.png",
+      "image_sha256": "3dcd7debe459235417b4e514c1574ba8ca122d82ebbb5e700d69cda6c82bebb6",
+      "record": {
+        "constraints": [
+          {
+            "id": "text",
+            "kind": "ocr",
+            "text": "CLEAR"
+          },
+          {
+            "id": "count",
+            "kind": "geneval",
+            "metadata": {
+              "include": [
+                {
+                  "class": "book",
+                  "count": 2
+                }
+              ],
+              "tag": "counting"
+            }
+          }
+        ],
+        "group": "jp1-train-count",
+        "id": "jp1-train-count-14",
+        "prompt": "A sharp, realistic studio photograph of exactly two books, all fully visible and separated. Above the objects, a large white sign displays only the word \"CLEAR\" in bold black letters. No other letters or words are visible.",
+        "split": "train"
+      },
+      "v1": {
+        "admissible": true,
+        "alpha": 0.0,
+        "collateral_damage": false,
+        "details": {
+          "clauses": [
+            {
+              "exact": true,
+              "expected_text": "CLEAR",
+              "id": "text",
+              "normalized_recognized": "clear",
+              "progress": 1.0
+            },
+            {
+              "id": "count",
+              "metadata": {
+                "include": [
+                  {
+                    "class": "book",
+                    "count": 2
+                  }
+                ],
+                "prompt": "A sharp, realistic studio photograph of exactly two books, all fully visible and separated. Above the objects, a large white sign displays only the word \"CLEAR\" in bold black letters. No other letters or words are visible.",
+                "tag": "counting"
+              },
+              "strict": false,
+              "upstream_progress": 0.5
+            }
+          ],
+          "ocr": {
+            "lines": [
+              {
+                "box": [
+                  [
+                    183.0,
+                    177.0
+                  ],
+                  [
+                    336.0,
+                    177.0
+                  ],
+                  [
+                    336.0,
+                    208.0
+                  ],
+                  [
+                    183.0,
+                    208.0
+                  ]
+                ],
+                "confidence": 0.9993879199028015,
+                "text": "CLEAR"
+              }
+            ],
+            "recognized_text": "CLEAR"
+          }
+        },
+        "distance": 0.0,
+        "error": null,
+        "image": "query_results/39ba7fd131223f35019f1f27/42446e64b4b5f2debd8e.png",
+        "image_sha256": "3dcd7debe459235417b4e514c1574ba8ca122d82ebbb5e700d69cda6c82bebb6",
+        "joint_success": false,
+        "name": "noop",
+        "progress": [
+          1.0,
+          0.5
+        ],
+        "quality": null,
+        "satisfied": [
+          true,
+          false
+        ],
+        "teacher": null,
+        "utility": 0.375,
+        "valid": true
+      }
+    }
+  ],
+  "excluded_ids": [
+    "jp1-train-color-05",
+    "jp1-train-color-08",
+    "jp1-train-color-09",
+    "jp1-train-color-10",
+    "jp1-train-color-11",
+    "jp1-train-color-14",
+    "jp1-train-color-15",
+    "jp1-train-count-00",
+    "jp1-train-count-06",
+    "jp1-train-count-07",
+    "jp1-train-count-12",
+    "jp1-train-count-13",
+    "jp1-train-count-14",
+    "jp1-train-count-15",
+    "jp1-train-count_color-02",
+    "jp1-train-count_color-03",
+    "jp1-train-count_color-04",
+    "jp1-train-count_color-07",
+    "jp1-train-count_color-10",
+    "jp1-train-count_color-15",
+    "jp1-train-relation-02",
+    "jp1-train-relation-03",
+    "jp1-train-relation-07",
+    "jp1-train-relation-08",
+    "jp1-train-relation-12",
+    "jp1-train-relation-13"
+  ],
+  "input_files": {
+    "/midtier/minilab/scratch/chw4026/projects/side_project/generative/opd_related/opd_lab/experiments/local_expert_v2/ocr_audit_config.json": "b9b9fe465760c267235d40d465234f2f60b099b27fd708aa0c61975d0dfac042",
+    "/midtier/minilab/scratch/chw4026/projects/side_project/generative/opd_related/opd_lab/runs/le3_probe_001/config.json": "16f8c43388d690101dbbeed4447512133bd52b77e1c32af6787a73c6b31635f3",
+    "/midtier/minilab/scratch/chw4026/projects/side_project/generative/opd_related/opd_lab/runs/le3_probe_001/data.jsonl": "5b78af606cf64f3f13bcb70a27f098468caf3d59cfecebd833fcb93ced0bfe2f",
+    "/midtier/minilab/scratch/chw4026/projects/side_project/generative/opd_related/opd_lab/runs/le3_probe_001/frozen_behavior.pt": "25587af479f6d2a20d8750e687d0217539fff46ed5cba78bed1530814b80535b",
+    "/midtier/minilab/scratch/chw4026/projects/side_project/generative/opd_related/opd_lab/runs/le3_probe_001/probe_plan.json": "25a05aefaf4b4b027bfce096079a71e15d398c39a72afc093e759eabb2df6985",
+    "/midtier/minilab/scratch/chw4026/projects/side_project/generative/opd_related/opd_lab/runs/le3_probe_001/query_results/00ed2ea728827a8738d8bfe7/1e289b1b789dfffd013b.png": "cd83869cffd1b4278bcc38975a88abac8b64a3cc1ce7ccb205b5491c57de86a5",
+    "/midtier/minilab/scratch/chw4026/projects/side_project/generative/opd_related/opd_lab/runs/le3_probe_001/query_results/00ed2ea728827a8738d8bfe7/8a7aa4dfd86014b935b7.png": "f72a7c2d5c1f4f23a74a0a136d1fd40ddda020d8a61c0442b51f2370bc52e18d",
+    "/midtier/minilab/scratch/chw4026/projects/side_project/generative/opd_related/opd_lab/runs/le3_probe_001/query_results/063a8dd0d8e0e96b4246f337/6a2708799213144f7252.png": "5a52456fe62a7e8a504750f22f62ef194bd0033bdaab3577a38209bfeec5d4b1",
+    "/midtier/minilab/scratch/chw4026/projects/side_project/generative/opd_related/opd_lab/runs/le3_probe_001/query_results/063a8dd0d8e0e96b4246f337/c6ecfa1b0b119bb7c819.png": "55126cb8411ffad04b93cf219544d1291c00221b8a718e81ca3dc490f8abdf29",
+    "/midtier/minilab/scratch/chw4026/projects/side_project/generative/opd_related/opd_lab/runs/le3_probe_001/query_results/1ad4ba8b760323bbb76819cf/794e4d7495988b9ea80c.png": "f1cdb1d567ae625571e06ca57382e1d0cf54a4001a93a2f5c2133e3cdf3c8f83",
+    "/midtier/minilab/scratch/chw4026/projects/side_project/generative/opd_related/opd_lab/runs/le3_probe_001/query_results/1ad4ba8b760323bbb76819cf/eb7f7f3e3f1abff8cdd4.png": "152e1050d98fb50e288cbca3700b525301867f85a08f8a45b41e8831c3ff3c85",
+    "/midtier/minilab/scratch/chw4026/projects/side_project/generative/opd_related/opd_lab/runs/le3_probe_001/query_results/207ed6ea2a7efc7593d7283b/862e621aef954418b93e.png": "77eebc59e3759136b9a4dc7707b42605cd76b8e2c5b88c710f5385a7edf939c4",
+    "/midtier/minilab/scratch/chw4026/projects/side_project/generative/opd_related/opd_lab/runs/le3_probe_001/query_results/207ed6ea2a7efc7593d7283b/ec5738f91e30cd9afeca.png": "20a4727ce868371d355f54d6c607bce146db33e01209f6883b15cbea92d56a44",
+    "/midtier/minilab/scratch/chw4026/projects/side_project/generative/opd_related/opd_lab/runs/le3_probe_001/query_results/25f4de471f1c22083ebc1f56/30e839f4ea55644ece90.png": "5da4ee098266bdaeaa54369b2ab5d855ce14952b0fc899f114a20dd35272d7d4",
+    "/midtier/minilab/scratch/chw4026/projects/side_project/generative/opd_related/opd_lab/runs/le3_probe_001/query_results/25f4de471f1c22083ebc1f56/6ae3170ab0810ff5fae0.png": "38d5651609be95f9670e5b37e44de4b37073c1d0ed15f2c08de7ac91cfe01488",
+    "/midtier/minilab/scratch/chw4026/projects/side_project/generative/opd_related/opd_lab/runs/le3_probe_001/query_results/2f6b5cd6cd35d5e7a3bab7fb/11ac0b4f6d1390542222.png": "fed32de4b2d055d3a7916c92fec51eed0ed94dcaa1969bf0f2acc7c89320fdee",
+    "/midtier/minilab/scratch/chw4026/projects/side_project/generative/opd_related/opd_lab/runs/le3_probe_001/query_results/2f6b5cd6cd35d5e7a3bab7fb/a0cdfdeb71d99c77ba70.png": "227bbfbedbe3034771e2e32455b9cc4ad44230883aa1f894891e56c7a0c351cd",
+    "/midtier/minilab/scratch/chw4026/projects/side_project/generative/opd_related/opd_lab/runs/le3_probe_001/query_results/39ba7fd131223f35019f1f27/370604379e01e7410962.png": "55c7ebd358acf94b4f5a9188098c0f5290b4b5381ec480e13443ebb677183b7a",
+    "/midtier/minilab/scratch/chw4026/projects/side_project/generative/opd_related/opd_lab/runs/le3_probe_001/query_results/39ba7fd131223f35019f1f27/42446e64b4b5f2debd8e.png": "3dcd7debe459235417b4e514c1574ba8ca122d82ebbb5e700d69cda6c82bebb6",
+    "/midtier/minilab/scratch/chw4026/projects/side_project/generative/opd_related/opd_lab/runs/le3_probe_001/query_results/3fdaae69519671d0e1e4a0b1/0e6c0c6d9556ef7d945b.png": "14d4d14eb035aa8509c0658728946738fbaf8b90ecde7a5f6bab2754342a64f8",
+    "/midtier/minilab/scratch/chw4026/projects/side_project/generative/opd_related/opd_lab/runs/le3_probe_001/query_results/3fdaae69519671d0e1e4a0b1/2c6b171816bdfc03d9ba.png": "0b793a25bc0ae4a5c2b04a4f3c6e10cbf7d6d4942068c82175fdde6753e4c7e2",
+    "/midtier/minilab/scratch/chw4026/projects/side_project/generative/opd_related/opd_lab/runs/le3_probe_001/query_results/4b5df57d9ff1d6d6070290a4/86c6d77e104b6d545c28.png": "a24a94ad1a3ecbe134b4037de3b1961a69bf593841a9f6723cfbcc2bc8bffaad",
+    "/midtier/minilab/scratch/chw4026/projects/side_project/generative/opd_related/opd_lab/runs/le3_probe_001/query_results/4b5df57d9ff1d6d6070290a4/c6b2331f8e7b04ef4cfe.png": "e0ad8503c6e910c15facf387927416b653dce49305867337c9f6093def5238c0",
+    "/midtier/minilab/scratch/chw4026/projects/side_project/generative/opd_related/opd_lab/runs/le3_probe_001/query_results/582e553082c25a3e2b02dd8c/88fbc369ef7c047cbae9.png": "85e44b61737bff227fcf12af0ca282a559b9ba8dc27a0c0a26c56c4ce7d2f539",
+    "/midtier/minilab/scratch/chw4026/projects/side_project/generative/opd_related/opd_lab/runs/le3_probe_001/query_results/582e553082c25a3e2b02dd8c/e7ad16a7a204cd86d2d9.png": "2e19f845650ecf68f9ca43fc63d752e55d777c13b28601c1310aefecd30e9218",
+    "/midtier/minilab/scratch/chw4026/projects/side_project/generative/opd_related/opd_lab/runs/le3_probe_001/query_results/650ca7b7ea3436fdd8fcd5ec/46bc61cfc4840beb4a9a.png": "bafafb9d86ec38346e110dbc049bba9c5a00ce30e13148a70f02a5294ac665bf",
+    "/midtier/minilab/scratch/chw4026/projects/side_project/generative/opd_related/opd_lab/runs/le3_probe_001/query_results/650ca7b7ea3436fdd8fcd5ec/4bb71204d604c5b5c4f7.png": "8fc6884db580873885741ab634c35ae89dac79e64ea6526b21354c58bae60b45",
+    "/midtier/minilab/scratch/chw4026/projects/side_project/generative/opd_related/opd_lab/runs/le3_probe_001/query_results/65ccf8a2117b86f026c4776d/6625289210402a06c614.png": "a8f72f3bdfd748ec289b1ce71bfccf9fd9d101cd8b1dcaa9b200da34c0147c94",
+    "/midtier/minilab/scratch/chw4026/projects/side_project/generative/opd_related/opd_lab/runs/le3_probe_001/query_results/65ccf8a2117b86f026c4776d/7204e87cfc21dee89490.png": "6ea18f09924e512c44488d4447feb3159154e1dffd35046d0a60227f99f0f7a6",
+    "/midtier/minilab/scratch/chw4026/projects/side_project/generative/opd_related/opd_lab/runs/le3_probe_001/query_results/6676dadc2169b03f43816871/19df1871b804046b2598.png": "152522efa3f4e73f0bfd774ed5cb861469ba331fcae44fd7b36fb319aa8d700c",
+    "/midtier/minilab/scratch/chw4026/projects/side_project/generative/opd_related/opd_lab/runs/le3_probe_001/query_results/6676dadc2169b03f43816871/3701dfff2e0317bdf64d.png": "b604d4a8d843926afa96d27a6612381c8379eb949b75dc42121c072b64078940",
+    "/midtier/minilab/scratch/chw4026/projects/side_project/generative/opd_related/opd_lab/runs/le3_probe_001/query_results/682955f2af351ffe1b7984e9/897980665af72eafd88b.png": "8de3c89a92795b9390259821e582cb523dca597334bea8fa15418dbc80aa10a7",
+    "/midtier/minilab/scratch/chw4026/projects/side_project/generative/opd_related/opd_lab/runs/le3_probe_001/query_results/682955f2af351ffe1b7984e9/8cfd7757c5e7d64b6d85.png": "463194b0842901d2a0b72efdcf878137750fbbfd3082d89eacdd0b592ad7aaf7",
+    "/midtier/minilab/scratch/chw4026/projects/side_project/generative/opd_related/opd_lab/runs/le3_probe_001/query_results/696b3bf9b4ce9066a2c6539d/519c0a42d1a2c16066bc.png": "d28febf3eada37a8ec6100c89001ebf4a17ca035c19bee38d1e20812461fd177",
+    "/midtier/minilab/scratch/chw4026/projects/side_project/generative/opd_related/opd_lab/runs/le3_probe_001/query_results/696b3bf9b4ce9066a2c6539d/e1814a829a74d87412dd.png": "584000215ffcf8814e9c332a78a58f2660e32ff01c2e1b29a77af59af65610e7",
+    "/midtier/minilab/scratch/chw4026/projects/side_project/generative/opd_related/opd_lab/runs/le3_probe_001/query_results/73c7e2d5cf4b16c3fdc50510/e48eeb22d18b0912017b.png": "ad216b4986b7ed6fa0c416dfbcac95a165d0de9f3304cdf697065c9583f1cbc7",
+    "/midtier/minilab/scratch/chw4026/projects/side_project/generative/opd_related/opd_lab/runs/le3_probe_001/query_results/73c7e2d5cf4b16c3fdc50510/ff7e8f2baa4b92787fe5.png": "f6ca675d11b94ab9da56a70d4cfc7cce50a8deeefc522a1cabd5ed4c87c261df",
+    "/midtier/minilab/scratch/chw4026/projects/side_project/generative/opd_related/opd_lab/runs/le3_probe_001/query_results/757b75aab4fc7607e997a7e7/525c3f45190bd5f156b8.png": "0b7a2e267b148936524cf1b5958ecb80dd94be69cfad919f79ad55dc55add60b",
+    "/midtier/minilab/scratch/chw4026/projects/side_project/generative/opd_related/opd_lab/runs/le3_probe_001/query_results/757b75aab4fc7607e997a7e7/a4d41e9efcbaa3f2d793.png": "b9f6e5e8bd7a4b2e00041aab32c82fb6015b4e0fa1fdc24a96f9c60123c65a27",
+    "/midtier/minilab/scratch/chw4026/projects/side_project/generative/opd_related/opd_lab/runs/le3_probe_001/query_results/8197f579ba819339d677b565/34a7bd31376a7ceae292.png": "97f828d3744a59844bcf2e564f7141dd9e243dd91c3d7163a832f6de2a2f68ba",
+    "/midtier/minilab/scratch/chw4026/projects/side_project/generative/opd_related/opd_lab/runs/le3_probe_001/query_results/8197f579ba819339d677b565/479bb76a3c58771d33eb.png": "cf768f43a71063ecfd69417a6cc369543b98f8888639ec5a719d0ab08dafde79",
+    "/midtier/minilab/scratch/chw4026/projects/side_project/generative/opd_related/opd_lab/runs/le3_probe_001/query_results/838201ab02ed40be41710bef/821f34f0f8476cd49277.png": "a6fcc24e2326789e96427ca6cd0e257b11574b067851e52fefdc5183a75a7ef2",
+    "/midtier/minilab/scratch/chw4026/projects/side_project/generative/opd_related/opd_lab/runs/le3_probe_001/query_results/838201ab02ed40be41710bef/d6740a95e08cb0ed08d4.png": "13c8933f3dda9d056c26d6e6cb94c1ae1c8e0418118276065eb0ed9ef16278db",
+    "/midtier/minilab/scratch/chw4026/projects/side_project/generative/opd_related/opd_lab/runs/le3_probe_001/query_results/b2f31a9bd0cf3b79d6d41ad7/0a4869b6876c1c3d4d81.png": "98dc842ecad2f09a6f6138703f273c5d698864d269cd997811bb002f370d32a2",
+    "/midtier/minilab/scratch/chw4026/projects/side_project/generative/opd_related/opd_lab/runs/le3_probe_001/query_results/b2f31a9bd0cf3b79d6d41ad7/88b2c1475a803dbae15b.png": "6a85ef8f176d35607cba9163d00c656aa1b5ee68241ac43bc028d6a9e38adc02",
+    "/midtier/minilab/scratch/chw4026/projects/side_project/generative/opd_related/opd_lab/runs/le3_probe_001/query_results/ca02655c6933b2a8d63d7a09/1a860df288d191a6f853.png": "27719a34f7e71355fe30c567454c8e3a1979c74cc3a5752c1f526f51d80b62b7",
+    "/midtier/minilab/scratch/chw4026/projects/side_project/generative/opd_related/opd_lab/runs/le3_probe_001/query_results/ca02655c6933b2a8d63d7a09/fb8ac07e8b92fcdc8077.png": "2a661b63019838b197da18a5024b17bd6085263543875a69b34ce7d2ce489dd4",
+    "/midtier/minilab/scratch/chw4026/projects/side_project/generative/opd_related/opd_lab/runs/le3_probe_001/query_results/ed0c6261a864a82cb8336eb9/0e57e6701824b5413f98.png": "a92d3d181b04d7bccb06c8f245fd7521b479b1992a3a818a46c8b5e407441bd0",
+    "/midtier/minilab/scratch/chw4026/projects/side_project/generative/opd_related/opd_lab/runs/le3_probe_001/query_results/ed0c6261a864a82cb8336eb9/3982538cba8497f772fe.png": "101997258db12a167b55d5513cdd811e6fdf8eb5c9a897f5744a3757b6b2c811",
+    "/midtier/minilab/scratch/chw4026/projects/side_project/generative/opd_related/opd_lab/runs/le4_action_001/action_plan.json": "577dda8c0706a57225710b60de8c4b50a96de813f2876112f0deb61d68159129",
+    "/midtier/minilab/scratch/chw4026/projects/side_project/generative/opd_related/opd_lab/runs/le4_action_001/actions.jsonl": "146509ca289da385ef11334b3172e1392260a424f6a7fdd422a38b05c4d404cc",
+    "/midtier/minilab/scratch/chw4026/projects/side_project/generative/opd_related/opd_lab/runs/le4_action_001/result.json": "0d1802eaa3b8482b648556296805a9df80e4f90a620f55c0f2d36acfa5ab479b",
+    "/midtier/minilab/scratch/chw4026/projects/side_project/generative/opd_related/opd_lab/runs/le4_target_review_001/key.json": "e3307c2d416b484182058935c66150c4e0fd0116d836a61ccb58f2a2993ee36d",
+    "/midtier/minilab/scratch/chw4026/projects/side_project/generative/opd_related/opd_lab/runs/le4_target_review_001/observations.json": "bc20613770a4b35843912b4e7f76667f6629cbd12b5e9ab6a44b990caf08ec31",
+    "/midtier/minilab/scratch/chw4026/projects/side_project/generative/opd_related/opd_lab/runs/le4_target_review_001/observations_frozen.json": "f0cf7efb20310f8d710e8b5f94aa9e02ac3c82c1de867526abc726afbd49cb16"
+  },
+  "parent_run": "/midtier/minilab/scratch/chw4026/projects/side_project/generative/opd_related/opd_lab/runs/le3_probe_001",
+  "review_run": "/midtier/minilab/scratch/chw4026/projects/side_project/generative/opd_related/opd_lab/runs/le4_target_review_001",
+  "rules": [
+    "v1",
+    "paddle_compact",
+    "tesseract_compact",
+    "both_compact"
+  ],
+  "version": 1
+}

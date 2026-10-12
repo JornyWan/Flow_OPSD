@@ -1,0 +1,64 @@
+{
+  "all_pair_failure_explanations_recomputed": 256,
+  "allocated_gpu_hours": 0.5916666666666667,
+  "array_diagnostic_additional_gpu_calls": 0,
+  "decisions_and_statistics_recomputed": true,
+  "frozen_labels_unchanged": true,
+  "generated_images": 0,
+  "historical_artifacts": {
+    "10": {
+      "README_historical_revision": "9dcc18b",
+      "all_recorded_artifacts_unchanged": true,
+      "artifact_count": 154
+    },
+    "11": {
+      "README_historical_revision": "3923b6a",
+      "all_recorded_artifacts_unchanged": true,
+      "artifact_count": 428
+    },
+    "12": {
+      "README_historical_revision": "8e9c655",
+      "all_recorded_artifacts_unchanged": true,
+      "artifact_count": 581
+    },
+    "13": {
+      "README_historical_revision": "bb804ca",
+      "all_recorded_artifacts_unchanged": true,
+      "artifact_count": 42
+    },
+    "6": {
+      "README_historical_revision": "e384a09",
+      "all_recorded_artifacts_unchanged": true,
+      "artifact_count": 153
+    },
+    "7": {
+      "README_historical_revision": "8c1e160",
+      "all_recorded_artifacts_unchanged": true,
+      "artifact_count": 716
+    },
+    "8": {
+      "README_historical_revision": "d9c392c",
+      "all_recorded_artifacts_unchanged": true,
+      "artifact_count": 99
+    },
+    "9": {
+      "README_historical_revision": "d9c392c",
+      "all_recorded_artifacts_unchanged": true,
+      "artifact_count": 97
+    }
+  },
+  "input_images_verified": 192,
+  "limitations": "Exposed development pool, provisional implementing-assistant labels, single correlated Qwen reviewer.",
+  "model_assets_gpu_sha256_verified": 14,
+  "old_v1_v2_statistics_reproduced": true,
+  "optimizer_updates": 0,
+  "real_pairs": 128,
+  "response_parses_replayed": 512,
+  "self_controls": 64,
+  "separate_array_diagnostic_recomputed": true,
+  "swapped_pair_requests": 256,
+  "upstream": {
+    "diffusionopd": "0c85bf0193a6da24bb1f72152b612d353a154999",
+    "diffusionopsd": "9c4c48cdfe5c3fa712d32957345d75fae9295696"
+  }
+}
