@@ -1,6 +1,6 @@
 # research/ —— DiffusionOPSD / MSP 研究全档案(给接手的 agent)
 
-> 快照时间:**2026-10-11 23:00 EDT**。仓库根目录仍是给合作者的**干净版**(官方 DiffusionOPSD `9c4c48c` + 只有 MSP,
+> 快照时间:**2026-10-11 23:45 EDT**。仓库根目录仍是给合作者的**干净版**(官方 DiffusionOPSD `9c4c48c` + 只有 MSP,
 > 见根 `README.md`);本目录是到快照为止的**全部** idea、代码、实验记录、结果与结论。旧的干净版另有 tag `v0.1-msp-release`。
 > 记录语言以中文为主;节号 `§4.xxx` 一律指 `docs/EXPERIMENT_LOG.md` 里的节。
 
@@ -77,8 +77,10 @@ canonical OPSD 在单个 query 态上做蒸馏回归;MSP 把同一个 x0 空间�
 - 🟢 **split = 额外态独立 Adam(`multikF4sa`,`RPI_MK_SPLIT=λ`,λ=0.5)**:主优化器只吃主项梯度(= canonical 的 Adam 动力学),额外态走另一套 m/v。
   - λ=0.5 的净 LoRA 位移 = canonical(1.00–1.01×)⇒ **不是步长收益**;λ=1.0 为 1.22–1.34×,其 40 步领先与 canonical lr×2 打平 ⇒ 维持 λ=0.5(§4.891/4.893)。
   - ck50 两 seed:40 步对 canonical P/P、对 MSP P−/P−。
+  - 稳定性代理(`judge_sa_late.py` 第三段):H100 s0830 在 ep100–148 内 r>0.75 最长连续 **4 步**(未门控 MSP 在 ep120–146 为 18 步)—— 单 seed、只是代理。
   - **ck100 s0830(H100 np3)**:对 canonical **+5.85 / +4.67(t≈16)P**,对 MSP +0.99 / +2.03(0,无负);held-out IR 四格正(§4.897)。
-  - 待:s0905(A100 np3)ck100 ⇒ 按 `judge_sa888.py` 晋级 ⇒ H200×4 跑 300 步(`session_scripts/submit_h2sa300.sh`)。
+  - s0905(A100 np3)ck100 drawbench 已出:对 canonical f40 **+5.87(t+15.0)**、对 MSP +1.97(t+6.3);unseen1k 评测中。
+  - 待:s0905 ck100 两集齐 ⇒ 按 `judge_sa888.py` 晋级 ⇒ H200×4 跑 300 步(`session_scripts/submit_h2sa300.sh`)。
   - 单 reward split(一个 seed,np4,对现成 `rs*canon`):pickscore / hpsv2 在 H100 NVL×4(preempt,被抢占即从零重投 —— 不可续训);clipscore / imagereward 需 H200×4。判定器 `judge_rs_sa.py`。
 - ✅ **门控 `multikF4gate`(`RPI_MK_GATE=0.75`)**:失衡(r=od_gn_x/od_gn_q>0.75 的连续步数)18 → 0;ck100 无代价;ck150 40 步 +5.5/+3.6、少步 −4.6/−5.2(取舍)。单 seed,300 步 H200 排队中(`judge_g300.py`)。
 

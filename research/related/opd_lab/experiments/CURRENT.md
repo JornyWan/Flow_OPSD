@@ -2,9 +2,9 @@
 
 
 <!-- bounded-expert-preparation:start -->
-**2026-10-11 21:11 EDT续看：Phase81已准备，因排队窗口仍未提交GPU，无新实验结果。** 202输入核对通过；既有36项CPU检查不重复，真实GPU未验收。强原生EMA/Flow40、64训练prompt的noop/full/bounded/等幅random四臂，256端点和1280主要质量；只测试候选目标机会，不等于学习收益。
+**2026-10-11 23:11 EDT续看：Phase81仍未提交，无新实验结果。** 冻结入口核对202输入并probe四分区，preempt最早预计10月12日06:23:42EDT、75分钟后07:38:42EDT结束，超过03:11:10EDT完整完成窗口。minilab/scu更晚；sablab无兼容L40、跨项目承诺5/6。无submission/intent/STARTED，未reserve。预算20700/48600请求秒、余1作业不变。
 
-四分区最新probe：preempt最早10月12日04:23:45EDT开始，75分钟后05:38:45EDT结束，超过03:11:10EDT冻结完整完成窗口。minilab/scu更晚，sablab无兼容L40、跨项目承诺5/6。入口在reserve前停止，Phase81无submission/intent/STARTED。预算仍20700/48600请求秒、余1作业；Phase79/80 COMPLETED0:0、timer2851812存活。下一既有回调03:11UTC（今晚23:11EDT）；截止不自动续期。无重复分析，零读图，确认/最终封存。[冻结协议](local_expert_v81/PROTOCOL.md) · [本次检查](autonomy_20261011_2h/checkins/20261012T011110Z.md)。
+Phase79/80均COMPLETED0:0，timer2851812存活。既有36项CPU检查不重复，Phase81真实GPU未验收：64训练prompt/强原生EMA/Flow40四臂比较的是目标机会，不是已获学习收益。下一既有回调05:11UTC（01:11EDT）是最后一个截止前推进时点，07:11UTC仅收尾；不自动续期。无新研究证据、不重复分析，零读图，确认/最终封存。[冻结协议](local_expert_v81/PROTOCOL.md) · [本次检查](autonomy_20261011_2h/checkins/20261012T031110Z.md)。
 <!-- bounded-expert-preparation:end -->
 
 <!-- phase80-current:start -->

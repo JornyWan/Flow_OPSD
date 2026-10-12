@@ -46759,3 +46759,14 @@ A100 s0905 的同硬件 canonical 300 步:split 若走 H200 路线则不需要;�
 - held-out IR 四格同号为正。
 - 进度:`sa_a3_s05`(A100)ep94 ⇒ ck100 ~22:10、评测 ~23:50(waiter bfogf4ola 跑完整 judge_sa888 = 晋级判定);`sa_h3_s30` ep125 ⇒ ck150 ~23:10;
   `sa_h2n3_s30`(H200 np3)ep80 ⇒ ck100 ~23:00;`pe_pickscore_sa` ep37(~3.2 min/步)⇒ ck100 ~01:00、评测 ~02:40。
+
+## §4.898 全部研究档案推到 `JornyWan/Flow_OPSD`(用户要求,23:05;**仓库是 public,用户确认照推**)
+
+- commit **`c3e4efd`**(main);旧的 MSP-only 版本打 tag **`v0.1-msp-release`**(= `1a186af`,合作者用的那版)。**根目录代码一字未改**,根 README 只加一段指向 `research/`。
+- `research/`(2353 个文件,~150 MB):`README.md`(给接手 agent 的入口:目标 / 复现 / 协议 / 每个 idea 结论 / 机制结论 / 代码用法 / 待办)、
+  `docs/`(本日志、IDEAS_TRACKER、PAPER_PLAN 及早期 PLAN/SUMMARY/OVERNIGHT)、`agent_memory/`(44 条 OPD 相关记忆;排除 jit/tts/project3/latex/GitHub-SSH 那几条)、
+  `code/fork_overlay/`(研究 fork 的 3 个文件 —— 已验证"根目录 + 覆盖层"与 `DiffusionOPSD-rpi` 代码逐字节相同)、`code/{slurm,codex_research,probes,analysis,session_scripts}`、
+  `results/`(`eval_summary.csv` 1195 行;逐图评测 json 44 MB tar.xz;metrics.jsonl + run_config;codex runs 摘要)、`paper/`(MSP 草稿 + 图)、
+  `related/CA-OPD`(早期线,去掉 checkpoints/logs/console log)、`related/opd_lab`(codex OPD Lab 线的 tracked 文件 + 实验 md 摘要)。
+- 凭据扫描(hf_/sk-/ghp_/github_pat/AKIA/私钥/WANDB 等,含 tarball 内)**零命中**;只有上游 `WANDB_API_KEY=xxx` 占位符与 `.secrets` 路径引用。
+- 构建脚本:`scratchpad/build_research_archive.sh`(之后再推更新:重跑它 → 在 clone `scratchpad/Flow_OPSD` 里 commit → push)。

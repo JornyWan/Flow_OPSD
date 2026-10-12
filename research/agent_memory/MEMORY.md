@@ -43,3 +43,4 @@
 - [别在 bash 读脚本时改它](dont-edit-launcher-while-bash-reads-it.md) — smoke 直接 bash 调 ab_open3_v6.slurm;运行中改脚本 ⇒ 错位执行、FAILED、afterok 链断
 - [首要目标:40 步逐 ckpt 最好](opd-goal-40step-every-ckpt.md) — flow-40 每 ck 胜 canonical;交付 = open3 300 步 + 单 reward 100 步;canonical 已复现完,只配现成对照
 - [OPSD 48GB 卡不可行](opsd-48gb-cards-infeasible.md) — L40S/A40 加载 reward 模型时已 OOM(43 GiB);训练只排 ≥80GB 卡
+- [Flow_OPSD 档案仓库](flow-opsd-github-archive.md) — PUBLIC;根=干净 MSP 版(tag v0.1-msp-release),research/=全部研究档案;刷新流程

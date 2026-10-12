@@ -3,7 +3,7 @@
 > **用途**:每个 idea 的状态、对应实验(job / tag / 目录)、判定与日志节号。**每轮状态检查都更新本表**(新投、跑完、判定、取消、hold 都要落到这里)。
 > **首要目标(用户 2026-10-11):40 步(flow-40)在每个 ckpt(100–300)都胜过 canonical OPSD**;少步只作副读数。
 > **最终交付(用户 19:00,§4.895):multi-reward 300 步胜 canonical(H200×4,对 `o3canon300`/`canon300s2`)+ single-reward 100 步胜 canonical(对现成 `rs*canon`)。canonical 已复现完,不再跑 canonical。**
-> 细节以 `EXPERIMENT_LOG.md` 为准;本表只做索引与当前状态。最后更新:2026-10-11 21:40。
+> 细节以 `EXPERIMENT_LOG.md` 为准;本表只做索引与当前状态。最后更新:2026-10-11 23:05。
 >
 > 图例:🟢 在跑 · 🟡 排队/hold · ✅ 已判(正)· ❌ 已判(负)· ➖ 已判(无效应/持平)· ⏸ 暂停/降级(未判负)· 🔬 诊断类 · 📝 只是设计
 
@@ -39,7 +39,7 @@
 - ✅ 叠加:`multiklr`(K 轴 K1,§4.699/4.713);B+C / A+C 组合(§4.661–4.680)。
 - ✅/❌ 单 reward(R 轴):imagereward R1 正;pickscore R3 负(机制性);clipscore/hpsv2 R2 无效;aesthetic 口径否决(§4.719–4.779)。
 - ❌ β×MSP(I 轴):β=1.0 把 MSP 翻成强负(I4,§4.767)。
-- 📄 论文/代码:`JornyWan/Flow_OPSD`(§4.744/4.765);训练长度边界按 seed2 改写(§4.851)。
+- 📄 论文/代码:`JornyWan/Flow_OPSD`(§4.744/4.765);**全部研究档案已推到同仓库 `research/`(commit c3e4efd,§4.898;旧版 tag v0.1-msp-release)**;训练长度边界按 seed2 改写(§4.851)。
 
 ### 1.2 300 步:MSP 的后期表现(问题本身)
 - seed1:ck200 后崩(训练样本 ep234–244 成片坏),ck300 比 canonical −9.3(f40)。seed2:不崩,但对 canonical 的领先从 ck100 的 +2.8 缩到 ck300 的 +1.1,IR 在 ck200 后停(§4.762/4.796/4.846/4.874)。
